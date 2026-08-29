@@ -28,6 +28,16 @@ export async function POST(req){
     saveCategory(cat);
     return NextResponse.json({category: cat});
   }
+  if(body.action==="addSubtopic"){
+    const cat=getCategoryById(body.catId);
+    if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
+    const name=(body.name||"").trim();
+    if(!name) return NextResponse.json({error:"Subtopic name is required"},{status:400});
+    if(cat.subcats.some(s=>s.name.toLowerCase()===name.toLowerCase())) return NextResponse.json({error:"A subtopic with that name already exists"},{status:400});
+    cat.subcats.push({name, questions:[]});
+    saveCategory(cat);
+    return NextResponse.json({ok:true, subIdx: cat.subcats.length-1});
+  }
   if(body.action==="addQuestion"){
     const cat=getCategoryById(body.catId);
     if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
@@ -68,6 +78,18 @@ export async function PUT(req){
     saveCategory(cat);
     return NextResponse.json({ok:true});
   }
+  if(body.action==="renameSubtopic"){
+    const cat=getCategoryById(body.catId);
+    if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
+    const sIdx=parseInt(body.subIdx);
+    if(!cat.subcats[sIdx]) return NextResponse.json({error:"Subtopic not found"},{status:400});
+    const name=(body.name||"").trim();
+    if(!name) return NextResponse.json({error:"Subtopic name is required"},{status:400});
+    if(cat.subcats.some((s,i)=>i!==sIdx && s.name.toLowerCase()===name.toLowerCase())) return NextResponse.json({error:"A subtopic with that name already exists"},{status:400});
+    cat.subcats[sIdx].name=name;
+    saveCategory(cat);
+    return NextResponse.json({ok:true});
+  }
   // update subject meta
   if(body.action==="updateSubject"){
     const cat=getCategoryById(body.catId);
@@ -91,6 +113,16 @@ export async function DELETE(req){
     return NextResponse.json({ok:true});
   }
   const body=await req.json().catch(()=>null);
+  if(body && body.catId && body.subIdx!==undefined && body.action==="deleteSubtopic"){
+    const cat=getCategoryById(body.catId);
+    if(!cat) return NextResponse.json({error:"Not found"},{status:404});
+    const sIdx=parseInt(body.subIdx);
+    if(!cat.subcats[sIdx]) return NextResponse.json({error:"Subtopic not found"},{status:400});
+    if(cat.subcats.length<=1) return NextResponse.json({error:"A subject needs at least one subtopic."},{status:400});
+    cat.subcats.splice(sIdx,1);
+    saveCategory(cat);
+    return NextResponse.json({ok:true});
+  }
   if(body && body.catId && body.subIdx!==undefined && body.num!==undefined){
     const cat=getCategoryById(body.catId);
     if(!cat) return NextResponse.json({error:"Not found"},{status:404});

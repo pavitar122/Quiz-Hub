@@ -1,8 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import Counter from "@/components/Counter";
+import { monogram } from "@/lib/badge";
 
 export default function HomePage(){
   const [cats,setCats]=useState([]);
@@ -13,6 +14,18 @@ export default function HomePage(){
   const [progress,setProgress]=useState(null);
   const [loading,setLoading]=useState(true);
   const { user } = useAuth();
+  const searchRef = useRef(null);
+
+  useEffect(()=>{
+    const onKey=(e)=>{
+      if(e.key==="/" && document.activeElement?.tagName!=="INPUT" && document.activeElement?.tagName!=="TEXTAREA"){
+        e.preventDefault();
+        searchRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown",onKey);
+    return ()=>window.removeEventListener("keydown",onKey);
+  },[]);
 
   useEffect(()=>{
     fetch("/api/questions").then(r=>r.json()).then(d=>{
@@ -72,7 +85,7 @@ export default function HomePage(){
           const gTotal=gCats.reduce((a,c)=>a+c.subcats.reduce((s,sc)=>s+sc.questions.length,0),0);
           return (
             <button key={g.id} className={`app-tab ${activeApp===g.id?"active":""}`} onClick={()=>{setActiveApp(g.id);}}>
-              <span className="app-tab-icon">{g.icon}</span>
+              <span className="mono-badge md app-tab-icon">{g.code}</span>
               <span className="app-tab-text">
                 <span className="app-tab-label">{g.label}</span>
                 <span className="app-tab-meta">{gCats.length} subjects · {gTotal} Qs</span>
@@ -84,7 +97,7 @@ export default function HomePage(){
 
       {activeMeta && (
         <div className="app-header" style={{margin:"22px 0 20px"}}>
-          <span className="dwg-tag mono">{activeMeta.icon} · {activeMeta.label.toUpperCase()}</span>
+          <span className="dwg-tag mono">{activeMeta.code} · {activeMeta.label.toUpperCase()}</span>
           <p style={{marginTop:2}}>{activeMeta.blurb}</p>
         </div>
       )}
@@ -96,11 +109,11 @@ export default function HomePage(){
         <div className="stat-chip"><div className="num serif"><Counter value={progress?.stats?.sessionsCompleted||0} /></div><div className="lab mono">Sessions Done</div></div>
       </div>
 
-      {weak && <div className="empty-note" style={{textAlign:"left",marginBottom:18}}>🎯 <strong>Suggested focus:</strong> "{weak.name}" ({weak.catTitle}) — best {weak.pct}%.</div>}
+      {weak && <div className="empty-note" style={{textAlign:"left",marginBottom:18}}><span className="dwg-tag mono" style={{display:"inline",marginBottom:0}}>FOCUS</span> — "{weak.name}" ({weak.catTitle}) — best {weak.pct}%.</div>}
 
       <div className="searchbar">
         <span className="icon mono">SEARCH</span>
-        <input type="text" placeholder="Filter subjects..." value={search} onChange={e=>setSearch(e.target.value)} />
+        <input ref={searchRef} type="text" placeholder="Filter subjects... (press / to focus)" value={search} onChange={e=>setSearch(e.target.value)} />
       </div>
       <div className="filter-chips mono">
         <button className={filter==="all"?"active":""} onClick={()=>setFilter("all")}>All ({counts.all})</button>
@@ -119,6 +132,7 @@ export default function HomePage(){
             return (
               <Link key={cat.id} href={`/subject/${cat.id}`} style={{textDecoration:"none"}}>
                 <div className="category-card">
+                  <span className="mono-badge sm cat-icon">{monogram(cat.title)}</span>
                   <h2 className="serif">{cat.title}</h2>
                   <p>{cat.description}</p>
                   <div className="cat-progress-row"><span>{cat.subcats.length} topics · {total} Qs</span><span>{best ? `Best: ${best.pct}%` : "Not started"}</span></div>

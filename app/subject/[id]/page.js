@@ -1,8 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
+import { monogram } from "@/lib/badge";
 
 export default function SubjectPage(){
   const { id } = useParams();
@@ -11,12 +12,23 @@ export default function SubjectPage(){
   const [search,setSearch]=useState("");
   const [progress,setProgress]=useState(null);
   const { user } = useAuth();
+  const searchRef = useRef(null);
   useEffect(()=>{
     fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>setCat(d.category));
   },[id]);
   useEffect(()=>{
     if(user) fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress));
   },[user]);
+  useEffect(()=>{
+    const onKey=(e)=>{
+      if(e.key==="/" && document.activeElement?.tagName!=="INPUT" && document.activeElement?.tagName!=="TEXTAREA"){
+        e.preventDefault();
+        searchRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown",onKey);
+    return ()=>window.removeEventListener("keydown",onKey);
+  },[]);
 
   if(!cat) return (
     <>
@@ -47,7 +59,7 @@ export default function SubjectPage(){
         {user?.role==="admin" && <Link href="/admin" className="back-link">Admin Panel</Link>}
       </div>
       <div className="app-header">
-        <span className="dwg-tag mono">{cat.icon} · CATEGORY OVERVIEW</span>
+        <span className="dwg-tag mono">{monogram(cat.title)} · CATEGORY OVERVIEW</span>
         <h1 className="serif">{cat.title}</h1>
         <p>{cat.description}</p>
       </div>
@@ -75,7 +87,7 @@ export default function SubjectPage(){
       </div>
       <div className="searchbar">
         <span className="icon mono">SEARCH</span>
-        <input type="text" placeholder="Filter subtopics..." value={search} onChange={e=>setSearch(e.target.value)} />
+        <input ref={searchRef} type="text" placeholder="Filter subtopics... (press / to focus)" value={search} onChange={e=>setSearch(e.target.value)} />
       </div>
       <div className="subcat-grid">
         {filtered.length===0 ? <div className="empty-note">No subtopics match.</div> :
