@@ -25,11 +25,11 @@ export default function LoginPage(){
     <div className="dwg-card auth-card">
       <span className="dwg-tag mono">LOGIN</span>
       <h2 className="serif">Welcome back</h2>
-      {err && <div className="explain-box" style={{borderLeftColor:"var(--wrong)"}}>{err}</div>}
+      {err && <div className="explain-box" style={{borderLeftColor:"var(--wrong)",animation:"fadeIn .2s var(--ease), shake .4s var(--ease-soft)"}}>{err}</div>}
       <form onSubmit={submit}>
-        <input className="auth-input" placeholder="Email" type="email" value={email} onChange={e=>setEmail(e.target.value)} required />
-        <input className="auth-input" placeholder="Password" type="password" value={password} onChange={e=>setPassword(e.target.value)} required />
-        <button className="btn" disabled={loading} type="submit">{loading?"...":"Login"}</button>
+        <input className="auth-input" placeholder="Email" type="email" value={email} onChange={e=>setEmail(e.target.value)} required style={{animation:"fadeInUp .3s var(--ease) both"}} />
+        <input className="auth-input" placeholder="Password" type="password" value={password} onChange={e=>setPassword(e.target.value)} required style={{animation:"fadeInUp .3s var(--ease) .04s both"}} />
+        <button className="btn" disabled={loading} type="submit">{loading?<span className="spinner"></span>:"Login"}</button>
       </form>
       <p className="mono" style={{fontSize:13,marginTop:14}}>No account? <Link href="/auth/signup">Signup</Link></p>
     </div>

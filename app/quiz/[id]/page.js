@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import { useParams, useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import Confetti from "@/components/Confetti";
+import Toast from "@/components/Toast";
+import Counter from "@/components/Counter";
 
 export default function QuizPage(){
   const { id } = useParams();
@@ -13,6 +16,14 @@ export default function QuizPage(){
   const [cat,setCat]=useState(null);
   const [quiz,setQuiz]=useState(null);
   const [progress,setProgress]=useState(null);
+  const [toastMsg,setToastMsg]=useState("");
+  const [toastShow,setToastShow]=useState(false);
+
+  const flashToast=(msg)=>{
+    setToastMsg(msg);
+    setToastShow(true);
+    setTimeout(()=>setToastShow(false), 1600);
+  };
 
   useEffect(()=>{
     fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>{
@@ -176,14 +187,19 @@ export default function QuizPage(){
     // refresh progress
     const d=await fetch("/api/progress").then(r=>r.json());
     setProgress(d.progress);
+    const nowBookmarked = d.progress?.bookmarks?.[id]?.includes(current.subIdx+"-"+current.q.num);
+    flashToast(nowBookmarked ? "★ Bookmarked" : "Bookmark removed");
   };
   const isBookmarked = progress && progress.bookmarks?.[id]?.includes(current?.subIdx+"-"+current?.q?.num);
 
-  if(!cat || !quiz) return <div className="empty-note">Loading quiz...</div>;
+  if(!cat || !quiz) return (
+    <div className="loading-row"><span className="spinner"></span> Loading quiz…</div>
+  );
   if(quiz.finished){
     if(quiz.mode==="test"){
       return (
         <div className="dwg-card">
+          {quiz.pct>=70 && <Confetti />}
           <span className="dwg-tag mono">RESULT · TEST MODE</span>
           <p className="result-score serif">{quiz.score}/{quiz.total}</p>
           <p className="result-pct mono">{quiz.pct}%</p>
@@ -214,9 +230,9 @@ export default function QuizPage(){
           <span className="dwg-tag mono">RESULT · PRACTICE MODE</span>
           <p className="result-score serif">Mastered {quiz.totalUnique}</p>
           <div className="stat-grid">
-            <div className="stat-box"><div className="num serif">{quiz.totalUnique}</div><div className="lab mono">Mastered</div></div>
-            <div className="stat-box"><div className="num serif">{quiz.attempts}</div><div className="lab mono">Attempts</div></div>
-            <div className="stat-box"><div className="num serif">{quiz.firstTryCorrect}</div><div className="lab mono">First Try Correct</div></div>
+            <div className="stat-box"><div className="num serif"><Counter value={quiz.totalUnique} /></div><div className="lab mono">Mastered</div></div>
+            <div className="stat-box"><div className="num serif"><Counter value={quiz.attempts} /></div><div className="lab mono">Attempts</div></div>
+            <div className="stat-box"><div className="num serif"><Counter value={quiz.firstTryCorrect} /></div><div className="lab mono">First Try Correct</div></div>
           </div>
           <div className="btn-row">
             <button className="btn" onClick={()=>location.reload()}>Retry</button>
@@ -235,8 +251,8 @@ export default function QuizPage(){
       <div className="top-bar"><Link href={`/subject/${id}`} className="back-link">← Back</Link><span className="score-badge">{quiz.mode==="test" ? `Score: ${quiz.score}/${quiz.pos+(quiz.answered?1:0)}` : `Attempts: ${quiz.attempts}`}</span></div>
       <div className="eyebrow"><span>{current.subName} · {quiz.mode==="test"? `Question ${quiz.pos+1} of ${quiz.total}` : `Mastered ${quiz.mastered} of ${quiz.totalUnique}`}</span><span>#{q.num} · {quiz.mode.toUpperCase()}</span></div>
       <div className="quiz-progress-bar"><div className="quiz-progress-fill" style={{width:progressPct+"%"}}></div></div>
-      <div className="dwg-card">
-        <div className="q-head-row">
+      <div className="dwg-card" key={(quiz.mode==="test"?quiz.pos:quiz.attempts)+"-"+q.num}>
+        <div className="q-head-row q-transition">
           <p className="question-text">{q.text}</p>
           <button className={`bookmark-btn ${isBookmarked?"active":""}`} onClick={toggleBookmark} title="Bookmark">★</button>
         </div>
@@ -268,6 +284,7 @@ export default function QuizPage(){
         )}
         <div className="btn-row end"><button className="btn" onClick={nextQuestion} disabled={!quiz.answered}>Next →</button></div>
       </div>
+      <Toast message={toastMsg} show={toastShow} />
     </>
   );
 }

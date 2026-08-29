@@ -26,12 +26,12 @@ export default function SignupPage(){
     <div className="dwg-card auth-card">
       <span className="dwg-tag mono">SIGN UP</span>
       <h2 className="serif">Create account</h2>
-      {err && <div className="explain-box" style={{borderLeftColor:"var(--wrong)"}}>{err}</div>}
+      {err && <div className="explain-box" style={{borderLeftColor:"var(--wrong)",animation:"fadeIn .2s var(--ease), shake .4s var(--ease-soft)"}}>{err}</div>}
       <form onSubmit={submit}>
-        <input className="auth-input" placeholder="Name" value={name} onChange={e=>setName(e.target.value)} required />
-        <input className="auth-input" placeholder="Email" type="email" value={email} onChange={e=>setEmail(e.target.value)} required />
-        <input className="auth-input" placeholder="Password (min 6 chars)" type="password" value={password} onChange={e=>setPassword(e.target.value)} required />
-        <button className="btn" disabled={loading} type="submit">{loading?"...":"Create Account"}</button>
+        <input className="auth-input" placeholder="Name" value={name} onChange={e=>setName(e.target.value)} required style={{animation:"fadeInUp .3s var(--ease) both"}} />
+        <input className="auth-input" placeholder="Email" type="email" value={email} onChange={e=>setEmail(e.target.value)} required style={{animation:"fadeInUp .3s var(--ease) .04s both"}} />
+        <input className="auth-input" placeholder="Password (min 6 chars)" type="password" value={password} onChange={e=>setPassword(e.target.value)} required style={{animation:"fadeInUp .3s var(--ease) .08s both"}} />
+        <button className="btn" disabled={loading} type="submit">{loading?<span className="spinner"></span>:"Create Account"}</button>
       </form>
       <p className="mono" style={{fontSize:13,marginTop:14}}>Have account? <Link href="/auth/login">Login</Link></p>
     </div>

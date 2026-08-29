@@ -8,11 +8,18 @@ export default function Navbar(){
   const { user, logout } = useAuth();
   const pathname = usePathname();
   const [isDark,setIsDark]=useState(false);
+  const [scrolled,setScrolled]=useState(false);
   useEffect(()=>{
     const saved=localStorage.getItem("theme");
     const dark = saved ? saved==="dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
     setIsDark(dark);
     document.body.classList.toggle("dark",dark);
+  },[]);
+  useEffect(()=>{
+    const onScroll=()=>setScrolled(window.scrollY>8);
+    onScroll();
+    window.addEventListener("scroll",onScroll,{passive:true});
+    return ()=>window.removeEventListener("scroll",onScroll);
   },[]);
   const toggle=()=>{
     const nd=!isDark;
@@ -21,9 +28,9 @@ export default function Navbar(){
     localStorage.setItem("theme", nd?"dark":"light");
   };
   return (
-    <div className="navbar">
+    <div className={`navbar ${scrolled?"scrolled":""}`}>
       <div className="nav-links">
-        <Link href="/" className="serif" style={{fontWeight:800, textDecoration:"none", color:"var(--ink-deep)", fontSize:18, letterSpacing:".01em"}}>QUIZ HUB</Link>
+        <Link href="/" className="serif" style={{fontWeight:800, textDecoration:"none", color:"var(--ink-deep)", fontSize:18, letterSpacing:".01em", transition:"transform .2s var(--ease-soft)"}} onMouseEnter={e=>e.currentTarget.style.transform="translateY(-1px)"} onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}>QUIZ HUB</Link>
         <Link href="/" className={`nav-link mono ${pathname==="/"?"current":""}`}>Home</Link>
         {user?.role==="admin" && <Link href="/admin" className={`nav-link mono ${pathname==="/admin"?"current":""}`}>Admin</Link>}
       </div>

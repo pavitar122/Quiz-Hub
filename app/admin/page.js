@@ -188,7 +188,7 @@ export default function AdminPage(){
     return cats.filter(c => c.title.toLowerCase().includes(q) || c.id.toLowerCase().includes(q));
   }, [cats, sidebarSearch]);
 
-  if (loading) return <div className="empty-note">Loading…</div>;
+  if (loading) return <div className="loading-row"><span className="spinner"></span> Loading…</div>;
   if (!user || user.role !== "admin") return <div className="empty-note">Not authorized.</div>;
 
   const totalQuestions = (cat) => cat.subcats.reduce((a, s) => a + s.questions.length, 0);
@@ -236,7 +236,7 @@ export default function AdminPage(){
                 </select>
               </div>
               <div className="btn-row">
-                <button className="btn small" disabled={busy} onClick={handleCreateSubject}>Create Subject</button>
+                <button className="btn small" disabled={busy} onClick={handleCreateSubject}>{busy ? <span className="spinner"></span> : "Create Subject"}</button>
               </div>
             </div>
           )}
@@ -273,7 +273,7 @@ export default function AdminPage(){
           <div className="import-drop" style={{ marginBottom: 10 }}>
             <input type="file" accept=".json,.js,.txt" onChange={e => setImportFile(e.target.files[0])} />
           </div>
-          <button className="btn small secondary" style={{ width: "100%" }} disabled={busy} onClick={handleImport}>Import as New Subject</button>
+          <button className="btn small secondary" style={{ width: "100%" }} disabled={busy} onClick={handleImport}>{busy ? <span className="spinner"></span> : "Import as New Subject"}</button>
         </aside>
 
         {/* Main */}
@@ -324,7 +324,7 @@ export default function AdminPage(){
                       </>
                     ) : (
                       <>
-                        <button className="btn small" disabled={busy} onClick={saveSubjectMeta}>Save</button>
+                        <button className="btn small" disabled={busy} onClick={saveSubjectMeta}>{busy ? <span className="spinner"></span> : "Save"}</button>
                         <button className="btn small ghost" onClick={() => { setMetaEditing(false); setMetaForm({ title: editCat.title, description: editCat.description, group: editCat.group }); }}>Cancel</button>
                       </>
                     )}
@@ -415,7 +415,7 @@ function QuestionForm({ form, setForm, mode, busy, onCancel, onSubmit }){
         <textarea className="mf-textarea" rows={2} placeholder="Why this answer is correct" value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} />
       </div>
       <div className="btn-row">
-        <button className="btn small" disabled={busy} onClick={onSubmit}>{mode === "edit" ? "Save Changes" : "Add Question"}</button>
+        <button className="btn small" disabled={busy} onClick={onSubmit}>{busy ? <span className="spinner"></span> : (mode === "edit" ? "Save Changes" : "Add Question")}</button>
         <button className="btn small ghost" onClick={onCancel}>Cancel</button>
       </div>
     </div>

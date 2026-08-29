@@ -18,7 +18,20 @@ export default function SubjectPage(){
     if(user) fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress));
   },[user]);
 
-  if(!cat) return <div className="empty-note">Loading...</div>;
+  if(!cat) return (
+    <>
+      <div className="skeleton skeleton-line w-40" style={{height:12}}></div>
+      <div className="app-header">
+        <div className="skeleton skeleton-line w-40" style={{height:14,marginTop:14}}></div>
+        <div className="skeleton skeleton-line w-60" style={{height:32,marginTop:10}}></div>
+      </div>
+      <div className="skeleton skeleton-card" style={{height:96,marginBottom:14}}></div>
+      <div className="skeleton skeleton-card" style={{height:96,marginBottom:20}}></div>
+      <div className="skeleton-grid">
+        {Array.from({length:4}).map((_,i)=><div key={i} className="skeleton skeleton-card" style={{animationDelay:(i*0.04)+"s"}}></div>)}
+      </div>
+    </>
+  );
   const totalQ=cat.subcats.reduce((a,s)=>a+s.questions.length,0);
   const q=search.trim().toLowerCase();
   const filtered=cat.subcats.map((sc,i)=>({sc,i})).filter(({sc})=> !q || sc.name.toLowerCase().includes(q) || sc.questions.some(qq=>qq.text.toLowerCase().includes(q)));

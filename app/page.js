@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
+import Counter from "@/components/Counter";
 
 export default function HomePage(){
   const [cats,setCats]=useState([]);
@@ -10,12 +11,14 @@ export default function HomePage(){
   const [search,setSearch]=useState("");
   const [filter,setFilter]=useState("all");
   const [progress,setProgress]=useState(null);
+  const [loading,setLoading]=useState(true);
   const { user } = useAuth();
 
   useEffect(()=>{
     fetch("/api/questions").then(r=>r.json()).then(d=>{
       setCats(d.categories||[]);
       setGroups(d.groups||[]);
+      setLoading(false);
     });
   },[]);
   useEffect(()=>{
@@ -41,6 +44,20 @@ export default function HomePage(){
   const totalQGroup=groupCats.reduce((a,c)=>a+(c.subcats?.reduce((s,sc)=>s+sc.questions.length,0)||0),0);
   const acc = overallAccuracy(progress);
   const weak = weakest(progress,cats.filter(c=>c.group===activeApp));
+
+  if(loading){
+    return (
+      <>
+        <div className="app-header">
+          <span className="dwg-tag mono skeleton skeleton-line w-40" style={{display:"inline-block",height:14}}>&nbsp;</span>
+          <div className="skeleton skeleton-line w-60" style={{height:34,marginTop:10}}></div>
+        </div>
+        <div className="skeleton-grid" style={{marginTop:24}}>
+          {Array.from({length:6}).map((_,i)=><div key={i} className="skeleton skeleton-card" style={{animationDelay:(i*0.04)+"s"}}></div>)}
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -73,10 +90,10 @@ export default function HomePage(){
       )}
 
       <div className="stat-strip">
-        <div className="stat-chip"><div className="num serif">{totalQGroup}</div><div className="lab mono">Questions In This App</div></div>
-        <div className="stat-chip"><div className="num serif">{acc===null?"—":acc+"%"}</div><div className="lab mono">Overall Accuracy</div></div>
-        <div className="stat-chip"><div className="num serif">{progress?.stats?.bestStreak||0}</div><div className="lab mono">Best Streak</div></div>
-        <div className="stat-chip"><div className="num serif">{progress?.stats?.sessionsCompleted||0}</div><div className="lab mono">Sessions Done</div></div>
+        <div className="stat-chip"><div className="num serif"><Counter value={totalQGroup} /></div><div className="lab mono">Questions In This App</div></div>
+        <div className="stat-chip"><div className="num serif">{acc===null?"—":<Counter value={acc} suffix="%" />}</div><div className="lab mono">Overall Accuracy</div></div>
+        <div className="stat-chip"><div className="num serif"><Counter value={progress?.stats?.bestStreak||0} /></div><div className="lab mono">Best Streak</div></div>
+        <div className="stat-chip"><div className="num serif"><Counter value={progress?.stats?.sessionsCompleted||0} /></div><div className="lab mono">Sessions Done</div></div>
       </div>
 
       {weak && <div className="empty-note" style={{textAlign:"left",marginBottom:18}}>🎯 <strong>Suggested focus:</strong> "{weak.name}" ({weak.catTitle}) — best {weak.pct}%.</div>}
