@@ -1,0 +1,86 @@
+"use client";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
+
+export default function SubjectPage(){
+  const { id } = useParams();
+  const [cat,setCat]=useState(null);
+  const [mode,setMode]=useState("test");
+  const [search,setSearch]=useState("");
+  const [progress,setProgress]=useState(null);
+  const { user } = useAuth();
+  useEffect(()=>{
+    fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>setCat(d.category));
+  },[id]);
+  useEffect(()=>{
+    if(user) fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress));
+  },[user]);
+
+  if(!cat) return <div className="empty-note">Loading...</div>;
+  const totalQ=cat.subcats.reduce((a,s)=>a+s.questions.length,0);
+  const q=search.trim().toLowerCase();
+  const filtered=cat.subcats.map((sc,i)=>({sc,i})).filter(({sc})=> !q || sc.name.toLowerCase().includes(q) || sc.questions.some(qq=>qq.text.toLowerCase().includes(q)));
+  const bookCount=(progress?.bookmarks?.[cat.id]||[]).length;
+  const missCount=Object.values(progress?.missCounts?.[cat.id]||{}).filter(v=>v>0).length;
+  const fullBest=(progress?.bestScores?.[cat.id]||{})["FULL"];
+  const randomBest=(progress?.bestScores?.[cat.id]||{})["RANDOM"];
+
+  return (
+    <>
+      <div className="top-bar">
+        <Link href="/" className="back-link">← All Categories</Link>
+        {user?.role==="admin" && <Link href="/admin" className="back-link">Admin Panel</Link>}
+      </div>
+      <div className="app-header">
+        <span className="dwg-tag mono">{cat.icon} · CATEGORY OVERVIEW</span>
+        <h1 className="serif">{cat.title}</h1>
+        <p>{cat.description}</p>
+      </div>
+      <div className="mode-toggle mono">
+        <button className={mode==="test"?"active":""} onClick={()=>setMode("test")}>Test Mode</button>
+        <button className={mode==="practice"?"active":""} onClick={()=>setMode("practice")}>Practice Mode</button>
+      </div>
+      <Link href={`/quiz/${cat.id}?mode=${mode}&type=full`} style={{textDecoration:"none"}}>
+        <div className="dwg-card full-run-card">
+          <span className="dwg-tag mono">DWG-00 · FULL CATEGORY RUN</span>
+          <h2 className="serif">Full Category Run — All {totalQ} Questions</h2>
+          <div className="meta mono">{cat.subcats.length} subtopics{fullBest ? ` · Best: ${fullBest.correct}/${fullBest.total} (${fullBest.pct}%)`:""}</div>
+        </div>
+      </Link>
+      <Link href={`/quiz/${cat.id}?mode=${mode}&type=random`} style={{textDecoration:"none"}}>
+        <div className="dwg-card full-run-card alt">
+          <span className="dwg-tag mono">DWG-R0 · RANDOM DRAW</span>
+          <h2 className="serif">Random 30 Questions</h2>
+          <div className="meta mono">Shuffled mix{randomBest ? ` · Best: ${randomBest.correct}/${randomBest.total} (${randomBest.pct}%)`:""}</div>
+        </div>
+      </Link>
+      <div className="btn-row" style={{marginBottom:26}}>
+        <Link href={`/quiz/${cat.id}?mode=${mode}&type=bookmarked`} className={`btn secondary ${bookCount===0?"":""}`} style={{opacity:bookCount===0?0.4:1, pointerEvents:bookCount===0?"none":"auto", textDecoration:"none", display:"inline-block"}}>★ Review Bookmarked ({bookCount})</Link>
+        <Link href={`/quiz/${cat.id}?mode=${mode}&type=missed`} className="btn secondary" style={{opacity:missCount===0?0.4:1, pointerEvents:missCount===0?"none":"auto", textDecoration:"none", display:"inline-block"}}>↻ Smart Review — Past Misses ({missCount})</Link>
+      </div>
+      <div className="searchbar">
+        <span className="icon mono">SEARCH</span>
+        <input type="text" placeholder="Filter subtopics..." value={search} onChange={e=>setSearch(e.target.value)} />
+      </div>
+      <div className="subcat-grid">
+        {filtered.length===0 ? <div className="empty-note">No subtopics match.</div> :
+          filtered.map(({sc,i})=>{
+            const best=(progress?.bestScores?.[cat.id]||{})[String(i)];
+            const pct=best?best.pct:0;
+            return (
+              <Link key={i} href={`/quiz/${cat.id}?mode=${mode}&type=sub&idx=${i}`} style={{textDecoration:"none"}}>
+                <div className="subcat-card">
+                  <span className="dwg-tag mono">DWG-0{i+1}</span>
+                  <h3 className="serif">{sc.name}</h3>
+                  <div className="row"><span>{sc.questions.length} questions</span>{best ? <span className="best">{best.correct}/{best.total} ({best.pct}%)</span> : <span>Not attempted</span>}</div>
+                  <div className="mini-bar"><div className="mini-bar-fill" style={{width:pct+"%"}}></div></div>
+                </div>
+              </Link>
+            );
+          })}
+      </div>
+    </>
+  );
+}

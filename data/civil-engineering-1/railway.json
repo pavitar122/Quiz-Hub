@@ -1,0 +1,2221 @@
+{
+  "id": "railway-engineering",
+  "title": "Railway Engineering",
+  "description": "MCQs covering rails, sleepers, ballast, fasteners, gradients and curves, and points and crossings.",
+  "subcats": [
+    {
+      "name": "Rails",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The height of the rail for 52 kg flat footed rail section is",
+          "options": [
+            "143 mm",
+            "156 mm",
+            "172 mm",
+            "129 mm"
+          ],
+          "correct": 1,
+          "expl": "The standard overall height of the 52 kg flat-footed rail section used on Indian Railways is 156 mm."
+        },
+        {
+          "num": 2,
+          "text": "Gauge is the distance between",
+          "options": [
+            "Center to center of rails",
+            "Running faces of rails",
+            "Outer faces of rails",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Gauge is defined as the minimum clear horizontal distance between the running (inner/gauge) faces of the two rails, measured just below the rail top."
+        },
+        {
+          "num": 3,
+          "text": "60 R rails are mostly used in",
+          "options": [
+            "Broad Gauge",
+            "Narrow Gauge",
+            "Meter Gauge",
+            "Broad gauge"
+          ],
+          "correct": 2,
+          "expl": "60 R rail section, being lighter than the standard 52 kg/60 kg BG rails, is mostly used on Meter Gauge track."
+        },
+        {
+          "num": 4,
+          "text": "The standard length of rail for Broad Gauge and Meter Gauge are respectively",
+          "options": [
+            "12 m and 12 m",
+            "12 m and 13 m",
+            "13 m and 12 m",
+            "13 m and 13 m"
+          ],
+          "correct": 2,
+          "expl": "Indian Railways uses a standard rail panel length of 13 m for Broad Gauge and 12 m for Meter Gauge track."
+        },
+        {
+          "num": 5,
+          "text": "The cross-sectional area of 52 kg flat footed rail is",
+          "options": [
+            "6155 mm2",
+            "6615 mm2",
+            "7235 mm2",
+            "7825 mm2"
+          ],
+          "correct": 1,
+          "expl": "The 52 kg flat-footed rail section has a cross-sectional area of about 6615 mm², consistent with its 52 kg/m weight and standard steel density."
+        },
+        {
+          "num": 6,
+          "text": "For developing thinly populated areas, the correct choice of gauge is",
+          "options": [
+            "Broad Gauge",
+            "Meter Gauge",
+            "Narrow Gauge",
+            "Any of the above"
+          ],
+          "correct": 2,
+          "expl": "Narrow Gauge, being cheaper to construct and operate, is the appropriate choice for opening up thinly populated or difficult-terrain areas with low traffic density."
+        },
+        {
+          "num": 7,
+          "text": "52 kg rails are mostly used in",
+          "options": [
+            "Broad Gauge",
+            "Meter Gauge",
+            "Narrow gauge",
+            "Both (A) and (B)"
+          ],
+          "correct": 0,
+          "expl": "The heavier 52 kg rail section is used predominantly on Broad Gauge track, which carries higher axle loads and traffic density."
+        },
+        {
+          "num": 8,
+          "text": "Head width of 52 kg rail section is",
+          "options": [
+            "61.9 mm",
+            "66.7 mm",
+            "67 mm",
+            "72.33 mm"
+          ],
+          "correct": 2,
+          "expl": "The standard head width of the 52 kg rail section, as per Indian Railways specification, is 67 mm."
+        },
+        {
+          "num": 9,
+          "text": "The width of foot for 92 R rail section is",
+          "options": [
+            "100 mm",
+            "122.2 mm",
+            "136.5 mm",
+            "146.0 mm"
+          ],
+          "correct": 2,
+          "expl": "For the 90R (92 R) rail section, the standard foot width specified is 136.5 mm."
+        },
+        {
+          "num": 10,
+          "text": "Due to battering action of wheels over the end of the rails, the rails get bent down and are deflected at ends. These rails are called",
+          "options": [
+            "Roaring rails",
+            "Hogged rails",
+            "Corrugated rails",
+            "Buckled rails"
+          ],
+          "correct": 1,
+          "expl": "When wheel impact at rail joints causes the rail ends to bend/deflect downward, this condition is called 'hogging' of the rail ends."
+        },
+        {
+          "num": 11,
+          "text": "Joints are generally provided",
+          "options": [
+            "On curves",
+            "On straight track",
+            "When two different rail sections are required to be joined",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Rail joints are most commonly encountered on curves, since standard rail panel lengths mean joints recur periodically along the track, including through curved sections."
+        },
+        {
+          "num": 12,
+          "text": "The purpose of providing fillet in a rail section is to",
+          "options": [
+            "Increase the lateral strength",
+            "Increase the vertical stiffness",
+            "Avoid the stress concentration",
+            "Reduce the wear"
+          ],
+          "correct": 2,
+          "expl": "The fillets (rounded transitions) at the junctions of head-web and web-foot in a rail section are provided to avoid stress concentration at these re-entrant corners."
+        },
+        {
+          "num": 13,
+          "text": "The main function of a fish plate is",
+          "options": [
+            "To join the two rails together",
+            "To join rails with the sleeper",
+            "To allow the rail to expand and contract",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The primary function of a fish plate is to structurally join the ends of two adjoining rails at a joint, maintaining continuity and alignment."
+        },
+        {
+          "num": 14,
+          "text": "Tensile strength of steel used in a rails should not be less than",
+          "options": [
+            "450 MPa",
+            "500 MPa",
+            "700 MPa",
+            "850 MPa"
+          ],
+          "correct": 2,
+          "expl": "Rail steel is required to have a minimum tensile strength of 700 MPa to withstand the repeated dynamic wheel loads it experiences in service."
+        },
+        {
+          "num": 15,
+          "text": "Two important constituents in the composition of steel used for rail are",
+          "options": [
+            "Carbon and silicon",
+            "Manganese and phosphorous",
+            "Carbon and manganese",
+            "Carbon and sulfur"
+          ],
+          "correct": 2,
+          "expl": "Rail steel composition is primarily controlled through its carbon and manganese content, which govern its strength, hardness, and wear resistance."
+        },
+        {
+          "num": 16,
+          "text": "Largest percentage of material in the rail is in its",
+          "options": [
+            "Head",
+            "Web",
+            "Foot",
+            "Head and foot both"
+          ],
+          "correct": 0,
+          "expl": "The rail head, which must resist wear and carry the wheel contact load, contains the largest proportion of the rail's cross-sectional material."
+        },
+        {
+          "num": 17,
+          "text": "The type of bearing plate used in all joints and on curves to give better bearing area of the rails is",
+          "options": [
+            "Flat mild steel bearing plate",
+            "Mild steel canted bearing plate",
+            "Cast iron anti creep bearing plate",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A mild steel canted bearing plate is used at joints and on curves; the cant built into the plate helps maintain the correct rail inclination while providing a wider bearing area."
+        },
+        {
+          "num": 18,
+          "text": "Wear of rails is maximum in",
+          "options": [
+            "Tangent track",
+            "Sharp curve",
+            "Tunnels",
+            "Coastal area"
+          ],
+          "correct": 1,
+          "expl": "Rail wear is generally greatest on sharp curves because of the increased lateral forces and wheel-flange contact. Coastal environments can accelerate corrosion, but they are not the standard answer to this rail-wear question."
+        },
+        {
+          "num": 19,
+          "text": "Ordinary rails are made for",
+          "options": [
+            "Mild steel",
+            "Cast iron",
+            "Wrought iron",
+            "High carbon steel"
+          ],
+          "correct": 3,
+          "expl": "Ordinary railway rails are made from high-carbon rail steel, selected for high strength, hardness and resistance to wear under repeated wheel loads."
+        },
+        {
+          "num": 20,
+          "text": "Creep is the",
+          "options": [
+            "Longitudinal movement of rail",
+            "Lateral movement of rail",
+            "Vertical movement of rail",
+            "Difference in level of two"
+          ],
+          "correct": 0,
+          "expl": "Creep refers to the gradual longitudinal movement of rails relative to the sleepers, caused by traffic, temperature effects, and braking/accelerating forces."
+        },
+        {
+          "num": 21,
+          "text": "Anti creep bearing plates are provided on",
+          "options": [
+            "Bridges and approaches",
+            "Joints",
+            "Both (A) and (B)",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "Per the source answer key, anti-creep bearing plates are identified as not being confined to bridges/approaches or joints alone, so 'None of the above' is the marked answer."
+        },
+        {
+          "num": 22,
+          "text": "Creep does not",
+          "options": [
+            "Vary at uniform rate",
+            "Continue in one direction",
+            "Occur in both the rails by equal amount",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Creep is an irregular phenomenon: it does not vary at a uniform rate, does not continue steadily in one direction, and is not equal in both rails — so 'all of the above' correctly describes what creep does NOT do."
+        },
+        {
+          "num": 23,
+          "text": "Creep of rails is measured by",
+          "options": [
+            "Creep indicator",
+            "Fishing string",
+            "Anchors",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The longitudinal movement (creep) of rails is measured in the field using a device called a creep indicator, fixed at reference points along the track."
+        },
+        {
+          "num": 24,
+          "text": "Creep causes",
+          "options": [
+            "Buckling of track",
+            "Movement of sleepers out of position",
+            "Points and crossing get distorted",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Unchecked creep can cause track buckling, displacement of sleepers from their correct position, and distortion of points and crossings — so all of these are consequences of creep."
+        },
+        {
+          "num": 25,
+          "text": "Creep anchors are usually not provided at",
+          "options": [
+            "Bridges",
+            "Level crossings",
+            "Points and crossings",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Creep anchors are generally omitted at bridges, since the bridge structure itself and its fixed rail fastenings already restrain longitudinal rail movement there."
+        },
+        {
+          "num": 26,
+          "text": "Minimum tensile strength of rail place should be",
+          "options": [
+            "65 kg/mm²",
+            "72 kg/mm²",
+            "79 kg/mm²",
+            "69 kg/mm²"
+          ],
+          "correct": 1,
+          "expl": "The minimum tensile strength specified for the rail steel in the source convention is 72 kg/mm² (approximately 706 MPa). The unit in the supplied options was written incorrectly as kg/m²; it has been corrected to kg/mm²."
+        },
+        {
+          "num": 27,
+          "text": "Maximum permissible wear on the top of rail is:",
+          "options": [
+            "2% of the wt of rail",
+            "3% of the wt of rail",
+            "4% of the wt of rail",
+            "5% of the wt of rail"
+          ],
+          "correct": 3,
+          "expl": "Indian Railways permits a maximum wear on the rail head of up to 5% of the original weight of the rail before condemnation/renewal is considered."
+        },
+        {
+          "num": 28,
+          "text": "Minimum length of long welded rail for BG track is",
+          "options": [
+            "150 m",
+            "250 m",
+            "300 m",
+            "500 m"
+          ],
+          "correct": 1,
+          "expl": "Under current Indian Railways practice, a welded rail longer than 250 m on BG normally functions as a Long Welded Rail (LWR). The original options did not contain 250 m, so the 200 m option has been corrected to 250 m."
+        },
+        {
+          "num": 29,
+          "text": "Short welded rail is",
+          "options": [
+            "One which contracts and expands only at the ends",
+            "One which contracts and expands throughout its entire length",
+            "One which does not contract or expand at all",
+            "One which contracts and expands only at the middle"
+          ],
+          "correct": 1,
+          "expl": "A short welded rail (SWR), being shorter than the LWR breathing length, contracts and expands throughout its entire length in response to temperature change."
+        },
+        {
+          "num": 30,
+          "text": "Which one of the following is not related to theories of creep of rails?",
+          "options": [
+            "Wave theory",
+            "Percussion theory",
+            "Drag theory",
+            "Reversal theory"
+          ],
+          "correct": 3,
+          "expl": "Rail creep is explained by the wave theory, the percussion theory, and the drag theory; 'reversal theory' is not one of the recognized theories of creep."
+        },
+        {
+          "num": 31,
+          "text": "Permissible contact stress between rail and wheel is",
+          "options": [
+            "21.3 kg/mm2",
+            "20.1 kg/mm2",
+            "21.6 kg/mm2",
+            "21.15 kg/mm2"
+          ],
+          "correct": 2,
+          "expl": "The permissible contact stress between the rail and wheel, as specified in the source, is 21.6 kg/mm²."
+        },
+        {
+          "num": 32,
+          "text": "Which of the following theory is/are used to explain creep of rails?",
+          "options": [
+            "Wave theory",
+            "Percussion theory",
+            "Both A and B",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Both the wave theory and the percussion theory are recognized explanations used to describe the mechanism of rail creep, so 'Both A and B' is correct."
+        },
+        {
+          "num": 33,
+          "text": "Max. creep allowed on the B.G. track is",
+          "options": [
+            "150 mm",
+            "200 mm",
+            "250 mm",
+            "300 mm"
+          ],
+          "correct": 0,
+          "expl": "On Broad Gauge track, the maximum permissible creep before corrective de-stressing/adjustment is required is 150 mm."
+        },
+        {
+          "num": 34,
+          "text": "Which of the statements is true regarding drag theory of creep.",
+          "options": [
+            "The creep is caused due to drag of locomotive",
+            "Creep is caused due to drag of only driving wheels of locomotive",
+            "Drag of driving wheels of locomotive have opposite effect with respect to direction of creep",
+            "Locomotive's driving wheel and wagon's wheel combinally produce drag, which causes creep of the rail"
+          ],
+          "correct": 2,
+          "expl": "The drag theory holds that the drag produced by a locomotive's driving wheels acts in a direction opposite to the overall direction of rail creep, distinguishing it from the wave/percussion mechanisms."
+        },
+        {
+          "num": 35,
+          "text": "Match the following (Buckling/Dog spikes/Creep/Morgan key)",
+          "options": [
+            "(i)4 (ii)1 (iii)3 (iv)2",
+            "(i)3 (ii)1 (iii)2 (iv)4",
+            "(i)4 (ii)2 (iii)3 (iv)1",
+            "(i)3 (ii)4 (iii)1 (iv)2"
+          ],
+          "correct": 0,
+          "expl": "Buckling of rail is caused by thermal expansion (4); Dog spikes are used with wooden sleepers (1); Creep of rail relates to steel sleepers'/track structure behavior (3); Morgan key is associated with C.I. chairs (2) — matching option (A)."
+        },
+        {
+          "num": 36,
+          "text": "The function of wing rail is",
+          "options": [
+            "To prevent the derailment of train",
+            "To provide desired super elevation",
+            "To prevent wear and tear of rail",
+            "To channelize wheel in their proper routes"
+          ],
+          "correct": 3,
+          "expl": "The wing rails at a crossing guide (channelize) the wheel flanges smoothly across the gap at the nose of the crossing, keeping them on their correct route."
+        },
+        {
+          "num": 37,
+          "text": "A 45 kg rail on BG tracks in Indian conditions is expected to carry approximate axle loads of:",
+          "options": [
+            "21 t",
+            "22 t",
+            "23 t",
+            "24 t"
+          ],
+          "correct": 2,
+          "expl": "A 45 kg rail section on BG track under Indian conditions is designed to carry approximate axle loads of 23 tonnes."
+        },
+        {
+          "num": 38,
+          "text": "The purpose of check rail is:",
+          "options": [
+            "To aid the flange of the opposite wheel passing through the crossing to steer clear of the nose",
+            "To avoid derailment per se",
+            "To help control the running speed",
+            "To minimize the laying cost of long distances of trandes"
+          ],
+          "correct": 0,
+          "expl": "A check rail is placed opposite a crossing to guide the back of the opposite wheel's flange, keeping it clear of the crossing nose and preventing the wheel from striking it."
+        },
+        {
+          "num": 39,
+          "text": "According to the wave action for creep of rails, the pitch and depth of wave depend upon:",
+          "options": [
+            "1 and 2 only",
+            "1, 2 and 3",
+            "2, 3 and 4",
+            "3, 4 and 5"
+          ],
+          "correct": 2,
+          "expl": "Per the wave theory of creep, the pitch and depth of the wave formed in the rail depend on track modulus, stiffness of track, and stability of foundation (items 2, 3 and 4)."
+        }
+      ]
+    },
+    {
+      "name": "Sleepers",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Metal sleepers are superior to wooden sleepers with respect to",
+          "options": [
+            "Cost",
+            "Life",
+            "Track circuiting",
+            "Fastening"
+          ],
+          "correct": 1,
+          "expl": "Metal (steel/CI) sleepers generally have a longer service life than wooden sleepers, which are prone to decay, insect attack, and mechanical wear over time."
+        },
+        {
+          "num": 2,
+          "text": "For a sleeper density of (M+5), the number of sleepers required for constructing a broad gauge railway track of length 650 m is",
+          "options": [
+            "975",
+            "918",
+            "900",
+            "880"
+          ],
+          "correct": 2,
+          "expl": "For BG, the standard rail length is 13 m. With sleeper density M+5, the number of sleepers per rail length is 13+5 = 18. For 650 m, there are 650/13 = 50 rail lengths, so total sleepers = 18 × 50 = 900."
+        },
+        {
+          "num": 3,
+          "text": "Minimum composite sleeper index prescribed on Indian Railways for a track sleeper is",
+          "options": [
+            "552",
+            "783",
+            "1352",
+            "1455"
+          ],
+          "correct": 1,
+          "expl": "Indian Railways prescribes a minimum Composite Sleeper Index (CSI) of 783 for a wooden sleeper to be considered suitable for track use."
+        },
+        {
+          "num": 4,
+          "text": "Sleeper density in Indian is normally kept as",
+          "options": [
+            "M+2 to M+7",
+            "M to M+2",
+            "M+5 to M+10",
+            "M"
+          ],
+          "correct": 0,
+          "expl": "Sleeper density on Indian Railways is normally specified in the range M+2 to M+7 (where M is the rail length in metres), depending on traffic and axle load conditions."
+        },
+        {
+          "num": 5,
+          "text": "Standard size of wooden sleeper for Broad Gauge track is",
+          "options": [
+            "275×25×13 cm",
+            "180×20×11.5 cm",
+            "225×23×12 cm",
+            "250×26×12 cm"
+          ],
+          "correct": 0,
+          "expl": "The standard size of a wooden sleeper for Broad Gauge track on Indian Railways is 275 × 25 × 13 cm (length × width × depth)."
+        },
+        {
+          "num": 6,
+          "text": "For a Broad Gauge route with M+7 sleeper density, number of sleepers per rail length is",
+          "options": [
+            "18",
+            "19",
+            "20",
+            "21"
+          ],
+          "correct": 2,
+          "expl": "For BG with a 13 m rail panel, M = 13; sleeper density M+7 = 20 sleepers per rail length."
+        },
+        {
+          "num": 7,
+          "text": "Composite sleeper index is the index of",
+          "options": [
+            "Hardness and strength",
+            "Strength and toughness",
+            "Toughness and wear resistance",
+            "Wear resistance and hardness"
+          ],
+          "correct": 0,
+          "expl": "The Composite Sleeper Index (CSI) is derived from a combination of the timber's hardness and strength properties to gauge its suitability as a sleeper."
+        },
+        {
+          "num": 8,
+          "text": "Number of keys used in CST-9 sleeper is",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A CST-9 (Central Standard Trough, 9 ft) sleeper uses 2 keys per rail seat to secure the rail in the trough/pot at each end."
+        },
+        {
+          "num": 9,
+          "text": "The type of spike used for fixing chairs of bull headed rails to wooden sleepers is",
+          "options": [
+            "Dog spike",
+            "Rail screw",
+            "Elastic spike",
+            "Round spike"
+          ],
+          "correct": 3,
+          "expl": "Round spikes are used for fixing the chairs of bull-headed rails to wooden sleepers. Dog spikes are used for fastening flat-footed rails to wooden sleepers."
+        },
+        {
+          "num": 10,
+          "text": "Pandrol clips cannot be used with",
+          "options": [
+            "Wooden sleepers",
+            "Concrete sleepers",
+            "CST-9 sleepers",
+            "Steel trough sleepers"
+          ],
+          "correct": 2,
+          "expl": "Pandrol clips cannot be used with CST-9 (pot type) sleepers, since their design and fastening arrangement is incompatible with the pot/trough construction of CST-9 sleepers."
+        },
+        {
+          "num": 11,
+          "text": "The main function of sleepers is",
+          "options": [
+            "To support rails",
+            "To hold rails at correct gauge",
+            "To distribute load from rails to ballast",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Sleepers perform multiple functions together: supporting the rails, holding them at the correct gauge, and distributing the wheel loads down to the ballast bed — so 'all of the above' is correct."
+        },
+        {
+          "num": 12,
+          "text": "Ideal sleepers are",
+          "options": [
+            "R.C.C. sleepers",
+            "Steel sleepers",
+            "Cast iron sleepers",
+            "Wooden sleepers"
+          ],
+          "correct": 3,
+          "expl": "Wooden sleepers are traditionally regarded as the ideal sleeper because of their elasticity, ease of fabrication/handling, good insulation, and adaptability to different fastenings."
+        },
+        {
+          "num": 13,
+          "text": "Best wood for wooden sleepers is",
+          "options": [
+            "Chir",
+            "Sal",
+            "Teak",
+            "Shesham"
+          ],
+          "correct": 1,
+          "expl": "Sal is traditionally regarded as the best timber among the listed choices for railway sleepers because of its high strength, hardness and durability."
+        },
+        {
+          "num": 14,
+          "text": "Sleepers density of a particular type depends on",
+          "options": [
+            "Axle load and speed",
+            "Type of section of the rails",
+            "Type of ballast and ballast cushion",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Sleeper density is influenced jointly by axle load and speed, the rail section used, and the type/depth of ballast cushion, so all of these factors are relevant."
+        },
+        {
+          "num": 15,
+          "text": "Spacing of sleepers is kept",
+          "options": [
+            "Same throughout the length of rail",
+            "Closer near the joints",
+            "Closer at the middle of rails",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Sleeper spacing is kept closer near rail joints because the joint is the weakest part of the track and receives greater impact from moving loads."
+        },
+        {
+          "num": 16,
+          "text": "In India, generally sleeper density of sleepers per rail length used is",
+          "options": [
+            "12",
+            "18",
+            "24",
+            "30"
+          ],
+          "correct": 1,
+          "expl": "A commonly used sleeper density on Indian Railways is 18 sleepers per standard rail length, falling within the typical M+2 to M+7 range."
+        },
+        {
+          "num": 17,
+          "text": "Composite sleepers index (C.S.I.) used to measure mechanical strength of timber is defined to moisture content of",
+          "options": [
+            "12%",
+            "13%",
+            "14%",
+            "15%"
+          ],
+          "correct": 0,
+          "expl": "The Composite Sleeper Index is standardized to a timber moisture content of 12%, ensuring consistent comparison of mechanical strength between different timber samples."
+        },
+        {
+          "num": 18,
+          "text": "CST-9 sleeper is used upto speed of",
+          "options": [
+            "110 kmph",
+            "120 kmph",
+            "130 kmph",
+            "145 kmph"
+          ],
+          "correct": 2,
+          "expl": "CST-9 (pot type) sleepers are permitted for use up to a speed of 130 kmph on Indian Railways."
+        },
+        {
+          "num": 19,
+          "text": "Match the following: Ballast/Sleepers/Fishplates/Saddle plate with their functions",
+          "options": [
+            "(i)4 (ii)1 (iii)2 (iv)3",
+            "(i)3 (ii)2 (iii)1 (iv)4",
+            "(i)4 (ii)1 (iii)3 (iv)2",
+            "(i)3 (ii)2 (iii)4 (iv)1"
+          ],
+          "correct": 3,
+          "expl": "Ballast provides elasticity to the track (3); Sleepers maintain gauge (2); Fishplates connect rails at their ends (4); Saddle plate strengthens/supports steel sleepers (1) — matching option (D)."
+        },
+        {
+          "num": 20,
+          "text": "Squaring of sleepers through packing consists of",
+          "options": [
+            "Adjusting the sleepers to be perpendicular to the rails",
+            "Adjusting the ballast sleepers to space them parallel to each other",
+            "Cutting the edges of the sleepers to a square shape",
+            "Adjusting the rails to be perpendicular to sleepers"
+          ],
+          "correct": 0,
+          "expl": "Squaring of sleepers means adjusting the sleepers so that they are perpendicular to the rails. This keeps the sleepers correctly aligned and square to the track."
+        },
+        {
+          "num": 21,
+          "text": "What will be the optimum depth of ballast cushion required for a BG railway track below the sleepers with sleeper density of (M+5) and bottom width of 32 cm?",
+          "options": [
+            "20 cm",
+            "22 cm",
+            "28 cm",
+            "30 cm"
+          ],
+          "correct": 0,
+          "expl": "For a BG track with the given sleeper density and bottom ballast width, the optimum ballast cushion depth below the sleeper works out to 20 cm, per Indian Railways design charts."
+        }
+      ]
+    },
+    {
+      "name": "Ballast",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The formation width for a single line meter gauge track in embankment as adopted on Indian Railways is",
+          "options": [
+            "4.27 m",
+            "4.88 m",
+            "5.49 m",
+            "6.10 m"
+          ],
+          "correct": 1,
+          "expl": "For a single-line Meter Gauge track on embankment, Indian Railways specifies a formation width of 4.88 m to provide adequate shoulder and side-slope support."
+        },
+        {
+          "num": 2,
+          "text": "Minimum depth of ballast cushion in cm for a Broad Gauge wooden sleeper of size 275×25×13 cm with 75 cm sleeper spacing is",
+          "options": [
+            "15",
+            "20",
+            "25",
+            "30"
+          ],
+          "correct": 2,
+          "expl": "For BG wooden sleepers of this size with standard spacing, IR specifies a minimum ballast cushion of 25 cm below the sleeper to distribute load and provide drainage."
+        },
+        {
+          "num": 3,
+          "text": "The formation width in meter for a double line Broad Gauge track in cutting (excluding drains) as adopted on Indian Railways is",
+          "options": [
+            "6.10",
+            "8.84",
+            "10.21",
+            "10.82"
+          ],
+          "correct": 2,
+          "expl": "For a double-line BG track in cutting (excluding drains), the standard formation width adopted by Indian Railways is 10.21 m."
+        },
+        {
+          "num": 4,
+          "text": "The nominal size in mm of ballast used for points and crossings is",
+          "options": [
+            "25",
+            "40",
+            "50",
+            "10"
+          ],
+          "correct": 0,
+          "expl": "A smaller nominal ballast size of 25 mm is used at points and crossings so that the ballast can be packed tightly around the closely spaced fittings and switch components."
+        },
+        {
+          "num": 5,
+          "text": "Width of ballast section in 'm' for Broad gauge is",
+          "options": [
+            "1.83",
+            "2.25",
+            "3.35",
+            "4.30"
+          ],
+          "correct": 2,
+          "expl": "The standard width of the ballast section (shoulder to shoulder) for Broad Gauge track is 3.35 m, providing adequate lateral support to the sleepers."
+        },
+        {
+          "num": 6,
+          "text": "The side slope of embankment for a railway track is taken as",
+          "options": [
+            "1:1",
+            "1.5:1",
+            "2:1",
+            "2.5:1"
+          ],
+          "correct": 2,
+          "expl": "Railway embankments are typically constructed with a side slope of 2:1 (horizontal:vertical) for stability of the earthwork under traffic loading."
+        },
+        {
+          "num": 7,
+          "text": "The formation width for a double line B.G. in embankment is",
+          "options": [
+            "7.32 m",
+            "8.53 m",
+            "10.67 m",
+            "10.06 m"
+          ],
+          "correct": 2,
+          "expl": "For a double-line Broad Gauge track on embankment, Indian Railways specifies a formation width of 10.67 m to accommodate two tracks with adequate shoulder width."
+        },
+        {
+          "num": 8,
+          "text": "The quantity of ballast required per meter length of a B.G. track is",
+          "options": [
+            "1.036 m3",
+            "0.071 m3",
+            "0.053 m3",
+            "0.41 m3"
+          ],
+          "correct": 0,
+          "expl": "Based on the standard BG ballast section dimensions (width, depth, and side slopes), the quantity of ballast works out to approximately 1.036 m³ per running metre of track."
+        },
+        {
+          "num": 9,
+          "text": "The formation width for a railway track depends as",
+          "options": [
+            "Type of gauge",
+            "Number of tracks to be laid side by side",
+            "Both (A) and (B) above",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Formation width depends on both the gauge (BG/MG/NG, which fixes the track's own width) and the number of parallel tracks to be accommodated, so both factors govern it."
+        },
+        {
+          "num": 10,
+          "text": "The loose layer of ballast above the packed layer, which surrounds sleeper is called",
+          "options": [
+            "Adzing",
+            "Ramming",
+            "Ballast crib",
+            "Boxing"
+          ],
+          "correct": 3,
+          "expl": "'Boxing' refers to the loose ballast filled and finished around and between sleepers above the compacted packing layer, giving a neat finished ballast profile."
+        },
+        {
+          "num": 11,
+          "text": "For packing pot sleepers, which of the ballast materials is used",
+          "options": [
+            "Broken stone",
+            "Sand",
+            "Ashes",
+            "River pebbles"
+          ],
+          "correct": 1,
+          "expl": "Pot sleepers (used with cast-iron plate/pot type fittings) are packed with sand because it flows into and fills the pots effectively, unlike coarse broken stone."
+        },
+        {
+          "num": 12,
+          "text": "The loose layer of ballast above the packed layer, which surrounds the sleeper is called",
+          "options": [
+            "Adzing",
+            "Ramming",
+            "Ballast crib",
+            "Boxing"
+          ],
+          "correct": 3,
+          "expl": "This loose surrounding layer above the compacted ballast is termed 'Boxing', giving the track a finished, uniform ballast profile around the sleepers."
+        },
+        {
+          "num": 13,
+          "text": "For packing pot sleepers, which of the ballast material is used",
+          "options": [
+            "Broken Stone",
+            "River pebbles",
+            "Sand",
+            "Ashes"
+          ],
+          "correct": 2,
+          "expl": "Sand is used to pack pot sleepers since it can settle into and fill the pot recesses beneath the rail seat, which coarse ballast cannot do effectively."
+        },
+        {
+          "num": 14,
+          "text": "The best suitable grading for ballast material is",
+          "options": [
+            "2.1 cm to 6.2 cm",
+            "1.5 cm to 6.11 cm",
+            "1.9 cm to 5.1 cm",
+            "2.5 cm to 5.8 cm"
+          ],
+          "correct": 2,
+          "expl": "Indian Railways specifies a ballast grading of about 1.9 cm to 5.1 cm as the ideal size range, balancing good interlocking with adequate drainage voids."
+        },
+        {
+          "num": 15,
+          "text": "Minimum quantity of ballast required to make 1 m of B.G. track is",
+          "options": [
+            "1.23 m3",
+            "2.15 m3",
+            "1.025 m3",
+            "1.036 m3"
+          ],
+          "correct": 3,
+          "expl": "Based on the standard BG ballast cross-section, the minimum quantity of ballast required per metre length of track is 1.036 m³."
+        }
+      ]
+    },
+    {
+      "name": "Fasteners",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Dog spikes are used to fix rail to the",
+          "options": [
+            "Wooden sleeper",
+            "Steel trough sleeper",
+            "Cast iron sleeper",
+            "Concrete sleeper"
+          ],
+          "correct": 0,
+          "expl": "Dog spikes are driven into wooden sleepers to hold the rail (via chairs or bearing plates) in place; they cannot be used with steel or concrete sleepers, which need bolted or clip fastenings."
+        },
+        {
+          "num": 2,
+          "text": "Number of dog spikes normally used per rail seat on curved track is",
+          "options": [
+            "One on either side",
+            "Two outside and one inside",
+            "One outside and two inside",
+            "Two outside and two inside"
+          ],
+          "correct": 1,
+          "expl": "On curved track, two dog spikes are normally provided on the outside and one on the inside of each rail seat, giving extra resistance against the outward forces acting on the rail."
+        },
+        {
+          "num": 3,
+          "text": "When the rail end rests on a joint sleeper, the joint is termed as",
+          "options": [
+            "Supported joint",
+            "Suspended joint",
+            "Base joint",
+            "Welded joint"
+          ],
+          "correct": 0,
+          "expl": "A joint is called a 'supported joint' when the rail ends of adjoining rails rest directly on a sleeper placed under the joint, giving direct support."
+        },
+        {
+          "num": 4,
+          "text": "Staggered joints are generally provided",
+          "options": [
+            "On curves",
+            "On straight tracks",
+            "To join two rail sections",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "On curves, staggered (broken) joints are preferred over square joints because they reduce the jerks and disturb the alignment less as wheels pass over them."
+        },
+        {
+          "num": 5,
+          "text": "The thickness of fish plate generally used in Indian Railway is",
+          "options": [
+            "10 mm",
+            "16 mm",
+            "20 mm",
+            "25 mm"
+          ],
+          "correct": 2,
+          "expl": "Indian Railways commonly uses fish plates of about 20 mm thickness, sized to match the rail's fishing plane and provide adequate strength at the joint."
+        },
+        {
+          "num": 6,
+          "text": "The main function of a fish plate is",
+          "options": [
+            "To join the two rails together",
+            "To join rails with sleeper",
+            "To allow rail to expand and contract freely",
+            "All of the above"
+          ],
+          "correct": 0,
+          "expl": "The primary function of a fish plate is to structurally connect the ends of two adjoining rails, maintaining alignment and transferring wheel loads across the joint."
+        },
+        {
+          "num": 7,
+          "text": "Number of fish bolts per fish plate is",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "expl": "A standard rail joint uses 4 fish bolts per fish plate (in the common 2-hole-per-rail-end pattern), sized to hold the rail ends firmly together at the joint."
+        },
+        {
+          "num": 8,
+          "text": "Fish plate is in contact with rail at",
+          "options": [
+            "Web of rail",
+            "Fishing plane",
+            "Head of rail",
+            "Foot of rail"
+          ],
+          "correct": 1,
+          "expl": "The fish plate bears against the 'fishing plane' — the inclined surfaces machined on the rail web between head and foot — which is shaped to match the fish plate profile."
+        },
+        {
+          "num": 9,
+          "text": "The rails directly on girder are fastened to the top flange of girder by",
+          "options": [
+            "Hook bolts",
+            "Dog spikes",
+            "Fang bolts",
+            "Rail screws"
+          ],
+          "correct": 0,
+          "expl": "Where rails are laid directly on steel girders (girder bridges), hook bolts are used to clamp the rail foot to the top flange of the girder."
+        },
+        {
+          "num": 10,
+          "text": "Fish plates are used in rail joints to:",
+          "options": [
+            "1, 2, 3 and 4",
+            "1, 2 and 3 only",
+            "2, 3 and 4 only",
+            "1, 2 and 4 only"
+          ],
+          "correct": 3,
+          "expl": "Fish plates maintain rail continuity, permit thermal expansion/contraction, and maintain alignment at the joint; they do not transfer load to the ballast (that is the sleeper/ballast's function), so option (D) covering 1, 2 and 4 is correct."
+        },
+        {
+          "num": 11,
+          "text": "Match List-I (Device) with List-II (Used for)",
+          "options": [
+            "(i)1 (ii)3 (iii)2 (iv)4",
+            "(i)4 (ii)2 (iii)3 (iv)1",
+            "(i)1 (ii)2 (iii)3 (iv)4",
+            "(i)4 (ii)3 (iii)2 (iv)1"
+          ],
+          "correct": 1,
+          "expl": "Pandrol clip provides elastic rail fastening (4); Densometer measures packing voids under sleeper ends (2); Viseur's mire measures unevenness of rail top for alignment correction (3); Cotters fix tie bars to CI sleepers (1)."
+        },
+        {
+          "num": 12,
+          "text": "Composite Sleeper Index is employed to determine",
+          "options": [
+            "Sleeper density requirement",
+            "Number of fixtures required for a certain type of sleeper",
+            "Durability of sleeper",
+            "Mechanical strength of wooden sleeper whereby its suitability for use is assessed"
+          ],
+          "correct": 3,
+          "expl": "Composite Sleeper Index (CSI) is a numerical index combining timber properties (like strength and elasticity) used to assess whether a wooden sleeper is mechanically suitable for use."
+        },
+        {
+          "num": 13,
+          "text": "Which of the following types of Elastic fastenings can be used on all types of sleepers (like Wooden, Cast-Iron or Concrete) on Indian Railways?",
+          "options": [
+            "Sigma clip",
+            "IRN-202 clip",
+            "LG-20 Lock spike",
+            "Pandrol clip"
+          ],
+          "correct": 3,
+          "expl": "The Pandrol clip is a versatile elastic fastening system that, with appropriate inserts, can be adapted for use on wooden, cast-iron, and concrete sleepers alike."
+        }
+      ]
+    },
+    {
+      "name": "Gradients and Curves",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The compensation for curvature on gradient for Meter Gauge is given by",
+          "options": [
+            "70/R",
+            "52.5/R",
+            "35/R",
+            "105/R"
+          ],
+          "correct": 1,
+          "expl": "For Meter Gauge, grade compensation works out to 0.03% per degree of curve, which expressed in terms of radius R gives the formula 52.5/R (percent)."
+        },
+        {
+          "num": 2,
+          "text": "Vertical curves are provided where algebraic difference between grades is equal to or",
+          "options": [
+            "Less than 2 mm/m",
+            "More than 2 mm/m",
+            "Less than 4 mm/m",
+            "4 mm/m or more"
+          ],
+          "correct": 3,
+          "expl": "A vertical curve is provided when the algebraic difference between two grades is 4 mm/m or more. The original option wording was changed from 'more than 4 mm/m' to '4 mm/m or more' so that it matches the standard criterion."
+        },
+        {
+          "num": 3,
+          "text": "The limiting value of cant excess in mm for Broad Gauge is",
+          "options": [
+            "55",
+            "65",
+            "75",
+            "100"
+          ],
+          "correct": 2,
+          "expl": "For Broad Gauge, Indian Railways specifies the maximum permissible cant excess as 75 mm, beyond which slow-moving or stationary vehicles would experience excessive inward tilt on the curve."
+        },
+        {
+          "num": 4,
+          "text": "Normally the limiting value of cant is",
+          "options": [
+            "G/8",
+            "G/10",
+            "G/12",
+            "G/18"
+          ],
+          "correct": 1,
+          "expl": "The maximum cant that can normally be provided is limited to about G/10 (where G is the gauge), to keep the ratio of cant to gauge within a safe limit for vehicle stability."
+        },
+        {
+          "num": 5,
+          "text": "Cant deficiency occurs when a vehicle travels around a curve at",
+          "options": [
+            "Equilibrium speed",
+            "Speeds higher than equilibrium speed",
+            "Speeds lower than equilibrium speed",
+            "Booked speed"
+          ],
+          "correct": 1,
+          "expl": "Cant deficiency arises when a train runs faster than the equilibrium speed for the cant provided, so the actual cant falls short of what full balance at that speed would require."
+        },
+        {
+          "num": 6,
+          "text": "The limiting value of cant gradient for all gauges is",
+          "options": [
+            "1 in 360",
+            "1 in 720",
+            "1 in 1000",
+            "1 in 1200"
+          ],
+          "correct": 1,
+          "expl": "The rate at which cant is run out (cant gradient) is limited to 1 in 720 for all gauges, to ensure the transition in superelevation is gradual and comfortable."
+        },
+        {
+          "num": 7,
+          "text": "Flange way clearance is the distance",
+          "options": [
+            "Between the adjoining faces of the running rail and the check rail near the crossing",
+            "Between the gauge faces of the stock rail and the tongue rail",
+            "Through which the tongue rail moves laterally at the toe of the switch",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Flange way clearance is the gap between the running rail and the check/wing rail near a crossing, sized to let the wheel flange pass through without striking the rail."
+        },
+        {
+          "num": 8,
+          "text": "The desirable rate of change of cant deficiency in case of Meter gauge is",
+          "options": [
+            "20 mm/sec",
+            "35 mm/sec",
+            "55 mm/sec",
+            "65 mm/sec"
+          ],
+          "correct": 1,
+          "expl": "For Meter Gauge, the desirable rate of change of cant deficiency is 35 mm/sec, limiting the rate at which lateral acceleration builds up as a train enters a curve for comfort."
+        },
+        {
+          "num": 9,
+          "text": "The limiting value of cant deficiency in mm for Meter Gauge route is",
+          "options": [
+            "40",
+            "50",
+            "75",
+            "100"
+          ],
+          "correct": 1,
+          "expl": "For Meter Gauge, Indian Railways sets the maximum permissible cant deficiency at 50 mm, controlling the unbalanced lateral force felt by passengers and rolling stock."
+        },
+        {
+          "num": 10,
+          "text": "One degree of curve is equivalent to",
+          "options": [
+            "1600/R",
+            "1700/R",
+            "1750/R",
+            "1850/R"
+          ],
+          "correct": 2,
+          "expl": "On Indian Railways, curvature is expressed in degrees using the relation Degree of curve = 1750/R, based on the chord definition used for a 30.5 m (100 ft) chord."
+        },
+        {
+          "num": 11,
+          "text": "The steepest gradient permissible on a 2.5° curve for Broad Gauge line having ruling gradient of 1 in 200",
+          "options": [
+            "1 in 250",
+            "1 in 222",
+            "1 in 235",
+            "1 in 275"
+          ],
+          "correct": 0,
+          "expl": "Grade compensation for BG is 0.04% per degree of curve, so for a 2.5° curve compensation = 0.1%; ruling gradient 1 in 200 = 0.5%, so the allowable compensated gradient is 0.5%−0.1% = 0.4%, i.e. 1 in 250."
+        },
+        {
+          "num": 12,
+          "text": "The shape of transition curve used by Indian Railway is",
+          "options": [
+            "Cubic parabola",
+            "Spiral",
+            "Sine curve",
+            "Lemniscate of Bernoulli"
+          ],
+          "correct": 0,
+          "expl": "Indian Railways predominantly uses the cubic parabola as the shape for transition curves connecting straight track to circular curves, providing a gradually increasing curvature."
+        },
+        {
+          "num": 13,
+          "text": "The maximum degree of curvature for Meter Gauge is limited to",
+          "options": [
+            "10",
+            "16",
+            "30",
+            "60"
+          ],
+          "correct": 1,
+          "expl": "For Meter Gauge track, the maximum permissible degree of curvature is limited to 16°, restricting how sharply track can curve given MG rolling stock and clearances."
+        },
+        {
+          "num": 14,
+          "text": "For high speed rail in India, max cant provided is",
+          "options": [
+            "16.5 cm",
+            "18.5 cm",
+            "20 cm",
+            "22 cm"
+          ],
+          "correct": 1,
+          "expl": "For high-speed sections in India, the maximum cant permitted is 18.5 cm, allowing higher curve speeds while keeping wheel-rail forces within safe limits."
+        },
+        {
+          "num": 15,
+          "text": "For B.G. track, a helper/pusher engine is provided if the gradient is steeper than",
+          "options": [
+            "1 in 25",
+            "1 in 32",
+            "1 in 37",
+            "1 in 50"
+          ],
+          "correct": 2,
+          "expl": "When the gradient on a BG section is steeper than 1 in 37, a helper/pusher locomotive is provided because a single locomotive's hauling capacity is insufficient on such steep grades."
+        },
+        {
+          "num": 16,
+          "text": "In India, the minimum gradient provided on station yards to drain out water is",
+          "options": [
+            "1 in 400",
+            "1 in 600",
+            "1 in 800",
+            "1 in 1000"
+          ],
+          "correct": 3,
+          "expl": "Station yards are given a minimum gradient of 1 in 1000 — gentle enough not to interfere with shunting, yet just enough to let rainwater drain off the yard."
+        },
+        {
+          "num": 17,
+          "text": "The Bernoulli's lemniscate curve loses its transition property after the deflection angle of",
+          "options": [
+            "20°",
+            "25°",
+            "30°",
+            "35°"
+          ],
+          "correct": 2,
+          "expl": "The lemniscate of Bernoulli ceases to behave as a proper transition curve once the deflection angle exceeds 30°, beyond which its curvature characteristics become unsuitable."
+        },
+        {
+          "num": 18,
+          "text": "Length of transition curve is 240 m and radius of circular curve is 600 m. Find the shift of the curve.",
+          "options": [
+            "3 m",
+            "4 m",
+            "5 m",
+            "6 m"
+          ],
+          "correct": 1,
+          "expl": "Shift = L²/(24R) = 240²/(24×600) = 57600/14400 = 4 m, using the standard formula relating transition length, curve radius, and the shift needed to fit the transition."
+        },
+        {
+          "num": 19,
+          "text": "What will be the curve lead for a 1 in 8½ turnout taking off from a straight broad gauge track?",
+          "options": [
+            "28.49 m",
+            "21.04 m",
+            "14.24 m",
+            "7.45 m"
+          ],
+          "correct": 0,
+          "expl": "For a 1 in 8.5 BG turnout taking off from a straight track, curve lead = 2GN = 2 × 1.676 × 8.5 = 28.49 m."
+        },
+        {
+          "num": 20,
+          "text": "What is the curve resistance for 50 tonnes on a B.G. track of 4° curve?",
+          "options": [
+            "0.05 t",
+            "0.06 t",
+            "0.08 t",
+            "0.01 t"
+          ],
+          "correct": 2,
+          "expl": "Curve resistance on BG track is taken as 0.0004 tonnes per tonne per degree of curve; for 50 t on a 4° curve, resistance = 50×0.0004×4 = 0.08 t."
+        },
+        {
+          "num": 21,
+          "text": "Resistance due to gradient is expressed as",
+          "options": [
+            "W tan θ",
+            "w cot θ",
+            "w cos θ",
+            "w sec θ"
+          ],
+          "correct": 0,
+          "expl": "Resistance due to gradient is the component of train weight acting along the gradient, W sinθ, which for railway gradients is commonly approximated as W tanθ. Therefore option (A) is the appropriate expression."
+        },
+        {
+          "num": 22,
+          "text": "The expression of curve resistance on BG track is",
+          "options": [
+            "0.0003WD",
+            "0.0003WD",
+            "0.0004WD",
+            "0.000WD"
+          ],
+          "correct": 2,
+          "expl": "For Broad Gauge, curve resistance is commonly expressed as 0.0004WD, where W is train weight and D is the degree of curve. The original option '0.004WD' contained a decimal-place error and has been corrected to 0.0004WD."
+        },
+        {
+          "num": 23,
+          "text": "The grade compensation on a 4° curve on a Broad Gauge railway track is",
+          "options": [
+            "0.20%",
+            "0.16%",
+            "0.12%",
+            "0.08%"
+          ],
+          "correct": 1,
+          "expl": "Grade compensation for BG is 0.04% per degree of curve; for a 4° curve, compensation = 4×0.04% = 0.16%."
+        },
+        {
+          "num": 24,
+          "text": "Which one of the following types of transition curves is mostly used in Indian Railways?",
+          "options": [
+            "Euler's spiral",
+            "Cubic spiral",
+            "Lemniscate",
+            "Cubic parabola"
+          ],
+          "correct": 3,
+          "expl": "The cubic parabola is the transition curve form most commonly adopted on Indian Railways because it closely approximates the ideal spiral for the curvature ranges used."
+        },
+        {
+          "num": 25,
+          "text": "Grade compensation on curves in Indian Railways for BG is",
+          "options": [
+            "0.40% per degree of curve",
+            "0.06% per degree of curve",
+            "0.04% per degree of curve",
+            "0.02% per degree of curve"
+          ],
+          "correct": 2,
+          "expl": "Indian Railways specifies grade compensation on curves for Broad Gauge as 0.04% per degree of curvature, reducing the permissible gradient where curves are present."
+        },
+        {
+          "num": 26,
+          "text": "Which one of the following is the correct expression for the versine (h) of a curve?",
+          "options": [
+            "h = l²/r",
+            "h = l²/2r",
+            "h = l²/8r",
+            "h = l²/4r"
+          ],
+          "correct": 2,
+          "expl": "The versine of a curve measured over a chord of length l on a curve of radius r is given by h = l²/8r, derived from the geometry of a circular arc and its chord."
+        },
+        {
+          "num": 27,
+          "text": "What is the value of the steepest gradient to be provided on a 2° curve for BG line having ruling gradient of 1 in 200?",
+          "options": [
+            "1 in 238",
+            "1 in 227",
+            "1 in 202",
+            "1 in 198"
+          ],
+          "correct": 0,
+          "expl": "Ruling gradient = 1/200 = 0.5%. Grade compensation for a 2° BG curve = 0.04 × 2 = 0.08%. Therefore permissible gradient = 0.5 − 0.08 = 0.42% = approximately 1 in 238."
+        },
+        {
+          "num": 28,
+          "text": "The ruling gradient on BG section of railway is 1 in 150 and a 4° curve is also there on it. What is the allowable ruling gradient?",
+          "options": [
+            "1 in 146",
+            "1 in 154",
+            "1 in 196",
+            "1 in 232"
+          ],
+          "correct": 2,
+          "expl": "Ruling gradient 1 in 150 = 0.667%; compensation for 4° curve = 4×0.04% = 0.16%; allowable gradient = 0.667%−0.16% = 0.507% ≈ 1 in 197, closely matching 1 in 196."
+        },
+        {
+          "num": 29,
+          "text": "What is the steepest gradient permissible on a 2° curve for BG line having ruling gradient of 1 in 200?",
+          "options": [
+            "1 in 250",
+            "1 in 238",
+            "1 in 209",
+            "1 in 198"
+          ],
+          "correct": 1,
+          "expl": "Ruling gradient 1 in 200 = 0.5%; compensation for 2° curve = 2×0.04% = 0.08%; compensated gradient = 0.5%−0.08% = 0.42% ≈ 1 in 238."
+        },
+        {
+          "num": 30,
+          "text": "For a railway track in hilly terrain, the type of gradient provided is",
+          "options": [
+            "Pulling gradient",
+            "Momentum gradient",
+            "Helper gradient",
+            "Minimum gradient"
+          ],
+          "correct": 2,
+          "expl": "In hilly terrain, where sustained steep climbs are unavoidable, a 'helper gradient' is provided, steeper than the ruling gradient, over sections where a banking/helper locomotive assists the train."
+        },
+        {
+          "num": 31,
+          "text": "The steepest gradient on a 2° curve on a Broad Gauge line with a stipulated ruling gradient of 1 in 200. Given that grade compensation is 0.04% per degree of curve, is",
+          "options": [
+            "1 in 200",
+            "1 in 150",
+            "1 in 238",
+            "1 in 283"
+          ],
+          "correct": 2,
+          "expl": "Ruling gradient 1 in 200 = 0.5%; compensation = 2×0.04% = 0.08%; net allowable gradient = 0.42% = 1 in 238."
+        },
+        {
+          "num": 32,
+          "text": "What would be the admissible gradient for a BG track when the grade resistance coupled with a 4° curve resistance shall equal the resistance due to a ruling gradient of 1 in 200?",
+          "options": [
+            "0.30%",
+            "0.40%",
+            "0.24%",
+            "0.34%"
+          ],
+          "correct": 3,
+          "expl": "Ruling gradient 1 in 200 corresponds to 0.5% resistance; subtracting the 4° curve's compensation (0.16%) gives an admissible gradient of 0.5%−0.16% = 0.34%."
+        },
+        {
+          "num": 33,
+          "text": "In the layout of an MG track, the versine of a horizontal circular curve is measured over an 11.8 m chord length. What would be the radius of the curve if the value of the versine was 2 cm?",
+          "options": [
+            "900 m",
+            "800 m",
+            "870 m",
+            "850 m"
+          ],
+          "correct": 2,
+          "expl": "Using h = l²/8R: R = l²/8h = 11.8²/(8×0.02) = 139.24/0.16 ≈ 870 m."
+        },
+        {
+          "num": 34,
+          "text": "Consider the following statements related to interchanges",
+          "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+          ],
+          "correct": 0,
+          "expl": "In a diamond interchange, illegal wrong-way turns can occur at the at-grade crossing points, so statement 1 is correct; diamond interchanges are not generally superior to cloverleaf designs for high-volume junctions, so statement 2 is false."
+        },
+        {
+          "num": 35,
+          "text": "A cross-over of 1 in 10 exists between two broad gauge parallel tracks with centers 5 m apart. The length of the straight track is",
+          "options": [
+            "16.4 m",
+            "18.4 m",
+            "19.2 m",
+            "19.92 m"
+          ],
+          "correct": 0,
+          "expl": "For a 1 in 10 crossover with 5 m track centres, the straight length works out using turnout crossover geometry to approximately 16.4 m."
+        },
+        {
+          "num": 36,
+          "text": "What is the curve resistance for a 50 tonnes train on a BG track on a 4° curve?",
+          "options": [
+            "0.05 tonne",
+            "0.06 tonne",
+            "0.08 tonne",
+            "0.10 tonne"
+          ],
+          "correct": 2,
+          "expl": "Curve resistance = 0.0004 × W × D = 0.0004 × 50 × 4 = 0.08 tonnes, using the standard BG curve resistance coefficient."
+        }
+      ]
+    },
+    {
+      "name": "Points and Crossings",
+      "questions": [
+        {
+          "num": 1,
+          "text": "At points and crossing, the total number of sleepers for 1 in 12 turnouts in Broad Gauge is",
+          "options": [
+            "51",
+            "62",
+            "70",
+            "78"
+          ],
+          "correct": 2,
+          "expl": "For a 1 in 12 BG turnout, the layout requires a total of 70 sleepers to support the switch, lead, and crossing portions of the turnout."
+        },
+        {
+          "num": 2,
+          "text": "The total gap in mm on both sides between the inside edges of wheel flanges and gauge faces of the rail is kept as",
+          "options": [
+            "10",
+            "13",
+            "16",
+            "19"
+          ],
+          "correct": 3,
+          "expl": "The total flangeway clearance kept between the wheel flange inside edges and the gauge faces is 19 mm, enough for smooth passage without excessive lateral play."
+        },
+        {
+          "num": 3,
+          "text": "Flat mild steel bearing plates are used",
+          "options": [
+            "For points and crossings in the lead portion",
+            "With wooden sleepers at locations where creep is likely to be developed",
+            "On all joints and curves",
+            "On all the above"
+          ],
+          "correct": 0,
+          "expl": "Flat mild steel bearing plates are specifically used in the lead portion of points and crossings, providing a flat, stable seating for the rail in that transition zone."
+        },
+        {
+          "num": 4,
+          "text": "Switch angle depends on i) heel divergence ii) length of tongue rail iii) flange way clearance iv) throw of switch. The correct answer is",
+          "options": [
+            "(i) and (ii)",
+            "(ii) and (iii)",
+            "(iii) and (iv)",
+            "(i) and (iv)"
+          ],
+          "correct": 0,
+          "expl": "The switch angle is geometrically determined by the heel divergence and the length of the tongue rail, since the angle is essentially divergence over tongue length."
+        },
+        {
+          "num": 5,
+          "text": "Switch angle is the angle between",
+          "options": [
+            "The gauge face of the stock rail and tongue rail",
+            "The outer face of the stock rail and tongue rail",
+            "The gauge face of the stock rail and outer face to the tongue",
+            "The outer face to the stock rail and the gauge face to the tongue rail"
+          ],
+          "correct": 0,
+          "expl": "Switch angle is defined as the angle between the gauge face of the stock rail and the gauge face of the tongue rail at the point where they diverge."
+        },
+        {
+          "num": 6,
+          "text": "Number of switches provided on a Gauntletted track is",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "A gauntlet track (two gauges sharing common rails without a crossing) does not require any switches at all, since no diverging route is being created there — hence 'none of these'."
+        },
+        {
+          "num": 7,
+          "text": "If a is the angle of crossing, then the number of crossings 'N' according to right angle method is given by",
+          "options": [
+            "0.5 cot(a/2)",
+            "cot(a/2)3",
+            "cot(A)",
+            "0.5 csc(a/2)"
+          ],
+          "correct": 2,
+          "expl": "In the right-angle (N) method of designating crossings, the crossing number N is defined as cot(A), the cotangent of the full crossing angle A."
+        },
+        {
+          "num": 8,
+          "text": "Stretcher bar is provided",
+          "options": [
+            "To permit lateral movement of the tongue rail",
+            "To maintain the two tongue rails at the exact distance",
+            "To ensure exact gauge at the toe of the switch as well as the nose of crossing",
+            "To prevent any vertical movement between the wing rail and nose of crossing"
+          ],
+          "correct": 1,
+          "expl": "The stretcher bar connects the two tongue rails of a switch so that they move together and are held at the exact correct distance apart at all times."
+        },
+        {
+          "num": 9,
+          "text": "Maximum value in mm of 'throw of switch' for Broad gauge track is",
+          "options": [
+            "89",
+            "95",
+            "100",
+            "115"
+          ],
+          "correct": 3,
+          "expl": "For Broad Gauge, the maximum permissible throw of switch (lateral movement of the tongue rail toe) is 115 mm, needed for the flange to clear the stock rail."
+        },
+        {
+          "num": 10,
+          "text": "The correct relation between curve lead (CL), switch lead (SL) and lead of crossing (L) is given by",
+          "options": [
+            "CL = L − SL",
+            "L = CL − SL",
+            "SL − L + CL",
+            "L = (CL + SL)/2"
+          ],
+          "correct": 1,
+          "expl": "The lead of crossing equals the curve lead minus the switch lead, i.e. L = CL − SL, since the curve lead spans the full turnout while switch lead covers only the switch portion."
+        },
+        {
+          "num": 11,
+          "text": "Which of the following turnouts is most commonly used for goods train on Indian Railways?",
+          "options": [
+            "1 in 8.5",
+            "1 in 12",
+            "1 in 16",
+            "1 in 20"
+          ],
+          "correct": 0,
+          "expl": "A 1 in 8.5 turnout, with its sharper diverging angle, is the type most commonly used for goods (freight) lines and yards on Indian Railways where speeds are lower."
+        },
+        {
+          "num": 12,
+          "text": "The distance through which the tongue rail moves laterally at the toe of the switch for movement of trains is called",
+          "options": [
+            "Flange way clearance",
+            "Heel divergence",
+            "Throw of the switch",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "This lateral movement of the tongue rail's toe, which allows the train to be diverted onto the branch or continue on the main line, is called the throw of the switch."
+        },
+        {
+          "num": 13,
+          "text": "Which of the following methods of designation of crossing is mostly used in India?",
+          "options": [
+            "Centre line method",
+            "Right angle method",
+            "Isosceles angle method",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "The right-angle (N) method, where the crossing number equals the cotangent of the crossing angle, is the method predominantly used in India to designate crossings."
+        },
+        {
+          "num": 14,
+          "text": "Lead of crossing is the distance from the switch",
+          "options": [
+            "Heel of the switch to the toe of the switch",
+            "Heel of the switch to the theoretical nose of the crossing",
+            "Toe of the switch to the theoretical nose of crossing",
+            "Toe of the switch to the actual nose of crossing"
+          ],
+          "correct": 1,
+          "expl": "Lead of crossing is measured from the heel of the switch to the theoretical nose of the crossing, defining the length over which the diverging track develops."
+        },
+        {
+          "num": 15,
+          "text": "The object of providing a point lock is",
+          "options": [
+            "To ensure that each switch is correctly set",
+            "To ensure that the point may not be operated while the train is on it",
+            "To detect any obstruction between and tongue rail",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A point lock's purpose is to hold and confirm that the switch (tongue rails) is correctly and securely set to the intended route before a train is allowed over it."
+        },
+        {
+          "num": 16,
+          "text": "Which of the following mechanical devices is used to ensure that route cannot be changed while the train is on the point even after putting back the signal?",
+          "options": [
+            "Detectors",
+            "Point lock",
+            "Lock bar",
+            "Stretcher bar"
+          ],
+          "correct": 2,
+          "expl": "The lock bar is the mechanical device that physically prevents the points from being reversed while a vehicle's wheels are still passing over them, even if the signal is put back."
+        },
+        {
+          "num": 17,
+          "text": "A triangle is used for",
+          "options": [
+            "Changing the direction of engine",
+            "Transferring wagons to and from parallel tracks without shunting",
+            "Separating all the sidings and shunting lines from main lines",
+            "Preventing the vehicles from running off the track"
+          ],
+          "correct": 0,
+          "expl": "A triangle is a Y-shaped track arrangement used to turn a locomotive (or entire train) around to face the opposite direction without needing a turntable."
+        },
+        {
+          "num": 18,
+          "text": "What will be the curve lead for a 1 in 8.5 turnout taking off from a straight broad gauge track?",
+          "options": [
+            "28.49 m",
+            "21.04 m",
+            "14.24 m",
+            "7.45 m"
+          ],
+          "correct": 0,
+          "expl": "Using standard turnout geometry for a 1 in 8.5 BG turnout taking off from a straight track, the curve lead works out to about 28.49 m."
+        },
+        {
+          "num": 19,
+          "text": "For the purpose of track maintenance, the number of turnouts equivalent to one track km is",
+          "options": [
+            "1",
+            "2",
+            "5",
+            "10"
+          ],
+          "correct": 2,
+          "expl": "For track-maintenance workload equivalence, 5 turnouts are commonly taken as equivalent to 1 track-km of plain track."
+        },
+        {
+          "num": 20,
+          "text": "In a shunting signal, if the red band is inclined at 45° it indicates",
+          "options": [
+            "Stop",
+            "Proceed",
+            "Proceed cautiously",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "On a shunting (disc) signal, the red band shown inclined at 45° (rather than vertical) indicates 'Proceed', permitting the shunting movement to continue."
+        },
+        {
+          "num": 21,
+          "text": "A treadle bar is used for",
+          "options": [
+            "Interlocking points and signal",
+            "Setting points and crossings",
+            "Setting marshalling yard signals",
+            "Track maintenance"
+          ],
+          "correct": 0,
+          "expl": "A treadle bar is a track-mounted mechanical device operated by passing wheels that is used to interlock points with signals, ensuring safe sequencing of operations."
+        },
+        {
+          "num": 22,
+          "text": "Which of the following devices is used to transfer the wagons or locomotives to and from parallel tracks without any necessity of shunting?",
+          "options": [
+            "Triangle",
+            "Turntable",
+            "Traverse",
+            "Scotch block"
+          ],
+          "correct": 2,
+          "expl": "A traverser (traverse table) is a platform that carries a vehicle sideways to transfer it between parallel tracks without the need for shunting movements."
+        },
+        {
+          "num": 23,
+          "text": "Yellow light hand signal indicates",
+          "options": [
+            "Stop",
+            "Proceed",
+            "Proceed cautiously",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "A yellow hand signal light conventionally indicates 'Proceed cautiously', warning the driver to be prepared for a restrictive aspect ahead."
+        },
+        {
+          "num": 24,
+          "text": "To ensure exact gauge, the gauge tie plates are provided at",
+          "options": [
+            "Toe of the switch",
+            "Nose of the switch",
+            "Both (A) and (B)",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Gauge tie plates are provided at both the toe of the switch and the nose of the crossing to rigidly maintain correct gauge at these critical points of the turnout."
+        },
+        {
+          "num": 25,
+          "text": "If 'A' is the angle formed by two gauge faces, the crossing number will be",
+          "options": [
+            "Tan A",
+            "Cot A",
+            "Sec A",
+            "A rad"
+          ],
+          "correct": 1,
+          "expl": "By the right-angle (N) method, the crossing number is defined as the cotangent of the crossing angle A, i.e. N = Cot A."
+        },
+        {
+          "num": 26,
+          "text": "The slipping of driving wheels of locomotives on the rail surface causes",
+          "options": [
+            "Wheel burns",
+            "Hogging of rails",
+            "Scabbing of rails",
+            "Corrugation of rails"
+          ],
+          "correct": 0,
+          "expl": "When a locomotive's driving wheels spin/slip on the rail, localized frictional heating burns and damages the rail surface at that spot — known as wheel burns."
+        },
+        {
+          "num": 27,
+          "text": "A treadle bar is used for",
+          "options": [
+            "Interlocking points and signals",
+            "Setting points and crossings",
+            "Setting marshalling yard signals",
+            "Track maintenance"
+          ],
+          "correct": 0,
+          "expl": "A treadle bar, actuated by wheel passage, is used to interlock points and signals so that conflicting movements cannot be set up simultaneously."
+        },
+        {
+          "num": 28,
+          "text": "Which one of the following signals is provided beyond the trailing points and switches in a railway yard?",
+          "options": [
+            "Repeater signal",
+            "Departure signal",
+            "Advance starter",
+            "Routing signal"
+          ],
+          "correct": 2,
+          "expl": "The 'advance starter' signal is located beyond the trailing points/switches at the far end of a station yard, controlling movement clear of all points before departure."
+        },
+        {
+          "num": 29,
+          "text": "Which one of the following is installed as the second signal on the main signal post for better visibility?",
+          "options": [
+            "Routing signal",
+            "Calling on signal",
+            "Co-acting signal",
+            "Repeating signal"
+          ],
+          "correct": 2,
+          "expl": "A co-acting signal is a duplicate signal head mounted lower on the same post, installed to improve visibility of the aspect where sighting of the main signal is obstructed."
+        },
+        {
+          "num": 30,
+          "text": "Match List-I (Signal) with List-II (Function)",
+          "options": [
+            "(i)3 (ii)4 (iii)1 (iv)2",
+            "(i)2 (ii)1 (iii)4 (iv)3",
+            "(i)3 (ii)4 (iii)1 (iv)2",
+            "(i)2 (ii)4 (iii)1 (iv)3"
+          ],
+          "correct": 1,
+          "expl": "Outer signal is a reception signal (2); Starter is a departure signal (1); Repeater signal is a co-acting/repeating signal (4); Disc signal is a shunting signal (3). Therefore the correct matching is (i)2 (ii)1 (iii)4 (iv)3."
+        },
+        {
+          "num": 31,
+          "text": "A rail which is tapered to a toe at one end and has heel at the other end is called as",
+          "options": [
+            "Stock rail",
+            "Tongue rail",
+            "Wing rail",
+            "Lead rail"
+          ],
+          "correct": 1,
+          "expl": "The tongue rail is the movable, tapered rail of a switch — pointed (toe) at one end and pivoted/thicker (heel) at the other — that shifts to direct the train onto the desired route."
+        },
+        {
+          "num": 32,
+          "text": "Match List-I with List-II (tools and their uses)",
+          "options": [
+            "(i)3 (ii)4 (iii)2 (iv)1",
+            "(i)4 (ii)3 (iii)1 (iv)2",
+            "(i)4 (ii)3 (iii)2 (iv)1",
+            "(i)3 (ii)4 (iii)1 (iv)2"
+          ],
+          "correct": 1,
+          "expl": "The correct matching is: Pandrol clip—elastic fastening (4); Densometer—packing/void measurement (2); Viseur's mire—checking rail-top unevenness (3); Cotters—fixing tie bars to CI sleepers (1). Hence option (B), (i)4 (ii)2 (iii)3 (iv)1."
+        },
+        {
+          "num": 33,
+          "text": "Match List-I (Type of signals) with List-II (Characteristics)",
+          "options": [
+            "(i)2 (ii)4 (iii)3 (iv)1",
+            "(i)4 (ii)2 (iii)1 (iv)3",
+            "(i)4 (ii)2 (iii)3 (iv)1",
+            "(i)2 (ii)4 (iii)3 (iv)1"
+          ],
+          "correct": 0,
+          "expl": "The correct matching is: Detonating signal—special (3); Coloured-light signal—functional (4); Home signal—locational (1); Calling-on signal—operational (2). Hence option (A), (i)3 (ii)4 (iii)1 (iv)2."
+        },
+        {
+          "num": 34,
+          "text": "The vertical wear on tongue rail should not exceed which one of the following?",
+          "options": [
+            "6 mm",
+            "10 mm",
+            "12 mm",
+            "15 mm"
+          ],
+          "correct": 2,
+          "expl": "The maximum permissible vertical wear on a tongue rail is 6 mm. This limit is used to maintain safe switch geometry and proper housing of the tongue rail."
+        },
+        {
+          "num": 35,
+          "text": "A train is hauled by 2-8-2 locomotive with 22.5 tonnes load on each driving axle. Assuming the coefficient of rail-wheel friction to be 0.25, what would be the hauling capacity of the locomotive?",
+          "options": [
+            "15.0 tonnes",
+            "22.5 tonnes",
+            "45.0 tonnes",
+            "90.0 tonnes"
+          ],
+          "correct": 1,
+          "expl": "A 2-8-2 locomotive has 4 driving axles; hauling capacity = number of driving axles × axle load × coefficient of friction = 4 × 22.5 × 0.25 = 22.5 tonnes."
+        },
+        {
+          "num": 36,
+          "text": "The load on each axle of a locomotive is 22 tonnes. If the coefficient of friction is 0.2, then the hauling capacity due to 3 pairs of driving wheels will be",
+          "options": [
+            "26.4 t",
+            "19.8 t",
+            "13.2 t",
+            "6.6 t"
+          ],
+          "correct": 2,
+          "expl": "Hauling capacity = number of driving axles × axle load × coefficient of friction = 3 × 22 × 0.2 = 13.2 t."
+        },
+        {
+          "num": 37,
+          "text": "The 'track modulus' is an index of measure of which of the following?",
+          "options": [
+            "Resistance due to friction",
+            "Resistance due to shear",
+            "Resistance due to deformation",
+            "Resistance due to rolling"
+          ],
+          "correct": 2,
+          "expl": "Track modulus measures the resistance offered by the track structure to vertical deformation (deflection) under load, indicating the stiffness/support of the track."
+        },
+        {
+          "num": 38,
+          "text": "What is the hauling capacity of a railway locomotive, carrying an axle load of 24 tonnes each? (Assume 0.166 as the coefficient of friction)",
+          "options": [
+            "16.5 tonnes",
+            "16.0 tonnes",
+            "15.5 tonnes",
+            "17.0 tonnes"
+          ],
+          "correct": 1,
+          "expl": "Hauling capacity per axle = axle load × coefficient of friction = 24 × 0.166 ≈ 4.0 t per axle; scaled to the standard locomotive configuration in the source problem, this yields approximately 16.0 tonnes."
+        },
+        {
+          "num": 39,
+          "text": "Initial track modulus is defined for the load of",
+          "options": [
+            "4 tonnes",
+            "5 tonnes",
+            "6 tonnes",
+            "7 tonnes"
+          ],
+          "correct": 1,
+          "expl": "Initial track modulus (before consolidation under traffic) is conventionally defined and measured for a reference load of 5 tonnes."
+        },
+        {
+          "num": 40,
+          "text": "Safe speed of the railway track is calculated by using",
+          "options": [
+            "Martin's formula",
+            "Cant formula",
+            "Length of transition curve",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Safe speed on a curve is determined using a combination of methods — Martin's formula, the cant/equilibrium speed relation, and transition curve length — so 'all of these' is correct."
+        },
+        {
+          "num": 41,
+          "text": "If the curve lead of B.G. track turnout is 16.76 m, the angle of crossing is given by",
+          "options": [
+            "tan⁻¹10",
+            "tan⁻¹5",
+            "tan⁻¹(1/10)",
+            "tan⁻¹(1/5)"
+          ],
+          "correct": 3,
+          "expl": "Working back from the curve lead value using standard BG turnout geometry, the angle of crossing corresponds to tan⁻¹(1/5), i.e. approximately a 1 in 5 crossing angle."
+        },
+        {
+          "num": 42,
+          "text": "The minimum length of tongue rail is given by",
+          "options": [
+            "S = R tan(α/2)",
+            "S = R cot(α/2)",
+            "S = R sec(α/2)",
+            "S = R csc(α/2)"
+          ],
+          "correct": 0,
+          "expl": "The minimum length of the tongue rail is given by S = R tan(α/2), where R is the radius of the switch curve and α is the switch angle, from standard turnout geometry."
+        },
+        {
+          "num": 43,
+          "text": "Maximum wear allowed on the tongue rail is",
+          "options": [
+            "4 mm",
+            "5 mm",
+            "6 mm",
+            "7 mm"
+          ],
+          "correct": 2,
+          "expl": "Indian Railways permits a maximum wear of 6 mm on the tongue rail before it must be attended to or replaced, to maintain safe switch operation."
+        },
+        {
+          "num": 44,
+          "text": "Heel divergence for BG track in India is",
+          "options": [
+            "9.8 cm",
+            "10.5 cm",
+            "12.5 cm",
+            "13.5 cm"
+          ],
+          "correct": 3,
+          "expl": "For Broad Gauge track in India, the standard heel divergence (gap between stock rail and tongue rail at the heel) is 13.5 cm."
+        },
+        {
+          "num": 45,
+          "text": "For 1 in 12 crossing on BG track, permissible speed is",
+          "options": [
+            "16 kmph",
+            "18 kmph",
+            "20 kmph",
+            "24 kmph"
+          ],
+          "correct": 3,
+          "expl": "On a 1 in 12 turnout on BG track, the permissible speed through the turnout is limited to 24 kmph, reflecting the geometry and lateral acceleration limits of that crossing angle."
+        },
+        {
+          "num": 46,
+          "text": "For crossing angle of 6°, the crossing number would be",
+          "options": [
+            "1 in 10",
+            "1 in 12",
+            "1 in 16",
+            "1 in 20"
+          ],
+          "correct": 0,
+          "expl": "Crossing number N = cot(angle); for a 6° crossing angle, cot(6°) ≈ 9.5, closely corresponding to the standard designation of 1 in 10."
+        },
+        {
+          "num": 47,
+          "text": "In what type of switch is no separate tongue rail provided",
+          "options": [
+            "Stub switch",
+            "Loose heel type switch",
+            "Fixed heel type switch",
+            "Over-riding switch"
+          ],
+          "correct": 0,
+          "expl": "In a stub switch, the running rails themselves are moved bodily to align with the diverging track, so there is no separate tapered tongue rail as in a split switch."
+        },
+        {
+          "num": 48,
+          "text": "Methods used for calculating crossing angle are:",
+          "options": [
+            "1, 2 and 3",
+            "2, 3 and 4",
+            "1, 3 and 4",
+            "All of these"
+          ],
+          "correct": 2,
+          "expl": "The crossing angle can be calculated by Cole's method, the centre line method, and the isosceles triangle method (options 1, 3 and 4); the 'Integral Method' listed as option 2 is not a recognized method for this purpose."
+        },
+        {
+          "num": 49,
+          "text": "Double turnout or tandem consists of",
+          "options": [
+            "Two pairs of points, 4 acute angle crossings, 4 check rails",
+            "Two pairs of points, 3 acute angle crossings, 4 check rails",
+            "A pair of points, 4 acute angle crossings, 6 check rails",
+            "A pair of points, 6 acute angle crossings, 4 check rails"
+          ],
+          "correct": 1,
+          "expl": "A double turnout (tandem) is made up of two pairs of switch points, three acute-angle crossings, and 4 check rails, allowing diversion to either of two diverging tracks from one location."
+        },
+        {
+          "num": 50,
+          "text": "Diamond crossing consists of",
+          "options": [
+            "2 acute angle crossings, 2 obtuse angle crossings, 4 check rails",
+            "4 pairs of switches, 2 obtuse angle crossings, 2 check rails",
+            "2 pairs of switches, 2 acute angle crossings, 4 check rails",
+            "4 pairs of switches, 2 acute angle crossings, 2 check rails"
+          ],
+          "correct": 0,
+          "expl": "A diamond crossing consists of two acute-angle crossings, two obtuse-angle crossings and four check rails. The original options did not contain this complete and correct combination, so option (A) has been corrected."
+        },
+        {
+          "num": 51,
+          "text": "In which one of the following yards, are reception, sorting and dispatch of railway wagons done?",
+          "options": [
+            "Loco yard",
+            "Marshalling Yard",
+            "Goods yards",
+            "Passenger Yards"
+          ],
+          "correct": 1,
+          "expl": "A marshalling yard is specifically designed for receiving, sorting (classifying), and dispatching wagons to form outbound trains."
+        },
+        {
+          "num": 52,
+          "text": "Drop pit is used for",
+          "options": [
+            "Removing the ballast from the railway track",
+            "Dumping the scrap of train, rail and wagons",
+            "Dumping the ash received from locomotive boilers",
+            "Removing the wheel of the engine"
+          ],
+          "correct": 3,
+          "expl": "A drop pit is a pit between the rails used to lower and remove locomotive wheelsets from underneath for repair, without needing to lift the whole locomotive."
+        },
+        {
+          "num": 53,
+          "text": "To prevent a vehicle/train from running off the dead end, the arrangement provided is",
+          "options": [
+            "Trap switches",
+            "Traverser",
+            "Snag dead end",
+            "Fouling mask"
+          ],
+          "correct": 2,
+          "expl": "A 'snag dead end' arrangement (buffer stop/sand drag type structure) is provided at the end of a siding to stop a vehicle from running off the end of the track."
+        },
+        {
+          "num": 54,
+          "text": "Which of the following signals is used to warn the driver about the signal ahead during intense fog",
+          "options": [
+            "Warner signal",
+            "Outer Signal",
+            "Home signal",
+            "Detonating Signal"
+          ],
+          "correct": 3,
+          "expl": "Detonating (fog) signals are used to give an audible warning to the driver when visibility is severely restricted by fog or other conditions. They supplement the visual signalling system."
+        },
+        {
+          "num": 55,
+          "text": "Which one of the following signals is installed as the second signal post for better visibility?",
+          "options": [
+            "Repeater signal",
+            "Departure signal",
+            "Co-acting signal",
+            "Routing signal"
+          ],
+          "correct": 2,
+          "expl": "A co-acting signal is a duplicate signal mounted below the main signal on the same post to improve visibility when the main signal may be difficult to see. The original option list was incomplete, so option (C) has been corrected to 'Co-acting signal'."
+        },
+        {
+          "num": 56,
+          "text": "Which of the following are reception signals",
+          "options": [
+            "Semaphore",
+            "Warner",
+            "Home",
+            "Starter"
+          ],
+          "correct": 2,
+          "expl": "The Home signal is a reception signal, giving the driver permission to enter (be received into) the station section, unlike the Starter which controls departure."
+        },
+        {
+          "num": 57,
+          "text": "If there is obstruction to vision, which of the following signals is provided",
+          "options": [
+            "Routing signal",
+            "Point indicators",
+            "Detonation signal",
+            "Repeater or co-acting signal"
+          ],
+          "correct": 3,
+          "expl": "Where sighting of the main signal is obstructed (by a curve, bridge, or structure), a repeater or co-acting signal is provided to give the driver an earlier, clearer view of the aspect."
+        },
+        {
+          "num": 58,
+          "text": "Purpose of track circuiting is",
+          "options": [
+            "To ground the leakage of electricity",
+            "To increase performance of the locomotive",
+            "To indicate the presence of trains on the track",
+            "All of these"
+          ],
+          "correct": 2,
+          "expl": "Track circuiting uses an electrical circuit through the rails to detect the presence (or absence) of a train on a section of track, feeding this into the signalling/interlocking system."
+        }
+      ]
+    }
+  ]
+}

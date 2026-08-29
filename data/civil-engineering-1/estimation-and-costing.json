@@ -1,0 +1,1520 @@
+{
+  "id": "ecv",
+  "title": "Estimating, Costing & Valuation (PWD)",
+  "description": "Objective-type practice questions covering analysis of rates, estimating & costing, PWD rules & contract management, specifications & road work, and valuation.",
+  "subcats": [
+    {
+      "name": "Analysis of Rates",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The weight of cement in one bag is",
+          "options": [
+            "45 kg",
+            "50 kg",
+            "60 kg",
+            "65 kg"
+          ],
+          "correct": 1,
+          "expl": "A standard cement bag is manufactured and sold as a 50 kg unit, which is the base figure used throughout rate analysis and material calculations."
+        },
+        {
+          "num": 2,
+          "text": "The volume of cement in one bag is",
+          "options": [
+            "0.067 m3",
+            "0.050 m3",
+            "0.033 m3",
+            "0.025 m3"
+          ],
+          "correct": 2,
+          "expl": "Using the bulk (loose) density of cement of about 1500 kg/m3, a 50 kg bag is conventionally taken to occupy roughly 0.033 m3 in standard rate-analysis tables."
+        },
+        {
+          "num": 3,
+          "text": "The approximate weight of one cubic metre of mild steel is",
+          "options": [
+            "1000 kg",
+            "2400 kg",
+            "14000 kg",
+            "7850 kg"
+          ],
+          "correct": 3,
+          "expl": "The density of mild steel is a standard material constant of about 7850 kg/m3, used whenever steel weight is estimated from volume."
+        },
+        {
+          "num": 4,
+          "text": "The volume of cement required to prepare 100 cu.m of 1:2:4 concrete is",
+          "options": [
+            "16 m3",
+            "32 m3",
+            "25 m3",
+            "21 m3"
+          ],
+          "correct": 3,
+          "expl": "For 1:2:4 concrete, cement works out to about 1/7 of the dry (increased) volume; applying the usual 1.54 dry-volume factor to 100 m3 gives roughly 21 m3 of cement."
+        },
+        {
+          "num": 5,
+          "text": "Number of cement bags in 1 cum",
+          "options": [
+            "35.31",
+            "20",
+            "8.05",
+            "28.80"
+          ],
+          "correct": 3,
+          "expl": "Since one 50 kg bag occupies about 0.0347 m3, dividing 1 m3 by this bag volume gives approximately 28.8 bags per cubic metre."
+        },
+        {
+          "num": 6,
+          "text": "Volume of one cement bag of 50 kg",
+          "options": [
+            "1 cum",
+            "0.7 cum",
+            "28.80 cum",
+            "0.0347 cum"
+          ],
+          "correct": 3,
+          "expl": "Taking the standard density of cement, a 50 kg bag corresponds to a volume of about 0.0347 m3, the figure used for bag-to-volume conversions."
+        },
+        {
+          "num": 7,
+          "text": "Provision of contractor profit in analysis of rates is",
+          "options": [
+            "50%",
+            "Nil",
+            "10%",
+            "20%"
+          ],
+          "correct": 2,
+          "expl": "Standard analysis-of-rates practice adds a contractor's profit margin of 10% on the total cost of materials and labour for an item of work."
+        },
+        {
+          "num": 8,
+          "text": "Analysis of rates depends upon",
+          "options": [
+            "Specification & quality of material",
+            "Class & quality of structure",
+            "Location of structure",
+            "All above"
+          ],
+          "correct": 3,
+          "expl": "Rate analysis must account for material specification, the class/quality of the structure, and its location (which affects lead, carriage and local rates), so all these factors apply together."
+        },
+        {
+          "num": 9,
+          "text": "Out turn/task defines",
+          "options": [
+            "Work given to worker",
+            "Work done by skilled workman",
+            "Quantity of work done per month",
+            "Capacity of doing work per day"
+          ],
+          "correct": 3,
+          "expl": "Out-turn or task work is the standard quantity of work a worker is expected to complete in one normal working day, used to build labour rates."
+        },
+        {
+          "num": 10,
+          "text": "Work charge & contingency provided in the estimate",
+          "options": [
+            "10%",
+            "Lump-sum",
+            "1/3",
+            "3 to 5%"
+          ],
+          "correct": 3,
+          "expl": "Work-charged establishment and contingencies are conventionally provided as a small percentage, typically 3 to 5%, of the estimated cost."
+        },
+        {
+          "num": 11,
+          "text": "Overhead charges means",
+          "options": [
+            "Load over slab",
+            "Amount that exceeds estimate",
+            "No concern in analysis of rate",
+            "Included in analysis of rates"
+          ],
+          "correct": 3,
+          "expl": "Overhead charges (establishment, supervision, tools & plant, etc.) are indirect costs that are built into the analysis of rates for an item."
+        },
+        {
+          "num": 12,
+          "text": "CSR used in estimating/costing means",
+          "options": [
+            "Civil service rules",
+            "Civil service record",
+            "Common schedule of rates",
+            "Central service rules"
+          ],
+          "correct": 2,
+          "expl": "CSR stands for Common Schedule of Rates, the officially published rate list that departments use as the basis for estimating costs of items of work."
+        },
+        {
+          "num": 13,
+          "text": "Analysis of rates are meant for",
+          "options": [
+            "To collect market rate",
+            "To verify the rates",
+            "To calculate the rate per unit of an item",
+            "None of above"
+          ],
+          "correct": 2,
+          "expl": "The core purpose of analysis of rates is to build up, from material, labour and overhead costs, the rate payable per unit quantity of a specific item of work."
+        },
+        {
+          "num": 14,
+          "text": "For RCC/CC, the dry material required is",
+          "options": [
+            "Equal to the wet mortar",
+            "1.52 times more",
+            "Half of the wet mortar",
+            "Not defined"
+          ],
+          "correct": 1,
+          "expl": "Because loose dry ingredients contain voids that get filled once mixed and compacted, the dry volume of materials is taken as about 1.52 to 1.54 times the finished wet concrete volume."
+        },
+        {
+          "num": 15,
+          "text": "Number of non-modular bricks per cum of brick masonry",
+          "options": [
+            "500",
+            "1000",
+            "400",
+            "480"
+          ],
+          "correct": 3,
+          "expl": "With the traditional non-modular brick size and standard mortar joint thickness, about 480 bricks are required to build one cubic metre of brick masonry."
+        },
+        {
+          "num": 16,
+          "text": "For 1 sq.m of 7.5 cm thick lime terracing on roof with brick khoa, surkhi, lime (2:2:7) including finishing, the quantity of surkhi required is",
+          "options": [
+            "0.023 cu.m",
+            "0.025 cu.m",
+            "0.019 cu.m",
+            "0.022 cu.m"
+          ],
+          "correct": 3,
+          "expl": "This is a standard tabulated specification value: for a 7.5 cm thick 2:2:7 lime terracing mix over 1 m2, the surkhi (broken-brick powder) content works out to about 0.022 cu.m."
+        },
+        {
+          "num": 17,
+          "text": "For 15 mm thick cement plastering (1:6) on 100 sq.m of new brick work, the quantity of cement required is",
+          "options": [
+            "0.200 m3",
+            "0.247 m3",
+            "0.274 m3",
+            "0.343 m3"
+          ],
+          "correct": 0,
+          "expl": "Multiplying the plaster area by its 15 mm thickness gives the wet mortar volume, and cement's 1:6 share of that (after applying the dry-volume factor) works out to about 0.200 m3 for 100 m2."
+        },
+        {
+          "num": 18,
+          "text": "Thickness of plastering is usually",
+          "options": [
+            "40 mm",
+            "6 mm",
+            "12 mm",
+            "26 mm"
+          ],
+          "correct": 2,
+          "expl": "A general-purpose cement or lime plaster coat on masonry walls is conventionally specified at about 12 mm thickness."
+        },
+        {
+          "num": 19,
+          "text": "The quantity of brickwork in foundation and plinth, per day per mason, should be",
+          "options": [
+            "1.75 cu.m",
+            "2.5 cu.m",
+            "1.0 cu.m",
+            "1.25 cu.m"
+          ],
+          "correct": 3,
+          "expl": "Standard labour-output norms allow a mason about 1.25 cu.m of brick masonry in foundation and plinth work per working day."
+        }
+      ]
+    },
+    {
+      "name": "Estimating & Costing",
+      "questions": [
+        {
+          "num": 20,
+          "text": "The most reliable estimate is",
+          "options": [
+            "Detailed estimate",
+            "Preliminary estimate",
+            "Plinth area estimate",
+            "Cube rate estimate"
+          ],
+          "correct": 0,
+          "expl": "A detailed estimate works out quantities item-by-item from complete drawings and current rates, making it far more accurate than approximate methods like plinth area or cube rate estimates."
+        },
+        {
+          "num": 21,
+          "text": "Due to change in price level, a revised estimate is prepared if the sanctioned estimate exceeds",
+          "options": [
+            "2.0%",
+            "2.5%",
+            "4.0%",
+            "5.0%"
+          ],
+          "correct": 3,
+          "expl": "A revised estimate becomes necessary when the actual or anticipated cost exceeds the originally sanctioned estimate by more than 5%."
+        },
+        {
+          "num": 22,
+          "text": "The brick work is not measured in cu m in case of",
+          "options": [
+            "One or more than one brick wall",
+            "Brick work in arches",
+            "Reinforced brick work",
+            "Half brick wall"
+          ],
+          "correct": 3,
+          "expl": "A half-brick (single-leaf) wall is too thin to be measured volumetrically in a meaningful way, so it is measured by area (square metres) rather than cubic metres."
+        },
+        {
+          "num": 23,
+          "text": "The brick work is measured in sq metre, in case of",
+          "options": [
+            "Honey comb brick work",
+            "Brick flat soling",
+            "Half brick walls or the partition",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Honeycomb brickwork, brick flat soling, and half-brick partition walls are all thin or open items of brickwork, so all of them are conventionally measured by surface area rather than volume."
+        },
+        {
+          "num": 24,
+          "text": "The measurement is not made in square metres in case of",
+          "options": [
+            "D.P.C. (Damp proof course)",
+            "Form works",
+            "Concrete Jaffries",
+            "R.C. Chhajja"
+          ],
+          "correct": 3,
+          "expl": "While DPC, RC chhajja and concrete jaffries are thin, sheet-like items measured by area, centering and shuttering (formwork) is billed on its own separate basis rather than as simple square-metre area of finished work."
+        },
+        {
+          "num": 25,
+          "text": "In long and short wall method of estimation, the length of long wall is the centre to centre distance between the walls and",
+          "options": [
+            "Breadth of the wall",
+            "Half breadth of wall on each side",
+            "One fourth breadth of wall on each side",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "In the long-and-short wall method, the long wall's length equals the centre-to-centre distance plus half the wall breadth added at each end, compensating for the corner overlap."
+        },
+        {
+          "num": 26,
+          "text": "The damp proof course (D.P.C.) is measured in",
+          "options": [
+            "Cub. M",
+            "Sq m",
+            "Metres",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "DPC is a thin horizontal layer, so it is measured by its surface area in square metres, not by volume."
+        },
+        {
+          "num": 27,
+          "text": "According to ISI method of measurement, the order of the sequence is",
+          "options": [
+            "Length, breadth, height",
+            "Breadth, length, height",
+            "Height, length, breadth",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The Indian Standard method of measurement prescribes recording dimensions consistently in the order length, breadth, then height (or depth)."
+        },
+        {
+          "num": 28,
+          "text": "Estimate is",
+          "options": [
+            "the actual cost of construction of a structure",
+            "the probable cost arrived at before commencement of the structure",
+            "a random guess of the cost of the structure",
+            "none of the above"
+          ],
+          "correct": 1,
+          "expl": "An estimate is a calculated, probable cost of a work prepared from drawings and rates before construction begins, not the final actual cost or a guess."
+        },
+        {
+          "num": 29,
+          "text": "A document containing detailed description of all the items of work (but their quantities are not mentioned) together with their current rates is called",
+          "options": [
+            "Tender",
+            "Schedule of rates",
+            "Analysis of rate",
+            "Abstract estimate"
+          ],
+          "correct": 1,
+          "expl": "A schedule of rates lists standard items of work with their descriptions and current unit rates, without specifying the quantities for any particular project."
+        },
+        {
+          "num": 30,
+          "text": "The approximate cost of the complete labour as a percentage of the total cost of the building is",
+          "options": [
+            "10%",
+            "25%",
+            "40%",
+            "5%"
+          ],
+          "correct": 1,
+          "expl": "As a rule of thumb used in estimating, labour cost typically forms about 25% of the total cost of a building, with materials making up the rest."
+        },
+        {
+          "num": 31,
+          "text": "A layer of dry bricks put below the foundation concrete, in the case of soft soils, is called",
+          "options": [
+            "Soling",
+            "Shoring",
+            "D.P.C.",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Soling is a layer of dry bricks or stones laid below foundation concrete on soft soil to provide a firm, well-drained base and prevent the concrete from sinking."
+        },
+        {
+          "num": 32,
+          "text": "The quantity of soling is obtained in",
+          "options": [
+            "m3",
+            "m",
+            "lump-sum",
+            "m2"
+          ],
+          "correct": 3,
+          "expl": "Soling is a thin layer of bricks or stones, so its quantity is measured by the plan area it covers, in square metres."
+        },
+        {
+          "num": 33,
+          "text": "Offset in brick masonry (modular brick)",
+          "options": [
+            "100 mm",
+            "50 mm",
+            "200 mm",
+            "75 mm"
+          ],
+          "correct": 1,
+          "expl": "For modular bricks, the standard offset (stepped reduction) provided in foundation courses of brick masonry is 50 mm, matching half the brick's width module."
+        },
+        {
+          "num": 34,
+          "text": "Standard size of brick",
+          "options": [
+            "19 × 9 × 9 cm",
+            "20 × 10 × 10 cm",
+            "20 × 10 × 9 cm",
+            "20 × 9 × 9 cm"
+          ],
+          "correct": 0,
+          "expl": "The Indian standard modular brick size is 19 x 9 x 9 cm, which becomes 20 x 10 x 10 cm once a 10 mm mortar joint is added on each face."
+        },
+        {
+          "num": 35,
+          "text": "No deduction is made in brick masonry for opening area less than",
+          "options": [
+            "0.5 m2",
+            "0.15 m2",
+            "0.25 m2",
+            "0.10 m2"
+          ],
+          "correct": 3,
+          "expl": "By convention, small openings of area not exceeding 0.10 m2 are ignored and no deduction is made for them while measuring brick masonry."
+        },
+        {
+          "num": 36,
+          "text": "The plan of a rectangular building is of size 14.7 × 9.7 m centre to centre of outer wall. Thickness of walls is 0.30 m. Find the plinth area.",
+          "options": [
+            "150 sqm",
+            "142.59 sqm",
+            "200 sqm",
+            "100 sqm"
+          ],
+          "correct": 0,
+          "expl": "Plinth area is measured over the outer face of walls: adding half the wall thickness on each side gives external dimensions of 15.0 m x 10.0 m, so plinth area = 15.0 x 10.0 = 150 sqm."
+        },
+        {
+          "num": 37,
+          "text": "Area of 16 mm diameter of steel bar is",
+          "options": [
+            "256 mm2",
+            "160 mm2",
+            "64 mm2",
+            "200 mm2"
+          ],
+          "correct": 3,
+          "expl": "Using Area = (pi/4) x d^2 with d = 16 mm gives about 201 mm2, rounded to the standard tabulated value of 200 mm2."
+        },
+        {
+          "num": 38,
+          "text": "Area of 1 hectare is",
+          "options": [
+            "100 m2",
+            "1000 m2",
+            "10 m2",
+            "10000 m2"
+          ],
+          "correct": 3,
+          "expl": "One hectare is a standard land-measurement unit equal to a 100 m x 100 m square, i.e. 10,000 m2."
+        },
+        {
+          "num": 39,
+          "text": "Area of 1 acre is",
+          "options": [
+            "100 m2",
+            "100 sft",
+            "1000 sft",
+            "43560 sft"
+          ],
+          "correct": 3,
+          "expl": "One acre is a traditional land unit equal to 43,560 square feet (about 4047 m2), a standard conversion value used in estimating."
+        },
+        {
+          "num": 40,
+          "text": "Weight of 1 cum of mild steel is",
+          "options": [
+            "1000 kg",
+            "10,000 kg",
+            "100 kg",
+            "7850 kg"
+          ],
+          "correct": 3,
+          "expl": "The density of mild steel is the standard material constant 7850 kg/m3, used to convert steel volume into weight."
+        },
+        {
+          "num": 41,
+          "text": "1 foot =",
+          "options": [
+            "25.4 mm",
+            "30 mm",
+            "30 cm",
+            "304.8 mm"
+          ],
+          "correct": 3,
+          "expl": "One foot is defined as exactly 304.8 mm (12 inches x 25.4 mm), the standard imperial-to-metric length conversion."
+        },
+        {
+          "num": 42,
+          "text": "1 cum =",
+          "options": [
+            "100 cft",
+            "250 cft",
+            "50 cft",
+            "35.31 cft"
+          ],
+          "correct": 3,
+          "expl": "One cubic metre equals 35.31 cubic feet, the standard volume conversion factor between metric and imperial units."
+        },
+        {
+          "num": 43,
+          "text": "A sloping footing has a top rectangular base of 5 m2 area, a bottom (elevation) base of 7 m2 area, and a height of 3 m between them. Calculate the volume of the sloping footing.",
+          "options": [
+            "18 m3",
+            "16 m3",
+            "14 m3",
+            "12 m3"
+          ],
+          "correct": 0,
+          "expl": "Using the average end-area (trapezoidal) method, volume = height x (sum of the two areas)/2 = 3 x (5+7)/2 = 18 m3."
+        },
+        {
+          "num": 44,
+          "text": "The ratio of built up area and plot area is called as",
+          "options": [
+            "F.A.R, floor area ratio",
+            "P.A.R, plot area ratio",
+            "F.I, floor index",
+            "F.S.I, floor space index"
+          ],
+          "correct": 3,
+          "expl": "The ratio of a building's total floor (built-up) area to the plot area is termed the Floor Space Index (F.S.I.), a key planning-control parameter."
+        },
+        {
+          "num": 45,
+          "text": "The cross-section of a strip footing (all dimensions in mm) consists of a 300 mm deep, 150 mm wide column stub; a 150 mm thick, 500 mm wide concrete base with 150 mm thick, 625 mm wide PCC (1:3:6) below it, over 75 mm thick brick flat soling (BFS). The quantity of the 150 mm thick PCC (1:3:6) per metre run is",
+          "options": [
+            "0.094 sq. m",
+            "0.094 cu.m",
+            "0.0625 sq. m",
+            "0.0625 cu.m"
+          ],
+          "correct": 1,
+          "expl": "For a 1 m run, the PCC layer's volume = width x thickness x length = 0.625 m x 0.150 m x 1 m = 0.094 cu.m."
+        },
+        {
+          "num": 46,
+          "text": "For one sq.m. single brick flat soling (conventional size), the number of bricks required is",
+          "options": [
+            "54",
+            "62",
+            "32",
+            "44"
+          ],
+          "correct": 2,
+          "expl": "This is a standard tabulated construction value: with conventional-size bricks laid flat (largest face down) for soling, about 32 bricks are needed to cover one square metre."
+        },
+        {
+          "num": 47,
+          "text": "The number of bricks (conventional size) required for one square metre of brick on edge soling is",
+          "options": [
+            "54",
+            "64",
+            "34",
+            "44"
+          ],
+          "correct": 0,
+          "expl": "When bricks are laid on edge rather than flat for soling, more bricks per square metre are needed because each brick covers a smaller plan area; the standard tabulated value is 54 bricks per m2."
+        },
+        {
+          "num": 48,
+          "text": "A rectangular excavation layout for a foundation trench has a plan of 6 m×4 m (outer) with a trench width of 80 cm and depth 60 cm (as per section A–A). The volume of earthwork in excavation of the foundation trench is",
+          "options": [
+            "6.528 cu.m",
+            "8.064 cu.m",
+            "8.832 cu.m",
+            "9.600 cu.m"
+          ],
+          "correct": 1,
+          "expl": "Using the centre-line method, the trench centre-line length = 2 x [(6-0.8) + (4-0.8)] = 16.8 m, so volume = 16.8 x 0.8 x 0.6 = 8.064 cu.m."
+        },
+        {
+          "num": 49,
+          "text": "If d is the diameter of MS or tor steel bar in mm, the standard weight (in kg) per metre of the bar is",
+          "options": [
+            "0.00618 d2",
+            "0.00618 d",
+            "0.00816 d2",
+            "0.00816 d"
+          ],
+          "correct": 0,
+          "expl": "The standard formula for unit weight of a steel bar, derived from its density and circular cross-section, is W = d2/162 = 0.00618 x d2 kg per metre."
+        },
+        {
+          "num": 50,
+          "text": "The plan of a building is in the form of a rectangle with centre line dimensions of the outer walls as 10.3 m ×15.3 m. The thickness of the walls in superstructure is 0.3 m. Then its carpet area is",
+          "options": [
+            "150 m2",
+            "157.9 m2",
+            "165.36 m2",
+            "170 m2"
+          ],
+          "correct": 0,
+          "expl": "Carpet area is the usable floor area after excluding wall thickness and circulation space from the plinth/centre-line area; working through the standard deductions for this plan gives about 150 m2."
+        },
+        {
+          "num": 51,
+          "text": "Pick up the item of work not included in the plinth area estimate",
+          "options": [
+            "Wall thickness",
+            "Room area",
+            "Verandah area",
+            "Courtyard area"
+          ],
+          "correct": 3,
+          "expl": "Plinth area covers the covered floor area including walls, rooms and verandahs, but an open courtyard is not a covered area and so is excluded from the plinth area estimate."
+        },
+        {
+          "num": 52,
+          "text": "One brick thickness of wall is roughly equal to",
+          "options": [
+            "10 cm",
+            "15 cm",
+            "20 cm",
+            "30 cm"
+          ],
+          "correct": 2,
+          "expl": "A wall built one brick thick (brick length placed across the wall) works out to roughly 20 cm, matching the standard modular brick length plus mortar."
+        },
+        {
+          "num": 53,
+          "text": "The damp proof course (D.P.C) of uniform thickness in a building having walls of different widths is measured in",
+          "options": [
+            "m4",
+            "m3",
+            "m2",
+            "m"
+          ],
+          "correct": 2,
+          "expl": "Since DPC has a fixed, uniform thickness, its quantity is captured simply by the area it covers, in square metres, regardless of varying wall widths."
+        },
+        {
+          "num": 54,
+          "text": "The quantity of wood for the shutters of doors and window is calculated in",
+          "options": [
+            "m3",
+            "lump-sum",
+            "m",
+            "m2"
+          ],
+          "correct": 3,
+          "expl": "Door and window shutters are thin flat panels, so the wood required for them is conventionally measured by their surface area in square metres."
+        },
+        {
+          "num": 55,
+          "text": "The plan of building is in the form of a square with centreline dimensions of outer walls as 14.7 m × 14.7 m. If the thickness of the wall in superstructure is 0.30 m, then its plinth area is:",
+          "options": [
+            "234 m2",
+            "150 m2",
+            "216 m2",
+            "225 m2"
+          ],
+          "correct": 3,
+          "expl": "Adding half the wall thickness to each side of the centre-line dimension gives an external side of 15.0 m, so plinth area = 15.0 x 15.0 = 225 m2."
+        }
+      ]
+    },
+    {
+      "name": "PWD Rules & Contract Management",
+      "questions": [
+        {
+          "num": 56,
+          "text": "Administrative approval is for the purpose of",
+          "options": [
+            "To sanction the quantity of work",
+            "To approve the proposal of project",
+            "To approve the quality of project",
+            "To approve the amount specified to take up the work"
+          ],
+          "correct": 3,
+          "expl": "Administrative approval is the formal authorization by the competent administrative authority of the funds/amount needed to undertake a proposed work."
+        },
+        {
+          "num": 57,
+          "text": "Secured advance is",
+          "options": [
+            "Security deducted from contractor",
+            "Advance security deposited by contractor",
+            "First payment to the contractor",
+            "Advance payment made on account of material supplied as security"
+          ],
+          "correct": 3,
+          "expl": "A secured advance is a payment made to a contractor against the value of durable, non-perishable materials brought to site, which act as security for the advance."
+        },
+        {
+          "num": 58,
+          "text": "BOQ stands for",
+          "options": [
+            "Brick of quality",
+            "Bill of contractor",
+            "Based on quality",
+            "Bill of quantities"
+          ],
+          "correct": 3,
+          "expl": "BOQ (Bill of Quantities) is the tender document listing all items of work with their measured quantities, against which contractors quote their rates."
+        },
+        {
+          "num": 59,
+          "text": "CC first, second & third running bill means",
+          "options": [
+            "Documents prepared by contractor",
+            "Documents required for tender",
+            "Penalty bill of contractor",
+            "Documents prepared for payment to the contractor"
+          ],
+          "correct": 3,
+          "expl": "Running (interim) bills are the periodic bills prepared to certify and release payment to the contractor for work completed up to that stage."
+        },
+        {
+          "num": 60,
+          "text": "Technical sanction is for",
+          "options": [
+            "Is a technique of sanctioning the estimate",
+            "Approval of tenders",
+            "Sanction for preparing estimate",
+            "Sanction of detailed estimate"
+          ],
+          "correct": 3,
+          "expl": "Technical sanction is the formal approval, by a competent engineering authority, of the detailed estimate confirming that the design and quantities are technically sound."
+        },
+        {
+          "num": 61,
+          "text": "BOT stands for",
+          "options": [
+            "Built Operate Transfer",
+            "Building Operational Today",
+            "Built on Tomer",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "BOT (Build-Operate-Transfer) is a project delivery model where a private entity builds and operates infrastructure for a concession period before transferring it to the government."
+        },
+        {
+          "num": 62,
+          "text": "Carpet area is",
+          "options": [
+            "More than floor area",
+            "More than plinth area",
+            "Less than floor area",
+            "Carpet area = floor area − circulation area"
+          ],
+          "correct": 2,
+          "expl": "Carpet area is the actual usable floor area within a room, excluding wall thickness and common circulation space, so it is always less than the total floor area."
+        },
+        {
+          "num": 63,
+          "text": "Powers of officer for technical sanction",
+          "options": [
+            "Chief Engineer – full",
+            "SE – 50 lac (at CSR) or 15 lac (above CSR)",
+            "XEN – 5 lac",
+            "Above all are correct"
+          ],
+          "correct": 3,
+          "expl": "Departmental financial rules define graded monetary powers for technical sanction at each level of engineer (CE, SE, XEN), so all the listed powers are correct together."
+        },
+        {
+          "num": 64,
+          "text": "Revised estimate is prepared when expenditure exceeds the original estimate by",
+          "options": [
+            "10% of technical sanction",
+            "10% of administrative approval",
+            "15% of technical sanction",
+            "Both B & C"
+          ],
+          "correct": 3,
+          "expl": "A revised estimate is triggered when expenditure exceeds either 10% of the administrative approval or 15% of the technical sanction, so both conditions apply."
+        },
+        {
+          "num": 65,
+          "text": "Daily allowance is an amount paid as part",
+          "options": [
+            "Monthly salary",
+            "Daily salary",
+            "Travelling allowance",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "Daily allowance (DA) is paid to cover living expenses while an employee is on official tour, forming part of the travelling allowance package."
+        },
+        {
+          "num": 66,
+          "text": "Stock return is prepared",
+          "options": [
+            "Annually",
+            "Monthly",
+            "1/2 yearly",
+            "Quarterly"
+          ],
+          "correct": 2,
+          "expl": "Stock returns, which reconcile material held in store, are conventionally prepared on a half-yearly basis in departmental accounting practice."
+        },
+        {
+          "num": 67,
+          "text": "Survey report is a document/sanction of",
+          "options": [
+            "It is a report of surveying",
+            "It is order to survey",
+            "It is order to write off the unserviceable material",
+            "None of above"
+          ],
+          "correct": 2,
+          "expl": "A survey report in PWD terminology is the sanctioned document authorizing the write-off/disposal of unserviceable stores or material."
+        },
+        {
+          "num": 68,
+          "text": "Who is the head of the division in PWD",
+          "options": [
+            "CE",
+            "SE",
+            "XEN",
+            "SDO"
+          ],
+          "correct": 2,
+          "expl": "The Executive Engineer (XEN) heads a Division, the basic administrative and technical unit in the PWD hierarchy."
+        },
+        {
+          "num": 69,
+          "text": "Which officer maintains account of expenditure, material & progress of execution of work",
+          "options": [
+            "CE",
+            "SE",
+            "XEN",
+            "SDO"
+          ],
+          "correct": 2,
+          "expl": "As head of the Division, the Executive Engineer (XEN) is responsible for maintaining divisional accounts of expenditure, material and progress of works."
+        },
+        {
+          "num": 70,
+          "text": "Disbursing power to make payment is with the officer",
+          "options": [
+            "CE – full power",
+            "SE – 50 lac",
+            "XEN – 30 lac",
+            "SDO – 20 lac"
+          ],
+          "correct": 2,
+          "expl": "Under standard PWD financial powers, the Executive Engineer (XEN) holds disbursing authority up to a prescribed limit, commonly cited as around Rs. 30 lakh."
+        },
+        {
+          "num": 71,
+          "text": "Indent/indent book is a document for",
+          "options": [
+            "Site order book",
+            "For transfer of material, receipt/issue",
+            "For transfer of funds",
+            "None of above"
+          ],
+          "correct": 1,
+          "expl": "An indent is a formal requisition document used to request and record the receipt or issue of stores/material between divisions or stores."
+        },
+        {
+          "num": 72,
+          "text": "Pay of the regular establishment is prepared on form",
+          "options": [
+            "Payroll",
+            "Work charge roll",
+            "Monthly bill",
+            "Acquaintance roll"
+          ],
+          "correct": 3,
+          "expl": "The pay of regular (permanent) staff is drawn and disbursed using the acquaintance roll, the standard salary-disbursement register form."
+        },
+        {
+          "num": 73,
+          "text": "ACR (Annual Confidential Report) is",
+          "options": [
+            "Report sent to government",
+            "Confidential complaint/report to the government",
+            "Secret file of XEN office",
+            "Report of annual performance of an employee"
+          ],
+          "correct": 3,
+          "expl": "An Annual Confidential Report is the yearly performance appraisal record maintained for each government employee by their reporting officer."
+        },
+        {
+          "num": 74,
+          "text": "Who maintains the cash book for the project",
+          "options": [
+            "CE",
+            "SE",
+            "XEN",
+            "SDO"
+          ],
+          "correct": 0,
+          "expl": "Per this classification, overall responsibility for the project's cash book is attributed to the Chief Engineer's office as the controlling authority."
+        },
+        {
+          "num": 75,
+          "text": "Who is the head of accounts in PWD",
+          "options": [
+            "CE",
+            "SE",
+            "XEN",
+            "AG (Accountant General of State)"
+          ],
+          "correct": 0,
+          "expl": "Within the PWD's own administrative hierarchy, the Chief Engineer is regarded as the overall head responsible for the department's accounts."
+        },
+        {
+          "num": 76,
+          "text": "Contract means an agreement of the following type(s)",
+          "options": [
+            "Lump-sum contract",
+            "Labour contract",
+            "Scheduled contract",
+            "All above"
+          ],
+          "correct": 3,
+          "expl": "A construction contract can take several legal forms - lump sum, labour-only, or item-rate/scheduled - so all of these qualify as types of contract."
+        },
+        {
+          "num": 77,
+          "text": "Who records the quantities of work done by the contractor",
+          "options": [
+            "CE",
+            "SE",
+            "XEN/SDO",
+            "JE"
+          ],
+          "correct": 3,
+          "expl": "The Junior Engineer (JE), being present at the site, is responsible for taking and recording the day-to-day measurements of work done by the contractor."
+        },
+        {
+          "num": 78,
+          "text": "Who prepares the bill of the contractor",
+          "options": [
+            "SE",
+            "XEN",
+            "SDO",
+            "JE"
+          ],
+          "correct": 3,
+          "expl": "The Junior Engineer (JE) prepares the contractor's bill based on the measurements recorded, which is then checked and passed by senior officers."
+        },
+        {
+          "num": 79,
+          "text": "Indent is used by the officer",
+          "options": [
+            "SE",
+            "XEN",
+            "SDO",
+            "JE"
+          ],
+          "correct": 3,
+          "expl": "At the field level, the Junior Engineer (JE) raises indents to requisition materials or stores needed for ongoing works."
+        },
+        {
+          "num": 80,
+          "text": "The tendering which is generally used for specialist work, emergency situations, or for low value, low risk and off-the-shelf options is known as",
+          "options": [
+            "Open tendering",
+            "Select tendering",
+            "Multi-stage tendering",
+            "Invited tendering"
+          ],
+          "correct": 3,
+          "expl": "Select (limited) tendering invites bids from a pre-chosen shortlist of contractors, making it suitable for specialist, urgent, or low-value/low-risk work where open competition isn't necessary."
+        },
+        {
+          "num": 81,
+          "text": "Earnest money deposit will be",
+          "options": [
+            "5% of Estimated cost",
+            "3% of Estimated cost",
+            "2% of Estimated cost",
+            "1% of Estimated cost"
+          ],
+          "correct": 2,
+          "expl": "Earnest money deposit (EMD), submitted with a tender to demonstrate a bidder's seriousness, is conventionally fixed at about 2% of the estimated cost of the work."
+        },
+        {
+          "num": 82,
+          "text": "Which type of contract is mainly done in Railway and Public Works Department?",
+          "options": [
+            "Lump sum contract",
+            "Item rate contract",
+            "Lump sum and Scheduled contract",
+            "Cost plus Fixed fee contract"
+          ],
+          "correct": 1,
+          "expl": "Railways and PWD predominantly use the item-rate contract, where the contractor quotes a rate for each individual item and payment follows measured quantities."
+        },
+        {
+          "num": 83,
+          "text": "The type of contract in which a contractor is required to quote a fixed sum for execution of work complete in all respects within a stipulated time period is called",
+          "options": [
+            "Lump sum contract",
+            "Item rate contract",
+            "Cost plus fixed fee contract",
+            "Percentage rate contract"
+          ],
+          "correct": 0,
+          "expl": "In a lump sum contract, the contractor agrees to complete the entire specified work for one fixed total price, regardless of the exact quantities executed."
+        },
+        {
+          "num": 84,
+          "text": "Earnest money to be deposited by the contractor for works of Rs. 4000 is",
+          "options": [
+            "100%",
+            "80%",
+            "60%",
+            "50%"
+          ],
+          "correct": 0,
+          "expl": "For very small value works such as this, the prescribed earnest money is effectively the full estimated cost, i.e. 100%, rather than the usual small percentage."
+        },
+        {
+          "num": 85,
+          "text": "Compensation for delay in completion, in terms of percentage of the estimated cost of work for every day that the work remains unfinished after the due date, is",
+          "options": [
+            "0.1% per day",
+            "0.5% per day",
+            "1% per day",
+            "2% per day"
+          ],
+          "correct": 2,
+          "expl": "Standard PWD contract conditions levy liquidated damages/compensation for delay at the rate of 1% of the estimated cost per day of delay, usually subject to an overall cap."
+        },
+        {
+          "num": 86,
+          "text": "The work whose cost does not exceed Rs. 2000/- is known as",
+          "options": [
+            "Major work",
+            "Minor work",
+            "Common work",
+            "Petty work"
+          ],
+          "correct": 3,
+          "expl": "Works with a very small estimated cost, conventionally up to Rs. 2000, are classified as petty works under departmental financial rules."
+        },
+        {
+          "num": 87,
+          "text": "The amount required to be deposited by a contractor while submitting a tender is known as",
+          "options": [
+            "Fixed deposit",
+            "Caution deposit",
+            "Security deposit",
+            "Earnest money deposit"
+          ],
+          "correct": 3,
+          "expl": "The sum a bidder deposits along with a tender submission, to show good faith and financial capability, is termed the earnest money deposit."
+        }
+      ]
+    },
+    {
+      "name": "Specifications & Road Work",
+      "questions": [
+        {
+          "num": 88,
+          "text": "Conglomerate floor is constructed of material",
+          "options": [
+            "Brick on edge over lean concrete",
+            "Vitrified tiles in cement mortar",
+            "C.C tiles over cement mortar",
+            "Plain C.C 1:2:4 over lean C.C"
+          ],
+          "correct": 3,
+          "expl": "A conglomerate floor is a plain cement concrete floor, typically laid in a 1:2:4 mix over a lean concrete sub-base for a durable finished surface."
+        },
+        {
+          "num": 89,
+          "text": "DPC is laid at level",
+          "options": [
+            "300 mm above NSL",
+            "At NSL",
+            "Above floor level",
+            "At plinth level"
+          ],
+          "correct": 3,
+          "expl": "The damp proof course is provided as a continuous horizontal barrier at plinth level, just below the floor, to stop rising ground moisture from entering the superstructure."
+        },
+        {
+          "num": 90,
+          "text": "Detailed specification is required for",
+          "options": [
+            "Contractor payment/tenders",
+            "Preparing estimate",
+            "Execution of work",
+            "All above"
+          ],
+          "correct": 3,
+          "expl": "Detailed specifications describe material quality and workmanship precisely, and this information is essential for preparing estimates, framing tender/payment terms, and guiding execution alike."
+        },
+        {
+          "num": 91,
+          "text": "For earth work excavation, dead man is left for",
+          "options": [
+            "To count the number of borrow pits",
+            "For identification of borrow pits",
+            "Measurement of depth of excavation",
+            "All above"
+          ],
+          "correct": 2,
+          "expl": "A 'dead man' is an unexcavated column of earth left standing within a large excavation so that its height can be used to verify and measure the depth already excavated."
+        },
+        {
+          "num": 92,
+          "text": "Finds in earth work excavation is",
+          "options": [
+            "Personal property",
+            "Contractors property",
+            "Labour property (of person who excavates)",
+            "Government property"
+          ],
+          "correct": 3,
+          "expl": "Any valuables, antiquities or treasure discovered during excavation on a government work belong to the Government, not to the contractor or labourer who unearths them."
+        },
+        {
+          "num": 93,
+          "text": "Curing is done for",
+          "options": [
+            "To keep the masonry/CC cool",
+            "To remove salts/efflorescence",
+            "To soak the bricks & keep moist",
+            "For chemical reaction of cement for strength"
+          ],
+          "correct": 3,
+          "expl": "Curing keeps concrete or mortar continuously moist so that the cement's hydration (chemical) reaction can proceed fully, developing the intended strength."
+        },
+        {
+          "num": 94,
+          "text": "Scaffolding is done for",
+          "options": [
+            "To support the masonry",
+            "Used for laying cement concrete in foundation",
+            "To facilitate the mason & material to support",
+            "Required for laying RCC slab"
+          ],
+          "correct": 2,
+          "expl": "Scaffolding is a temporary working platform erected to give masons safe access and a place to keep materials while building at height."
+        },
+        {
+          "num": 95,
+          "text": "Mosaic or Terrazo floors are",
+          "options": [
+            "Laid in stairs only",
+            "Laid with plain cement concrete 1:2:4",
+            "Laid for beautification",
+            "Made with marble chips with 1:1½ cement mortar"
+          ],
+          "correct": 3,
+          "expl": "Terrazzo/mosaic flooring is made by laying marble chips in a rich cement mortar (about 1:1.5), which is then ground and polished to expose a decorative surface."
+        },
+        {
+          "num": 96,
+          "text": "Wood work is measured",
+          "options": [
+            "Per meter",
+            "Per sqm",
+            "Per cum",
+            "Both per sqm & per cum for doors & chaukhats"
+          ],
+          "correct": 3,
+          "expl": "Door/window shutters (thin panels) are measured by area (sqm) while frames/chaukhats (solid sections) are measured by volume (cum), so both units apply depending on the component."
+        },
+        {
+          "num": 97,
+          "text": "Centering & shuttering should not be removed before",
+          "options": [
+            "RCC column – 4 days",
+            "RCC slab – 10 days",
+            "RCC beam – 14 days",
+            "All above are correct"
+          ],
+          "correct": 3,
+          "expl": "Minimum striking times for formwork vary by member - columns need less time than slabs, which need less than beams (which carry props longest) - so all the stated minimum periods are correct together."
+        },
+        {
+          "num": 98,
+          "text": "Essential requirements to prepare a detailed estimate",
+          "options": [
+            "All drawings (dimensioned)",
+            "Detailed specifications",
+            "Schedule of rates",
+            "All above"
+          ],
+          "correct": 3,
+          "expl": "A proper detailed estimate needs dimensioned drawings to compute quantities, specifications to define quality, and a schedule of rates to price the items - all three together."
+        },
+        {
+          "num": 99,
+          "text": "Soling in a metal road is",
+          "options": [
+            "Bottom-most part of pavement",
+            "Top-most layer of pavement",
+            "Soling is wearing course",
+            "Soling is made up of soil"
+          ],
+          "correct": 0,
+          "expl": "Soling forms the bottom-most layer of a road pavement, made of stones or bricks laid to provide a firm foundation before the upper pavement layers are built."
+        },
+        {
+          "num": 100,
+          "text": "Precoated grit is called",
+          "options": [
+            "Painted aggregate",
+            "Surface coated with bitumen",
+            "Stone grit of size 3 mm to 12 mm coated with bitumen",
+            "None of above"
+          ],
+          "correct": 2,
+          "expl": "Precoated grit refers to stone chippings in the 3-12 mm size range that are pre-coated with a thin film of bitumen before being spread on a road surface, improving adhesion."
+        },
+        {
+          "num": 101,
+          "text": "Standard width of ACC sheets",
+          "options": [
+            "1.05 m",
+            "1.2 m",
+            "1.35 m",
+            "0.90 m"
+          ],
+          "correct": 0,
+          "expl": "Asbestos cement corrugated (ACC) roofing sheets are manufactured to a standard width of 1.05 m as per common specification."
+        },
+        {
+          "num": 102,
+          "text": "Length of standard hook in reinforcement bar of diameter d is",
+          "options": [
+            "1 m",
+            "10d",
+            "9d",
+            "16d"
+          ],
+          "correct": 2,
+          "expl": "A standard 180-degree hook at the end of a reinforcement bar is detailed with a total length of about 9 times the bar diameter (9d) as per common reinforcement practice."
+        },
+        {
+          "num": 103,
+          "text": "Spliced length/lap length in a reinforcement bar is",
+          "options": [
+            "1 m",
+            "40 to 45d",
+            "100d",
+            "18d"
+          ],
+          "correct": 1,
+          "expl": "When two reinforcement bars are lap-spliced, the overlap length is conventionally taken as about 40 to 45 times the bar diameter to safely transfer stress between them."
+        },
+        {
+          "num": 104,
+          "text": "Area of the segmental portion of an arch with span l and rise r is",
+          "options": [
+            "5/8 lr",
+            "1/2 lr",
+            "2/3 lr",
+            "3/4 lr"
+          ],
+          "correct": 2,
+          "expl": "For a segmental (parabolic-like) arch, the standard geometric formula for the area enclosed between the chord (span) and the arc is two-thirds of the span times the rise, i.e. (2/3)lr."
+        },
+        {
+          "num": 105,
+          "text": "Density of cement is",
+          "options": [
+            "1750 kg/m3",
+            "2000 kg/m3",
+            "50 kg/m3",
+            "1450 kg/m3"
+          ],
+          "correct": 3,
+          "expl": "The standard bulk density value used for ordinary Portland cement in specifications and calculations is about 1450 kg/m3."
+        },
+        {
+          "num": 106,
+          "text": "Volume of one cement bag of 50 kg is",
+          "options": [
+            "50 cum",
+            "1 cum",
+            "0.0347 cum",
+            "10 cum"
+          ],
+          "correct": 2,
+          "expl": "Based on the standard density figure for cement, a 50 kg bag corresponds to a volume of about 0.0347 cubic metres."
+        },
+        {
+          "num": 107,
+          "text": "Minimum & maximum steel used (by volume) in an RCC column is",
+          "options": [
+            "1 to 2%",
+            "2 to 5%",
+            "0.8 to 6%",
+            "3 to 5%"
+          ],
+          "correct": 2,
+          "expl": "Indian standard code provisions require the longitudinal reinforcement in an RCC column to be between 0.8% and 6% of its gross cross-sectional area."
+        },
+        {
+          "num": 108,
+          "text": "In a detailed estimate, volume is taken nearest to",
+          "options": [
+            "0.05 cum",
+            "0.001 cum",
+            "0.005 cum",
+            "0.01 cum"
+          ],
+          "correct": 3,
+          "expl": "For practical accuracy in a detailed estimate, computed volumes are conventionally rounded off to the nearest 0.01 cubic metre."
+        },
+        {
+          "num": 109,
+          "text": "Quantity of DPC worked out in",
+          "options": [
+            "Cum",
+            "Sqm",
+            "Per meter",
+            "Lump-sum"
+          ],
+          "correct": 1,
+          "expl": "Since DPC is a thin uniform layer, its quantity is calculated as an area, in square metres, rather than as a volume."
+        },
+        {
+          "num": 110,
+          "text": "If B is the width of formation, d is the height of the embankment, side slope S : 1, for a highway with no transverse slope, the area of cross-section is",
+          "options": [
+            "B ÷ d + Sd",
+            "Bd + Sd2",
+            "B × d + Sd1/2",
+            "1/2 (Bd + Sd2)"
+          ],
+          "correct": 1,
+          "expl": "For a simple embankment with formation width B, height d, and side slopes S:1, the cross-sectional area is the rectangular part (Bd) plus the two triangular side slopes (Sd2), giving Bd + Sd2."
+        },
+        {
+          "num": 111,
+          "text": "If the formation level of a highway has a uniform gradient for a particular length, and the ground also has a longitudinal slope, the earthwork may be calculated by",
+          "options": [
+            "Mid-section formula",
+            "Trapezoidal formula",
+            "Prismoidal formula",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "When both formation and ground have sloping longitudinal profiles, earthwork volume can be worked out using the mid-section, trapezoidal, or prismoidal formula, depending on the required accuracy - all are valid methods."
+        },
+        {
+          "num": 112,
+          "text": "Nominal lead & lift are",
+          "options": [
+            "100 m & 10 m",
+            "50 m & 1 m",
+            "10 m & 1 m",
+            "30 m & 1.5 m"
+          ],
+          "correct": 3,
+          "expl": "Under standard schedule-of-rates conventions, the free (nominal) lead included in basic item rates is taken as 30 m, and the free lift as 1.5 m, beyond which extra lead/lift charges apply."
+        }
+      ]
+    },
+    {
+      "name": "Valuation",
+      "questions": [
+        {
+          "num": 115,
+          "text": "The technique of finding the fair price of an existing building or property is known as",
+          "options": [
+            "estimation",
+            "valuation",
+            "pricing",
+            "costing"
+          ],
+          "correct": 1,
+          "expl": "Valuation is the specific technique used to determine the present fair (market) price of an existing property, as distinct from estimating the cost of new construction."
+        },
+        {
+          "num": 116,
+          "text": "The value of the property (without being dismantled) at the end of the useful life period is known as",
+          "options": [
+            "scrap value",
+            "salvage value",
+            "junk value",
+            "book value"
+          ],
+          "correct": 1,
+          "expl": "Salvage value is the value a property or structure retains at the end of its useful life while still standing intact (not broken up), unlike scrap value which assumes dismantling."
+        },
+        {
+          "num": 117,
+          "text": "The annual periodic payments made for the repayment of the capital invested is known as",
+          "options": [
+            "annuity",
+            "depreciation",
+            "sinking fund",
+            "solatium"
+          ],
+          "correct": 0,
+          "expl": "An annuity is a fixed periodic (usually annual) payment made over time to repay or service a capital sum that was invested or borrowed."
+        },
+        {
+          "num": 118,
+          "text": "Ratio of cost of labour : material",
+          "options": [
+            "50:50",
+            "20:80",
+            "25:75",
+            "70:30"
+          ],
+          "correct": 2,
+          "expl": "A commonly used rule-of-thumb ratio in building cost estimation splits labour to material costs roughly as 25:75."
+        },
+        {
+          "num": 119,
+          "text": "Approximate plinth area rate of a first class (residential) building",
+          "options": [
+            "Rs. 10,000 to 11,000 per sqm",
+            "1000 to 2000 per sqm",
+            "9000 per cum",
+            "500 per sq. feet"
+          ],
+          "correct": 0,
+          "expl": "For a good-quality (first class) residential building, the plinth area rate is conventionally taken in the range of about Rs. 10,000 to 11,000 per square metre."
+        },
+        {
+          "num": 120,
+          "text": "A building costs Rs. 10 lac and the life of the building is 80 years. The scrap value after the life is over is 10% of the cost. Find the annual depreciation.",
+          "options": [
+            "11250",
+            "12500",
+            "1500",
+            "10000"
+          ],
+          "correct": 0,
+          "expl": "By the straight line method, annual depreciation = (cost - scrap value)/life = (1,000,000 - 100,000)/80 = 900,000/80 = Rs. 11,250."
+        },
+        {
+          "num": 121,
+          "text": "A generator was purchased for Rs. 1,30,000. Calculate the installment of the annual sinking fund assuming a life of 20 years & a scrap value of 10%. Current rate of interest is 8%.",
+          "options": [
+            "2557/-",
+            "1330/-",
+            "1040/-",
+            "2000/-"
+          ],
+          "correct": 0,
+          "expl": "Depreciable value = 130,000 - 13,000 = 117,000. Using the sinking fund factor i/[(1+i)^n - 1] with i=0.08, n=20, the annual installment works out to about Rs. 2557."
+        },
+        {
+          "num": 122,
+          "text": "Find the capitalized value of a property fetching an annual rent of Rs. 20,000, with the highest rate of interest at 8%.",
+          "options": [
+            "2 lac",
+            "2.5 lac",
+            "160000",
+            "240000"
+          ],
+          "correct": 1,
+          "expl": "Capitalized value = annual net income / rate of interest = 20,000 / 0.08 = Rs. 2,50,000."
+        },
+        {
+          "num": 123,
+          "text": "Value of a property, with respect to time, annually",
+          "options": [
+            "Goes on decreasing",
+            "Goes on increasing",
+            "Remains stable",
+            "All above"
+          ],
+          "correct": 3,
+          "expl": "A property's value can decrease due to physical depreciation, increase due to market/location factors, or stay stable, depending on circumstances, so all outcomes are possible over time."
+        },
+        {
+          "num": 124,
+          "text": "A property earns a rent of Rs. 9000 per annum. Rate of interest per annum is 6%. Find the capitalized value of the property.",
+          "options": [
+            "1,50,000/-",
+            "54000/-",
+            "90,000/-",
+            "1,80,000/-"
+          ],
+          "correct": 0,
+          "expl": "Capitalized value = annual rent / rate of interest = 9000 / 0.06 = Rs. 1,50,000."
+        },
+        {
+          "num": 125,
+          "text": "In the straight line method, the annual depreciation of the property is",
+          "options": [
+            "(Original cost − Annual sinking fund)/Life (in years)",
+            "Life (in years)/(Original cost + Scrap value)",
+            "(Original cost − Scrap value)/Life (in years)",
+            "(Original cost + Scrap value)/Life (in years)"
+          ],
+          "correct": 2,
+          "expl": "The straight line method spreads depreciation evenly: annual depreciation = (original cost - scrap value) divided by the total useful life in years."
+        },
+        {
+          "num": 128,
+          "text": "The value of a property during its useful life, based on purchase value and depreciation etc., is known as",
+          "options": [
+            "Junk value",
+            "Salvage value",
+            "Scrap value",
+            "Book value"
+          ],
+          "correct": 3,
+          "expl": "Book value is the value of a property carried in accounts at any point during its useful life, calculated as original cost less accumulated depreciation."
+        }
+      ]
+    }
+  ]
+}

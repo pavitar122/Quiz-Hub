@@ -1,0 +1,2003 @@
+{
+  "id": "engg_drawing_ch01",
+  "title": "Engineering Drawing",
+  "description": "Previous Year Questions and Practice Questions covering projection systems, first/third-angle projection, types of lines, dimensioning principles, scales, title block & lettering, and numerical problems — for GATE, ESE, SSC-JE and State AE/JE preparation.",
+  "subcats": [
+    {
+      "name": "Projection Systems (Orthographic, Isometric, Perspective, Axonometric)",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The two sub-methods adopted for projection technique, viz. Visual Ray Method and Vanishing Point Method, are for:",
+          "options": [
+            "Isometric Projections",
+            "Perspective Projections",
+            "Orthographic Projections",
+            "Trigonometrical Projections"
+          ],
+          "correct": 1,
+          "expl": "Perspective projection is constructed using either the Visual Ray Method or the Vanishing Point Method to show realistic depth."
+        },
+        {
+          "num": 2,
+          "text": "Which projection method is commonly used in engineering drawing?",
+          "options": [
+            "Isometric projection",
+            "Orthographic projection",
+            "Perspective projection",
+            "Oblique projection"
+          ],
+          "correct": 1,
+          "expl": "Orthographic projection is the standard method for working/manufacturing drawings as it shows true shape and size."
+        },
+        {
+          "num": 3,
+          "text": "In engineering drawing, the method most commonly adopted for preparing working drawings is:",
+          "options": [
+            "Isometric projection",
+            "Oblique projection",
+            "Orthographic projection",
+            "Perspective projection"
+          ],
+          "correct": 2,
+          "expl": "Working drawings need accurate, to-scale views, which orthographic projection provides."
+        },
+        {
+          "num": 4,
+          "text": "Which projection method produces views showing true dimensions of faces parallel to the plane?",
+          "options": [
+            "Perspective projection",
+            "Isometric projection",
+            "Orthographic projection",
+            "Oblique projection"
+          ],
+          "correct": 2,
+          "expl": "Orthographic projection shows the true size and shape of any surface parallel to the plane of projection."
+        },
+        {
+          "num": 5,
+          "text": "Perspective projection is mainly used to represent:",
+          "options": [
+            "Manufacturing dimensions",
+            "True shape of objects",
+            "Realistic appearance of objects",
+            "Hidden edges clearly"
+          ],
+          "correct": 2,
+          "expl": "Perspective projection mimics how the human eye sees objects, giving a realistic pictorial appearance."
+        },
+        {
+          "num": 6,
+          "text": "The visual ray method and vanishing point method are associated with:",
+          "options": [
+            "Orthographic projection",
+            "Axonometric projection",
+            "Perspective projection",
+            "Oblique projection"
+          ],
+          "correct": 2,
+          "expl": "Both methods are classical techniques for constructing perspective drawings."
+        },
+        {
+          "num": 7,
+          "text": "Which of the following projections is classified as an axonometric projection?",
+          "options": [
+            "Perspective projection",
+            "Isometric projection",
+            "Orthographic projection",
+            "Multiview projection"
+          ],
+          "correct": 1,
+          "expl": "Isometric projection is a type of axonometric (pictorial) projection where all three axes are equally foreshortened."
+        },
+        {
+          "num": 8,
+          "text": "In orthographic projection, the projection rays are assumed to be:",
+          "options": [
+            "Converging",
+            "Radial",
+            "Parallel and perpendicular to plane",
+            "Inclined to plane"
+          ],
+          "correct": 2,
+          "expl": "Parallel projectors perpendicular to the plane give orthographic projection its distortion-free, true-size views."
+        },
+        {
+          "num": 9,
+          "text": "Which plane is used to obtain the front view of an object?",
+          "options": [
+            "Horizontal plane",
+            "Vertical plane",
+            "Profile plane",
+            "Auxiliary plane"
+          ],
+          "correct": 1,
+          "expl": "The front view (elevation) is projected onto the Vertical Plane (VP)."
+        },
+        {
+          "num": 10,
+          "text": "Which view best shows the width and depth of an object?",
+          "options": [
+            "Front view",
+            "Top view",
+            "Side view",
+            "Auxiliary view"
+          ],
+          "correct": 1,
+          "expl": "The top view (plan) is projected on the horizontal plane and reveals the object's width and depth."
+        },
+        {
+          "num": 11,
+          "text": "The minimum number of views required to fully describe an object is usually:",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "correct": 2,
+          "expl": "Most objects require the front, top and side views (three views) for a complete description."
+        },
+        {
+          "num": 12,
+          "text": "Which projection gives the most realistic appearance of an object?",
+          "options": [
+            "Orthographic",
+            "Isometric",
+            "Oblique",
+            "Perspective"
+          ],
+          "correct": 3,
+          "expl": "Perspective projection replicates how the eye perceives depth, making it the most realistic."
+        },
+        {
+          "num": 13,
+          "text": "In isometric projection, the angle between any two principal axes is:",
+          "options": [
+            "60°",
+            "90°",
+            "120°",
+            "45°"
+          ],
+          "correct": 2,
+          "expl": "In isometric projection, the three axes are drawn 120° apart from each other."
+        },
+        {
+          "num": 14,
+          "text": "Which projection method is least suitable for taking measurements directly?",
+          "options": [
+            "Orthographic",
+            "Isometric",
+            "Multiview",
+            "Auxiliary"
+          ],
+          "correct": 1,
+          "expl": "Isometric drawings foreshorten dimensions, so true measurements can't be read directly off the drawing."
+        },
+        {
+          "num": 15,
+          "text": "The plane perpendicular to both HP and VP is known as:",
+          "options": [
+            "Auxiliary plane",
+            "Profile plane",
+            "Cutting plane",
+            "Section plane"
+          ],
+          "correct": 1,
+          "expl": "The Profile Plane (PP) is perpendicular to both the horizontal and vertical planes and is used for side views."
+        },
+        {
+          "num": 16,
+          "text": "Which projection method uses only one view to represent three dimensions pictorially?",
+          "options": [
+            "Orthographic projection",
+            "Multiview projection",
+            "Axonometric projection",
+            "First-angle projection"
+          ],
+          "correct": 2,
+          "expl": "Axonometric (e.g., isometric) projections show all three dimensions in a single pictorial view."
+        },
+        {
+          "num": 17,
+          "text": "Which projection shows only one face of an object but represents three dimensions pictorially?",
+          "options": [
+            "Orthographic projection",
+            "Perspective projection",
+            "Axonometric projection",
+            "Auxiliary projection"
+          ],
+          "correct": 2,
+          "expl": "Axonometric projections combine multiple dimensions into a single pictorial view from one direction."
+        },
+        {
+          "num": 18,
+          "text": "Which view is projected on the profile plane?",
+          "options": [
+            "Front view",
+            "Top view",
+            "Side view",
+            "Auxiliary view"
+          ],
+          "correct": 2,
+          "expl": "The side view is obtained by projecting the object onto the profile plane."
+        },
+        {
+          "num": 19,
+          "text": "In orthographic projection, distortion is eliminated because projection rays are assumed to be:",
+          "options": [
+            "Radial",
+            "Inclined",
+            "Parallel",
+            "Convergent"
+          ],
+          "correct": 2,
+          "expl": "Parallel projection rays ensure that shapes and sizes are reproduced without distortion."
+        }
+      ]
+    },
+    {
+      "name": "First-Angle vs Third-Angle Projection",
+      "questions": [
+        {
+          "num": 1,
+          "text": "As per first-angle projection, the appearance of the right-side surface of the object is drawn:",
+          "options": [
+            "On the right side of the front view",
+            "On the left side of the front view",
+            "On the top of the front view",
+            "Below the front view"
+          ],
+          "correct": 1,
+          "expl": "In first-angle projection, the object lies between the observer and the plane, so views are reversed — the right-side view appears on the left of the front view."
+        },
+        {
+          "num": 2,
+          "text": "In first-angle projection, the object is assumed to be:",
+          "options": [
+            "In the first quadrant and behind the projection plane",
+            "In the first quadrant and between observer and plane",
+            "In the third quadrant and behind the plane",
+            "In the fourth quadrant and between planes"
+          ],
+          "correct": 1,
+          "expl": "First-angle projection places the object in the first quadrant, between the observer and the projection plane."
+        },
+        {
+          "num": 3,
+          "text": "In first-angle projection, the top view of an object is drawn:",
+          "options": [
+            "Above the front view",
+            "Below the front view",
+            "To the right of the front view",
+            "To the left of the front view"
+          ],
+          "correct": 1,
+          "expl": "In first-angle projection, the top view is projected downward onto the horizontal plane and placed below the front view."
+        },
+        {
+          "num": 4,
+          "text": "In first-angle projection, the right-side view of an object is placed:",
+          "options": [
+            "On the right of the front view",
+            "On the left of the front view",
+            "Above the front view",
+            "Below the front view"
+          ],
+          "correct": 1,
+          "expl": "Because the object sits between observer and plane, the right-side view is projected onto the left-hand plane."
+        },
+        {
+          "num": 5,
+          "text": "Which projection system is officially recommended in India for engineering drawings?",
+          "options": [
+            "Third-angle projection",
+            "Oblique projection",
+            "First-angle projection",
+            "Perspective projection"
+          ],
+          "correct": 2,
+          "expl": "Bureau of Indian Standards (BIS) recommends first-angle projection for engineering drawings in India."
+        },
+        {
+          "num": 6,
+          "text": "The symbol of first-angle projection consists of:",
+          "options": [
+            "Two truncated cones with larger end on right",
+            "Two truncated cones with larger end on left",
+            "A cylinder and a cube",
+            "A pyramid and a cone"
+          ],
+          "correct": 1,
+          "expl": "The first-angle projection symbol shows two truncated cones (frustums) with the larger diameter end on the left."
+        },
+        {
+          "num": 7,
+          "text": "In third-angle projection, the object is assumed to be placed in:",
+          "options": [
+            "First quadrant",
+            "Second quadrant",
+            "Third quadrant",
+            "Fourth quadrant"
+          ],
+          "correct": 2,
+          "expl": "Third-angle projection places the object in the third quadrant, behind the plane of projection."
+        },
+        {
+          "num": 8,
+          "text": "In first-angle projection, the observer is assumed to be positioned:",
+          "options": [
+            "Between object and plane",
+            "Behind the object",
+            "At infinity",
+            "Below the object"
+          ],
+          "correct": 2,
+          "expl": "The observer is assumed to be at infinity, viewing through the object onto the plane behind it."
+        },
+        {
+          "num": 9,
+          "text": "In first-angle projection, the apparent reversal of views occurs because:",
+          "options": [
+            "Object is behind the plane",
+            "Observer is between plane and object",
+            "Object is between observer and plane",
+            "Projection plane is inclined"
+          ],
+          "correct": 2,
+          "expl": "With the object between the observer and the plane, each view gets projected onto the far side, reversing the arrangement."
+        },
+        {
+          "num": 10,
+          "text": "Which projection system places views on the same side as the actual feature?",
+          "options": [
+            "First-angle projection",
+            "Third-angle projection",
+            "Isometric projection",
+            "Perspective projection"
+          ],
+          "correct": 1,
+          "expl": "In third-angle projection, the plane lies between the observer and the object, so views appear on the same side as the feature they represent."
+        },
+        {
+          "num": 11,
+          "text": "In first-angle projection, why does the top view appear below the front view?",
+          "options": [
+            "Due to observer position",
+            "Due to object rotation",
+            "Due to downward rotation of HP",
+            "Due to projection distortion"
+          ],
+          "correct": 2,
+          "expl": "The horizontal plane is rotated downward (about the reference line) to bring it into the same plane as the vertical plane, placing the top view below."
+        },
+        {
+          "num": 12,
+          "text": "Which projection system is identified by the symbol where the larger end of the frustum is on the left?",
+          "options": [
+            "Orthographic projection",
+            "First-angle projection",
+            "Third-angle projection",
+            "Perspective projection"
+          ],
+          "correct": 1,
+          "expl": "This is the standard symbol for first-angle projection (as opposed to third-angle, where the larger end is on the right)."
+        },
+        {
+          "num": 13,
+          "text": "Which feature distinguishes first-angle and third-angle projections most clearly?",
+          "options": [
+            "Shape of object",
+            "Type of drawing sheet",
+            "Relative position of views",
+            "Type of scale used"
+          ],
+          "correct": 2,
+          "expl": "The key difference lies in how the views are arranged relative to the front view, not in the object or sheet itself."
+        }
+      ]
+    },
+    {
+      "name": "Types & Conventions of Lines",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The hidden lines in engineering drawing are used to represent:",
+          "options": [
+            "Explicit parts in the view",
+            "Invisible parts in the view",
+            "Important parts in the view",
+            "Valuable parts in the view"
+          ],
+          "correct": 1,
+          "expl": "Hidden (dashed) lines depict edges and surfaces that are not visible from the current viewing direction."
+        },
+        {
+          "num": 2,
+          "text": "Which line is used to indicate the limits of a dimension?",
+          "options": [
+            "Object line",
+            "Hidden line",
+            "Extension line",
+            "Center line"
+          ],
+          "correct": 2,
+          "expl": "Extension lines project from the object outline to mark the limits within which the dimension line and value apply."
+        },
+        {
+          "num": 3,
+          "text": "Dimension lines are represented by:",
+          "options": [
+            "Thick continuous lines",
+            "Thin continuous lines with arrowheads",
+            "Dashed lines",
+            "Chain thin lines"
+          ],
+          "correct": 1,
+          "expl": "Dimension lines are drawn thin and continuous, terminated with arrowheads at each end."
+        },
+        {
+          "num": 4,
+          "text": "Which of the following lines represents invisible edges of an object?",
+          "options": [
+            "Object line",
+            "Center line",
+            "Hidden line",
+            "Dimension line"
+          ],
+          "correct": 2,
+          "expl": "Hidden lines (short dashes) represent edges that are not visible in the given view."
+        },
+        {
+          "num": 5,
+          "text": "Which line is used to indicate the axis of symmetry of an object?",
+          "options": [
+            "Hidden line",
+            "Object line",
+            "Center line",
+            "Dimension line"
+          ],
+          "correct": 2,
+          "expl": "Center lines (thin chain/long-short dashed lines) mark axes of symmetry and centers of circles."
+        },
+        {
+          "num": 6,
+          "text": "Which line should never be used as a dimension line?",
+          "options": [
+            "Object line",
+            "Center line",
+            "Continuous thin line",
+            "Extension line"
+          ],
+          "correct": 1,
+          "expl": "A center line should never be used directly as, or extended to serve as, a dimension line."
+        },
+        {
+          "num": 7,
+          "text": "Which line is used to indicate cutting planes in sectional views?",
+          "options": [
+            "Object line",
+            "Cutting plane line",
+            "Center line",
+            "Hidden line"
+          ],
+          "correct": 1,
+          "expl": "A cutting plane line (thick chain line with arrows) shows where an imaginary cut is made to create a section view."
+        },
+        {
+          "num": 8,
+          "text": "Object outlines in an engineering drawing are drawn using:",
+          "options": [
+            "Thin continuous lines",
+            "Thick continuous lines",
+            "Chain thin lines",
+            "Dashed thin lines"
+          ],
+          "correct": 1,
+          "expl": "Visible object outlines are drawn as thick continuous lines so they stand out clearly."
+        },
+        {
+          "num": 9,
+          "text": "Center lines are represented by:",
+          "options": [
+            "Continuous thick lines",
+            "Continuous thin lines",
+            "Chain thin lines",
+            "Dashed thick lines"
+          ],
+          "correct": 2,
+          "expl": "Center lines are thin chain lines — alternating long and short dashes."
+        },
+        {
+          "num": 10,
+          "text": "Which line type is used for dimensioning and extension lines?",
+          "options": [
+            "Thick continuous line",
+            "Thin continuous line",
+            "Chain thin line",
+            "Dashed thick line"
+          ],
+          "correct": 1,
+          "expl": "Both dimension and extension lines are drawn as thin continuous lines to avoid visual dominance over the object outline."
+        },
+        {
+          "num": 11,
+          "text": "The conventional symbol for a center of a circle is:",
+          "options": [
+            "Small filled circle",
+            "Crossed thin lines",
+            "Arrowhead mark",
+            "Dashed arc"
+          ],
+          "correct": 1,
+          "expl": "The center of a circle is marked with two short crossed thin (center) lines."
+        },
+        {
+          "num": 12,
+          "text": "Which line type should be avoided for dimensioning purposes?",
+          "options": [
+            "Continuous thin line",
+            "Extension line",
+            "Center line",
+            "Dimension line"
+          ],
+          "correct": 2,
+          "expl": "Center lines should not double as dimension lines since it can create ambiguity in the drawing."
+        },
+        {
+          "num": 13,
+          "text": "Which convention is used to represent materials like steel, brick, and concrete in section views?",
+          "options": [
+            "Object outlines",
+            "Hidden lines",
+            "Hatching patterns",
+            "Cutting plane lines"
+          ],
+          "correct": 2,
+          "expl": "Hatching (section lining) patterns, standardized per material, indicate cut surfaces in sectional views."
+        },
+        {
+          "num": 14,
+          "text": "The spacing between section lines should be:",
+          "options": [
+            "Very close",
+            "Very wide",
+            "Uniform and appropriate",
+            "Random"
+          ],
+          "correct": 2,
+          "expl": "Hatching lines should be evenly spaced and proportionate to the drawing scale for clarity."
+        },
+        {
+          "num": 15,
+          "text": "Which line is used to show imaginary extension of a surface?",
+          "options": [
+            "Hidden line",
+            "Phantom line",
+            "Object line",
+            "Cutting plane line"
+          ],
+          "correct": 1,
+          "expl": "Phantom lines (long-short-short chain lines) show alternate positions or imaginary extensions of a feature."
+        },
+        {
+          "num": 16,
+          "text": "The conventional representation of threads in engineering drawing is done using:",
+          "options": [
+            "Thick continuous lines only",
+            "Thin continuous lines only",
+            "Combination of thick and thin lines",
+            "Dashed lines only"
+          ],
+          "correct": 2,
+          "expl": "Screw threads are conventionally shown using a combination of thick (crest) and thin (root) continuous lines."
+        },
+        {
+          "num": 17,
+          "text": "Which line is used to indicate the limits of a partial or interrupted view?",
+          "options": [
+            "Object line",
+            "Break line",
+            "Hidden line",
+            "Center line"
+          ],
+          "correct": 1,
+          "expl": "A break line (freehand zig-zag or wavy) marks where a partial view or interrupted section is shown."
+        },
+        {
+          "num": 18,
+          "text": "Which line thickness hierarchy is correct?",
+          "options": [
+            "Hidden > Object > Dimension",
+            "Object > Dimension > Hidden",
+            "Object > Hidden > Dimension",
+            "Dimension > Object > Hidden"
+          ],
+          "correct": 2,
+          "expl": "Object (outline) lines are thickest, hidden lines are medium thickness, and dimension lines are thinnest."
+        },
+        {
+          "num": 19,
+          "text": "Which of the following conventions is used to show symmetry in drawings?",
+          "options": [
+            "Section lining",
+            "Center lines",
+            "Break lines",
+            "Phantom lines"
+          ],
+          "correct": 1,
+          "expl": "Center lines mark axes of symmetry in symmetrical features."
+        },
+        {
+          "num": 20,
+          "text": "Which line type is drawn freehand and zig-zag in nature?",
+          "options": [
+            "Cutting plane line",
+            "Break line",
+            "Dimension line",
+            "Center line"
+          ],
+          "correct": 1,
+          "expl": "Break lines are drawn freehand in a zig-zag or wavy style to indicate a shortened or interrupted view."
+        },
+        {
+          "num": 21,
+          "text": "Which line is used to show axis of cylindrical objects?",
+          "options": [
+            "Hidden line",
+            "Object line",
+            "Center line",
+            "Phantom line"
+          ],
+          "correct": 2,
+          "expl": "The center line marks the longitudinal axis of cylindrical features such as shafts and holes."
+        },
+        {
+          "num": 22,
+          "text": "In sectional views, cutting plane lines are generally drawn as:",
+          "options": [
+            "Thin continuous lines",
+            "Thick dashed lines",
+            "Thick chain lines with arrows",
+            "Thin dashed lines"
+          ],
+          "correct": 2,
+          "expl": "Cutting plane lines are thick chain lines terminated with arrows indicating the viewing direction."
+        },
+        {
+          "num": 23,
+          "text": "Which convention is used to represent materials in sectional views?",
+          "options": [
+            "Phantom lines",
+            "Hatching",
+            "Center lines",
+            "Object outlines"
+          ],
+          "correct": 1,
+          "expl": "Hatching lines represent the material of the cut surface in a section view."
+        },
+        {
+          "num": 24,
+          "text": "Which line should never be dimensioned directly?",
+          "options": [
+            "Object line",
+            "Hidden line",
+            "Extension line",
+            "Center line"
+          ],
+          "correct": 1,
+          "expl": "Hidden lines represent invisible features and should not be dimensioned directly; a section view is preferred instead."
+        },
+        {
+          "num": 25,
+          "text": "Which convention is used to shorten long uniform objects in drawings?",
+          "options": [
+            "Center line",
+            "Phantom line",
+            "Break line",
+            "Cutting plane line"
+          ],
+          "correct": 2,
+          "expl": "A break line is used to shorten the representation of long, uniform-section objects while preserving scale accuracy elsewhere."
+        },
+        {
+          "num": 26,
+          "text": "Which line type takes visual priority over all others?",
+          "options": [
+            "Hidden line",
+            "Dimension line",
+            "Object line",
+            "Center line"
+          ],
+          "correct": 2,
+          "expl": "When lines coincide, the visible object (outline) line always takes precedence over hidden, center, or dimension lines."
+        },
+        {
+          "num": 27,
+          "text": "Which convention prevents confusion between adjacent sectioned components?",
+          "options": [
+            "Same hatching angle",
+            "Different hatching angle",
+            "Thicker section lines",
+            "Wider spacing"
+          ],
+          "correct": 1,
+          "expl": "Adjacent parts in an assembly section are hatched at different angles (or spacing) to visually distinguish them."
+        },
+        {
+          "num": 28,
+          "text": "Why are center lines extended slightly beyond the outline of a circle?",
+          "options": [
+            "For decoration",
+            "For clarity of axis location",
+            "To support dimension lines",
+            "To show hidden edges"
+          ],
+          "correct": 1,
+          "expl": "A short extension beyond the outline makes the axis/center location clearly identifiable."
+        },
+        {
+          "num": 29,
+          "text": "Which condition justifies the use of break lines?",
+          "options": [
+            "Complex geometry",
+            "Long uniform objects",
+            "Circular objects",
+            "Inclined surfaces"
+          ],
+          "correct": 1,
+          "expl": "Break lines are used to shorten the drawn length of long objects that have a uniform cross-section throughout."
+        },
+        {
+          "num": 30,
+          "text": "The principal reason hidden lines are minimized in drawings is to:",
+          "options": [
+            "Reduce ink usage",
+            "Improve clarity and readability",
+            "Save drawing time",
+            "Maintain symmetry"
+          ],
+          "correct": 1,
+          "expl": "Excessive hidden lines clutter a drawing; minimizing them (often via sections) keeps the drawing clear and readable."
+        },
+        {
+          "num": 31,
+          "text": "Why are section views preferred over hidden lines in complex drawings?",
+          "options": [
+            "To save paper",
+            "To improve visual clarity",
+            "To reduce drawing time",
+            "To maintain symmetry"
+          ],
+          "correct": 1,
+          "expl": "Sections replace confusing clusters of hidden lines with clear, visible internal detail."
+        },
+        {
+          "num": 32,
+          "text": "Which line type must dominate visually in a drawing?",
+          "options": [
+            "Dimension line",
+            "Hidden line",
+            "Object line",
+            "Center line"
+          ],
+          "correct": 2,
+          "expl": "The object (outline) line, being the thickest, should visually dominate over all other line types."
+        }
+      ]
+    },
+    {
+      "name": "Dimensioning Principles & Rules",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The length-to-height ratio of a closed filled arrowhead is:",
+          "options": [
+            "2:1",
+            "1:1",
+            "3:1",
+            "1:3"
+          ],
+          "correct": 2,
+          "expl": "As per drawing standards, a closed filled arrowhead has a length-to-height (width) ratio of 3:1."
+        },
+        {
+          "num": 2,
+          "text": "The recommended ratio of length to width of a closed filled arrowhead is:",
+          "options": [
+            "1:1",
+            "3:1",
+            "2:1",
+            "1:3"
+          ],
+          "correct": 1,
+          "expl": "Same standard as above — arrowhead length should be three times its width."
+        },
+        {
+          "num": 3,
+          "text": "The main purpose of dimensioning in an engineering drawing is to:",
+          "options": [
+            "Improve aesthetic appearance",
+            "Provide complete size and location information",
+            "Reduce drawing time",
+            "Avoid use of scales"
+          ],
+          "correct": 1,
+          "expl": "Dimensioning conveys exact size and position information needed to manufacture the part without ambiguity."
+        },
+        {
+          "num": 4,
+          "text": "Which system of dimensioning places all dimension figures horizontally, readable from the bottom of the drawing?",
+          "options": [
+            "Aligned system",
+            "Chain system",
+            "Unidirectional system",
+            "Baseline system"
+          ],
+          "correct": 2,
+          "expl": "In the unidirectional system, all figures are written horizontally so they can always be read from the bottom of the sheet."
+        },
+        {
+          "num": 5,
+          "text": "In the aligned system of dimensioning, dimension figures are:",
+          "options": [
+            "Written horizontally only",
+            "Written parallel to the dimension line",
+            "Written vertically only",
+            "Written inside the object"
+          ],
+          "correct": 1,
+          "expl": "In the aligned system, figures are oriented parallel to their dimension line so they read along its direction."
+        },
+        {
+          "num": 6,
+          "text": "As per standard practice, arrowheads used in dimensioning should be:",
+          "options": [
+            "Circular in shape",
+            "Open and curved",
+            "Closed and filled",
+            "Rectangular"
+          ],
+          "correct": 2,
+          "expl": "Standard practice recommends closed and filled arrowheads for clear, unambiguous termination of dimension lines."
+        },
+        {
+          "num": 7,
+          "text": "As per standard rules, dimension lines should generally be placed:",
+          "options": [
+            "Inside the object",
+            "Outside the object",
+            "On hidden edges",
+            "Over center lines"
+          ],
+          "correct": 1,
+          "expl": "Dimension lines are conventionally kept outside the object outline to avoid cluttering the view."
+        },
+        {
+          "num": 8,
+          "text": "Which of the following should be avoided in dimensioning practice?",
+          "options": [
+            "Use of arrowheads",
+            "Use of extension lines",
+            "Duplication of dimensions",
+            "Use of center lines"
+          ],
+          "correct": 2,
+          "expl": "Duplicate dimensions can cause confusion or conflicting information and must be avoided."
+        },
+        {
+          "num": 9,
+          "text": "The numerical value of a dimension represents:",
+          "options": [
+            "Scaled length on drawing",
+            "Actual size of the object",
+            "Length of dimension line",
+            "Length of arrowhead"
+          ],
+          "correct": 1,
+          "expl": "Dimension figures always state the true (actual) size of the object, regardless of the drawing scale used."
+        },
+        {
+          "num": 10,
+          "text": "Arrowheads should touch which element directly?",
+          "options": [
+            "Object outline",
+            "Dimension line ends",
+            "Extension line ends",
+            "Center line"
+          ],
+          "correct": 2,
+          "expl": "Arrowheads are placed at the ends of the dimension line, touching the extension lines that mark its limits."
+        },
+        {
+          "num": 11,
+          "text": "Which dimensioning method measures successive features from one reference surface?",
+          "options": [
+            "Chain dimensioning",
+            "Parallel dimensioning",
+            "Baseline dimensioning",
+            "Angular dimensioning"
+          ],
+          "correct": 2,
+          "expl": "Baseline (parallel) dimensioning measures every feature from a single common datum surface."
+        },
+        {
+          "num": 12,
+          "text": "Chain dimensioning is mainly used when:",
+          "options": [
+            "High precision is required",
+            "Tolerance accumulation is critical",
+            "Overall length is not critical",
+            "Datum reference is mandatory"
+          ],
+          "correct": 2,
+          "expl": "Chain dimensioning links dimensions end-to-end; it's suitable only when overall accumulated length isn't critical, since tolerances add up."
+        },
+        {
+          "num": 13,
+          "text": "Extension lines should extend beyond the dimension line by approximately:",
+          "options": [
+            "1 mm",
+            "2 mm",
+            "3 mm",
+            "10 mm"
+          ],
+          "correct": 1,
+          "expl": "Standard practice extends extension lines about 2 mm past the dimension line arrowhead."
+        },
+        {
+          "num": 14,
+          "text": "Which rule must be followed while dimensioning holes?",
+          "options": [
+            "Use radius symbol",
+            "Use diameter symbol",
+            "Avoid center lines",
+            "Use chain dimensioning"
+          ],
+          "correct": 1,
+          "expl": "Holes (full circles) are dimensioned using the diameter symbol (∅)."
+        },
+        {
+          "num": 15,
+          "text": "Which dimensioning method minimizes accumulation of errors?",
+          "options": [
+            "Chain dimensioning",
+            "Parallel dimensioning",
+            "Baseline dimensioning",
+            "Angular dimensioning"
+          ],
+          "correct": 2,
+          "expl": "Baseline dimensioning references all dimensions to one datum, preventing tolerance stack-up seen in chain dimensioning."
+        },
+        {
+          "num": 16,
+          "text": "Which feature must never be dimensioned directly?",
+          "options": [
+            "Visible edge",
+            "Hidden edge",
+            "Center line",
+            "Object outline"
+          ],
+          "correct": 1,
+          "expl": "Hidden edges should not be dimensioned directly; a section or additional view should reveal them as visible edges first."
+        },
+        {
+          "num": 17,
+          "text": "Which rule is violated if the same dimension appears in two different views?",
+          "options": [
+            "Dimension clarity rule",
+            "Dimension placement rule",
+            "Non-duplication rule",
+            "Line hierarchy rule"
+          ],
+          "correct": 2,
+          "expl": "Repeating a dimension across views breaks the non-duplication rule and risks conflicting values after revisions."
+        },
+        {
+          "num": 19,
+          "text": "In dimensioning, arrowheads are preferred over dots because arrowheads:",
+          "options": [
+            "Are decorative",
+            "Occupy less space",
+            "Provide clear termination",
+            "Reduce drawing time"
+          ],
+          "correct": 2,
+          "expl": "Arrowheads give an unambiguous, sharply defined termination point for a dimension line."
+        },
+        {
+          "num": 20,
+          "text": "Which drawing element ensures interchangeability of manufactured parts?",
+          "options": [
+            "Decorative lettering",
+            "Accurate dimensioning",
+            "Use of colors",
+            "Sheet size selection"
+          ],
+          "correct": 1,
+          "expl": "Accurate dimensioning within specified tolerances is what allows parts made separately to fit together (interchangeability)."
+        },
+        {
+          "num": 21,
+          "text": "Which dimensioning approach is most suitable when positional accuracy relative to a datum is critical?",
+          "options": [
+            "Chain dimensioning",
+            "Parallel dimensioning",
+            "Baseline dimensioning",
+            "Angular dimensioning"
+          ],
+          "correct": 2,
+          "expl": "Baseline dimensioning ties every feature's position directly to the datum, preserving positional accuracy."
+        },
+        {
+          "num": 22,
+          "text": "Which drawing element directly supports interchangeability?",
+          "options": [
+            "Hatching",
+            "Projection system",
+            "Accurate dimensioning",
+            "Lettering style"
+          ],
+          "correct": 2,
+          "expl": "As with Q20, correctly toleranced dimensions are what make interchangeable manufacturing possible."
+        },
+        {
+          "num": 23,
+          "text": "Which convention ensures that dimensions are independent of drawing scale?",
+          "options": [
+            "Using RF",
+            "Writing numerical values",
+            "Using diagonals",
+            "Using arrows"
+          ],
+          "correct": 1,
+          "expl": "Because the numerical value always states true size, dimensions remain valid regardless of how the drawing is scaled or reproduced."
+        },
+        {
+          "num": 24,
+          "text": "Which view is least suitable for dimension placement?",
+          "options": [
+            "Front view",
+            "Top view",
+            "Sectional view",
+            "Perspective view"
+          ],
+          "correct": 3,
+          "expl": "Perspective views are foreshortened/distorted pictorially, so they are unsuitable for placing accurate dimensions."
+        },
+        {
+          "num": 25,
+          "text": "Which drawing principle minimizes interpretation errors?",
+          "options": [
+            "Maximum views",
+            "Maximum dimensions",
+            "Clear and minimal dimensioning",
+            "Decorative layout"
+          ],
+          "correct": 2,
+          "expl": "Providing only the necessary dimensions, clearly placed, reduces the chance of misreading or conflicting information."
+        },
+        {
+          "num": 26,
+          "text": "Which line type must never cross dimension figures?",
+          "options": [
+            "Object line",
+            "Center line",
+            "Dimension line",
+            "Hidden line"
+          ],
+          "correct": 2,
+          "expl": "The dimension line itself is conventionally broken/gapped where the numeral is written so no line passes through the figure."
+        },
+        {
+          "num": 27,
+          "text": "Which view should contain the maximum number of dimensions?",
+          "options": [
+            "Side view",
+            "Top view",
+            "Front view",
+            "Auxiliary view"
+          ],
+          "correct": 2,
+          "expl": "The front view, being the most descriptive view of an object, is generally used to carry the majority of dimensions."
+        },
+        {
+          "num": 28,
+          "text": "Which view arrangement helps reduce total number of dimensions?",
+          "options": [
+            "Random layout",
+            "Symmetrical layout",
+            "Logical view alignment",
+            "Decorative layout"
+          ],
+          "correct": 2,
+          "expl": "Aligning related views logically lets dimensions be shared/referenced rather than repeated."
+        },
+        {
+          "num": 29,
+          "text": "Which principle ensures that a drawing can be interpreted without referring to written instructions?",
+          "options": [
+            "Decorative layout",
+            "Complete and accurate dimensioning",
+            "Artistic lettering",
+            "Use of colors"
+          ],
+          "correct": 1,
+          "expl": "A fully and correctly dimensioned drawing is self-explanatory and needs no supplementary text instructions."
+        },
+        {
+          "num": 30,
+          "text": "Which dimensioning practice best prevents tolerance accumulation?",
+          "options": [
+            "Chain dimensioning",
+            "Angular dimensioning",
+            "Baseline dimensioning",
+            "Parallel dimensioning"
+          ],
+          "correct": 2,
+          "expl": "Baseline dimensioning avoids the cumulative tolerance build-up inherent in chain dimensioning."
+        },
+        {
+          "num": 31,
+          "text": "Which statement regarding dimension values is correct?",
+          "options": [
+            "They depend on drawing scale",
+            "They represent true object size",
+            "They vary with paper size",
+            "They change with projection"
+          ],
+          "correct": 1,
+          "expl": "Dimension figures always represent the true (actual) size of the object, never the scaled drawing length."
+        },
+        {
+          "num": 32,
+          "text": "Which view arrangement reduces repetition of dimensions?",
+          "options": [
+            "Random placement",
+            "Logical alignment of views",
+            "Decorative layout",
+            "Enlarged views"
+          ],
+          "correct": 1,
+          "expl": "Logically aligned views let a single dimension serve multiple related features, reducing repetition."
+        },
+        {
+          "num": 33,
+          "text": "Which feature should never be dimensioned directly?",
+          "options": [
+            "Visible edge",
+            "Hidden edge",
+            "Center line",
+            "Object outline"
+          ],
+          "correct": 1,
+          "expl": "As before, hidden edges should be revealed as visible (e.g. via a section) before being dimensioned."
+        },
+        {
+          "num": 34,
+          "text": "Which line should not cross dimension numerals?",
+          "options": [
+            "Object line",
+            "Center line",
+            "Extension line",
+            "Dimension line"
+          ],
+          "correct": 3,
+          "expl": "The dimension line is broken at the numeral so the figure remains clearly legible."
+        }
+      ]
+    },
+    {
+      "name": "Scales – Concepts",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The customized plain scales in an engineering drawing are used to measure which one of the following?",
+          "options": [
+            "Two consecutive units",
+            "Three consecutive units",
+            "One unit",
+            "Fraction of a main scale division"
+          ],
+          "correct": 0,
+          "expl": "A plain scale can measure two consecutive units of length, e.g. meters and decimeters."
+        },
+        {
+          "num": 2,
+          "text": "The unit divided into equal parts on the right side of zero in a plain scale represents:",
+          "options": [
+            "Main units",
+            "Sub-units",
+            "Diagonal units",
+            "Comparative units"
+          ],
+          "correct": 0,
+          "expl": "On a plain scale, the primary division to the right of zero represents the main units of measurement."
+        },
+        {
+          "num": 3,
+          "text": "Which scale is used to measure two successive units?",
+          "options": [
+            "Diagonal scale",
+            "Vernier scale",
+            "Plain scale",
+            "Comparative scale"
+          ],
+          "correct": 2,
+          "expl": "The plain scale is specifically designed to measure two successive units, e.g. meters and decimeters."
+        },
+        {
+          "num": 4,
+          "text": "Diagonal scale is mainly used to measure:",
+          "options": [
+            "One unit only",
+            "Two units only",
+            "Three consecutive units",
+            "Angles"
+          ],
+          "correct": 2,
+          "expl": "A diagonal scale can measure three consecutive units (e.g. meters, decimeters, centimeters) using similar triangles."
+        },
+        {
+          "num": 5,
+          "text": "The smallest division measured using a diagonal scale is obtained by:",
+          "options": [
+            "Vertical divisions",
+            "Horizontal divisions",
+            "Intersection of diagonals",
+            "Center lines"
+          ],
+          "correct": 2,
+          "expl": "The finest subdivision on a diagonal scale is read at the intersection point of the diagonal lines with horizontal divisions."
+        },
+        {
+          "num": 6,
+          "text": "Which scale is suitable for showing two different unit systems on the same drawing?",
+          "options": [
+            "Plain scale",
+            "Diagonal scale",
+            "Comparative scale",
+            "Vernier scale"
+          ],
+          "correct": 2,
+          "expl": "A comparative scale shows two different unit systems (e.g. km and miles) side by side for the same RF."
+        },
+        {
+          "num": 7,
+          "text": "In construction of scales, the length of scale is calculated using:",
+          "options": [
+            "Actual length × RF",
+            "Drawing length × RF",
+            "Actual length ÷ RF",
+            "Drawing length ÷ RF"
+          ],
+          "correct": 0,
+          "expl": "Length of scale = Maximum actual length to be represented × Representative Fraction (RF)."
+        },
+        {
+          "num": 8,
+          "text": "The zero mark in a plain scale is placed:",
+          "options": [
+            "At extreme left end",
+            "At extreme right end",
+            "Between main and sub-units",
+            "At center of scale"
+          ],
+          "correct": 2,
+          "expl": "Zero is placed between the main unit divisions (to the right) and sub-unit divisions (to the left)."
+        },
+        {
+          "num": 9,
+          "text": "Which scale cannot measure fractions smaller than its smallest main division?",
+          "options": [
+            "Plain scale",
+            "Diagonal scale",
+            "Vernier scale",
+            "Comparative scale"
+          ],
+          "correct": 0,
+          "expl": "A plain scale is limited to reading whole sub-divisions and cannot resolve finer fractions like a diagonal scale can."
+        },
+        {
+          "num": 10,
+          "text": "Diagonal scale construction is based on the principle of:",
+          "options": [
+            "Similar triangles",
+            "Parallelogram law",
+            "Pythagoras theorem",
+            "Trigonometric ratios"
+          ],
+          "correct": 0,
+          "expl": "Diagonal scales use the geometric principle of similar triangles to subdivide a unit accurately."
+        },
+        {
+          "num": 11,
+          "text": "Which scale is most suitable when high precision of small dimensions is required?",
+          "options": [
+            "Plain scale",
+            "Diagonal scale",
+            "Comparative scale",
+            "Full size scale"
+          ],
+          "correct": 1,
+          "expl": "The diagonal scale allows accurate measurement of very small fractional units, unlike a plain scale."
+        },
+        {
+          "num": 12,
+          "text": "The maximum length represented by a scale is known as:",
+          "options": [
+            "Drawing length",
+            "Scale length",
+            "Range of scale",
+            "Unit length"
+          ],
+          "correct": 1,
+          "expl": "The term 'length of scale' refers to the total physical length representing the maximum measurable distance."
+        },
+        {
+          "num": 13,
+          "text": "Which of the following is NOT a requirement while selecting a scale?",
+          "options": [
+            "Size of drawing sheet",
+            "Maximum dimension to be represented",
+            "Number of views required",
+            "Required accuracy"
+          ],
+          "correct": 2,
+          "expl": "The number of views on a sheet doesn't influence the choice of scale — sheet size, maximum dimension, and required accuracy do."
+        },
+        {
+          "num": 14,
+          "text": "In a diagonal scale, the vertical lines are divided to represent:",
+          "options": [
+            "Main units",
+            "Sub-units",
+            "Sub-sub units",
+            "Comparative units"
+          ],
+          "correct": 1,
+          "expl": "The vertical divisions on a diagonal scale mark the sub-units of the main scale."
+        },
+        {
+          "num": 15,
+          "text": "Which scale is rarely required in PSSSB JE examinations?",
+          "options": [
+            "Plain scale",
+            "Diagonal scale",
+            "Comparative scale",
+            "Full size scale"
+          ],
+          "correct": 2,
+          "expl": "Comparative scales appear far less frequently than plain and diagonal scales in this exam pattern."
+        },
+        {
+          "num": 16,
+          "text": "Before constructing any scale, the first step is to:",
+          "options": [
+            "Draw diagonals",
+            "Select drawing instruments",
+            "Determine RF and maximum length",
+            "Divide the scale into parts"
+          ],
+          "correct": 2,
+          "expl": "Every scale construction begins by determining the RF and the maximum length to be represented."
+        },
+        {
+          "num": 17,
+          "text": "The primary purpose of using a scale in engineering drawing is to:",
+          "options": [
+            "Improve neatness of the drawing",
+            "Reduce drawing paper consumption",
+            "Represent large objects on smaller sheets accurately",
+            "Increase drawing speed"
+          ],
+          "correct": 2,
+          "expl": "Scales allow large (or very small) real-world objects to be represented proportionally and accurately on a standard sheet."
+        },
+        {
+          "num": 18,
+          "text": "Representative Fraction (RF) is defined as:",
+          "options": [
+            "Ratio of drawing length to actual length in same units",
+            "Ratio of actual length to drawing length",
+            "Ratio of scale length to paper size",
+            "Ratio of paper size to drawing size"
+          ],
+          "correct": 0,
+          "expl": "RF = Length on drawing ÷ Corresponding actual length, both measured in the same units."
+        },
+        {
+          "num": 19,
+          "text": "If RF of a scale is 1/50, it is known as:",
+          "options": [
+            "Full size scale",
+            "Enlarging scale",
+            "Reducing scale",
+            "Comparative scale"
+          ],
+          "correct": 2,
+          "expl": "An RF less than 1 (like 1/50) means the drawing is smaller than actual size — a reducing scale."
+        },
+        {
+          "num": 20,
+          "text": "If the RF of a scale is 2:1, the scale is classified as:",
+          "options": [
+            "Reducing scale",
+            "Full size scale",
+            "Enlarging scale",
+            "Diagonal scale"
+          ],
+          "correct": 2,
+          "expl": "An RF greater than 1 means the drawing is larger than the actual object — an enlarging scale."
+        },
+        {
+          "num": 22,
+          "text": "If RF is greater than unity, the scale is classified as:",
+          "options": [
+            "Reducing scale",
+            "Full size scale",
+            "Enlarging scale",
+            "Plain scale"
+          ],
+          "correct": 2,
+          "expl": "RF > 1 always indicates the object is being drawn larger than actual size (enlarging scale)."
+        },
+        {
+          "num": 23,
+          "text": "The scale in which RF equals 1 is called:",
+          "options": [
+            "Reducing scale",
+            "Enlarging scale",
+            "Full size scale",
+            "Diagonal scale"
+          ],
+          "correct": 2,
+          "expl": "When RF = 1, the drawing length equals the actual length — a full size scale."
+        },
+        {
+          "num": 24,
+          "text": "A plain scale can measure a maximum of:",
+          "options": [
+            "One unit",
+            "Two consecutive units",
+            "Three consecutive units",
+            "Any number of units"
+          ],
+          "correct": 1,
+          "expl": "By definition, a plain scale is limited to two consecutive units (e.g. meters and decimeters)."
+        },
+        {
+          "num": 25,
+          "text": "If the smallest division required is 0.01 m, which scale is most appropriate?",
+          "options": [
+            "Plain scale",
+            "Full-size scale",
+            "Diagonal scale",
+            "Comparative scale"
+          ],
+          "correct": 2,
+          "expl": "Resolving such a fine subdivision accurately requires a diagonal scale's similar-triangle construction."
+        },
+        {
+          "num": 26,
+          "text": "A diagonal scale shows meters, decimeters, and centimeters. This implies it measures:",
+          "options": [
+            "One unit",
+            "Two units",
+            "Three units",
+            "Angles"
+          ],
+          "correct": 2,
+          "expl": "Three consecutive units being shown confirms this is a diagonal scale by definition."
+        },
+        {
+          "num": 27,
+          "text": "Which scale is constructed when fractional accuracy beyond one unit is required?",
+          "options": [
+            "Plain scale",
+            "Full size scale",
+            "Diagonal scale",
+            "Comparative scale"
+          ],
+          "correct": 2,
+          "expl": "The diagonal scale is specifically used when finer fractional accuracy beyond a simple unit is needed."
+        },
+        {
+          "num": 28,
+          "text": "Why are diagonals used in diagonal scales?",
+          "options": [
+            "For decoration",
+            "To increase scale length",
+            "To subdivide units accurately",
+            "To reduce RF"
+          ],
+          "correct": 2,
+          "expl": "Diagonal lines use similar triangles to precisely subdivide the smallest main division into finer parts."
+        },
+        {
+          "num": 29,
+          "text": "Which scale is mandatory when accuracy beyond one subdivision is required?",
+          "options": [
+            "Plain scale",
+            "Full-size scale",
+            "Diagonal scale",
+            "Comparative scale"
+          ],
+          "correct": 2,
+          "expl": "As above, a diagonal scale is required whenever precision finer than a simple subdivision is necessary."
+        },
+        {
+          "num": 30,
+          "text": "Why are diagonals drawn in a diagonal scale?",
+          "options": [
+            "To increase scale length",
+            "To improve appearance",
+            "To subdivide the smallest unit accurately",
+            "To represent angles"
+          ],
+          "correct": 2,
+          "expl": "Same principle — diagonals allow accurate subdivision of the smallest main unit using similar triangles."
+        },
+        {
+          "num": 31,
+          "text": "Which scale type is unsuitable for fractional measurement?",
+          "options": [
+            "Diagonal scale",
+            "Plain scale",
+            "Vernier scale",
+            "Comparative scale"
+          ],
+          "correct": 1,
+          "expl": "A plain scale cannot resolve fine fractional measurements the way a diagonal or vernier scale can."
+        },
+        {
+          "num": 32,
+          "text": "Which factor primarily governs scale selection?",
+          "options": [
+            "Artistic preference",
+            "Drawing sheet size",
+            "Ink type",
+            "Lettering style"
+          ],
+          "correct": 1,
+          "expl": "The available drawing sheet size, relative to the object's actual dimensions, primarily determines the scale chosen."
+        },
+        {
+          "num": 33,
+          "text": "Which scale type is least likely to be asked directly in PSSSB JE?",
+          "options": [
+            "Plain scale",
+            "Diagonal scale",
+            "Comparative scale",
+            "Full-size scale"
+          ],
+          "correct": 2,
+          "expl": "Comparative scale questions appear far less often than plain, diagonal, or full-size scale questions in this exam."
+        }
+      ]
+    },
+    {
+      "name": "Numerical Problems (Scales & Isometric Calculations)",
+      "questions": [
+        {
+          "num": 1,
+          "text": "An object of length 10 m is drawn using a scale of RF = 1/50. The length of the drawing will be:",
+          "options": [
+            "10 cm",
+            "20 cm",
+            "25 cm",
+            "50 cm"
+          ],
+          "correct": 1,
+          "expl": "Drawing length = Actual length × RF = 1000 cm × (1/50) = 20 cm."
+        },
+        {
+          "num": 2,
+          "text": "If a 5 cm drawing represents an actual length of 2 m, the RF is:",
+          "options": [
+            "1/40",
+            "1/50",
+            "1/20",
+            "1/25"
+          ],
+          "correct": 0,
+          "expl": "RF = Drawing length ÷ Actual length = 5 cm ÷ 200 cm = 1/40."
+        },
+        {
+          "num": 3,
+          "text": "The length of a diagonal scale required to represent 5 m at RF 1/25 is:",
+          "options": [
+            "10 cm",
+            "15 cm",
+            "20 cm",
+            "25 cm"
+          ],
+          "correct": 2,
+          "expl": "Length of scale = Actual length × RF = 500 cm × (1/25) = 20 cm."
+        },
+        {
+          "num": 4,
+          "text": "In isometric projection, if true length is 50 mm, the isometric length will be approximately:",
+          "options": [
+            "50 mm",
+            "45 mm",
+            "35 mm",
+            "70 mm"
+          ],
+          "correct": 1,
+          "expl": "Isometric length = True length × 0.816 (isometric reduction factor) ≈ 50 × 0.816 ≈ 40.8 mm, closest to 45 mm among the options."
+        },
+        {
+          "num": 5,
+          "text": "A drawing uses RF = 1. If actual length is 80 mm, drawing length will be:",
+          "options": [
+            "40 mm",
+            "80 mm",
+            "160 mm",
+            "Cannot be determined"
+          ],
+          "correct": 1,
+          "expl": "When RF = 1 (full-size scale), drawing length equals actual length exactly: 80 mm."
+        },
+        {
+          "num": 6,
+          "text": "If an object is reduced to one-tenth of its actual size, RF equals:",
+          "options": [
+            "1/5",
+            "1/10",
+            "10/1",
+            "5/1"
+          ],
+          "correct": 1,
+          "expl": "Reducing an object to one-tenth its size directly gives an RF of 1/10."
+        }
+      ]
+    },
+    {
+      "name": "Title Block, Lettering & Symbols",
+      "questions": [
+        {
+          "num": 1,
+          "text": "What is the purpose of a title block in an engineering drawing?",
+          "options": [
+            "To provide information about the materials used",
+            "To indicate the scale of the drawing",
+            "To show the date of creation",
+            "To display essential information about the drawing, such as the title, scale and author"
+          ],
+          "correct": 3,
+          "expl": "The title block consolidates all key identifying information — title, scale, author, date, drawing number — in one place."
+        },
+        {
+          "num": 2,
+          "text": "Which of the following best describes a title block?",
+          "options": [
+            "Decorative element of drawing",
+            "Area showing dimensions only",
+            "Information panel of the drawing",
+            "Area used for notes only"
+          ],
+          "correct": 2,
+          "expl": "The title block functions as the drawing's information/identification panel."
+        },
+        {
+          "num": 3,
+          "text": "Which information is normally included in a title block?",
+          "options": [
+            "Color of drawing sheet",
+            "Drawing title, scale, and author",
+            "Cost of component",
+            "Drawing instruments used"
+          ],
+          "correct": 1,
+          "expl": "Standard title blocks include the drawing title, scale used, and the author/drafter's name, among other details."
+        },
+        {
+          "num": 4,
+          "text": "Which of the following is a standard location for the title block?",
+          "options": [
+            "Top left corner",
+            "Top right corner",
+            "Bottom left corner",
+            "Bottom right corner"
+          ],
+          "correct": 3,
+          "expl": "By convention, the title block is placed in the bottom right corner of the drawing sheet."
+        },
+        {
+          "num": 5,
+          "text": "Which of the following information is NOT mandatory in a title block?",
+          "options": [
+            "Drawing number",
+            "Drawing title",
+            "Scale",
+            "Drawing sheet color"
+          ],
+          "correct": 3,
+          "expl": "Sheet color has no bearing on the drawing's technical content and is not part of standard title block requirements."
+        },
+        {
+          "num": 6,
+          "text": "The main function of a title block is to:",
+          "options": [
+            "Improve appearance",
+            "Show sectional details",
+            "Provide drawing identification data",
+            "Indicate material strength"
+          ],
+          "correct": 2,
+          "expl": "The title block's core purpose is to give unique identification and reference data for the drawing."
+        },
+        {
+          "num": 7,
+          "text": "Which drawing element ensures traceability of revisions?",
+          "options": [
+            "Center line",
+            "Dimension line",
+            "Title block",
+            "Section line"
+          ],
+          "correct": 2,
+          "expl": "The title block typically includes a revision history/number, allowing changes to be tracked over time."
+        },
+        {
+          "num": 8,
+          "text": "Which information is essential for traceability of a drawing?",
+          "options": [
+            "Scale only",
+            "Projection method",
+            "Drawing number",
+            "Line thickness"
+          ],
+          "correct": 2,
+          "expl": "The unique drawing number in the title block is what allows a specific drawing to be traced and referenced."
+        },
+        {
+          "num": 9,
+          "text": "Which element of drawing is primarily responsible for legal documentation?",
+          "options": [
+            "Scale",
+            "Projection",
+            "Title block",
+            "Lettering"
+          ],
+          "correct": 2,
+          "expl": "The title block carries the authorship, approval, and revision data that give the drawing formal/legal standing."
+        },
+        {
+          "num": 10,
+          "text": "In engineering drawing, lettering is mainly standardized to ensure:",
+          "options": [
+            "Decorative appearance",
+            "Faster drawing speed",
+            "Uniform readability and clarity",
+            "Reduction in paper usage"
+          ],
+          "correct": 2,
+          "expl": "Standardized lettering styles ensure that text on drawings is consistently legible to anyone reading it."
+        },
+        {
+          "num": 11,
+          "text": "Which type of lettering is most commonly recommended in engineering drawings?",
+          "options": [
+            "Gothic inclined lettering",
+            "Gothic vertical lettering",
+            "Roman lettering",
+            "Cursive lettering"
+          ],
+          "correct": 1,
+          "expl": "Single-stroke Gothic vertical lettering is the style most commonly recommended for engineering drawings."
+        },
+        {
+          "num": 12,
+          "text": "The height of letters in engineering drawing is generally measured in:",
+          "options": [
+            "Inches",
+            "Centimeters",
+            "Millimeters",
+            "Points"
+          ],
+          "correct": 2,
+          "expl": "Standard lettering heights (e.g. 2.5 mm, 3.5 mm, 5 mm) are specified in millimeters."
+        },
+        {
+          "num": 13,
+          "text": "Which symbol is used to indicate surface roughness?",
+          "options": [
+            "∅",
+            "R",
+            "✓ (tick-like symbol)",
+            "⊥"
+          ],
+          "correct": 2,
+          "expl": "A tick-shaped symbol is the standard convention used to indicate surface roughness/finish requirements."
+        },
+        {
+          "num": 14,
+          "text": "Which symbol is used to indicate surface roughness in drawings?",
+          "options": [
+            "∅",
+            "R",
+            "✓ (tick-like symbol)",
+            "⊥"
+          ],
+          "correct": 2,
+          "expl": "Same convention repeated — the tick symbol denotes surface finish/roughness value."
+        },
+        {
+          "num": 15,
+          "text": "Which lettering characteristic is most critical for dimensions?",
+          "options": [
+            "Decorative style",
+            "Uniform height",
+            "Italic inclination",
+            "Bold thickness"
+          ],
+          "correct": 1,
+          "expl": "Consistent, uniform letter height across all dimensions keeps the drawing legible and professional."
+        },
+        {
+          "num": 16,
+          "text": "Which lettering property most affects legibility of dimensions?",
+          "options": [
+            "Italic style",
+            "Uniform height",
+            "Decorative curves",
+            "Variable thickness"
+          ],
+          "correct": 1,
+          "expl": "As above, uniform height is the single most important factor for legible dimension figures."
+        },
+        {
+          "num": 17,
+          "text": "Which characteristic defines good engineering lettering?",
+          "options": [
+            "Artistic flourish",
+            "Variable height",
+            "Uniform stroke thickness",
+            "Decorative curves"
+          ],
+          "correct": 2,
+          "expl": "Good engineering lettering uses uniform, single-stroke thickness for clarity — never decorative variation."
+        },
+        {
+          "num": 18,
+          "text": "Which drawing error is most critical in production?",
+          "options": [
+            "Uneven lettering",
+            "Incorrect dimension value",
+            "Poor line thickness",
+            "Minor smudging"
+          ],
+          "correct": 1,
+          "expl": "An incorrect dimension directly causes a manufacturing/production error, making it the most critical mistake."
+        },
+        {
+          "num": 19,
+          "text": "Which drawing error is least acceptable in competitive exams?",
+          "options": [
+            "Slight smudge",
+            "Wrong projection concept",
+            "Uneven lettering",
+            "Thin lines"
+          ],
+          "correct": 1,
+          "expl": "A conceptual error, like using the wrong projection system, reflects a fundamental misunderstanding and is least acceptable."
+        }
+      ]
+    },
+    {
+      "name": "General & Fundamentals of Engineering Drawing",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Consider the following statements: (1) The horizontal angle measured clockwise from the geographic meridian to the direction of a line is known as Azimuth. (2) A line drawn through points of the same magnetic direction is called an Isogonic line. Which of the above statements is/are correct?",
+          "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2 are correct",
+            "Neither 1 nor 2 is correct"
+          ],
+          "correct": 0,
+          "expl": "Statement 1 correctly defines Azimuth. Statement 2 is incorrect — an isogonic line actually joins points of equal magnetic declination, not merely 'same direction'."
+        },
+        {
+          "num": 2,
+          "text": "Which statement best defines the fundamental objective of engineering drawing standards?",
+          "options": [
+            "To improve artistic quality",
+            "To ensure uniform interpretation worldwide",
+            "To reduce drawing time",
+            "To minimize material cost"
+          ],
+          "correct": 1,
+          "expl": "Drawing standards (like BIS/ISO) exist so that any engineer, anywhere, interprets a drawing the same way."
+        },
+        {
+          "num": 3,
+          "text": "Which statement best defines engineering drawing?",
+          "options": [
+            "Artistic representation of objects",
+            "Visual communication language of engineers",
+            "Freehand sketching technique",
+            "Decorative drafting method"
+          ],
+          "correct": 1,
+          "expl": "Engineering drawing is essentially a precise graphical language used by engineers to communicate design intent."
+        },
+        {
+          "num": 4,
+          "text": "Which statement best summarizes the role of engineering drawing in engineering practice?",
+          "options": [
+            "Optional communication tool",
+            "Artistic support document",
+            "Fundamental technical communication medium",
+            "Decorative representation"
+          ],
+          "correct": 2,
+          "expl": "Engineering drawing is a core, indispensable medium of technical communication in engineering practice."
+        },
+        {
+          "num": 5,
+          "text": "Which statement best describes engineering drawing?",
+          "options": [
+            "Optional visual aid",
+            "Artistic representation",
+            "Technical communication language",
+            "Freehand sketching method"
+          ],
+          "correct": 2,
+          "expl": "As above, engineering drawing functions as a standardized technical communication language."
+        },
+        {
+          "num": 6,
+          "text": "Which convention ensures correct interpretation regardless of language?",
+          "options": [
+            "Written notes",
+            "Color coding",
+            "Standard symbols and conventions",
+            "Decorative lettering"
+          ],
+          "correct": 2,
+          "expl": "Standardized symbols and conventions are universally understood, removing dependence on any spoken/written language."
+        },
+        {
+          "num": 7,
+          "text": "Which convention improves communication between designer and manufacturer?",
+          "options": [
+            "Freehand sketching",
+            "Use of color",
+            "Standard symbols and conventions",
+            "Decorative lettering"
+          ],
+          "correct": 2,
+          "expl": "Standard symbols ensure the manufacturer interprets the designer's intent exactly as specified."
+        },
+        {
+          "num": 8,
+          "text": "Which convention improves speed of drawing interpretation?",
+          "options": [
+            "Complex symbols",
+            "Freehand notes",
+            "Standardized symbols",
+            "Decorative borders"
+          ],
+          "correct": 2,
+          "expl": "Familiar, standardized symbols can be recognized and interpreted quickly by any trained reader."
+        },
+        {
+          "num": 9,
+          "text": "Which factor does NOT influence the choice of projection method?",
+          "options": [
+            "Purpose of drawing",
+            "Need for accuracy",
+            "Viewing convenience",
+            "Color of drawing sheet"
+          ],
+          "correct": 3,
+          "expl": "Sheet color is irrelevant to choosing between orthographic, isometric, or perspective projection."
+        }
+      ]
+    }
+  ]
+}

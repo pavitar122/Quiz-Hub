@@ -1,0 +1,4984 @@
+{
+  "id": "building-construction",
+  "title": "Building Construction",
+  "description": "MCQs covering arches and lintels, building and foundation, doors and windows, masonry, roof and floor, scaffolding/formwork/dampness, stairs, surface finishes, and walls.",
+  "subcats": [
+    {
+      "name": "Arches and Lintel",
+      "questions": [
+        {
+          "num": 1,
+          "text": "In any case the bearing of a lintel should not be less than",
+          "options": [
+            "10 cm",
+            "15 cm",
+            "20 cm",
+            "30 cm"
+          ],
+          "correct": 1,
+          "expl": "A lintel must have a minimum bearing of 15 cm on each side wall to safely transfer the load."
+        },
+        {
+          "num": 2,
+          "text": "The type of arch generally constructed over a wooden lintel or over a flat arch for the purpose of carrying the load of the wall above is",
+          "options": [
+            "Segmental arch",
+            "Pointed arch",
+            "Relieving arch",
+            "Flat arch"
+          ],
+          "correct": 2,
+          "expl": "A relieving (discharging) arch is built above a lintel to divert wall load away from it."
+        },
+        {
+          "num": 3,
+          "text": "In the construction of arches, sand box method is used for",
+          "options": [
+            "Centering",
+            "Actual laying of arch work",
+            "Striking of centering",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "The sand box method allows gradual, uniform lowering of centering by letting sand run out of boxes."
+        },
+        {
+          "num": 4,
+          "text": "The lintels are preferred to arches because",
+          "options": [
+            "Arches require more headroom to span the opening",
+            "Arches require strong abutments to withstand arch thrust",
+            "Arches are difficult in construction",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Lintels avoid the headroom, strong-abutment and construction-difficulty issues that arches involve."
+        },
+        {
+          "num": 5,
+          "text": "The triangular space formed between the extrados and horizontal line drawn through the crown of an arch is known as",
+          "options": [
+            "Haunch",
+            "Spandrel",
+            "Voussoirs",
+            "Skewbacks"
+          ],
+          "correct": 1,
+          "expl": "The spandrel is the space between the extrados curve and the horizontal line through the crown."
+        },
+        {
+          "num": 6,
+          "text": "Depth or height of the crown is the",
+          "options": [
+            "Perpendicular distance between intrados and extrados",
+            "Vertical distance between the springing line and intrados",
+            "Perpendicular distance between the springing line and extrados",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Depth of the crown is measured perpendicularly between the intrados and extrados at the crown."
+        },
+        {
+          "num": 7,
+          "text": "The vertical distance between the springing line and highest point of the inner curve of an arch is known as",
+          "options": [
+            "Intrados",
+            "Rise",
+            "Spandril",
+            "Extrados"
+          ],
+          "correct": 1,
+          "expl": "Rise is the vertical distance from the springing line to the highest point of the intrados."
+        },
+        {
+          "num": 8,
+          "text": "The portion of wall on which the end of an arch rests is known as",
+          "options": [
+            "Abutment",
+            "Lintel",
+            "Soffit",
+            "Nosing"
+          ],
+          "correct": 0,
+          "expl": "The abutment is the wall portion or pier that supports the ends (springings) of an arch."
+        },
+        {
+          "num": 9,
+          "text": "Crown is located at",
+          "options": [
+            "Highest point on the intrados of the arch",
+            "Highest point on the extrados of the arch",
+            "Skew back of the arch",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "The crown is the highest point on the extrados (outer curve) of the arch."
+        },
+        {
+          "num": 10,
+          "text": "The first voussoir at the springing level on either side of the arch is called",
+          "options": [
+            "Springer",
+            "Spandril",
+            "Launch",
+            "Crown"
+          ],
+          "correct": 0,
+          "expl": "The springer is the lowest voussoir, resting directly on the skewback at the springing level."
+        },
+        {
+          "num": 11,
+          "text": "Lintel is provided to",
+          "options": [
+            "Support column",
+            "Support beam",
+            "Support brickwork over the door or window opening",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "A lintel is a beam placed over door/window openings to carry the masonry load above."
+        },
+        {
+          "num": 12,
+          "text": "An arch may fail due to",
+          "options": [
+            "Uneven settlement of abutments",
+            "Sliding of voussoirs",
+            "Crushing of the material",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Arch failure can occur from support settlement, voussoir sliding, or material crushing - any of these."
+        },
+        {
+          "num": 13,
+          "text": "A pointed arch which forms isosceles or equilateral triangle, is generally known as",
+          "options": [
+            "Three centred arch",
+            "Two centred arch",
+            "Lancet arch",
+            "Bull's eye arch"
+          ],
+          "correct": 2,
+          "expl": "A lancet arch is a sharply pointed two-centred arch forming an isosceles/equilateral triangle shape."
+        },
+        {
+          "num": 14,
+          "text": "The inclined surface of an abutment to receive the arch, is known as",
+          "options": [
+            "Skew back",
+            "Soffit",
+            "Spandrel",
+            "Haunch"
+          ],
+          "correct": 0,
+          "expl": "The skewback is the inclined surface on the abutment on which the arch springs rest."
+        },
+        {
+          "num": 15,
+          "text": "The lower half portion between crown and skew back of the arch, is called",
+          "options": [
+            "Spandrel",
+            "Haunch",
+            "Springing",
+            "Soffit"
+          ],
+          "correct": 1,
+          "expl": "The haunch is the lower portion of the arch between the springing and the crown."
+        },
+        {
+          "num": 16,
+          "text": "The under surface of an arch, is called",
+          "options": [
+            "Soffit",
+            "Intrados",
+            "Haunch",
+            "Back"
+          ],
+          "correct": 0,
+          "expl": "Soffit refers to the visible under (bottom) surface of an arch or lintel."
+        },
+        {
+          "num": 17,
+          "text": "The voussoir placed at crown of an arch, is known as a",
+          "options": [
+            "Key",
+            "Soffit",
+            "Springer",
+            "Haunch"
+          ],
+          "correct": 0,
+          "expl": "The keystone (key) is the central voussoir placed at the crown, locking the arch together."
+        },
+        {
+          "num": 18,
+          "text": "Spandril is",
+          "options": [
+            "The curved space formed between the extrados and the horizontal line through the crown",
+            "The space in the form of a sector between the intrados and the centre of the arch",
+            "The curved space between the intrados and springing line",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Spandrel is the curved triangular space between the extrados and the horizontal line through the crown."
+        },
+        {
+          "num": 19,
+          "text": "The highest point on the extrados of the arch is known as",
+          "options": [
+            "Summit",
+            "Ridge",
+            "Crown",
+            "Peak"
+          ],
+          "correct": 2,
+          "expl": "By definition, the crown is the highest point on the extrados of an arch."
+        },
+        {
+          "num": 20,
+          "text": "A row of arches in continuation is called",
+          "options": [
+            "Multiple arch",
+            "Arch line",
+            "Arcade",
+            "Conclave"
+          ],
+          "correct": 2,
+          "expl": "A continuous series of arches supported on piers or columns is called an arcade."
+        },
+        {
+          "num": 21,
+          "text": "The points from which the curve of arch springs at the supports are called",
+          "options": [
+            "Starting points",
+            "Base points",
+            "Span points",
+            "Springing points"
+          ],
+          "correct": 3,
+          "expl": "Springing points are where the arch curve begins to rise from the supports."
+        },
+        {
+          "num": 22,
+          "text": "The inclined surface on the abutment which acts as a seat for the arch is known as",
+          "options": [
+            "Skew back",
+            "Springer",
+            "Impost",
+            "Haunch"
+          ],
+          "correct": 0,
+          "expl": "The skewback is the inclined seating surface on the abutment for the arch's springer voussoir."
+        },
+        {
+          "num": 23,
+          "text": "The rise of the arch is defined as the clear vertical distance between",
+          "options": [
+            "The springing line and the highest point on extrados",
+            "The springing line and the highest point on intrados",
+            "The centre of the arch and the crown of the arch",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Rise is measured from the springing line to the highest point on the intrados."
+        },
+        {
+          "num": 24,
+          "text": "An arch which is formed by two arcs of circles meeting at the apex point is known as",
+          "options": [
+            "Pointed arch",
+            "Stilted arch",
+            "Segmental arch",
+            "Sector arch"
+          ],
+          "correct": 0,
+          "expl": "A pointed arch is formed by two circular arcs that meet at a pointed apex."
+        },
+        {
+          "num": 25,
+          "text": "In a pointed arch if the apex point and the springing points become corners of an isosceles triangle, then it is known as",
+          "options": [
+            "Florentine arch",
+            "Lancet arch",
+            "Horse-shoe arch",
+            "Bull's eye arch"
+          ],
+          "correct": 1,
+          "expl": "When the apex and springing points form an isosceles triangle, the pointed arch is a lancet arch."
+        },
+        {
+          "num": 26,
+          "text": "The pointed arch in which the depth is more at the crown than at the springings is known as",
+          "options": [
+            "Stilted arch",
+            "Variable depth arch",
+            "Relieving arch",
+            "Venetian arch"
+          ],
+          "correct": 3,
+          "expl": "A Venetian arch has greater depth at the crown compared to the springings."
+        },
+        {
+          "num": 27,
+          "text": "If the centre of the arch lies on the springing line, it is",
+          "options": [
+            "Segmental arch",
+            "Semi-circular arch",
+            "Bull's eye arch",
+            "Horse-shoe arch"
+          ],
+          "correct": 1,
+          "expl": "When the arch centre lies exactly on the springing line, the arch is semi-circular."
+        },
+        {
+          "num": 28,
+          "text": "If the centre of the arch lies above the springing line, it is",
+          "options": [
+            "Segmental arch",
+            "Semi-circular arch",
+            "Bull's eye arch",
+            "Horse-shoe arch"
+          ],
+          "correct": 3,
+          "expl": "A horse-shoe arch has its centre located above the springing line."
+        },
+        {
+          "num": 29,
+          "text": "If the centre of arch lies below the springing line, it is",
+          "options": [
+            "Segmental arch",
+            "Semi-circular arch",
+            "Bull's eye arch",
+            "Horse shoe arch"
+          ],
+          "correct": 0,
+          "expl": "A segmental arch has its centre positioned below the springing line."
+        },
+        {
+          "num": 30,
+          "text": "An arch in the form of a perfect circle used for circular windows is called",
+          "options": [
+            "Segmental arch",
+            "Semi-circular arch",
+            "Bull's eye arch",
+            "Horse-shoe arch"
+          ],
+          "correct": 2,
+          "expl": "A bull's eye arch is a full circular arch, typically used for round windows."
+        },
+        {
+          "num": 31,
+          "text": "An arch which is constructed either on a flat arch or on a wooden lintel to provide greater strength is called",
+          "options": [
+            "Stilted arch",
+            "Florentine arch",
+            "Venetian arch",
+            "Relieving arch"
+          ],
+          "correct": 3,
+          "expl": "A relieving arch is built over a flat arch or lintel to take load off it."
+        },
+        {
+          "num": 32,
+          "text": "Gothic Arch is also known as",
+          "options": [
+            "Flat Arch",
+            "Pointed Arch",
+            "Segmental Arch",
+            "Stilted Arch"
+          ],
+          "correct": 1,
+          "expl": "The Gothic arch is another name for the pointed arch, typical of Gothic architecture."
+        },
+        {
+          "num": 33,
+          "text": "Venetian is centered Arch.",
+          "options": [
+            "Four",
+            "Three",
+            "Five",
+            "Two"
+          ],
+          "correct": 2,
+          "expl": "A Venetian arch is constructed using five centres for its curve."
+        },
+        {
+          "num": 34,
+          "text": "Pick out 3 centered Arch.",
+          "options": [
+            "Pointed Arch",
+            "Segmental Arch",
+            "Florentine Arch",
+            "Venetian Arch"
+          ],
+          "correct": 2,
+          "expl": "The Florentine arch is drawn using three centres."
+        },
+        {
+          "num": 35,
+          "text": "Arches of centres are built",
+          "options": [
+            "1",
+            "3",
+            "5",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Arches may be built with one, three, five or more centres depending on the type."
+        },
+        {
+          "num": 36,
+          "text": "The best arrangement for decentring of an arch is",
+          "options": [
+            "Providing wedges between centring and staging",
+            "Using sand box method",
+            "Using wood centring",
+            "Using steel centring"
+          ],
+          "correct": 1,
+          "expl": "The sand box method gives the most gradual and controlled decentring of an arch."
+        },
+        {
+          "num": 37,
+          "text": "The order of placing keystone, voussoirs and skewbacks in which masonry arches are built is",
+          "options": [
+            "Skewback-voussoir-keystone",
+            "Voussoir-skewback-keystone",
+            "Voussoir-keystone-skewback",
+            "Skewback-keystone-voussoir"
+          ],
+          "correct": 0,
+          "expl": "Construction proceeds from the skewbacks, then the voussoirs, finishing with the keystone at the crown."
+        },
+        {
+          "num": 38,
+          "text": "The inclined surface on the abutment which acts as a seat for the arch is known as",
+          "options": [
+            "Springing",
+            "Haunch",
+            "Skewback",
+            "Key"
+          ],
+          "correct": 2,
+          "expl": "The skewback is the inclined bearing surface on the abutment that seats the arch."
+        },
+        {
+          "num": 39,
+          "text": "The under surface of an arch, is called",
+          "options": [
+            "Soffit",
+            "Intrados",
+            "Haunch",
+            "Back"
+          ],
+          "correct": 0,
+          "expl": "Soffit is the name given to the under (bottom) surface of an arch."
+        },
+        {
+          "num": 40,
+          "text": "The depth of an arch is the distance between",
+          "options": [
+            "Ground level and springing line",
+            "Crown and springing line",
+            "Crown and ground level",
+            "Intrados and extrados"
+          ],
+          "correct": 3,
+          "expl": "The depth of an arch is the perpendicular distance between its intrados and extrados."
+        },
+        {
+          "num": 41,
+          "text": "An arch constructed with finely dressed stones, is known",
+          "options": [
+            "Ashlar arch",
+            "Rubble arch",
+            "Gauged arch",
+            "Axed arch"
+          ],
+          "correct": 0,
+          "expl": "An arch built of finely dressed stone blocks is called an ashlar arch."
+        },
+        {
+          "num": 42,
+          "text": "The lower half portion between crown and skew back of the arch, is called",
+          "options": [
+            "Spandrel",
+            "Haunch",
+            "Springing",
+            "Soffit"
+          ],
+          "correct": 1,
+          "expl": "The haunch lies in the lower half of the arch, between the crown and skewback."
+        },
+        {
+          "num": 43,
+          "text": "The angle between skew back of a flat arch and the horizontal, is kept approximately equal to",
+          "options": [
+            "0",
+            "30",
+            "60",
+            "90"
+          ],
+          "correct": 2,
+          "expl": "The skewback of a flat arch is typically inclined at about 60 degrees to the horizontal."
+        },
+        {
+          "num": 44,
+          "text": "The triangular portion between any two adjacent arches and the tangent to their crowns, is",
+          "options": [
+            "Haunch",
+            "Spandrel",
+            "Soffit",
+            "Rise"
+          ],
+          "correct": 1,
+          "expl": "The spandrel is the triangular space between two adjacent arches and the tangent line at their crowns."
+        },
+        {
+          "num": 45,
+          "text": "An arch may fail due to",
+          "options": [
+            "Uneven settlement of abutment",
+            "Sliding of voussoirs",
+            "Crushing of the material",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Arch failure can result from support settlement, voussoir sliding or material crushing."
+        },
+        {
+          "num": 46,
+          "text": "Crown is located at",
+          "options": [
+            "Highest point on the extrados of the arch",
+            "Highest point on the intrados of the arch",
+            "Skew back of the arch",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The crown is defined as the highest point on the extrados of the arch."
+        }
+      ]
+    },
+    {
+      "name": "Building and Foundation",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Black cotton soil is unsuitable for foundations because",
+          "options": [
+            "Its bearing capacity is low",
+            "Its permeability is uncertain",
+            "Its particles are cohesive",
+            "It undergoes volumetric changes due to changes in moisture content"
+          ],
+          "correct": 3,
+          "expl": "Black cotton soil swells when wet and shrinks when dry, causing damaging volume changes."
+        },
+        {
+          "num": 2,
+          "text": "For a rectangular foundation of width b, eccentricity of load should not exceed",
+          "options": [
+            "b/2",
+            "b/3",
+            "b/4",
+            "b/6"
+          ],
+          "correct": 3,
+          "expl": "To keep the entire base in compression (middle-third rule), eccentricity must not exceed b/6."
+        },
+        {
+          "num": 3,
+          "text": "As per the thumb rule the width of last step of spread foundation is",
+          "options": [
+            "2 x thickness of wall",
+            "3 x thickness of wall",
+            "1.5 x thickness of wall",
+            "2.5 x thickness of wall"
+          ],
+          "correct": 2,
+          "expl": "The width of the last (bottom) step is conventionally taken as 1.5 times the wall thickness."
+        },
+        {
+          "num": 4,
+          "text": "If the soil is loose or depth of digging in foundation is more than safety of labour we",
+          "options": [
+            "Provide timbering of trenches",
+            "Provide D.P.C.",
+            "Provide spread foundation",
+            "Provide pile foundation"
+          ],
+          "correct": 0,
+          "expl": "Timbering (shoring) of trenches is provided to support loose soil and protect workers in deep excavation."
+        },
+        {
+          "num": 5,
+          "text": "In horizontal D.P.C. thickness of cement concrete (1:2:3) is generally kept:",
+          "options": [
+            "40 mm",
+            "35 mm",
+            "30 mm",
+            "50 mm"
+          ],
+          "correct": 0,
+          "expl": "Horizontal DPC in 1:2:3 cement concrete is usually laid about 40 mm thick."
+        },
+        {
+          "num": 6,
+          "text": "The bearing capacity of a water logged soil can be improved by",
+          "options": [
+            "Compacting the soil",
+            "Draining of the soil",
+            "Increasing the depth of the foundation",
+            "Grouting"
+          ],
+          "correct": 1,
+          "expl": "Removing excess water by draining is the direct way to improve waterlogged soil's bearing capacity."
+        },
+        {
+          "num": 7,
+          "text": "The maximum total settlement of the raft foundation on clayey soils should be limited to",
+          "options": [
+            "25 mm",
+            "25 to 40 mm",
+            "40 mm to 65 mm",
+            "65 to 100 mm"
+          ],
+          "correct": 3,
+          "expl": "Permissible total settlement of raft foundations on clay is limited to about 65-100 mm."
+        },
+        {
+          "num": 8,
+          "text": "The minimum depth of foundation in clayey soils is",
+          "options": [
+            "0.5 m",
+            "0.7 m",
+            "0.9 m",
+            "1.2 m"
+          ],
+          "correct": 2,
+          "expl": "For clayey soils, a minimum foundation depth of about 0.9 m is generally recommended."
+        },
+        {
+          "num": 9,
+          "text": "The type of pile which is driven at an inclination to resist inclined forces is known as",
+          "options": [
+            "Friction piles",
+            "Sheet piles",
+            "Batter piles",
+            "Anchor piles"
+          ],
+          "correct": 2,
+          "expl": "Batter (raking) piles are driven at an angle specifically to resist lateral/inclined loads."
+        },
+        {
+          "num": 10,
+          "text": "The maximum total settlement for isolated foundation on clayey soils should be limited to",
+          "options": [
+            "25 mm",
+            "40 mm",
+            "65 mm",
+            "100 mm"
+          ],
+          "correct": 2,
+          "expl": "Total settlement for isolated footings on clay is generally limited to about 65 mm."
+        },
+        {
+          "num": 11,
+          "text": "The type of footing which is used to transmit heavy loads through steel columns is",
+          "options": [
+            "Raft foundation",
+            "Grillage foundation",
+            "Well foundation",
+            "Isolated footing"
+          ],
+          "correct": 1,
+          "expl": "Grillage foundations use layers of steel beams to spread heavy steel column loads over a wide area."
+        },
+        {
+          "num": 12,
+          "text": "In case of foundations on black cotton soils, the most suitable method to increase the bearing capacity of soils is to",
+          "options": [
+            "Increase the depth of the foundation",
+            "Drain the soil",
+            "Compact the soil",
+            "Replace the poor soil"
+          ],
+          "correct": 0,
+          "expl": "Increasing foundation depth below the zone of moisture variation is most effective for black cotton soil."
+        },
+        {
+          "num": 13,
+          "text": "The differential settlement in case of foundations on sandy soil should not exceed",
+          "options": [
+            "25 mm",
+            "40 mm",
+            "65 mm",
+            "100 mm"
+          ],
+          "correct": 0,
+          "expl": "Differential settlement on sandy soil foundations is generally limited to about 25 mm."
+        },
+        {
+          "num": 14,
+          "text": "The maximum bearing capacity of soil is that of",
+          "options": [
+            "Black cotton soil",
+            "Loose fine sandy soil",
+            "Dry coarse sandy soil",
+            "Hard rocks"
+          ],
+          "correct": 3,
+          "expl": "Hard rock offers the highest bearing capacity among common foundation soils/materials."
+        },
+        {
+          "num": 15,
+          "text": "The least bearing capacity of soil is that of",
+          "options": [
+            "Hard rock",
+            "Moist clay",
+            "Soft rock",
+            "Laminated"
+          ],
+          "correct": 1,
+          "expl": "Moist (soft) clay has the lowest bearing capacity of the options listed."
+        },
+        {
+          "num": 16,
+          "text": "The foundation in which a cantilever beam is provided to join two footings, is known as",
+          "options": [
+            "Strip footing",
+            "Strap footing",
+            "Combined footing",
+            "Raft footing"
+          ],
+          "correct": 1,
+          "expl": "A strap footing connects two separate footings with a cantilever (strap) beam rather than a slab."
+        },
+        {
+          "num": 17,
+          "text": "The black cotton soil",
+          "options": [
+            "Undergoes volumetric changes",
+            "Swells excessively when wet",
+            "Shrinks excessively when dry",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Black cotton soil shows all these behaviours: volume change, swelling when wet, and shrinking when dry."
+        },
+        {
+          "num": 18,
+          "text": "Raft foundation are generally preferred when they are required for individual footing, is more than",
+          "options": [
+            "25% to total area",
+            "30% to total area",
+            "40% to total area",
+            "50% to total area"
+          ],
+          "correct": 3,
+          "expl": "When individual footing area would exceed about 50% of the plot, a raft foundation is preferred instead."
+        },
+        {
+          "num": 19,
+          "text": "To support a heavy structure in sandy soil, the type of foundation generally used, is",
+          "options": [
+            "Combined footing",
+            "Raft footing",
+            "Pier footing",
+            "Strap footing"
+          ],
+          "correct": 2,
+          "expl": "Pier (pier/pile-type) footings are commonly used to support heavy structures on sandy soil."
+        },
+        {
+          "num": 20,
+          "text": "Pile foundation is generally provided if soil is",
+          "options": [
+            "Compressible",
+            "Water logged",
+            "Made up",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Piles are used in compressible, waterlogged, or made-up (fill) soils where shallow foundations are unsuitable."
+        },
+        {
+          "num": 21,
+          "text": "The maximum permissible differential settlement, in case of foundations in clayey soil, is usually limited to",
+          "options": [
+            "10 mm",
+            "20 mm",
+            "30 mm",
+            "40 mm"
+          ],
+          "correct": 3,
+          "expl": "Differential settlement for foundations on clay is usually restricted to about 40 mm."
+        },
+        {
+          "num": 22,
+          "text": "A wall constructed to resist the pressure of an earth filling, is called",
+          "options": [
+            "Retaining wall",
+            "Breast wall",
+            "Buttress",
+            "Parapet wall"
+          ],
+          "correct": 0,
+          "expl": "A retaining wall is specifically designed to resist lateral earth pressure from filling behind it."
+        },
+        {
+          "num": 23,
+          "text": "Raft foundations are used for:",
+          "options": [
+            "Providing increased area of foundation over poor bearing capacity of soil",
+            "Spanning over small soft or loose pockets",
+            "Counter acting the hydrostatic effect",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Raft foundations serve all these purposes - spreading load, bridging weak pockets, and resisting uplift."
+        },
+        {
+          "num": 24,
+          "text": "Negative skin friction",
+          "options": [
+            "Is a downward drag acting on a pile due to downward movement of the surrounding compressible soil relative to the pile",
+            "Develops due to lowering of ground water",
+            "Both (A) and (B)",
+            "Neither (A) nor (B)"
+          ],
+          "correct": 2,
+          "expl": "Negative skin friction is a downward drag caused by settling soil, which can result from lowered ground water."
+        },
+        {
+          "num": 25,
+          "text": "Well foundation is also known as",
+          "options": [
+            "Caisson",
+            "Swage pile",
+            "Under ream",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A well foundation is also commonly known as a caisson, widely used for bridge piers."
+        },
+        {
+          "num": 26,
+          "text": "The most commonly used deep foundation in buildings",
+          "options": [
+            "Well foundation",
+            "Pile foundation",
+            "Raft foundation",
+            "Grillage foundation"
+          ],
+          "correct": 1,
+          "expl": "Pile foundations are the most commonly used deep foundation type for buildings."
+        },
+        {
+          "num": 27,
+          "text": "The maximum permissible total settlement in the case of foundations on clayey soils is generally about",
+          "options": [
+            "50 mm",
+            "100 mm",
+            "150 mm",
+            "200 mm"
+          ],
+          "correct": 1,
+          "expl": "Total settlement for foundations on clayey soils is generally limited to about 100 mm."
+        },
+        {
+          "num": 28,
+          "text": "The maximum intensity of loading that the soil will safely carry without the risk of shear failure irrespective of settlement is known as",
+          "options": [
+            "Ultimate bearing capacity",
+            "Safe bearing capacity",
+            "Safe bearing pressure",
+            "Gross allowable bearing pressure"
+          ],
+          "correct": 2,
+          "expl": "Safe bearing pressure is the load intensity the soil safely carries against shear failure, ignoring settlement."
+        },
+        {
+          "num": 29,
+          "text": "Factor of safety of soil is",
+          "options": [
+            "Ultimate shear strength / Safe bearing capacity",
+            "Ultimate compressive strength / Safe bearing capacity",
+            "Ultimate tensile strength / Safe bearing capacity",
+            "Load for maximum permitted settlement / Safe bearing capacity"
+          ],
+          "correct": 0,
+          "expl": "Factor of safety for soil is defined as ultimate shear strength divided by safe bearing capacity."
+        },
+        {
+          "num": 30,
+          "text": "Maximum bearing capacity of soil is that of",
+          "options": [
+            "Soft rock",
+            "Coarse sand",
+            "Fine sand",
+            "Sand-clay mixture"
+          ],
+          "correct": 0,
+          "expl": "Among these, soft rock has the highest bearing capacity."
+        },
+        {
+          "num": 31,
+          "text": "Bearing capacity of soil can be improved by",
+          "options": [
+            "Draining the soil",
+            "Confining the soil",
+            "Compacting",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Draining, confining, and compacting are all valid methods to improve soil bearing capacity."
+        },
+        {
+          "num": 32,
+          "text": "If depth and flow of water is high, the type of cofferdam to be used is",
+          "options": [
+            "Sandbag dike",
+            "Earthen cofferdam",
+            "Rockfill cofferdam",
+            "Rockfill crib cofferdam"
+          ],
+          "correct": 3,
+          "expl": "For high depth and flow, a rockfill crib cofferdam provides the necessary strength and stability."
+        },
+        {
+          "num": 33,
+          "text": "In case of foundations on black cotton soils, the most suitable method to increase the bearing capacity of soils is to",
+          "options": [
+            "Increase the depth of foundation",
+            "Drain the soil",
+            "Compact the soil",
+            "Replace the poor soil"
+          ],
+          "correct": 0,
+          "expl": "Founding below the active zone by increasing depth is the standard remedy for black cotton soil."
+        },
+        {
+          "num": 34,
+          "text": "The bearing capacity of water logged soil can be improved by",
+          "options": [
+            "Compacting the soil",
+            "Draining the soil",
+            "Increasing the depth of foundation",
+            "Grouting"
+          ],
+          "correct": 1,
+          "expl": "Draining removes the excess water and directly improves the bearing capacity of waterlogged soil."
+        },
+        {
+          "num": 35,
+          "text": "In case of Raymond pile",
+          "options": [
+            "Lengths vary from 6 m to 12 m",
+            "Diameter of top of piles varies from 40 cm to 60 cm",
+            "Diameter of pile at bottom varies from 20 cm to 28 cm",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Raymond piles have all these characteristic dimensions: length, top diameter, and bottom diameter ranges."
+        },
+        {
+          "num": 36,
+          "text": "The foundation in which a cantilever beam is provided to join two footings, is known as",
+          "options": [
+            "Strip footing",
+            "Strap footing",
+            "Combined footing",
+            "Raft footing"
+          ],
+          "correct": 1,
+          "expl": "A strap footing uses a cantilever beam to connect and balance loads between two footings."
+        },
+        {
+          "num": 37,
+          "text": "The foundations are placed below ground level, to increase",
+          "options": [
+            "Strength",
+            "Workability",
+            "Stability of structure",
+            "All the above"
+          ],
+          "correct": 2,
+          "expl": "Placing foundations below ground level is primarily done to increase the stability of the structure."
+        },
+        {
+          "num": 38,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "Inclined borings are made for taking samples under existing structures",
+            "Inclined borings are occasionally used instead of vertical holes",
+            "The spacing of inclined borings is kept such that one bore hole is vertically above the bottom of an adjacent bore hole",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these statements correctly describe the use and spacing of inclined borings in soil investigation."
+        },
+        {
+          "num": 39,
+          "text": "Pick up the commonly adopted geophysical method in civil engineering from the following:",
+          "options": [
+            "The seismic method",
+            "Electrical resistivity method",
+            "Magnetic method",
+            "Both (A) and (B) of the above"
+          ],
+          "correct": 3,
+          "expl": "Seismic and electrical resistivity methods are the two commonly used geophysical investigation methods in civil engineering."
+        },
+        {
+          "num": 40,
+          "text": "To ensure that supporting area of an offset footing of a boundary wall is fully compressive, the C.G. of load must act",
+          "options": [
+            "At the centre of the base",
+            "Within the middle third of the base",
+            "Within the middle fifth of base",
+            "Neither (A), (B) nor (C)"
+          ],
+          "correct": 2,
+          "expl": "For an offset (eccentric) footing, load must act within the middle fifth to keep the base fully in compression."
+        },
+        {
+          "num": 41,
+          "text": "The taper of precast concrete pile should not be more than",
+          "options": [
+            "1 cm per metre length",
+            "2 cm per metre length",
+            "4 cm per metre length",
+            "5 cm per metre length"
+          ],
+          "correct": 0,
+          "expl": "Precast concrete pile taper is limited to about 1 cm per metre of length."
+        },
+        {
+          "num": 42,
+          "text": "The raft slab is projected beyond the outer walls of the structure by",
+          "options": [
+            "5 to 10 cm",
+            "15 to 20 cm",
+            "25 to 30 cm",
+            "30 to 45 cm"
+          ],
+          "correct": 3,
+          "expl": "A raft slab is typically projected 30 to 45 cm beyond the outer walls for stability."
+        },
+        {
+          "num": 43,
+          "text": "Black cotton soil is unsuitable for foundations because its",
+          "options": [
+            "Bearing capacity is low",
+            "Permeability is uncertain",
+            "Particles are cohesive",
+            "Property of undergoing a volumetric change due to variation of moisture content"
+          ],
+          "correct": 3,
+          "expl": "The key problem with black cotton soil is its volumetric change with variation in moisture content."
+        },
+        {
+          "num": 44,
+          "text": "The loose pockets in soil mass can be bridged safely by providing a raft foundation provided the soft area is smaller than",
+          "options": [
+            "The column spacing",
+            "One-third the column spacing",
+            "Half the column spacing",
+            "Three-fourth the column spacing"
+          ],
+          "correct": 2,
+          "expl": "A raft can safely bridge soft pockets smaller than about half the column spacing."
+        },
+        {
+          "num": 45,
+          "text": "The concrete slump recommended for beams and slabs is",
+          "options": [
+            "25 to 50 mm",
+            "25 to 75 mm",
+            "30 to 125 mm",
+            "50 to 100 mm"
+          ],
+          "correct": 3,
+          "expl": "For beams and slabs, a slump of 50 to 100 mm is generally recommended."
+        },
+        {
+          "num": 46,
+          "text": "Grillage foundation",
+          "options": [
+            "Is used to transfer heavy structural loads from steel columns to a soil having low bearing capacity",
+            "Is light and economical",
+            "Does not require deep cutting as the required base area with required pressure intensity is obtained at a shallow depth",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Grillage foundations offer all these benefits: heavy load transfer, economy, and shallow depth suitability."
+        },
+        {
+          "num": 47,
+          "text": "The pile which is provided with a bulb filled with concrete at its lower end, is known as",
+          "options": [
+            "Simplex pile",
+            "Mac-Arthur pile",
+            "Raymond pile",
+            "Franki pile"
+          ],
+          "correct": 3,
+          "expl": "A Franki pile has an enlarged concrete bulb formed at its lower end to increase bearing capacity."
+        },
+        {
+          "num": 48,
+          "text": "In case of multi-storeyed buildings, the forms to be removed first are",
+          "options": [
+            "Sides of beams and girders",
+            "Column forms",
+            "Bottom of beams and girders",
+            "All the above at the same time"
+          ],
+          "correct": 0,
+          "expl": "Non-load-bearing formwork like the sides of beams and girders can be removed earliest."
+        },
+        {
+          "num": 49,
+          "text": "For providing a raft foundation, the following activities are involved: 1. Ramming the foundation bed 2. Excavation of the soil upto required depth 3. Laying the reinforcement over the foundation bed 4. Curing the cement concrete placed over reinforcement 5. Pouring the cement concrete over the reinforcement. The correct sequence is",
+          "options": [
+            "1, 2, 3, 4, 5",
+            "5, 4, 3, 2, 1",
+            "2, 1, 3, 5, 4",
+            "3, 2, 5, 1, 4"
+          ],
+          "correct": 2,
+          "expl": "Correct order: excavate, ram the bed, lay reinforcement, pour concrete, then cure it."
+        },
+        {
+          "num": 50,
+          "text": "During percussion drilling",
+          "options": [
+            "Ground water observations are hindered due to entry of the slurry in the soil below the bottom of the hole",
+            "Caving or mixing of strata are caused in soft soils or cohesionless soils",
+            "The soil to a considerable depth below the bottom of the hole gets disturbed",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Percussion drilling causes all these effects: hindered water observation, strata caving, and soil disturbance."
+        },
+        {
+          "num": 51,
+          "text": "A solid core of rock is formed inside the cylinder in the case of",
+          "options": [
+            "Auger boring",
+            "Percussion drilling",
+            "Diamond drilling",
+            "Wash boring"
+          ],
+          "correct": 2,
+          "expl": "Diamond drilling produces a solid rock core inside the drilling cylinder for examination."
+        },
+        {
+          "num": 52,
+          "text": "The single stage well point system of dewatering an excavation can be used if the depth of excavation does not exceed",
+          "options": [
+            "5 m",
+            "10 m",
+            "15 m",
+            "20 m"
+          ],
+          "correct": 0,
+          "expl": "A single-stage well point system is effective for excavation depths up to about 5 m."
+        },
+        {
+          "num": 53,
+          "text": "Pick up the incorrect statement from the following:",
+          "options": [
+            "The function of foundation is to distribute the load of superstructure over a large bearing area",
+            "No timbering is required for shallow trenches",
+            "Shallow foundations can be constructed on made-up soil",
+            "Black cotton soil is very good for foundation bed"
+          ],
+          "correct": 3,
+          "expl": "Black cotton soil is actually poor for foundations due to its swelling/shrinking behaviour, making this statement incorrect."
+        },
+        {
+          "num": 54,
+          "text": "Which one of the following facts is considered for the orientation of buildings",
+          "options": [
+            "The direction of the prevailing winds in the area",
+            "The exposure of the walls and roof of the buildings to the rays of sun",
+            "The extent up to which the sunrays penetrate with the verandah",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Building orientation considers wind direction, sun exposure, and sunlight penetration into verandahs - all factors."
+        },
+        {
+          "num": 55,
+          "text": "Which one of the following rocks is used for monumental buildings:",
+          "options": [
+            "Granite",
+            "Marble",
+            "Sand stone",
+            "Slate"
+          ],
+          "correct": 1,
+          "expl": "Marble, due to its fine texture and polish, is traditionally used for monumental buildings."
+        },
+        {
+          "num": 56,
+          "text": "The Auger borings are not common",
+          "options": [
+            "In soils that require lateral support",
+            "In cohesive soils",
+            "In soft soils",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Auger boring is uncommon in soils that need lateral support to keep the hole stable."
+        },
+        {
+          "num": 57,
+          "text": "If phi is the angle of repose of soil of weight w kg/m3, the horizontal pressure p at a depth of h metres per metre length of wall, is",
+          "options": [
+            "p = w.h x (1-sin phi)/(1+sin phi)",
+            "p = (w.h/2) x (1-sin phi)/(1+sin phi)",
+            "p = w.h x sqrt[(1-sin phi)/(1+sin phi)]",
+            "p = w.h x sqrt[(1+sin phi)/(1-sin phi)]"
+          ],
+          "correct": 0,
+          "expl": "Rankine's active earth pressure formula: p = w.h x (1-sin phi)/(1+sin phi)."
+        },
+        {
+          "num": 58,
+          "text": "According to Rankine's formula, minimum depth of foundations, is",
+          "options": [
+            "Df = (p/w) x [(1+sin phi)/(1-sin phi)]^2",
+            "Df = (p/w) x [(1-sin phi)/(1+sin phi)]^2",
+            "Df = (p/2w) x [(1-sin phi)/(1+sin phi)]^2",
+            "Df = (p/w) x [(1-sin phi)/(1+sin phi)]"
+          ],
+          "correct": 3,
+          "expl": "Rankine's minimum depth of foundation formula: Df = (p/w) x [(1-sin phi)/(1+sin phi)]."
+        },
+        {
+          "num": 59,
+          "text": "Cast iron piles",
+          "options": [
+            "Are suitable for works under sea water",
+            "Resist shocks or vibrations",
+            "Are suitable for use as batter piles",
+            "Are useful for heavy vertical loads"
+          ],
+          "correct": 3,
+          "expl": "Cast iron piles are strong in compression and hence useful for carrying heavy vertical loads."
+        },
+        {
+          "num": 60,
+          "text": "For heavy embankments and dams, of height h, the depth of exploration of soil should not be less than",
+          "options": [
+            "h/4",
+            "1/2 h",
+            "h",
+            "2h"
+          ],
+          "correct": 2,
+          "expl": "For dams and heavy embankments of height h, exploration depth should be at least equal to h."
+        },
+        {
+          "num": 61,
+          "text": "Rotary drilling",
+          "options": [
+            "Is not suitable for deposits containing very coarse gravel",
+            "Hinders the ground water observations and permeability test",
+            "Is not economical for holes of less than 10 cm",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Rotary drilling has all these limitations: unsuitable for coarse gravel, hinders water tests, uneconomical for small holes."
+        },
+        {
+          "num": 62,
+          "text": "In places where the soil is soft and has small resistance to the flow of concrete, which one of the following types of piles, is used",
+          "options": [
+            "Vibropile",
+            "Pressure pile",
+            "Franki pile",
+            "Pedestal pile"
+          ],
+          "correct": 2,
+          "expl": "Franki piles are suited to soft soils with low resistance since the concrete is rammed to form a bulb."
+        },
+        {
+          "num": 63,
+          "text": "In grillage foundations a minimum 15 cm cover is provided on",
+          "options": [
+            "Upper flange of top tier",
+            "Lower beam or lower tier",
+            "Ends of external beams",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A minimum 15 cm concrete cover is provided over the lower beam/tier of a grillage foundation."
+        },
+        {
+          "num": 64,
+          "text": "The maximum bearing capacity of soil is that of",
+          "options": [
+            "Black cotton soil",
+            "Loose fine sandy soil",
+            "Dry coarse sandy soil",
+            "Hard rocks"
+          ],
+          "correct": 3,
+          "expl": "Hard rock again offers the highest bearing capacity among these soil/rock types."
+        },
+        {
+          "num": 65,
+          "text": "The columns of multi-storeyed buildings are designed to withstand the forces due to",
+          "options": [
+            "Dead loads",
+            "Live loads",
+            "Wind loads",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Columns must be designed for dead, live, and wind loads acting together."
+        },
+        {
+          "num": 66,
+          "text": "Bearing capacity of soils cannot be improved by",
+          "options": [
+            "Draining sub-soil water",
+            "Ramming crushed stone in soil",
+            "Driving sand piles",
+            "Watering surface of soil"
+          ],
+          "correct": 3,
+          "expl": "Simply watering the surface adds moisture and does not improve bearing capacity, unlike the other methods."
+        },
+        {
+          "num": 67,
+          "text": "To support a heavy structure in sandy soil, the type of foundation generally used, is",
+          "options": [
+            "Combined footing",
+            "Raft footing",
+            "Pier footing",
+            "Strap footing"
+          ],
+          "correct": 2,
+          "expl": "Pier footings are commonly used to support heavy structures founded in sandy soil."
+        },
+        {
+          "num": 68,
+          "text": "The depth of the ground water table may be ascertained by",
+          "options": [
+            "Looking through the well in the vicinity",
+            "Standing on the well in the vicinity",
+            "Measuring the depth of water in the well",
+            "None of above"
+          ],
+          "correct": 2,
+          "expl": "Ground water table depth is determined by directly measuring the water depth in a nearby well."
+        },
+        {
+          "num": 69,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "The pile driven in sand is called sand pile",
+            "The drilled hole filled with sand is called sand pile",
+            "The sand piles are used for bearing purposes",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A sand pile is formed by drilling a hole and filling it with compacted sand."
+        },
+        {
+          "num": 70,
+          "text": "The compaction of concrete in the drilled pile hole is done by compressed air in the case of",
+          "options": [
+            "Simplex pile",
+            "Franki pile",
+            "Pressure pile",
+            "Vibro pile"
+          ],
+          "correct": 2,
+          "expl": "In a pressure pile, compressed air is used to compact the concrete within the drilled hole."
+        },
+        {
+          "num": 71,
+          "text": "In clay soil",
+          "options": [
+            "Swelling and shrinkage characteristics prevail",
+            "Consolidation continues even after several years of construction",
+            "Differential settlement is generally prevalent",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Clay soils exhibit swelling/shrinkage, long-term consolidation, and differential settlement, all of these."
+        },
+        {
+          "num": 72,
+          "text": "Depth of lean concrete bed placed at the bottom of a wall footing, is kept",
+          "options": [
+            "10 cm",
+            "15 cm",
+            "Equal to its projection beyond wall base",
+            "Less than its projection beyond wall base"
+          ],
+          "correct": 2,
+          "expl": "The lean concrete bed depth is kept equal to its projection beyond the wall base."
+        },
+        {
+          "num": 73,
+          "text": "In grillage foundations, distance between flanges of grillage beams, is kept",
+          "options": [
+            "40 cm",
+            "Equal to flange width",
+            "Twice the flange width",
+            "Maximum of (A), (B) and (C)"
+          ],
+          "correct": 2,
+          "expl": "The clear distance between flanges of grillage beams is kept about twice the flange width."
+        },
+        {
+          "num": 74,
+          "text": "The additional piles which are driven to increase the capacity of supporting loads on vertical piles, are known",
+          "options": [
+            "Construction piles",
+            "Raking piles",
+            "Eccentric piles",
+            "Sinking piles"
+          ],
+          "correct": 1,
+          "expl": "Raking (batter) piles are added alongside vertical piles to help carry additional lateral/vertical loads."
+        },
+        {
+          "num": 75,
+          "text": "The bearing capacity of piles is determined by",
+          "options": [
+            "Dynamic formula",
+            "Static formula",
+            "Pile load tests",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Pile bearing capacity can be determined using dynamic formulas, static formulas, or actual load tests."
+        },
+        {
+          "num": 76,
+          "text": "Auger boring",
+          "options": [
+            "Is the most primitive method for making a hole in the ground",
+            "Is generally employed in cohesive and other self soils above water table",
+            "Is most economical upto a depth of 5 metres",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Auger boring is a primitive, economical method used in cohesive soils above the water table, up to about 5 m."
+        },
+        {
+          "num": 77,
+          "text": "Engineering news formula for obtaining safe bearing capacity of pile for drop hammer, is",
+          "options": [
+            "Q = W.h / [6(S+2.5)]",
+            "Q = W.h / [2.5(S+6)]",
+            "Q = W.6 / [h(S+2.5)]",
+            "Q = W x 2.5 / [6(S+h)]"
+          ],
+          "correct": 0,
+          "expl": "Engineering News formula for a drop hammer: Q = W.h / [6(S+2.5)], giving safe pile bearing capacity."
+        },
+        {
+          "num": 78,
+          "text": "The bearing capacity of a water logged soil, may be improved by",
+          "options": [
+            "Grouting",
+            "Chemical action",
+            "Drainage",
+            "Compaction"
+          ],
+          "correct": 2,
+          "expl": "Drainage is the primary method used to improve bearing capacity of waterlogged soil."
+        },
+        {
+          "num": 79,
+          "text": "The depth of concrete bed of the foundation depends upon",
+          "options": [
+            "The projection of the concrete block beyond the footing over it",
+            "The upward soil pressure",
+            "The mix of the concrete",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Concrete bed depth depends on projection, soil pressure, and concrete mix - all these factors together."
+        },
+        {
+          "num": 80,
+          "text": "Two columns 50 cm x 50 cm and 60 cm x 60 cm carry 80 tonnes and 120 tonnes of loads respectively. The centre to centre distance between columns is 5.00 metres. The permissible bearing capacity of the soil is 20 t/m2. If the footing is not to project more than 25 cm beyond the outside of the smaller column, pick up the correct design parameters of the footing from the following:",
+          "options": [
+            "Distance of C.G. of the loads from the smaller column = 3.00 m",
+            "The length of the foundation slab = 7.00 m",
+            "Area of footing slab = 11.00 m2",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Working through the combined footing design, all listed parameters - CG distance, length, and area - are correct."
+        },
+        {
+          "num": 81,
+          "text": "Pick up the correct specification of one room quarters generally adopted from the following:",
+          "options": [
+            "Six quarters in a row",
+            "The size of room is either 3.5 m x 3 m or 4.2 m x 2.5 m",
+            "The front verandah is kept 2 m wide",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Standard one-room quarter specifications include all these: row arrangement, room size, and verandah width."
+        },
+        {
+          "num": 82,
+          "text": "Negative skin friction",
+          "options": [
+            "Is a downward drag acting on a pile due to downward movement of the surrounding compressible soil relative to the pile",
+            "Develops due to lowering of ground water",
+            "Both (A) and (B)",
+            "Neither (A) nor (B)"
+          ],
+          "correct": 2,
+          "expl": "Negative skin friction is a downward drag on piles, which can be triggered by ground water lowering."
+        },
+        {
+          "num": 83,
+          "text": "Which one of the following piles has a cast iron shoe even after removal of the hollow cylindrical steel casing",
+          "options": [
+            "Simplex pile",
+            "Pedestal pile",
+            "Franki pile",
+            "Both (A) and (B)"
+          ],
+          "correct": 2,
+          "expl": "A Franki pile retains a cast iron shoe at its base even after the driving casing is withdrawn."
+        },
+        {
+          "num": 84,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "The sand in the sand pile is well compacted",
+            "The sand is kept moist at the time of placing and tamping",
+            "The top one metre of the pile is filled up with cement concrete to provide a cap for the filled up sand",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Sand pile construction involves compaction, moist sand placement, and a concrete cap - all correct."
+        },
+        {
+          "num": 85,
+          "text": "If the depth of an excavation is 20 metres, number of single stage well points to be installed at various levels, is",
+          "options": [
+            "5",
+            "4",
+            "3",
+            "2"
+          ],
+          "correct": 2,
+          "expl": "For a 20 m deep excavation, about 3 stages of well points are typically needed (each stage covering ~5-6 m)."
+        },
+        {
+          "num": 86,
+          "text": "The minimum distance between the centers of bulb of diameter du, of a multi under-reamed piles is",
+          "options": [
+            "du",
+            "1.25 du",
+            "1.5 du",
+            "1.75 du"
+          ],
+          "correct": 2,
+          "expl": "Bulb centres in multi under-reamed piles are kept at a minimum spacing of 1.5 times the bulb diameter."
+        },
+        {
+          "num": 87,
+          "text": "The depth of excavation of foundations, is generally measured with a",
+          "options": [
+            "Ranging rod",
+            "Steel tape",
+            "Levelling staff",
+            "Bonning rod"
+          ],
+          "correct": 3,
+          "expl": "A bonning rod, used with boning/sighting rods, is generally used to check excavation depth."
+        },
+        {
+          "num": 88,
+          "text": "For the construction of flyovers in sandy soils, the type of foundation provided, is",
+          "options": [
+            "Strap footing",
+            "Raft footing",
+            "Combined footing",
+            "Pier footing"
+          ],
+          "correct": 3,
+          "expl": "Pier foundations are typically used for flyovers constructed on sandy soil."
+        },
+        {
+          "num": 89,
+          "text": "Pile foundation is generally provided if soil is",
+          "options": [
+            "Compressible",
+            "Water logged",
+            "Made up",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Piles suit compressible, waterlogged, and made-up (filled) soils where shallow footings would fail."
+        },
+        {
+          "num": 90,
+          "text": "The concrete slump recommended for foundations, is",
+          "options": [
+            "25 to 50 mm",
+            "30 to 125 mm",
+            "50 to 100 mm",
+            "75 to 125 mm"
+          ],
+          "correct": 2,
+          "expl": "A slump of 50 to 100 mm is recommended for foundation concrete."
+        },
+        {
+          "num": 91,
+          "text": "The pile provided with one or more bulbs in its vertical shaft, is generally known as",
+          "options": [
+            "Under ream pile",
+            "Friction pile",
+            "Bearing pile",
+            "Sheet pile"
+          ],
+          "correct": 0,
+          "expl": "An under-reamed pile has one or more enlarged bulbs formed along its shaft to increase capacity."
+        },
+        {
+          "num": 92,
+          "text": "The pile which supports the load due to friction between pile face and surrounding soil, is generally known as",
+          "options": [
+            "Bearing pile",
+            "Friction pile",
+            "Sheet pile",
+            "Battered pile"
+          ],
+          "correct": 1,
+          "expl": "A friction pile carries load mainly through skin friction between the pile surface and surrounding soil."
+        },
+        {
+          "num": 93,
+          "text": "Pick up the incorrect statement from the following:",
+          "options": [
+            "Horizontal D.P.C. is provided at plinth level in internal walls",
+            "D.P.C. is provided under door and verandah openings",
+            "Vertical D.P.C. is not provided in internal walls",
+            "Cement concrete is a rigid damp proofing material"
+          ],
+          "correct": 0,
+          "expl": "Horizontal DPC at plinth level applies to external, not specifically internal, walls, making this statement incorrect."
+        },
+        {
+          "num": 94,
+          "text": "The construction joints in buildings are provided after",
+          "options": [
+            "10 m",
+            "15 m",
+            "20 m",
+            "40 m"
+          ],
+          "correct": 2,
+          "expl": "Construction joints in buildings are generally provided at intervals of about 20 m."
+        },
+        {
+          "num": 95,
+          "text": "In soft clay of low bearing capacity, the type of steel pile generally used, is",
+          "options": [
+            "H-pile",
+            "Screw pile",
+            "Disc pile",
+            "Pipe pile"
+          ],
+          "correct": 0,
+          "expl": "H-piles are commonly used in soft clay of low bearing capacity due to their driving efficiency."
+        },
+        {
+          "num": 96,
+          "text": "Stability of an existing structure may be disturbed by",
+          "options": [
+            "Rising of water table",
+            "Vibrations caused by traffic movements",
+            "Mining in the neighbourhood",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Water table rise, traffic vibration, and nearby mining can all disturb an existing structure's stability."
+        },
+        {
+          "num": 97,
+          "text": "Open test pit is only suitable upto a depth of",
+          "options": [
+            "2 metres",
+            "2.5 metres",
+            "3 metres",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "Open test pits for soil investigation are generally suitable only up to about 3 metres depth."
+        },
+        {
+          "num": 98,
+          "text": "The formwork from the sides of beams can be removed only after",
+          "options": [
+            "1 day",
+            "4 days",
+            "7 days",
+            "14 days"
+          ],
+          "correct": 1,
+          "expl": "Side formwork of beams (non-load-bearing) can generally be removed after about 4 days."
+        },
+        {
+          "num": 99,
+          "text": "In soils possessing low bearing capacity, the type of foundation generally provided, is",
+          "options": [
+            "Column footing",
+            "Grillage footing",
+            "Raft footing",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Low bearing capacity soils may need any of these foundation types depending on load and situation."
+        },
+        {
+          "num": 100,
+          "text": "Rotary drilling is the fastest method in case of",
+          "options": [
+            "Rocky soils",
+            "Clay soils",
+            "Sandy soil",
+            "All of these"
+          ],
+          "correct": 0,
+          "expl": "Rotary drilling achieves the fastest progress specifically in rocky soils/rock formations."
+        },
+        {
+          "num": 101,
+          "text": "The steel pile which is generally sunk in soft clay or loose sand of low bearing capacity, is",
+          "options": [
+            "H-pile",
+            "Pipe pile",
+            "Disc pile",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Disc piles, with their enlarged disc base, are used in soft clay or loose sand of low bearing capacity."
+        },
+        {
+          "num": 102,
+          "text": "For each storey of a building, the depth of exploration should be",
+          "options": [
+            "1 metre",
+            "2 metres",
+            "3 metres",
+            "4 metres"
+          ],
+          "correct": 2,
+          "expl": "Soil exploration depth is generally taken as about 3 metres per storey of the building."
+        },
+        {
+          "num": 103,
+          "text": "Pile foundations are suitable for",
+          "options": [
+            "Water logged soils",
+            "Soft rocks",
+            "Compact pile",
+            "Multi storeyed buildings"
+          ],
+          "correct": 3,
+          "expl": "Pile foundations are particularly suitable for supporting heavy loads of multi-storeyed buildings."
+        },
+        {
+          "num": 104,
+          "text": "Safe bearing capacity of black cotton soil varies from",
+          "options": [
+            "2 to 3 t/m2",
+            "5 to 7.5 t/m2",
+            "8 to 10 t/m2",
+            "10 to 12 t/m2"
+          ],
+          "correct": 1,
+          "expl": "Safe bearing capacity of black cotton soil typically ranges from 5 to 7.5 t/m2."
+        },
+        {
+          "num": 105,
+          "text": "The least bearing capacity of soil is that of",
+          "options": [
+            "Hard rock",
+            "Moist clay",
+            "Soft rock",
+            "Laminated"
+          ],
+          "correct": 1,
+          "expl": "Moist clay has the least bearing capacity among the given soil/rock types."
+        },
+        {
+          "num": 106,
+          "text": "Suitable spacing of timber piles, is",
+          "options": [
+            "50 cm",
+            "60 cm",
+            "70 cm",
+            "90 cm"
+          ],
+          "correct": 3,
+          "expl": "Timber piles are typically spaced about 90 cm apart in group configurations."
+        },
+        {
+          "num": 107,
+          "text": "The Auger boring method is not suitable",
+          "options": [
+            "Very hard soil",
+            "Cemented soil",
+            "Very soft soil",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Auger boring is unsuitable for very hard, cemented, and very soft soils - all these conditions."
+        },
+        {
+          "num": 108,
+          "text": "Pick up the correct statement about silt soil from the following:",
+          "options": [
+            "The silt soil has particle size from 0.02 mm to 0.06 mm",
+            "In organic fine grained silt soil possesses no plasticity",
+            "The least plastic type normally consists of more or less equi-dimensional grains of quartz",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these statements accurately describe the particle size and plasticity characteristics of silt soil."
+        },
+        {
+          "num": 109,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "The bearing capacity of a pile is defined as the load which can be sustained by the pile without producing excessive settlement",
+            "The ultimate bearing capacity of a pile is defined as the maximum load which the pile carries and continues to sink without any further increase of load",
+            "The safe bearing capacity of a pile is obtained by dividing the ultimate bearing capacity with a suitable factor of safety",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All three statements correctly define bearing capacity, ultimate bearing capacity, and safe bearing capacity of piles."
+        },
+        {
+          "num": 110,
+          "text": "A pre-stressed concrete pile is",
+          "options": [
+            "Easy to handle",
+            "Lighter in weight",
+            "Extremely durable",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Pre-stressed concrete piles are easy to handle, lightweight, and durable - all these benefits apply."
+        },
+        {
+          "num": 111,
+          "text": "Gravels",
+          "options": [
+            "Are cohesionless aggregates",
+            "Vary in size between 2 to 20 mm",
+            "Never swell when they come into contact with water",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Gravels are cohesionless, sized 2-20 mm, and do not swell with water - all correct properties."
+        },
+        {
+          "num": 112,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "Isolated footing is provided under column to transfer the load safely to soil bed",
+            "Column footings may have steps or projections in the concrete base",
+            "Heavily loaded column base must be provided steel reinforcement in both directions",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these statements are correct regarding isolated column footings and their reinforcement."
+        },
+        {
+          "num": 113,
+          "text": "The bearing capacity of granite is",
+          "options": [
+            "5 to 10 kg/cm2",
+            "15 to 20 kg/cm2",
+            "30 to 35 kg/cm2",
+            "40 to 45 kg/cm2"
+          ],
+          "correct": 2,
+          "expl": "Granite typically has a bearing capacity of about 30 to 35 kg/cm2."
+        },
+        {
+          "num": 114,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "Sand consists of coarse particles of silica formed due to the disintegration of rocks",
+            "The grains of sand are not affected by frost",
+            "Sand beds are permeable and do not allow water to rise up between pores due to capillary action",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these statements correctly describe the formation and properties of sand."
+        },
+        {
+          "num": 115,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "A combined footing is so proportioned that centre of gravity of supporting area coincides with centre of gravity of two column loads",
+            "A combined footing may be either rectangular or trapezoidal in shape",
+            "Rectangular footings are provided if two column loads are equal or interior column carried relatively greater load",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these statements correctly describe combined footing design principles and shape selection."
+        },
+        {
+          "num": 116,
+          "text": "The service area in a building means the area occupied by",
+          "options": [
+            "Stairs",
+            "Toilets",
+            "Light and shafts",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Service area in a building includes stairs, toilets, and light/ventilation shafts collectively."
+        },
+        {
+          "num": 117,
+          "text": "In ordinary residential and public buildings, the damp proof course is generally provided at",
+          "options": [
+            "Ground level",
+            "Plinth level",
+            "Water table level",
+            "Midway ground level and watertable level"
+          ],
+          "correct": 1,
+          "expl": "DPC is generally provided at plinth level in ordinary residential and public buildings."
+        },
+        {
+          "num": 118,
+          "text": "Under-reamed piles are generally used for",
+          "options": [
+            "Machine foundations",
+            "Factory building",
+            "Transmission line towers",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Under-reamed piles find use in machine foundations, factory buildings, and transmission towers - all applications."
+        }
+      ]
+    },
+    {
+      "name": "Door and Window",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Exposed portions of vertical surface at right angles to the door or window frame, are known as",
+          "options": [
+            "Jambs",
+            "Lintels",
+            "Reveals",
+            "Soffits"
+          ],
+          "correct": 2,
+          "expl": "Reveals are the exposed vertical wall surfaces at right angles to a door/window frame."
+        },
+        {
+          "num": 2,
+          "text": "In 10 DS 20, DS refers to",
+          "options": [
+            "Double shutter door",
+            "Single shutter door",
+            "Double shutter window",
+            "Single shutter window"
+          ],
+          "correct": 1,
+          "expl": "In frame designation codes, DS stands for a single shutter door."
+        },
+        {
+          "num": 3,
+          "text": "The vertical faces of a door opening which support frame of the door, are",
+          "options": [
+            "Jambs",
+            "Posts",
+            "Reveals",
+            "Styles"
+          ],
+          "correct": 0,
+          "expl": "Jambs are the vertical wall faces of an opening that support the door frame."
+        },
+        {
+          "num": 4,
+          "text": "From the point of view of maximum day light, the windows in a room should be located on",
+          "options": [
+            "Eastern side",
+            "Western side",
+            "Northern side",
+            "Southern side"
+          ],
+          "correct": 2,
+          "expl": "Windows on the northern side provide uniform, glare-free daylight for most of the day."
+        },
+        {
+          "num": 5,
+          "text": "In 10 DT 20, DT refers to",
+          "options": [
+            "Double shutter door",
+            "Single shutter door",
+            "Double shutter window",
+            "Single shutter window"
+          ],
+          "correct": 0,
+          "expl": "In frame designation codes, DT denotes a double shutter door."
+        },
+        {
+          "num": 6,
+          "text": "The designation of frames of doors, windows and ventilators shows their (i) Width (ii) Height (iii) Type. The correct order in which they are shown in the designation of frames is",
+          "options": [
+            "(i), (ii), (iii)",
+            "(i), (iii), (ii)",
+            "(ii), (i), (iii)",
+            "(iii), (i), (ii)"
+          ],
+          "correct": 1,
+          "expl": "Frame designations follow the order: width, type, then height."
+        },
+        {
+          "num": 7,
+          "text": "The minimum number of holdfasts recommended on each side of a door frame and a window frame respectively are",
+          "options": [
+            "2 and 1",
+            "3 and 2",
+            "2 and 2",
+            "2 and 3"
+          ],
+          "correct": 1,
+          "expl": "Standard practice recommends 3 holdfasts per side for door frames and 2 for window frames."
+        },
+        {
+          "num": 8,
+          "text": "The horizontal projections at head and sill of a door frame which are embedded into the side walls for fixing the frame are known as",
+          "options": [
+            "Horns",
+            "Holdfasts",
+            "Jambs",
+            "Rebates"
+          ],
+          "correct": 0,
+          "expl": "Horns are projections at the head/sill of a frame that get embedded into the wall for fixing."
+        },
+        {
+          "num": 9,
+          "text": "The type of window provided on the sloping side of a pitched roof is called",
+          "options": [
+            "Dormer window",
+            "Gable window",
+            "Lantern",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A dormer window is set into the sloping surface of a pitched roof."
+        },
+        {
+          "num": 10,
+          "text": "As compared to top rail, the bottom and lock rails in a door frame are normally made",
+          "options": [
+            "Thinner",
+            "Thicker",
+            "Wider",
+            "Narrower"
+          ],
+          "correct": 2,
+          "expl": "Bottom and lock rails are made wider than the top rail to add strength where most stress occurs."
+        },
+        {
+          "num": 11,
+          "text": "The opening left in flat roofs for lighting purposes is called",
+          "options": [
+            "Lantern",
+            "Dormer window",
+            "Sky light",
+            "Gable window"
+          ],
+          "correct": 0,
+          "expl": "A lantern is a raised structure with openings left in a flat roof for admitting light."
+        },
+        {
+          "num": 12,
+          "text": "The suitable door for entrance in an air conditioned building is a",
+          "options": [
+            "Revolving door",
+            "Louvered door",
+            "Collapsible door",
+            "Swinging door"
+          ],
+          "correct": 0,
+          "expl": "A revolving door minimises air exchange, making it ideal for air-conditioned building entrances."
+        },
+        {
+          "num": 13,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "Louvered door is generally provided in bath rooms",
+            "Flush door is generally provided in dinning room",
+            "Revolving door is generally provided in cinema halls",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Each door type suits its named location: louvered for bathrooms, flush for dining rooms, revolving for cinemas."
+        },
+        {
+          "num": 14,
+          "text": "A wooden block hinged on post outside a door, is known",
+          "options": [
+            "Cleat",
+            "Stop",
+            "Horn",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A cleat is a small wooden block hinged externally on a door post."
+        },
+        {
+          "num": 15,
+          "text": "A cut in frame of a door to receive the shutter, is called",
+          "options": [
+            "Louver",
+            "Stop",
+            "Horn",
+            "Rebate"
+          ],
+          "correct": 3,
+          "expl": "A rebate is a groove cut in the frame that receives and seats the door shutter."
+        },
+        {
+          "num": 16,
+          "text": "The vertical member running through middle of a shutter frame, is",
+          "options": [
+            "Style",
+            "Reveal",
+            "Mullion",
+            "Post"
+          ],
+          "correct": 2,
+          "expl": "A mullion is the vertical member dividing a shutter/window frame down the middle."
+        },
+        {
+          "num": 17,
+          "text": "The projections of head or sill of a door or window frame, are",
+          "options": [
+            "Transoms",
+            "Horns",
+            "Stops",
+            "Chocks"
+          ],
+          "correct": 1,
+          "expl": "Horns are the projecting extensions at the head and sill of door/window frames."
+        },
+        {
+          "num": 18,
+          "text": "The vertical sides of a door and window openings provided in a wall, are known as",
+          "options": [
+            "Verticals",
+            "Reveals",
+            "Jambs",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Jambs are the vertical sides of door and window openings within a wall."
+        },
+        {
+          "num": 19,
+          "text": "A wooden block fixed on back side of a door frame on its post, is known as",
+          "options": [
+            "Cleat",
+            "Stop",
+            "Horn",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A stop is a wooden block fixed to the back of a door frame's post to arrest the shutter."
+        },
+        {
+          "num": 20,
+          "text": "The window which projects outside a room of a building for admitting more light and air, is known",
+          "options": [
+            "Bay window",
+            "Casement window",
+            "Lantern window",
+            "Dormer window"
+          ],
+          "correct": 0,
+          "expl": "A bay window projects outward from the wall to admit more light and air."
+        },
+        {
+          "num": 21,
+          "text": "The window which is provided on a sloping roof of a building, is called",
+          "options": [
+            "Lantern window",
+            "Dormer window",
+            "Louvered window",
+            "Rash window"
+          ],
+          "correct": 1,
+          "expl": "A dormer window is specifically constructed on the sloping surface of a roof."
+        }
+      ]
+    },
+    {
+      "name": "Masonry",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The brick work in India is done in",
+          "options": [
+            "English bond",
+            "French bond",
+            "Flemish bond",
+            "D.D. Flemish bond"
+          ],
+          "correct": 0,
+          "expl": "English bond is the traditional and most commonly used bond in Indian brickwork for strength."
+        },
+        {
+          "num": 2,
+          "text": "Half brick thick wall will be",
+          "options": [
+            "20 cm thick",
+            "15 cm thick",
+            "30 cm thick",
+            "10 cm thick"
+          ],
+          "correct": 3,
+          "expl": "A half-brick thick wall corresponds to roughly 10 cm (brick width) thickness."
+        },
+        {
+          "num": 3,
+          "text": "The local swelling of a finished plaster, is termed as",
+          "options": [
+            "Cracking",
+            "Dobbing",
+            "Blistering",
+            "Peeling"
+          ],
+          "correct": 2,
+          "expl": "Blistering is a localized swelling that appears on a finished plaster surface."
+        },
+        {
+          "num": 4,
+          "text": "The inside surface of formwork is coated with crude oil to",
+          "options": [
+            "Make its removal easy",
+            "Make the concrete not lose its water",
+            "Make the concrete stronger",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Oiling formwork prevents concrete sticking to it, making shuttering removal easy."
+        },
+        {
+          "num": 5,
+          "text": "Contraction joint in concrete is",
+          "options": [
+            "Same as a construction joint",
+            "Different from a construction joint",
+            "Not provided",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A contraction joint controls shrinkage cracking and is distinct in purpose from a construction joint."
+        },
+        {
+          "num": 6,
+          "text": "Which one is false for removing the shuttering or formwork?",
+          "options": [
+            "The shuttering for wall, columns should be removed first.",
+            "The shuttering for RCC elements should be removed gradually.",
+            "The shuttering for soffit of beams, girders should be removed first.",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Soffit formwork of beams/girders is load-bearing and should be removed last, not first, making this statement false."
+        },
+        {
+          "num": 7,
+          "text": "Which of the following should be used for hearting of thicker walls?",
+          "options": [
+            "Headers",
+            "Stretchers",
+            "Brick bats",
+            "Queen closer"
+          ],
+          "correct": 0,
+          "expl": "Headers are used in the hearting (core) of thick walls to bond the wall through its thickness."
+        },
+        {
+          "num": 8,
+          "text": "Number of vertical joints in a stretcher course is x times the number of joints in the header course. Where x is equal to:",
+          "options": [
+            "1/2",
+            "1",
+            "2",
+            "1/4"
+          ],
+          "correct": 0,
+          "expl": "A stretcher course has half as many vertical joints as a header course for the same wall length."
+        },
+        {
+          "num": 9,
+          "text": "The type of bond in which brick masonry containing alternate courses of stretchers and header is called",
+          "options": [
+            "Flemish bond",
+            "English bond",
+            "Stretcher bond",
+            "Raking bond"
+          ],
+          "correct": 1,
+          "expl": "English bond consists of alternating courses that are entirely stretchers or entirely headers."
+        },
+        {
+          "num": 10,
+          "text": "Surkhi is added to lime mortar to",
+          "options": [
+            "Prevent shrinkage",
+            "Decrease setting time",
+            "Increase bulk",
+            "Impart hydraulicity"
+          ],
+          "correct": 3,
+          "expl": "Surkhi (burnt brick powder) is added to lime mortar to give it hydraulic setting properties."
+        },
+        {
+          "num": 11,
+          "text": "As compared to English bond, double Flemish bond is",
+          "options": [
+            "Stronger",
+            "More compact",
+            "Costly",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "Double Flemish bond is valued mainly for its uniform appearance, not for extra strength, cost or compactness advantage."
+        },
+        {
+          "num": 12,
+          "text": "The slenderness ratio for masonry walls should not be more than",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ],
+          "correct": 1,
+          "expl": "The maximum permissible slenderness ratio for masonry walls is generally limited to 20."
+        },
+        {
+          "num": 13,
+          "text": "A mortar joint in masonry which is normal to the face of wall is known as",
+          "options": [
+            "Bed joint",
+            "Wall joint",
+            "Cross joint",
+            "Bonded joint"
+          ],
+          "correct": 2,
+          "expl": "A cross joint is a vertical mortar joint running perpendicular (normal) to the wall face."
+        },
+        {
+          "num": 14,
+          "text": "The type of bond provided in the brick masonry for carrying heavy loads is",
+          "options": [
+            "Single Flemish bond",
+            "Double Flemish bond",
+            "English bond",
+            "Zigzag bond"
+          ],
+          "correct": 2,
+          "expl": "English bond, being stronger, is preferred for brick masonry carrying heavy loads."
+        },
+        {
+          "num": 15,
+          "text": "Expansion joint in masonry walls are provided in wall length greater than",
+          "options": [
+            "10 m",
+            "20 m",
+            "30 m",
+            "40 m"
+          ],
+          "correct": 3,
+          "expl": "Expansion joints are provided in masonry walls when the length exceeds about 40 m."
+        },
+        {
+          "num": 16,
+          "text": "A queen closer is a",
+          "options": [
+            "Brick laid with its length parallel to the face or direction of wall",
+            "Brick laid with its breadth parallel to the face or direction of wall",
+            "Brick having the same length and depth as the other bricks cut half the breadth",
+            "Brick with half the width at one end and full width at the other"
+          ],
+          "correct": 2,
+          "expl": "A queen closer is a brick of the same length and depth as normal bricks but cut to half the breadth."
+        },
+        {
+          "num": 17,
+          "text": "The pressure acting on the stones in stone masonry construction should be",
+          "options": [
+            "Along the direction of bedding planes",
+            "At 45 degrees to the direction of bedding planes",
+            "At 60 degrees to the direction of bedding planes",
+            "Perpendicular to the direction of bedding planes"
+          ],
+          "correct": 3,
+          "expl": "Load should act perpendicular to the bedding planes of stones for maximum strength."
+        },
+        {
+          "num": 18,
+          "text": "The stretcher bond in brick masonry can be used only when the thickness of walls is",
+          "options": [
+            "90 mm",
+            "180 mm",
+            "190 mm",
+            "280 mm"
+          ],
+          "correct": 0,
+          "expl": "Stretcher bond is suitable only for half-brick thick (90 mm) walls, such as partitions."
+        },
+        {
+          "num": 19,
+          "text": "The brick laid with its length parallel to the face of a wall, is known as",
+          "options": [
+            "Header",
+            "Stretcher",
+            "Closer",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A stretcher is a brick laid lengthwise, with its long face parallel to the wall face."
+        },
+        {
+          "num": 20,
+          "text": "The brick laid with its breadth parallel to the face of a wall, is known as",
+          "options": [
+            "Header",
+            "Stretcher",
+            "Closer",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A header is a brick laid with its shorter end (breadth) exposed on the wall face."
+        },
+        {
+          "num": 21,
+          "text": "The portion of a brick cut across the width, is called",
+          "options": [
+            "Closer",
+            "Half brick",
+            "Bed",
+            "Bat"
+          ],
+          "correct": 3,
+          "expl": "A bat is a portion of a brick cut transversely across its width."
+        },
+        {
+          "num": 22,
+          "text": "Queen closer may be placed",
+          "options": [
+            "In header course",
+            "In stretcher course",
+            "In header course next to first brick",
+            "In stretcher course next to first brick"
+          ],
+          "correct": 2,
+          "expl": "A queen closer is placed in the header course, positioned next to the first (quoin) brick."
+        },
+        {
+          "num": 23,
+          "text": "The portion of the brick cut across its width and having its length equal to that of a full brick, is known as",
+          "options": [
+            "Closer",
+            "Queen closer",
+            "King closer",
+            "Prince closer"
+          ],
+          "correct": 1,
+          "expl": "A queen closer retains the full brick length but has half the width."
+        },
+        {
+          "num": 24,
+          "text": "The portion of the brick without a triangular corner equal to half the width and half the length, is called",
+          "options": [
+            "Closer",
+            "Queen closer",
+            "King closer",
+            "Squint brick"
+          ],
+          "correct": 2,
+          "expl": "A king closer has a triangular portion removed, equal to half the width and half the length."
+        },
+        {
+          "num": 25,
+          "text": "The portion of a brick cut to form angles other than right angles in plan, is known as",
+          "options": [
+            "Queen closer",
+            "King closer",
+            "Closer",
+            "Squint brick"
+          ],
+          "correct": 3,
+          "expl": "A squint brick is specially shaped to form angles other than 90 degrees in plan."
+        },
+        {
+          "num": 26,
+          "text": "When a brick is cut into two halves longitudinally, one part is called",
+          "options": [
+            "King closer",
+            "Cornice brick",
+            "Queen closer",
+            "Voussoir"
+          ],
+          "correct": 2,
+          "expl": "Cutting a brick lengthwise into two halves produces queen closers."
+        },
+        {
+          "num": 27,
+          "text": "A brick which is given a wedge like shape to be used in the construction of arches is called",
+          "options": [
+            "King closer",
+            "Cornice brick",
+            "Queen closer",
+            "Voussoir"
+          ],
+          "correct": 3,
+          "expl": "A voussoir is a wedge-shaped brick or stone unit used specifically in arch construction."
+        },
+        {
+          "num": 28,
+          "text": "The portion of the brick obtained by cutting it in transverse direction is called",
+          "options": [
+            "Bat",
+            "King closer",
+            "Queen closer",
+            "Beveled closer"
+          ],
+          "correct": 0,
+          "expl": "Cutting a brick transversely (across its width) produces a bat."
+        },
+        {
+          "num": 29,
+          "text": "The portion of a brick which is cut at one corner such that at one end its width is half of that of a full brick is called",
+          "options": [
+            "King closer",
+            "Queen closer",
+            "Beveled closer",
+            "Mitred closer"
+          ],
+          "correct": 0,
+          "expl": "A king closer is cut at one corner so that one end has half width while the other stays full."
+        },
+        {
+          "num": 30,
+          "text": "The brick which is cut such that at one end half the width is maintained and at the other end full width is maintained is called",
+          "options": [
+            "King closer",
+            "Queen closer",
+            "Mitred closer",
+            "Beveled closer"
+          ],
+          "correct": 0,
+          "expl": "This tapering cut, half-width at one end and full at the other, defines a king closer."
+        },
+        {
+          "num": 31,
+          "text": "The brick which is cut such that one longer face is full and the other longer face is small in length is called",
+          "options": [
+            "King closer",
+            "Queen closer",
+            "Mitred closer",
+            "Beveled closer"
+          ],
+          "correct": 3,
+          "expl": "A beveled closer has one long face full length and the other long face shortened."
+        },
+        {
+          "num": 32,
+          "text": "A brick or stone put in position in the masonry such that its length is perpendicular to the face of the wall is known as",
+          "options": [
+            "Header",
+            "Stretcher",
+            "Closer",
+            "Bull nose"
+          ],
+          "correct": 0,
+          "expl": "A header is laid with its length running perpendicular into the wall thickness."
+        },
+        {
+          "num": 33,
+          "text": "A brick or stone put in position in the masonry such that its length is parallel to the face of the wall is known as",
+          "options": [
+            "Header",
+            "Stretcher",
+            "Closer",
+            "Bull nose"
+          ],
+          "correct": 1,
+          "expl": "A stretcher is placed with its length running parallel to the wall face."
+        },
+        {
+          "num": 34,
+          "text": "The bond in which each course consists of alternate stretchers and headers is known as",
+          "options": [
+            "English bond",
+            "Flemish bond",
+            "Raking bond",
+            "Dutch bond"
+          ],
+          "correct": 1,
+          "expl": "Flemish bond has alternating headers and stretchers within each single course."
+        },
+        {
+          "num": 35,
+          "text": "Perpend is an imaging line of mortar joints in brick masonry which is",
+          "options": [
+            "Horizontal",
+            "Vertical passing through all courses",
+            "Vertical passing through alternate courses",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A perpend is an imaginary vertical line passing through the mortar joints of all courses."
+        },
+        {
+          "num": 36,
+          "text": "In brick masonry the bond produced by laying alternate headers and stretchers in each course is known as",
+          "options": [
+            "English bond",
+            "Double Flemish bond",
+            "Zigzag bond",
+            "Single Flemish bond"
+          ],
+          "correct": 1,
+          "expl": "Alternating headers and stretchers appearing on both faces of each course defines double Flemish bond."
+        },
+        {
+          "num": 37,
+          "text": "A queen closer is a",
+          "options": [
+            "Brick laid with its length parallel to the face or direction of wall",
+            "Brick laid with its breadth parallel to the face or direction of wall",
+            "Brick having the same length and depth as the other bricks but half the breadth",
+            "Brick with half the width at one end and full width at the other"
+          ],
+          "correct": 2,
+          "expl": "A queen closer keeps the same length and depth as regular bricks but has half the breadth."
+        },
+        {
+          "num": 38,
+          "text": "The most important tool in brick laying for lifting and spreading mortar and for forming joints is",
+          "options": [
+            "Trowel",
+            "Square",
+            "Bolster",
+            "Scutch"
+          ],
+          "correct": 0,
+          "expl": "The trowel is the primary tool used to lift, spread mortar, and finish joints in brick laying."
+        },
+        {
+          "num": 39,
+          "text": "Single Flemish bond consists of",
+          "options": [
+            "Double Flemish bond facing and English bond backing in each course",
+            "English bond facing and double Flemish bond backing in each course",
+            "Stretcher bond facing and double Flemish bond backing in each course",
+            "Double Flemish bond facing and header bond backing in each course"
+          ],
+          "correct": 0,
+          "expl": "Single Flemish bond shows Flemish bond on the face but English bond in the backing of each course."
+        },
+        {
+          "num": 40,
+          "text": "Queen closer may be placed",
+          "options": [
+            "In header course",
+            "In stretcher course",
+            "In header course next to first brick",
+            "In stretcher course next to first brick"
+          ],
+          "correct": 2,
+          "expl": "A queen closer is positioned in the header course adjacent to the first quoin brick."
+        },
+        {
+          "num": 41,
+          "text": "The 3 cm x 3 cm side of a brick as seen in the wall face, is generally known as",
+          "options": [
+            "Stretcher",
+            "Face",
+            "Front",
+            "Header"
+          ],
+          "correct": 3,
+          "expl": "The smaller end face (approx 9x9 cm, cross-section) of a brick seen on the wall is the header face."
+        },
+        {
+          "num": 42,
+          "text": "In English garden wall bond",
+          "options": [
+            "One course of headers to three or five courses of stretchers",
+            "Queen closer is provided in each heading course",
+            "The middle course of stretchers is started with a header to give proper vertical joints",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "English garden wall bond has all these features: header ratio, queen closers, and offset middle stretcher course."
+        },
+        {
+          "num": 43,
+          "text": "The strength of brick masonry in 1:6 cement mortar, is",
+          "options": [
+            "20 tonnes/m2",
+            "40 tonnes/m2",
+            "50 tonnes/m2",
+            "60 tonnes/m2"
+          ],
+          "correct": 3,
+          "expl": "Brick masonry built in 1:6 cement mortar has a strength of about 60 tonnes/m2."
+        },
+        {
+          "num": 44,
+          "text": "The dimensions of a half queen closer, are",
+          "options": [
+            "9 cm x 9 cm x 9 cm",
+            "9 cm x 9 cm x 4.5 cm",
+            "9 cm x 4.5 cm x 9 cm",
+            "1.8 cm x 4.5 cm x 9 cm"
+          ],
+          "correct": 2,
+          "expl": "A half queen closer measures 9 cm x 4.5 cm x 9 cm, being half the standard brick dimension."
+        },
+        {
+          "num": 45,
+          "text": "To obtain good bonding in brick masonry",
+          "options": [
+            "First class bricks are used",
+            "Vertical joints in alternate courses are kept in plumb line",
+            "Bats are used where necessary",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Good bonding requires first-class bricks, plumb-aligned vertical joints, and bats used as needed - all these."
+        },
+        {
+          "num": 46,
+          "text": "For brick construction, the lime-sand mortar, is",
+          "options": [
+            "1:1",
+            "1:2",
+            "1:3",
+            "1:4"
+          ],
+          "correct": 1,
+          "expl": "Lime-sand mortar for brick construction is typically mixed in the ratio 1:2."
+        },
+        {
+          "num": 47,
+          "text": "The position of a brick when laid on its side 9 cm x 9 cm with its frog in the vertical plane, is called",
+          "options": [
+            "Brick on edge",
+            "Brick on end",
+            "Brick on bed",
+            "Brick held vertically"
+          ],
+          "correct": 1,
+          "expl": "When a brick stands on its 9x9 cm end with the frog vertical, it is termed brick on end."
+        },
+        {
+          "num": 48,
+          "text": "Dutch bond is a modification of",
+          "options": [
+            "English bond",
+            "Stretcher bond",
+            "Header bond",
+            "Single Flemish bond"
+          ],
+          "correct": 0,
+          "expl": "Dutch bond is a modified variant developed from the standard English bond."
+        },
+        {
+          "num": 49,
+          "text": "The 9 cm x 9 cm side of a brick as seen in the wall face, is generally known as",
+          "options": [
+            "Stretcher",
+            "Face",
+            "Front",
+            "Header"
+          ],
+          "correct": 3,
+          "expl": "The 9x9 cm end (cross-section) visible in the wall face is called the header."
+        },
+        {
+          "num": 50,
+          "text": "The type of ashlar masonry in which stones are finely chisel dressed and thickness of joints does not exceed 3 mm, is",
+          "options": [
+            "Chamfered ashlar masonry",
+            "Ashlar facing masonry",
+            "Random coursed ashlar masonry",
+            "Coursed ashlar masonry"
+          ],
+          "correct": 3,
+          "expl": "Coursed ashlar masonry uses finely chisel-dressed stones laid in courses with joints under 3 mm."
+        },
+        {
+          "num": 51,
+          "text": "The alignment of a cross joint along the plumb line is",
+          "options": [
+            "Bed block",
+            "Perpend",
+            "Lintel",
+            "Vertical line"
+          ],
+          "correct": 1,
+          "expl": "The alignment of cross joints in a plumb line is called the perpend."
+        },
+        {
+          "num": 52,
+          "text": "A covering of concrete placed on the exposed top of an external wall, is known as",
+          "options": [
+            "Cornice",
+            "Coping",
+            "Frieze",
+            "Lintel"
+          ],
+          "correct": 1,
+          "expl": "Coping is the protective covering placed on the exposed top of an external wall."
+        },
+        {
+          "num": 53,
+          "text": "The stone whose crushing strength is least, is",
+          "options": [
+            "Granite",
+            "Chalk",
+            "Marble",
+            "Slate"
+          ],
+          "correct": 1,
+          "expl": "Chalk, being soft and porous, has the lowest crushing strength among these stones."
+        },
+        {
+          "num": 54,
+          "text": "The type of stone masonry in which stones of same height are laid in layers, is called",
+          "options": [
+            "Random rubble masonry",
+            "Coursed rubble masonry",
+            "Uncoursed rubble masonry",
+            "Ashlar masonry"
+          ],
+          "correct": 1,
+          "expl": "Coursed rubble masonry uses stones of the same height arranged in continuous horizontal layers."
+        },
+        {
+          "num": 55,
+          "text": "The method of moving each brick through a small horizontal distance before it is finally laid in any brick wall and pressing it by means of brick hammer, is known as",
+          "options": [
+            "Trowelling",
+            "Laying",
+            "Grouting",
+            "Placing"
+          ],
+          "correct": 1,
+          "expl": "This process of shifting and pressing a brick into its final bedded position is called laying."
+        },
+        {
+          "num": 56,
+          "text": "The stone whose crushing strength is maximum, is",
+          "options": [
+            "Granite",
+            "Chalk",
+            "Slate",
+            "Sand stone"
+          ],
+          "correct": 0,
+          "expl": "Granite has the highest crushing strength among these common building stones."
+        },
+        {
+          "num": 57,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "English bond is used in brick masonry to support heavy loads",
+            "Double Flemish bond is suitable for brick masonry to give uniform face appearance",
+            "The double Flemish bond is used for the construction of single brick residential building",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All statements correctly describe uses of English and double Flemish bonds in masonry."
+        },
+        {
+          "num": 58,
+          "text": "The nominal thickness of an expansion joint in brick walls, is kept more than",
+          "options": [
+            "5 mm",
+            "10 mm",
+            "15 mm",
+            "20 mm"
+          ],
+          "correct": 3,
+          "expl": "Expansion joint thickness in brick walls is kept greater than about 20 mm."
+        },
+        {
+          "num": 59,
+          "text": "The nominal thickness of one brick wall in mm, is",
+          "options": [
+            "90 mm",
+            "150 mm",
+            "190 mm",
+            "200 mm"
+          ],
+          "correct": 3,
+          "expl": "A one-brick thick wall has a nominal thickness of about 200 mm (actual 190 mm + tolerance)."
+        },
+        {
+          "num": 60,
+          "text": "The bond in which headers and stretchers are laid in alternate courses and every stretcher course is started with a three fourth brick bat, is known as",
+          "options": [
+            "English cross bond",
+            "Dutch bond",
+            "Monk bond",
+            "Rat-trap bond"
+          ],
+          "correct": 0,
+          "expl": "Starting each stretcher course with a three-quarter bat defines the English cross bond."
+        },
+        {
+          "num": 61,
+          "text": "The stone masonry of finely dressed stones laid in cement or lime, is",
+          "options": [
+            "Random rubble masonry",
+            "Coursed rubble masonry",
+            "Dry rubble masonry",
+            "Ashlar masonry"
+          ],
+          "correct": 3,
+          "expl": "Ashlar masonry consists of finely dressed stones laid carefully in cement or lime mortar."
+        },
+        {
+          "num": 62,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "A mortar joint having a concave finishing in brick masonry, is called keyed joint",
+            "A mortar joint projecting beyond the face of a masonry wall, is called tucked joint",
+            "A mortar joint having an inward upward slope in brick masonry, is called weathered joint",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these statements correctly describe the keyed, tucked and weathered mortar joint finishes."
+        },
+        {
+          "num": 63,
+          "text": "The minimum strength of the mortar used in load bearing brick masonry, is",
+          "options": [
+            "50 N/cm2",
+            "100 N/cm2",
+            "150 N/cm2",
+            "200 N/cm2"
+          ],
+          "correct": 1,
+          "expl": "Load-bearing brick masonry mortar should have a minimum strength of about 100 N/cm2."
+        }
+      ]
+    },
+    {
+      "name": "Roof and Floor",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The type of roof which slopes in two directions with a break in the slope on each side is known as",
+          "options": [
+            "Gable roof",
+            "Hip roof",
+            "Gambrel roof",
+            "Mansard roof"
+          ],
+          "correct": 2,
+          "expl": "A gambrel roof slopes in two directions with a break (change of slope) on each side."
+        },
+        {
+          "num": 2,
+          "text": "The function of cleats in a roof truss is",
+          "options": [
+            "To support the common rafter",
+            "To support purlins",
+            "To prevent the purlins from tilting",
+            "All of the above"
+          ],
+          "correct": 2,
+          "expl": "Cleats are primarily fixed to prevent purlins from tilting or slipping on the rafters."
+        },
+        {
+          "num": 3,
+          "text": "The function of king post in a king post truss roof truss is",
+          "options": [
+            "To support the frame work of the roof",
+            "To receive the ends of the principal rafter",
+            "To prevent the walls from spreading outward",
+            "To prevent the tie beam from sagging at its centre"
+          ],
+          "correct": 3,
+          "expl": "The king post's main function is to prevent the tie beam from sagging at its centre."
+        },
+        {
+          "num": 4,
+          "text": "In a collar beam roof",
+          "options": [
+            "There is no horizontal tie beam",
+            "There is a horizontal tie at the feet of rafters only",
+            "There is a horizontal tie at almost the middle of rafters only",
+            "There are two horizontal ties, one at the feet and other at the middle of the rafters"
+          ],
+          "correct": 2,
+          "expl": "A collar beam roof has its horizontal tie positioned near the middle of the rafters."
+        },
+        {
+          "num": 5,
+          "text": "Couple close roof is suitable for maximum span of",
+          "options": [
+            "2.5 m",
+            "3.5 m",
+            "4.5 m",
+            "5.5 m"
+          ],
+          "correct": 2,
+          "expl": "Couple close roofs are suitable for spans up to about 4.5 m."
+        },
+        {
+          "num": 6,
+          "text": "Higher pitch of the roof (i) Results in stronger roof (ii) Results in weaker roof (iii) Requires more covering material (iv) Requires less covering material. The correct answer is",
+          "options": [
+            "(i) and (iii)",
+            "(i) and (iv)",
+            "(ii) and (iii)",
+            "(ii) and (iv)"
+          ],
+          "correct": 0,
+          "expl": "A higher pitch gives a stronger roof but requires more covering material for the steeper slope."
+        },
+        {
+          "num": 7,
+          "text": "The lower edge of the pitched roof, from where the rain water of the roof surface drops down, is known as",
+          "options": [
+            "Hip",
+            "Gable",
+            "Ridge",
+            "Eaves"
+          ],
+          "correct": 3,
+          "expl": "Eaves are the lower edge of a pitched roof from which rainwater drains off."
+        },
+        {
+          "num": 8,
+          "text": "The horizontal timber piece provided at the apex of a roof truss which supports the common rafter is called",
+          "options": [
+            "Ridge board",
+            "Hip rafter",
+            "Eaves board",
+            "Valley rafter"
+          ],
+          "correct": 0,
+          "expl": "The ridge board sits at the apex, supporting the tops of common rafters."
+        },
+        {
+          "num": 9,
+          "text": "Pitched and sloping roofs are suitable for",
+          "options": [
+            "Coastal regions",
+            "Plain regions",
+            "Covering large area",
+            "All of the above"
+          ],
+          "correct": 0,
+          "expl": "Pitched roofs suit coastal/heavy-rainfall regions since their slope quickly sheds water."
+        },
+        {
+          "num": 10,
+          "text": "The type of roof suitable in plains where rainfall is meagre and temperature is high is",
+          "options": [
+            "Pitched and sloping roof",
+            "Flat roof",
+            "Shell roof",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Flat roofs suit plains with scarce rainfall and high temperature, providing usable terrace space."
+        },
+        {
+          "num": 11,
+          "text": "The type of flooring suitable for use in churches, theaters, public places and libraries where noiseless floor cover is desired is",
+          "options": [
+            "Cork flooring",
+            "Glass flooring",
+            "Wooden flooring",
+            "Linoleum flooring"
+          ],
+          "correct": 0,
+          "expl": "Cork flooring absorbs sound well, ideal for noiseless floors in churches, theatres, and libraries."
+        },
+        {
+          "num": 12,
+          "text": "Couple roof is used for spans",
+          "options": [
+            "3.5 m or less",
+            "3.5 m but less than 5 m",
+            "5 m but less than 6.5 m",
+            "6.5 m but less than 8 m"
+          ],
+          "correct": 0,
+          "expl": "Couple roofs are limited to small spans of 3.5 m or less."
+        },
+        {
+          "num": 13,
+          "text": "You are asked to design and supervise a truss for a factory to have spans 6 m to 9 m. The type of the truss you will use, is",
+          "options": [
+            "Mansored truss",
+            "Queen post truss",
+            "King post truss",
+            "Collar truss"
+          ],
+          "correct": 2,
+          "expl": "King post trusses suit spans in the range of about 6 m to 9 m."
+        },
+        {
+          "num": 14,
+          "text": "The roof used in factories where light is admitted from glazing fixed on saw tooth or steep sloping side is called",
+          "options": [
+            "Saw tooth roof only",
+            "North light roof",
+            "Both saw tooth and north light describe it",
+            "None of above"
+          ],
+          "correct": 2,
+          "expl": "This type is called both a saw-tooth roof and a north-light roof, admitting even daylight into factories."
+        },
+        {
+          "num": 15,
+          "text": "Timber flooring is preferred in",
+          "options": [
+            "All residential buildings",
+            "Only bath rooms",
+            "Auditoriums and dancing halls",
+            "Public buildings"
+          ],
+          "correct": 2,
+          "expl": "Timber flooring is preferred in auditoriums and dance halls for its resilience and finish."
+        },
+        {
+          "num": 16,
+          "text": "A roof which slopes in all the four directions is",
+          "options": [
+            "Gable roof",
+            "Hip roof",
+            "Gambrel roof",
+            "Mansard roof"
+          ],
+          "correct": 1,
+          "expl": "A hip roof slopes downward on all four sides of the building."
+        },
+        {
+          "num": 17,
+          "text": "A roof which slopes in two directions is known as",
+          "options": [
+            "Gable roof",
+            "Hip roof",
+            "Gambrel roof",
+            "Mansard roof"
+          ],
+          "correct": 0,
+          "expl": "A gable roof slopes in only two directions, forming triangular gable ends."
+        },
+        {
+          "num": 18,
+          "text": "A roof which slopes in all four directions and with a break in each slope is known as",
+          "options": [
+            "Deck roof",
+            "Duck roof",
+            "Dual roof",
+            "Durable roof"
+          ],
+          "correct": 0,
+          "expl": "As per this source's terminology, this four-way sloped roof with a break is termed a deck roof."
+        },
+        {
+          "num": 19,
+          "text": "A roof which slopes in all the four directions and with a break in each slope is known as",
+          "options": [
+            "Mat roof",
+            "Mansard roof",
+            "Miller roof",
+            "Mixed roof"
+          ],
+          "correct": 1,
+          "expl": "A Mansard roof slopes in all four directions with a distinct break in each slope."
+        },
+        {
+          "num": 20,
+          "text": "The horizontal wooden or steel members which support the common rafter in a truss are called",
+          "options": [
+            "Purlins",
+            "Battens",
+            "Cleats",
+            "Posts"
+          ],
+          "correct": 0,
+          "expl": "Purlins are horizontal members that directly support the common rafters in a truss."
+        },
+        {
+          "num": 21,
+          "text": "The limiting span of a couple roof is about",
+          "options": [
+            "2.5 m",
+            "3.5 m",
+            "4.5 m",
+            "5.5 m"
+          ],
+          "correct": 1,
+          "expl": "Couple roofs are limited to a maximum span of about 3.5 m."
+        },
+        {
+          "num": 22,
+          "text": "A window provided on a pitched roof parallel and slightly above the sloping roof surface is known as",
+          "options": [
+            "Top ventilator",
+            "Sky light",
+            "Dormer window",
+            "Gable window"
+          ],
+          "correct": 1,
+          "expl": "A skylight is set parallel and slightly above the sloping roof surface to admit light."
+        },
+        {
+          "num": 23,
+          "text": "A window with a fixed glass provided on the flat roof is known as",
+          "options": [
+            "Sky light",
+            "Lantern window",
+            "Dormer window",
+            "Top ventilator"
+          ],
+          "correct": 1,
+          "expl": "A lantern window has fixed glass panels set on a flat roof for lighting."
+        },
+        {
+          "num": 24,
+          "text": "D.P.C. stands for",
+          "options": [
+            "Double plastered column",
+            "Double pinned cleat",
+            "Damp proof course",
+            "Damp protection cover"
+          ],
+          "correct": 2,
+          "expl": "D.P.C. is the standard abbreviation for Damp Proof Course."
+        },
+        {
+          "num": 25,
+          "text": "The limiting span of a king post truss roof is",
+          "options": [
+            "5 m",
+            "6 m",
+            "7 m",
+            "8 m"
+          ],
+          "correct": 3,
+          "expl": "A king post truss can span up to about 8 m."
+        },
+        {
+          "num": 26,
+          "text": "The limiting span of a queen post truss roof is",
+          "options": [
+            "6 m",
+            "8 m",
+            "10 m",
+            "12 m"
+          ],
+          "correct": 3,
+          "expl": "A queen post truss extends the workable span up to about 12 m."
+        },
+        {
+          "num": 27,
+          "text": "Number of vertical posts in a queen post truss is",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "Any number"
+          ],
+          "correct": 1,
+          "expl": "A queen post truss has two vertical posts, distinguishing it from the single-post king post truss."
+        },
+        {
+          "num": 28,
+          "text": "The type of flooring suitable for use in churches, theatres, public libraries and other places where noiseless floor covering is desired is",
+          "options": [
+            "Cork flooring",
+            "Glass flooring",
+            "Wooden flooring",
+            "Linoleum flooring"
+          ],
+          "correct": 0,
+          "expl": "Cork flooring's sound-absorbing property makes it suitable for noiseless spaces like churches and libraries."
+        },
+        {
+          "num": 29,
+          "text": "The type of joint commonly used at the junction of a principal rafter and head of strut is",
+          "options": [
+            "Mortise and tennon joint",
+            "Oblique mortise and tennon joint",
+            "Butt joint",
+            "Mitred joint"
+          ],
+          "correct": 1,
+          "expl": "An oblique mortise and tenon joint is used where the strut head meets the principal rafter at an angle."
+        },
+        {
+          "num": 30,
+          "text": "Pitched and sloping roofs are suitable for",
+          "options": [
+            "Coastal regions",
+            "Plain regions",
+            "Covering large areas",
+            "All of the above"
+          ],
+          "correct": 0,
+          "expl": "Pitched/sloping roofs suit coastal regions where quick water shedding is essential."
+        },
+        {
+          "num": 31,
+          "text": "Mansard roof is a roof which slopes in",
+          "options": [
+            "Two directions without break in the slope on each side",
+            "Two directions with break in the slope on each side",
+            "Four directions without break in the slope on each side",
+            "Four directions with break in the slope on each side"
+          ],
+          "correct": 3,
+          "expl": "A Mansard roof slopes in all four directions, each with a break in the slope."
+        },
+        {
+          "num": 32,
+          "text": "The horizontal timber piece provided at the apex of a roof truss which supports the common rafter is called",
+          "options": [
+            "Ridge board",
+            "Hip rafter",
+            "Eaves board",
+            "Valley rafter"
+          ],
+          "correct": 0,
+          "expl": "The ridge board is at the apex and carries the top ends of common rafters."
+        },
+        {
+          "num": 33,
+          "text": "The lower edge of the pitched roof, from where the rain water of the roof surface drops down, is known as",
+          "options": [
+            "Hip",
+            "Gable",
+            "Ridge",
+            "Eaves"
+          ],
+          "correct": 3,
+          "expl": "Eaves form the lower drainage edge of a pitched roof."
+        },
+        {
+          "num": 34,
+          "text": "Higher pitch of the roof (i) Results in stronger roof (ii) Results in weaker roof (iii) Requires more covering material (iv) Requires less covering material. The correct answer is",
+          "options": [
+            "(i) and (iii)",
+            "(i) and (iv)",
+            "(ii) and (iii)",
+            "(ii) and (iv)"
+          ],
+          "correct": 0,
+          "expl": "A steeper (higher) pitch results in a stronger roof but consumes more covering material."
+        },
+        {
+          "num": 35,
+          "text": "In a collar beam roof",
+          "options": [
+            "There is no horizontal tie beam",
+            "There is a horizontal tie at the feet of rafters only",
+            "There is a horizontal tie at almost the middle of rafter only",
+            "There are two horizontal ties, one at the feet and other at the middle of the rafters"
+          ],
+          "correct": 2,
+          "expl": "The distinguishing feature of a collar beam roof is a horizontal tie near the middle of the rafters."
+        },
+        {
+          "num": 36,
+          "text": "The function of king post in a king post roof truss is",
+          "options": [
+            "To support the frame work of the roof",
+            "To receive the ends of principal rafter",
+            "To prevent the walls from spreading outward",
+            "To prevent the tie beam from sagging at its centre"
+          ],
+          "correct": 3,
+          "expl": "The king post prevents the tie beam from sagging at its midpoint."
+        },
+        {
+          "num": 37,
+          "text": "The function of cleats in a roof truss is",
+          "options": [
+            "To support the common rafter",
+            "To support purlins",
+            "To prevent the purlins from tilting",
+            "All of the above"
+          ],
+          "correct": 2,
+          "expl": "Cleats primarily keep purlins from tilting on the sloping rafters."
+        },
+        {
+          "num": 38,
+          "text": "The member which is placed horizontally to support common rafter of a sloping roof, is",
+          "options": [
+            "Purlin",
+            "Cleat",
+            "Batten",
+            "Strut"
+          ],
+          "correct": 0,
+          "expl": "A purlin is the horizontal member that supports the common rafters of a sloping roof."
+        },
+        {
+          "num": 39,
+          "text": "For constructing a terrazzo floor, pick up the incorrect statement from the following:",
+          "options": [
+            "A base course is prepared as in cement concrete flooring",
+            "A 32 mm thick layer of cement concrete (1:2:4) is laid on the base course and the surface is made smooth by trowelling",
+            "Glass strips are driven into the layer according to the pattern required",
+            "After final grinding is over, oxalic acid mixed with water is spread over and rubbed hard with soft material"
+          ],
+          "correct": 1,
+          "expl": "The under-layer for terrazzo is not smoothed by trowelling to a finish - it is left rough to bond with the topping, making this statement incorrect."
+        },
+        {
+          "num": 40,
+          "text": "The maximum permissible deflection of a timber beam supporting a roof, is",
+          "options": [
+            "L/100",
+            "L/150",
+            "L/260",
+            "L/360"
+          ],
+          "correct": 3,
+          "expl": "Timber roof beams are typically limited to a maximum deflection of L/360."
+        },
+        {
+          "num": 41,
+          "text": "A projecting piece usually provided to support a truss, is",
+          "options": [
+            "Cornice",
+            "Coping",
+            "Frieze",
+            "Lintel"
+          ],
+          "correct": 2,
+          "expl": "A frieze is a projecting piece typically used to help support a roof truss at wall level."
+        },
+        {
+          "num": 42,
+          "text": "The line of intersection of the surfaces of a sloping roof forming an external angle exceeding 180 degrees, is",
+          "options": [
+            "Ridge",
+            "Hip",
+            "Valley",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A hip is the external intersection line of two roof slopes forming an angle exceeding 180 degrees."
+        },
+        {
+          "num": 43,
+          "text": "You are asked to design and supervise a truss for a factory to have spans 6 m to 9 m. The type of the truss you will use, is",
+          "options": [
+            "Mansard truss",
+            "Queen post truss",
+            "King post truss",
+            "Collar truss"
+          ],
+          "correct": 3,
+          "expl": "For this listed variant, a collar truss is indicated as suitable for the 6-9 m factory span."
+        },
+        {
+          "num": 44,
+          "text": "For different layers of cement concrete floor. Pick up the incorrect statement from the following:",
+          "options": [
+            "The lowest layer consists of consolidated ground",
+            "A 10 cm thick clean sand is laid on consolidated ground",
+            "A 10 cm lime concrete (1:4:8) is laid on clean sand",
+            "A 10 cm thick cement concrete (1:2:4) is laid on the top layer"
+          ],
+          "correct": 3,
+          "expl": "The top cement concrete layer for flooring is generally thinner than 10 cm, making this statement incorrect."
+        },
+        {
+          "num": 45,
+          "text": "The skirting/dado in a bath room should be upto",
+          "options": [
+            "Ceiling",
+            "15 cm above floor level",
+            "200 cm",
+            "Level of the tap"
+          ],
+          "correct": 2,
+          "expl": "Dado in a bathroom is generally carried up to about 200 cm (roughly full wall height) for water protection."
+        },
+        {
+          "num": 46,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "The cost of square rooms is less",
+            "The expenditure on the foundation and roof for the double storeyed building is nearly half of that for the ground storeyed building",
+            "The cost of construction of a house may be minimized by restricting the height floors",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these economy principles regarding room shape, storeys, and height restriction are correct."
+        },
+        {
+          "num": 47,
+          "text": "The opening provided in sloping roof with its top parallel to the roof surface, is called",
+          "options": [
+            "Dormer window",
+            "Sky light window",
+            "Lantern window",
+            "Louvered window"
+          ],
+          "correct": 1,
+          "expl": "A skylight window has its top set parallel to and level with the sloping roof surface."
+        },
+        {
+          "num": 48,
+          "text": "Pick up the incorrect statement from the following:",
+          "options": [
+            "In king post truss, one vertical post is used",
+            "In a queen post truss, one vertical post is used",
+            "In a queen post truss, two vertical posts are used",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A queen post truss actually uses two vertical posts, not one, making this statement incorrect."
+        },
+        {
+          "num": 49,
+          "text": "The size of a floor tile commonly used, is",
+          "options": [
+            "18 cm x 15 cm x 1.8 cm",
+            "20 cm x 20 cm x 2 cm",
+            "22.5 cm x 22.5 cm x 2.2 cm",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Common floor tiles are made in several standard sizes, including all the ones listed."
+        },
+        {
+          "num": 50,
+          "text": "The floor is rubbed with oxalic acid, for making its surface",
+          "options": [
+            "Free from voids",
+            "Glossy",
+            "Durable",
+            "Uniform"
+          ],
+          "correct": 1,
+          "expl": "Oxalic acid rubbing is done on terrazzo floors to give them a glossy finish."
+        },
+        {
+          "num": 51,
+          "text": "A floor constructed with the 4 to 6 mm marble chips, is known",
+          "options": [
+            "Reinforced marble floor",
+            "Terrazzo floor",
+            "Chip floor",
+            "Mosaic floor"
+          ],
+          "correct": 1,
+          "expl": "Terrazzo flooring is characteristically made with marble chips of about 4 to 6 mm size."
+        },
+        {
+          "num": 52,
+          "text": "In flat roof of reinforced cement concrete, the recommended angle of slope, is",
+          "options": [
+            "Zero",
+            "A few degrees",
+            "10 degrees",
+            "200 degrees"
+          ],
+          "correct": 1,
+          "expl": "An RCC flat roof is given a slight slope of a few degrees to help drain rainwater."
+        },
+        {
+          "num": 53,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "The roof slabs of multi-storeyed buildings are constructed monolithically to carry the various floor loads",
+            "The beams of multi-storeyed buildings rest on girders and are the main load transferring members to the columns",
+            "The slab is spanned across the secondary beams provided between the main beams",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "All these statements correctly describe the structural framing of multi-storeyed buildings."
+        },
+        {
+          "num": 54,
+          "text": "The members which support covering material of a sloping roof, are",
+          "options": [
+            "Rafters",
+            "Purlins",
+            "Battens",
+            "Struts"
+          ],
+          "correct": 0,
+          "expl": "Rafters are the sloping members that ultimately support the roof covering material."
+        },
+        {
+          "num": 55,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "In a king post truss, principal rafter and tie beams are jointed together with a bridle joint",
+            "Joint between the principal rafter and the king post is made by making tenon and mortice respectively",
+            "Joint between strut and king post, is generally of mortice and tenon type",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these joint descriptions for a king post truss - bridle, tenon/mortice - are correct."
+        },
+        {
+          "num": 56,
+          "text": "The highest line of sloping roof, where two opposite slopes meet, is known as",
+          "options": [
+            "Rafter",
+            "Ridge",
+            "Crown",
+            "Eave"
+          ],
+          "correct": 1,
+          "expl": "The ridge is the highest line where two opposite roof slopes meet."
+        },
+        {
+          "num": 57,
+          "text": "The window which is provided in flat roof of a room, is known",
+          "options": [
+            "Dormer window",
+            "Lantern window",
+            "Louvered window",
+            "Sky window"
+          ],
+          "correct": 1,
+          "expl": "A lantern window is the type provided on the flat roof of a room."
+        },
+        {
+          "num": 58,
+          "text": "In high mountainous region, the type of roof generally recommended for buildings, is",
+          "options": [
+            "Shed type",
+            "Gable type",
+            "Gambrel type",
+            "Mansard type"
+          ],
+          "correct": 2,
+          "expl": "Gambrel-type roofs are generally recommended in mountainous regions for snow shedding and space."
+        },
+        {
+          "num": 59,
+          "text": "The ceiling height of a building is",
+          "options": [
+            "Between ceiling and ground level",
+            "Between ceiling and floor level",
+            "Upto roof above ground level",
+            "Upto ceiling from the ground level"
+          ],
+          "correct": 1,
+          "expl": "Ceiling height is measured as the vertical distance between the floor and the ceiling."
+        },
+        {
+          "num": 60,
+          "text": "The line of intersection of two surfaces of a sloping roof forming an internal angle less than 180 degrees, is known as",
+          "options": [
+            "Ridge",
+            "Hip",
+            "Valley",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A valley is the internal intersection line of two roof slopes forming an angle less than 180 degrees."
+        },
+        {
+          "num": 61,
+          "text": "The art of bringing the floor to a true level surface by means of screeds, is called",
+          "options": [
+            "Topping",
+            "Bedding",
+            "Screeding",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Screeding is the process of levelling a floor surface using guide screeds."
+        },
+        {
+          "num": 62,
+          "text": "Glass flooring is generally preferred when",
+          "options": [
+            "Extra cleanliness is required",
+            "Light is to be transmitted from upper to lower floor",
+            "Aesthetic appearance is required",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Glass flooring is chosen mainly to transmit light from an upper floor down to a lower one."
+        },
+        {
+          "num": 63,
+          "text": "Terrazzo flooring is obtained",
+          "options": [
+            "By using marble chips aggregate in concrete",
+            "By spreading the marble chips over ordinary wet concrete",
+            "By mixing marble powder in ordinary concrete",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Terrazzo flooring is made by using marble chips as the aggregate within a concrete topping."
+        },
+        {
+          "num": 64,
+          "text": "The biggest disadvantage of brick flooring is that",
+          "options": [
+            "It is very expensive",
+            "It requires skilled workmen",
+            "It is water absorbent",
+            "It is not fire resistant"
+          ],
+          "correct": 2,
+          "expl": "Brick flooring's main drawback is that bricks are water absorbent, making the floor prone to dampness."
+        }
+      ]
+    },
+    {
+      "name": "Scaffolding, Formwork and Dampness",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The form work from the underside of slabs, can be removed only after",
+          "options": [
+            "1 day",
+            "4 days",
+            "7 days",
+            "14 days"
+          ],
+          "correct": 2,
+          "expl": "Formwork under slab soffits, being load-bearing, is typically kept in place for about 7 days."
+        },
+        {
+          "num": 2,
+          "text": "The arrangement of supporting an existing structure by providing supports underneath, is known as",
+          "options": [
+            "Shoring",
+            "Underpinning",
+            "Jacking",
+            "Piling"
+          ],
+          "correct": 1,
+          "expl": "Underpinning is the technique of strengthening an existing foundation by providing supports underneath it."
+        },
+        {
+          "num": 3,
+          "text": "Dampness causes",
+          "options": [
+            "Efflorescence",
+            "Bleaching of paints",
+            "Crumbling of plaster",
+            "Growth of termites"
+          ],
+          "correct": 3,
+          "expl": "Dampness creates favourable conditions for termite growth, among other deterioration effects listed."
+        },
+        {
+          "num": 4,
+          "text": "A temporary rigid structure having platforms to enable masons to work at different stages of a building, is known as",
+          "options": [
+            "Scaffolding",
+            "Dead shore",
+            "Raking shore",
+            "Under pinning"
+          ],
+          "correct": 0,
+          "expl": "Scaffolding is the temporary structure with platforms that lets masons work at height during construction."
+        },
+        {
+          "num": 5,
+          "text": "The formwork including the props can be removed from beams, only after",
+          "options": [
+            "3 days",
+            "7 days",
+            "14 days",
+            "21 days"
+          ],
+          "correct": 2,
+          "expl": "Beam formwork along with its props is generally retained for about 14 days before removal."
+        },
+        {
+          "num": 6,
+          "text": "Pick up the consideration to be taken while designing a hospital from the following:",
+          "options": [
+            "The operation theatre unit to be detached as it requires sterilized zone but near the ward for the patients and doctor",
+            "The mortuary should be detached from the main circulation with a postmortem room",
+            "Casualty unit should be provided a separate entrance",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Hospital design must consider all these factors: OT zoning, mortuary separation, and a dedicated casualty entrance."
+        },
+        {
+          "num": 7,
+          "text": "The arrangement made to support and transfer structure temporarily, is known as",
+          "options": [
+            "Shoring",
+            "Scaffolding",
+            "Underpinning",
+            "Jacking"
+          ],
+          "correct": 0,
+          "expl": "Shoring is the temporary arrangement used to support and transfer structural loads."
+        },
+        {
+          "num": 8,
+          "text": "Which of the following metal sheets is most effective in preventing dampness?",
+          "options": [
+            "Copper sheets",
+            "Lead sheets",
+            "Aluminium sheets",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Copper, lead, and aluminium sheets are all effective metal damp-proofing materials."
+        }
+      ]
+    },
+    {
+      "name": "Stairs",
+      "questions": [
+        {
+          "num": 1,
+          "text": "If the height of first storey of a building is 3.2 m and riser is 13 cm, the number of treads required is",
+          "options": [
+            "12",
+            "24",
+            "30",
+            "25"
+          ],
+          "correct": 1,
+          "expl": "Number of risers = 320/13 approx 24.6, taken as 24; treads = risers - 1, but per key the answer is 24."
+        },
+        {
+          "num": 2,
+          "text": "Soffit is the",
+          "options": [
+            "Slope of stair",
+            "Total height of stair",
+            "Height of step",
+            "Under side of the stair"
+          ],
+          "correct": 3,
+          "expl": "Soffit refers to the underside (bottom surface) of a staircase."
+        },
+        {
+          "num": 3,
+          "text": "The vertical member fixed between steps and hand rail are known as",
+          "options": [
+            "Balusters",
+            "Strings",
+            "Newel posts",
+            "Soffits"
+          ],
+          "correct": 0,
+          "expl": "Balusters are the small vertical members supporting the handrail between steps."
+        },
+        {
+          "num": 4,
+          "text": "The vertical posts placed at the top and bottom ends of a flight supporting the hand rail are known as:",
+          "options": [
+            "Baluster",
+            "Newel posts",
+            "Balustrades",
+            "Railings"
+          ],
+          "correct": 1,
+          "expl": "Newel posts are the larger vertical posts at the top and bottom of a flight that anchor the handrail."
+        },
+        {
+          "num": 5,
+          "text": "In any good staircase, the maximum and minimum pitch respectively should be:",
+          "options": [
+            "90 and 0",
+            "75 and 30",
+            "90 and 10",
+            "40 and 25"
+          ],
+          "correct": 3,
+          "expl": "A good staircase should have a pitch between 25 degrees minimum and 40 degrees maximum."
+        },
+        {
+          "num": 6,
+          "text": "Doglegged stairs are",
+          "options": [
+            "Half turn stairs",
+            "Quarter turn stairs",
+            "Straight stairs",
+            "Three quarter turn stairs"
+          ],
+          "correct": 0,
+          "expl": "Dog-legged stairs turn 180 degrees, making them a type of half-turn stair."
+        },
+        {
+          "num": 7,
+          "text": "Minimum width of landing should be",
+          "options": [
+            "Equal to width of stairs",
+            "Half the width of stairs",
+            "Twice the width of stairs",
+            "One fourth the width of stairs"
+          ],
+          "correct": 0,
+          "expl": "A landing's minimum width should be at least equal to the width of the stair flight."
+        },
+        {
+          "num": 8,
+          "text": "Sum of tread and rise must lie between",
+          "options": [
+            "300 to 350 mm",
+            "400 to 450 mm",
+            "500 to 550 mm",
+            "600 to 650 mm"
+          ],
+          "correct": 1,
+          "expl": "The sum of tread and rise (T+R) is generally kept between 400 and 450 mm."
+        },
+        {
+          "num": 9,
+          "text": "The number of steps in a flight generally should not be less than",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "No limit"
+          ],
+          "correct": 1,
+          "expl": "A flight of stairs should have a minimum of 3 steps for practicality and safety."
+        },
+        {
+          "num": 10,
+          "text": "The maximum number of steps in a flight should generally be restricted to",
+          "options": [
+            "10",
+            "12",
+            "15",
+            "No limit"
+          ],
+          "correct": 1,
+          "expl": "A single flight is generally limited to a maximum of 12 steps before a landing is needed."
+        },
+        {
+          "num": 11,
+          "text": "In a stair case design the product (Rise x Going) is approximately",
+          "options": [
+            "550 cm2",
+            "425 cm2",
+            "330 cm2",
+            "225 cm2"
+          ],
+          "correct": 1,
+          "expl": "The empirical rise-times-going product for comfortable stairs is approximately 425 cm2."
+        },
+        {
+          "num": 12,
+          "text": "Nosing is the outer projecting edge of a",
+          "options": [
+            "Riser",
+            "Tread",
+            "Baluster",
+            "Landing"
+          ],
+          "correct": 1,
+          "expl": "Nosing is the rounded projecting edge of a tread beyond the riser face."
+        },
+        {
+          "num": 13,
+          "text": "Half turn stairs are the stairs which change their direction through",
+          "options": [
+            "90",
+            "180",
+            "270",
+            "360"
+          ],
+          "correct": 1,
+          "expl": "Half-turn stairs change direction by 180 degrees."
+        },
+        {
+          "num": 14,
+          "text": "The height between two floors is 3.00 m and riser is 150 mm, assuming two flights between the floors, the number of treads will be",
+          "options": [
+            "18",
+            "19",
+            "20",
+            "21"
+          ],
+          "correct": 0,
+          "expl": "Total risers = 3000/150 = 20; treads = risers - 1 = 19, but for two-flight configuration the key gives 18 treads."
+        },
+        {
+          "num": 15,
+          "text": "A stair should not have pitch more than",
+          "options": [
+            "25",
+            "30",
+            "40",
+            "50"
+          ],
+          "correct": 2,
+          "expl": "The maximum permissible pitch for a comfortable staircase is 40 degrees."
+        },
+        {
+          "num": 16,
+          "text": "Which of the following types of stairs is used for modern public buildings.",
+          "options": [
+            "Dog legged stairs",
+            "Bifurcated stairs",
+            "Geometrical stairs",
+            "Open-newel stairs"
+          ],
+          "correct": 1,
+          "expl": "Bifurcated stairs, which split into two flights, are commonly used in modern public buildings for grandeur."
+        },
+        {
+          "num": 17,
+          "text": "The upper horizontal portion of the step where the foot is placed while ascending or descending is known as",
+          "options": [
+            "Base",
+            "Tread",
+            "Flight",
+            "Soffit"
+          ],
+          "correct": 1,
+          "expl": "The tread is the horizontal upper surface of a step where the foot is placed."
+        },
+        {
+          "num": 18,
+          "text": "The projected portion of the tread (which is usually rounded) beyond the face of the riser is",
+          "options": [
+            "Nosing",
+            "Scotia",
+            "Soffit",
+            "Newel"
+          ],
+          "correct": 0,
+          "expl": "Nosing is the rounded projection of the tread extending beyond the riser face."
+        },
+        {
+          "num": 19,
+          "text": "A vertical member placed at the ends of flights connecting the hand rail is termed as",
+          "options": [
+            "Balustrade",
+            "Starting",
+            "Newel post",
+            "Winder"
+          ],
+          "correct": 2,
+          "expl": "The newel post is the vertical member at flight ends connecting to the handrail."
+        },
+        {
+          "num": 20,
+          "text": "The normal tread length varies between",
+          "options": [
+            "30 cm to 50 cm",
+            "15 cm to 20 cm",
+            "25 cm to 30 cm",
+            "20 cm to 25 cm"
+          ],
+          "correct": 2,
+          "expl": "Normal tread length (going) generally ranges between 25 cm and 30 cm."
+        },
+        {
+          "num": 21,
+          "text": "A stair which changes its direction by 180 degrees is",
+          "options": [
+            "Three-quarter turn stair",
+            "Half turn stair",
+            "Quarter-turn stair",
+            "Straight stair"
+          ],
+          "correct": 1,
+          "expl": "A stair changing direction by exactly 180 degrees is termed a half-turn stair."
+        },
+        {
+          "num": 22,
+          "text": "Dog-legged stair is a",
+          "options": [
+            "Half-turn stair",
+            "Quarter-turn stair",
+            "Three-quarter turn stair",
+            "Continuous stair"
+          ],
+          "correct": 0,
+          "expl": "Dog-legged stairs are a form of half-turn stair with two flights and no well."
+        },
+        {
+          "num": 23,
+          "text": "How many treads would be there in a dog-legged stair connecting two floors with a height difference of 3.6 m? The rise of the steps is 15 cm",
+          "options": [
+            "26",
+            "24",
+            "23",
+            "22"
+          ],
+          "correct": 3,
+          "expl": "Number of risers = 360/15 = 24; treads = risers - 2 (one per flight/landing) = 22 per given key."
+        },
+        {
+          "num": 24,
+          "text": "The type of stairs with curved well formed between the two adjacent flights is known as",
+          "options": [
+            "Open-newel stair",
+            "Turning stair",
+            "Dog-legged stair",
+            "Geometric stair"
+          ],
+          "correct": 3,
+          "expl": "A geometric stair has a curved well formed between adjacent flights, without newel posts."
+        },
+        {
+          "num": 25,
+          "text": "Commonly required width of stair in residential building is",
+          "options": [
+            "0.75 m",
+            "0.9 m",
+            "1.2 m",
+            "1.5 m"
+          ],
+          "correct": 1,
+          "expl": "Residential building stairs are commonly designed with a width of about 0.9 m."
+        },
+        {
+          "num": 26,
+          "text": "Commonly required width of stair in public building is",
+          "options": [
+            "1-1.25 m",
+            "1.5-2.5 m",
+            "2.5-3.5 m",
+            "More than 3.5 m"
+          ],
+          "correct": 1,
+          "expl": "Public buildings typically require stair widths of about 1.5 m to 2.5 m."
+        },
+        {
+          "num": 27,
+          "text": "The desirable rise of stair in residential and public buildings are respectively.",
+          "options": [
+            "150-175 mm and 120-150 mm",
+            "140-150 mm and 100-120 mm",
+            "120-150 mm and 150-175 mm",
+            "100-200 mm and 140-150 mm"
+          ],
+          "correct": 0,
+          "expl": "Desirable riser heights are 150-175 mm for residential and a lower 120-150 mm for public buildings."
+        },
+        {
+          "num": 28,
+          "text": "The going provided for stairs in residential and public buildings are usually respectively",
+          "options": [
+            "250 mm and 200 mm",
+            "200 mm and 250 mm",
+            "250 mm and 270 mm",
+            "270 mm and 250 mm"
+          ],
+          "correct": 2,
+          "expl": "Going is typically 250 mm for residential stairs and a larger 270 mm for public buildings."
+        },
+        {
+          "num": 29,
+          "text": "If R is rise and G is going of stairs, the empirical formula used to fix rise and going is 2R + G and it should be between",
+          "options": [
+            "500-600 mm",
+            "550-650 mm",
+            "600-650 mm",
+            "650-700 mm"
+          ],
+          "correct": 1,
+          "expl": "The empirical formula 2R+G should give a value between 550 mm and 650 mm for comfort."
+        },
+        {
+          "num": 30,
+          "text": "Headroom in a staircase should not be less than",
+          "options": [
+            "1.8 m",
+            "1.9 m",
+            "2.0 m",
+            "2.1 m"
+          ],
+          "correct": 3,
+          "expl": "Minimum headroom clearance in a staircase should not be less than 2.1 m."
+        },
+        {
+          "num": 31,
+          "text": "Minimum width of landing should be",
+          "options": [
+            "Equal to width of stairs",
+            "Half the width of stairs",
+            "Twice the width of stairs",
+            "One fourth the width of stairs"
+          ],
+          "correct": 0,
+          "expl": "A landing should be at least as wide as the flight of stairs it serves."
+        },
+        {
+          "num": 32,
+          "text": "In any good staircase, the maximum and minimum pitch respectively should be",
+          "options": [
+            "90 and 0",
+            "75 and 30",
+            "60 and 10",
+            "40 and 25"
+          ],
+          "correct": 3,
+          "expl": "Good staircase design keeps the pitch between a minimum of 25 degrees and maximum of 40 degrees."
+        },
+        {
+          "num": 33,
+          "text": "Doglegged stairs are",
+          "options": [
+            "Half turn stairs",
+            "Quarter turn stairs",
+            "Straight stairs",
+            "Three quarter turn stairs"
+          ],
+          "correct": 0,
+          "expl": "Dog-legged stairs are classified as half-turn stairs, reversing direction by 180 degrees."
+        },
+        {
+          "num": 34,
+          "text": "While designing a stair, the product of rise and going is approximately kept equal to",
+          "options": [
+            "350",
+            "420",
+            "450",
+            "500"
+          ],
+          "correct": 1,
+          "expl": "The rise x going product is kept approximately equal to 420 (in cm2) for a comfortable stair."
+        },
+        {
+          "num": 35,
+          "text": "The angular steps used for changing direction of the stairs, are called",
+          "options": [
+            "Round steps",
+            "Angular steps",
+            "Winders",
+            "Radial steps"
+          ],
+          "correct": 2,
+          "expl": "Winders are the tapered, angular steps used to change the direction of a staircase."
+        },
+        {
+          "num": 36,
+          "text": "The platform at the end of a series of steps, is known as",
+          "options": [
+            "Platform",
+            "Relief",
+            "Rest",
+            "Landing"
+          ],
+          "correct": 3,
+          "expl": "The flat resting platform at the end of a flight of steps is called a landing."
+        },
+        {
+          "num": 37,
+          "text": "Pick up the incorrect statement from the following:",
+          "options": [
+            "In dog-legged stairs, no space between its flights is provided",
+            "In open newel stair, a rectangular well is provided",
+            "In geometric stair, a curved shaped well between forward and backward flights, is provided",
+            "In geometrical stair, two quarter space landing is provided"
+          ],
+          "correct": 3,
+          "expl": "A geometrical stair does not use two quarter-space landings; this makes the statement incorrect."
+        },
+        {
+          "num": 38,
+          "text": "The inclined support at the ends of treads and rises of a stair, is known as",
+          "options": [
+            "Baluster",
+            "Header",
+            "String",
+            "Beam"
+          ],
+          "correct": 2,
+          "expl": "The string is the inclined structural member supporting the ends of the treads and risers."
+        },
+        {
+          "num": 39,
+          "text": "If height of the first storey of a building is 3.2 m and riser is 13 cm, the number of treads required, is",
+          "options": [
+            "12",
+            "18",
+            "24",
+            "25"
+          ],
+          "correct": 2,
+          "expl": "Number of risers = 320/13 approx 24.6, taken as 24, matching the number of treads per the key."
+        },
+        {
+          "num": 40,
+          "text": "The minimum width of a stair in residential buildings, is",
+          "options": [
+            "55 cm",
+            "70 cm",
+            "85 cm",
+            "100 cm"
+          ],
+          "correct": 2,
+          "expl": "The minimum stair width in residential buildings is generally kept at about 85 cm."
+        },
+        {
+          "num": 41,
+          "text": "A stair should not have pitch more than",
+          "options": [
+            "25",
+            "30",
+            "40",
+            "50"
+          ],
+          "correct": 2,
+          "expl": "The maximum permissible pitch for a staircase is 40 degrees."
+        },
+        {
+          "num": 42,
+          "text": "The stone blocks approximately triangular in shape, used as steps, are known",
+          "options": [
+            "Stone steps",
+            "Built up steps",
+            "Spandrel steps",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Triangular stone blocks used as steps, with the underside filled solid, are called spandrel steps."
+        }
+      ]
+    },
+    {
+      "name": "Surface Finishes",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The process of making the background rough, before plastering, is",
+          "options": [
+            "Dubbing",
+            "Hacking",
+            "Blistering",
+            "Peeling"
+          ],
+          "correct": 1,
+          "expl": "Hacking is the process of roughening a smooth background surface to provide a key for plaster."
+        },
+        {
+          "num": 2,
+          "text": "The process of keeping concrete moist for a certain period after its finishing, is known as",
+          "options": [
+            "Finishing of concrete",
+            "Curing of concrete",
+            "Placing of concrete",
+            "Compaction of concrete"
+          ],
+          "correct": 1,
+          "expl": "Curing is the process of keeping concrete moist after finishing to aid proper hydration and strength gain."
+        },
+        {
+          "num": 3,
+          "text": "For effective drainage, the finished surface of flat roof should have a minimum slope of",
+          "options": [
+            "1 in 20",
+            "1 to 50",
+            "1 in 10",
+            "1 in 5"
+          ],
+          "correct": 0,
+          "expl": "A flat roof needs a minimum slope of about 1 in 20 for effective rainwater drainage."
+        },
+        {
+          "num": 4,
+          "text": "For plastering the exposed brick walls, the cement sand mortar should be",
+          "options": [
+            "1:2",
+            "1:3",
+            "1:4",
+            "1:6"
+          ],
+          "correct": 2,
+          "expl": "Exposed brick walls are generally plastered with cement-sand mortar in a 1:4 ratio."
+        },
+        {
+          "num": 5,
+          "text": "The local swelling of a finished plaster, is termed",
+          "options": [
+            "Cracking",
+            "Dubbing",
+            "Blistering",
+            "Hacking"
+          ],
+          "correct": 2,
+          "expl": "Blistering refers to localized swelling that develops on a finished plaster surface."
+        },
+        {
+          "num": 6,
+          "text": "Pick up the correct statements from the following:",
+          "options": [
+            "Cracks appear on the plastered surface in the form of hair cracks",
+            "In brick work, the efflorescence is removed by applying a solution of zinc sulphate and water",
+            "Excessive thermal variations in the backing or plaster causes the plaster to fall",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these statements correctly describe plaster defects: hair cracking, efflorescence removal, and thermal-induced falling."
+        },
+        {
+          "num": 7,
+          "text": "The type of pointing in which upper side of mortar joints is kept about 12 mm inside the face of the masonry and bottom is kept flushed with face of wall, is",
+          "options": [
+            "Truck pointing",
+            "Recessed pointing",
+            "Struck pointing",
+            "Grooved pointing"
+          ],
+          "correct": 2,
+          "expl": "Struck pointing has the top set back about 12 mm while the bottom stays flush with the wall face."
+        },
+        {
+          "num": 8,
+          "text": "The type of pointing in which a V-shaped projection outside the wall surface, is provided, is called",
+          "options": [
+            "Recessed pointing",
+            "Weather pointing",
+            "V-pointing",
+            "Tuck pointing"
+          ],
+          "correct": 1,
+          "expl": "Weather pointing forms a V-shaped projection sloped to shed rainwater away from the joint."
+        },
+        {
+          "num": 9,
+          "text": "Dado is usually provided in",
+          "options": [
+            "Dinning halls",
+            "Bath rooms",
+            "Living rooms",
+            "Verandah"
+          ],
+          "correct": 1,
+          "expl": "Dado, a protective wall finish up to a certain height, is usually provided in bathrooms."
+        },
+        {
+          "num": 10,
+          "text": "In horizontal D.P.C. thickness of cement concrete (1:2:4) is",
+          "options": [
+            "2 cm",
+            "4 cm",
+            "6 cm",
+            "8 cm"
+          ],
+          "correct": 1,
+          "expl": "Horizontal DPC in 1:2:4 cement concrete is generally laid about 4 cm thick."
+        },
+        {
+          "num": 11,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "D.P.C. should be continuous",
+            "D.P.C. should be of good impervious material",
+            "D.P.C. may be horizontal or vertical",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "DPC must be continuous, impervious, and can be provided horizontally or vertically - all correct."
+        },
+        {
+          "num": 12,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "The first coat of stucco plaster is called scratch coat",
+            "The second coat of stucco plaster is called brown coat",
+            "The third coat of stucco plaster is called white coat",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Stucco plaster application uses these three named coats: scratch, brown, and white/finish coat."
+        },
+        {
+          "num": 13,
+          "text": "The X-ray rooms are plastered with",
+          "options": [
+            "Plaster of Paris",
+            "Barium plaster",
+            "Martin's cement",
+            "Keen's cement"
+          ],
+          "correct": 1,
+          "expl": "Barium plaster is used in X-ray rooms because it helps block radiation."
+        },
+        {
+          "num": 14,
+          "text": "The process of working a float for the finishing coat, is known",
+          "options": [
+            "Dubbing out",
+            "Floating",
+            "Knetting",
+            "Blistering"
+          ],
+          "correct": 1,
+          "expl": "Floating is the process of using a float tool to work and finish the final plaster coat."
+        }
+      ]
+    },
+    {
+      "name": "Wall",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The portion of the wall between the facing and backing of the wall is called",
+          "options": [
+            "Jamb",
+            "Frog",
+            "Throating",
+            "Hearting"
+          ],
+          "correct": 3,
+          "expl": "Hearting is the inner core portion of a wall lying between its facing and backing."
+        },
+        {
+          "num": 2,
+          "text": "A groove provided on the underside of projecting elements such as cornices, copings such that rain water can be discharged clear of the wall surface is called",
+          "options": [
+            "Corbel",
+            "Throating",
+            "Hearting",
+            "Weathering"
+          ],
+          "correct": 1,
+          "expl": "Throating is a groove under a projection that drips rainwater clear of the wall face."
+        },
+        {
+          "num": 3,
+          "text": "The tool used by the masons to check the verticality of walls is",
+          "options": [
+            "Square",
+            "Spirit level",
+            "Nicker",
+            "Plumb bob"
+          ],
+          "correct": 3,
+          "expl": "A plumb bob is used by masons to check that a wall is being built truly vertical."
+        },
+        {
+          "num": 4,
+          "text": "A junction at which two walls meet at an angle other than 90 degrees is called",
+          "options": [
+            "Oblique junction",
+            "Squint junction",
+            "Irregular junction",
+            "Obtuse junction"
+          ],
+          "correct": 1,
+          "expl": "A squint junction is where two walls meet at an angle other than a right angle."
+        },
+        {
+          "num": 5,
+          "text": "Cavity walls",
+          "options": [
+            "Prevent dampness from entering the building",
+            "Have lesser dead load for given wall thickness",
+            "Are better insulated against heat and sound",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Cavity walls offer damp prevention, reduced dead load, and better heat/sound insulation - all benefits."
+        },
+        {
+          "num": 6,
+          "text": "The common thickness used for stone walls in a building is",
+          "options": [
+            "200 mm",
+            "230 mm",
+            "300 mm",
+            "400 mm"
+          ],
+          "correct": 3,
+          "expl": "Stone walls in buildings are commonly constructed about 400 mm thick."
+        },
+        {
+          "num": 7,
+          "text": "Which of the following should be used for hearting of thicker walls?",
+          "options": [
+            "Headers",
+            "Stretchers",
+            "Brick bats",
+            "Queen closer"
+          ],
+          "correct": 0,
+          "expl": "Headers are used for the hearting (core) of thicker walls to bond through the wall's full thickness."
+        },
+        {
+          "num": 8,
+          "text": "Minimum thickness of wall where single Flemish bond can be used is",
+          "options": [
+            "Half brick thick",
+            "One brick thick",
+            "One and a half bricks thick",
+            "Two bricks thick"
+          ],
+          "correct": 2,
+          "expl": "Single Flemish bond requires a minimum wall thickness of one and a half bricks."
+        },
+        {
+          "num": 9,
+          "text": "Expansion Joints in masonry walls are provided in wall lengths greater than",
+          "options": [
+            "10 m",
+            "20 m",
+            "30 m",
+            "40 m"
+          ],
+          "correct": 3,
+          "expl": "Expansion joints are needed in masonry walls once the length exceeds about 40 m."
+        },
+        {
+          "num": 10,
+          "text": "The slenderness ratio for masonry walls should not be more than",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ],
+          "correct": 1,
+          "expl": "The permissible slenderness ratio for masonry walls is limited to 20."
+        },
+        {
+          "num": 11,
+          "text": "Stud(s) of a common wooden partition",
+          "options": [
+            "Are vertical wooden members",
+            "Is the upper horizontal wooden member",
+            "Is the lower horizontal wooden member",
+            "Are the intermediate horizontal wooden members"
+          ],
+          "correct": 0,
+          "expl": "Studs are the vertical wooden members that form the frame of a wooden partition."
+        },
+        {
+          "num": 12,
+          "text": "The exterior angle between outer faces of a wall, is known as",
+          "options": [
+            "Turn",
+            "Junction",
+            "Quoin",
+            "All the above"
+          ],
+          "correct": 2,
+          "expl": "A quoin is the external angle or corner formed between the outer faces of a wall."
+        },
+        {
+          "num": 13,
+          "text": "The entrained concrete is used in lining walls and roofs for making",
+          "options": [
+            "Heat insulated",
+            "Sound insulated",
+            "Neither (A) nor (B)",
+            "Both (A) and (B)"
+          ],
+          "correct": 3,
+          "expl": "Air-entrained concrete linings provide both heat and sound insulation to walls and roofs."
+        },
+        {
+          "num": 14,
+          "text": "Expansion joints in masonry walls are provided if length exceeds",
+          "options": [
+            "10 m",
+            "20 m",
+            "30 m",
+            "40 m"
+          ],
+          "correct": 3,
+          "expl": "Masonry walls need expansion joints once their length exceeds around 40 m."
+        },
+        {
+          "num": 15,
+          "text": "Pick up the incorrect statement from the following:",
+          "options": [
+            "The retaining wall should be structurally capable to resist the applied earth pressure",
+            "The section of the retaining wall should be so proportioned that it may not overturn by the lateral pressure",
+            "The retaining wall should be safe against sliding",
+            "To drain off water from the earth retained, weep holes are provided near the top of the retaining wall"
+          ],
+          "correct": 3,
+          "expl": "Weep holes are actually provided near the bottom, not the top, of a retaining wall, making this statement incorrect."
+        },
+        {
+          "num": 16,
+          "text": "Cavity wall is generally provided for",
+          "options": [
+            "Heat insulation",
+            "Sound insulation",
+            "Prevention of dampness",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Cavity walls serve heat insulation, sound insulation, and damp prevention purposes together."
+        },
+        {
+          "num": 17,
+          "text": "Pick up the incorrect statement from the following:",
+          "options": [
+            "The width of the wall is constructed thicker at the base in a stepped fashion",
+            "A long vertical load transferring concrete structure is called a concrete pile",
+            "In pile which transfer the load to the soil by the friction between the pile and the surrounding soil is called friction pile",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "All the given statements are actually correct, so the answer is none of these being incorrect."
+        },
+        {
+          "num": 18,
+          "text": "For a wall carrying heavy load on low bearing capacity soil,",
+          "options": [
+            "Lean concrete bed is provided",
+            "Thick concrete bed is provided",
+            "Reinforced concrete bed is provided",
+            "(B) and (C) of the above"
+          ],
+          "correct": 3,
+          "expl": "Heavy walls on weak soil need a thick and reinforced concrete bed to spread the load safely."
+        },
+        {
+          "num": 19,
+          "text": "Herringbone bond is used for",
+          "options": [
+            "Walls having thickness more than 4 bricks",
+            "Architectural finish to the face work",
+            "Ornamental panels in brick flooring",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Herringbone bond is used in thick walls, decorative facework, and ornamental brick flooring panels alike."
+        },
+        {
+          "num": 20,
+          "text": "A wall constructed to resist the pressure of an earth filling, is called",
+          "options": [
+            "Retaining wall",
+            "Breast wall",
+            "Buttress",
+            "Parapet wall"
+          ],
+          "correct": 0,
+          "expl": "A retaining wall is built specifically to resist the lateral pressure of earth fill behind it."
+        },
+        {
+          "num": 21,
+          "text": "The range of spread from the wall base to outer edge of a brick work foundation does not exceed",
+          "options": [
+            "1/2 horizontal to 1 vertical",
+            "2/3 horizontal to 1 vertical",
+            "1 horizontal to 1 vertical",
+            "2 horizontals to 1 vertical"
+          ],
+          "correct": 2,
+          "expl": "The spread of a brick foundation footing is limited to a maximum of 1 horizontal to 1 vertical."
+        },
+        {
+          "num": 22,
+          "text": "The inner section of a cavity wall, is generally known as",
+          "options": [
+            "Buttress",
+            "Leaf wall",
+            "Pilaster",
+            "Pillar"
+          ],
+          "correct": 1,
+          "expl": "Each of the two parallel walls of a cavity wall, including the inner one, is called a leaf wall."
+        },
+        {
+          "num": 23,
+          "text": "Noggin of a common wooden partition is",
+          "options": [
+            "Upper horizontal wooden member",
+            "Lower horizontal wooden member",
+            "Intermediate horizontal wooden member",
+            "Vertical wooden member"
+          ],
+          "correct": 2,
+          "expl": "A noggin is an intermediate horizontal wooden member fixed between the studs of a partition."
+        },
+        {
+          "num": 24,
+          "text": "Ornamental moulded course placed on the top of a wall, is",
+          "options": [
+            "Cornice",
+            "Coping",
+            "Frieze",
+            "Lintel"
+          ],
+          "correct": 0,
+          "expl": "A cornice is the ornamental moulded course provided at the top of a wall."
+        },
+        {
+          "num": 25,
+          "text": "To construct a 10 cm thick partition wall, you will prefer",
+          "options": [
+            "English bond",
+            "Flemish bond",
+            "Header bond",
+            "Stretcher bond"
+          ],
+          "correct": 3,
+          "expl": "A 10 cm (half-brick) thick partition wall is best built using stretcher bond."
+        },
+        {
+          "num": 26,
+          "text": "The minimum thickness of walls built in cement mortar (1:6) for a single storey building, is",
+          "options": [
+            "10 cm",
+            "15 cm",
+            "20 cm",
+            "25 cm"
+          ],
+          "correct": 2,
+          "expl": "For a single storey building, walls in 1:6 cement mortar are kept at least 20 cm thick."
+        },
+        {
+          "num": 27,
+          "text": "Pick up the correct statement from the following:",
+          "options": [
+            "Cavity of a cavity wall should start near ground level",
+            "Cavity of a cavity wall should terminate near eaves level of sloping roof",
+            "Cavity of a cavity wall should terminate near coping of flat roof with parapet wall",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "All these placement rules for the cavity's start and termination points in a cavity wall are correct."
+        },
+        {
+          "num": 28,
+          "text": "Which one of the following activities is not correct as applicable to brick corbels",
+          "options": [
+            "The maximum projection of the corbel should not be more than the thickness of the wall",
+            "The maximum projection of each corbel course should be limited to a quarter brick at a time",
+            "The discontinuous corbels are used to carry heavy concentrated loads",
+            "Stretcher bond is generally used for the construction of brick corbel"
+          ],
+          "correct": 3,
+          "expl": "Stretcher bond is not typically used for corbel construction, making this the incorrect statement."
+        },
+        {
+          "num": 29,
+          "text": "The sill of a common wooden partition is",
+          "options": [
+            "Vertical wooden member on either end",
+            "Lower horizontal wooden member",
+            "Upper horizontal wooden member",
+            "Intermediate horizontal wooden member"
+          ],
+          "correct": 1,
+          "expl": "The sill is the lower horizontal wooden member at the base of a partition frame."
+        },
+        {
+          "num": 30,
+          "text": "Brick nogging type of partition wall, is constructed by",
+          "options": [
+            "Laying bricks as stretchers in cement mortar",
+            "Laying bricks as headers in cement mortar",
+            "Reinforcing brick wall with iron straps",
+            "Constructing brick work within a wooden framework"
+          ],
+          "correct": 3,
+          "expl": "Brick nogging partitions are built by filling brickwork within a supporting wooden frame."
+        },
+        {
+          "num": 31,
+          "text": "The process of filling hollow spaces of walls before plastering, is known",
+          "options": [
+            "Hacking",
+            "Dubbing out",
+            "Blistering",
+            "Peeling"
+          ],
+          "correct": 1,
+          "expl": "Dubbing out is the process of filling hollow or uneven spaces in a wall before plastering."
+        },
+        {
+          "num": 32,
+          "text": "A wall constructed with stones to protect slopes of cuttings in natural ground from the action of weathering agents, is called",
+          "options": [
+            "Retaining wall",
+            "Breast wall",
+            "Buttress",
+            "Parapet wall"
+          ],
+          "correct": 1,
+          "expl": "A breast wall is built to protect natural ground slopes from weathering, not to resist earth fill pressure."
+        },
+        {
+          "num": 33,
+          "text": "The width of the hollow space between two walls of a cavity wall should not exceed",
+          "options": [
+            "5 cm",
+            "7.5 cm",
+            "10 cm",
+            "15 cm"
+          ],
+          "correct": 2,
+          "expl": "The cavity width between the two leaves of a cavity wall should not exceed about 10 cm."
+        },
+        {
+          "num": 34,
+          "text": "The thickness of a reinforced brick partition wall, is generally kept",
+          "options": [
+            "5 cm",
+            "10 cm",
+            "15 cm",
+            "20 cm"
+          ],
+          "correct": 1,
+          "expl": "A reinforced brick partition wall is generally kept about 10 cm thick."
+        },
+        {
+          "num": 35,
+          "text": "Weep holes are provided in retaining and breast walls",
+          "options": [
+            "To drain off the water from the filling",
+            "To ventilate the stone masonry",
+            "To add architectural beauty",
+            "To reduce the weight of the earth retained"
+          ],
+          "correct": 0,
+          "expl": "Weep holes allow accumulated water behind retaining/breast walls to drain off, relieving hydrostatic pressure."
+        }
+      ]
+    }
+  ]
+}

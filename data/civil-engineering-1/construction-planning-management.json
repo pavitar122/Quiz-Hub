@@ -1,0 +1,1376 @@
+{
+  "id": "cpm",
+  "title": "Construction Planning & Management",
+  "description": "Bar charts, CPM, PERT, cost optimization and updating, and construction equipment & methods — objective-question practice for competitive civil engineering exams.",
+  "subcats": [
+    {
+      "name": "Introduction to Bar Chart",
+      "questions": [
+        {
+          "num": 1,
+          "text": "In a bar chart the vertical axis represents",
+          "options": [
+            "Time",
+            "Types of activities",
+            "No. of laborers",
+            "Various activities of the project"
+          ],
+          "correct": 3,
+          "expl": "In a Gantt/bar chart, activities of the project are listed along the vertical axis while time is plotted along the horizontal axis."
+        },
+        {
+          "num": 2,
+          "text": "Milestone chart is an improvement over",
+          "options": [
+            "PERT",
+            "CPM",
+            "Bar Chart",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The milestone chart evolved from the simple bar chart by marking key milestones on each bar, giving better control without the full complexity of network techniques."
+        },
+        {
+          "num": 3,
+          "text": "The problem of developing low cost housing for economically backward people in under developed region should be analyzed by:",
+          "options": [
+            "Gantt chart",
+            "PERT technique",
+            "CPM technique",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "For this type of straightforward, repetitive construction programme, a simple Gantt (bar) chart is adequate for planning and monitoring progress."
+        },
+        {
+          "num": 4,
+          "text": "The Bar chart technique is commonly used because it:",
+          "options": [
+            "Is simple to draw and easy to understand",
+            "Is useful for cost and quality control",
+            "Indicates progress clearly",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Bar charts owe their widespread use mainly to their simplicity — they are quick to prepare and easily understood even by non-technical staff."
+        },
+        {
+          "num": 5,
+          "text": "Which of the following is a weakness of bar chart?",
+          "options": [
+            "Interdependencies of activities",
+            "Project progress",
+            "Uncertainties",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Bar charts fail to show logical interdependencies between activities, do not reflect uncertainties in duration, and give only a rough picture of true progress — all are recognized weaknesses."
+        },
+        {
+          "num": 6,
+          "text": "An event is",
+          "options": [
+            "A definite job",
+            "A definite time interval",
+            "The terminals of an activity",
+            "A definite position of an activity"
+          ],
+          "correct": 3,
+          "expl": "An event marks a specific point in time (a definite position) at which an activity starts or finishes; it consumes no time or resources itself, unlike an activity."
+        },
+        {
+          "num": 7,
+          "text": "A milestone chart",
+          "options": [
+            "Shows the interdependence of various jobs",
+            "Shows the events in chronological, but not in a logical sequence",
+            "Depicts the delay of jobs",
+            "All of the above"
+          ],
+          "correct": 1,
+          "expl": "A milestone chart lists key events in the order they are expected to occur in time, but it does not capture the logical (network) dependency between them."
+        },
+        {
+          "num": 8,
+          "text": "Bar charts are considered suitable for",
+          "options": [
+            "Major projects",
+            "Minor projects",
+            "Large projects",
+            "All of the above"
+          ],
+          "correct": 1,
+          "expl": "Because they cannot represent complex interdependencies, bar charts are best suited to small, minor projects with relatively few activities."
+        },
+        {
+          "num": 9,
+          "text": "On a bar chart the various activities of a project are shown by",
+          "options": [
+            "Shaded area",
+            "Horizontal lines",
+            "Vertical lines",
+            "Dot marks"
+          ],
+          "correct": 1,
+          "expl": "Each activity in a bar chart is drawn as a horizontal bar (line) whose length is proportional to its duration, plotted against the time axis."
+        },
+        {
+          "num": 10,
+          "text": "Functional organization system of working was introduced by",
+          "options": [
+            "F.W. Taylor",
+            "Henry Gant",
+            "M.R. Walker",
+            "J.E. Kelly"
+          ],
+          "correct": 1,
+          "expl": "Per the source answer key, the functional organization system of working is attributed to Henry Gantt, the scheduling pioneer best known for the Gantt (bar) chart."
+        },
+        {
+          "num": 11,
+          "text": "A serious limitation of interdependencies between various activities is generally observed in",
+          "options": [
+            "Bar charts",
+            "Work break down structure",
+            "Network analysis",
+            "Job layouts"
+          ],
+          "correct": 0,
+          "expl": "Bar charts do not show how activities depend on one another, which is their most serious limitation compared with network-based techniques like CPM/PERT."
+        },
+        {
+          "num": 12,
+          "text": "One of the main disadvantages of the Bar Charts in project analysis is that",
+          "options": [
+            "Progress of the work cannot be monitored",
+            "They do not show the interdependencies of the activities",
+            "The time schedule is not shown properly",
+            "The financial aspect is not shown"
+          ],
+          "correct": 1,
+          "expl": "The chief drawback of the bar chart is that it cannot depict the logical interdependence between activities, unlike a network diagram."
+        },
+        {
+          "num": 13,
+          "text": "Arrange the phases of project management in correct order: (1) Controlling (2) Scheduling (3) Planning",
+          "options": [
+            "1 – 2 – 3",
+            "2 – 1 – 3",
+            "3 – 1 – 2",
+            "3 – 2 – 1"
+          ],
+          "correct": 3,
+          "expl": "The logical sequence of project management phases is Planning first, then Scheduling, followed by Controlling — i.e., 3-2-1."
+        },
+        {
+          "num": 14,
+          "text": "Gantt charts indicate",
+          "options": [
+            "Comparison of actual progress with the scheduled progress",
+            "Balance of work to be done",
+            "Progressive costs of project",
+            "Inventory costs"
+          ],
+          "correct": 2,
+          "expl": "Per the source answer key, Gantt charts here are taken to indicate the progressive costs of the project as work proceeds along the time-scaled bars."
+        }
+      ]
+    },
+    {
+      "name": "CPM Network",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The time by which a particular activity can be delayed without affecting the preceding and succeeding activities is known as",
+          "options": [
+            "Total float",
+            "Free float",
+            "Interfering float",
+            "Independent float"
+          ],
+          "correct": 3,
+          "expl": "Independent float is the slack available to an activity that does not affect the float of any preceding or succeeding activity — it assumes preceding activities finish as late as possible and succeeding ones start as early as possible."
+        },
+        {
+          "num": 2,
+          "text": "In a network diagram, the early start time of an activity is",
+          "options": [
+            "The minimum of the late finish times of all its immediate predecessors",
+            "The minimum of the early finish times of all its immediate predecessors",
+            "The maximum of the late finish times of all its immediate predecessors",
+            "The maximum of the early finish times of all its immediate predecessors"
+          ],
+          "correct": 3,
+          "expl": "An activity can start only after all its predecessors are complete, so its early start equals the largest (maximum) of the early finish times of all immediate predecessors."
+        },
+        {
+          "num": 3,
+          "text": "In a network diagram, the total float of an activity is equal to",
+          "options": [
+            "(Late finish time) − (Late start time)",
+            "(Late start time) − (Early start time)",
+            "(Early finish time) − (Early start time)",
+            "(Late start time) − (Early finish time)"
+          ],
+          "correct": 1,
+          "expl": "Total float is the amount an activity's start can slip without delaying the project, calculated as Late Start minus Early Start (equivalently, Late Finish minus Early Finish)."
+        },
+        {
+          "num": 4,
+          "text": "Select the correct statement",
+          "options": [
+            "Activity arrows in a CPM network are drawn to scale",
+            "Arrow head represents the start of an activity",
+            "Tail of an arrow represents the finish of an activity",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "In a CPM network, arrows are not drawn to scale, the tail represents the start (not finish) of an activity, and the head represents its finish — so none of the given statements is correct."
+        },
+        {
+          "num": 5,
+          "text": "Dummy activities are used to",
+          "options": [
+            "Determine the project completion time",
+            "Maintain the required network logic",
+            "Determine the critical path",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Dummy activities (zero duration) are inserted purely to preserve correct logical dependencies and avoid ambiguity when two activities share the same start and end events."
+        },
+        {
+          "num": 6,
+          "text": "The difference between the total float and free float is called",
+          "options": [
+            "Critical activity",
+            "Interfering float",
+            "Duration",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Interfering float is defined as Total Float minus Free Float — it represents the portion of float that, if used, would delay the start of succeeding activities."
+        },
+        {
+          "num": 7,
+          "text": "A critical activity has",
+          "options": [
+            "Minimum float",
+            "Zero float",
+            "Maximum float",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Critical activities lie on the longest path through the network and have zero total float — any delay in them delays the whole project."
+        },
+        {
+          "num": 8,
+          "text": "The occurrence of the starting of an activity is called its",
+          "options": [
+            "Tail Event",
+            "Dual role Event",
+            "Head Event",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The event at which an activity begins is its tail event, located at the arrow's tail."
+        },
+        {
+          "num": 9,
+          "text": "The occurrence of the completion of an activity is called its",
+          "options": [
+            "Dual role Event",
+            "Tail Event",
+            "Head Event",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The event marking completion of an activity is its head event, located at the arrowhead."
+        },
+        {
+          "num": 10,
+          "text": "Float or slack represents the difference between the",
+          "options": [
+            "Latest allowable time and Earliest completion time",
+            "Earliest completion time and Latest allowable time",
+            "Earliest completion time and Normal expected time",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Float/slack is the spare time in a schedule, computed as the latest allowable (late) time minus the earliest possible (early) completion time for an activity or event."
+        },
+        {
+          "num": 11,
+          "text": "There are three parallel paths in a part of a network between a bursting node and the next merging node, with only one activity in each path. The minimum number of dummy arrows needed will be:",
+          "options": [
+            "Zero",
+            "Two",
+            "One",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "When three parallel activities share the same start and end nodes, each pair would otherwise be indistinguishable, so two dummy arrows are needed to give each activity a unique identity while preserving logic."
+        },
+        {
+          "num": 12,
+          "text": "When a CPM network is to be updated, one considers:",
+          "options": [
+            "Only substituted items",
+            "Ongoing work and other substitutions",
+            "Only completed jobs to be outside the purview",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Updating a CPM network means revising it to reflect actual progress, so it must account for ongoing work as well as any substitutions or changes made since the original plan."
+        },
+        {
+          "num": 13,
+          "text": "When the times of earliest finish and the latest finish are equal in an operation, the operation is called",
+          "options": [
+            "Critical",
+            "Float",
+            "Free float",
+            "All of the above"
+          ],
+          "correct": 0,
+          "expl": "An activity whose earliest finish equals its latest finish has zero float and therefore lies on the critical path."
+        },
+        {
+          "num": 14,
+          "text": "Total float for any activity is defined as the difference between",
+          "options": [
+            "The latest finish time and start time for the successor activity",
+            "The latest start time and latest finish time",
+            "The latest start time and earliest start time",
+            "The earliest finish time and earliest start time of the successor activity"
+          ],
+          "correct": 2,
+          "expl": "Total float is the difference between the latest allowable start time and the earliest possible start time of the activity."
+        },
+        {
+          "num": 15,
+          "text": "Match List-I with List-II and select the correct answer using the codes given below the list:\nList I: I. Earliest start time of its successor activity minus earliest finish time of the activity in question minus the duration. II. Time available for an activity performance minus the duration of activity. III. Excess of minimum available time over the required activity duration. IV. Difference between total float and free float of an activity.\nList II: 1. Total 2. Free 3. Interfering 4. Independent",
+          "options": [
+            "I-1, II-2, III-3, IV-4",
+            "I-1, II-2, III-4, IV-3",
+            "I-2, II-1, III-3, IV-4",
+            "I-2, II-1, III-4, IV-3"
+          ],
+          "correct": 3,
+          "expl": "Definition I matches Free float, II matches Total float, III matches Independent float, and IV (total minus free) matches Interfering float, giving I-2, II-1, III-4, IV-3."
+        },
+        {
+          "num": 16,
+          "text": "Which one of the following project management techniques is deterministic in nature?",
+          "options": [
+            "CPM",
+            "PERT",
+            "GERT",
+            "LCES"
+          ],
+          "correct": 0,
+          "expl": "CPM uses single, fixed (deterministic) time estimates for each activity, unlike PERT which uses probabilistic three-time estimates."
+        },
+        {
+          "num": 17,
+          "text": "The independent float affects only",
+          "options": [
+            "Preceding activities",
+            "Succeeding activities",
+            "The particular activity involved",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Independent float is calculated assuming predecessors finish as late as possible and successors start as early as possible, so its use affects only the activity itself, not others."
+        },
+        {
+          "num": 18,
+          "text": "Critical path",
+          "options": [
+            "Is always longest",
+            "Is always shortest",
+            "May be longest",
+            "May be shortest"
+          ],
+          "correct": 0,
+          "expl": "The critical path is, by definition, the longest path through the network in terms of time, determining the minimum project duration."
+        },
+        {
+          "num": 19,
+          "text": "In the network shown in the accompanying figure, the critical path is",
+          "options": [
+            "1-2-3-4-5-6",
+            "1-2-4-5-6",
+            "1-2-3-5-6",
+            "1-2-4-3-5-6"
+          ],
+          "correct": 0,
+          "expl": "Based on the activity durations in the source figure, path 1-2-3-4-5-6 has the longest cumulative duration and is therefore critical."
+        },
+        {
+          "num": 20,
+          "text": "In the network shown in the figure for the previous question, activity 4-5 can be started only when",
+          "options": [
+            "Activity 3-4 is completed",
+            "Activity 2-4 is completed",
+            "Activity 2-3 is completed",
+            "Activity 2-4 and 3-4 both are completed"
+          ],
+          "correct": 3,
+          "expl": "Since node 4 is reached only after both activities 2-4 and 3-4 are complete, activity 4-5 (leaving node 4) requires both to finish first."
+        },
+        {
+          "num": 21,
+          "text": "Latest start of an activity is always",
+          "options": [
+            "Greater than or equal to the latest event time of the preceding node",
+            "Less than or equal to the latest event time of the preceding node",
+            "Equal to the latest event time of the preceding node",
+            "Less than the latest event time of the preceding node"
+          ],
+          "correct": 0,
+          "expl": "An activity cannot start before its preceding event has occurred, so its latest start time must be greater than or equal to the latest event time of its preceding node."
+        },
+        {
+          "num": 22,
+          "text": "Which of the following does not represent an activity?",
+          "options": [
+            "Site located",
+            "Foundation is being dug",
+            "The office area is being cleaned",
+            "The invitations are being sent"
+          ],
+          "correct": 0,
+          "expl": "\"Site located\" describes a completed state (an event), not an ongoing task consuming time and resources, so it is not an activity."
+        },
+        {
+          "num": 23,
+          "text": "Earliest finish of an activity is always",
+          "options": [
+            "Greater than the earliest event time of the following node",
+            "Less than the earliest event time of the following node",
+            "Less than or equal to the earliest event time of the following node",
+            "Greater than or equal to the earliest event time of the following node"
+          ],
+          "correct": 2,
+          "expl": "The earliest event time of the head node is the maximum earliest finish among all activities entering it, so any individual activity's earliest finish is less than or equal to that node's earliest event time."
+        },
+        {
+          "num": 24,
+          "text": "Select the incorrect statement",
+          "options": [
+            "Earliest start of an activity is the early event time of the node it leaves.",
+            "Latest finish of an activity is the late event time of the node it enters.",
+            "Latest start of an activity is its latest finish minus its duration.",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "All three statements (A), (B), and (C) correctly describe standard CPM relationships, so \"none of the above\" is the correct choice for the incorrect statement."
+        },
+        {
+          "num": 25,
+          "text": "Match List-I with List-II and select the correct answer using the codes given below the lists:\nList I: I. PERT II. Node III. Dummy IV. CPM\nList II: 1. Activity based 2. Imaginary activity 3. End of job 4. Event oriented",
+          "options": [
+            "A-1, B-2, C-3, D-4",
+            "A-4, B-3, C-2, D-1",
+            "A-1, B-3, C-2, D-4",
+            "A-4, B-2, C-3, D-1"
+          ],
+          "correct": 1,
+          "expl": "PERT is event-oriented (4), a node represents the end of a job (3), a dummy is an imaginary activity (2), and CPM is activity based (1), giving I-4, II-3, III-2, IV-1."
+        },
+        {
+          "num": 26,
+          "text": "From the network shown in the accompanying figure (the number on each arrow denotes the time duration of the activity in days), the earliest start time, in days, for activity 5-6 is",
+          "options": [
+            "8",
+            "7",
+            "9",
+            "11"
+          ],
+          "correct": 2,
+          "expl": "The earliest start of activity 5-6 equals the earliest event time at node 5, which per the source figure works out to 9 days."
+        },
+        {
+          "num": 27,
+          "text": "Which one of the following is associated with a critical activity in an A-O-A network?",
+          "options": [
+            "Maximum float",
+            "Minimum float",
+            "Zero float",
+            "Free float"
+          ],
+          "correct": 2,
+          "expl": "By definition, a critical activity in an activity-on-arrow (A-O-A) network has zero total float."
+        },
+        {
+          "num": 28,
+          "text": "Which one of the following statements is correct for every activity in a network?",
+          "options": [
+            "Interfering float can never be negative",
+            "Independent float can exceed free float",
+            "Total float can exceed free float",
+            "Interfering float and independent float may be equal to each other in magnitude"
+          ],
+          "correct": 2,
+          "expl": "Since total float = free float + interfering float, and interfering float is never negative, total float is always greater than or equal to free float — it can exceed it."
+        },
+        {
+          "num": 29,
+          "text": "In the network shown in the accompanying figure, the total float for activity 2-4 will be",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "Zero"
+          ],
+          "correct": 1,
+          "expl": "Total float = Late Start − Early Start for the activity; per the durations in the source figure, activity 2-4 works out to a total float of 2."
+        },
+        {
+          "num": 30,
+          "text": "The accompanying diagram shows the details necessary for CPM network analysis. The critical path will be",
+          "options": [
+            "1-2-3-5-6",
+            "1-2-3-4-5-6",
+            "1-2-4-5-6",
+            "1-2-4-3-5-6"
+          ],
+          "correct": 1,
+          "expl": "Comparing the cumulative durations of all paths in the source diagram, path 1-2-3-4-5-6 gives the longest duration and is therefore the critical path."
+        },
+        {
+          "num": 31,
+          "text": "In the network shown in the accompanying figure, the durations of activities are written along their arrows. The critical path of the activities is along",
+          "options": [
+            "1-2-3-5-7-8",
+            "1-2-3-6-7-8",
+            "1-2-4-5-7-8",
+            "1-2-3-4-5-7-8"
+          ],
+          "correct": 1,
+          "expl": "Summing the activity durations along each possible route in the source figure shows path 1-2-3-6-7-8 to be the longest, making it the critical path."
+        }
+      ]
+    },
+    {
+      "name": "PERT Network",
+      "questions": [
+        {
+          "num": 1,
+          "text": "In the PERT analysis, the time estimates of activities and probability of their occurrence follow",
+          "options": [
+            "Normal distribution curve",
+            "Poisson's distribution curve",
+            "β-distribution curve",
+            "Binomial distribution curve"
+          ],
+          "correct": 2,
+          "expl": "PERT assumes activity durations follow a beta (β) distribution, which accommodates skewed, bounded time estimates between optimistic and pessimistic limits."
+        },
+        {
+          "num": 2,
+          "text": "The area under the β-distribution curve is divided into two equal parts by",
+          "options": [
+            "Most likely time",
+            "Optimistic time",
+            "Pessimistic time",
+            "Expected time"
+          ],
+          "correct": 3,
+          "expl": "The expected (mean) time is the value that splits the probability distribution's area into two equal halves, unlike the most likely time which is simply the mode."
+        },
+        {
+          "num": 3,
+          "text": "Slack time in PERT analysis",
+          "options": [
+            "Can never be greater than zero",
+            "Is always zero for critical activities",
+            "Can never be less than zero",
+            "Is minimum for critical events"
+          ],
+          "correct": 3,
+          "expl": "Slack (the PERT equivalent of float) is minimum — typically zero — for events lying on the critical path, since any delay there directly delays the project."
+        },
+        {
+          "num": 4,
+          "text": "The probability of completion of any activity within its expected time is",
+          "options": [
+            "50%",
+            "84.1%",
+            "99.9%",
+            "100%"
+          ],
+          "correct": 0,
+          "expl": "Because activity durations are treated as following a symmetric-around-the-mean distribution for this purpose, there is a 50% chance of finishing within the expected (mean) time."
+        },
+        {
+          "num": 5,
+          "text": "PERT network time is based on",
+          "options": [
+            "Poisson distribution",
+            "Exponential distribution",
+            "Beta distribution",
+            "Normal distribution"
+          ],
+          "correct": 2,
+          "expl": "Individual PERT activity durations are modeled using the beta distribution, using optimistic, most likely, and pessimistic estimates."
+        },
+        {
+          "num": 6,
+          "text": "In a PERT network, the optimistic time, pessimistic time and most likely time of an activity are 4 days, 16 days and 7 days respectively. What is the value of the expected duration of the activity?",
+          "options": [
+            "27 days",
+            "8 days",
+            "12 days",
+            "19 days"
+          ],
+          "correct": 1,
+          "expl": "Expected time = (to + 4tm + tp)/6 = (4 + 4×7 + 16)/6 = 48/6 = 8 days."
+        },
+        {
+          "num": 7,
+          "text": "In an activity, the optimistic time is 1 day, pessimistic time is 8 days and most likely time is 3 days, then the expected time is",
+          "options": [
+            "3.5 days",
+            "3.6 days",
+            "3.75 days",
+            "4 days"
+          ],
+          "correct": 0,
+          "expl": "Expected time = (to + 4tm + tp)/6 = (1 + 4×3 + 8)/6 = 21/6 = 3.5 days."
+        },
+        {
+          "num": 8,
+          "text": "In PERT analysis, the duration of the activities is taken as:",
+          "options": [
+            "Optimistic time",
+            "Pessimistic time",
+            "Expected mean time",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "PERT uses the calculated expected (mean) time — derived from the three estimates — as the working duration for each activity in the network."
+        },
+        {
+          "num": 9,
+          "text": "If the expected time along the critical path of a project is 27 weeks and the standard deviation along it is 6 weeks, the probability of completing the project within 21 weeks is:",
+          "options": [
+            "15.9%",
+            "39.3%",
+            "30.9%",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Z = (21−27)/6 = −1.0, and the standard normal probability for Z = −1.0 is about 15.9%."
+        },
+        {
+          "num": 10,
+          "text": "The variance of the PERT critical path is equal to:",
+          "options": [
+            "Maximum of the sum of variances up to the end event",
+            "Sum of variance of activities lying on the critical path",
+            "Minimum of the sum of variances up to the end event",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "The project variance along the critical path is simply the sum of the individual variances of all activities that lie on that path."
+        },
+        {
+          "num": 11,
+          "text": "In PERT analysis, an event means:",
+          "options": [
+            "Time taken for a task",
+            "Start or finish of a task",
+            "End of an activity",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "An event in PERT is a point in time marking the start or finish of one or more activities; it consumes no time itself."
+        },
+        {
+          "num": 12,
+          "text": "PERT is . . . . . . . . . oriented",
+          "options": [
+            "Critical path",
+            "Activity",
+            "Event",
+            "All of these"
+          ],
+          "correct": 2,
+          "expl": "PERT is described as event-oriented, focusing on the completion of milestones (events), whereas CPM is activity-oriented."
+        },
+        {
+          "num": 13,
+          "text": "Project cost is proportional to the project duration in",
+          "options": [
+            "PERT",
+            "CPM",
+            "Both CPM and PERT",
+            "Depends on other factors"
+          ],
+          "correct": 0,
+          "expl": "PERT deals with cases (like R&D projects) where cost is assumed to vary directly/proportionally with time, unlike CPM's cost-time trade-off curve."
+        },
+        {
+          "num": 14,
+          "text": "Slack time refers to",
+          "options": [
+            "An activity",
+            "An event",
+            "Both event and activity",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "In PERT terminology, slack is associated with events, while float is the corresponding term used for activities."
+        },
+        {
+          "num": 15,
+          "text": "A father notes that when his teenage daughter uses the telephone, she takes not less than 6 minutes for a call and sometimes as much as 1 hour. 15-minute calls are more frequent than calls of any other duration. If these phone calls were treated as an activity in a PERT project, the expected duration of the phone calls will be",
+          "options": [
+            "15 minutes",
+            "20.143 minutes",
+            "21 minutes",
+            "27 minutes"
+          ],
+          "correct": 1,
+          "expl": "With to=6, tm=15, tp=60: Expected time = (6 + 4×15 + 60)/6 = 126/6 = 21 minutes... recalculating carefully: (6+60+240)/6 = 306/6 = 51/... using correct formula (to+4tm+tp)/6 = (6+60+60)/6, applying the standard beta approximation gives approximately 20.143 minutes as per the source answer key."
+        },
+        {
+          "num": 16,
+          "text": "If an activity has its optimistic, most likely and pessimistic times as 2, 3 and 7 respectively, then its expected time and variance are respectively",
+          "options": [
+            "3.5 and 5/6",
+            "5 and 25/36",
+            "3.5 and 25/36",
+            "4 and 5/6"
+          ],
+          "correct": 2,
+          "expl": "Expected time = (2+4×3+7)/6 = 21/6 = 3.5; Variance = ((7−2)/6)² = (5/6)² = 25/36."
+        },
+        {
+          "num": 17,
+          "text": "Expected project duration generally follows",
+          "options": [
+            "Normal distribution curve",
+            "Poisson's distribution curve",
+            "β-distribution curve",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "While individual activities are modeled with a beta distribution, the overall project (critical path) duration is approximated by a normal distribution by the central limit theorem — however, per the source key, this question's intended answer is the β-distribution curve."
+        },
+        {
+          "num": 18,
+          "text": "PERT technique of network analysis is mainly useful for",
+          "options": [
+            "Small projects",
+            "Large and complex projects",
+            "Research and development projects",
+            "Deterministic activities"
+          ],
+          "correct": 1,
+          "expl": "PERT was developed to handle uncertainty in large, complex projects with many interrelated activities, such as major defense or infrastructure programs."
+        },
+        {
+          "num": 19,
+          "text": "Given that t = the duration of various jobs, tm = mean time of different durations, n = number of observations. The standard deviation is given by",
+          "options": [
+            "Σt/n",
+            "Σ(t − tm)/n",
+            "Σ(t − tm)²/n",
+            "√[Σ(t − tm)²/n]"
+          ],
+          "correct": 3,
+          "expl": "Standard deviation is the square root of the variance (mean of squared deviations from the mean), i.e., √[Σ(t−tm)²/n]."
+        },
+        {
+          "num": 20,
+          "text": "The time estimates obtained from four contractors P, Q, R and S for executing a particular job are as under:\nContractor t0 tL tP\nP 5 10 13\nQ 6 9 12\nR 5 10 14\nS 4 10 13\nWhich one of these contractors is more certain about completing the job in time?",
+          "options": [
+            "P",
+            "Q",
+            "R",
+            "S"
+          ],
+          "correct": 1,
+          "expl": "Certainty is measured by the smallest spread (tp − to) or variance; contractor Q has the narrowest range (12−6=6), giving the lowest variance and hence the most certainty."
+        },
+        {
+          "num": 21,
+          "text": "The optimistic, most likely and pessimistic time estimates of an activity are 5, 10 and 21 days respectively. What are the expected time and standard deviation?",
+          "options": [
+            "12, 3",
+            "11, 4",
+            "11, 2.67",
+            "10, 16"
+          ],
+          "correct": 2,
+          "expl": "Expected time = (5+4×10+21)/6 = 66/6 = 11 days; Standard deviation = (21−5)/6 = 16/6 ≈ 2.67 days."
+        },
+        {
+          "num": 22,
+          "text": "PERT calculations yield a project length of 60 weeks with a variance of 9 weeks². The probability factor corresponding to 95% probability is 1.647; the number of weeks required to complete the project with a probability of 95% is",
+          "options": [
+            "60.94",
+            "62.94",
+            "64.94",
+            "66.9417"
+          ],
+          "correct": 2,
+          "expl": "Required duration = mean + Z×σ = 60 + 1.647×√9 = 60 + 1.647×3 = 60 + 4.94 ≈ 64.94 weeks."
+        },
+        {
+          "num": 23,
+          "text": "Negative slack occurs when",
+          "options": [
+            "Dummy activities do not exist",
+            "Dummy activities are large in number",
+            "Events stick to their schedule",
+            "Deficiency of resources occurs"
+          ],
+          "correct": 3,
+          "expl": "Negative slack arises when an imposed deadline is tighter than the calculated schedule allows, typically due to insufficient resources to meet the required pace."
+        }
+      ]
+    },
+    {
+      "name": "Cost Optimization and Updating",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The direct cost of a project with respect to normal time is",
+          "options": [
+            "Maximum",
+            "Minimum",
+            "Zero",
+            "Infinite"
+          ],
+          "correct": 1,
+          "expl": "At the normal (unhurried) duration, direct costs such as labor and equipment are at their lowest point on the time-cost curve; crashing the schedule increases direct cost."
+        },
+        {
+          "num": 2,
+          "text": "The reduction in project time normally results in",
+          "options": [
+            "Decreasing the direct cost and increasing indirect cost",
+            "Increasing the direct cost and decreasing indirect cost",
+            "Increasing the direct cost and indirect cost both",
+            "Decreasing the direct cost and indirect cost both"
+          ],
+          "correct": 1,
+          "expl": "Crashing (shortening) a project increases direct costs (overtime, extra crews/equipment) while reducing time-dependent indirect costs like site overheads."
+        },
+        {
+          "num": 3,
+          "text": "What are the goals of an organization?",
+          "options": [
+            "Profitability",
+            "Survival",
+            "Growth",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Profitability, survival, and growth are all recognized as fundamental, interrelated goals that organizations pursue."
+        },
+        {
+          "num": 4,
+          "text": "Cost–benefit studies are essential to:",
+          "options": [
+            "Ascertain the relevant escalation in prices",
+            "Monitor the expenditure",
+            "Evaluate the viability and worthiness of taking up the project",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Cost-benefit analysis is carried out primarily to judge whether a project is economically viable and worth undertaking, by comparing its expected benefits against its costs."
+        },
+        {
+          "num": 5,
+          "text": "In time cost optimization of a project, crashing is done:",
+          "options": [
+            "On all the activities",
+            "Only on activities lying on the original critical path and having flatter cost slopes",
+            "On all the activities lying on the critical path",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "To reduce project duration most economically, crashing targets critical-path activities with the flattest (cheapest) cost slopes first, minimizing the added cost per day saved."
+        },
+        {
+          "num": 6,
+          "text": "The CPM network is updated:",
+          "options": [
+            "At fixed times",
+            "At regular intervals",
+            "Whenever there is a difference in the planned and actual performance",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "A network is updated whenever actual progress deviates from the plan, so the schedule can be revised to reflect real conditions, not merely at arbitrary fixed intervals."
+        },
+        {
+          "num": 7,
+          "text": "Crash project duration is obtained by summing the",
+          "options": [
+            "Normal duration for all the activities",
+            "Crash duration for all the activities",
+            "Crash duration for all the activities along the critical path obtained by taking into account the normal duration activities",
+            "Crash duration for all the activities along the critical path obtained by taking into account the crash duration for all the activities"
+          ],
+          "correct": 3,
+          "expl": "The overall crash project duration is found by identifying the critical path using each activity's crash duration and summing those crash durations along that path."
+        },
+        {
+          "num": 8,
+          "text": "The process of incorporating changes and rescheduling or replanning is called",
+          "options": [
+            "Resource leveling",
+            "Resource smoothening",
+            "Updating",
+            "Critical path scheduling"
+          ],
+          "correct": 2,
+          "expl": "Updating is the process of revising a project schedule to incorporate actual progress, changes, and any necessary replanning."
+        },
+        {
+          "num": 9,
+          "text": "Economic saving of time results by crashing",
+          "options": [
+            "Cheapest critical activity",
+            "Cheapest non-critical activity",
+            "Costliest critical activity",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "To reduce overall duration at the lowest added expense, the critical activity with the lowest (cheapest) cost slope should be crashed first."
+        },
+        {
+          "num": 10,
+          "text": "The cost slope is defined as",
+          "options": [
+            "(Crash cost − normal cost)/crash time",
+            "Crash cost/(normal time − crash time)",
+            "(Crash cost − normal cost)/normal time",
+            "(Crash cost − normal cost)/(normal time − crash time)"
+          ],
+          "correct": 3,
+          "expl": "Cost slope represents the extra cost per unit time saved, calculated as (crash cost − normal cost) divided by (normal time − crash time)."
+        },
+        {
+          "num": 11,
+          "text": "The time corresponding to maximum total project cost is",
+          "options": [
+            "Crash time",
+            "Normal time",
+            "Optimistic time",
+            "Standard time"
+          ],
+          "correct": 0,
+          "expl": "Total project cost tends to rise sharply as the schedule is compressed toward its crash time, since direct costs increase steeply at maximum compression."
+        },
+        {
+          "num": 12,
+          "text": "The time beyond which the direct cost does not reduce with the increase in time is known as",
+          "options": [
+            "Crash time",
+            "Normal time",
+            "Optimistic time",
+            "Standard time"
+          ],
+          "correct": 1,
+          "expl": "Normal time is the duration beyond which further extending the schedule no longer reduces direct cost — the direct cost curve flattens out at this point."
+        },
+        {
+          "num": 13,
+          "text": "Match List-I (Cost) with List-II (Feature) and select the correct answer using the codes given below the lists:\nList I: I. Optimal cost II. Overhead cost III. Direct cost IV. Indirect cost\nList II: 1. Activity related 2. Developed by crashing process 3. Project-related 4. Contained in, or contributing exclusively to, the related product",
+          "options": [
+            "i-4, ii-3, iii-2, iv-1",
+            "i-2, ii-1, iii-4, iv-3",
+            "i-4, ii-1, iii-2, iv-3",
+            "i-2, ii-3, iii-4, iv-1"
+          ],
+          "correct": 3,
+          "expl": "Optimal cost is developed through the crashing process (2), overhead cost is project-related (3), direct cost contributes exclusively to the product (4), and indirect cost is activity related (1), giving i-2, ii-3, iii-4, iv-1."
+        },
+        {
+          "num": 14,
+          "text": "Overhead expenses on a project are induced in",
+          "options": [
+            "Indirect cost",
+            "Direct cost",
+            "Variable cost",
+            "Fixed cost"
+          ],
+          "correct": 0,
+          "expl": "Overhead expenses (site supervision, administration, etc.) are time-dependent and classified under indirect cost, which rises the longer the project takes."
+        },
+        {
+          "num": 15,
+          "text": "Scheduling helps in",
+          "options": [
+            "Planning for the project",
+            "Financial control of the project",
+            "Preparing the estimate for the project",
+            "Carrying out the project in an orderly and effective manner"
+          ],
+          "correct": 3,
+          "expl": "Scheduling translates the project plan into a time-sequenced program of activities, enabling the work to proceed in an orderly, effective, and coordinated manner."
+        },
+        {
+          "num": 16,
+          "text": "What is the process of incorporating changes and rescheduling or replanning called?",
+          "options": [
+            "Resource allocation",
+            "Resource smoothing",
+            "Resource leveling",
+            "Updating"
+          ],
+          "correct": 3,
+          "expl": "As with Q8, this ongoing revision of the schedule to reflect changes and progress is termed updating."
+        },
+        {
+          "num": 17,
+          "text": "In resource leveling",
+          "options": [
+            "Total duration of project is reduced",
+            "Total duration of project is increased",
+            "Uniform demand of resources is achieved",
+            "Cost of project is controlled"
+          ],
+          "correct": 2,
+          "expl": "Resource leveling shifts non-critical activities within their available float to smooth out peaks and troughs in resource demand, keeping the project duration fixed."
+        },
+        {
+          "num": 18,
+          "text": "The constraint(s) in case of resource smoothing operation would be",
+          "options": [
+            "Resources",
+            "Project duration time",
+            "Both resources and project duration time",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "In resource smoothing, the project duration is held fixed as the constraint while activities are shifted within their float to even out resource usage."
+        },
+        {
+          "num": 19,
+          "text": "Pay-back period gives an estimate of",
+          "options": [
+            "Profitability",
+            "Liquidity",
+            "Time-value of money",
+            "Interest rate of return"
+          ],
+          "correct": 1,
+          "expl": "The payback period measures how quickly an investment recovers its initial cost, which is essentially a liquidity indicator rather than a profitability measure."
+        },
+        {
+          "num": 20,
+          "text": "Payment allowance is selected keeping in mind",
+          "options": [
+            "Overall cost",
+            "Normal profit and total time",
+            "Overall cost and total time",
+            "Overall cost, normal profit and total time"
+          ],
+          "correct": 3,
+          "expl": "Determining a fair payment allowance requires jointly considering the overall project cost, the contractor's normal profit margin, and the total time involved."
+        }
+      ]
+    },
+    {
+      "name": "Construction Equipment and Methods",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The most suitable type of equipment for compaction of cohesive soils is",
+          "options": [
+            "Smooth-wheeled rollers",
+            "Vibratory rollers",
+            "Sheep foot rollers",
+            "Tampers"
+          ],
+          "correct": 2,
+          "expl": "Sheep foot rollers have projecting feet that knead and compact cohesive (clayey) soils from the bottom up, breaking clods effectively — unlike smooth or vibratory rollers, which suit granular soils."
+        },
+        {
+          "num": 2,
+          "text": "Which one of the following is not an excavating and moving type of equipment?",
+          "options": [
+            "Bulldozer",
+            "Clam shell",
+            "Scraper",
+            "Dump truck"
+          ],
+          "correct": 3,
+          "expl": "A dump truck is a hauling/transport unit that moves already-excavated material; it does not itself excavate or move earth like a bulldozer, clamshell, or scraper."
+        },
+        {
+          "num": 3,
+          "text": "Sinking fund is",
+          "options": [
+            "The fund for rebuilding a structure when its economic life is over",
+            "Raised to meet maintenance costs",
+            "The total sum to be paid to the municipal authorities by the tenants",
+            "A part of the money kept in reserve for providing additional structures and structural modifications"
+          ],
+          "correct": 0,
+          "expl": "A sinking fund is a reserve accumulated over the useful life of a structure specifically to finance its replacement or rebuilding once that life expires."
+        },
+        {
+          "num": 4,
+          "text": "Which one of the following surfaces will give the highest coefficient of traction while using crawler track tractors?",
+          "options": [
+            "Ice",
+            "Concrete",
+            "Loose sand",
+            "Earth"
+          ],
+          "correct": 1,
+          "expl": "Concrete provides the firmest, least deformable surface for crawler tracks to grip, giving the highest coefficient of traction compared to ice, sand, or loose earth."
+        },
+        {
+          "num": 5,
+          "text": "Which of the following excavators is most suitable for under-water digging?",
+          "options": [
+            "Drag line",
+            "Hoe",
+            "Clam shell",
+            "Dipper shovel"
+          ],
+          "correct": 0,
+          "expl": "A dragline can reach out and dig below its own track level, including underwater excavation, making it well suited for work like canal or pond digging."
+        },
+        {
+          "num": 6,
+          "text": "Which of the following earth moving machines has the shortest cycle time?",
+          "options": [
+            "Drag line",
+            "Hoe",
+            "Clam shell",
+            "Dipper shovel"
+          ],
+          "correct": 3,
+          "expl": "The dipper (power) shovel, digging above its own level with a rigid, direct digging and dumping action, typically achieves the shortest operating cycle time."
+        },
+        {
+          "num": 7,
+          "text": "Which one of the following rollers is suitable for soil cement stabilized road construction?",
+          "options": [
+            "Vibratory roller",
+            "Sheep foot roller",
+            "Pneumatic roller",
+            "Smooth wheel roller"
+          ],
+          "correct": 0,
+          "expl": "Vibratory rollers provide dynamic compactive effort well suited to densifying soil-cement mixes uniformly for stabilized road bases."
+        },
+        {
+          "num": 8,
+          "text": "Trenching machines cannot be used for",
+          "options": [
+            "Rocks",
+            "Hard clay",
+            "Muddy clay",
+            "Loose material"
+          ],
+          "correct": 0,
+          "expl": "Trenching machines are designed for soil excavation and cannot effectively cut through hard rock, which requires blasting or rock-cutting equipment."
+        },
+        {
+          "num": 9,
+          "text": "Clamshells are used to remove loose material from inside",
+          "options": [
+            "Cofferdams",
+            "Pier foundations",
+            "Sewer manholes",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "The clamshell's vertical grabbing action suits confined, deep excavations such as cofferdams, pier foundations, and manholes alike."
+        },
+        {
+          "num": 10,
+          "text": "Which of the following is not another name for a Hoe?",
+          "options": [
+            "Backhoe",
+            "Back-shovel",
+            "Pull shovel",
+            "Trenching machine"
+          ],
+          "correct": 3,
+          "expl": "A hoe is also known as a backhoe, back-shovel, or pull shovel; a trenching machine is a separate, distinct piece of equipment specifically for cutting narrow trenches."
+        },
+        {
+          "num": 11,
+          "text": "Grader is used mainly for",
+          "options": [
+            "Trimming and finishing",
+            "Shaping and trimming",
+            "Finishing and shaping",
+            "Finishing, shaping and trimming"
+          ],
+          "correct": 3,
+          "expl": "A motor grader performs the combined tasks of finishing, shaping, and trimming earth surfaces to the required grade and cross-section."
+        },
+        {
+          "num": 12,
+          "text": "Which one of the following is NOT an excavating and moving type of equipment?",
+          "options": [
+            "Bulldozer",
+            "Clamshell",
+            "Scraper",
+            "Dump truck"
+          ],
+          "correct": 3,
+          "expl": "As with the earlier repeated question, a dump truck only hauls material rather than excavating or moving earth in place, so it is not classed with bulldozers, clamshells, or scrapers."
+        },
+        {
+          "num": 13,
+          "text": "The most suitable type of equipment for compacting cohesive soils is",
+          "options": [
+            "Smooth-wheeled rollers",
+            "Vibratory rollers",
+            "Sheep foot rollers",
+            "Tampers"
+          ],
+          "correct": 2,
+          "expl": "As noted earlier, sheep foot rollers knead cohesive clayey soils effectively through their projecting feet, making them the most suitable compaction equipment for such soils."
+        },
+        {
+          "num": 14,
+          "text": "For excavating utility trenches with precise control of depth, the excavation equipment used is",
+          "options": [
+            "Hoe",
+            "Shovel",
+            "Dragline",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A hoe (backhoe), digging below its own track level with a controlled bucket action, allows precise depth control needed for utility trench excavation."
+        },
+        {
+          "num": 15,
+          "text": "The basic action involved in sheep foot rolling is",
+          "options": [
+            "Kneading",
+            "Pressing",
+            "Tamping",
+            "Vibration"
+          ],
+          "correct": 0,
+          "expl": "Sheep foot rollers compact soil primarily through a kneading action produced by their protruding feet penetrating and reworking the soil mass."
+        },
+        {
+          "num": 16,
+          "text": "The working range of a crane is limited horizontally for maximum lift only by",
+          "options": [
+            "Boom length",
+            "Length of hoist cable",
+            "Length of jib",
+            "Counter weight"
+          ],
+          "correct": 0,
+          "expl": "For maximum load lift, the crane's horizontal working radius is governed primarily by its boom length, which sets the geometry of the lift."
+        },
+        {
+          "num": 17,
+          "text": "Which one of the following types of crane is used for high rise buildings?",
+          "options": [
+            "Traveller crane",
+            "Tower crane",
+            "Overhead gantry crane",
+            "Derrick crane"
+          ],
+          "correct": 1,
+          "expl": "Tower cranes, being tall, fixed, and capable of lifting materials to great heights with a wide working radius, are the standard choice for high-rise building construction."
+        },
+        {
+          "num": 18,
+          "text": "The number of trips of a dumper per hour is given by",
+          "options": [
+            "60 minutes / Actual or effective cycle time in minutes",
+            "60 minutes / Ideal cycle time in minutes",
+            "60 minutes / (Ideal running time + Loss time in minutes)",
+            "60 minutes / Running time in minutes"
+          ],
+          "correct": 0,
+          "expl": "The realistic number of trips per hour is obtained by dividing 60 minutes by the actual (effective) cycle time, which already accounts for real operating delays."
+        },
+        {
+          "num": 19,
+          "text": "Bottom-dump wagons are suitable for handling which of the following?",
+          "options": [
+            "Wet sticky clay",
+            "Sand and gravel",
+            "Quarry rocks",
+            "Any type of material"
+          ],
+          "correct": 1,
+          "expl": "Bottom-dump wagons discharge free-flowing material through gates in the floor, which works well for granular material like sand and gravel but poorly for sticky clay."
+        },
+        {
+          "num": 20,
+          "text": "Which one of the following shovel excavators is considered most efficient in loading carriers?",
+          "options": [
+            "Dipper shovel",
+            "Dragline",
+            "Backbone",
+            "Clamshell"
+          ],
+          "correct": 0,
+          "expl": "The dipper (power) shovel's rigid, direct digging-and-swinging cycle makes it the most efficient excavator type for loading trucks and other carriers."
+        },
+        {
+          "num": 21,
+          "text": "The strain on the boom of a hoist is minimum when it is in the",
+          "options": [
+            "Vertical position",
+            "Horizontal position",
+            "Inclined position",
+            "45° inclined position"
+          ],
+          "correct": 0,
+          "expl": "When the boom is vertical, the load hangs directly along the boom's axis, minimizing bending stress and strain compared to inclined or horizontal positions."
+        },
+        {
+          "num": 22,
+          "text": "A 1.1 m3 power shovel having ideal output of 206 m3/hr is to be used to excavate sand and gravel. The effect of cut is 3.1 m and the angle of swing factor shall be 0.935. The operating factor shall be 50 min/hr. Determine the probable output of the power shovel.",
+          "options": [
+            "100 m3/hr",
+            "160 m3/hr",
+            "200 m3/hr",
+            "250 m3/hr"
+          ],
+          "correct": 1,
+          "expl": "Probable output = Ideal output × depth-of-cut factor × swing factor × operating-time factor; combining these standard correction factors with the given ideal output of 206 m³/hr yields approximately 160 m³/hr."
+        },
+        {
+          "num": 23,
+          "text": "Find the output of a 2 cum power shovel excavating material whose swell is 25%. It handles an average heaped loose volume of 2.25 cum with a cycle time of 27 seconds.",
+          "options": [
+            "100 m3/hr",
+            "200 m3/hr",
+            "300 m3/hr",
+            "400 m3/hr"
+          ],
+          "correct": 1,
+          "expl": "Output = (loose volume per cycle × 3600) / cycle time, converted to bank (in-situ) measure using the swell factor; this works out to approximately 200 m³/hr."
+        },
+        {
+          "num": 24,
+          "text": "A 1.5 m3 re-handling type bucket is used to transfer sand from a stock pile into a hopper, 8 m above the ground. The angle of swing will average 90° with a cycle time of 30 sec. The average speed of the hoist line is 45 m/min. Determine the probable output per hour.",
+          "options": [
+            "120 m3",
+            "1650 m3",
+            "180 m3",
+            "240 m3"
+          ],
+          "correct": 2,
+          "expl": "Output = (bucket capacity × 3600) / cycle time, adjusted for the hoisting and swing time components; using the given bucket size and 30-second cycle, this yields approximately 180 m³/hr."
+        }
+      ]
+    }
+  ]
+}

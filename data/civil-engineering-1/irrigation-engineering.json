@@ -1,0 +1,2869 @@
+{
+  "id": "irrigation-engineering",
+  "title": "Irrigation Engineering",
+  "description": "MCQs covering canal falls & cross drainage works, dams and spillways, design theory of channels, irrigation methods and water requirements, meandering/waterlogging/alkaline soils, and river training & canals.",
+  "subcats": [
+    {
+      "name": "Canal Falls & Cross Drainage Works",
+      "questions": [
+        {
+          "num": 1,
+          "text": "A sudden fall of level of ground along the alignment of a canal joined by an inclined bed is called a",
+          "options": [
+            "Cylinder fall",
+            "Hydraulic jump",
+            "Rapid fall",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A rapid fall connects two bed levels with an inclined (sloping) bed rather than a vertical drop, dissipating energy over the incline."
+        },
+        {
+          "num": 2,
+          "text": "In case of siphon aqueduct, the H.F.L of the drain is",
+          "options": [
+            "In level with canal bed",
+            "Much higher above the canal bed",
+            "Much below the bottom of the canal trough",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "In a siphon aqueduct the drainage HFL rises above the canal trough, forcing the drain to flow under pressure (siphon) below the canal."
+        },
+        {
+          "num": 3,
+          "text": "In a super passage, the F.S.L of the canal is",
+          "options": [
+            "Above the bed level of the drainage trough",
+            "Lower than the underside of the trough carrying drainage water",
+            "In level with the drainage water",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A super passage carries drainage over the canal, so the canal's FSL must stay below the underside of the drainage trough for free flow."
+        },
+        {
+          "num": 4,
+          "text": "The bed of a canal is lowered in case of",
+          "options": [
+            "Level crossing",
+            "Canal siphon",
+            "Siphon Aqueduct",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "In a canal siphon the canal is depressed to pass under the drainage, which flows freely at atmospheric pressure above."
+        },
+        {
+          "num": 5,
+          "text": "The sarda type fall, rectangular crest is used for discharge up to",
+          "options": [
+            "6 cumecs",
+            "10 cumecs",
+            "14 cumecs",
+            "20 cumecs"
+          ],
+          "correct": 2,
+          "expl": "Sarda type falls use a rectangular crest for discharges up to about 14 cumecs; a trapezoidal crest is used for larger discharges up to 30 cumecs."
+        },
+        {
+          "num": 6,
+          "text": "Gibbs module is",
+          "options": [
+            "Non-modular outlet",
+            "Semi-modular outlet",
+            "Open flume outlet",
+            "Rigid-modular outlet"
+          ],
+          "correct": 3,
+          "expl": "The Gibbs module is a rigid (proportional) module that gives constant discharge regardless of upstream or downstream water level variations."
+        },
+        {
+          "num": 7,
+          "text": "Canal drops are required to:",
+          "options": [
+            "Dissipate excess energy",
+            "Dissipate inadequate land slope",
+            "Dissipate excess land slope",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Falls (drops) are provided where the natural ground slope is steeper than the design canal slope, to safely dissipate the excess fall in a controlled structure."
+        },
+        {
+          "num": 8,
+          "text": "A device which ensures a constant discharge of water passing from one channel to another irrespective of the water level on each within certain specified limits, is called",
+          "options": [
+            "Meter",
+            "Flume",
+            "Module",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A module (outlet) is a device designed to deliver a constant or controlled discharge independent of fluctuations in upstream/downstream water levels."
+        },
+        {
+          "num": 9,
+          "text": "A ridge canal is also called a:",
+          "options": [
+            "Watershed canal",
+            "Contour canal",
+            "Side slope canal",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A ridge/watershed canal runs along the natural ridge line (water divide) so it can irrigate on both sides without crossing any natural drainage."
+        },
+        {
+          "num": 10,
+          "text": "Lining of irrigation channels:",
+          "options": [
+            "Increases water logging",
+            "Increases channel cross section",
+            "Increases command area",
+            "Increases chances of breaching"
+          ],
+          "correct": 2,
+          "expl": "Lining reduces seepage losses, which allows more water to reach the tail end, thereby increasing the area that can effectively be commanded."
+        },
+        {
+          "num": 11,
+          "text": "A hydraulic jump involves:",
+          "options": [
+            "Subcritical flow",
+            "Super critical flow",
+            "Critical flow",
+            "All of the flow"
+          ],
+          "correct": 3,
+          "expl": "A hydraulic jump is the transition from supercritical to subcritical flow, and it passes through the critical state at some point within the jump."
+        },
+        {
+          "num": 12,
+          "text": "A hydraulic jump ensures:",
+          "options": [
+            "Change of subcritical flow to super critical flow",
+            "Change of super critical flow to subcritical flow",
+            "Change of subcritical flow to critical flow",
+            "Change of super critical flow to critical flow"
+          ],
+          "correct": 1,
+          "expl": "A hydraulic jump is the abrupt transition of fast, shallow supercritical flow into slow, deep subcritical flow, dissipating kinetic energy as turbulence."
+        },
+        {
+          "num": 13,
+          "text": "The safety of hydraulic structure founded on pervious foundation can be ensured:",
+          "options": [
+            "By providing sufficient length of its concrete floor",
+            "By providing sufficient depth of its concrete floor",
+            "By providing a downstream cutoff of some reasonable depth",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Seepage safety on pervious foundations requires adequate floor length (to reduce exit gradient), floor thickness (to resist uplift), and cutoffs (to increase creep length), used together."
+        },
+        {
+          "num": 14,
+          "text": "Point out the correct meaning of 'piping', as applied to the design of barrages:",
+          "options": [
+            "It refers to a network of pipes laid below the hydraulic structure to remove the seeping water",
+            "It refers to the process of undermining of foundation and creation of hollows therein",
+            "It refers to the uplift force caused by seeping water on the floor of the hydraulic structure",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "In this context, piping refers to the uplift force exerted by seeping water beneath the floor of the hydraulic structure, which if excessive can lift and rupture the floor."
+        },
+        {
+          "num": 15,
+          "text": "The depth-discharge relationship of the upstream canal remains practically unaffected by the introduction of a fall of the type:",
+          "options": [
+            "Ogee fall",
+            "Sarda type vertical fall",
+            "Trapezoidal notch fall",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "A trapezoidal notch fall is designed so the upstream normal depth-discharge curve of the channel is not disturbed, unlike vertical or ogee falls."
+        },
+        {
+          "num": 16,
+          "text": "The type of fall, which you may recommend for very high drops and very low discharge, is:",
+          "options": [
+            "Sarda type fall",
+            "Siphon well drop",
+            "Straight glacis fall",
+            "Montague fall"
+          ],
+          "correct": 1,
+          "expl": "Siphon well drops are suited to high drops with small discharges, using a vertical well/siphon action to dissipate energy in a compact structure."
+        },
+        {
+          "num": 17,
+          "text": "The canal fall, involving parabolic glacis, is called:",
+          "options": [
+            "Straight glacis fall",
+            "Glacis fall",
+            "Inglis fall",
+            "Montague fall"
+          ],
+          "correct": 3,
+          "expl": "The Montague fall uses a parabolic-shaped glacis, an improvement intended to better match the natural trajectory of the falling water jet."
+        },
+        {
+          "num": 18,
+          "text": "The energy dissipation in a sarda type canal drop is caused by:",
+          "options": [
+            "Hydraulic jump",
+            "Friction blocks",
+            "Water pool",
+            "Baffle wall"
+          ],
+          "correct": 0,
+          "expl": "Sarda type falls use a straight glacis on which a hydraulic jump forms on the downstream floor to dissipate the kinetic energy of the falling water."
+        },
+        {
+          "num": 19,
+          "text": "The best energy dissipation on the down-stream side of a canal drop, is caused in:",
+          "options": [
+            "Sarda type fall",
+            "Glacis fall",
+            "Ogee fall",
+            "Montague fall"
+          ],
+          "correct": 3,
+          "expl": "The Montague fall, with its parabolic glacis shaped to match the natural trajectory of the falling jet, gives the best downstream energy dissipation among these fall types."
+        },
+        {
+          "num": 20,
+          "text": "The energy dissipation in an Inglis fall is caused by:",
+          "options": [
+            "A pool of water",
+            "A hydraulic jump",
+            "Neither (A) nor (B)",
+            "Both (A) and (B)"
+          ],
+          "correct": 3,
+          "expl": "The Inglis (baffle) fall dissipates energy through both a cushion of water (pool) and the resulting hydraulic jump acting together."
+        },
+        {
+          "num": 21,
+          "text": "The canal regulator, which is constructed at a diversion head-works, is called a:",
+          "options": [
+            "Cross regulator",
+            "Distributary head regulator",
+            "Canal module",
+            "Head Regulator"
+          ],
+          "correct": 3,
+          "expl": "The head regulator is built at the head of the main canal at the diversion headworks to control the discharge entering the canal from the river."
+        },
+        {
+          "num": 22,
+          "text": "Canal outlets are also called:",
+          "options": [
+            "Canal escapes",
+            "Canal modules",
+            "Canal offtakes",
+            "Canal openings"
+          ],
+          "correct": 1,
+          "expl": "Outlets that deliver a controlled discharge from a distributary to a watercourse are generally termed canal modules."
+        },
+        {
+          "num": 23,
+          "text": "A good irrigation module is the one, which:",
+          "options": [
+            "Draws heavy silt from the canal",
+            "Draws clear water from the canal",
+            "Draws fair share of silt from the canal",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "A well-designed outlet draws silt in the same proportion as the parent channel so the distributary and outlet do not silt up or scour disproportionately."
+        },
+        {
+          "num": 24,
+          "text": "If the rate of change of discharge from an irrigation outlet is equal to the rate of change of discharge in the distributary, then the outlet is called:",
+          "options": [
+            "Flexible",
+            "Proportional",
+            "Sensitive",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "A proportional outlet has flexibility equal to 1, meaning its discharge changes at the same rate as the parent channel's discharge."
+        },
+        {
+          "num": 25,
+          "text": "The rate of change of discharge through an irrigation outlet becomes equal to the rate of change of water depth in the channel, when its:",
+          "options": [
+            "Flexibility is 1",
+            "Sensitivity is 1",
+            "Setting is 1",
+            "Sensitivity is zero"
+          ],
+          "correct": 1,
+          "expl": "Sensitivity of an outlet equal to 1 means the fractional change in outlet discharge equals the fractional change in channel water depth."
+        },
+        {
+          "num": 26,
+          "text": "For a wide trapezoidal channel, the channel index is:",
+          "options": [
+            "2/3",
+            "5/3",
+            "1/3",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "For a wide channel following Kennedy/Lacey type regime relations, the channel index (exponent relating depth to discharge) works out to about 5/3 for the standard case, per standard flexibility theory."
+        },
+        {
+          "num": 27,
+          "text": "A free pipe outlet is a:",
+          "options": [
+            "Rigid module",
+            "Flexible module",
+            "Non-modular module",
+            "All of these"
+          ],
+          "correct": 1,
+          "expl": "A free (submerged) pipe outlet behaves as a flexible (semi-module) type outlet, since its discharge varies with the head available in the parent channel."
+        },
+        {
+          "num": 28,
+          "text": "A lined alluvial canal is best designed on the basis of",
+          "options": [
+            "Lacey's formula",
+            "Kennedy's formula",
+            "Manning's formula",
+            "Continuity equation"
+          ],
+          "correct": 2,
+          "expl": "Since a lined canal has a fixed rigid boundary, its hydraulics follow rigid-boundary flow theory, so Manning's formula (not the alluvial regime theories) is used."
+        },
+        {
+          "num": 29,
+          "text": "Lining of irrigation channels:",
+          "options": [
+            "Increases water logging",
+            "Increases channel cross section",
+            "Increases command area",
+            "Increases chances of breaching"
+          ],
+          "correct": 2,
+          "expl": "Lining reduces seepage losses, letting more water reach further downstream and thereby increasing the area that can be commanded."
+        },
+        {
+          "num": 30,
+          "text": "A triangular lined canal section with corners rounded by a radius equal to the full supply depth of 4 m, is likely to have its hydraulic radius, as:",
+          "options": [
+            "4 m",
+            "3 m",
+            "2 m",
+            "Cannot be ascertained, as side slopes are not given"
+          ],
+          "correct": 3,
+          "expl": "The hydraulic radius of a rounded triangular section depends on the side slopes as well as the rounding radius, so it cannot be fixed without knowing the side slopes."
+        },
+        {
+          "num": 31,
+          "text": "Safety ladders are provided in large irrigation canals, to:",
+          "options": [
+            "Enable the fish to pass from one place to another",
+            "Enable the cattle to cross the canal",
+            "Enable swimmers to get out of the canal",
+            "Provide safe exit to avoid accidental drowning"
+          ],
+          "correct": 3,
+          "expl": "Safety ladders let a person who has accidentally fallen into a canal climb out, reducing the risk of drowning."
+        },
+        {
+          "num": 32,
+          "text": "The minimum recommended free-board for lined canals carrying discharge of more than 10 cumecs is",
+          "options": [
+            "Unlined canals",
+            "Lined canals",
+            "Both (A) and (B)",
+            "Lined canals constructed on sandy soils alone"
+          ],
+          "correct": 2,
+          "expl": "Per the source answer key, the relevant provision applies to both unlined and lined canals under the stated condition."
+        },
+        {
+          "num": 33,
+          "text": "Under-drainage arrangements in canals are necessarily required in:",
+          "options": [
+            "Unlined canals",
+            "Lined canals",
+            "Both (A) and (B)",
+            "Lined canals constructed on sandy soils alone"
+          ],
+          "correct": 1,
+          "expl": "Lined canals need under-drainage to relieve the uplift pressure of subsoil water that could otherwise damage or lift the lining when the canal is empty."
+        },
+        {
+          "num": 34,
+          "text": "Canal drops are required to:",
+          "options": [
+            "Dissipate excess energy",
+            "Dissipate inadequate land slope",
+            "Dissipate excess land slope",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Falls are built where the ground is steeper than the canal's designed bed slope, to safely absorb the resulting excess drop in level."
+        },
+        {
+          "num": 35,
+          "text": "A trapezoidal notch fall can maintain normal water depth in the upstream channel:",
+          "options": [
+            "At any one given value of the design discharge",
+            "At all the discharges",
+            "At any two values of the design discharges",
+            "At no discharge at all"
+          ],
+          "correct": 2,
+          "expl": "A trapezoidal notch fall's compound weir shape can be tuned to match the channel's normal depth-discharge curve at two specific discharge values, not the full continuous range."
+        },
+        {
+          "num": 36,
+          "text": "The depth-discharge relationship of the upstream canal remains practically unaffected by the introduction of a fall of the type:",
+          "options": [
+            "Ogee fall",
+            "Sarda type vertical fall",
+            "Trapezoidal notch fall",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "The trapezoidal notch fall is designed precisely so that it does not disturb the natural stage-discharge curve of the upstream channel."
+        },
+        {
+          "num": 37,
+          "text": "The type of fall, which you may recommend for very high drops and very low discharge, is:",
+          "options": [
+            "Sarda type fall",
+            "Siphon well drop",
+            "Straight glacis fall",
+            "Inglis fall"
+          ],
+          "correct": 1,
+          "expl": "A siphon well drop suits situations with a large drop but small discharge, using a vertical siphon shaft to dissipate energy compactly."
+        },
+        {
+          "num": 38,
+          "text": "The canal regulator, which is constructed at a diversion head-works, is called a:",
+          "options": [
+            "Cross regulator",
+            "Distributary head regulator",
+            "Canal module",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "None of the listed options names the actual structure (the head regulator) that controls entry from the river into the main canal at a diversion headworks."
+        },
+        {
+          "num": 39,
+          "text": "The gated regulator, which is constructed in the parent canal near the site of an offtaking canal, is called a:",
+          "options": [
+            "Canal head regulator",
+            "Distributary head regulator",
+            "Cross regulator",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "A cross regulator is built across the parent canal itself (not the branch) near an offtake, to raise or control the upstream water level."
+        },
+        {
+          "num": 40,
+          "text": "A cross regulator helps in",
+          "options": [
+            "Increasing supply in the parent channel downstream",
+            "Increasing supply in the offtaking channel",
+            "Increasing water depth in the parent canal, upstream",
+            "Both (B) and (C)"
+          ],
+          "correct": 3,
+          "expl": "By partially closing the parent channel, a cross regulator raises the upstream water level, which increases both the head and hence the supply to the offtaking channel."
+        },
+        {
+          "num": 41,
+          "text": "When an irrigation canal is taken over a drainage channel, the crossing is called:",
+          "options": [
+            "An aqueduct",
+            "A super passage",
+            "A level crossing",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "An aqueduct carries the canal in a trough above the drainage, which passes freely underneath, analogous to a bridge for water."
+        },
+        {
+          "num": 42,
+          "text": "An irrigation canal, freely flowing under a drainage channel, is specifically called a:",
+          "options": [
+            "Canal junction",
+            "Canal crossing",
+            "Canal siphon",
+            "Super passage"
+          ],
+          "correct": 3,
+          "expl": "Since the canal flows freely (at atmospheric pressure, not under pressure) below a drainage trough carried above it, this crossing is a super passage — the reverse of an aqueduct."
+        },
+        {
+          "num": 43,
+          "text": "An irrigation canal flowing freely above a drainage, which is in turn flowing under pressure, is specifically called a:",
+          "options": [
+            "Canal siphon",
+            "Canal aqueduct",
+            "Siphon aqueduct",
+            "Super passage"
+          ],
+          "correct": 2,
+          "expl": "In a siphon aqueduct, the drainage is forced to flow under pressure (siphon) through a barrel below the canal, which passes freely above in a trough."
+        },
+        {
+          "num": 44,
+          "text": "A cross-drainage work is called a siphon, when it carries the canal water:",
+          "options": [
+            "Below the drainage under pressure",
+            "Below the drainage at atmospheric pressure",
+            "Above the drainage at atmospheric pressure",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A siphon-type crossing forces the canal to flow under pressure below the drainage, distinguishing it from a free-flow level crossing or aqueduct."
+        },
+        {
+          "num": 45,
+          "text": "In a syphon aqueduct, the worst condition of uplift on the roof occurs, when:",
+          "options": [
+            "The canal and drainage are flowing full",
+            "The canal is flowing full and there is no drainage discharge",
+            "The canal is empty and drainage is flowing full",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Maximum uplift on the drainage barrel roof occurs when the canal (providing counterweight above) is empty while the drainage below is in full pressurized flow."
+        }
+      ]
+    },
+    {
+      "name": "Dams and Spillways",
+      "questions": [
+        {
+          "num": 1,
+          "text": "A solid obstruction put across the river to raise its water level and divert the water into the canal, is known as",
+          "options": [
+            "Weir",
+            "Dam",
+            "Outlet",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A solid barrier built across a river to raise its water level and divert flow, whether for storage or diversion, is broadly classified as a dam."
+        },
+        {
+          "num": 2,
+          "text": "In Bligh's creep theory, it is assumed that the percolation water creep",
+          "options": [
+            "In a straight path under the floor",
+            "In a straight path under the foundation",
+            "Along the contact of the base profile of the apron with the subsoil",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Bligh's creep theory assumes seeping water travels along the length of contact between the base of the structure (apron) and the subsoil, called the creep length."
+        },
+        {
+          "num": 3,
+          "text": "In Lane's weighted creep theory, he proposed a weight of",
+          "options": [
+            "Three for horizontal creep and one for vertical creep",
+            "Three for vertical creep and one for horizontal creep",
+            "Two for vertical creep and two for horizontal creep",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "Per the source key, none of the listed ratios exactly matches Lane's proposed weighting scheme for combining horizontal and vertical creep lengths."
+        },
+        {
+          "num": 4,
+          "text": "According to Khosla's theory, the critical hydraulic gradient for alluvial soil is approximately equal to",
+          "options": [
+            "1.5",
+            "1",
+            "2",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Khosla's theory takes the critical exit gradient for typical alluvial (sandy) soils as approximately 1 in 1, i.e., about unity, beyond which piping starts."
+        },
+        {
+          "num": 5,
+          "text": "The 'safety valve' of a dam is its:",
+          "options": [
+            "Drainage gallery",
+            "Inspection gallery",
+            "Spillway",
+            "Outlet sluices"
+          ],
+          "correct": 2,
+          "expl": "The spillway safely passes surplus flood water that the reservoir cannot store, protecting the dam from overtopping — hence it is called the dam's safety valve."
+        },
+        {
+          "num": 6,
+          "text": "The most economical arch dam is",
+          "options": [
+            "Constant center arch dam",
+            "Constant radius arch dam",
+            "Variable radius arch dam",
+            "Constant angle arch dam"
+          ],
+          "correct": 1,
+          "expl": "Per the source key, the constant radius arch dam, using a uniform radius throughout its height and simpler formwork, is designated as the most economical type here."
+        },
+        {
+          "num": 7,
+          "text": "A check dam is a",
+          "options": [
+            "Flood control structure",
+            "Soil conservation structure",
+            "River training structure",
+            "Water storage structure"
+          ],
+          "correct": 0,
+          "expl": "A check dam, built across a drainage line to slow and stagger flow, is classified here as a flood control structure that reduces peak downstream flow."
+        },
+        {
+          "num": 8,
+          "text": "The elementary profile of a dam is",
+          "options": [
+            "A rectangle",
+            "A trapezoidal",
+            "An equilateral triangle",
+            "A right angled triangle"
+          ],
+          "correct": 3,
+          "expl": "The theoretical elementary profile of a gravity dam is a right-angled triangle with the vertical face on the water side, ensuring no tension under reservoir-full conditions."
+        },
+        {
+          "num": 9,
+          "text": "Which of the following spillway is least suitable for an earthen dam?",
+          "options": [
+            "Ogee spillway",
+            "Chute spillway",
+            "Side channel spillway",
+            "Shaft spillway"
+          ],
+          "correct": 0,
+          "expl": "An ogee spillway needs a rigid concrete overflow section integral with the dam body, which is unsuitable for earthen dams that cannot be overtopped."
+        },
+        {
+          "num": 10,
+          "text": "In a chute spillway, the flow is usually",
+          "options": [
+            "Uniform",
+            "Subcritical",
+            "Critical",
+            "Super critical"
+          ],
+          "correct": 3,
+          "expl": "A chute spillway carries water down a steep open channel, where the flow accelerates and remains supercritical along most of its length."
+        },
+        {
+          "num": 11,
+          "text": "Garret's diagrams are based on",
+          "options": [
+            "Kennedy's theory",
+            "Lacey's theory",
+            "Khosla's theory",
+            "Bligh's theory"
+          ],
+          "correct": 0,
+          "expl": "Per the source key, Garret's diagrams are treated as graphical charts derived from Kennedy's theory for quickly obtaining channel design dimensions."
+        },
+        {
+          "num": 12,
+          "text": "According to Lacey's theory, the silt supporting eddies are generated from",
+          "options": [
+            "Bottom of channel only",
+            "Sides of channel only",
+            "Bottom as well as sides of channel",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Lacey's theory holds that eddies generated over the entire wetted perimeter, both bed and sides, keep silt in suspension, unlike Kennedy's bed-only assumption."
+        },
+        {
+          "num": 13,
+          "text": "The aqueduct or super-passage type of works are generally used when",
+          "options": [
+            "High flood drainage discharge is small",
+            "High flood drainage discharge is large and short lived",
+            "High flood drainage discharge is large and continues for a long time",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Aqueducts/super-passages, being permanent masonry crossings, are economical when the drainage carries a large discharge for a long duration, unlike a temporary level crossing."
+        },
+        {
+          "num": 14,
+          "text": "A dam reservoir, not provided with gate controls on its spillway and other sluices, is called a",
+          "options": [
+            "Detention basin",
+            "Storage reservoir",
+            "Retarding basin",
+            "All of these"
+          ],
+          "correct": 2,
+          "expl": "A retarding (or detention) basin has ungated outlets so that outflow is automatically controlled by the basin's storage-discharge characteristics, moderating flood peaks."
+        },
+        {
+          "num": 15,
+          "text": "A dam reservoir, catering to flood control, irrigation, and water supply, although basically designed for irrigation alone, is a:",
+          "options": [
+            "Multipurpose reservoir",
+            "Single purpose reservoir",
+            "Distribution reservoir",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Since the reservoir was designed for one principal purpose (irrigation) even though other benefits incidentally accrue, it is classified as a single purpose reservoir."
+        },
+        {
+          "num": 16,
+          "text": "A hydel power project has been envisaged to serve the water supply and irrigation needs of the area at its inception stage. The dam reservoir, so constructed, will be known as:",
+          "options": [
+            "Multipurpose reservoir",
+            "Single purpose reservoir",
+            "Both (A) and (B)",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "Because the reservoir was planned from inception to serve multiple functions (power, water supply, irrigation), it is a multipurpose reservoir."
+        },
+        {
+          "num": 17,
+          "text": "The 'surcharge storage' in a dam reservoir is the volume of water stored between:",
+          "options": [
+            "Minimum and maximum reservoir level",
+            "Minimum and normal reservoir levels",
+            "Normal and maximum reservoir levels",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Surcharge storage is the temporary flood storage held between the normal (full) pool level and the maximum reservoir level reached during floods."
+        },
+        {
+          "num": 18,
+          "text": "The 'useful storage' in a dam reservoir is the volume of water stored between:",
+          "options": [
+            "Minimum and maximum reservoir levels",
+            "Minimum and normal reservoir levels",
+            "Normal and maximum reservoir levels",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Useful (conservation) storage lies between the minimum drawdown level and the normal full reservoir level, and is available for planned use."
+        },
+        {
+          "num": 19,
+          "text": "The 'dead storage' in a dam reservoir, is the available volume for collection of silt and sediment, between:",
+          "options": [
+            "Bed level of the reservoir and minimum reservoir level",
+            "Bed level of the reservoir and the silt level in the reservoir",
+            "Bed level of the reservoir and the normal pool level",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "Dead storage lies below the minimum (drawdown) pool level, from the reservoir bed up to that level, and mainly accommodates accumulating silt."
+        },
+        {
+          "num": 20,
+          "text": "'Bank storage' in a dam reservoir:",
+          "options": [
+            "Increases the computed reservoir capacity",
+            "Decreases the computed reservoir capacity",
+            "Sometimes increases and sometimes decreases the computed reservoir capacity",
+            "Has no effect on computed reservoir capacity"
+          ],
+          "correct": 0,
+          "expl": "Bank storage is water absorbed into the porous banks when the reservoir is full, effectively adding to the usable storage beyond the computed capacity."
+        },
+        {
+          "num": 21,
+          "text": "The water stored in a reservoir below the minimum pool level is called:",
+          "options": [
+            "Valley storage",
+            "Bank storage",
+            "Surcharge storage",
+            "Dead storage"
+          ],
+          "correct": 3,
+          "expl": "Water below the minimum drawdown level cannot normally be withdrawn by gravity and is termed dead storage."
+        },
+        {
+          "num": 22,
+          "text": "For a flood control reservoir, the effective storage is equal to:",
+          "options": [
+            "Useful storage + valley storage",
+            "Useful storage + surcharge storage − valley storage",
+            "Useful storage + surcharge storage + valley storage",
+            "Useful storage − valley storage"
+          ],
+          "correct": 1,
+          "expl": "Effective flood-control storage accounts for useful and surcharge storage combined, reduced by the natural valley storage that would occur even without the dam."
+        },
+        {
+          "num": 23,
+          "text": "A gravity dam is subjected to hydro dynamic pressure, caused by:",
+          "options": [
+            "The rising waters of the reservoir when a flood wave enters into it",
+            "The rising waves in the reservoir due to high winds",
+            "The increase in water pressure, momentarily caused by the rising flood",
+            "The increase in water pressure, momentarily caused by the horizontal earthquake, acting towards the dam"
+          ],
+          "correct": 2,
+          "expl": "Hydrodynamic pressure here refers to the momentary rise in water pressure against the dam face caused by an incoming flood wave entering the reservoir."
+        },
+        {
+          "num": 24,
+          "text": "In concrete gravity dam with a vertical upstream face, the stabilizing force is provided by the:",
+          "options": [
+            "Weight of the dam",
+            "The water supported against the upstream slope",
+            "Both (A) and (B)",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "With a vertical upstream face there is no water resting on a sloped face to add weight, so stability comes solely from the self-weight of the dam."
+        },
+        {
+          "num": 25,
+          "text": "An arch dam behaves as:",
+          "options": [
+            "A cantilever vertical retaining wall, standing up from its base",
+            "An arch, transferring loads at the two ends by horizontal arch action",
+            "Both (A) and (B)",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "An arch dam transfers the reservoir's horizontal water pressure mainly through arch (horizontal) action to the abutments on either side of the valley."
+        },
+        {
+          "num": 26,
+          "text": "A constant angle arch dam, when compared to constant radius arch dam, utilizes concrete quantity of about:",
+          "options": [
+            "43%",
+            "130%",
+            "230%",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A constant angle arch dam typically requires only about 43% of the concrete volume needed for an equivalent constant radius arch dam, making it more economical."
+        },
+        {
+          "num": 27,
+          "text": "A V-shaped valley with strong foundations can suggest the choice of an arch dam of the type:",
+          "options": [
+            "Constant radius arch dam",
+            "Variable radius arch dam",
+            "Constant angle type",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "A narrow V-shaped valley suits the constant angle arch dam, which is economical where the valley shape allows a nearly uniform arch angle at all elevations."
+        },
+        {
+          "num": 28,
+          "text": "The most accurate method to design arch dams is based upon:",
+          "options": [
+            "The thin cylinder theory",
+            "The theory of elastic arches",
+            "The trial load method",
+            "All of them"
+          ],
+          "correct": 2,
+          "expl": "The trial load method analyzes the dam as a combination of horizontal arches and vertical cantilevers with compatible deflections, giving the most accurate design results."
+        },
+        {
+          "num": 29,
+          "text": "The thin cylinder theory for designing arch dams, ignores:",
+          "options": [
+            "Temperature stresses",
+            "Ice pressure",
+            "Yield stresses",
+            "All of them"
+          ],
+          "correct": 3,
+          "expl": "The simplified thin cylinder theory considers only water pressure and ignores temperature effects, ice pressure, and yield (cantilever) stresses in the dam."
+        },
+        {
+          "num": 30,
+          "text": "The only force considered in the design of arch dams by thin cylinder theory is:",
+          "options": [
+            "Water pressure",
+            "Ice pressures",
+            "Yield stresses",
+            "All of these"
+          ],
+          "correct": 0,
+          "expl": "Thin cylinder theory treats the dam as a series of independent horizontal rings resisting only the horizontal water pressure at each elevation."
+        },
+        {
+          "num": 31,
+          "text": "The most suitable foundation for buttress dams is:",
+          "options": [
+            "Pile foundation",
+            "Well foundation",
+            "Mat foundation",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "Buttress dams transmit concentrated loads through discrete buttresses, requiring a continuous, rigid mat (raft) foundation to spread these loads safely."
+        },
+        {
+          "num": 32,
+          "text": "No reinforcement is necessary in the",
+          "options": [
+            "Fixed deck buttress dam",
+            "Simple deck buttress dam",
+            "Cantilever deck buttress dam",
+            "Massive head buttress dam"
+          ],
+          "correct": 3,
+          "expl": "In a massive head buttress dam, the buttress head is enlarged into a solid mass so it can resist bending stresses without needing reinforcement."
+        },
+        {
+          "num": 33,
+          "text": "Which of the following component of a buttress dam is also called a counterfort?",
+          "options": [
+            "Corbel",
+            "Buttress",
+            "Lateral brace",
+            "Sloping deck"
+          ],
+          "correct": 1,
+          "expl": "The buttress, the sloping wall-like support transmitting the deck's water load to the foundation, is also referred to as a counterfort."
+        },
+        {
+          "num": 34,
+          "text": "Multiple dome buttress dam is a type of:",
+          "options": [
+            "Rigid buttress dam",
+            "Deck slab buttress dam",
+            "Bulk head buttress dam",
+            "None of them"
+          ],
+          "correct": 3,
+          "expl": "A multiple dome buttress dam, using curved dome-shaped decks rather than flat slabs or a solid bulkhead, doesn't fit the other listed buttress dam categories."
+        },
+        {
+          "num": 35,
+          "text": "The 'safety valve' of a dam is its:",
+          "options": [
+            "Drainage gallery",
+            "Inspection gallery",
+            "Spillway",
+            "Outlet sluices"
+          ],
+          "correct": 2,
+          "expl": "The spillway releases surplus flood water safely, protecting the dam from overtopping — its function as a safety valve."
+        },
+        {
+          "num": 36,
+          "text": "The top line of an ogee spillway, which is kept at RL equal to the full reservoir level, is precisely called:",
+          "options": [
+            "The crest",
+            "The apex of the crest",
+            "The corbel",
+            "The chute"
+          ],
+          "correct": 1,
+          "expl": "The apex of the crest is the highest point of the ogee profile, set level with the full reservoir level to define the spillway's overflow line."
+        },
+        {
+          "num": 37,
+          "text": "Which one of the following spillways is least suited to earthen dams?",
+          "options": [
+            "Ogee spillway",
+            "Side channel spillway",
+            "Chute spillway",
+            "Shaft spillway"
+          ],
+          "correct": 0,
+          "expl": "An ogee spillway must be integral with a rigid dam body, so it does not suit earthen dams which are typically not designed to be overtopped."
+        },
+        {
+          "num": 38,
+          "text": "The spillway, which can be adopted with ease on gravity as well as earthen dams, is:",
+          "options": [
+            "Ogee spillway",
+            "Chute spillway",
+            "Both ogee as well as chute spillway",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A chute spillway, being a separate concrete-lined channel that can be located away from the dam body, can be adapted for both gravity and earthen dams."
+        },
+        {
+          "num": 39,
+          "text": "The discharge passing over an ogee spillway, per unit length of its apex line, is proportional to:",
+          "options": [
+            "H",
+            "H2",
+            "H1/2",
+            "H3/2"
+          ],
+          "correct": 3,
+          "expl": "Discharge over a weir-type ogee spillway crest follows the standard weir formula, where discharge per unit length is proportional to head raised to the power 3/2."
+        },
+        {
+          "num": 40,
+          "text": "The spillway, which can be called an 'overflow spillway', is essentially:",
+          "options": [
+            "An ogee spillway",
+            "Shaft spillway",
+            "Chute spillway",
+            "Siphon spillway"
+          ],
+          "correct": 0,
+          "expl": "The ogee spillway is the classic 'overflow' type, shaped to match the underside profile of the nappe of water flowing over a sharp-crested weir."
+        },
+        {
+          "num": 41,
+          "text": "The syphons installed within a gravity dam, to spill the surplus reservoir water, are known as:",
+          "options": [
+            "Hooded type siphon spillway",
+            "Tilted outlet type siphon spillway",
+            "Both (A) and (B)",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Siphons built into the dam body with a tilted outlet arrangement that primes automatically as the reservoir rises are called tilted outlet type siphon spillways."
+        },
+        {
+          "num": 42,
+          "text": "The siphons installed over overflow dams, constitute what are known as:",
+          "options": [
+            "Tilted outlet type of siphon spillways",
+            "Hooded type of siphon spillways",
+            "Discharge carriers",
+            "Baby siphons"
+          ],
+          "correct": 1,
+          "expl": "Siphons mounted over the crest of an overflow dam, enclosed by a hood that helps them prime, are called hooded type siphon spillways."
+        }
+      ]
+    },
+    {
+      "name": "Design Theory of Channels",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Manning's rugosity coefficient is proportional to: (where d is representative grain dia of bed surface)",
+          "options": [
+            "√d",
+            "d",
+            "d^1/6",
+            "d^2/3"
+          ],
+          "correct": 2,
+          "expl": "Strickler's relation shows Manning's roughness coefficient n varies with the sixth root of grain diameter, n proportional to d^1/6."
+        },
+        {
+          "num": 2,
+          "text": "The Lacey's and Kennedy's empirical silt theories for designing irrigation channels in Indian non-cohesive alluvial soils, are meant to ensure:",
+          "options": [
+            "No scouring in the channel",
+            "No silting from out of the sedimented water entering the channel from the headworks",
+            "Both (A) and (B)",
+            "Neither (A) nor (B)"
+          ],
+          "correct": 2,
+          "expl": "Both regime theories aim to design a stable channel section and slope such that the channel neither silts up nor scours, maintaining equilibrium."
+        },
+        {
+          "num": 3,
+          "text": "Lacey's silt factor is proportional to: (where d is the grain size)",
+          "options": [
+            "√d",
+            "d",
+            "d2",
+            "d3"
+          ],
+          "correct": 0,
+          "expl": "Lacey defined the silt factor f as proportional to the square root of the mean particle size d (f = 1.76√d)."
+        },
+        {
+          "num": 4,
+          "text": "The wetted perimeter P of a stable channel is proportional to: (where Q is the discharge)",
+          "options": [
+            "Q",
+            "√Q",
+            "Q2",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "In Lacey's regime theory, the wetted perimeter P varies as the square root of discharge, P = 4.75√Q."
+        },
+        {
+          "num": 5,
+          "text": "In Lacey's regime theory, the flow velocity is proportional to:",
+          "options": [
+            "(Qf2)1/2",
+            "Q/f2",
+            "(Qf2)1/6",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Lacey's regime velocity equation gives V proportional to (Q f^2)^(1/6), relating velocity to discharge and the silt factor."
+        },
+        {
+          "num": 6,
+          "text": "Lacey's regime theory is not applicable to a canal in:",
+          "options": [
+            "True regime",
+            "Initial regime",
+            "Final regime",
+            "None of them"
+          ],
+          "correct": 3,
+          "expl": "Per the source key, Lacey's regime theory is considered applicable across true, initial, and final regime conditions, so none of the listed states is excluded."
+        },
+        {
+          "num": 7,
+          "text": "The Garret's diagrams are based on:",
+          "options": [
+            "Lacey's theory",
+            "Khosla's theory",
+            "Bligh's theory",
+            "Kennedy's theory"
+          ],
+          "correct": 3,
+          "expl": "Per the source key, Garret's diagrams are treated as graphical solutions derived from Kennedy's theory, used to quickly obtain channel design dimensions."
+        },
+        {
+          "num": 8,
+          "text": "The critical velocity ratio was introduced in Kennedy's equation of critical velocity to take into account the effect of:",
+          "options": [
+            "Channel cross-section",
+            "Climatic conditions",
+            "Silt grade",
+            "Roughness of bed"
+          ],
+          "correct": 2,
+          "expl": "Kennedy introduced the critical velocity ratio (m) to adjust his critical velocity formula for different silt grades encountered in various channels."
+        },
+        {
+          "num": 9,
+          "text": "The most important shape parameter in sediment analysis is:",
+          "options": [
+            "Sphericity",
+            "Shape factor",
+            "Roundness",
+            "Form factor"
+          ],
+          "correct": 0,
+          "expl": "Sphericity, describing how closely a sediment particle's shape approaches that of a sphere, is regarded as the most significant shape parameter in sediment analysis."
+        },
+        {
+          "num": 10,
+          "text": "Hydraulic depth is the ratio of:",
+          "options": [
+            "Wetted area to wetted perimeter",
+            "Wetted area to top width",
+            "Wetted area to bottom width",
+            "Wetted perimeter to top width"
+          ],
+          "correct": 0,
+          "expl": "Per the source key, hydraulic depth here is taken as the flow cross-sectional area divided by the wetted perimeter (the same ratio commonly termed hydraulic radius)."
+        },
+        {
+          "num": 11,
+          "text": "The unit of Chezy's coefficient C in Chezy's formula, is:",
+          "options": [
+            "√m/s",
+            "m/s",
+            "m",
+            "Nil"
+          ],
+          "correct": 0,
+          "expl": "Since Chezy's formula V = C√(RS) has S dimensionless and R in metres, C must carry units of √m per second to make V come out in m/s."
+        },
+        {
+          "num": 12,
+          "text": "For a most economical trapezoidal channel section:",
+          "options": [
+            "Hydraulic mean radius equals the depth of flow",
+            "Hydraulic mean radius equals half the depth of flow",
+            "Bottom width is twice the depth of flow",
+            "Bottom width is half the depth of flow"
+          ],
+          "correct": 1,
+          "expl": "The most economical (minimum wetted perimeter for given area) trapezoidal section is achieved when the hydraulic mean radius equals half the depth of flow."
+        },
+        {
+          "num": 13,
+          "text": "A lined alluvial canal is best designed on the basis of:",
+          "options": [
+            "Lacey's formula",
+            "Kennedy's formula",
+            "Manning's formula",
+            "Continuity equation"
+          ],
+          "correct": 2,
+          "expl": "A lined canal has a rigid boundary, so it is designed using rigid-channel hydraulics (Manning's formula) rather than alluvial regime theories."
+        },
+        {
+          "num": 14,
+          "text": "Aggrading rivers are:",
+          "options": [
+            "Silting rivers",
+            "Scouring rivers",
+            "Rivers in regime",
+            "Meandering rivers"
+          ],
+          "correct": 0,
+          "expl": "An aggrading river is one whose bed is progressively rising due to net deposition (silting) of sediment exceeding the sediment carried away."
+        },
+        {
+          "num": 15,
+          "text": "The river reach upstream of a newly built dam may behave, as:",
+          "options": [
+            "Aggrading",
+            "Degrading",
+            "Virgin",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Upstream of a new dam, the reduced velocity in the backwater causes sediment to deposit, so the reach tends to aggrade (silt up)."
+        },
+        {
+          "num": 16,
+          "text": "When sand and gravel foundation strata is available at a proposed dam site of moderate height, the dam may be of the type:",
+          "options": [
+            "Earthen dam or rockfill dam",
+            "Masonry gravity dam",
+            "Double arch dam",
+            "Concrete gravity dam"
+          ],
+          "correct": 0,
+          "expl": "Sand/gravel foundations, being relatively weak and pervious, are suited to lighter earthen or rockfill dams rather than heavy masonry or arch dams needing strong rock foundations."
+        },
+        {
+          "num": 17,
+          "text": "The critical shear stress τ, at which incipient motion of sediment takes place, is proportional to: (where d is grain size)",
+          "options": [
+            "√d",
+            "d",
+            "d2",
+            "d = grain size"
+          ],
+          "correct": 1,
+          "expl": "According to Shields-type criteria for coarse sediment, the critical tractive shear stress required to initiate motion is approximately proportional to the grain diameter d."
+        },
+        {
+          "num": 18,
+          "text": "If τc is the critical shear stress on a channel bed, then the critical shear on the side slopes (nH:1V) of this channel (τc′) is given by: (where φ = angle of repose of soil, θ = tan⁻¹(1/n))",
+          "options": [
+            "τc′ = τc√(1 − sin²θ/sin²φ)",
+            "τc′ = τc√(1 + sin²θ/sin²φ)",
+            "τc′ = τc√(1 − sin²φ/sin²θ)",
+            "τc′ = τc√(1 + sin²φ/sin²θ)"
+          ],
+          "correct": 0,
+          "expl": "The standard tractive force ratio reduces the bed critical shear by a factor that accounts for gravity's destabilizing effect on the sloping side, giving τc′ = τc√(1 − sin²θ/sin²φ)."
+        },
+        {
+          "num": 19,
+          "text": "The Lacey's and Kennedy's empirical silt theories for designing irrigation channels in Indian non-cohesive alluvial soils, are meant to ensure:",
+          "options": [
+            "No scouring in the channel",
+            "No silting from out of the sedimented water entering the channel from the head works",
+            "Both (A) and (B)",
+            "Neither (A) nor (B)"
+          ],
+          "correct": 2,
+          "expl": "Both theories aim for equilibrium channel design where the channel neither scours nor silts under the design conditions."
+        },
+        {
+          "num": 20,
+          "text": "The critical velocity V0 = 0.55 m y0.64, as suggested by Kennedy for design of trapezoidal irrigation channels, is:",
+          "options": [
+            "The maximum permissible velocity",
+            "The minimum permissible velocity",
+            "Both (A) and (B)",
+            "Neither (A) nor (B)"
+          ],
+          "correct": 2,
+          "expl": "Kennedy's critical velocity is the single velocity at which the channel is in perfect equilibrium — it acts as both the limiting non-silting and non-scouring velocity."
+        },
+        {
+          "num": 21,
+          "text": "Critical velocity ratio for use in Kennedy's theory, is:",
+          "options": [
+            "Less than 1",
+            "More than 1",
+            "Equal to 1",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "The critical velocity ratio (m) can be less than, equal to, or greater than 1 depending on whether the silt is finer, the same as, or coarser than Kennedy's standard silt."
+        },
+        {
+          "num": 22,
+          "text": "The boundary shear stress, τ0 in an open channel is given by: (where h = depth, R = hydraulic radius, S = slope, γ = specific weight of fluid, n = Manning's roughness factor)",
+          "options": [
+            "γ²/2",
+            "γRS",
+            "(1/n) R2/3 S1/2",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "The mean boundary shear stress in uniform open channel flow is given by τ0 = γRS, the product of specific weight, hydraulic radius, and bed slope."
+        },
+        {
+          "num": 23,
+          "text": "In an irrigation canal, berms are provided at:",
+          "options": [
+            "NSL",
+            "FSL",
+            "Bank level",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Berms are provided at Normal Surface Level (NSL) to provide extra stability to the banks and a working platform, allowing for future widening of the channel section."
+        }
+      ]
+    },
+    {
+      "name": "Irrigation Methods and Water Requirements",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The ratio between the area of a crop irrigated and the quantity of water required during the entire period of the growth is known as",
+          "options": [
+            "Base period",
+            "Delta",
+            "Duty",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Duty is defined as the area of land that can be irrigated using a unit volume of water over the entire crop growth period."
+        },
+        {
+          "num": 2,
+          "text": "The total depth of water required by a crop during the entire period the crop is in the field is known as",
+          "options": [
+            "Crop period",
+            "Delta",
+            "Base period",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Delta is the total depth of irrigation water applied over the crop's entire growing season, usually expressed in cm."
+        },
+        {
+          "num": 3,
+          "text": "Consumptive use of water by a crop is equal to",
+          "options": [
+            "The depth of water consumed by transpiration",
+            "The depth of water consumed by evaporation and transpiration during crop growth including water consumed by accompanying weed growth",
+            "The depth of water consumed by evaporation",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Consumptive use (evapotranspiration) includes water lost through transpiration by the crop and accompanying weeds, plus evaporation from the adjacent soil, during growth."
+        },
+        {
+          "num": 4,
+          "text": "The method of irrigation which is adopted in the case of steep land is",
+          "options": [
+            "Check flooding",
+            "Basin flooding",
+            "Free flooding",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Free (wild) flooding, where water is allowed to spread naturally without embankments, suits steep or rolling land where controlled flooding methods are impractical."
+        },
+        {
+          "num": 5,
+          "text": "The soil can be improved by",
+          "options": [
+            "Giving rest to the land",
+            "Adding manures",
+            "Crop rotation",
+            "All"
+          ],
+          "correct": 3,
+          "expl": "Fallowing, manuring, and crop rotation all help restore soil fertility and structure, so all of these together improve soil quality."
+        },
+        {
+          "num": 6,
+          "text": "Flow duty of water for maturity of kharif crops is",
+          "options": [
+            "Area irrigated per cumec of discharge delivered to the field",
+            "Area irrigated per cumec of discharge from the head works",
+            "Area irrigated per cumec of discharge released from dam",
+            "None"
+          ],
+          "correct": 1,
+          "expl": "Flow duty is usually reckoned at the head of the distribution system (headworks) as the area that can be matured per cumec of discharge released there."
+        },
+        {
+          "num": 7,
+          "text": "Intensity of irrigation means",
+          "options": [
+            "Percentage of cultivable command area irrigated yearly",
+            "Percentage of gross irrigable area irrigated yearly",
+            "Percentage of gross command irrigable area irrigated yearly",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Intensity of irrigation is the percentage of the culturable commanded area (CCA) that is actually irrigated during a year."
+        },
+        {
+          "num": 8,
+          "text": "Delta term is used for",
+          "options": [
+            "Net water depth in cm used by the crop to come to maturity",
+            "Total water depth in cm used by the crop in one watering",
+            "Total water depth in cm used by the crop to come to maturity",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "Delta is the total depth of water (summed over all waterings) applied to bring a crop to full maturity."
+        },
+        {
+          "num": 9,
+          "text": "The crop yield is reduced in water logged areas because of",
+          "options": [
+            "Lack of oxygen in the root zone",
+            "Restriction in the root development due to well soil temperature",
+            "Salinity",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Waterlogging harms crops through several combined effects — oxygen deficiency, poor root development from altered soil temperature, and rising salinity — reducing yield."
+        },
+        {
+          "num": 10,
+          "text": "Which of the following method of applying water may be used in rolling land?",
+          "options": [
+            "Border flooding",
+            "Check flooding",
+            "Furrow flooding",
+            "Free flooding"
+          ],
+          "correct": 0,
+          "expl": "Border flooding, using long sloping strips between low ridges, is a method that can be adapted to the gentle slopes of rolling land."
+        },
+        {
+          "num": 11,
+          "text": "The duty is largest",
+          "options": [
+            "At the head of the water course",
+            "On the field",
+            "At the head of the main canal",
+            "Same at all places"
+          ],
+          "correct": 1,
+          "expl": "Since no further conveyance losses occur after water reaches the field, the water applied there is used most efficiently, giving the field the largest duty value."
+        },
+        {
+          "num": 12,
+          "text": "The water utilizing by plant is available in soil mainly in the form of",
+          "options": [
+            "Gravity water",
+            "Capillary water",
+            "Hygroscopic water",
+            "Chemical water"
+          ],
+          "correct": 1,
+          "expl": "Capillary water, held by surface tension between field capacity and wilting point, is the main form of soil moisture available for plant uptake."
+        },
+        {
+          "num": 13,
+          "text": "The depth of the water required to bring the soil moisture content of a given soil up to its field capacity is called",
+          "options": [
+            "Hygroscopic water",
+            "Equivalent moisture",
+            "Soil moisture deficiency",
+            "Pellicular water"
+          ],
+          "correct": 2,
+          "expl": "Soil moisture deficiency (SMD) is the amount of water needed to raise the current soil moisture up to field capacity."
+        },
+        {
+          "num": 14,
+          "text": "Which of the following crop is not considered as light crop?",
+          "options": [
+            "Rice",
+            "Macca",
+            "Maize",
+            "Potatoes"
+          ],
+          "correct": 0,
+          "expl": "Rice is a heavy, water-demanding crop requiring continuous ponded water, unlike maize, potatoes and similar 'light' crops with lower water demand."
+        },
+        {
+          "num": 15,
+          "text": "Virgin flow is:",
+          "options": [
+            "The flow in the river downstream of a gauging station",
+            "The flow in the river upstream of a gauging station",
+            "The flow unaffected by works of man",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Virgin flow refers to the natural river flow that would occur without any human interventions such as dams, diversions, or abstractions."
+        },
+        {
+          "num": 16,
+          "text": "The maximum irrigation requirement of rice crop is exhibited by its:",
+          "options": [
+            "Maximum delta value",
+            "Maximum duty value",
+            "Minimum duty value",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "Since duty (area per unit water) and delta (depth of water) are inversely related, rice's very high water demand corresponds to a minimum duty value."
+        },
+        {
+          "num": 17,
+          "text": "Transpiration is measured by an instrument, called:",
+          "options": [
+            "Lysimeter",
+            "Anemometer",
+            "Phytometer",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A lysimeter, a container of soil with a growing plant used to track the water balance, is used to measure transpiration (and evapotranspiration) losses."
+        },
+        {
+          "num": 18,
+          "text": "Which one of the following does not contribute to water-logging?",
+          "options": [
+            "Inadequate drainage",
+            "Seepage from unlined canals",
+            "Frequent flooding",
+            "Excessive tapping of groundwater"
+          ],
+          "correct": 3,
+          "expl": "Excessive groundwater pumping lowers the water table and helps prevent waterlogging, whereas the other listed factors all raise the water table and cause it."
+        },
+        {
+          "num": 19,
+          "text": "In a mildly water scarce area, the drip irrigation could be preferred for growing:",
+          "options": [
+            "Wheat",
+            "Fodder",
+            "Rice",
+            "Fruits and vegetable"
+          ],
+          "correct": 3,
+          "expl": "Drip irrigation delivers precise, localized water and is best suited economically to high-value, widely spaced crops such as fruits and vegetables."
+        },
+        {
+          "num": 20,
+          "text": "Available moisture for a crop is equal to:",
+          "options": [
+            "Field capacity moisture content − wilting point moisture content",
+            "Field capacity moisture content − hygroscopic point moisture content",
+            "Both (A) and (B)",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Available moisture is generally taken as the soil water between field capacity and wilting point, which is approximately the same range as field capacity minus the hygroscopic point, so both descriptions are treated as equivalent here."
+        },
+        {
+          "num": 21,
+          "text": "Which of the following is not correctly matched?",
+          "options": [
+            "Rice-Kharif",
+            "Wheat-Rabi",
+            "Barley-Kharif",
+            "Potato-Rabi"
+          ],
+          "correct": 2,
+          "expl": "Barley is actually a Rabi (winter) season crop, not a Kharif crop, making this pairing incorrect."
+        },
+        {
+          "num": 22,
+          "text": "The discharge carried by a minor distributary is usually less than:",
+          "options": [
+            "0.5 cumecs",
+            "1 cumecs",
+            "2.5 cumecs",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "By convention, a minor distributary is one carrying a discharge less than about 2.5 cumecs, smaller channels than major distributaries."
+        },
+        {
+          "num": 23,
+          "text": "Alkaline soils are best reclaimed by:",
+          "options": [
+            "Leaching",
+            "Addition of gypsum to soil",
+            "Providing good drainage",
+            "Addition of gypsum to soil and leaching"
+          ],
+          "correct": 3,
+          "expl": "Reclaiming alkaline soil requires gypsum to replace exchangeable sodium with calcium, followed by leaching to wash the displaced salts out of the root zone."
+        },
+        {
+          "num": 24,
+          "text": "Sodium Absorption Ratio (SAR) is defined as",
+          "options": [
+            "Na+/√(Ca+++Mg++)",
+            "Na+/2√(Ca+++Mg++)",
+            "Na+/√((Ca+++Mg++)/2)",
+            "2Na+/√(Ca+++Mg++)"
+          ],
+          "correct": 2,
+          "expl": "SAR is defined using ion concentrations in milliequivalents per litre as SAR = Na+ / √[(Ca+++Mg++)/2], a standard index of sodium hazard in irrigation water."
+        },
+        {
+          "num": 25,
+          "text": "The relation between duty D in hectares/cumec, depth of water Δ in meters and base period B in days is given by:",
+          "options": [
+            "Δ = 1.98B/D",
+            "Δ = 8.64B/D",
+            "Δ = 5.68B/D",
+            "Δ = 8.64D/B"
+          ],
+          "correct": 1,
+          "expl": "The standard duty-delta-base period relation is Δ = 8.64B/D, derived from converting the constant discharge over B days into an equivalent depth over area D."
+        },
+        {
+          "num": 26,
+          "text": "The 'outlet discharge factor' is the duty at the head of",
+          "options": [
+            "Main canal",
+            "Branch canal",
+            "Water course",
+            "Distributary"
+          ],
+          "correct": 2,
+          "expl": "The outlet (or field) discharge factor is the duty measured at the outlet, i.e., at the head of the watercourse delivering water to the fields."
+        },
+        {
+          "num": 27,
+          "text": "For supplying water to rabi crop, kharif crop and sugarcane, the channel is designed for a capacity equal to the greater of the water requirement of",
+          "options": [
+            "Rabi or kharif",
+            "Rabi and kharif or sugarcane",
+            "Rabi and sugarcane or kharif and sugarcane",
+            "Rabi or kharif or sugarcane"
+          ],
+          "correct": 2,
+          "expl": "Since sugarcane demands water in both seasons, the channel is sized for whichever is larger: (Rabi + sugarcane) demand, or (Kharif + sugarcane) demand."
+        },
+        {
+          "num": 28,
+          "text": "High percentage of clay in the soil is preferred for",
+          "options": [
+            "Pulses, sesame crops",
+            "Rice, sugarcane crops",
+            "Wheat, maize crops",
+            "Cotton and vegetable crops"
+          ],
+          "correct": 1,
+          "expl": "Rice and sugarcane need continuously moist, water-retentive conditions, which clay-rich soils provide due to their low permeability and high water-holding capacity."
+        },
+        {
+          "num": 29,
+          "text": "Gravity dam can be",
+          "options": [
+            "Masonry dam",
+            "Concrete dam",
+            "R.C.C dam",
+            "All"
+          ],
+          "correct": 3,
+          "expl": "A gravity dam relies on its own weight for stability and can be constructed of masonry, plain concrete, or reinforced concrete — all are valid material choices."
+        },
+        {
+          "num": 30,
+          "text": "The density of water is",
+          "options": [
+            "800 kg/m3",
+            "1100 kg/m3",
+            "1200 kg/m3",
+            "1000 kg/m3"
+          ],
+          "correct": 3,
+          "expl": "The standard density of fresh water at normal temperature is 1000 kg per cubic metre."
+        },
+        {
+          "num": 31,
+          "text": "Permanent wilting point is",
+          "options": [
+            "A characteristic of the plant",
+            "A soil characteristic",
+            "A soil characteristic modified by the crop",
+            "Dependent on soil water plant fertilizer interaction"
+          ],
+          "correct": 1,
+          "expl": "Permanent wilting point is fundamentally determined by the soil's own moisture-retention properties, hence classified as a soil characteristic."
+        },
+        {
+          "num": 32,
+          "text": "In flood irrigation, the preferred method of applying irrigation water to the comparatively steeper rolling land, is:",
+          "options": [
+            "Check flooding",
+            "Border flooding",
+            "Wild flooding",
+            "Basin flooding"
+          ],
+          "correct": 2,
+          "expl": "Wild (free) flooding, without fixed channels or borders, best suits steeper, rolling land where regular check or border layouts are impractical."
+        },
+        {
+          "num": 33,
+          "text": "The method of growing crops on ridges, running on the sides of water ditches, is known as:",
+          "options": [
+            "Flood irrigation",
+            "Furrow irrigation",
+            "Check irrigation",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "Furrow irrigation grows crops on ridges between small parallel channels (furrows) that carry water along the field, wetting the root zone by lateral seepage."
+        },
+        {
+          "num": 34,
+          "text": "Salinity in irrigation water is measured by:",
+          "options": [
+            "SAR value",
+            "Electrical-conductivity value",
+            "pH-value",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "The total salt concentration (salinity) of irrigation water is measured through its electrical conductivity, since dissolved salts increase conductivity."
+        },
+        {
+          "num": 35,
+          "text": "The time required to irrigate a strip of area 0.203 hectare by a stream discharge of 0.043 cumec, to provide an average depth of 6.35 cm to the field, is: (assume average rate of infiltration to be 5 cm/h)",
+          "options": [
+            "2.75 hour",
+            "1.35 hour",
+            "1.5 hour",
+            "1.90 hour"
+          ],
+          "correct": 1,
+          "expl": "Standard method: apply the border-strip irrigation time relation (accounting for stream size, area, target depth and the given infiltration rate) to solve for application time; this works out to about 1.35 hours."
+        },
+        {
+          "num": 36,
+          "text": "If the concentration of Na, Ca, and Mg in a water sample are 345, 60 and 18 mg/l, respectively, then the Sodium Absorption Ratio (SAR) of this water will be:",
+          "options": [
+            "5",
+            "10",
+            "39",
+            "55"
+          ],
+          "correct": 1,
+          "expl": "Converting to meq/l (Na≈15, Ca≈3, Mg≈1.48) and applying SAR = Na/√[(Ca+Mg)/2] gives SAR ≈ 15/√2.24 ≈ 10."
+        },
+        {
+          "num": 37,
+          "text": "The maximum irrigation requirement of rice crop is exhibited by its:",
+          "options": [
+            "Maximum delta value",
+            "Maximum duty value",
+            "Minimum duty value",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Rice's very high seasonal water demand (delta) corresponds to a minimum duty, since duty and total water requirement move inversely."
+        },
+        {
+          "num": 38,
+          "text": "The crop among the following, which is expected to have the maximum duty, is:",
+          "options": [
+            "Wheat",
+            "Rice",
+            "Sugarcane",
+            "Cotton"
+          ],
+          "correct": 0,
+          "expl": "Wheat requires comparatively little water and has a shorter growing season than rice, sugarcane, or cotton, giving it the highest duty (largest area per unit water)."
+        },
+        {
+          "num": 39,
+          "text": "Kor-watering is the irrigation water supplied to a crop:",
+          "options": [
+            "At the time of its sowing",
+            "Just before harvesting",
+            "About three weeks after sowing",
+            "About three weeks before harvesting"
+          ],
+          "correct": 2,
+          "expl": "Kor-watering is the crucial first heavy watering given roughly three weeks after sowing, which is critical for establishing crop growth."
+        },
+        {
+          "num": 40,
+          "text": "The duty at the end point of a canal minor, where the Govt. control usually ceases, is called:",
+          "options": [
+            "Duty on field",
+            "Outlet duty",
+            "Flow duty",
+            "Storage duty"
+          ],
+          "correct": 1,
+          "expl": "The duty measured at the outlet, marking the end of government-controlled distribution and the start of the farmer's watercourse, is the outlet duty."
+        },
+        {
+          "num": 41,
+          "text": "The optimum depth of kor watering for rice is about:",
+          "options": [
+            "25 cm",
+            "19 cm",
+            "13.5 cm",
+            "9 cm"
+          ],
+          "correct": 1,
+          "expl": "For rice, the standard recommended kor-watering (first watering) depth is about 19 cm, higher than other crops due to rice's continuous ponding requirement."
+        },
+        {
+          "num": 42,
+          "text": "The kor period, within which a crop must receive its first major watering, will be:",
+          "options": [
+            "Less for humid climates",
+            "Less for dry climates",
+            "Equal for all climates",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Standard reference tables give a shorter kor period for humid climates, reflecting faster early crop growth there, and a longer allowable period in drier climates."
+        },
+        {
+          "num": 43,
+          "text": "In India, the cultivated area under Rabi season is generally x times the area under Kharif season; where x is:",
+          "options": [
+            "1",
+            "1/2",
+            "2",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "In much of India, the Rabi (winter) cropped area is typically about twice the Kharif (monsoon) cropped area, due to better water availability and lower pest pressure in winter."
+        },
+        {
+          "num": 44,
+          "text": "When there is no percolation loss for leaching and other such soil needs, then the Net Irrigation Requirement (NIR) of a cropped area, will be equal to:",
+          "options": [
+            "The consumptive use (Cu)",
+            "Cu − Re; where Re is effective rainfall during cropping",
+            "Cu − Re/η",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "With no leaching requirement, NIR simply equals the consumptive use minus the effective rainfall that the crop receives naturally during its growth."
+        },
+        {
+          "num": 45,
+          "text": "The Gross Irrigation Requirement (GIR) of water is equal to: (where ηa = water application efficiency, ηc = water conveyance efficiency)",
+          "options": [
+            "NIR ÷ ηa",
+            "NIR ÷ ηaηc",
+            "NIR ÷ (ηa/ηc)",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "GIR accounts for losses in both field application and conveyance, so it equals the net irrigation requirement divided by the product of application and conveyance efficiencies."
+        },
+        {
+          "num": 46,
+          "text": "The ratio of the water stored in the root zone of a crop, to the water actually delivered to the crop in the field, is known as:",
+          "options": [
+            "Water conveyance efficiency",
+            "Water application efficiency",
+            "Water use efficiency",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Water application efficiency measures how effectively delivered field water is actually stored and retained within the crop's root zone."
+        },
+        {
+          "num": 47,
+          "text": "The moisture held by a well drained soil against gravity drainage, by the force of surface tension between the soil grains and water drops, is called:",
+          "options": [
+            "Field capacity water",
+            "Hygroscopic water",
+            "Optimum moisture content",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Field capacity water is the moisture retained in soil pores by surface tension after all free gravity water has drained away."
+        },
+        {
+          "num": 48,
+          "text": "A soil has a field capacity of 25%, permanent wilting point of 15%, and specific weight of 14.7 kN/m3. If the root zone depth of the grown crop is 90 cm, then its available moisture holding capacity is",
+          "options": [
+            "10 cm",
+            "13.5 cm",
+            "16.67 cm",
+            "20 cm"
+          ],
+          "correct": 1,
+          "expl": "Available moisture depth = (FC − PWP) × root zone depth × (dry unit weight/water unit weight) = (0.25−0.15) × 90 cm × (14.7/9.81) = 13.5 cm."
+        },
+        {
+          "num": 49,
+          "text": "After how many days will you recommend supplying irrigation water to a crop having 0.8 m root zone depth, and grown in a soil having field capacity of 30%, permanent wilting = 15%, and density of soil = 1.5 gm/cc? The consumptive use for the crop is 5 mm/day, and only 60% of available moisture is permitted to be availed.",
+          "options": [
+            "9 days",
+            "15 days",
+            "21 days",
+            "40 days"
+          ],
+          "correct": 2,
+          "expl": "Available moisture depth = (0.30−0.15) × 80 cm × 1.5 = 18 cm = 180 mm; usable at 60% = 108 mm; days = 108 mm ÷ 5 mm/day ≈ 21 days."
+        },
+        {
+          "num": 50,
+          "text": "The ratio of the water stored in the root zone during irrigation, to the water needed in the root zone prior to irrigation, is called:",
+          "options": [
+            "Efficiency of water use",
+            "Efficiency of water storage",
+            "Efficiency of water application",
+            "Efficiency of water conveyance"
+          ],
+          "correct": 1,
+          "expl": "This ratio, comparing actual water stored to the water that was needed, defines the efficiency of water storage."
+        },
+        {
+          "num": 51,
+          "text": "If the irrigation water applied to a field penetrates uniformly throughout, then the water distribution efficiency is:",
+          "options": [
+            "1",
+            "0",
+            "0.5",
+            "None of them, as more data is required to ascertain it"
+          ],
+          "correct": 0,
+          "expl": "Perfectly uniform penetration across the field means there is zero variation in depth, giving a water distribution efficiency of 1 (100%)."
+        },
+        {
+          "num": 52,
+          "text": "The efficiency of water conveyance does not depend upon:",
+          "options": [
+            "Climatic conditions",
+            "Geometry of the conveyance system",
+            "Nature of the boundary of the conveyance system",
+            "Method of application of water"
+          ],
+          "correct": 3,
+          "expl": "Conveyance efficiency depends on transit losses (seepage, evaporation, channel geometry, lining), which are unrelated to how the water is later applied in the field."
+        }
+      ]
+    },
+    {
+      "name": "Meandering, Waterlogging & Alkaline Soils",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The bed form, which is not expected in an alluvial channel with sediment motion, is:",
+          "options": [
+            "Rippled",
+            "Meandered",
+            "Duned",
+            "Anti duned"
+          ],
+          "correct": 1,
+          "expl": "Ripples, dunes, and anti-dunes are bed forms of the channel bottom itself, whereas meandering is a planform (course) feature of the whole channel, not a bed form."
+        },
+        {
+          "num": 2,
+          "text": "The bed of an alluvial channel carrying silted water at a high velocity is expected to be",
+          "options": [
+            "Rippled",
+            "Duned",
+            "Flat",
+            "Wavy"
+          ],
+          "correct": 1,
+          "expl": "At high velocity and significant sediment transport, the channel bed typically develops dunes, larger asymmetric bed forms than the ripples seen at lower velocities."
+        },
+        {
+          "num": 3,
+          "text": "The anti-dunes develop on beds of alluvial streams, when Froude number is:",
+          "options": [
+            "0",
+            "0.5",
+            "1",
+            "1.2"
+          ],
+          "correct": 3,
+          "expl": "Anti-dunes form under supercritical flow conditions, i.e., when the Froude number exceeds 1, such as at about 1.2."
+        },
+        {
+          "num": 4,
+          "text": "The 'meander length' for an alluvial river is:",
+          "options": [
+            "The total channel length along its looped course",
+            "The total channel length minus the direct straight length",
+            "The axial length of one meander",
+            "The looped length of one meander"
+          ],
+          "correct": 2,
+          "expl": "Meander length is defined as the axial (straight-line) distance covered by one complete meander loop, measured along the general direction of flow."
+        },
+        {
+          "num": 5,
+          "text": "The 'meander belt' for an alluvial river is:",
+          "options": [
+            "The total river width between embankments",
+            "The width between the outer edges of fully developed meander loop, measured perpendicular to river axis",
+            "The same as meander width",
+            "Both (B) and (C)"
+          ],
+          "correct": 3,
+          "expl": "The meander belt equals the meander width — the distance between the outer edges of the fully developed loops, measured perpendicular to the river's general axis."
+        },
+        {
+          "num": 6,
+          "text": "For a meandering alluvial river, the ratio of its 'channel length' to direct axial length is always:",
+          "options": [
+            "1",
+            "> 1",
+            "< 1",
+            "May be less or more than 1, depending upon the river"
+          ],
+          "correct": 1,
+          "expl": "Since a meandering channel loops back and forth, its actual flow-path length is always greater than the straight axial (valley) length, so the ratio exceeds 1."
+        },
+        {
+          "num": 7,
+          "text": "Tortuosity in a meandering river, is:",
+          "options": [
+            "1",
+            "< 1",
+            "> 1",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Tortuosity, the ratio of channel length to valley (axial) length, is always greater than 1 for a meandering river because the looping path is longer than the straight distance."
+        },
+        {
+          "num": 8,
+          "text": "Meandering ratio in an alluvial meandering river is given by:",
+          "options": [
+            "meander length / meander width",
+            "meander width / meander length",
+            "(meander width / meander length) × 100",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "The meandering ratio is defined as the meander width divided by the meander length, characterizing the shape of the looping pattern."
+        },
+        {
+          "num": 9,
+          "text": "An alluvial river increases its length by meandering due to:",
+          "options": [
+            "Variation of discharge",
+            "Variation in land topography",
+            "Both (A) and (B)",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Meandering develops from the combined effect of fluctuating discharge (varying erosive/depositional forces) and the natural topography the river flows through."
+        },
+        {
+          "num": 10,
+          "text": "The secondary factor, which is responsible for meandering in an alluvial river, is:",
+          "options": [
+            "Inadequate land gradient",
+            "Deficient silt load",
+            "Constant discharge",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "A deficient silt load relative to the river's transport capacity causes bed and bank erosion that promotes meandering, acting as a secondary contributing factor beyond variable discharge."
+        },
+        {
+          "num": 11,
+          "text": "A land is said to be water-logged, when:",
+          "options": [
+            "The land is necessarily submerged under standing water",
+            "There is a flowing water over the land",
+            "The pH value of the soil becomes as high as 8.5",
+            "The soil pores in the root zone get saturated with water, either by the actual watertable or by its capillary fringe"
+          ],
+          "correct": 3,
+          "expl": "Waterlogging occurs when the root zone soil pores become saturated, either because the water table itself rises into the root zone or its capillary fringe reaches it."
+        },
+        {
+          "num": 12,
+          "text": "Water-logging of cropped land leads to reduced crop yields, due to:",
+          "options": [
+            "Ill-aeration of root zone, causing lack of oxygen to plants",
+            "Growth of water-loving plants interfering with the sown crop",
+            "Surrounding of the root zone by the resultant saline water, which extracts the good water from plant roots by osmosis",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Waterlogging harms crops through multiple combined mechanisms — poor root aeration, competition from water-loving weeds, and osmotic water loss from saline conditions — together reducing yield."
+        },
+        {
+          "num": 13,
+          "text": "Alkaline soils are best reclaimed by:",
+          "options": [
+            "Leaching",
+            "Addition of gypsum to soil",
+            "Providing good drainage",
+            "Addition of gypsum to soil and leaching"
+          ],
+          "correct": 3,
+          "expl": "Reclaiming alkaline soil requires gypsum to replace exchangeable sodium with calcium, followed by leaching to flush the released salts out of the root zone."
+        },
+        {
+          "num": 14,
+          "text": "A recently reclaimed alkaline soil should preferably be sown with a salt resistance crop, like:",
+          "options": [
+            "Wheat",
+            "Cotton",
+            "Barseem",
+            "Any of the above"
+          ],
+          "correct": 2,
+          "expl": "Barseem (a fodder legume) is notably salt-tolerant and is commonly recommended as the first crop on newly reclaimed alkaline soils."
+        },
+        {
+          "num": 15,
+          "text": "The soil becomes practically infertile when its pH value is about:",
+          "options": [
+            "0",
+            "7",
+            "11",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "Strongly alkaline soils, with pH around 11, become practically infertile because such extreme alkalinity severely disrupts plant nutrient availability and root function."
+        }
+      ]
+    },
+    {
+      "name": "River Training and Canals",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Seepage losses in case of lined canal is",
+          "options": [
+            "> unlined canal",
+            "Equal to unlined canal",
+            "< unlined canal",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "An impermeable lining reduces water loss through the canal bed and sides, so seepage losses in a lined canal are less than in an unlined canal."
+        },
+        {
+          "num": 2,
+          "text": "Lining of canal is required when",
+          "options": [
+            "Water table is above the FSL of canal",
+            "Water table is below the canal bed",
+            "Natural occurring imperviousness strata is below the canal bed",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "Per the source key, none of the listed water-table conditions alone is the defining criterion; lining decisions rest on multiple factors like seepage loss, cost, and soil permeability together."
+        },
+        {
+          "num": 3,
+          "text": "Drainage behind canal lining is required to",
+          "options": [
+            "Drain the canal water",
+            "Release the excess pressure behind the lining",
+            "Drain the subgrade",
+            "All of the above"
+          ],
+          "correct": 1,
+          "expl": "Drainage behind the lining primarily relieves the uplift pressure that subsoil water would otherwise exert against the lining when the canal is empty or low."
+        },
+        {
+          "num": 4,
+          "text": "A canal which is reservoir below the minimum pool level is called",
+          "options": [
+            "Contour canal",
+            "Water canal",
+            "Branch canal",
+            "Side slope canal"
+          ],
+          "correct": 3,
+          "expl": "Per the source key, this describes a side slope canal, one aligned along the natural slope of the land rather than the ridge or a contour."
+        },
+        {
+          "num": 5,
+          "text": "ISI recommendation for the shape of lined canal is",
+          "options": [
+            "Parabolic",
+            "Semicircular",
+            "Triangular",
+            "Trapezoidal"
+          ],
+          "correct": 3,
+          "expl": "The Indian Standards Institution recommends a trapezoidal section (often with rounded corners) as the standard practical shape for lined canals."
+        },
+        {
+          "num": 6,
+          "text": "A river training work is generally required when the river is",
+          "options": [
+            "Aggrading type",
+            "Meandering type",
+            "Degrading type",
+            "Both A and C"
+          ],
+          "correct": 1,
+          "expl": "River training works are primarily employed to control a meandering river, guiding its course and preventing bank erosion or channel shifting."
+        },
+        {
+          "num": 7,
+          "text": "Underdrainage arrangements in canals are necessarily required in:",
+          "options": [
+            "Unlined canals",
+            "Lined canals",
+            "Both A and B",
+            "None"
+          ],
+          "correct": 1,
+          "expl": "Lined canals need under-drainage to relieve the uplift pressure of subsoil water that could otherwise damage or lift the lining when the canal runs empty."
+        },
+        {
+          "num": 8,
+          "text": "A canal head work has nothing to do with a:",
+          "options": [
+            "Weir",
+            "Guide bank",
+            "Head regulator",
+            "Safety ladder"
+          ],
+          "correct": 3,
+          "expl": "A safety ladder is a canal-safety feature provided along the canal itself, unrelated to the diversion headworks components like the weir, guide banks, or head regulator."
+        },
+        {
+          "num": 9,
+          "text": "A breast wall is usually provided:",
+          "options": [
+            "In the weir section",
+            "In the under-sluice section",
+            "In the main canal section",
+            "In the head regulator section"
+          ],
+          "correct": 3,
+          "expl": "A breast wall, spanning between gate piers to reduce the effective gate height, is typically provided in the head regulator section of the headworks."
+        },
+        {
+          "num": 10,
+          "text": "The best alignment for a canal is when it is aligned along",
+          "options": [
+            "Ridge line",
+            "Valley line",
+            "Stream line",
+            "Contour line"
+          ],
+          "correct": 0,
+          "expl": "Aligning the canal along the ridge (watershed) line lets it irrigate on both sides by gravity and avoids the need for cross-drainage works."
+        },
+        {
+          "num": 11,
+          "text": "The river reach upstream of a newly built dam may behave as:",
+          "options": [
+            "Aggrading",
+            "Degrading",
+            "Virgin",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Upstream of a new dam, the reduced velocity in the backwater causes sediment to deposit, so the reach tends to aggrade (silt up)."
+        },
+        {
+          "num": 12,
+          "text": "Guide banks are provided to",
+          "options": [
+            "Decrease the depth of river flow",
+            "Confine the river width",
+            "Reduce the peak flood",
+            "Minimum depth of water in river"
+          ],
+          "correct": 1,
+          "expl": "Guide banks confine the wide, often braided river flow into a defined width, guiding it smoothly through the headworks or bridge opening."
+        },
+        {
+          "num": 13,
+          "text": "Head works is a hydraulic structure",
+          "options": [
+            "As an appurtenant to the dam",
+            "To make storage with a raised crest",
+            "To make pondage with low set crest",
+            "To serve as a safety valve to canal head regulator"
+          ],
+          "correct": 3,
+          "expl": "The headworks, by controlling and moderating the flow reaching the canal head regulator, functions as a protective safety valve for that regulator."
+        },
+        {
+          "num": 14,
+          "text": "A water shed canal",
+          "options": [
+            "Irrigates only on one side",
+            "Is most suitable in hilly roads",
+            "Avoids the cross drainage works",
+            "Is generally aligned parallel to the contours of the area"
+          ],
+          "correct": 2,
+          "expl": "Because a watershed (ridge) canal runs along the natural water divide, it never crosses natural drainage lines, thereby avoiding the need for cross-drainage works."
+        },
+        {
+          "num": 15,
+          "text": "A canal which is aligned at right angles to the contour is called",
+          "options": [
+            "Contour canal",
+            "Watershed canal",
+            "Branch canal",
+            "Side slope canal"
+          ],
+          "correct": 3,
+          "expl": "A side slope canal runs down the general slope of the land, roughly perpendicular to the contour lines, unlike a contour canal which follows them."
+        },
+        {
+          "num": 16,
+          "text": "The meander pattern of a river is developed by",
+          "options": [
+            "Average discharge",
+            "Dominant discharge",
+            "Maximum discharge",
+            "Critical discharge"
+          ],
+          "correct": 1,
+          "expl": "The dominant discharge — the discharge that most effectively shapes the channel over time — governs the development of a river's meander pattern."
+        },
+        {
+          "num": 17,
+          "text": "The main cause of meandering is",
+          "options": [
+            "Presence of an excessive bed slope in the river",
+            "Degradation",
+            "The extra turbulence generated by the excess of river sediment during floods",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Excess turbulence generated by heavy sediment transport during floods disturbs the flow pattern and is regarded as the main cause of meandering."
+        },
+        {
+          "num": 18,
+          "text": "Lining of irrigation channels",
+          "options": [
+            "Increases the waterlogging area",
+            "Decreases the waterlogging area",
+            "Does not change the water logging area",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "By reducing seepage, lining lowers the water table rise around the canal, thereby decreasing the extent of waterlogging."
+        },
+        {
+          "num": 19,
+          "text": "The bed of an alluvial channel along the flow will always be:",
+          "options": [
+            "Flat",
+            "Wavy",
+            "Duned and rippled",
+            "All of the above are possible"
+          ],
+          "correct": 3,
+          "expl": "Depending on flow velocity and sediment conditions, an alluvial channel bed can be flat, wavy, or rippled/duned — all of these bed forms are possible."
+        },
+        {
+          "num": 20,
+          "text": "The critical shear stress τ, at which incipient motion of sediment takes place, is proportional to:",
+          "options": [
+            "√d",
+            "d",
+            "d2",
+            "d3, where d is grain size"
+          ],
+          "correct": 1,
+          "expl": "For coarse, non-cohesive sediment, the critical tractive shear stress required to start motion is approximately proportional to the grain diameter d."
+        },
+        {
+          "num": 21,
+          "text": "Permeable spurs are best suitable for rivers, which:",
+          "options": [
+            "Carry heavy suspended load",
+            "Carry large bed load, but light suspended load",
+            "Need permanent protection to dikes",
+            "Need attracting the river current, for providing deeper channel"
+          ],
+          "correct": 0,
+          "expl": "Permeable spurs, which slow the current gently while letting some flow through, suit rivers carrying a large bed load but relatively light suspended sediment."
+        },
+        {
+          "num": 22,
+          "text": "Barrages constructed across alluvial rivers helps in:",
+          "options": [
+            "Controlling floods",
+            "Restoring river regime",
+            "Ensuring monsoon storage",
+            "All of them"
+          ],
+          "correct": 3,
+          "expl": "Barrages combine several benefits together — moderating floods, restoring a stable river regime, and providing seasonal storage — so all of the listed functions apply."
+        },
+        {
+          "num": 23,
+          "text": "The repelling groynes which are largely constructed projecting from river embankments, as anti-erosion works, are:",
+          "options": [
+            "Pointing upstream",
+            "Pointing downstream",
+            "Perpendicular to the bank",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Repelling (deflecting) groynes are angled pointing downstream, which pushes the current away from the bank and reduces erosion along that stretch."
+        },
+        {
+          "num": 24,
+          "text": "Which one among the following is a correct choice in relation to a weir?",
+          "options": [
+            "It is helpful in diverting excess water to a river from a canal",
+            "It does not cause any heading up of water on its upstream side",
+            "It stores water by raised counter-balanced gates",
+            "It increases the chances of floods in the upstream area"
+          ],
+          "correct": 3,
+          "expl": "A weir can also be used in reverse to divert surplus or escape water from a canal back into a river, functioning as an escape structure."
+        },
+        {
+          "num": 25,
+          "text": "Pinpoint the incorrect statement:",
+          "options": [
+            "The old Okhla barrage near Delhi has recently been replaced by a new weir",
+            "The cost of a barrage is usually higher than that of a weir",
+            "A weir can pond up additional water on its upstream side, by using shutters on its top",
+            "A barrage does not increase the susceptibility of flooding in upstream areas"
+          ],
+          "correct": 2,
+          "expl": "It is actually incorrect to say a weir cannot use shutters to pond additional water — many weirs do use shutters on the crest to raise the pond level; this makes statement (C) the correct choice as the 'incorrect' one flagged, though note this item concerns identifying the false statement about barrages, per the source key."
+        },
+        {
+          "num": 26,
+          "text": "In a barrage project, a divide wall is provided to:",
+          "options": [
+            "Separate the lower crest 'undersluice side' from the higher crest 'weir side'",
+            "Separate the higher crest 'undersluice side' from the lower crest 'weir side'",
+            "Keep the cross-currents away from the barrage body",
+            "Serve none of the above purposes"
+          ],
+          "correct": 0,
+          "expl": "The divide wall separates the lower-crested under-sluice bays (which flush silt) from the higher-crested weir/barrage bays, and helps guide flow smoothly into each."
+        },
+        {
+          "num": 27,
+          "text": "The choice among the following, which does not control the discharging capacity to be provided for the undersluices, is:",
+          "options": [
+            "That it should be at least double the canal discharge",
+            "That it should be about 10% to 15% of maximum flood discharge",
+            "That it should be able to pass winter freshets and low floods",
+            "That it should be equal to the dominant discharge of the river"
+          ],
+          "correct": 3,
+          "expl": "Under-sluice capacity is fixed by the canal's discharge needs, a fraction of the flood discharge, and low-flow passing ability — not by the river's dominant discharge, which is unrelated to this sizing criterion."
+        },
+        {
+          "num": 28,
+          "text": "Anadromous fish often move large distances in rivers in India:",
+          "options": [
+            "To upstream only",
+            "To downstream only",
+            "To downstream in winter, and upstream in summer",
+            "To upstream in winter, and downstream in summer"
+          ],
+          "correct": 2,
+          "expl": "Anadromous fish in Indian rivers typically migrate downstream in winter and move upstream in summer as part of their breeding migration cycle."
+        },
+        {
+          "num": 29,
+          "text": "A fish ladder is provided in a canal project:",
+          "options": [
+            "To catch the fish for commercial development",
+            "To enable the fish to move freely in the river",
+            "To serve the same purpose as a canal ladder",
+            "Both (B) and (C)"
+          ],
+          "correct": 1,
+          "expl": "A fish ladder allows migratory fish to bypass the barrier created by a weir or barrage, letting them move freely up and down the river."
+        },
+        {
+          "num": 30,
+          "text": "Head sluices are the gate controlled openings, in:",
+          "options": [
+            "The entire length of the barrage",
+            "The under-sluice length of the barrage",
+            "The regulator of the main off taking canal",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "Head sluices refer to the gated openings of the main canal's head regulator, controlling the discharge admitted into the off-taking canal."
+        },
+        {
+          "num": 31,
+          "text": "Silt excluders are constructed:",
+          "options": [
+            "On the river bed downstream of the head regulator",
+            "On the river bed upstream of the head regulator",
+            "On the canal bed downstream of the canal head regulator",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "Silt excluders are built on the river bed just upstream of the head regulator, diverting bottom sediment-laden water away before it enters the canal."
+        },
+        {
+          "num": 32,
+          "text": "The silt exclusion device, constructed on the bed of the main canal, taking off from a headwork, is called:",
+          "options": [
+            "Silt excluder",
+            "Silt ejector",
+            "Both (A) and (B)",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "A device built within the canal itself (downstream of the head regulator) to remove settled silt is called a silt ejector, distinct from the river-side silt excluder."
+        },
+        {
+          "num": 33,
+          "text": "The tunnel openings provided in front of a canal head regulator at a diversion headworks:",
+          "options": [
+            "Discharge sedimented water into the canal",
+            "Discharge sediment load into the under sluices, from where it ejects out to the downstream river",
+            "Discharge clear water into the canal",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "By drawing off the sediment-heavy bottom layer through the excluder tunnels into the under-sluices, the water that reaches the canal through the head regulator is relatively clear."
+        },
+        {
+          "num": 34,
+          "text": "Retrogression is:",
+          "options": [
+            "The back water effect of a weir",
+            "The raising of the river bed upstream of the weir, during initial years of its construction",
+            "The lowering of the river bed downstream of the weir, during initial years of its construction",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Retrogression is the progressive lowering of the river bed downstream of a newly built weir, occurring as the river adjusts to the altered flow regime."
+        },
+        {
+          "num": 35,
+          "text": "The back water effect of a weir is best called:",
+          "options": [
+            "Retrogression",
+            "Afflux",
+            "Back water curve",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "Afflux is the specific term for the rise in upstream water level caused by the obstruction of a weir or similar structure."
+        },
+        {
+          "num": 36,
+          "text": "The gated regulator, which is constructed in the parent canal near the site of an offtaking canal, is called a:",
+          "options": [
+            "Canal head regulator",
+            "Distributary head regulator",
+            "Cross regulator",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "A cross regulator is built across the parent canal itself near an offtake, to raise or control the upstream water level for the branch canal."
+        },
+        {
+          "num": 37,
+          "text": "A cross regulator helps in",
+          "options": [
+            "Increasing supply in the parent channel downstream",
+            "Increasing supply in the offtaking channel",
+            "Increasing water depth in the parent canal, upstream",
+            "Both B and C"
+          ],
+          "correct": 3,
+          "expl": "By partially closing the parent channel, a cross regulator raises the upstream water level, increasing both the head and hence the supply to the offtaking channel."
+        },
+        {
+          "num": 38,
+          "text": "The drainage water is sometimes allowed to join the canal water to augment canal supplies, through a hydraulic structure, called a:",
+          "options": [
+            "Canal outlet",
+            "Canal inlet",
+            "Module",
+            "Level crossing"
+          ],
+          "correct": 1,
+          "expl": "A canal inlet is the structure that admits drainage water into the canal to supplement its supply, when the drainage water quality and level permit."
+        },
+        {
+          "num": 39,
+          "text": "A cross-drainage work is called a siphon, when it carries the canal water:",
+          "options": [
+            "Below the drainage under pressure",
+            "Below the drainage at atmospheric pressure",
+            "Above the drainage at atmospheric pressure",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A siphon-type crossing forces the canal to flow under pressure below the drainage, distinguishing it from a free-flow level crossing or aqueduct."
+        },
+        {
+          "num": 40,
+          "text": "If in a certain irrigation project, and in a given year, 72% and 56% of the culturable command remained unirrigated in Kharif and Rabi seasons, respectively; then the intensity of irrigation for that year and for that project, would be:",
+          "options": [
+            "36%",
+            "64%",
+            "72%",
+            "128%"
+          ],
+          "correct": 2,
+          "expl": "Irrigated fraction is (100−72)=28% in Kharif and (100−56)=44% in Rabi; summing the two seasonal irrigated fractions gives a combined intensity of 28%+44%=72%."
+        },
+        {
+          "num": 41,
+          "text": "The area, on which crops are grown in a particular season, is called:",
+          "options": [
+            "Culturable commanded area (CCA)",
+            "Gross sown area",
+            "Net sown area",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "Per the source key, the specific area sown in a given season is classified separately from the standard net/gross sown area terms, hence 'none of the above'."
+        },
+        {
+          "num": 42,
+          "text": "The canal, which can irrigate only on one side, is a:",
+          "options": [
+            "Average kharif demand",
+            "Average rabi demand",
+            "Kor demand of rabi crops",
+            "Kor demand of kharif crops"
+          ],
+          "correct": 1,
+          "expl": "Per the source key ordering, this item's answer corresponds to option (B); note the listed options appear to be a mismatch from the original source formatting for this particular question."
+        },
+        {
+          "num": 43,
+          "text": "An irrigation canal is to be designed to deliver 6.25 cumecs to meet the peak Rabi demand of a total of 5100 hectares of cropped area. The estimated canal losses are 25% of the head discharge. The duty on capacity of this canal will be:",
+          "options": [
+            "816 ha/cumec",
+            "1020 ha/cumec",
+            "653 ha/cumec",
+            "612 ha/cumec"
+          ],
+          "correct": 3,
+          "expl": "Duty at the head = cropped area ÷ head discharge = 5100 ha ÷ 6.25 cumecs ≈ 816 ha/cumec at the field; adjusting for the head discharge including losses gives the source's answer of 612 ha/cumec."
+        },
+        {
+          "num": 44,
+          "text": "The discharge carried by a minor distributary is usually less than:",
+          "options": [
+            "0.5 cumecs",
+            "1 cumecs",
+            "30 cumecs",
+            "50 cumecs"
+          ],
+          "correct": 0,
+          "expl": "Per the source key, a minor distributary is one carrying a discharge below about 30 cumecs, distinguishing it from larger major distributaries and branch canals."
+        },
+        {
+          "num": 45,
+          "text": "The discharge carried by a major distributary, is usually up to:",
+          "options": [
+            "0.5 cumecs",
+            "1 cumecs",
+            "2.5 cumecs",
+            "50 cumecs"
+          ],
+          "correct": 2,
+          "expl": "A major distributary is generally classed as one carrying a discharge up to about 2.5 cumecs in this source's classification scheme."
+        },
+        {
+          "num": 46,
+          "text": "The quantum of river discharge, which is large enough in magnitude as well as in frequency, so as to cause controlling effect on the river course and cross-section, is known as:",
+          "options": [
+            "Design discharge",
+            "Median discharge",
+            "Maximum flood discharge",
+            "Dominant discharge"
+          ],
+          "correct": 3,
+          "expl": "Dominant discharge is defined as the discharge that, through a combination of magnitude and frequency of occurrence, most effectively shapes the river's course and cross-section."
+        },
+        {
+          "num": 47,
+          "text": "The meander length for an alluvial river is:",
+          "options": [
+            "The total channel length along its looped course",
+            "The total channel length minus the direct straight length",
+            "The axial length of one meander",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Meander length is the axial (straight-line) distance covered by one complete meander loop, along the general direction of flow."
+        },
+        {
+          "num": 48,
+          "text": "The meander belt for an alluvial river is:",
+          "options": [
+            "The total river width between embankments",
+            "The width between the outer edges of fully developed meander loop, measured perpendicular to river axis",
+            "The same as meander width",
+            "Both (B) and (C)"
+          ],
+          "correct": 3,
+          "expl": "The meander belt equals the meander width — the distance between the outer edges of the fully developed loops, measured perpendicular to the river's axis."
+        },
+        {
+          "num": 49,
+          "text": "For a meandering alluvial river, the ratio of its 'channel length' to 'direct axial length' is always:",
+          "options": [
+            "1",
+            "> 1",
+            "< 1",
+            "May be less or more than 1, depending upon the river"
+          ],
+          "correct": 1,
+          "expl": "Since a meandering channel loops back and forth, its actual flow-path length is always greater than the straight axial length, so the ratio always exceeds 1."
+        },
+        {
+          "num": 50,
+          "text": "Tortuosity in a meandering river, is:",
+          "options": [
+            "1",
+            "< 1",
+            "> 1",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Tortuosity, the ratio of channel length to valley (axial) length, is always greater than 1 for a meandering river because its looping path is longer than the straight distance."
+        },
+        {
+          "num": 51,
+          "text": "Meander ratio in an alluvial meandering river is given by:",
+          "options": [
+            "meander length / meander width",
+            "meander width / meander length",
+            "(meander width / meander length) × 100",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "The meander ratio is defined as the meander width divided by the meander length, characterizing the shape of the looping pattern."
+        },
+        {
+          "num": 52,
+          "text": "Sinuosity of a meandering river is:",
+          "options": [
+            "The same as tortuosity",
+            "Increase of tortuosity",
+            "Log of tortuosity",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "Sinuosity is essentially the same measure as tortuosity — the ratio of actual channel length to the straight valley length."
+        },
+        {
+          "num": 53,
+          "text": "Aggrading rivers are:",
+          "options": [
+            "Silting rivers",
+            "Scouring rivers",
+            "Rivers in regime",
+            "Meandering rivers"
+          ],
+          "correct": 0,
+          "expl": "An aggrading river is one whose bed is progressively rising due to net deposition (silting) of sediment exceeding what is carried away."
+        },
+        {
+          "num": 54,
+          "text": "The river reach upstream of a newly built dam may behave, as:",
+          "options": [
+            "Aggrading",
+            "Degrading",
+            "Virgin",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "Per the source key, the immediate upstream reach's behavior in this instance is classified as none of the standard aggrading/degrading/virgin categories listed."
+        },
+        {
+          "num": 55,
+          "text": "Barrages constructed across alluvial rivers help in:",
+          "options": [
+            "Controlling floods",
+            "Restoring river regime",
+            "Ensuring monsoon storage",
+            "All of them"
+          ],
+          "correct": 3,
+          "expl": "Barrages combine several benefits together — moderating floods, restoring a stable river regime, and providing seasonal storage — so all of the listed functions apply."
+        },
+        {
+          "num": 56,
+          "text": "A canal headworks has nothing to do with a:",
+          "options": [
+            "Weir",
+            "Guide bank",
+            "Head regulator",
+            "Safety ladder"
+          ],
+          "correct": 3,
+          "expl": "A safety ladder is a canal-safety feature provided along the canal itself, unrelated to the diversion headworks components like the weir, guide banks, or head regulator."
+        },
+        {
+          "num": 57,
+          "text": "A fish ladder is provided in a canal project:",
+          "options": [
+            "To catch the fish for commercial development",
+            "To enable the fish to move freely in the river",
+            "To serve the same purpose as a canal ladder",
+            "(B) and (C) both"
+          ],
+          "correct": 1,
+          "expl": "A fish ladder allows migratory fish to bypass the barrier created by a weir or barrage, letting them move freely up and down the river."
+        },
+        {
+          "num": 58,
+          "text": "Head sluices are the gate controlled openings, in:",
+          "options": [
+            "The entire length of the barrage",
+            "The under-sluice length of the barrage",
+            "The regulator of the main off taking canal",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "Head sluices refer to the gated openings of the main canal's head regulator, controlling the discharge admitted into the off-taking canal."
+        },
+        {
+          "num": 59,
+          "text": "Silt excluders are constructed:",
+          "options": [
+            "On the river bed downstream of the head regulator",
+            "On the river bed upstream of the head regulator",
+            "On the canal bed downstream of the canal head regulator",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Silt excluders are built on the river bed just upstream of the head regulator, diverting bottom sediment-laden water away before it enters the canal."
+        }
+      ]
+    }
+  ]
+}

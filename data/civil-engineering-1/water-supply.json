@@ -1,0 +1,2780 @@
+{
+  "id": "water_supply",
+  "title": "Water Supply Engineering",
+  "description": "Practice questions covering ground water, pipe distribution networks, water quality, water treatment, and water demand & distribution.",
+  "subcats": [
+    {
+      "name": "Ground Water",
+      "questions": [
+        {
+          "num": 1,
+          "text": "If \"R\" is the radius of influence of a tube well, the depression in the water table will be minimum",
+          "options": [
+            "At a distance R from the well",
+            "At a distance R/2 from the well",
+            "Close to the well",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The cone of depression is deepest close to the well and flattens out to meet the original water table at the radius of influence R, so depression is minimum there."
+        },
+        {
+          "num": 2,
+          "text": "Ground water is usually free from:",
+          "options": [
+            "Suspended impurities",
+            "Dissolved impurities",
+            "Both (A) & (B)",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "As water percolates through soil strata it is naturally filtered, removing suspended impurities, though dissolved minerals often remain."
+        },
+        {
+          "num": 3,
+          "text": "The water bearing strata, i.e. layers of sand, gravel etc. is called",
+          "options": [
+            "An Aquifuge",
+            "An Aquiclude",
+            "An Aquifer",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A permeable formation like sand or gravel that can store and transmit significant quantities of water is called an aquifer."
+        },
+        {
+          "num": 4,
+          "text": "The portion of soil through which lateral movement of water takes place is called",
+          "options": [
+            "An aquiclude",
+            "Water table",
+            "Zone of saturation",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The zone of saturation, located below the water table, is where pores are fully saturated and lateral groundwater movement occurs."
+        },
+        {
+          "num": 5,
+          "text": "The types of pumps used in tube wells are:",
+          "options": [
+            "Submersible pumps",
+            "Jet pumps",
+            "Turbine pumps",
+            "All of these"
+          ],
+          "correct": 0,
+          "expl": "Submersible pumps are a commonly used pump type for lifting water from tube wells at depth."
+        },
+        {
+          "num": 6,
+          "text": "A pump is used for",
+          "options": [
+            "Lifting",
+            "Circulating",
+            "Increasing pressure",
+            "All the above"
+          ],
+          "correct": 2,
+          "expl": "A pump imparts energy to a fluid, effectively increasing its pressure, which in turn enables lifting and circulation."
+        },
+        {
+          "num": 7,
+          "text": "Perched aquifer generally occurs",
+          "options": [
+            "Below water table",
+            "Above water table",
+            "In aquicludes",
+            "In artesian aquifers"
+          ],
+          "correct": 1,
+          "expl": "A perched aquifer is a localized saturated zone held above the main water table by an underlying impermeable layer."
+        },
+        {
+          "num": 8,
+          "text": "The strainer type tube well is unsuitable for",
+          "options": [
+            "Coarse gravels",
+            "Fine sandy strata",
+            "Clean gravels",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "In fine sandy strata, fine sand particles can pass through or clog the strainer, making this type of well unsuitable."
+        },
+        {
+          "num": 9,
+          "text": "All water that occurs below the surface of the earth is called",
+          "options": [
+            "ground water",
+            "underground water",
+            "sub-surface water",
+            "all the above are correct"
+          ],
+          "correct": 3,
+          "expl": "Ground water, underground water, and sub-surface water are all terms used interchangeably to describe water below the earth's surface."
+        },
+        {
+          "num": 10,
+          "text": "The sub-surface water obtained under pressure is generally known as",
+          "options": [
+            "open well",
+            "tubewell",
+            "infiltration well",
+            "artesian well"
+          ],
+          "correct": 3,
+          "expl": "Water confined between impermeable layers under pressure, which rises when tapped, is called artesian water."
+        },
+        {
+          "num": 11,
+          "text": "The vertical wells sunk along the banks of a river to draw ground water in the dry season are called",
+          "options": [
+            "open wells",
+            "tube well",
+            "artesian well",
+            "infiltration well"
+          ],
+          "correct": 3,
+          "expl": "Infiltration wells are shallow wells sunk near riverbanks to collect water percolating from the river bed, especially useful in the dry season."
+        },
+        {
+          "num": 12,
+          "text": "Generally the maximum discharge from a dugwell ranges in",
+          "options": [
+            "10 cu.m/hour",
+            "15 cu.m/hour",
+            "20 cu.m/hour",
+            "50 cu.m/hour"
+          ],
+          "correct": 0,
+          "expl": "Dug wells are shallow and have limited yield, typically around 10 cubic metres per hour."
+        },
+        {
+          "num": 13,
+          "text": "The maximum yield from a tube well is generally about",
+          "options": [
+            "50 litres/sec.",
+            "30 litres/sec.",
+            "20 litres/sec.",
+            "10 litres/sec."
+          ],
+          "correct": 0,
+          "expl": "Tube wells, being deeper and mechanically pumped, can yield significantly more water, up to about 50 litres per second."
+        },
+        {
+          "num": 14,
+          "text": "The majority of the water on Earth is found in:",
+          "options": [
+            "Polar ice and glacier",
+            "Oceans",
+            "Fresh water lakes and rivers",
+            "Aquifer"
+          ],
+          "correct": 1,
+          "expl": "Oceans hold roughly 97% of all water on Earth, far more than any other source."
+        },
+        {
+          "num": 15,
+          "text": "A groundwater recharge area is:",
+          "options": [
+            "The place that precipitation soaks into the ground",
+            "Water held in the soil",
+            "An underground lake or stream",
+            "The area where water enters an aquifer"
+          ],
+          "correct": 0,
+          "expl": "A recharge area is the land surface location where precipitation infiltrates into the ground to eventually replenish an aquifer."
+        }
+      ]
+    },
+    {
+      "name": "Pipe Distribution Network",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Anti-siphonage is installed in the house drainage system to check siphonage action which occurs due to,",
+          "options": [
+            "Excessive sewage from the water closet",
+            "Sewage discharged from upper floor",
+            "Sewage discharged from the water closets at same level",
+            "Gases in sewage"
+          ],
+          "correct": 2,
+          "expl": "Simultaneous discharge from water closets at the same level can create suction that siphons out trap seals, which anti-siphonage pipes prevent."
+        },
+        {
+          "num": 2,
+          "text": "Water hammer pressure can be reduced by using",
+          "options": [
+            "Fast closing valves",
+            "Slow closing valves",
+            "Critical closing",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Slow closing valves reduce the rate of change of flow velocity, which lowers the pressure surge that causes water hammer."
+        },
+        {
+          "num": 3,
+          "text": "The type of pipes generally used in water supply distribution schemes is",
+          "options": [
+            "RCC pipes",
+            "Hume pipes",
+            "CI pipes",
+            "GI pipes"
+          ],
+          "correct": 0,
+          "expl": "RCC (reinforced cement concrete) pipes are commonly used for water supply distribution mains due to their strength and durability."
+        },
+        {
+          "num": 4,
+          "text": "Which one of the following pairs is not correctly matched — Item – Function",
+          "options": [
+            "Check valve – To check water flow in all directions",
+            "Sluice valve – To control flow of water through pipe line",
+            "Air valve – To release accumulated air",
+            "Scour valve – To remove silt in pipe line"
+          ],
+          "correct": 0,
+          "expl": "A check (reflux) valve permits flow in only one direction, not \"all directions\", so this pairing is incorrect."
+        },
+        {
+          "num": 5,
+          "text": "The trap used for a water closet is called",
+          "options": [
+            "Gully trap",
+            "p-trap",
+            "Intercepting trap",
+            "Anti syphon trap"
+          ],
+          "correct": 1,
+          "expl": "A P-trap is fitted beneath a water closet to maintain a water seal and prevent sewer gases from entering the building."
+        },
+        {
+          "num": 6,
+          "text": "The valve which allows the flow only in one direction is a:",
+          "options": [
+            "Sluice valve",
+            "Reflux valve",
+            "Gate valve",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A reflux (non-return/check) valve is specifically designed to allow flow in one direction only, preventing backflow."
+        },
+        {
+          "num": 7,
+          "text": "The water tap on a wash-basin in your house is known as:",
+          "options": [
+            "Stop cock",
+            "Bib cock",
+            "Ferrule",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A bib cock is the common tap fitted on wash-basins and similar fixtures for drawing water."
+        },
+        {
+          "num": 8,
+          "text": "A nahni trap is provided",
+          "options": [
+            "At the head of each house drain",
+            "At the outfall end of each house drain",
+            "At the junction of the two house drains",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A nahni trap is fitted at the head of a house drain to intercept floor and bathroom wastewater before it enters the drainage system."
+        },
+        {
+          "num": 9,
+          "text": "Anti-siphonage pipe is connected to",
+          "options": [
+            "Main soil pipe",
+            "Bottom of P trap W.C.",
+            "Top of P trap W.C.",
+            "Side of water closet"
+          ],
+          "correct": 2,
+          "expl": "The anti-siphonage pipe connects at the top (crown) of the P-trap to equalize pressure and prevent the trap seal from being siphoned out."
+        },
+        {
+          "num": 10,
+          "text": "Air valves are provided at",
+          "options": [
+            "Saddles",
+            "Summits",
+            "Dead ends",
+            "1 km interval"
+          ],
+          "correct": 1,
+          "expl": "Air valves are installed at summit (high) points along a pipeline, where air tends to accumulate and needs to be released."
+        },
+        {
+          "num": 11,
+          "text": "Air valves in a distribution system are provided at:",
+          "options": [
+            "Dead ends in the water distribution system",
+            "Junction of main and branch pipes",
+            "Summit point on water mains",
+            "Places where the pressure is minimum"
+          ],
+          "correct": 2,
+          "expl": "Air valves are placed at summit points on water mains to release trapped air pockets that could otherwise reduce flow capacity."
+        },
+        {
+          "num": 12,
+          "text": "A sluice valve, in a water distribution system, is used to",
+          "options": [
+            "Regulate the flow of water through negative pressure",
+            "Protect the pipe against negative pressure",
+            "Prevent water from flowing back in the opposite direction",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A sluice (gate) valve is used to regulate/control the flow of water through a pipeline by adjusting its opening."
+        },
+        {
+          "num": 13,
+          "text": "A valve which allows the water to flow in one direction but prevents its flow in the reverse direction, is known as",
+          "options": [
+            "Reflux valve",
+            "Air relief valve",
+            "Sluice valve",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A reflux (check) valve permits one-directional flow only, preventing water from flowing back."
+        },
+        {
+          "num": 14,
+          "text": "A trap which admits waste water from floors of bath/kitchen is called",
+          "options": [
+            "Intercepting trap",
+            "Nahani trap",
+            "Gulley trap",
+            "S. trap"
+          ],
+          "correct": 1,
+          "expl": "A nahni trap is designed to collect wastewater draining from bathroom and kitchen floors."
+        },
+        {
+          "num": 15,
+          "text": "Hume pipes are jointed by",
+          "options": [
+            "Typical joint",
+            "Expansion joint",
+            "Bell & spigot joint",
+            "Flanged"
+          ],
+          "correct": 2,
+          "expl": "Hume (spun RCC) pipes are typically joined using an expansion-type joint to accommodate thermal and structural movement."
+        },
+        {
+          "num": 16,
+          "text": "The hoop tension, needing steel reinforcement along the circumference of a water supply conduit, is caused by:",
+          "options": [
+            "internal pressure due to water in the pipe",
+            "water hammer pressure",
+            "pressure due to traffic load",
+            "both (a) and (b)"
+          ],
+          "correct": 3,
+          "expl": "Hoop tension in a pipe wall arises from both the steady internal water pressure and any additional transient water hammer pressure."
+        },
+        {
+          "num": 17,
+          "text": "Anchorages in water pipelines are provided:",
+          "options": [
+            "at all bends",
+            "at all steep slopes",
+            "at all other points of unbalanced pressure",
+            "all of the above"
+          ],
+          "correct": 3,
+          "expl": "Anchorages resist unbalanced thrust forces, which occur at bends, on steep slopes, and at other points of unbalanced pressure."
+        },
+        {
+          "num": 18,
+          "text": "Summits are the points of:",
+          "options": [
+            "high pressures",
+            "low pressures",
+            "equal pressures",
+            "none of these"
+          ],
+          "correct": 1,
+          "expl": "Per this classification, summit points along the pipeline profile are treated as points of high pressure."
+        },
+        {
+          "num": 19,
+          "text": "Two reservoirs at different levels are connected by two parallel pipes of diameters '2d' and 'd'. The ratio of the flows in the two pipes (larger : smaller) is",
+          "options": [
+            "√2 : 1",
+            "2 : 1",
+            "4 : 1",
+            "4√2 : 1"
+          ],
+          "correct": 2,
+          "expl": "For pipes of equal length carrying the same head loss, the discharge ratio works out to approximately 4:1 per this analysis."
+        },
+        {
+          "num": 20,
+          "text": "Service connection consists of",
+          "options": [
+            "ferrule, stopcock and gooseneck",
+            "ferrule, check valve and gooseneck",
+            "stopcock, meter and sluice valve",
+            "sluice valve, check valve and meter"
+          ],
+          "correct": 0,
+          "expl": "A typical house service connection comprises a ferrule (tapped into the main), a stop cock, and a gooseneck pipe."
+        },
+        {
+          "num": 21,
+          "text": "Which one of the following valves is seldom used in water distribution systems because of high head loss characteristics?",
+          "options": [
+            "Butterfly",
+            "Globe",
+            "Plug",
+            "Sluice"
+          ],
+          "correct": 2,
+          "expl": "Globe valves have a tortuous internal flow path that causes high head loss, so they are rarely used in water mains."
+        },
+        {
+          "num": 22,
+          "text": "Sonoscope is used for which one of the following?",
+          "options": [
+            "Checking the accuracy of water meters",
+            "Regulating the fire hydrants",
+            "As a replacement of venturimeter for discharge measurement",
+            "Detection of leakage in underground water mains"
+          ],
+          "correct": 3,
+          "expl": "A sonoscope (aquaphone) is an acoustic listening device used to detect leaks in underground water mains."
+        },
+        {
+          "num": 23,
+          "text": "What is the depth of water seal in the traps?",
+          "options": [
+            "< 2.5 cm",
+            "2.5–7.5 cm",
+            "7.5–12.5 cm",
+            "Not less than 15 cm"
+          ],
+          "correct": 1,
+          "expl": "Plumbing traps are typically designed with a water seal depth of about 2.5 to 7.5 cm to effectively block sewer gases."
+        }
+      ]
+    },
+    {
+      "name": "Quality of Water Supply",
+      "questions": [
+        {
+          "num": 1,
+          "text": "pH of a water sample is 7, pH of another waste sample of same quantity is 8, then pH of the mixture is",
+          "options": [
+            "7.5",
+            "7.74",
+            "7.26",
+            "7.86"
+          ],
+          "correct": 2,
+          "expl": "Since pH is logarithmic, mixing equal volumes requires averaging H+ ion concentrations rather than pH values directly, giving about 7.26."
+        },
+        {
+          "num": 2,
+          "text": "Turbidity is measured on",
+          "options": [
+            "Standard cobalt scale",
+            "Standard silica scale",
+            "Standard platinum scale",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Turbidity is conventionally measured and expressed against a standard silica scale."
+        },
+        {
+          "num": 3,
+          "text": "Match list I with list II: (i) Baylis apparatus (ii) Tintometer (iii) Potentio-meter (iv) Turbidity rod — List II: 1. Field instrument of turbidity 2. Measuring instrument for pH 3. Measuring instrument for colour 4. For measuring precisely low turbidities",
+          "options": [
+            "4, 3, 2, 1",
+            "4, 2, 3, 4",
+            "1, 2, 3, 4",
+            "1, 3, 2, 4"
+          ],
+          "correct": 0,
+          "expl": "Baylis apparatus precisely measures low turbidity, the tintometer measures colour, the potentiometer measures pH, and the turbidity rod is a simple field turbidity instrument."
+        },
+        {
+          "num": 4,
+          "text": "Natural mineral contaminant in water is",
+          "options": [
+            "Calcium",
+            "Iron",
+            "Fluorine",
+            "Sodium"
+          ],
+          "correct": 2,
+          "expl": "Fluoride is a naturally occurring mineral contaminant that leaches into groundwater from certain rock strata."
+        },
+        {
+          "num": 5,
+          "text": "Permanent hardness of water can be removed by",
+          "options": [
+            "Lime-soda process",
+            "Base exchange process",
+            "De-mineralization process",
+            "All the above are correct"
+          ],
+          "correct": 3,
+          "expl": "Lime-soda, base exchange (zeolite), and demineralization processes are all capable of removing permanent hardness."
+        },
+        {
+          "num": 6,
+          "text": "Which of the following gives water relatively free from impurities",
+          "options": [
+            "River",
+            "Well",
+            "Lake",
+            "Spring along the hill slope"
+          ],
+          "correct": 3,
+          "expl": "Springs emerging from hill slopes are naturally filtered through rock strata, resulting in relatively pure water."
+        },
+        {
+          "num": 7,
+          "text": "High turbidity of water can be determined by:–",
+          "options": [
+            "Jackson's turbid meter",
+            "Turbidity tube",
+            "Bayli's turbid meter",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Jackson's candle turbidimeter is traditionally used to measure higher turbidity values."
+        },
+        {
+          "num": 8,
+          "text": "The permissible pH values for public water supplies is in the range:",
+          "options": [
+            "4.5 to 6.5",
+            "6.6 to 8.5",
+            "8.5 to 10.5",
+            "10.5 to 14.5"
+          ],
+          "correct": 1,
+          "expl": "Public drinking water supplies are generally required to have a pH between about 6.5 and 8.5."
+        },
+        {
+          "num": 9,
+          "text": "The color of water is measured on",
+          "options": [
+            "Turbidity scale",
+            "Silica scale",
+            "Platinum cobalt scale",
+            "Threshold scale"
+          ],
+          "correct": 2,
+          "expl": "Water colour is measured by comparison against a standard platinum-cobalt scale."
+        },
+        {
+          "num": 10,
+          "text": "In water supply, a jar test is performed:– 1) To obtain the optimal dose of coagulant 2) To find out the optimal time required for flocculation 3) To find the chlorine content of water — The correct statement(s) is/are:–",
+          "options": [
+            "Only 1",
+            "Only 2",
+            "1 and 2",
+            "All the above"
+          ],
+          "correct": 2,
+          "expl": "A jar test determines the optimum coagulant dosage and the ideal flocculation time; it does not measure chlorine content."
+        },
+        {
+          "num": 11,
+          "text": "Turbidity may be removed by",
+          "options": [
+            "Sedimentation",
+            "Filteration",
+            "Agitation",
+            "Aeration"
+          ],
+          "correct": 0,
+          "expl": "Sedimentation allows suspended particles causing turbidity to settle out under gravity."
+        },
+        {
+          "num": 12,
+          "text": "Potassium Permanganate is used for",
+          "options": [
+            "Reducing hardness",
+            "Reducing acidity",
+            "Removing organic matter",
+            "Improving color"
+          ],
+          "correct": 2,
+          "expl": "Potassium permanganate is a strong oxidizer used to oxidize and remove organic matter from water."
+        },
+        {
+          "num": 13,
+          "text": "Zero hardness of water is achieved by",
+          "options": [
+            "Using lime soda process",
+            "Excess lime treatment",
+            "Using excess alum dosage",
+            "Ion exchange method"
+          ],
+          "correct": 3,
+          "expl": "Ion exchange (deionization) can remove virtually all hardness-causing ions, achieving near-zero hardness."
+        },
+        {
+          "num": 14,
+          "text": "The amount of residual chlorine left in public water for safety against Pathogenic bacteria is about",
+          "options": [
+            "0.01–0.05",
+            "0.05–0.5",
+            "0.5–1",
+            "1–5.0"
+          ],
+          "correct": 1,
+          "expl": "A residual free chlorine level of about 0.05 to 0.5 mg/l is generally maintained to protect against pathogenic bacteria."
+        },
+        {
+          "num": 15,
+          "text": "Blue baby disease may be caused in infants due to drinking waters containing higher concentration of:",
+          "options": [
+            "Nitrites",
+            "Nitrates",
+            "Lead",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Excess nitrates in drinking water can cause methemoglobinemia (blue baby syndrome) in infants."
+        },
+        {
+          "num": 16,
+          "text": "The true colour of water is measured on:",
+          "options": [
+            "Platinum cobalt scale",
+            "Nickel scale",
+            "Silica scale",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "True colour of water is measured against a standard platinum-cobalt scale."
+        },
+        {
+          "num": 17,
+          "text": "Treated water is",
+          "options": [
+            "Wholesome water",
+            "Palatable water",
+            "Wholesome and Palatable water",
+            "Drinking water"
+          ],
+          "correct": 2,
+          "expl": "Properly treated water is expected to be both wholesome (safe to drink) and palatable (pleasant tasting)."
+        },
+        {
+          "num": 18,
+          "text": "The commonly used indicator for measuring iron concentration in water is",
+          "options": [
+            "Erichrome black T",
+            "1,10, phenanthroline",
+            "Phenolphthalein",
+            "Blue litmus"
+          ],
+          "correct": 1,
+          "expl": "1,10-phenanthroline forms a coloured complex with iron, used for its colorimetric determination."
+        },
+        {
+          "num": 19,
+          "text": "Fluoride in less than 1 mg/L causes . . . disease in children and more than 1.5 mg/L causes . . . disease in human beings",
+          "options": [
+            "Dental caries, fluorosis",
+            "Goiter, blue babies",
+            "Dental fluorosis, blue babies",
+            "All the above"
+          ],
+          "correct": 0,
+          "expl": "Insufficient fluoride (below ~1 mg/l) is linked to dental caries, while excess fluoride (above ~1.5 mg/l) causes fluorosis."
+        },
+        {
+          "num": 20,
+          "text": "Nitrates more than 45 mg/l in water lead to disease called:",
+          "options": [
+            "Gastroenteritis",
+            "Mottled teeth",
+            "Polio",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "High nitrate levels are linked to methemoglobinemia (blue baby syndrome), a condition not listed among the given options, so the answer is none of these."
+        },
+        {
+          "num": 21,
+          "text": "Physical tests of water include",
+          "options": [
+            "Temperature test",
+            "Colour test",
+            "Turbidity test",
+            "All"
+          ],
+          "correct": 3,
+          "expl": "Temperature, colour, and turbidity tests are all classified as physical tests of water quality."
+        },
+        {
+          "num": 22,
+          "text": "One degree of hardness is equivalent to",
+          "options": [
+            "1.425 mg/litre",
+            "14.25 mg/litre",
+            "142.5 mg/litre",
+            "1425 mg/litre"
+          ],
+          "correct": 1,
+          "expl": "One degree of hardness (Clark's scale) corresponds to about 14.25 mg/l of CaCO3 equivalent."
+        },
+        {
+          "num": 23,
+          "text": "Disinfection of drinking water is done to remove",
+          "options": [
+            "Turbidity",
+            "Odour",
+            "Colour",
+            "Bacteria"
+          ],
+          "correct": 3,
+          "expl": "Disinfection specifically targets destroying pathogenic bacteria and other disease-causing microorganisms."
+        },
+        {
+          "num": 24,
+          "text": "The permissible limit of arsenic in drinking water as per the guidelines of WHO is",
+          "options": [
+            "0.01 ppm",
+            "0.001 ppm",
+            "0.05 ppm",
+            "0.005 ppm"
+          ],
+          "correct": 0,
+          "expl": "WHO guidelines set the permissible arsenic limit in drinking water at about 0.01 ppm (mg/l)."
+        },
+        {
+          "num": 25,
+          "text": "Modern turbid meters, working on the principle of \"scattering of light,\" are known as",
+          "options": [
+            "Opti meters",
+            "Tinto meters",
+            "Nephelo meters",
+            "pH meter"
+          ],
+          "correct": 2,
+          "expl": "Nephelometers measure turbidity based on the scattering of light by suspended particles in the water sample."
+        },
+        {
+          "num": 26,
+          "text": "The water to be used for boilers should preferably be",
+          "options": [
+            "Hard",
+            "Potable",
+            "Corrosive",
+            "Soft"
+          ],
+          "correct": 3,
+          "expl": "Soft water is preferred for boiler feed to prevent scale formation from hardness-causing salts."
+        },
+        {
+          "num": 27,
+          "text": "The dosage of chlorine to disinfect the domestic water is usually",
+          "options": [
+            "5–10 ppm",
+            "5–2 ppm",
+            "0.5–1 ppm",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A typical chlorine dose of about 0.5 to 1 ppm is applied for domestic water disinfection."
+        },
+        {
+          "num": 28,
+          "text": "Hard water does not cause",
+          "options": [
+            "Scaling of boilers",
+            "Choking of household fixtures",
+            "Spoiling of fabric",
+            "Stomach infection"
+          ],
+          "correct": 3,
+          "expl": "Hardness causes scaling, fixture choking, and fabric spoilage, but is not directly linked to stomach infections."
+        },
+        {
+          "num": 29,
+          "text": "The maximum permissible limit for fluoride in drinking water is:",
+          "options": [
+            "0.1 mg/l",
+            "1.5 mg/l",
+            "5 mg/l",
+            "10 mg/l"
+          ],
+          "correct": 1,
+          "expl": "The maximum permissible fluoride limit in drinking water is generally set at about 1.5 mg/l."
+        },
+        {
+          "num": 30,
+          "text": "The commonly used lime in white washing is:",
+          "options": [
+            "Quick lime",
+            "Fat lime",
+            "Hydraulic lime",
+            "All the above"
+          ],
+          "correct": 1,
+          "expl": "Fat lime (high-calcium lime) is commonly used for whitewashing due to its good workability and finish."
+        },
+        {
+          "num": 31,
+          "text": "The maximum permissible chloride content in water for domestic supplies should not exceed",
+          "options": [
+            "350 ppm",
+            "250 ppm",
+            "450 ppm",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "Chloride content may be permitted up to about 1000 mg/l in the absence of an alternate source, a figure not matching any of the given options, hence 'none of these'."
+        },
+        {
+          "num": 32,
+          "text": "The maximum permissible turbidity for domestic supplies on silica scale is",
+          "options": [
+            "20 ppm to 30 ppm",
+            "5 ppm to 20 ppm",
+            "10 ppm to 20 ppm",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "The maximum permissible turbidity for domestic water on the silica scale is generally about 5 to 20 ppm."
+        },
+        {
+          "num": 33,
+          "text": "The 'safe water' does not contain any",
+          "options": [
+            "Taste",
+            "Colour",
+            "Pathogen",
+            "Odour"
+          ],
+          "correct": 2,
+          "expl": "Safe water is fundamentally defined by being free from pathogenic organisms."
+        },
+        {
+          "num": 34,
+          "text": "Water having pH more than 7 is",
+          "options": [
+            "Acidic",
+            "Alkaline",
+            "Neutral",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A pH value greater than 7 indicates alkaline (basic) water."
+        },
+        {
+          "num": 35,
+          "text": "Permanent hardness of water can be removed by",
+          "options": [
+            "Adding alum",
+            "Adding lime",
+            "Adding chlorine",
+            "Zeolite process"
+          ],
+          "correct": 3,
+          "expl": "The zeolite (base exchange) process effectively removes permanent hardness by exchanging calcium/magnesium ions for sodium."
+        },
+        {
+          "num": 36,
+          "text": "Suspended solids should not be present in water, because",
+          "options": [
+            "they cause turbidity",
+            "they provide absorption sites for biological and chemical agents",
+            "they are aesthetically displeasing",
+            "all of the above"
+          ],
+          "correct": 3,
+          "expl": "Suspended solids cause turbidity, provide sites for biological/chemical activity, and are aesthetically displeasing — all valid concerns."
+        },
+        {
+          "num": 37,
+          "text": "The specific conductivity of water helps in knowing the extent of",
+          "options": [
+            "organic matter",
+            "inorganic matter",
+            "dissolved solids",
+            "none"
+          ],
+          "correct": 2,
+          "expl": "Specific conductivity correlates with the concentration of dissolved ionic solids present in water."
+        },
+        {
+          "num": 38,
+          "text": "The most common cause of acidity in water, is",
+          "options": [
+            "oxygen",
+            "hydrogen",
+            "nitrogen",
+            "carbon dioxide"
+          ],
+          "correct": 3,
+          "expl": "Dissolved carbon dioxide forming carbonic acid is the most common cause of acidity in natural waters."
+        },
+        {
+          "num": 39,
+          "text": "A safe and wholesome water is the one which is",
+          "options": [
+            "unpolluted",
+            "unpolluted and free from disease producing bacteria",
+            "Unpolluted, free from disease producing bacteria and toxic substances",
+            "unpolluted, free from disease producing bacteria, and toxic substance as well as excess"
+          ],
+          "correct": 3,
+          "expl": "Truly safe and wholesome water must be unpolluted, pathogen-free, and free from toxic substances as well as any excess of minerals."
+        },
+        {
+          "num": 40,
+          "text": "Water is said to be contaminated, if it contains",
+          "options": [
+            "pathogens",
+            "undesirable suspended matter, making it unfit for drinking and domestic use",
+            "dissolved salts",
+            "no such matter which will make it unfit for drinking and domestic use"
+          ],
+          "correct": 1,
+          "expl": "Water is termed 'contaminated' when it contains undesirable matter that renders it unfit for drinking and domestic use."
+        },
+        {
+          "num": 41,
+          "text": "The amount of light absorbed or scattered by suspended material present in water is a measure of",
+          "options": [
+            "opacity",
+            "turbidity",
+            "celerity",
+            "diffraction"
+          ],
+          "correct": 1,
+          "expl": "Turbidity is measured by the extent to which suspended particles absorb or scatter light passing through the water sample."
+        },
+        {
+          "num": 42,
+          "text": "The turbidity which can be seen easily by naked eye is of the order of",
+          "options": [
+            "1 JTU",
+            "2 JTU",
+            "3 JTU",
+            "5 JTU"
+          ],
+          "correct": 3,
+          "expl": "Turbidity typically becomes visible to the naked eye at around 5 JTU."
+        },
+        {
+          "num": 43,
+          "text": "Hardness of water can be removed by boiling if it is due to",
+          "options": [
+            "calcium sulphate",
+            "magnesium sulphate",
+            "calcium chloride",
+            "calcium bicarbonate"
+          ],
+          "correct": 3,
+          "expl": "Boiling decomposes calcium bicarbonate into insoluble calcium carbonate, which precipitates out, removing this temporary hardness."
+        },
+        {
+          "num": 44,
+          "text": "Breweries and distilleries preferably require",
+          "options": [
+            "hard water",
+            "soft water",
+            "potable water",
+            "moderately hard water"
+          ],
+          "correct": 0,
+          "expl": "Certain brewing processes benefit from water with a specific mineral content, so hard water is preferred in breweries and distilleries."
+        },
+        {
+          "num": 45,
+          "text": "The phenolic compounds in public water supply should not be more than",
+          "options": [
+            "0.1 ppm",
+            "0.01 ppm",
+            "0.001 ppm",
+            "0.0001 ppm"
+          ],
+          "correct": 2,
+          "expl": "Phenolic compounds are limited to about 0.001 ppm in public water supplies to avoid objectionable taste and odour."
+        },
+        {
+          "num": 46,
+          "text": "Dissolved impurities consist of",
+          "options": [
+            "bacteria",
+            "iron",
+            "silt",
+            "fungi"
+          ],
+          "correct": 1,
+          "expl": "Dissolved impurities include minerals like iron; bacteria, silt, and fungi are typically classified as suspended matter."
+        },
+        {
+          "num": 47,
+          "text": "The turbidity in water is caused due to",
+          "options": [
+            "silt",
+            "clay",
+            "Finely divided organic matter",
+            "all of these"
+          ],
+          "correct": 3,
+          "expl": "Turbidity results from finely divided silt, clay, and organic matter suspended in the water."
+        },
+        {
+          "num": 48,
+          "text": "Suspended impurities include",
+          "options": [
+            "algae",
+            "protozoa",
+            "fungi",
+            "all of these"
+          ],
+          "correct": 3,
+          "expl": "Algae, protozoa, and fungi are all examples of suspended biological impurities found in water."
+        },
+        {
+          "num": 49,
+          "text": "When lead is present in water, it",
+          "options": [
+            "changes its colour",
+            "causes turbidity",
+            "causes alkalinity",
+            "none"
+          ],
+          "correct": 3,
+          "expl": "Lead contamination typically does not visibly alter colour, turbidity, or alkalinity, making it a silent, hard-to-detect toxic contaminant."
+        },
+        {
+          "num": 50,
+          "text": "B-coli or E-coli harmless organisms but their presence in water indicates",
+          "options": [
+            "presence of pathogenic bacteria",
+            "absence of pathogenic bacteria",
+            "presence of non-pathogenic bacteria",
+            "Absence of non-pathogenic bacteria"
+          ],
+          "correct": 0,
+          "expl": "Though E. coli itself is generally harmless, its presence indicates faecal contamination and the likely presence of pathogenic organisms."
+        },
+        {
+          "num": 51,
+          "text": "The total count of bacteria per cubic centimeter for domestic purposes varies from",
+          "options": [
+            "0 to 100",
+            "100 to 150",
+            "150 to 200",
+            "200 to 250"
+          ],
+          "correct": 0,
+          "expl": "For water intended for domestic use, total bacterial counts are typically kept within about 0-100 per cc."
+        },
+        {
+          "num": 52,
+          "text": "The coliform organism in 100 ml of drinking water should not be more than",
+          "options": [
+            "1000",
+            "450",
+            "100",
+            "1"
+          ],
+          "correct": 3,
+          "expl": "Drinking water standards require coliform organisms to be virtually absent — no more than about 1 per 100 ml."
+        },
+        {
+          "num": 53,
+          "text": "The product of H+ ions and OH− ions in a stronger acid is",
+          "options": [
+            "0",
+            "1",
+            "10−7",
+            "10−14"
+          ],
+          "correct": 3,
+          "expl": "The ion product of water (Kw) remains constant at 10⁻¹⁴ at a given temperature, regardless of whether the solution is acidic or basic."
+        },
+        {
+          "num": 54,
+          "text": "Water is considered 'hard' if its hardness is of the order of",
+          "options": [
+            "50 ppm",
+            "100 ppm",
+            "150 ppm",
+            "over 200 ppm"
+          ],
+          "correct": 3,
+          "expl": "Water is generally classified as hard when its hardness exceeds about 200 ppm."
+        },
+        {
+          "num": 55,
+          "text": "The only metal among the following which is toxic to human beings is",
+          "options": [
+            "calcium",
+            "iron",
+            "arsenic",
+            "magnesium"
+          ],
+          "correct": 2,
+          "expl": "Arsenic is toxic to humans even at low concentrations, unlike calcium, iron, or magnesium which are generally non-toxic at normal levels."
+        },
+        {
+          "num": 56,
+          "text": "If coliform bacteria is present in a sample of water, then the coliform test to be carried out is (i) presumptive test (ii) confirmed test (iii) completed test — The correct answer is",
+          "options": [
+            "only (i)",
+            "both (i) and (ii)",
+            "both (i) and (iii)",
+            "all of the above"
+          ],
+          "correct": 3,
+          "expl": "A complete coliform analysis proceeds through the presumptive, confirmed, and completed test stages in sequence."
+        },
+        {
+          "num": 57,
+          "text": "Filtration treatment of water is normally required to",
+          "options": [
+            "Remove the suspended matter from the water",
+            "Remove colloidal matter and micro-organisms",
+            "Disinfect the water",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Filtration primarily removes fine colloidal matter and micro-organisms that escape sedimentation."
+        },
+        {
+          "num": 58,
+          "text": "The aeration of water is done for the removal of",
+          "options": [
+            "Color",
+            "Odour",
+            "Hardness",
+            "Bacteria"
+          ],
+          "correct": 1,
+          "expl": "Aeration strips volatile compounds and dissolved gases, primarily reducing taste and odour problems in water."
+        },
+        {
+          "num": 59,
+          "text": "'Safe water' is the one, which does not contain:",
+          "options": [
+            "pathogenic bacteria",
+            "turbidity",
+            "any taste",
+            "any colour"
+          ],
+          "correct": 0,
+          "expl": "Safe water is fundamentally defined by the absence of pathogenic bacteria."
+        },
+        {
+          "num": 60,
+          "text": "When the mode of measurement of turbidity is the 'adsorption of light', the measuring apparatus is called a:",
+          "options": [
+            "Spectrometer",
+            "tintometer",
+            "Turbidimeter",
+            "Nephelometer"
+          ],
+          "correct": 2,
+          "expl": "A turbidimeter measures turbidity based on the absorption of light passing through the sample."
+        },
+        {
+          "num": 61,
+          "text": "Modern turbidimeter, working on the principle of 'scattering of light', are known as",
+          "options": [
+            "Spectrometers",
+            "Optimeters",
+            "tintometers",
+            "Nephelometers"
+          ],
+          "correct": 3,
+          "expl": "Nephelometers detect turbidity via the scattering, rather than absorption, of light by suspended particles."
+        },
+        {
+          "num": 62,
+          "text": "A water having pH less than 7, is",
+          "options": [
+            "acidic",
+            "alkaline",
+            "neutral",
+            "none of these"
+          ],
+          "correct": 0,
+          "expl": "A pH value below 7 indicates acidic water."
+        },
+        {
+          "num": 63,
+          "text": "A water having pH = 9, will have hydrogen ion concentration equal to:",
+          "options": [
+            "9 mol/l",
+            "10−9 mol/l",
+            "109 mol/l",
+            "none of these"
+          ],
+          "correct": 1,
+          "expl": "Since pH = -log[H+], a pH of 9 corresponds to a hydrogen ion concentration of 10⁻⁹ mol/l."
+        },
+        {
+          "num": 64,
+          "text": "The most appropriate hardness, in drinking water supplies, is of the order of",
+          "options": [
+            "50 ppm",
+            "100 ppm",
+            "200 ppm",
+            "300 ppm"
+          ],
+          "correct": 1,
+          "expl": "A hardness of around 100 ppm is generally considered appropriate and acceptable for drinking water supplies."
+        },
+        {
+          "num": 65,
+          "text": "Waters are considered 'soft', if their hardness does not exceed:",
+          "options": [
+            "75 ppm",
+            "100 ppm",
+            "150 ppm",
+            "300 ppm"
+          ],
+          "correct": 0,
+          "expl": "Water is classified as soft when its hardness is below about 75 ppm."
+        },
+        {
+          "num": 66,
+          "text": "The only metal among the following, which is toxic to human beings, is",
+          "options": [
+            "Iron",
+            "Barium",
+            "Silver",
+            "Arsenic"
+          ],
+          "correct": 3,
+          "expl": "Arsenic remains toxic to humans among the listed metals, unlike iron, barium, or silver at typical concentrations."
+        },
+        {
+          "num": 67,
+          "text": "If the total hardness and alkalinity of a sample of water are 300 mg/L and 100 mg/L (CaCO3 scale) respectively, then its carbonate and non-carbonate hardness (in units of mg/L) will be respectively",
+          "options": [
+            "100 and 200",
+            "400 and 300",
+            "100 and 400",
+            "400 and zero"
+          ],
+          "correct": 0,
+          "expl": "Carbonate hardness equals the lesser of alkalinity or total hardness (100 mg/L); non-carbonate hardness is the remainder (300−100=200 mg/L)."
+        },
+        {
+          "num": 68,
+          "text": "Which one of the following would contain water with the maximum amount of turbidity?",
+          "options": [
+            "Lakes",
+            "Oceans",
+            "Rivers",
+            "Wells"
+          ],
+          "correct": 2,
+          "expl": "Rivers typically carry the highest turbidity due to surface runoff and sediment transport, compared to relatively still or filtered sources."
+        },
+        {
+          "num": 69,
+          "text": "If the methyl orange alkalinity of water equals or exceeds total hardness, all of the hardness is",
+          "options": [
+            "non-carbonate hardness",
+            "carbonate hardness",
+            "pseudo hardness",
+            "negative non-carbonate hardness"
+          ],
+          "correct": 1,
+          "expl": "When alkalinity equals or exceeds total hardness, all of the hardness present is carbonate hardness, with no non-carbonate portion."
+        },
+        {
+          "num": 70,
+          "text": "Which of the following cations impart(s) pseudohardness to water?",
+          "options": [
+            "Calcium only",
+            "Magnesium only",
+            "Calcium and magnesium",
+            "Sodium"
+          ],
+          "correct": 3,
+          "expl": "Sodium salts can impart a hardness-like soap-consuming effect (pseudo-hardness) without being true calcium or magnesium hardness."
+        }
+      ]
+    },
+    {
+      "name": "Treatment of Water Supply",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The % of chlorine in fresh bleaching powder is about",
+          "options": [
+            "10 to 20",
+            "20 to 25",
+            "30 to 35",
+            "40 to 50"
+          ],
+          "correct": 2,
+          "expl": "Fresh bleaching powder typically contains about 30–35% available chlorine."
+        },
+        {
+          "num": 2,
+          "text": "The settling velocity in a rectangular sedimentation tank for a total discharge Q, the length L, breadth B and the depth of water D is",
+          "options": [
+            "Q/B",
+            "Q/L",
+            "Q/BD",
+            "Q/LB"
+          ],
+          "correct": 3,
+          "expl": "The settling (upflow) velocity equals the discharge divided by the tank's plan surface area, i.e., Q/(L×B)."
+        },
+        {
+          "num": 3,
+          "text": "The river water is very turbid and polluted, the correct sequence of steps for treating the river water would be",
+          "options": [
+            "Pre sedimentation – pre chlorination – coagulation – sedimentation",
+            "Coagulation – sedimentation – post chlorination",
+            "Coagulation – filtration – sedimentation – post chlorination",
+            "Sedimentation – post chlorination"
+          ],
+          "correct": 0,
+          "expl": "For heavily turbid, polluted river water, pre-sedimentation and pre-chlorination are used first to reduce the load before coagulation and sedimentation."
+        },
+        {
+          "num": 4,
+          "text": "In rapid sand filters: 1) The effective size of the sand is approximately 0.5 mm 2) Rate of filtration of the order of 120–160 m/day 3) Bacteria removal is upto 90% — Of the above statements, the correct statement(s) is/are:",
+          "options": [
+            "Only 1",
+            "1 and 2",
+            "2 and 3",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Rapid sand filters typically use about 0.5 mm effective size sand, filter at 120–160 m/day, and remove up to roughly 90% of bacteria — all three statements are correct."
+        },
+        {
+          "num": 5,
+          "text": "_____ is a very effective coagulant for treating low pH waters.",
+          "options": [
+            "Alum",
+            "Copperas",
+            "Chlorinated Copperas",
+            "Sodium Aluminate"
+          ],
+          "correct": 2,
+          "expl": "Chlorinated copperas works effectively as a coagulant even in low pH (acidic) water conditions."
+        },
+        {
+          "num": 6,
+          "text": "Which treatment is required for hydrophilic impurities",
+          "options": [
+            "Coagulation",
+            "Screening",
+            "Sedimentation",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Hydrophilic (water-loving) colloidal impurities are resistant to simple settling and typically require a combination of screening, coagulation, and sedimentation-type treatment."
+        },
+        {
+          "num": 7,
+          "text": "Displacement efficiency of a sedimentation tank is given by",
+          "options": [
+            "Detention period",
+            "Flowing through period",
+            "(A) and (B) above",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Displacement efficiency of a sedimentation tank is expressed as the ratio involving both the detention period and the actual flowing-through period."
+        },
+        {
+          "num": 8,
+          "text": "A slow sand filter requires",
+          "options": [
+            "Fine sand",
+            "More quantity of sand",
+            "Low maintenance cost",
+            "All"
+          ],
+          "correct": 0,
+          "expl": "Slow sand filters use fine sand as their filtering medium, relying on the biological schmutzdecke layer for purification."
+        },
+        {
+          "num": 9,
+          "text": "The ratio of discharge and plan area of a continuous flow type settling tank, is known as",
+          "options": [
+            "Surface loading",
+            "Overflow",
+            "Overflow rate",
+            "All the above"
+          ],
+          "correct": 2,
+          "expl": "The discharge-to-plan-area ratio of a settling tank is termed the overflow rate (surface loading rate)."
+        },
+        {
+          "num": 10,
+          "text": "Which one of the following sequences is the most suitable for treating raw surface water to make it suitable for drinking purpose?",
+          "options": [
+            "Screening – filtration – sedimentation – disinfection",
+            "Screening – disinfection – sedimentation – filtration",
+            "Screening – sedimentation – disinfection – filtration",
+            "Screening – sedimentation – filtration – disinfection"
+          ],
+          "correct": 3,
+          "expl": "Raw surface water is conventionally treated in the sequence: screening, sedimentation, filtration, and finally disinfection."
+        },
+        {
+          "num": 11,
+          "text": "The most common method to remove dissolved gases in water for public health is",
+          "options": [
+            "Carbonation",
+            "Perforation",
+            "Aeration",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Aeration is the standard method used to strip dissolved gases and improve the taste and odour of water."
+        },
+        {
+          "num": 12,
+          "text": "The effective size of sand particles for slow sand filters varies from",
+          "options": [
+            "0.30 to 0.35 mm",
+            "0.35 to 0.50 mm",
+            "0.50 to 0.65 mm",
+            "0.65 to 0.75 mm"
+          ],
+          "correct": 0,
+          "expl": "Slow sand filters typically use sand with an effective size in the range of about 0.30 to 0.35 mm."
+        },
+        {
+          "num": 13,
+          "text": "The efficiency of a sedimentation tank for a given discharge, can be increased by",
+          "options": [
+            "Decreasing the depth of tank",
+            "Increasing the surface area of tank",
+            "Increasing the depth of tank",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Since settling efficiency depends on surface loading (Q/A), increasing the tank's surface area improves removal efficiency independent of depth."
+        },
+        {
+          "num": 14,
+          "text": "Particles intended to be removed by a continuous flow water sedimentation tank, should have settling velocity",
+          "options": [
+            "More than the surface loading of the tank",
+            "Less than the surface loading of the tank",
+            "Equal to horizontal velocity",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A particle will be removed only if its settling velocity exceeds the tank's surface loading (overflow) rate."
+        },
+        {
+          "num": 15,
+          "text": "In which treatment unit is \"schmutzdecke\" formed?",
+          "options": [
+            "Sedimentation tank",
+            "Rapid sand filter",
+            "Coagulation tank",
+            "Slow sand filter"
+          ],
+          "correct": 3,
+          "expl": "The schmutzdecke, a biologically active filtering layer, forms on top of a slow sand filter bed."
+        },
+        {
+          "num": 16,
+          "text": "Which combination of surface water quality parameters will indicate sweep coagulation as the preferred mechanism of coagulation?",
+          "options": [
+            "High turbidity & Low alkalinity",
+            "High turbidity & High alkalinity",
+            "Low turbidity & High alkalinity",
+            "Low turbidity & Low alkalinity"
+          ],
+          "correct": 1,
+          "expl": "Sweep coagulation is favoured under conditions of high turbidity combined with high alkalinity, which promotes floc formation and enmeshment."
+        },
+        {
+          "num": 17,
+          "text": "The usual period of cleaning for a slow sand filter is:",
+          "options": [
+            "12–24 hours",
+            "2–3 days",
+            "2–3 months",
+            "2–3 weeks"
+          ],
+          "correct": 3,
+          "expl": "Slow sand filters are typically cleaned by scraping the top layer every 2 to 3 weeks."
+        },
+        {
+          "num": 18,
+          "text": "The rate of filtration in slow sand filters is of the order of:",
+          "options": [
+            "10–20 Ml/d/ha",
+            "25–50 Ml/d/ha",
+            "100–500 Ml/d/ha",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Slow sand filters operate at a low filtration rate of about 25–50 Ml/d/ha."
+        },
+        {
+          "num": 19,
+          "text": "The ratio of yield of water from a rapid sand filter to that from a slow sand filter is",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "30"
+          ],
+          "correct": 3,
+          "expl": "A rapid sand filter yields roughly 15 times more water than a slow sand filter of equal area."
+        },
+        {
+          "num": 20,
+          "text": "Loss of head in a rapid sand filter is",
+          "options": [
+            "3 m",
+            "4 m",
+            "1 m",
+            "0.9 m"
+          ],
+          "correct": 0,
+          "expl": "The permissible loss of head in a rapid sand filter before backwashing is typically around 0.9 m."
+        },
+        {
+          "num": 21,
+          "text": "In rapid sand filters the depth of tank varies in between",
+          "options": [
+            "1 to 2 m",
+            "2.5 m to 3.5 m",
+            "3 to 3.5 m",
+            "0.6 to 0.9 m"
+          ],
+          "correct": 1,
+          "expl": "Rapid sand filter tank depths generally range from about 2.5 to 3.5 m."
+        },
+        {
+          "num": 22,
+          "text": "In a rapid sand filter, the filter head varies from",
+          "options": [
+            "1.5 to 2 m",
+            "2 to 4 m",
+            "4 to 5 m",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "The filter head (available driving head) in rapid sand filters is typically about 2 to 4 m."
+        },
+        {
+          "num": 23,
+          "text": "The removal of dissolved organic matter occurs in",
+          "options": [
+            "Slow sand filter",
+            "Trickling filter",
+            "Rapid sand filter",
+            "Dual media filter"
+          ],
+          "correct": 0,
+          "expl": "Slow sand filters, through their biologically active schmutzdecke layer, are effective at removing dissolved organic matter."
+        },
+        {
+          "num": 24,
+          "text": "The following residual chlorine compounds are formed during chlorination of water",
+          "options": [
+            "NH2Cl",
+            "NHCl2",
+            "HOCl",
+            "OCl−"
+          ],
+          "correct": 3,
+          "expl": "The hypochlorite ion (OCl⁻) is one of the residual chlorine species formed during chlorination, existing in equilibrium with HOCl depending on pH."
+        },
+        {
+          "num": 25,
+          "text": "Which of the following is not correctly matched?",
+          "options": [
+            "Lime soda process – Softening",
+            "Nalgonda Technique – Fluoride removal",
+            "Aeration – Coagulation",
+            "Ozonation – Disinfection"
+          ],
+          "correct": 1,
+          "expl": "Per this answer key, this pairing is identified as the mismatched item among the given options."
+        },
+        {
+          "num": 26,
+          "text": "In one method of desalination of brackish water, it is passed through a poly-vinyl-alcohol or cellulose acetate membrane; it is known as",
+          "options": [
+            "Freezing",
+            "Solar distillation",
+            "Electro dialysis",
+            "Reverse osmosis"
+          ],
+          "correct": 2,
+          "expl": "Electrodialysis uses a semi-permeable membrane and an electric field to draw ions out of brackish water, desalinating it."
+        },
+        {
+          "num": 27,
+          "text": "Which is the non-chemical method of disinfection?",
+          "options": [
+            "Chlorination",
+            "Oxidation",
+            "Coagulation",
+            "Boiling"
+          ],
+          "correct": 3,
+          "expl": "Boiling kills pathogens through heat alone, making it a non-chemical method of disinfection."
+        },
+        {
+          "num": 28,
+          "text": "The process in which chlorination is done beyond the break point is known as",
+          "options": [
+            "Pre chlorination",
+            "Post chlorination",
+            "Super chlorination",
+            "Break point chlorination"
+          ],
+          "correct": 2,
+          "expl": "Chlorination carried out well beyond the breakpoint dose is termed super chlorination."
+        },
+        {
+          "num": 29,
+          "text": "Chlorination is intended to protect drinking water from:",
+          "options": [
+            "Toxic organic chemicals",
+            "Human pathogens",
+            "Toxic heavy metals",
+            "Suspended solids"
+          ],
+          "correct": 1,
+          "expl": "Chlorination's primary purpose is disinfection — protecting drinking water from disease-causing human pathogens."
+        },
+        {
+          "num": 30,
+          "text": "Activated carbon is used in a water treatment plant for removing",
+          "options": [
+            "Corrosiveness",
+            "Hardness",
+            "Colour & odour",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Activated carbon adsorbs organic compounds responsible for colour and odour, making it useful for their removal."
+        },
+        {
+          "num": 31,
+          "text": "Chlorine is used in water treatment to",
+          "options": [
+            "Kill germs",
+            "Increase pH value",
+            "Remove colour",
+            "Remove hardness"
+          ],
+          "correct": 0,
+          "expl": "Chlorine's primary function in water treatment is disinfection — killing disease-causing germs."
+        },
+        {
+          "num": 32,
+          "text": "At lower pH, the contact period required for chlorination is",
+          "options": [
+            "Lower",
+            "Higher",
+            "Same",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "At lower pH, the more effective disinfecting species HOCl predominates, so a shorter contact period is needed for effective chlorination."
+        },
+        {
+          "num": 33,
+          "text": "Which source of water among the following is not a subsurface source",
+          "options": [
+            "Springs",
+            "Wells",
+            "Back washing",
+            "Any of A & B"
+          ],
+          "correct": 2,
+          "expl": "Backwashing is a filter cleaning operation, not a natural subsurface water source like springs or wells."
+        },
+        {
+          "num": 34,
+          "text": "Disinfection of water helps in",
+          "options": [
+            "Removing turbidity",
+            "Removing hardness",
+            "Killing pathogenic bacteria",
+            "Complete sterilization"
+          ],
+          "correct": 2,
+          "expl": "Disinfection's key role is killing pathogenic bacteria and other disease-causing organisms in water."
+        },
+        {
+          "num": 35,
+          "text": "The settling velocity of inorganic particles of less than 0.1 mm dia, varies with the dia (d), in proportion:",
+          "options": [
+            "d3",
+            "d2",
+            "d",
+            "None"
+          ],
+          "correct": 1,
+          "expl": "Under laminar (Stokes') flow conditions applicable to fine particles, settling velocity varies with the square of the particle diameter (d²)."
+        },
+        {
+          "num": 36,
+          "text": "Flowing through period of a sedimentation tank, when compared to its detention time, is always:",
+          "options": [
+            "more",
+            "less",
+            "equal",
+            "None"
+          ],
+          "correct": 1,
+          "expl": "Due to short-circuiting and non-ideal flow patterns, the actual flowing-through period is generally less than the theoretical detention time."
+        },
+        {
+          "num": 37,
+          "text": "The sedimentation process in water treatment involves settling of impurities in a tank under the action of",
+          "options": [
+            "sun rays",
+            "gravitational force",
+            "biological action",
+            "velocity of flow"
+          ],
+          "correct": 1,
+          "expl": "Sedimentation relies on gravitational force to settle suspended particles out of the water."
+        },
+        {
+          "num": 38,
+          "text": "If the temperature of water in a sedimentation tank is increased, the sedimentation speed will",
+          "options": [
+            "increase",
+            "decrease",
+            "sometimes increase and sometimes decrease",
+            "remain unaffected"
+          ],
+          "correct": 0,
+          "expl": "Higher temperature reduces water viscosity, which increases the settling speed of particles."
+        },
+        {
+          "num": 39,
+          "text": "The velocity of flow of water in a sedimentation tank is about",
+          "options": [
+            "50 to 100 mm/second",
+            "150 to 300 mm/second",
+            "150 to 300 mm/minute",
+            "150 to 300 mm/hour"
+          ],
+          "correct": 2,
+          "expl": "Flow velocity in a sedimentation tank is kept low, typically around 150 to 300 mm/minute, to avoid disturbing settled sludge."
+        },
+        {
+          "num": 40,
+          "text": "For a rectangular sedimentation tank, the length to width ratio should preferably be",
+          "options": [
+            "1:1",
+            "2:1",
+            "4:1",
+            "10:1"
+          ],
+          "correct": 2,
+          "expl": "Rectangular sedimentation tanks are commonly designed with a length-to-width ratio of about 4:1 for effective flow distribution."
+        },
+        {
+          "num": 41,
+          "text": "For a given discharge, the efficiency of a sedimentation tank can be increased by:",
+          "options": [
+            "increasing the depth of the tank",
+            "decreasing the depth of the tank",
+            "increasing surface area of the tank",
+            "decreasing the surface area of the tank"
+          ],
+          "correct": 2,
+          "expl": "Per this answer key, reducing the tank depth while maintaining the given discharge is identified as improving sedimentation efficiency."
+        },
+        {
+          "num": 42,
+          "text": "The width of sedimentation tanks is decided on practical considerations, and may range from",
+          "options": [
+            "1 to 2 m",
+            "2.5 to 5 m",
+            "6 to 8 m",
+            "8 to 10 m"
+          ],
+          "correct": 3,
+          "expl": "Practical sedimentation tank widths, considering mechanical scraper spans, generally range from about 8 to 10 m."
+        },
+        {
+          "num": 43,
+          "text": "Flocculation is a process",
+          "options": [
+            "That removes algae from stabilization on pond effluent",
+            "That promotes the aggregation of small particles into larger particles to enhance their removal by gravity",
+            "That removes easily settleable solids",
+            "Which is same as filtration"
+          ],
+          "correct": 1,
+          "expl": "Flocculation promotes the aggregation of small destabilized particles into larger flocs that settle more readily under gravity."
+        },
+        {
+          "num": 44,
+          "text": "The most widely used coagulant for water treatment, is",
+          "options": [
+            "lime and soda",
+            "ferrous sulphate",
+            "chlorinated coppers",
+            "alum"
+          ],
+          "correct": 3,
+          "expl": "Alum (aluminium sulphate) is the most widely used coagulant in conventional water treatment."
+        },
+        {
+          "num": 45,
+          "text": "Coagulants, used in water treatment, function better when the raw water is",
+          "options": [
+            "acidic",
+            "alkaline",
+            "neutral",
+            "none"
+          ],
+          "correct": 1,
+          "expl": "Coagulants like alum generally perform more effectively when the raw water has some alkalinity to support floc formation."
+        },
+        {
+          "num": 46,
+          "text": "A clariflocculator is a",
+          "options": [
+            "plain sedimentation unit",
+            "aeration unit",
+            "coagulation sedimentation unit",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "A clariflocculator combines flocculation and clarification (sedimentation) functions following coagulation in a single unit."
+        },
+        {
+          "num": 47,
+          "text": "Particles of size around 1 micron (10−6 m) are best removed by",
+          "options": [
+            "filtration",
+            "plain sedimentation",
+            "chemical precipitation",
+            "chemical coagulation"
+          ],
+          "correct": 3,
+          "expl": "Colloidal particles around 1 micron are too small to settle by plain sedimentation and require chemical coagulation to aggregate before removal."
+        },
+        {
+          "num": 48,
+          "text": "The overflow rate for sedimentation tanks using coagulation is about",
+          "options": [
+            "20 to 30 m3/day/m2",
+            "30 to 40 m3/day/m2",
+            "40 to 50 m3/day/m2",
+            "50 to 60 m3/day/m2"
+          ],
+          "correct": 0,
+          "expl": "Coagulation-aided sedimentation tanks are typically designed with an overflow rate of about 20 to 30 m³/day/m²."
+        },
+        {
+          "num": 49,
+          "text": "Cleaning of slow sand filters is done by:",
+          "options": [
+            "scraping and removal of sand",
+            "back washing",
+            "any of the above",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Slow sand filters are cleaned by scraping off and removing the clogged top layer of sand."
+        },
+        {
+          "num": 50,
+          "text": "Back washing of rapid gravity filters, may face rough weather, due to",
+          "options": [
+            "air-binding",
+            "mud-balls",
+            "negative head",
+            "cracking of filters"
+          ],
+          "correct": 1,
+          "expl": "Mud-ball formation within the filter bed can disrupt uniform backwashing, making the operation less effective."
+        },
+        {
+          "num": 51,
+          "text": "Air-binding phenomenon in rapid sand filters may occur due to:",
+          "options": [
+            "excessive negative pressure",
+            "mud ball formation",
+            "higher turbidity in the effluent",
+            "low temperature"
+          ],
+          "correct": 0,
+          "expl": "Excessive negative pressure (head) within the filter bed can draw dissolved air out of solution, causing air-binding."
+        },
+        {
+          "num": 52,
+          "text": "The quality of the filtered effluent and the working of the filter, in a rapid gravity filter, is adversely affected by:",
+          "options": [
+            "air binding",
+            "mud-balls",
+            "cracking of filter",
+            "none"
+          ],
+          "correct": 0,
+          "expl": "Air-binding disrupts uniform filtration flow through the bed, degrading both filter performance and effluent quality."
+        },
+        {
+          "num": 53,
+          "text": "A roughening filter, as used in treating water supplies, is like a",
+          "options": [
+            "slow sand filter",
+            "rapid gravity filter",
+            "rapid gravity filter with coarser sand",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "A roughening filter functions like a rapid gravity filter but uses coarser media, used as pre-treatment for highly turbid water."
+        },
+        {
+          "num": 54,
+          "text": "Double filtration is used:",
+          "options": [
+            "to increase the filtration capacity of slow sand filters",
+            "to increase the filtration capacity of rapid sand filters",
+            "for isolated colonies of a few houses",
+            "none"
+          ],
+          "correct": 0,
+          "expl": "Adding a roughening filter ahead of a slow sand filter (double filtration) reduces incoming turbidity, increasing overall filtration capacity."
+        },
+        {
+          "num": 55,
+          "text": "In double filtration, the roughening filter unit is placed:",
+          "options": [
+            "prior to the slow sand filter",
+            "after the slow sand filter",
+            "any of (A) and (B)",
+            "none"
+          ],
+          "correct": 0,
+          "expl": "The roughening filter is placed ahead of the slow sand filter to pre-treat and reduce turbidity in the incoming water."
+        },
+        {
+          "num": 56,
+          "text": "Pressure filters are used for",
+          "options": [
+            "urban water supply",
+            "rural water supply",
+            "ground water",
+            "swimming pools"
+          ],
+          "correct": 3,
+          "expl": "Compact pressure filters are commonly used for swimming pool water filtration due to space constraints and continuous circulation needs."
+        },
+        {
+          "num": 57,
+          "text": "The effective size of sand particles used in slow sand filters is",
+          "options": [
+            "0.25 to 0.35 mm",
+            "0.45 to 0.70 mm",
+            "0.60 to 1.00 mm",
+            "1.00 to 1.80 mm"
+          ],
+          "correct": 0,
+          "expl": "Slow sand filters use fine sand with an effective size of about 0.25 to 0.35 mm."
+        },
+        {
+          "num": 58,
+          "text": "The rate of filtration of pressure filters as compared to that of rapid gravity filters is",
+          "options": [
+            "poor",
+            "equally good",
+            "better",
+            "much better"
+          ],
+          "correct": 3,
+          "expl": "Pressure filters, operating under applied pressure, achieve much higher filtration rates than gravity-based rapid sand filters."
+        },
+        {
+          "num": 59,
+          "text": "Cleaning of rapid sand filters is done by:",
+          "options": [
+            "scraping and removal of sand",
+            "back washing",
+            "any of the above",
+            "none"
+          ],
+          "correct": 1,
+          "expl": "Rapid sand filters are cleaned by backwashing — reversing the flow to flush out accumulated impurities."
+        },
+        {
+          "num": 60,
+          "text": "Rapid sand filters remove bacteria to as much as",
+          "options": [
+            "70 to 80%",
+            "80 to 90%",
+            "90 to 95%",
+            "98 to 99%"
+          ],
+          "correct": 1,
+          "expl": "Rapid sand filters typically remove about 80 to 90% of bacteria present in the water."
+        },
+        {
+          "num": 61,
+          "text": "The percentage of filtered water which is used for back washing in rapid sand filters is about",
+          "options": [
+            "0.2 to 0.6%",
+            "0.6 to 1%",
+            "2 to 5%",
+            "6 to 8%"
+          ],
+          "correct": 2,
+          "expl": "Roughly 2 to 5% of filtered water output is typically used for periodic backwashing of rapid sand filters."
+        },
+        {
+          "num": 62,
+          "text": "In rapid sand filters the ratio of length to diameter of the lateral should not exceed",
+          "options": [
+            "10",
+            "20",
+            "40",
+            "60"
+          ],
+          "correct": 3,
+          "expl": "Design guidelines limit the length-to-diameter ratio of filter laterals to about 60 for even distribution of backwash flow."
+        },
+        {
+          "num": 63,
+          "text": "Rapid sand filter",
+          "options": [
+            "should be preceded by coagulation and sedimentation",
+            "is used after slow sand filtering has been done",
+            "uses rapid sand as filter media",
+            "can combine disinfection also"
+          ],
+          "correct": 0,
+          "expl": "Rapid sand filters are designed to treat water that has already undergone coagulation and sedimentation."
+        },
+        {
+          "num": 64,
+          "text": "Slow sand filter is efficient to remove bacteria from the raw water to an extent of",
+          "options": [
+            "50%",
+            "70%",
+            "85%",
+            "99%"
+          ],
+          "correct": 3,
+          "expl": "Slow sand filters, through their biological schmutzdecke layer, achieve very high bacteria removal, up to about 99%."
+        },
+        {
+          "num": 65,
+          "text": "Activated carbon is used to remove",
+          "options": [
+            "odour and taste",
+            "hardness",
+            "iron and manganese",
+            "dissolved salts"
+          ],
+          "correct": 0,
+          "expl": "Activated carbon adsorbs organic compounds, making it effective for removing taste and odour from water."
+        },
+        {
+          "num": 66,
+          "text": "The dosage of alum is decided by",
+          "options": [
+            "EDTA test",
+            "Jar test",
+            "chloro test",
+            "none"
+          ],
+          "correct": 1,
+          "expl": "The optimum alum coagulant dosage is determined using a jar test, which simulates the coagulation process at various doses."
+        },
+        {
+          "num": 67,
+          "text": "Activated carbon is added to water to remove tastes and odours:",
+          "options": [
+            "before coagulation",
+            "after coagulation",
+            "before filtration",
+            "all the above"
+          ],
+          "correct": 3,
+          "expl": "Activated carbon can be dosed at multiple points in the treatment train — before coagulation, after coagulation, or before filtration."
+        },
+        {
+          "num": 68,
+          "text": "The adsorbent most commonly used in water and waste water treatment is",
+          "options": [
+            "sand of grain size from 0.1 to 2 mm",
+            "activated carbon granules of size 0.1 to 2 mm",
+            "ordinary wood pieces of fine size",
+            "coal-tar"
+          ],
+          "correct": 1,
+          "expl": "Activated carbon granules, typically 0.1 to 2 mm in size, are the most widely used adsorbent in water and wastewater treatment."
+        },
+        {
+          "num": 69,
+          "text": "By the lime soda process, hardness can be reduced to less than",
+          "options": [
+            "50 ppm",
+            "75 ppm",
+            "100 ppm",
+            "150 ppm"
+          ],
+          "correct": 0,
+          "expl": "The lime-soda softening process can reduce water hardness to below about 50 ppm."
+        },
+        {
+          "num": 70,
+          "text": "The lime soda process of water softening",
+          "options": [
+            "requires less quantity of coagulant",
+            "helps in killing pathogenic bacteria",
+            "is suitable for turbid and acidic water",
+            "all of these"
+          ],
+          "correct": 3,
+          "expl": "The lime-soda process reduces coagulant demand, helps kill pathogens due to elevated pH, and suits turbid, acidic waters — all of these benefits apply."
+        },
+        {
+          "num": 71,
+          "text": "The first stage in water treatment is",
+          "options": [
+            "Sedimentation",
+            "Filtration",
+            "Disinfection",
+            "Coagulation"
+          ],
+          "correct": 0,
+          "expl": "Plain sedimentation, when required for highly turbid raw water, is typically the first treatment stage before coagulation and filtration."
+        },
+        {
+          "num": 72,
+          "text": "The fine screens are generally not used these days, in water treatment, as the fine suspended impurities are removed in:",
+          "options": [
+            "filtration",
+            "sedimentation",
+            "Aeration",
+            "disinfection"
+          ],
+          "correct": 1,
+          "expl": "Fine suspended impurities are effectively removed during sedimentation, reducing the need for fine screening."
+        },
+        {
+          "num": 73,
+          "text": "The settling velocity of inorganic particles in a sedimentation tank of a water treatment plant, is governed by:",
+          "options": [
+            "Darcy's law",
+            "Dupuit's law",
+            "Stoke's law",
+            "none of the above"
+          ],
+          "correct": 2,
+          "expl": "The settling velocity of small inorganic particles under laminar flow conditions is governed by Stoke's law."
+        },
+        {
+          "num": 74,
+          "text": "The efficiency of sediment removal in a continuous sedimentation tank does not depend upon the:",
+          "options": [
+            "discharge through the tank",
+            "width of the tank",
+            "length of the tank",
+            "depth of the tank"
+          ],
+          "correct": 3,
+          "expl": "Sedimentation efficiency depends on the surface loading (discharge divided by plan area), and is theoretically independent of tank depth."
+        },
+        {
+          "num": 75,
+          "text": "Surface loading or overflow velocity of a sedimentation tank (plain) may vary in the range:",
+          "options": [
+            "0 to 25%",
+            "25 to 50%",
+            "1000–1250 l/hr/m2",
+            "none of the above"
+          ],
+          "correct": 1,
+          "expl": "The surface loading of a plain sedimentation tank is designed within a specified range appropriate for the settling characteristics of the particles."
+        },
+        {
+          "num": 76,
+          "text": "Surface loading or overflow rate of a coagulant-sedimentation tank may vary between:",
+          "options": [
+            "100–500 l/hr/m2",
+            "500–750 l/hr/m2",
+            "1000–1250 l/hr/m2",
+            "none of the above"
+          ],
+          "correct": 2,
+          "expl": "Coagulation-sedimentation tanks are typically designed for a surface loading of about 1000-1250 l/hr/m²."
+        },
+        {
+          "num": 77,
+          "text": "For a given discharge, the efficiency of a sedimentation tank can be increased by:",
+          "options": [
+            "increasing the depth of the tank",
+            "decreasing the depth of the tank",
+            "increasing the surface area of the tank",
+            "decreasing the surface area of the tank"
+          ],
+          "correct": 2,
+          "expl": "Per this answer key, increasing tank depth is identified as raising sedimentation efficiency for the given discharge."
+        },
+        {
+          "num": 78,
+          "text": "Slow sand filters when compared to rapid gravity filters, may normally filter:",
+          "options": [
+            "5 times slower",
+            "10 times slower",
+            "20 times slower",
+            "30 times slower"
+          ],
+          "correct": 3,
+          "expl": "Slow sand filters operate at a much lower rate, typically around 30 times slower than rapid gravity filters."
+        },
+        {
+          "num": 79,
+          "text": "Slow sand filters remove bacteria, to as much as:",
+          "options": [
+            "80–90%",
+            "90–95%",
+            "98–99%",
+            "none of these"
+          ],
+          "correct": 2,
+          "expl": "Slow sand filters achieve very high bacteria removal efficiency, up to about 98-99%."
+        },
+        {
+          "num": 80,
+          "text": "Rapid gravity filters remove bacteria to as much as:",
+          "options": [
+            "80–90%",
+            "90–95%",
+            "98–99%",
+            "none of these"
+          ],
+          "correct": 0,
+          "expl": "Rapid gravity filters typically remove bacteria to the extent of about 80-90%."
+        },
+        {
+          "num": 81,
+          "text": "The rate of filtration in slow sand filters is of the order of:",
+          "options": [
+            "10–20 Ml/d/ha",
+            "25–50 Ml/d/ha",
+            "100–500 Ml/d/ha",
+            "700–1400 Ml/d/ha"
+          ],
+          "correct": 1,
+          "expl": "Slow sand filters operate at a low filtration rate of about 25-50 Ml/d/ha."
+        },
+        {
+          "num": 82,
+          "text": "The rate of filtration in rapid gravity filters is of the order of:",
+          "options": [
+            "10–20 Ml/d/ha",
+            "25–50 Ml/d/ha",
+            "100–500 Ml/d/ha",
+            "700–1400 Ml/d/ha"
+          ],
+          "correct": 3,
+          "expl": "Rapid gravity filters operate at a much higher rate, of the order of 700-1400 Ml/d/ha."
+        },
+        {
+          "num": 83,
+          "text": "The periodicity, with which slow sand filters need cleaning, is of the order of",
+          "options": [
+            "24–48 hours",
+            "10–15 days",
+            "1–3 months",
+            "1–2 years"
+          ],
+          "correct": 2,
+          "expl": "Slow sand filters generally need cleaning at intervals of about 1 to 3 months."
+        },
+        {
+          "num": 84,
+          "text": "Air-binding phenomenon in rapid sand filters may occur due to:",
+          "options": [
+            "excessive negative pressure",
+            "mud ball formation",
+            "higher turbidity in the effluent",
+            "low temperature"
+          ],
+          "correct": 0,
+          "expl": "Excessive negative pressure within the filter bed draws dissolved air out of solution, resulting in air-binding."
+        },
+        {
+          "num": 85,
+          "text": "The quality of the filtered effluent and the working of the filter, in a rapid gravity filter, is adversely affected by:",
+          "options": [
+            "air binding",
+            "mud-balls",
+            "cracking of filter",
+            "none of these"
+          ],
+          "correct": 0,
+          "expl": "Air-binding disrupts uniform flow through the filter media, adversely affecting both filter operation and effluent quality."
+        },
+        {
+          "num": 86,
+          "text": "A pressure filter is a compact unit, which carries out the job, as accomplished by a:",
+          "options": [
+            "flocculation tank",
+            "sedimentation tank",
+            "filtration unit",
+            "all of the above in one unit"
+          ],
+          "correct": 3,
+          "expl": "A pressure filter is a compact enclosed unit that can combine flocculation, sedimentation, and filtration functions together."
+        },
+        {
+          "num": 87,
+          "text": "Disinfection of water helps in;",
+          "options": [
+            "removing turbidity",
+            "removing hardness",
+            "killing pathogenic bacteria",
+            "complete sterilisation"
+          ],
+          "correct": 2,
+          "expl": "Disinfection's primary role is killing pathogenic bacteria and disease-causing organisms in water."
+        },
+        {
+          "num": 88,
+          "text": "The suitable method for disinfection of swimming pool water is:",
+          "options": [
+            "ultra violet rays treatment",
+            "lime treatment",
+            "chlorination",
+            "use of potassium permanganate"
+          ],
+          "correct": 0,
+          "expl": "Ultraviolet (UV) treatment is identified here as a suitable method for disinfecting swimming pool water."
+        },
+        {
+          "num": 89,
+          "text": "The cleaning of a slow sand filter is done by",
+          "options": [
+            "reversing the direction of flow of water",
+            "passing air through the filter",
+            "passing a solution of alum and lime through the filter",
+            "scraping off top layers of sand and admitting water"
+          ],
+          "correct": 3,
+          "expl": "Slow sand filters are cleaned by scraping off the clogged top (schmutzdecke) layer of sand and then re-admitting water."
+        },
+        {
+          "num": 90,
+          "text": "Uniformity coefficient of filter sand is given by",
+          "options": [
+            "D50/D5",
+            "D50/D10",
+            "D60/D5",
+            "D60/D10"
+          ],
+          "correct": 3,
+          "expl": "The uniformity coefficient of filter sand is defined as the ratio D60/D10, describing the grain size distribution."
+        },
+        {
+          "num": 91,
+          "text": "Air-binding in rapid sand filters is encountered when",
+          "options": [
+            "there is excessive negative head",
+            "the water is subjected to prolonged aeration",
+            "the raw water contains dissolved gases",
+            "the filter bed comprises largely of coarse sand"
+          ],
+          "correct": 0,
+          "expl": "A filter bed composed largely of coarse sand can promote conditions that lead to air entrainment and air-binding during filtration."
+        },
+        {
+          "num": 92,
+          "text": "In a water treatment plant, dissolved iron and manganese can be removed from the water by",
+          "options": [
+            "aeration",
+            "aeration and coagulation",
+            "aeration and flocculation",
+            "aeration and sedimentation"
+          ],
+          "correct": 3,
+          "expl": "Dissolved iron and manganese are oxidized by aeration and the resulting precipitates are then removed through sedimentation."
+        },
+        {
+          "num": 93,
+          "text": "'Air binding' may occur in",
+          "options": [
+            "Sewers",
+            "Artesian well",
+            "Aerator",
+            "Filter"
+          ],
+          "correct": 3,
+          "expl": "Air-binding is a phenomenon that commonly occurs within filter media during the filtration process."
+        },
+        {
+          "num": 94,
+          "text": "The concentration of hardness producing cations may be estimated using which one of the following?",
+          "options": [
+            "conductivity meter",
+            "pH meter",
+            "Spectrophotometer",
+            "Flame photometer"
+          ],
+          "correct": 2,
+          "expl": "A spectrophotometer can be used with appropriate colorimetric reagents to estimate the concentration of hardness-producing cations."
+        },
+        {
+          "num": 95,
+          "text": "Which one of the following treatments is economically effective in the control of guinea worm disease?",
+          "options": [
+            "Chlorination",
+            "Filtration",
+            "Ozonation",
+            "Sedimentation"
+          ],
+          "correct": 1,
+          "expl": "Filtration is economically effective against guinea worm disease since it strains out the cyclops (water flea) carrier organisms."
+        },
+        {
+          "num": 96,
+          "text": "Chlorides from water are removed by",
+          "options": [
+            "Lime soda process",
+            "reverse osmosis",
+            "Cation exchange process",
+            "Chemical coagulation"
+          ],
+          "correct": 1,
+          "expl": "Reverse osmosis uses a semi-permeable membrane to remove dissolved chlorides and other ions from water."
+        },
+        {
+          "num": 97,
+          "text": "Which one of the following tests employs ferroin indicator?",
+          "options": [
+            "Chemical oxygen demand",
+            "Ammonia nitrogen",
+            "Nitrate nitrogen",
+            "Fluoride"
+          ],
+          "correct": 0,
+          "expl": "The Chemical Oxygen Demand (COD) test uses a ferroin indicator during the titration step to detect the endpoint."
+        },
+        {
+          "num": 98,
+          "text": "Which one of the following tests employs Ethylene Diamine Tetra Acetic Acid as a titrating agent?",
+          "options": [
+            "Chlorides",
+            "Dissolved oxygen",
+            "Hardness",
+            "Residual chlorine"
+          ],
+          "correct": 2,
+          "expl": "Water hardness is determined by titration using EDTA (Ethylene Diamine Tetra Acetic Acid) as the complexing/titrating agent."
+        }
+      ]
+    },
+    {
+      "name": "Water Demand & Distribution",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The population of a town as per census records were 2,00,000, 2,10,000 and 2,30,000 for the years 1981, 1991 and 2001 respectively. Find the population of the town in the year 2011 using arithmetic mean method.",
+          "options": [
+            "2,45,000",
+            "2,50,000",
+            "2,55,000",
+            "2,40,000"
+          ],
+          "correct": 0,
+          "expl": "Using the arithmetic mean method, the average decadal increase from the given data is applied to project the 2011 population, giving about 2,45,000."
+        },
+        {
+          "num": 2,
+          "text": "In an effectively managed water supply system, the amount of water lost in theft and wastes is approximately x% of total consumption where x equals:",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ],
+          "correct": 2,
+          "expl": "In a well-managed system, water lost to theft and wastage is typically kept around 15% of total consumption."
+        },
+        {
+          "num": 3,
+          "text": "Per capita water consumption is highest in",
+          "options": [
+            "Schools",
+            "Hospitals",
+            "Offices",
+            "Factories"
+          ],
+          "correct": 1,
+          "expl": "Hospitals generally have the highest per capita water consumption due to hygiene, sterilization, and patient care demands."
+        },
+        {
+          "num": 4,
+          "text": "Which of the following diseases is not considered as water borne?",
+          "options": [
+            "Typhoid",
+            "Jaundice",
+            "Bacillary dysentery",
+            "Malaria"
+          ],
+          "correct": 3,
+          "expl": "Malaria is a vector-borne (mosquito-transmitted) disease, unlike typhoid, jaundice, and dysentery which spread through contaminated water."
+        },
+        {
+          "num": 5,
+          "text": "On an average, the domestic consumption under normal conditions in an Indian city as per IS:1172–1971 is expected to be around:",
+          "options": [
+            "115 litres/day/person",
+            "125 litres/day/person",
+            "135 litres/day/person",
+            "145 litres/day/person"
+          ],
+          "correct": 2,
+          "expl": "As per IS:1172-1971, the average domestic water consumption in an Indian city is expected to be about 135 litres/day/person."
+        },
+        {
+          "num": 6,
+          "text": "The process of providing a balancing reservoir in a water supply distribution scheme is known as",
+          "options": [
+            "Equalize pressure in the distribution system",
+            "Store adequate quantity of water to meet requirements in case of any breakdown of inflow",
+            "Store water for fire fighting",
+            "Take care of fluctuations in the rate of water consumption"
+          ],
+          "correct": 1,
+          "expl": "A balancing reservoir stores water so that supply can continue to meet demand even if there is a temporary breakdown in inflow."
+        },
+        {
+          "num": 7,
+          "text": "The design technique adopted in the design of large water supply networks as an aid to simplify and separate the smaller loops is:",
+          "options": [
+            "Hardy cross method",
+            "Circle method",
+            "Equivalent pipe method",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "The equivalent pipe method simplifies complex looped networks into a single equivalent pipe, making analysis of large networks easier."
+        },
+        {
+          "num": 8,
+          "text": "Coincident draft in relation to water demand is based on",
+          "options": [
+            "Peak hourly demand",
+            "Maximum daily demand",
+            "Maximum daily + fire demand",
+            "Greater of (A) and (C)"
+          ],
+          "correct": 2,
+          "expl": "Coincident draft is based on the sum of maximum daily demand plus fire demand, representing a critical simultaneous load."
+        },
+        {
+          "num": 9,
+          "text": "Assessment of population for a growing town having vast scope of expansion for the need of water supply is preferred by",
+          "options": [
+            "Arithmetical increase method",
+            "Geometrical increase method",
+            "Incremental increase method",
+            "Decreasing rate of growth method"
+          ],
+          "correct": 1,
+          "expl": "The geometrical increase method is preferred for rapidly growing towns with significant scope for future expansion, as it accounts for compounding growth."
+        },
+        {
+          "num": 10,
+          "text": "Water supply includes",
+          "options": [
+            "Collection, transportation and treatment of water",
+            "Distribution of water to consumers",
+            "Provision of hydrants for fire fighting",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "A complete water supply scheme encompasses collection, treatment, transportation, distribution, and fire-fighting provisions."
+        },
+        {
+          "num": 11,
+          "text": "The populations of a town as per census records were 200000, 210000 and 230000 for the years 1981, 1991 and 2001 respectively. The population of the town as per geometric mean method in the year 2011 is",
+          "options": [
+            "244872",
+            "245872",
+            "246820",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Applying the geometric mean growth rate derived from the given decadal populations, the projected 2011 population works out to about 2,45,872."
+        },
+        {
+          "num": 12,
+          "text": "The water distribution scheme is usually designed for",
+          "options": [
+            "55–60 years",
+            "45–50 years",
+            "25–30 years",
+            "10–15 years"
+          ],
+          "correct": 1,
+          "expl": "Water distribution systems are typically designed for a design (planning) period of about 45-50 years."
+        },
+        {
+          "num": 13,
+          "text": "Per capita demand of water means",
+          "options": [
+            "Per person demand for a year",
+            "Per person demand for a month",
+            "Per person per day demand",
+            "All of the above"
+          ],
+          "correct": 2,
+          "expl": "Per capita demand refers to the average quantity of water consumed by one person per day."
+        },
+        {
+          "num": 14,
+          "text": "The distribution system in water supplies is designed on the basis of:",
+          "options": [
+            "Average daily demand",
+            "Peak hourly demand",
+            "Coincident of draft",
+            "Greater of (B) and (C)"
+          ],
+          "correct": 3,
+          "expl": "Distribution systems are designed for whichever is greater between peak hourly demand and coincident draft, ensuring adequate capacity under worst-case conditions."
+        },
+        {
+          "num": 15,
+          "text": "The ratio between peak hourly water demand and maximum daily demand (per hour of course) is",
+          "options": [
+            "1.5",
+            "1.8",
+            "2.0",
+            "2.7"
+          ],
+          "correct": 0,
+          "expl": "The ratio of peak hourly demand to maximum daily demand (expressed per hour) is typically about 1.5."
+        },
+        {
+          "num": 16,
+          "text": "The total water consumption including domestic, commercial and industrial demands for an average Indian person is",
+          "options": [
+            "135 lpcd",
+            "210 lpcd",
+            "240 lpcd",
+            "270 lpcd"
+          ],
+          "correct": 3,
+          "expl": "Total water consumption for an average Indian person, combining domestic, commercial, and industrial uses, is about 270 litres per capita per day."
+        },
+        {
+          "num": 17,
+          "text": "Which type of water meters are installed in houses for measurement of quantity of water?",
+          "options": [
+            "Rotary meter",
+            "Disc meter",
+            "Digital meter",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Digital water meters are commonly installed in houses to measure and record water consumption."
+        },
+        {
+          "num": 18,
+          "text": "Which one of the following practices causes reduction in the per capita water consumption?",
+          "options": [
+            "good quality water",
+            "hotter climate",
+            "modern living",
+            "metering system"
+          ],
+          "correct": 3,
+          "expl": "Installing metering systems encourages conservation by making consumers aware of and accountable for their usage, reducing per capita consumption."
+        },
+        {
+          "num": 19,
+          "text": "The multiplying factor as applied to obtain the peak hourly demand in relation to the average daily demand, (per hour of course) is",
+          "options": [
+            "1.5",
+            "1.8",
+            "2.0",
+            "2.7"
+          ],
+          "correct": 3,
+          "expl": "The multiplying factor applied to average daily demand to obtain peak hourly demand is typically about 2.7."
+        },
+        {
+          "num": 20,
+          "text": "The pipe mains carrying water from the source to the reservoir are designed for",
+          "options": [
+            "maximum draft daily",
+            "average daily draft",
+            "maximum hourly draft of the maximum day",
+            "maximum weekly draft"
+          ],
+          "correct": 0,
+          "expl": "Pipe mains carrying water from the source to the reservoir are designed based on the maximum daily draft."
+        },
+        {
+          "num": 21,
+          "text": "The multiplying factor, as applied to obtain the maximum daily water demand, in relation to the average i.e., per capita daily demand, is:",
+          "options": [
+            "1.5",
+            "1.8",
+            "2.0",
+            "2.7"
+          ],
+          "correct": 1,
+          "expl": "The multiplying factor applied to average per capita daily demand to obtain maximum daily demand is typically about 1.8."
+        },
+        {
+          "num": 22,
+          "text": "As compared to the geometrical increase method of forecasting population, the arithmetical increase method gives:",
+          "options": [
+            "lesser value",
+            "higher value",
+            "equal value",
+            "may vary, as it may depend on the population figures"
+          ],
+          "correct": 0,
+          "expl": "The arithmetical increase method generally yields a lower, more conservative population estimate compared to the geometrical increase method, which accounts for compounding growth."
+        },
+        {
+          "num": 23,
+          "text": "The suitable method for forecasting population for an old developed large city, is:",
+          "options": [
+            "arithmetic mean method",
+            "geometric mean method",
+            "comparative graphical method",
+            "none of these"
+          ],
+          "correct": 0,
+          "expl": "The arithmetic mean method is suitable for forecasting population in old, largely developed cities where growth has stabilized and is roughly linear."
+        }
+      ]
+    }
+  ]
+}

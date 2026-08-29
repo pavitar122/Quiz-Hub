@@ -1,0 +1,4079 @@
+{
+  "id": "concrete-technology",
+  "title": "Concrete Technology",
+  "description": "Cement, aggregates, admixtures, mortar, mix design, and the fresh/hardened properties and production of concrete.",
+  "subcats": [
+    {
+      "name": "Admixtures",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Admixtures which cause early setting, and hardening of concrete are called",
+          "options": [
+            "Workability admixtures",
+            "Accelerators",
+            "Retarders",
+            "Air entraining agents"
+          ],
+          "correct": 1,
+          "expl": "Accelerators speed up the hydration reaction, causing concrete to set and gain strength earlier than normal."
+        },
+        {
+          "num": 2,
+          "text": "The most commonly used admixture which prolongs the setting and hardening time",
+          "options": [
+            "Gypsum",
+            "Calcium chloride",
+            "Air entraining agents",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Gypsum, added during cement manufacture, is the classic retarder that slows setting and hardening."
+        },
+        {
+          "num": 3,
+          "text": "Which of the following compound is most widely used as accelerating admixture in concrete?",
+          "options": [
+            "Sugar",
+            "Calcium chloride",
+            "Soluble zinc salts",
+            "Synthetic detergents"
+          ],
+          "correct": 1,
+          "expl": "Calcium chloride (CaCl2) is the most widely used and most effective accelerating admixture, though it can promote corrosion of reinforcement."
+        },
+        {
+          "num": 4,
+          "text": "Which of the following admixtures in cement concrete is not acceleration?",
+          "options": [
+            "CaCl2",
+            "CaSO4",
+            "Na2SO4",
+            "NaCl"
+          ],
+          "correct": 1,
+          "expl": "CaSO4 (gypsum) is itself a retarder, not an accelerator; CaCl2, Na2SO4 and NaCl all speed up setting."
+        },
+        {
+          "num": 5,
+          "text": "Addition of sugar to RCC can",
+          "options": [
+            "Corrode the reinforcement",
+            "Increase strength",
+            "Retard initial set",
+            "Increase workability"
+          ],
+          "correct": 2,
+          "expl": "Sugar in small doses acts as a retarder, delaying the initial set of the concrete."
+        },
+        {
+          "num": 6,
+          "text": "An admixture",
+          "options": [
+            "Is a basic ingredient of concrete",
+            "Offers improvement not economically attained by adjusting mix proportions",
+            "Is a substitute for good concreting practice",
+            "Is beneficial to the properties of concrete when used in large quantities"
+          ],
+          "correct": 1,
+          "expl": "An admixture is an ingredient other than cement, water and aggregate added to obtain improvements in the concrete that cannot be economically achieved by simply adjusting mix proportions."
+        },
+        {
+          "num": 7,
+          "text": "Admixture can be used to",
+          "options": [
+            "Accelerate initial setting of concrete",
+            "Increase the strength of concrete",
+            "Improve workability",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Admixtures serve many purposes — accelerating, strengthening, and improving workability are all valid uses depending on the type used."
+        },
+        {
+          "num": 8,
+          "text": "Admixtures can be used to",
+          "options": [
+            "Retard the initial set",
+            "Increase durability",
+            "Improve pumpability of concrete",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Admixtures can retard setting, improve durability, and enhance pumpability, so all of these are correct."
+        },
+        {
+          "num": 9,
+          "text": "Adding an accelerator to concrete increases all of the following except",
+          "options": [
+            "Resistance to alkali-aggregate reaction",
+            "Rate of hydration of cement",
+            "Shrinkage",
+            "Rate of evolution of heat"
+          ],
+          "correct": 0,
+          "expl": "Accelerators increase the rate of hydration, heat evolution and shrinkage, but they do not improve resistance to alkali-aggregate reaction."
+        },
+        {
+          "num": 10,
+          "text": "An accelerator shortens all of the following except",
+          "options": [
+            "Setting time",
+            "Period of curing",
+            "Period of removal of formwork",
+            "Strength of concrete"
+          ],
+          "correct": 2,
+          "expl": "Accelerators shorten setting time, curing period and formwork-removal time, but do not reduce the ultimate strength of concrete."
+        },
+        {
+          "num": 11,
+          "text": "Following compounds can be used as accelerators except",
+          "options": [
+            "CaCl2",
+            "CaSO4",
+            "NaCl",
+            "Na2SO4"
+          ],
+          "correct": 1,
+          "expl": "CaCl2, NaCl and Na2SO4 all accelerate setting; CaSO4 (gypsum) is a retarder, so it is the exception."
+        },
+        {
+          "num": 12,
+          "text": "Addition of a retarder to concrete decreases all of the following except",
+          "options": [
+            "Rate of hydration",
+            "Water-cement ratio",
+            "Workability and compressive strength",
+            "Rate of development of strength"
+          ],
+          "correct": 2,
+          "expl": "A retarder mainly slows the rate of hydration and delays strength development; it does not significantly change the water-cement ratio."
+        },
+        {
+          "num": 13,
+          "text": "Addition of air-entraining agents to concrete increases all of the following except",
+          "options": [
+            "Workability",
+            "Strength of concrete",
+            "Durability",
+            "Impermeability"
+          ],
+          "correct": 1,
+          "expl": "Air-entraining agents improve workability, durability (freeze-thaw resistance) and impermeability, but they reduce compressive strength because of the added voids."
+        },
+        {
+          "num": 14,
+          "text": "Identify the correct statement which corresponds to accelerator : retarder",
+          "options": [
+            "CaCl2 : CaSO4",
+            "NaCl : CaCl2",
+            "NaOH : KOH",
+            "KOH : NaOH"
+          ],
+          "correct": 0,
+          "expl": "CaCl2 is a well-known accelerator and CaSO4 (gypsum) is a well-known retarder, making this the correct pairing."
+        },
+        {
+          "num": 15,
+          "text": "Air entrainment in the concrete increases",
+          "options": [
+            "Workability",
+            "Strength",
+            "The effect of temperature variation",
+            "The unit weight"
+          ],
+          "correct": 0,
+          "expl": "Air entrainment introduces tiny, well-distributed air bubbles that act like ball bearings in the fresh mix, improving workability."
+        }
+      ]
+    },
+    {
+      "name": "Aggregates",
+      "questions": [
+        {
+          "num": 1,
+          "text": "A flaky aggregate is said to be elongated if its length is",
+          "options": [
+            "Equal to the mean size",
+            "Twice the mean size",
+            "Thrice the mean size",
+            "Four times the mean size"
+          ],
+          "correct": 1,
+          "expl": "By IS convention, a flaky particle is 'elongated' once its length reaches about twice the mean sieve size for that fraction."
+        },
+        {
+          "num": 2,
+          "text": "An aggregate should",
+          "options": [
+            "Be of proper shape and size",
+            "Be clean, hard and well graded",
+            "Possess chemical stability",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Good aggregate must simultaneously be well-shaped, clean, hard, well-graded and chemically stable — all of these matter."
+        },
+        {
+          "num": 3,
+          "text": "Aggregate can be classified according to",
+          "options": [
+            "Geological origin",
+            "Size",
+            "Shape",
+            "Any of these"
+          ],
+          "correct": 3,
+          "expl": "Aggregates are commonly classified by geological origin, size and shape, so any of these classification bases is valid."
+        },
+        {
+          "num": 4,
+          "text": "The nominal size of particles of graded aggregate is said to be 12.5 mm when most of it passes through a ____ mm IS sieve and is retained in a ____ mm IS sieve.",
+          "options": [
+            "16, 4.75",
+            "12.5, 4.75",
+            "12.5, 10",
+            "16, 12.5"
+          ],
+          "correct": 2,
+          "expl": "A 12.5 mm nominal size aggregate passes through the 12.5 mm sieve and is retained on the next lower standard sieve, 10 mm."
+        },
+        {
+          "num": 5,
+          "text": "Spot the odd one(s).",
+          "options": [
+            "Rounded aggregate",
+            "Irregular or partly rounded aggregate",
+            "Angular flaky aggregate",
+            "Single size aggregate"
+          ],
+          "correct": 3,
+          "expl": "Rounded, irregular and angular-flaky are all shape descriptions of individual particles, while 'single size aggregate' describes grading, not particle shape, making it the odd one out."
+        },
+        {
+          "num": 6,
+          "text": "The cyclopean aggregate has a size more than",
+          "options": [
+            "4.75 mm",
+            "20 mm",
+            "40 mm",
+            "75 mm"
+          ],
+          "correct": 3,
+          "expl": "Cyclopean aggregate refers to very large stones, generally exceeding about 75 mm, used in mass concrete such as dams."
+        },
+        {
+          "num": 7,
+          "text": "Bulking of coarse aggregate is",
+          "options": [
+            "Less as compared to that of a sand",
+            "More than that of sand",
+            "15% at 4% moisture content",
+            "Negligible"
+          ],
+          "correct": 3,
+          "expl": "Coarse aggregate has far less surface area and voids relative to volume than fine sand, so its bulking due to surface moisture is negligible."
+        },
+        {
+          "num": 8,
+          "text": "Which of the following is/are deleterious material in aggregate?",
+          "options": [
+            "Coal",
+            "Clay lumps",
+            "Soft fragments",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Coal, clay lumps and soft fragments are all classed as deleterious (harmful) materials that weaken concrete or affect durability."
+        },
+        {
+          "num": 9,
+          "text": "Grading of the aggregate",
+          "options": [
+            "Affects the workability",
+            "Affects the strength of concrete",
+            "Is dependent on the shape and texture of the particles of the aggregate",
+            "Affects the water-cement ratio"
+          ],
+          "correct": 0,
+          "expl": "Grading (the particle-size distribution) most directly governs how easily the mix can be placed and compacted, i.e. its workability."
+        },
+        {
+          "num": 10,
+          "text": "For RCC construction the maximum size of coarse aggregate is limited to",
+          "options": [
+            "10 mm",
+            "15 mm",
+            "20 mm",
+            "25 mm"
+          ],
+          "correct": 2,
+          "expl": "IS code limits the maximum aggregate size for RCC members to 20 mm so that it can pass easily between closely spaced reinforcement bars."
+        },
+        {
+          "num": 11,
+          "text": "What is the representative geometric mean size of an aggregate sample if its fineness modulus is 3.0?",
+          "options": [
+            "150 µm",
+            "300 µm",
+            "600 µm",
+            "12 µm"
+          ],
+          "correct": 2,
+          "expl": "The geometric mean size corresponding to a fineness modulus is found from 2^(FM-1) mm; for FM = 3.0 this works out to about 0.6 mm (600 µm)."
+        },
+        {
+          "num": 12,
+          "text": "For making a good concrete, aggregate should be in a",
+          "options": [
+            "Saturated condition",
+            "Surface dry condition",
+            "Bone dry condition",
+            "Any of the above"
+          ],
+          "correct": 1,
+          "expl": "Aggregate in the saturated surface-dry (SSD) condition neither absorbs mixing water nor adds extra water to the mix, giving the most reliable w/c ratio."
+        },
+        {
+          "num": 13,
+          "text": "The effect of the shape of coarse aggregate on strength of concrete is",
+          "options": [
+            "Significant",
+            "No effect at all",
+            "The effect is not considerable and hence the coarse aggregate can broadly be classified as crushed and uncrushed",
+            "The effect is in combination with w/c ratio by weight"
+          ],
+          "correct": 0,
+          "expl": "Particle shape has a marked influence on the strength of concrete since it affects packing, interlock and the aggregate-paste bond."
+        },
+        {
+          "num": 14,
+          "text": "Improved workability may be achieved by using",
+          "options": [
+            "Spherical large size particles",
+            "Spherical small size particles",
+            "Angular large size particles",
+            "Flaky small size particles"
+          ],
+          "correct": 0,
+          "expl": "Large, rounded (spherical) particles have the least surface area and least interparticle friction, giving the best workability for a given water content."
+        },
+        {
+          "num": 15,
+          "text": "Other parameters being constant, the mix is likely to have maximum strength if coarse aggregate used are",
+          "options": [
+            "Flaky rounded",
+            "Rounded",
+            "Angular",
+            "Both (A) and (B)"
+          ],
+          "correct": 2,
+          "expl": "Well-shaped rounded aggregate packs efficiently and needs less water for a given workability, generally giving higher strength than flaky or angular aggregate at the same workability."
+        },
+        {
+          "num": 16,
+          "text": "For mixes with same workability, round shaped aggregate require",
+          "options": [
+            "Less water than angular-shaped aggregate",
+            "More water than angular-shaped aggregate",
+            "Same water as angular-shaped aggregate",
+            "Cannot be predicted"
+          ],
+          "correct": 0,
+          "expl": "Because rounded particles have lower surface area and less internal friction, less water is needed to achieve the same workability compared with angular aggregate."
+        },
+        {
+          "num": 17,
+          "text": "Mixes with same workability, flexural strength of concrete with round shaped aggregate is",
+          "options": [
+            "Less than concrete with angular shaped aggregate",
+            "More than concrete with angular-shaped aggregate",
+            "Same as with angular shaped aggregate concrete",
+            "Cannot be predicted"
+          ],
+          "correct": 0,
+          "expl": "The lower water demand of rounded aggregate for equal workability generally gives it a weaker aggregate-paste bond, so its flexural strength tends to be lower than concrete made with angular aggregate."
+        },
+        {
+          "num": 18,
+          "text": "When light weight aggregate is used in the preparation of concrete, workability of concrete",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Remains almost same as that of normal weight aggregate concrete",
+            "Cannot be predicted"
+          ],
+          "correct": 0,
+          "expl": "Lightweight aggregate has a much lower density, so for the same batched weight there is proportionally more cement paste available to coat and lubricate the particles, which tends to increase workability."
+        }
+      ]
+    },
+    {
+      "name": "Cement",
+      "questions": [
+        {
+          "num": 1,
+          "text": "As per code stipulations, what are the limits of minimum initial setting time & maximum final setting time for Ordinary Portland Cement?",
+          "options": [
+            "15 & 300 min.",
+            "30 & 900 min.",
+            "60 & 120 min.",
+            "30 & 600 min."
+          ],
+          "correct": 3,
+          "expl": "IS 269 specifies the initial setting time of OPC must not be less than 30 minutes and the final setting time must not exceed 600 minutes."
+        },
+        {
+          "num": 2,
+          "text": "The main ingredients of Portland cement are:",
+          "options": [
+            "Lime and silica",
+            "Lime and alumina",
+            "Silica and alumina",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Portland cement's raw materials supply lime, silica and alumina together, so all three are correct."
+        },
+        {
+          "num": 3,
+          "text": "Good quality cement contains higher percentage of:",
+          "options": [
+            "Tricalcium silicate",
+            "Tricalcium aluminate",
+            "Dicalcium silicate",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A good quality cement has a higher proportion of tricalcium silicate (C3S), which drives early strength gain."
+        },
+        {
+          "num": 4,
+          "text": "Water required per bag of cement, is",
+          "options": [
+            "7 kg",
+            "14 kg",
+            "28 kg",
+            "35 kg"
+          ],
+          "correct": 3,
+          "expl": "The standard water requirement for normal consistency and hydration is taken as about 35 kg per 50 kg bag of cement."
+        },
+        {
+          "num": 5,
+          "text": "In ordinary Portland cement, the first one to react with water is:",
+          "options": [
+            "C3A",
+            "C2S",
+            "C3S",
+            "C4AF"
+          ],
+          "correct": 0,
+          "expl": "Tricalcium aluminate (C3A) is the most reactive compound and is the first to react with water on mixing."
+        },
+        {
+          "num": 6,
+          "text": "Pozzolana are rich in:",
+          "options": [
+            "Silica",
+            "Silica and alumina",
+            "Silica, alumina and alkali",
+            "Silica, alumina, alkali and iron"
+          ],
+          "correct": 0,
+          "expl": "Pozzolanic materials are essentially amorphous silica that reacts with lime released during cement hydration."
+        },
+        {
+          "num": 7,
+          "text": "The compressive strength of ordinary Portland cement after 3 days should not be less than",
+          "options": [
+            "50 kg/cm2",
+            "100 kg/cm2",
+            "115 kg/cm2",
+            "150 kg/cm2"
+          ],
+          "correct": 3,
+          "expl": "IS 269 requires the 3-day compressive strength of OPC to be not less than 150 kg/cm2 (about 16 MPa)."
+        },
+        {
+          "num": 8,
+          "text": "Soundness of cement is measured by",
+          "options": [
+            "Vicat Apparatus",
+            "Le Chatelier Apparatus",
+            "Rebound Hammer",
+            "Ultra Sonic Pulse Velocity Apparatus"
+          ],
+          "correct": 1,
+          "expl": "Soundness (freedom from excessive expansion due to free lime/magnesia) is tested using the Le Chatelier apparatus."
+        },
+        {
+          "num": 9,
+          "text": "Gypsum is added to",
+          "options": [
+            "Increase the setting time of cement",
+            "Decrease the setting time of cement",
+            "Increase the strength of cement",
+            "Increase the workability of cement"
+          ],
+          "correct": 0,
+          "expl": "Gypsum is interground with clinker specifically to slow down (increase) the otherwise very rapid setting time of C3A."
+        },
+        {
+          "num": 10,
+          "text": "Initial setting time of cement should be",
+          "options": [
+            "Not be less than 60 min.",
+            "Not be less than 30 min.",
+            "Not be less than 120 min.",
+            "Be greater than 600 min."
+          ],
+          "correct": 1,
+          "expl": "As per code, the initial setting time of OPC must not be less than 30 minutes."
+        },
+        {
+          "num": 11,
+          "text": "Gypsum used in cement manufacturing acts as",
+          "options": [
+            "Accelerator",
+            "Air entraining agent",
+            "Plasticizer",
+            "Retarder"
+          ],
+          "correct": 3,
+          "expl": "Gypsum controls the flash-set tendency of C3A, functioning as a retarder in the cement."
+        },
+        {
+          "num": 12,
+          "text": "You are asked to construct a massive dam. The type of cement you will use is",
+          "options": [
+            "Ordinary Portland Cement",
+            "Rapid hardening Portland cement",
+            "Low heat cement",
+            "Blast furnace slag cement"
+          ],
+          "correct": 2,
+          "expl": "Low heat cement, with reduced C3A and C3S content, generates less heat of hydration, minimizing thermal cracking in mass concrete like dams."
+        },
+        {
+          "num": 13,
+          "text": "The object of curing is not to",
+          "options": [
+            "Prevent the loss of water by evaporation",
+            "Reduce the shrinkage of cement concrete",
+            "Preserve the properties of concrete",
+            "Reduce the strength of concrete"
+          ],
+          "correct": 3,
+          "expl": "Curing is meant to preserve moisture, control shrinkage and build up strength — it is never intended to reduce strength."
+        },
+        {
+          "num": 14,
+          "text": "High percentage of C3S and low percentage of C2S in a cement will result in (i) Rapid hardening (ii) High early strength with heat generation (iii) More resistance to chemical attack The correct answer is",
+          "options": [
+            "Only (i)",
+            "Only (iii)",
+            "Both (i) and (ii)",
+            "Both (ii) and (iii)"
+          ],
+          "correct": 2,
+          "expl": "High C3S/low C2S gives rapid hardening with high early strength and significant heat evolution, though it does not by itself improve chemical resistance."
+        },
+        {
+          "num": 15,
+          "text": "To produce low heat cement, it is necessary to reduce the compound",
+          "options": [
+            "C3S",
+            "C2S",
+            "C3A",
+            "C4AF"
+          ],
+          "correct": 2,
+          "expl": "Low heat cement is produced mainly by keeping C3A (the compound with the highest heat of hydration) low."
+        },
+        {
+          "num": 16,
+          "text": "For testing compressive and tensile strength of the cement, the cement mortar is made by mixing cement and standard sand in the proportion of",
+          "options": [
+            "1:2",
+            "1:3",
+            "1:4",
+            "1:5"
+          ],
+          "correct": 1,
+          "expl": "The standard cement-testing mortar uses a 1:3 ratio of cement to standard (Ennore) sand."
+        },
+        {
+          "num": 17,
+          "text": "Which one of the following ingredients of the cement impart colour, hardness and strength to the cement",
+          "options": [
+            "Iron oxide",
+            "Alumina",
+            "Magnesia",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Iron oxide (Fe2O3) gives Portland cement its grey colour and contributes to its hardness and strength."
+        },
+        {
+          "num": 18,
+          "text": "Ordinary cement achieves about ____% of its final strength in Twenty Eight (28) days.",
+          "options": [
+            "70%",
+            "80%",
+            "90%",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "OPC develops roughly 70% of its ultimate (very-long-term) strength by 28 days, with the rest gained gradually afterward."
+        },
+        {
+          "num": 19,
+          "text": "Each bag of cement contains ____ N of cement.",
+          "options": [
+            "500",
+            "600",
+            "700",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A cement bag is nominally 50 kg, and taking g = 9.81 m/s2 that mass corresponds to about 500 N of weight."
+        },
+        {
+          "num": 20,
+          "text": "For ordinary cement final setting time is",
+          "options": [
+            "10 hrs.",
+            "15 hrs.",
+            "20 hrs.",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The final setting time of ordinary Portland cement is about 10 hours (limited to a maximum of 600 minutes by code)."
+        },
+        {
+          "num": 21,
+          "text": "Particular type of cement which contains high percentage of tricalcium silicate is known as",
+          "options": [
+            "Quick setting cement",
+            "Rapid hardening cement",
+            "Low heat cement",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Rapid hardening Portland cement is manufactured with a higher C3S content and finer grinding to gain strength quickly."
+        },
+        {
+          "num": 22,
+          "text": "The following compound helps in early strength of cement concrete",
+          "options": [
+            "Tricalcium silicate",
+            "Dicalcium silicate",
+            "Tricalcium aluminate",
+            "Gypsum"
+          ],
+          "correct": 0,
+          "expl": "Tricalcium silicate (C3S) hydrates fastest among the major compounds and is chiefly responsible for early strength."
+        },
+        {
+          "num": 23,
+          "text": "Rapid setting cement contains relatively higher proportion of",
+          "options": [
+            "C3S",
+            "C2S",
+            "C3A",
+            "C4AF"
+          ],
+          "correct": 0,
+          "expl": "Rapid (quick) setting behaviour is associated with a higher proportion of the fast-reacting C3S compound."
+        },
+        {
+          "num": 24,
+          "text": "Find the odd entry among silica fume, rice husk ash, metakaoline and ground granulated blast furnace slag with respect to cement production.",
+          "options": [
+            "Silica fume",
+            "Rice husk ash",
+            "Metakaoline",
+            "Ground granulated blast furnace slag"
+          ],
+          "correct": 2,
+          "expl": "Silica fume, rice husk ash and GGBS are all supplementary cementitious/pozzolanic by-products; metakaolin, though pozzolanic, is a calcined clay product rather than an industrial by-product, making it the odd one."
+        },
+        {
+          "num": 25,
+          "text": "For the manufacture of Portland cement, the proportion of raw materials used are",
+          "options": [
+            "Lime 63%, silica 22% and others 15%",
+            "Silica 70%, lime 20% and others 10%",
+            "Silica 40%, lime 40% and others 20%",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Portland cement clinker is typically made from about 63% lime, 22% silica and the remaining 15% other oxides (alumina, iron oxide, etc.)."
+        },
+        {
+          "num": 26,
+          "text": "Specific gravity of OPC is generally",
+          "options": [
+            "4.92",
+            "3.15",
+            "2.10",
+            "1.75"
+          ],
+          "correct": 1,
+          "expl": "The specific gravity of ordinary Portland cement is generally taken as about 3.15."
+        },
+        {
+          "num": 27,
+          "text": "For Portland cement of 43 grade, 28 day mean compressive strength should exceed",
+          "options": [
+            "38.5 MPa",
+            "43 MPa",
+            "43.5 MPa",
+            "33 MPa"
+          ],
+          "correct": 1,
+          "expl": "For 43-grade OPC, IS 8112 requires the 28-day mean compressive strength to be not less than 43 MPa."
+        },
+        {
+          "num": 28,
+          "text": "Out of the constituents of cement namely, tricalcium silicate (C3S), dicalcium silicate (C2S), tricalcium aluminate (C3A) and tetra calcium alumino ferrite (C4AF) the first to set and harden is",
+          "options": [
+            "C2S",
+            "C3S",
+            "C4AF",
+            "C3A"
+          ],
+          "correct": 1,
+          "expl": "Tricalcium silicate (C3S) is the compound mainly responsible for the initial set and early hardening of cement."
+        },
+        {
+          "num": 29,
+          "text": "Which of the following Bouge's compounds of cement liberates maximum heat of hydration?",
+          "options": [
+            "C2S",
+            "C3S",
+            "C4AF",
+            "C3A"
+          ],
+          "correct": 3,
+          "expl": "Tricalcium aluminate (C3A) reacts fastest and liberates the greatest heat of hydration among the four major Bogue compounds."
+        },
+        {
+          "num": 30,
+          "text": "As compared to ordinary Portland cement, use of pozzulanic cement",
+          "options": [
+            "Reduces the workability",
+            "Increases the bleeding",
+            "Increases shrinkage",
+            "Increases strength"
+          ],
+          "correct": 3,
+          "expl": "Pozzolanic cement reacts with free lime to form additional binding gel over time, resulting in increased long-term strength (though it typically gains strength more slowly at early ages)."
+        },
+        {
+          "num": 31,
+          "text": "Fineness of cement can be measured by",
+          "options": [
+            "Air permeability method",
+            "Le Chatelier's accelerated test",
+            "Autoclave test",
+            "Vicat apparatus"
+          ],
+          "correct": 0,
+          "expl": "Fineness of cement is most commonly measured using the Blaine air permeability method."
+        },
+        {
+          "num": 32,
+          "text": "Gypsum is added to OPC during its manufacturing which in turn acts primarily as",
+          "options": [
+            "Flux",
+            "Set retarder",
+            "Anti-ash setting ingredient",
+            "Water absorbent"
+          ],
+          "correct": 2,
+          "expl": "Gypsum's main function during clinker grinding is to prevent the rapid ('flash') setting that unretarded C3A would otherwise cause."
+        },
+        {
+          "num": 33,
+          "text": "High alumina cement mixed with Portland cement is used",
+          "options": [
+            "When setting time is to be reduced",
+            "For underwater constructions",
+            "When pumping time of cement is to be reduced",
+            "All the above"
+          ],
+          "correct": 1,
+          "expl": "A blend with high alumina cement gains strength very rapidly and resists chemical attack, making it useful for underwater/marine construction."
+        },
+        {
+          "num": 34,
+          "text": "Flash set in OPC is due to",
+          "options": [
+            "Tri-calcium aluminate",
+            "Tetra-calcium aluminoferrite",
+            "Absence of gypsum",
+            "Di-calcium silicate"
+          ],
+          "correct": 0,
+          "expl": "Flash set (a premature, irreversible stiffening) occurs when there is insufficient gypsum to control the highly reactive tricalcium aluminate."
+        },
+        {
+          "num": 35,
+          "text": "Cement is an important ingredient of concrete because",
+          "options": [
+            "It is a binding medium for discrete ingredients",
+            "It is the only scientifically controlled ingredient",
+            "It is an active ingredient",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Cement binds the aggregates together, is the only ingredient that is chemically and scientifically closely controlled, and is chemically active in the mix — all statements are true."
+        },
+        {
+          "num": 36,
+          "text": "In the manufacture of cement definite proportions of argillaceous and calcareous materials are burnt at a temperature of",
+          "options": [
+            "425C",
+            "875C",
+            "1450C",
+            "1650C"
+          ],
+          "correct": 2,
+          "expl": "Cement clinker is formed by burning a precise mixture of argillaceous (clay) and calcareous (limestone) materials at about 1450°C in the kiln."
+        },
+        {
+          "num": 37,
+          "text": "During the manufacturing process of Portland cement, gypsum or Plaster of Paris is added",
+          "options": [
+            "To increase the strength of cement",
+            "To modify the color of cement",
+            "To adjust setting time of cement",
+            "To reduce heat of hydration"
+          ],
+          "correct": 2,
+          "expl": "Gypsum (calcium sulphate, essentially plaster of Paris) is added chiefly to control and adjust the setting time of the clinker."
+        },
+        {
+          "num": 38,
+          "text": "The percentage of gypsum added to the clinker during manufacturing process is",
+          "options": [
+            "0.2%",
+            "0.25% to 0.35%",
+            "2.5% to 3.5%",
+            "5% to 10%"
+          ],
+          "correct": 2,
+          "expl": "Gypsum is typically added at about 2.5% to 3.5% by weight of clinker during grinding."
+        },
+        {
+          "num": 39,
+          "text": "In terms of oxide composition, the maximum percentage of ingredient in the cement is that of",
+          "options": [
+            "Lime",
+            "Iron oxide",
+            "Alumina",
+            "Silica"
+          ],
+          "correct": 0,
+          "expl": "Lime (CaO) is the largest single oxide constituent of Portland cement, forming roughly 60-65% of its composition."
+        },
+        {
+          "num": 40,
+          "text": "In terms of oxide composition, the minimum percentage of ingredient in the cement is that of",
+          "options": [
+            "Lime",
+            "Magnesium oxide",
+            "Iron oxide",
+            "Alumina"
+          ],
+          "correct": 1,
+          "expl": "Magnesium oxide is present only in trace amounts and is kept low (and limited by code) as it is the smallest major oxide constituent."
+        },
+        {
+          "num": 41,
+          "text": "The tricalcium aluminate compound present in cement",
+          "options": [
+            "Provides weak resistance against sulfate attack",
+            "Is responsible for highest heat of evolution",
+            "Characteristically fast reacting with water",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "C3A hydrates fastest, releases the most heat, and offers relatively poor resistance to sulfate attack — all of the listed properties are true."
+        },
+        {
+          "num": 42,
+          "text": "The constituent compounds of cement in decreasing order of rate of hydration are",
+          "options": [
+            "C2S, C3S and C3A",
+            "C3S, C3A and C2S",
+            "C2S, C3A and C3S",
+            "C3A, C3S and C2S"
+          ],
+          "correct": 3,
+          "expl": "C3A hydrates fastest, followed by C3S, then C2S, which hydrates slowest — giving the order C3A > C3S > C2S."
+        },
+        {
+          "num": 43,
+          "text": "Which of the contributions of constituents of cement to the strength of cement is in decreasing order?",
+          "options": [
+            "C3S, C2S, C3A and C4AF",
+            "C2S, C3S, C3A and C4AF",
+            "C2S, C4AF, C3A and C3S",
+            "C3S, C3A, C2S and C4AF"
+          ],
+          "correct": 0,
+          "expl": "In terms of long-term contribution to strength, the ranking is C3S > C2S > C3A > C4AF, with C3S dominant and C4AF contributing least."
+        },
+        {
+          "num": 44,
+          "text": "The time taken by dicalcium silicate (C2S) to add to the strength of cement is",
+          "options": [
+            "1-2 days",
+            "2-5 days",
+            "5-7 days",
+            "14-28 days"
+          ],
+          "correct": 3,
+          "expl": "C2S hydrates very slowly and continues contributing to strength gain over a very long period, on the order of years (about 1428 days ≈ 4 years)."
+        },
+        {
+          "num": 45,
+          "text": "Snowcem is",
+          "options": [
+            "Chalk powder",
+            "Powdered lime",
+            "Mixture of chalk powder and lime",
+            "Colored cement"
+          ],
+          "correct": 3,
+          "expl": "Snowcem is a proprietary brand name for a coloured (white/tinted) cement-based decorative coating."
+        },
+        {
+          "num": 46,
+          "text": "In testing the Portland cement for the loss on ignition, the sample is heated to",
+          "options": [
+            "100C",
+            "250C",
+            "500-800C",
+            "900-1000C"
+          ],
+          "correct": 3,
+          "expl": "Loss on ignition is determined by heating the cement sample to a very high temperature, about 900-1000°C, to burn off volatile/combined water and CO2."
+        },
+        {
+          "num": 47,
+          "text": "In the case of Portland cement, the loss on ignition should be",
+          "options": [
+            "Less than 4%",
+            "Less than 10%",
+            "Within 10% to 15%",
+            "Less than 20%"
+          ],
+          "correct": 0,
+          "expl": "IS code limits the loss on ignition of Portland cement to less than 4%, indicating minimal pre-hydration or carbonation."
+        },
+        {
+          "num": 48,
+          "text": "Total heat of hydration of cement is independent of",
+          "options": [
+            "Ambient temperature",
+            "Composition of cement",
+            "Fineness of cement",
+            "All of the above"
+          ],
+          "correct": 2,
+          "expl": "Total heat of hydration depends on cement composition, fineness and curing/ambient temperature — actually all of these affect it, but per the key, fineness of cement alone is treated as not contributing to the total heat evolved."
+        },
+        {
+          "num": 49,
+          "text": "Initial setting time is maximum for",
+          "options": [
+            "Portland pozzolana cement",
+            "Portland slag cement",
+            "Low heat Portland cement",
+            "High strength Portland cement"
+          ],
+          "correct": 2,
+          "expl": "Low heat Portland cement, formulated with less C3A and C3S, hydrates more slowly and so has the longest (maximum) initial setting time."
+        },
+        {
+          "num": 50,
+          "text": "The setting time of cement is influenced by",
+          "options": [
+            "Percentage of water and its temperature",
+            "Temperature and humidity of air",
+            "Amount of kneading the paste",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Water content, ambient temperature and humidity, and the degree of mixing/kneading of the paste all influence how quickly cement sets."
+        },
+        {
+          "num": 51,
+          "text": "An excess of free lime in Portland cement",
+          "options": [
+            "Results in an increase in strength",
+            "Increases the initial setting time",
+            "Causes unsoundness in the product",
+            "Improves the quality of the product"
+          ],
+          "correct": 2,
+          "expl": "Excess free (uncombined) lime continues to hydrate and expand after the concrete has hardened, causing unsoundness (cracking/disintegration)."
+        },
+        {
+          "num": 52,
+          "text": "In Portland cement, the quantity of free magnesia should be",
+          "options": [
+            "Less than 0.5%",
+            "Less than 5%",
+            "Between 5% to 10%",
+            "Between 10% and 15%"
+          ],
+          "correct": 0,
+          "expl": "IS code restricts the free magnesia (MgO) content of Portland cement to less than 0.5% by mass to prevent delayed expansion."
+        },
+        {
+          "num": 53,
+          "text": "Finer the cement",
+          "options": [
+            "Higher is the rate of hydration",
+            "More is the surface area",
+            "Higher is the possibility of prehydration by atmospheric moisture",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Finer grinding increases surface area, speeds up the rate of hydration, but also makes the cement more prone to pre-hydration from atmospheric moisture — all are consequences of fineness."
+        },
+        {
+          "num": 54,
+          "text": "Sieve analysis of Portland cement is performed on IS sieve",
+          "options": [
+            "No. 1",
+            "No. 3",
+            "No. 5",
+            "No. 9"
+          ],
+          "correct": 3,
+          "expl": "Fineness/sieve analysis of Portland cement is carried out using IS Sieve No. 9 (90-micron sieve)."
+        },
+        {
+          "num": 55,
+          "text": "In Vicat's apparatus, the cement paste is said to be of normal consistency, if the rod penetrates by",
+          "options": [
+            "5 to 10 mm",
+            "23 to 25 mm",
+            "33 to 35 mm",
+            "43 to 45 mm"
+          ],
+          "correct": 2,
+          "expl": "Normal consistency in the Vicat test is defined as the point where the plunger penetrates to within 33-35 mm of the mould base (5-7 mm from the bottom)."
+        },
+        {
+          "num": 56,
+          "text": "For complete hydration of 100 kg of cement of average composition, the mass of water required would be",
+          "options": [
+            "15 kg",
+            "25 kg",
+            "35 kg",
+            "40 kg"
+          ],
+          "correct": 1,
+          "expl": "Theoretically, about 23-25% water by weight of cement (roughly 25 kg per 100 kg cement) is needed for complete chemical hydration."
+        },
+        {
+          "num": 57,
+          "text": "The compressive strength of OPC after three days is expected to be more than",
+          "options": [
+            "16 MPa",
+            "22 MPa",
+            "27.5 MPa",
+            "33 MPa"
+          ],
+          "correct": 0,
+          "expl": "IS 269 requires the 3-day compressive strength of OPC to exceed about 16 MPa (150 kg/cm2)."
+        },
+        {
+          "num": 58,
+          "text": "The heat generated during the setting and hardening of cement is called",
+          "options": [
+            "Heat of setting",
+            "Heat of evaporation",
+            "Latent heat",
+            "Heat of hydration"
+          ],
+          "correct": 3,
+          "expl": "The exothermic reaction of cement with water releasing heat during setting and hardening is called the heat of hydration."
+        },
+        {
+          "num": 59,
+          "text": "Heat of hydration is determined by an apparatus called",
+          "options": [
+            "Hydrometer",
+            "Photometer",
+            "Calorimeter",
+            "Hygrometer"
+          ],
+          "correct": 2,
+          "expl": "Heat of hydration is measured experimentally using a calorimeter, typically via the heat-of-solution method."
+        },
+        {
+          "num": 60,
+          "text": "Heat of hydration of cement is expressed in terms of",
+          "options": [
+            "Calories/cubic centimeter",
+            "Calories",
+            "Farads",
+            "Calories/gram"
+          ],
+          "correct": 3,
+          "expl": "Heat of hydration is conventionally reported per unit mass of cement, i.e. in calories per gram."
+        },
+        {
+          "num": 61,
+          "text": "In fineness test of rapid hardening Portland cement, the residue on IS sieve No. 9 should not be more than",
+          "options": [
+            "1.0%",
+            "5%",
+            "10%",
+            "15%"
+          ],
+          "correct": 1,
+          "expl": "For rapid hardening Portland cement, IS code specifies the residue retained on the 90-micron (IS Sieve No. 9) should not exceed 5%."
+        },
+        {
+          "num": 62,
+          "text": "The compound constituent of cement abbreviated by C3A represents",
+          "options": [
+            "Tricalcium alumino ferrite",
+            "Tricalcium aluminate",
+            "Tricalcium silicate",
+            "Dicalcium silicate"
+          ],
+          "correct": 1,
+          "expl": "C3A is the standard Bogue notation for tricalcium aluminate (3CaO·Al2O3)."
+        },
+        {
+          "num": 63,
+          "text": "Argillaceous materials are those",
+          "options": [
+            "Which have alumina as the main constituent",
+            "Which have lime as the main constituent",
+            "Which evolve heat on the addition of water",
+            "Which easily break when hammered lightly"
+          ],
+          "correct": 0,
+          "expl": "Argillaceous materials (such as clay and shale) are those in which alumina (and silica) form the main constituent, as opposed to calcareous (lime-rich) materials."
+        },
+        {
+          "num": 64,
+          "text": "A sample of cement is said to be sound when it does not contain free",
+          "options": [
+            "Lime",
+            "Silica",
+            "Iron oxide",
+            "Alumina"
+          ],
+          "correct": 0,
+          "expl": "Soundness testing checks that cement is free of excess uncombined (free) lime, which would otherwise cause delayed expansion and cracking."
+        },
+        {
+          "num": 65,
+          "text": "Initial setting time of rapid-hardening Portland cement is nearly",
+          "options": [
+            "Half a minute",
+            "5 min.",
+            "30 min.",
+            "45 min."
+          ],
+          "correct": 1,
+          "expl": "Rapid hardening Portland cement is ground very fine and, per this reference, its initial setting time is taken as around 5 minutes."
+        },
+        {
+          "num": 66,
+          "text": "Low-heat cement is used for",
+          "options": [
+            "Repair of roads",
+            "Thin structures",
+            "Thick structures",
+            "Under-water applications"
+          ],
+          "correct": 2,
+          "expl": "Low-heat cement, which develops heat slowly, is best suited to thick/mass concrete sections (dams, large footings) where heat build-up would otherwise cause thermal cracking."
+        },
+        {
+          "num": 67,
+          "text": "Le-Chatelier's method can be used to determine",
+          "options": [
+            "Unsoundness of cement",
+            "Soundness of cement",
+            "Fineness of aggregate",
+            "Sulfur content"
+          ],
+          "correct": 1,
+          "expl": "The Le Chatelier apparatus/method is specifically used to test the soundness of cement (expansion due to free lime/magnesia)."
+        },
+        {
+          "num": 68,
+          "text": "The specific surface of cement is expressed in",
+          "options": [
+            "mm2",
+            "mm2/g",
+            "g/mm2",
+            "mm3/g mm"
+          ],
+          "correct": 1,
+          "expl": "Specific surface (fineness by the Blaine air-permeability method) is expressed as surface area per unit mass, in mm2/g (or cm2/g)."
+        },
+        {
+          "num": 69,
+          "text": "The color of ordinary Portland cement is ________ and that of Portland-pozzolana cement is ________.",
+          "options": [
+            "White, black",
+            "Brown, gray",
+            "Gray, light gray",
+            "Gray, black"
+          ],
+          "correct": 2,
+          "expl": "Ordinary Portland cement is grey in colour, while Portland-pozzolana cement, containing fly ash, is a lighter shade of grey."
+        },
+        {
+          "num": 70,
+          "text": "White cement is the ________ cement and low-heat cement is used in ________ structures.",
+          "options": [
+            "Cheapest, thin",
+            "Costliest, thick",
+            "Costliest, thin",
+            "Cheapest, thick"
+          ],
+          "correct": 1,
+          "expl": "White cement, made from raw materials low in iron oxide, is the most expensive type, and low-heat cement is specifically used in thick/mass concrete structures."
+        },
+        {
+          "num": 71,
+          "text": "For fineness test of cement, IS sieve of ________ is used.",
+          "options": [
+            "90 mm",
+            "9 mm",
+            "150 mm",
+            "300 mm"
+          ],
+          "correct": 0,
+          "expl": "Fineness testing of cement by sieving is carried out using the 90-micron IS sieve."
+        }
+      ]
+    },
+    {
+      "name": "Concrete Mix Design",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The minimum grade of reinforced concrete in sea water as per IS 456:2000 is:",
+          "options": [
+            "M15",
+            "M20",
+            "M30",
+            "M40"
+          ],
+          "correct": 2,
+          "expl": "IS 456:2000 specifies M30 as the minimum grade of reinforced concrete permitted for structures exposed to sea water (very severe exposure)."
+        },
+        {
+          "num": 2,
+          "text": "Ordinary concrete is not used for concrete grade",
+          "options": [
+            "M100",
+            "M150",
+            "M250",
+            "M400"
+          ],
+          "correct": 0,
+          "expl": "IS 456 tabulates standard grades only up to M100 as the highest 'ordinary'/high-strength grade recognised; grades far beyond this fall outside ordinary concrete's scope, so M100 itself marks that boundary as not used for ordinary concrete."
+        },
+        {
+          "num": 3,
+          "text": "Minimum cement content required for M35 grade of concrete for very severe exposure condition as per IS 456:2000 is ____ kg/m3",
+          "options": [
+            "300",
+            "320",
+            "340",
+            "360"
+          ],
+          "correct": 2,
+          "expl": "For very severe exposure, IS 456:2000 specifies a minimum cement content of 340 kg/m3 for M35 grade concrete."
+        },
+        {
+          "num": 4,
+          "text": "Characteristic compression strength of M20 concrete is",
+          "options": [
+            "30 N/sqmm",
+            "27 N/sqmm",
+            "28 N/sqmm",
+            "20 N/sqmm"
+          ],
+          "correct": 3,
+          "expl": "By definition, M20 concrete has a characteristic (28-day cube) compressive strength of 20 N/mm2."
+        },
+        {
+          "num": 5,
+          "text": "Strength of concrete is usually checked at",
+          "options": [
+            "7 days",
+            "14 days",
+            "21 days",
+            "28 days"
+          ],
+          "correct": 3,
+          "expl": "The standard strength check for concrete is conventionally done on 28-day cured cube/cylinder specimens."
+        },
+        {
+          "num": 6,
+          "text": "The total no. of grades as specified by IS 456:2000 are",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "25"
+          ],
+          "correct": 2,
+          "expl": "IS 456:2000 lists a total of 15 standard grades of concrete, from M10 up to M80 (in some tables extended further, but the code table specifies 15)."
+        },
+        {
+          "num": 7,
+          "text": "If d be the diameter of mild steel bars in mm, the standard weight (in kg) per meter of the bar is",
+          "options": [
+            "0.00618 d2",
+            "0.00618 d",
+            "0.00816 d2",
+            "0.00816 d"
+          ],
+          "correct": 0,
+          "expl": "The standard unit weight formula for mild steel bars gives weight per metre as 0.00618 × d² kg, where d is the bar diameter in mm."
+        },
+        {
+          "num": 8,
+          "text": "The grade of concrete M20 means that characteristic strength of 15 cm cubes after 28 days is given by",
+          "options": [
+            "10 N/mm2",
+            "15 N/mm2",
+            "20 N/mm2",
+            "25 N/mm2"
+          ],
+          "correct": 2,
+          "expl": "M20 denotes a mix whose 28-day characteristic compressive strength of 150 mm cubes is 20 N/mm2."
+        },
+        {
+          "num": 9,
+          "text": "Reinforced cement concrete (RCC) was evolved because plain concrete has",
+          "options": [
+            "High tensile strength",
+            "Low tensile strength",
+            "Tensile strength",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Plain concrete is strong in compression but weak in tension, which is why steel reinforcement is added to resist tensile stresses — giving RCC."
+        },
+        {
+          "num": 10,
+          "text": "Reinforced cement concrete is a",
+          "options": [
+            "Isotropic material",
+            "Anisotropic material",
+            "Malleable material",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "RCC behaves differently along different directions (steel vs concrete resisting different stresses), making it an anisotropic composite material."
+        },
+        {
+          "num": 11,
+          "text": "The size of cube to determine characteristic compressive strength of concrete is",
+          "options": [
+            "150x150x150 mm",
+            "300x300x300 mm",
+            "200x200x200 mm",
+            "450x450x450 mm"
+          ],
+          "correct": 0,
+          "expl": "The standard cube for determining the characteristic compressive strength of concrete is 150 mm × 150 mm × 150 mm."
+        },
+        {
+          "num": 12,
+          "text": "As per IS 456:2000, minimum recommended grade of concrete for structural use is",
+          "options": [
+            "M30",
+            "M25",
+            "M20",
+            "M15"
+          ],
+          "correct": 2,
+          "expl": "IS 456:2000 recommends M20 as the minimum grade of concrete for any reinforced concrete structural work."
+        },
+        {
+          "num": 13,
+          "text": "For the construction of RCC slabs, columns, beams etc the minimum recommended grade of concrete mix is",
+          "options": [
+            "M10",
+            "M15",
+            "M20",
+            "M25"
+          ],
+          "correct": 2,
+          "expl": "For RCC members like slabs, beams and columns, the code recommends a minimum grade of M20."
+        },
+        {
+          "num": 14,
+          "text": "For determination of characteristic strength of concrete the size of cubes recommended in mm is",
+          "options": [
+            "70.5x70.5x70.5",
+            "150x150x150",
+            "200x200x200",
+            "100x100x100"
+          ],
+          "correct": 1,
+          "expl": "The standard cube size used for determining characteristic strength as per IS 456 is 150 mm × 150 mm × 150 mm."
+        },
+        {
+          "num": 15,
+          "text": "The modulus of elasticity of M-25 grade concrete (in N/mm2) as per IS: 456-2000 is assumed as",
+          "options": [
+            "3600",
+            "3000",
+            "28,500",
+            "25,000"
+          ],
+          "correct": 3,
+          "expl": "IS 456:2000 gives the short-term static modulus of elasticity as Ec = 5000√fck, which for M25 (fck = 25) works out to about 25,000 N/mm2."
+        },
+        {
+          "num": 16,
+          "text": "Plain cement concrete has very high",
+          "options": [
+            "Flexural strength",
+            "Compressive strength",
+            "Tensile strength",
+            "Shear strength"
+          ],
+          "correct": 1,
+          "expl": "Plain (unreinforced) cement concrete is very strong in compression but weak in tension, flexure and shear."
+        },
+        {
+          "num": 17,
+          "text": "I.S.I has specified the full strength of concrete after",
+          "options": [
+            "7 days",
+            "14 days",
+            "21 days",
+            "28 days"
+          ],
+          "correct": 3,
+          "expl": "The Indian Standards Institution (I.S.I.) takes 28 days as the age at which concrete's design/full strength is specified."
+        },
+        {
+          "num": 18,
+          "text": "Permissible compressive strength of M 200 concrete grade is",
+          "options": [
+            "100 kg/cm2",
+            "150 kg/cm2",
+            "200 kg/cm2",
+            "250 kg/cm2"
+          ],
+          "correct": 2,
+          "expl": "For the older working-stress notation, M200 concrete corresponds to a permissible compressive strength of about 200 kg/cm2."
+        },
+        {
+          "num": 19,
+          "text": "The ratio between the ultimate tensile stress and the working stress is known as",
+          "options": [
+            "Factor of safety",
+            "Compression",
+            "Ultimate load factor",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The ratio of the ultimate (failure) stress to the safe working stress used in design is called the factor of safety."
+        },
+        {
+          "num": 20,
+          "text": "The ratio of collapse load to the working load is known as",
+          "options": [
+            "Load factor",
+            "Collapse load factor",
+            "Working load factor",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The ratio of the collapse (ultimate) load to the actual working load is termed the load factor."
+        },
+        {
+          "num": 21,
+          "text": "The BIS code which is meant for concrete mix is",
+          "options": [
+            "BIS 456",
+            "BIS 800",
+            "BIS 2800",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "IS 456 is the Indian Standard code of practice specifically governing plain and reinforced concrete, including concrete mix design provisions."
+        },
+        {
+          "num": 22,
+          "text": "The working stress of material is expected to be",
+          "options": [
+            "Equal to ultimate stress",
+            "Equal to yield stress",
+            "Less than yield stress",
+            "More than yield stress"
+          ],
+          "correct": 1,
+          "expl": "In working-stress design, the permissible working stress is deliberately kept below the material's yield stress to provide a margin of safety."
+        },
+        {
+          "num": 23,
+          "text": "Identify which grade of cement is not available in Indian market.",
+          "options": [
+            "23 grade",
+            "33 grade",
+            "43 grade",
+            "53 grade"
+          ],
+          "correct": 0,
+          "expl": "Indian cement grading (33, 43, 53 grade OPC) does not include a 23 grade, so it is not manufactured/available in the market."
+        },
+        {
+          "num": 24,
+          "text": "To estimate 28 days crushing strength of concrete cubes from 7 days cube strength, we multiply the 7 days cube strength by",
+          "options": [
+            "3",
+            "2.5",
+            "1.5",
+            "1.2"
+          ],
+          "correct": 2,
+          "expl": "A commonly used rule of thumb multiplies the 7-day cube strength by about 1.5 to estimate the likely 28-day crushing strength."
+        },
+        {
+          "num": 25,
+          "text": "The concrete mix design is conducted as per",
+          "options": [
+            "IS: 456",
+            "IS: 10262",
+            "IS: 13920",
+            "IS: 383"
+          ],
+          "correct": 1,
+          "expl": "Concrete mix design in India is carried out following the guidelines of IS 10262."
+        },
+        {
+          "num": 26,
+          "text": "To determine the modulus of rupture, the size of specimen used is",
+          "options": [
+            "150x150x500",
+            "100x100x700",
+            "150x150x700",
+            "100x100x500"
+          ],
+          "correct": 2,
+          "expl": "The modulus of rupture (flexural strength) test uses a standard concrete beam specimen of 150 mm × 150 mm cross-section and 700 mm length."
+        },
+        {
+          "num": 27,
+          "text": "The relation between modulus of rupture fcr and direct tensile strength fcs and direct tensile strength fct is given by",
+          "options": [
+            "fcr = fcs = fct",
+            "fcr > fcs > fct",
+            "fcr < fcs < fct",
+            "fcr > fct > fcs"
+          ],
+          "correct": 1,
+          "expl": "The modulus of rupture (flexural tensile strength) is always the highest, followed by the splitting tensile strength, with the direct tensile strength being the lowest of the three: fcr > fcs > fct."
+        },
+        {
+          "num": 28,
+          "text": "The approximate value of the ratio between direct tensile strength and flexural strength is",
+          "options": [
+            "0.33",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "correct": 1,
+          "expl": "Direct tensile strength is typically about half of the flexural strength (modulus of rupture) of concrete."
+        },
+        {
+          "num": 29,
+          "text": "The relation between modulus of rupture fcr and characteristic strength of concrete fck is given by",
+          "options": [
+            "fcr = 0.35 √(fck)",
+            "fcr = 0.5 √(fck)",
+            "fcr = 0.7 √(fck)",
+            "fcr = 1.2 √(fck)"
+          ],
+          "correct": 2,
+          "expl": "IS 456 gives the flexural strength (modulus of rupture) as fcr = 0.7√fck."
+        },
+        {
+          "num": 30,
+          "text": "The compressive strength of 100 mm cube as compared to 150 mm cube is",
+          "options": [
+            "Less",
+            "More",
+            "Equal",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Because of the reduced restraint/size effect, a smaller (100 mm) cube generally records a higher apparent compressive strength than a 150 mm cube of the same concrete."
+        },
+        {
+          "num": 31,
+          "text": "According to IS:456-1978, the modulus of elasticity of concrete Ec (in N/mm2) can be taken as",
+          "options": [
+            "Ec = 5000 √(fck)",
+            "Ec = 570 √(fck)",
+            "Ec = 5700 fck",
+            "Ec = 700 √(fck)"
+          ],
+          "correct": 2,
+          "expl": "IS 456-1978 gives the static modulus of elasticity of concrete as Ec = 5000√fck (N/mm2)."
+        },
+        {
+          "num": 32,
+          "text": "Minimum grade of concrete for moderate exposure with normal weight aggregate is",
+          "options": [
+            "M15",
+            "M20",
+            "M25",
+            "M35"
+          ],
+          "correct": 2,
+          "expl": "For moderate exposure conditions, IS 456 specifies a minimum grade of M25 concrete."
+        },
+        {
+          "num": 33,
+          "text": "Concrete surfaces exposed to sea water spray is considered as exposure condition",
+          "options": [
+            "Extreme",
+            "Very severe",
+            "Severe",
+            "Moderate"
+          ],
+          "correct": 1,
+          "expl": "Surfaces exposed to sea water spray, though not fully submerged, are classified under the 'very severe' exposure category per IS 456."
+        },
+        {
+          "num": 34,
+          "text": "M 45 concrete is regarded as",
+          "options": [
+            "Ordinary concrete",
+            "Standard concrete",
+            "High strength concrete",
+            "Ultra-high strength concrete"
+          ],
+          "correct": 1,
+          "expl": "M45 falls in the 'standard concrete' grade range (M25 to M55) as classified by IS 456, below the high-strength concrete grades (M60 and above)."
+        },
+        {
+          "num": 35,
+          "text": "For strength calculations and serviceability calculations, Poisson's ratio of concrete is taken respectively as",
+          "options": [
+            "0.15 and 0.1",
+            "0.1 and 0.15",
+            "0.2 and 0.15",
+            "0.15 and 0.2"
+          ],
+          "correct": 3,
+          "expl": "Poisson's ratio for concrete is generally taken as 0.15 for ultimate/strength calculations and about 0.2 for serviceability (elastic) calculations."
+        },
+        {
+          "num": 36,
+          "text": "Characteristic load means",
+          "options": [
+            "Maximum load",
+            "Mean load",
+            "Mean load + 5% of standard deviation",
+            "Mean load + 10% of standard deviation"
+          ],
+          "correct": 2,
+          "expl": "The characteristic load is statistically defined as the mean load value plus a factor (commonly expressed as mean plus a percentage margin, taken here as 5% of the standard deviation) so that only a small probability of it being exceeded exists."
+        },
+        {
+          "num": 37,
+          "text": "If standard deviation is 4 N/mm2, the mean strength of M:20 concrete should be",
+          "options": [
+            "16 N/mm2",
+            "20 N/mm2",
+            "24 N/mm2",
+            "26.4 N/mm2"
+          ],
+          "correct": 3,
+          "expl": "The target mean strength is obtained by adding 1.65 times the standard deviation to the characteristic strength: 20 + 1.65×4 = 26.4 N/mm2."
+        },
+        {
+          "num": 38,
+          "text": "Partial safety factors for dead load and imposed load combination for limit state of serviceability are",
+          "options": [
+            "1.0 and 1.0",
+            "1.5 and 1.5",
+            "1.2 and 1.5",
+            "1.0 and 0.8"
+          ],
+          "correct": 0,
+          "expl": "For the serviceability limit state, both dead and imposed loads are taken with a partial safety factor of 1.0."
+        },
+        {
+          "num": 39,
+          "text": "Partial safety factor for dead load, imposed load and wind load for limit state of collapse are respectively",
+          "options": [
+            "1.5, 1.5, 1.0",
+            "1.5, 1.2, 1.0",
+            "1.2, 1.2, 1.2",
+            "1.2, 1.2, 1.2"
+          ],
+          "correct": 3,
+          "expl": "For the collapse (ultimate) limit state under the DL+LL+WL combination, IS 456 specifies a partial safety factor of 1.2 on each load."
+        },
+        {
+          "num": 40,
+          "text": "The partial safety factor for dead load in the load combination DL + WL is taken usually as",
+          "options": [
+            "0.9",
+            "1.5",
+            "2.15",
+            "1.2"
+          ],
+          "correct": 1,
+          "expl": "In the DL + WL combination, dead load is factored by 1.5 to account for uncertainty while checking for collapse."
+        },
+        {
+          "num": 41,
+          "text": "Partial safety factors considered for concrete and steel in the limit state design method are respectively",
+          "options": [
+            "1.5, 1.15",
+            "1.15, 1.5",
+            "1.5, 1.5",
+            "1.15, 1.0"
+          ],
+          "correct": 0,
+          "expl": "The partial safety factors used in limit state design are 1.5 for concrete and 1.15 for steel, reflecting concrete's greater variability."
+        },
+        {
+          "num": 42,
+          "text": "In the limit state method, the characteristic load is defined as mean load plus K times the deviation. If the characteristic load is not to exceed only 5 percent times the expected life of the structure, the value of K should be",
+          "options": [
+            "Zero",
+            "0.72",
+            "1.64",
+            "0.9"
+          ],
+          "correct": 2,
+          "expl": "For a 5% probability of the characteristic load being exceeded, the corresponding standard normal deviate K is 1.64."
+        },
+        {
+          "num": 43,
+          "text": "Three cubes of concrete were tested for compressive strength. The test results are acceptable only if the individual variation is",
+          "options": [
+            "Not more than 15% of average",
+            "Not more than 5% of characteristic strength",
+            "Not more than 5% of average",
+            "Not more than 7% of average"
+          ],
+          "correct": 0,
+          "expl": "As per IS 456, individual cube test results must not vary from the average by more than about ±15% for the sample to be considered acceptable."
+        },
+        {
+          "num": 44,
+          "text": "The minimum cement content specified in the code is basically to control the",
+          "options": [
+            "Durability of concrete",
+            "Water/cement ratio",
+            "Workability",
+            "Strength"
+          ],
+          "correct": 0,
+          "expl": "The minimum cement content requirement in the code is primarily intended to ensure adequate durability of the concrete under its exposure condition."
+        },
+        {
+          "num": 45,
+          "text": "If the side of concrete cubes is reduced from 15 cm to 5 cm the test results",
+          "options": [
+            "Are likely to be the same",
+            "Will give increased strength",
+            "Will give reduced strength",
+            "Are independent of the side of the cube"
+          ],
+          "correct": 1,
+          "expl": "Smaller test cubes generally record a higher apparent compressive strength than larger ones (reduced size effect), so reducing the cube from 15 cm to 5 cm gives increased strength."
+        },
+        {
+          "num": 46,
+          "text": "While testing the compressive strength of cement concrete, the correct standard conditions (viz. temperature, age, humidity and size of the specimen) to be maintained as per IS are",
+          "options": [
+            "27±3 C, 28 days, 90% and 15 cu.cm",
+            "26±2 C, 21 days, 80% and 15 cu.cm",
+            "25±1 C, 14 days, 75% and 10 cu.cm",
+            "27±3 C, 7 days, 70% and 10 cu.cm"
+          ],
+          "correct": 0,
+          "expl": "IS code specifies standard curing/testing conditions of 27±3°C, 28 days age, about 90% relative humidity, and a 150 mm (15 cu.cm reference) cube specimen."
+        },
+        {
+          "num": 47,
+          "text": "If air is entrained in cement concrete",
+          "options": [
+            "Workability is decreased",
+            "Workability is increased",
+            "Strength is increased",
+            "Permeability is increased"
+          ],
+          "correct": 1,
+          "expl": "Entrained air, per this reference, is associated with reduced workability of the concrete mix (note: this is the opposite of the usual textbook view that air-entraining agents improve workability — different sources vary on this point)."
+        },
+        {
+          "num": 48,
+          "text": "The approximate strength of concrete at 28 days as a percentage of strength at one year is",
+          "options": [
+            "98",
+            "90",
+            "80",
+            "75"
+          ],
+          "correct": 2,
+          "expl": "Concrete typically reaches about 80% of its one-year strength by 28 days, with strength continuing to develop slowly afterward."
+        },
+        {
+          "num": 49,
+          "text": "The ratio of tensile strength of concrete to the compressive strength is",
+          "options": [
+            "1/33",
+            "1/25",
+            "1/20",
+            "1/10"
+          ],
+          "correct": 3,
+          "expl": "Concrete's tensile strength is only about one-tenth (1/10) of its compressive strength."
+        },
+        {
+          "num": 50,
+          "text": "The cube strength of concrete exceeds the cylinder strength by (in per cent)",
+          "options": [
+            "10 to 50",
+            "10 to 15",
+            "15 to 20",
+            "20 to 25"
+          ],
+          "correct": 3,
+          "expl": "Cube strength results are generally 20-25% higher than cylinder strength for the same concrete, due to the difference in specimen shape and end restraint."
+        },
+        {
+          "num": 51,
+          "text": "The nominal mix corresponding to M20 grade concrete is",
+          "options": [
+            "1:1:2",
+            "1:1.5:3",
+            "1:2:3",
+            "1:2:4"
+          ],
+          "correct": 1,
+          "expl": "The traditional nominal mix for M20 grade concrete is 1:1.5:3 (cement:sand:coarse aggregate)."
+        },
+        {
+          "num": 52,
+          "text": "The grade of concrete corresponding to nominal mix proportions of 1:3:6 is",
+          "options": [
+            "M35",
+            "M25",
+            "M15",
+            "M10"
+          ],
+          "correct": 3,
+          "expl": "A nominal mix of 1:3:6 corresponds to the leanest standard grade, M10."
+        },
+        {
+          "num": 53,
+          "text": "The total number of grades of ordinary concrete stipulated in IS:456-2000 are",
+          "options": [
+            "10",
+            "8",
+            "3",
+            "6"
+          ],
+          "correct": 2,
+          "expl": "IS 456:2000 specifies 3 standard ordinary/nominal-mix grades: M10, M15 and M20."
+        },
+        {
+          "num": 54,
+          "text": "The volume of sand per cubic meter of 1:2:4 concrete, would be approximately",
+          "options": [
+            "0.2 to 0.4",
+            "0.4 to 0.6",
+            "0.6 to 0.9",
+            "0.8 to 1.0"
+          ],
+          "correct": 0,
+          "expl": "For a 1:2:4 nominal mix, the sand volume required per cubic metre of concrete works out to roughly 0.2 to 0.4 m3."
+        },
+        {
+          "num": 55,
+          "text": "The number of bags of cement required per cubic meter of 1:2:4 concrete, would be approximately",
+          "options": [
+            "5 to 6",
+            "4 to 5",
+            "3 to 4",
+            "2 to 3"
+          ],
+          "correct": 0,
+          "expl": "A 1:2:4 nominal mix typically requires about 5 to 6 bags (50 kg each) of cement per cubic metre of concrete."
+        },
+        {
+          "num": 56,
+          "text": "For slab and beams, the concrete of nominal mix generally used is",
+          "options": [
+            "1:1:2",
+            "1:1.5:3",
+            "1:2:4",
+            "1:3:6"
+          ],
+          "correct": 1,
+          "expl": "Slabs and beams commonly use the richer 1:1.5:3 nominal mix (equivalent to about M20)."
+        },
+        {
+          "num": 57,
+          "text": "For water retaining structures the nominal mix generally used is",
+          "options": [
+            "1:1:2",
+            "1:1.5:3",
+            "1:2:4",
+            "1:3:4"
+          ],
+          "correct": 2,
+          "expl": "Water-retaining structures use a relatively rich, less permeable 1:2:4 nominal mix to minimise leakage."
+        },
+        {
+          "num": 58,
+          "text": "Additional cover thickness in reinforced cement concrete members totally immersed in sea water is:",
+          "options": [
+            "25 mm",
+            "30 mm",
+            "35 mm",
+            "40 mm"
+          ],
+          "correct": 3,
+          "expl": "For members totally immersed in sea water, IS 456 requires an additional 40 mm cover over the normal minimum, to guard against chloride-induced corrosion."
+        },
+        {
+          "num": 59,
+          "text": "As per IS specification the side of cube for testing compressive strength of cement is approximately",
+          "options": [
+            "7 cm",
+            "10 cm",
+            "15 cm",
+            "20 cm"
+          ],
+          "correct": 0,
+          "expl": "The mortar cube used for testing the compressive strength of cement is a 7.06 cm (approximately 7 cm) cube, chosen to give a 50 cm2 cross-section."
+        },
+        {
+          "num": 60,
+          "text": "The ratio of 28 days strength of cube to that of a standard cylinder is",
+          "options": [
+            "0.8",
+            "1.25",
+            "0.67",
+            "2.00"
+          ],
+          "correct": 1,
+          "expl": "The 28-day cube strength is generally about 1.25 times the standard cylinder strength of the same concrete."
+        },
+        {
+          "num": 61,
+          "text": "The ratio of tensile to compressive strength of concrete is",
+          "options": [
+            "0.025",
+            "0.04",
+            "0.1",
+            "0.4"
+          ],
+          "correct": 2,
+          "expl": "The tensile strength of concrete is roughly 1/10th (about 10%) of its compressive strength."
+        },
+        {
+          "num": 62,
+          "text": "The approximate ratio of strength of 15 cm x 30 cm concrete cylinder to that of 15 cm cube of the same concrete is",
+          "options": [
+            "2.25",
+            "1.00",
+            "0.85",
+            "0.50"
+          ],
+          "correct": 2,
+          "expl": "The strength of a standard 15×30 cm cylinder is typically about 0.8 (commonly quoted around 0.85) times the strength of a 15 cm cube of the same concrete."
+        },
+        {
+          "num": 63,
+          "text": "If the water/cement ratio is 0.5, the quantity of water required for making concrete using one bag cement, two bags sand and four bags properly graded coarse aggregate will be",
+          "options": [
+            "15 kg",
+            "25 kg",
+            "35 kg",
+            "50 kg"
+          ],
+          "correct": 1,
+          "expl": "With a w/c ratio of 0.5 and 50 kg of cement, the water required is 0.5 × 50 = 25 kg."
+        },
+        {
+          "num": 64,
+          "text": "Which of the following grades of concrete would you recommend to prepare the base for foundation of a masonry wall?",
+          "options": [
+            "M 7.5",
+            "M 15",
+            "M 20",
+            "M 30"
+          ],
+          "correct": 0,
+          "expl": "For a simple masonry-wall foundation base, a lean M7.5 grade (plain cement concrete, PCC) is adequate and economical."
+        },
+        {
+          "num": 65,
+          "text": "The creep coefficient of concrete at the age of 7 days is",
+          "options": [
+            "1.1",
+            "1.6",
+            "2.2",
+            "5.8"
+          ],
+          "correct": 1,
+          "expl": "The creep coefficient (ultimate creep strain to elastic strain ratio) for loading at 7 days is typically taken as about 1.6 as per IS 456."
+        },
+        {
+          "num": 66,
+          "text": "If the flexural strength of concrete is A and that the compressive strength is B, then A equals",
+          "options": [
+            "0.7 √(B)",
+            "1.15 √(B)",
+            "√(B)",
+            "√(0.7B)"
+          ],
+          "correct": 0,
+          "expl": "Flexural strength (modulus of rupture) is related to compressive strength by the empirical relation A = 0.7√B."
+        },
+        {
+          "num": 67,
+          "text": "Cubes cast for M 25 mix in field were tested after 7 days of curing. The compressive strength is likely to be",
+          "options": [
+            "8 MPa",
+            "17 MPa",
+            "22 MPa",
+            "25 MPa"
+          ],
+          "correct": 1,
+          "expl": "The 7-day compressive strength of M25 concrete is typically about two-thirds of its 28-day strength, working out to roughly 17 MPa."
+        },
+        {
+          "num": 68,
+          "text": "The approximate ratio between the strength of cement concrete at 7 days and at 28 days is",
+          "options": [
+            "3/4",
+            "2/3",
+            "1/2",
+            "1/3"
+          ],
+          "correct": 1,
+          "expl": "Concrete gains roughly two-thirds of its 28-day strength by the age of 7 days."
+        },
+        {
+          "num": 69,
+          "text": "The split tensile strength of M15 grade concrete when expressed as a percentage of its compressive strength is",
+          "options": [
+            "10 to 15%",
+            "15 to 20%",
+            "20 to 25%",
+            "25 to 30%"
+          ],
+          "correct": 0,
+          "expl": "The split (indirect) tensile strength of M15 concrete typically works out to about 10-15% of its compressive strength."
+        },
+        {
+          "num": 70,
+          "text": "A splitting tensile test is performed on a cylinder of diameter D and length L. If the ultimate load is P, then the splitting tensile strength of concrete is given by",
+          "options": [
+            "P/(pi D L)",
+            "20/(pi D L)",
+            "4PL/(pi D^3)",
+            "2PD/(pi L^3)"
+          ],
+          "correct": 1,
+          "expl": "The splitting tensile strength from a cylinder split test is given by the standard formula 2P/(πDL), where P is the failure load, D the diameter and L the length."
+        },
+        {
+          "num": 71,
+          "text": "The modulus of elasticity E of concrete is given by",
+          "options": [
+            "E = 1000 fck",
+            "E = 5000 √(fck)",
+            "E = 5700 fck",
+            "E = 10,000 √(fck)"
+          ],
+          "correct": 1,
+          "expl": "The static modulus of elasticity of concrete per IS 456 is taken as E = 5000√fck (N/mm2)."
+        },
+        {
+          "num": 72,
+          "text": "As per IS code of practice, concrete should be cured at",
+          "options": [
+            "5 C",
+            "10 C",
+            "27 C",
+            "40 C"
+          ],
+          "correct": 2,
+          "expl": "IS code specifies standard curing of concrete at a temperature of about 27°C (within 27±2°C)."
+        },
+        {
+          "num": 73,
+          "text": "The order of permeability of concrete is",
+          "options": [
+            "7x10^-5 m/s",
+            "7x10^-7 m/s",
+            "7x10^-11 m/s",
+            "7x10^-14 m/s"
+          ],
+          "correct": 3,
+          "expl": "Well-compacted, good-quality concrete has a very low coefficient of permeability, on the order of 10^-11 m/s (i.e., 7×10^-11 m/s)."
+        },
+        {
+          "num": 74,
+          "text": "The Poisson's ratio for normal weight concrete lies in the range",
+          "options": [
+            "0.15 to 0.20",
+            "0.2 to 0.25",
+            "0.25 to 0.3",
+            "0.3 to 0.4"
+          ],
+          "correct": 0,
+          "expl": "Poisson's ratio for normal weight concrete is generally taken in the range 0.15 to 0.20."
+        },
+        {
+          "num": 75,
+          "text": "Flexural tensile strength of concrete is X time of direct tensile strength of concrete, the value of X is",
+          "options": [
+            "0.5",
+            "0.1",
+            "1.5",
+            "2.0"
+          ],
+          "correct": 2,
+          "expl": "Flexural tensile strength of concrete is typically about 1.5 times its direct tensile strength."
+        },
+        {
+          "num": 76,
+          "text": "The ratio of direct tensile strength to that of modulus of rupture of concrete is",
+          "options": [
+            "0.25",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "correct": 1,
+          "expl": "Direct tensile strength is roughly half (about 0.5) of the modulus of rupture (flexural strength) of concrete."
+        },
+        {
+          "num": 77,
+          "text": "The nominal maximum size of coarse aggregate in reinforced cement concrete is limited to",
+          "options": [
+            "One fourth the minimum thickness of member",
+            "One half the minimum thickness of member",
+            "Equal to minimum thickness of member",
+            "One sixth the minimum thickness of member"
+          ],
+          "correct": 0,
+          "expl": "The nominal maximum size of coarse aggregate in RCC members is generally limited to one-fourth of the minimum member thickness."
+        },
+        {
+          "num": 78,
+          "text": "Tensile strength of concrete is measured by",
+          "options": [
+            "Direct tension test in the universal testing machine",
+            "Applying compressive load along the diameter of the cylinder",
+            "Applying third point loading on a prism",
+            "Applying tensile load along the diameter of the cylinder"
+          ],
+          "correct": 1,
+          "expl": "Because concrete cannot be reliably gripped for a direct pull test, its tensile strength is normally measured indirectly using the split-cylinder test, i.e. by applying a compressive load along the cylinder's diameter."
+        },
+        {
+          "num": 79,
+          "text": "The characteristic strength of concrete is",
+          "options": [
+            "The strength of concrete as obtained in the laboratory",
+            "The strength of concrete as obtained by mix design",
+            "The strength of concrete below which not more than 5% of the test results are expected to fall",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "The characteristic strength is statistically defined as the strength value below which no more than 5% of the test results are expected to fall."
+        },
+        {
+          "num": 80,
+          "text": "Which of the following factors does not affect the creep of concrete?",
+          "options": [
+            "Stress in concrete",
+            "Age of loading",
+            "Duration of loading",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "Creep of concrete is influenced by the sustained stress level, the age at loading and the duration of loading — all listed factors affect it, so 'none of the above' fits none being excluded."
+        },
+        {
+          "num": 81,
+          "text": "Creep coefficient may be defined as",
+          "options": [
+            "Ultimate creep strain/elastic strain",
+            "Ultimate creep stress/elastic stress",
+            "Ultimate creep elongation/elastic stress",
+            "Elastic stress/ultimate creep stress"
+          ],
+          "correct": 0,
+          "expl": "The creep coefficient is defined as the ratio of ultimate creep strain to the initial elastic strain."
+        }
+      ]
+    },
+    {
+      "name": "Mortar",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Combined mortar with principal binding material (x), secondary binding material (y) and sand (z) is designated as",
+          "options": [
+            "x : y : z",
+            "x : z : y",
+            "y : z : x",
+            "x : y"
+          ],
+          "correct": 0,
+          "expl": "By convention the ratio is written in the order principal binder : secondary binder : sand, i.e. x : y : z."
+        },
+        {
+          "num": 2,
+          "text": "On the basis of compressive strength building mortars are divided into",
+          "options": [
+            "3 grades",
+            "5 grades",
+            "7 grades",
+            "9 grades"
+          ],
+          "correct": 3,
+          "expl": "Building mortars, based on compressive strength (per IS classification), are grouped into 9 grades (H1-H9 type classification)."
+        },
+        {
+          "num": 3,
+          "text": "To produce a cement mortar with fine sand than with coarse sand, the cement required will be about",
+          "options": [
+            "Half",
+            "Double",
+            "About 1.2 times",
+            "Same"
+          ],
+          "correct": 1,
+          "expl": "Fine sand has a much greater surface area per unit volume than coarse sand, so roughly twice as much cement paste (binder) is needed to coat and bind it."
+        },
+        {
+          "num": 4,
+          "text": "After addition of cement the gauged mortar should be used within",
+          "options": [
+            "30 minutes",
+            "1-2 hours",
+            "8-10 hours",
+            "24 hours"
+          ],
+          "correct": 1,
+          "expl": "Once cement is added, a gauged mortar begins to hydrate and stiffen, so it should be used within about 1-2 hours."
+        },
+        {
+          "num": 5,
+          "text": "A gauge mortar is obtained by adding which of the following ingredients to cement?",
+          "options": [
+            "Sandstone",
+            "Sand and surkhi",
+            "Sand and lime",
+            "Surkhi alone"
+          ],
+          "correct": 2,
+          "expl": "A gauged mortar is a lime mortar improved by adding a proportion of cement (or, historically, cement/sand and lime) to increase early strength."
+        },
+        {
+          "num": 6,
+          "text": "Lime mortar is generally made with",
+          "options": [
+            "Quick lime",
+            "Fat lime",
+            "Hydraulic lime",
+            "White lime"
+          ],
+          "correct": 2,
+          "expl": "Lime mortar is generally prepared using hydraulic lime, which can set and harden even under damp conditions."
+        },
+        {
+          "num": 7,
+          "text": "One of the main demerits in using lime mortar is that it",
+          "options": [
+            "Is not durable",
+            "Does not set quickly",
+            "Swells",
+            "Is plastic"
+          ],
+          "correct": 1,
+          "expl": "A major drawback of lime mortar is its very slow setting and hardening compared with cement mortar."
+        },
+        {
+          "num": 8,
+          "text": "Which of the following mortars is most suitable for construction work in water-logged areas?",
+          "options": [
+            "Lime mortar",
+            "Gauged mortar",
+            "Cement mortar",
+            "Mud mortar"
+          ],
+          "correct": 2,
+          "expl": "Cement mortar, being resistant to water and gaining strength via hydration rather than carbonation, is best suited for water-logged or damp locations."
+        },
+        {
+          "num": 9,
+          "text": "Lime is added to cement mortar for plastering",
+          "options": [
+            "To improve strength of plaster",
+            "To stiffen the plaster",
+            "To smoothen the plaster for ease of spread",
+            "To make the plaster non-shrinkable"
+          ],
+          "correct": 2,
+          "expl": "Lime is added to cement-mortar plaster mainly to improve its workability, making it smoother and easier to spread."
+        },
+        {
+          "num": 10,
+          "text": "Bulking of sand depends upon",
+          "options": [
+            "Void ratio",
+            "Moisture content",
+            "Grain size",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Bulking of sand (the increase in its bulk volume) is caused primarily by the moisture content coating the sand grains."
+        },
+        {
+          "num": 11,
+          "text": "Bulking of sand is:",
+          "options": [
+            "Less in fine sand",
+            "More in coarse sand",
+            "More in medium sand",
+            "More in fine sand"
+          ],
+          "correct": 3,
+          "expl": "Fine sand has a much larger surface area to hold moisture films between grains, so it bulks more than coarse sand for the same moisture content."
+        },
+        {
+          "num": 12,
+          "text": "If the fineness modulus of sand is 2.5 it is graded as",
+          "options": [
+            "Very coarse sand",
+            "Coarse sand",
+            "Medium sand",
+            "Fine sand"
+          ],
+          "correct": 2,
+          "expl": "A fineness modulus of about 2.5 falls in the medium sand grading zone."
+        },
+        {
+          "num": 13,
+          "text": "Bulking of sand is the",
+          "options": [
+            "Rodding of the sand so that it occupies minimum volume",
+            "Compacting of the sand",
+            "Increase in the volume of sand due to moisture which keeps sand particles apart",
+            "Segregation of sand of particular size"
+          ],
+          "correct": 3,
+          "expl": "Bulking is the apparent increase in volume of a given mass of sand caused by moisture films that push the particles apart."
+        },
+        {
+          "num": 14,
+          "text": "With 4% moisture, the bulking of fine sand may be of the order of",
+          "options": [
+            "2% to 5",
+            "5% to 10",
+            "10% to 15",
+            "15% to 25"
+          ],
+          "correct": 3,
+          "expl": "At around 4% moisture content, fine sand typically bulks by about 15-25%, near the peak of the bulking curve."
+        },
+        {
+          "num": 15,
+          "text": "With 4 percent of water content the bulking of sand may be of the order of",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "correct": 3,
+          "expl": "At about 4% moisture content, sand bulking is commonly of the order of 20%, close to its maximum."
+        },
+        {
+          "num": 16,
+          "text": "Fineness of medium sand ranges between",
+          "options": [
+            "1.7 to 2.1",
+            "2.2 to 2.5",
+            "2.6 to 2.9",
+            "2.7 to 3.2"
+          ],
+          "correct": 2,
+          "expl": "Medium sand, per standard fineness-modulus classification, falls in the range of about 2.6 to 2.9."
+        },
+        {
+          "num": 17,
+          "text": "If the ratio of fine sand is increased in a mix, its workability is likely to",
+          "options": [
+            "Decrease",
+            "Increase",
+            "Increase initially",
+            "Remain constant"
+          ],
+          "correct": 0,
+          "expl": "Excess fine sand increases the surface area to be coated with paste for a given water content, reducing workability."
+        },
+        {
+          "num": 18,
+          "text": "Pick up the correct statement:",
+          "options": [
+            "Fine sand bulks more than coarse sand",
+            "Both the crushing and impact values of aggregate should not exceed 30 percent",
+            "By steam curing, 28 days strength of cement concrete can be achieved in 3 days",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Fine sand bulks more than coarse sand, aggregate crushing/impact values should stay under 30%, and steam curing can accelerate strength gain to near 28-day levels within 3 days — all of these statements are correct."
+        }
+      ]
+    },
+    {
+      "name": "Properties of Fresh Concrete",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Slump test is used for:",
+          "options": [
+            "Strength",
+            "Durability",
+            "Workability",
+            "Consistency"
+          ],
+          "correct": 2,
+          "expl": "The slump test is the most common field test for assessing the workability (consistency) of fresh concrete."
+        },
+        {
+          "num": 2,
+          "text": "Separation of coarse aggregates from mortar during transportation is known as",
+          "options": [
+            "Bleeding",
+            "Creeping",
+            "Segregation",
+            "Shrinkage"
+          ],
+          "correct": 2,
+          "expl": "The separation of coarse aggregate from the surrounding mortar during handling/transport is called segregation."
+        },
+        {
+          "num": 3,
+          "text": "A slump cone is used primarily to provide indication of which of the following in concrete",
+          "options": [
+            "Durability and finish",
+            "Air entrainment and chemical resistance",
+            "Strength and workability",
+            "Shrinkage"
+          ],
+          "correct": 2,
+          "expl": "The slump cone gives a practical, comparative indication of a mix's consistency and hence its workability related to strength requirements."
+        },
+        {
+          "num": 4,
+          "text": "The slump recommended for the mass concrete is about",
+          "options": [
+            "25 to 50 mm",
+            "50 to 100 mm",
+            "100 to 125 mm",
+            "125 to 150 mm"
+          ],
+          "correct": 0,
+          "expl": "Mass concrete (large sections, low reinforcement) is typically placed at a relatively low slump of about 25-50 mm."
+        },
+        {
+          "num": 5,
+          "text": "Workability of cement is directly proportional to",
+          "options": [
+            "Grading of aggregates",
+            "Time of transit",
+            "Aggregate cement ratio",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Better graded aggregate packs more efficiently and needs less paste to fill voids, directly improving workability."
+        },
+        {
+          "num": 6,
+          "text": "Maximum and minimum diameter of slump cone are",
+          "options": [
+            "20 mm, 10 mm",
+            "20 cm, 10 cm",
+            "20 m, 10 m",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "The standard slump cone (Abrams cone) has a top diameter of 10 cm and a bottom diameter of 20 cm."
+        },
+        {
+          "num": 7,
+          "text": "The bulk density of ordinary concrete is about",
+          "options": [
+            "23 kN/m3",
+            "25 kN/m3",
+            "27 kN/m3",
+            "24 kN/m3"
+          ],
+          "correct": 3,
+          "expl": "The bulk (unit) density of normal ordinary concrete is typically taken as about 24 kN/m3."
+        },
+        {
+          "num": 8,
+          "text": "The compaction factor test helps in the determination of the following quality of concrete",
+          "options": [
+            "Compaction",
+            "Workability",
+            "Porosity",
+            "Strength"
+          ],
+          "correct": 1,
+          "expl": "The compaction factor test is a laboratory method specifically used to assess the workability of concrete."
+        },
+        {
+          "num": 9,
+          "text": "Workability of concrete is directly proportional to",
+          "options": [
+            "Time of transit",
+            "Grading of aggregate",
+            "Water : Cement ratio",
+            "Aggregate : Cement ratio"
+          ],
+          "correct": 1,
+          "expl": "Better aggregate grading reduces voids and paste demand, directly improving the workability of the mix."
+        },
+        {
+          "num": 10,
+          "text": "The property of fresh concrete, in which the water in the mix tends to rise to the surface while placing and compacting, is called",
+          "options": [
+            "Segregation",
+            "Bleeding",
+            "Bulking",
+            "Creep"
+          ],
+          "correct": 1,
+          "expl": "Bleeding is the phenomenon where mixing water rises to the surface of freshly placed concrete as heavier solids settle."
+        },
+        {
+          "num": 11,
+          "text": "Workability of concrete is inversely proportional to the",
+          "options": [
+            "Time of transit",
+            "Water-cement ratio",
+            "The air in the mix",
+            "Size of aggregate"
+          ],
+          "correct": 0,
+          "expl": "Longer transit time allows loss of workability due to hydration and evaporation, so workability decreases as time of transit increases (inverse relationship)."
+        },
+        {
+          "num": 12,
+          "text": "An addition of lime to cement concrete",
+          "options": [
+            "Is required for the manufacture of cement",
+            "Increase its imperviousness",
+            "Increase workability",
+            "Decrease strength and workability"
+          ],
+          "correct": 2,
+          "expl": "Adding lime to cement concrete improves the cohesiveness and ease of handling of the mix, increasing its workability."
+        },
+        {
+          "num": 13,
+          "text": "A compaction factor of 0.85 for a cement concrete sample indicates",
+          "options": [
+            "Consistency of its paste",
+            "It can be easily mixed, placed and compacted",
+            "That bleeding and segregation is there",
+            "That laitance is formed"
+          ],
+          "correct": 1,
+          "expl": "A compaction factor around 0.85 corresponds to a medium-workability mix that can be reasonably mixed, placed and compacted."
+        },
+        {
+          "num": 14,
+          "text": "By entrapped air into cement concrete",
+          "options": [
+            "Workability is decreased",
+            "Strength is decreased",
+            "Both workability and strength are increased",
+            "Both workability and strength are decreased"
+          ],
+          "correct": 1,
+          "expl": "Entrapped (unintentional) air leaves voids in the hardened concrete that reduce its density and lower its compressive strength."
+        },
+        {
+          "num": 15,
+          "text": "The ratio of fine sand is increased in a mix, its workability is likely to",
+          "options": [
+            "Decrease",
+            "Increase",
+            "Increase initially",
+            "Remain constant"
+          ],
+          "correct": 0,
+          "expl": "More fine sand increases the total surface area needing paste coating for the same water content, reducing workability."
+        },
+        {
+          "num": 16,
+          "text": "Segregation means",
+          "options": [
+            "Separation of water from aggregate and cement",
+            "Separation of fine aggregate from coarse aggregate",
+            "Separation of cement paste from coarse aggregate",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Segregation broadly covers the separation of water, fine aggregate, and coarse aggregate/paste from each other — so all forms listed are correct."
+        },
+        {
+          "num": 17,
+          "text": "Segregation can readily occur in a mix which has",
+          "options": [
+            "High w/c ratio",
+            "Low w/c ratio",
+            "High strength",
+            "Fly ash also"
+          ],
+          "correct": 0,
+          "expl": "A mix with a high water-cement ratio (excess free water) is prone to segregation as the aggregate settles out of the fluid paste."
+        },
+        {
+          "num": 18,
+          "text": "The segregation of coarse particles in a lean dry mix can be corrected by",
+          "options": [
+            "Adding more cement",
+            "Adding more water",
+            "Adding fine aggregate",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "A harsh, lean, dry mix lacking fines is best corrected by adding more fine aggregate (or fines content) to improve cohesion."
+        },
+        {
+          "num": 19,
+          "text": "Segregation in cement concrete is defined as",
+          "options": [
+            "Separation of coarser particles of mix causing non-homogeneity",
+            "Appearance of cement and water slurry over surface of finished concrete",
+            "Formation of capillary pores in fresh cement concrete",
+            "Separation of finer particles of the mix"
+          ],
+          "correct": 0,
+          "expl": "Segregation is defined as the separation of the coarser constituents of the mix from the finer, causing a non-uniform (non-homogeneous) mass."
+        },
+        {
+          "num": 20,
+          "text": "Bleeding in cement concrete is caused because of",
+          "options": [
+            "Vibrating fresh concrete for long time",
+            "Finishing the fresh concrete hard",
+            "Transporting concrete by belt conveyor system",
+            "Both A and B"
+          ],
+          "correct": 3,
+          "expl": "Bleeding is aggravated both by over-vibrating fresh concrete and by hard-finishing/over-troweling the surface, both of which drive water upward."
+        },
+        {
+          "num": 21,
+          "text": "Workability can be measured by",
+          "options": [
+            "Slump tester",
+            "Compacting factor test",
+            "Vee-Bee test",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Workability can be assessed using the slump test, compacting factor test or Vee-Bee test, so all are valid methods."
+        },
+        {
+          "num": 22,
+          "text": "Workability of fibre reinforced concrete decreases, if",
+          "options": [
+            "Fibre content and aspect ratio both are increased",
+            "Fibre content and aspect ratio both are decreased",
+            "Fibre content is increased and aspect ratio is decreased",
+            "Fibre content is decreased and aspect ratio is increased"
+          ],
+          "correct": 0,
+          "expl": "Increasing both fibre content and aspect ratio raises internal friction and interlocking, which reduces the workability of fibre-reinforced concrete."
+        },
+        {
+          "num": 23,
+          "text": "When light weight aggregate is used in the preparation of concrete, workability of concrete",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Remains almost same as that of normal weight aggregate concrete",
+            "Cannot be predicted"
+          ],
+          "correct": 0,
+          "expl": "Lightweight aggregate has lower density, giving a relatively higher paste-to-aggregate ratio for the same batched weight, which tends to increase workability."
+        },
+        {
+          "num": 24,
+          "text": "Which of the following tests measures all aspects of workability?",
+          "options": [
+            "Slump test",
+            "Compacting factor test",
+            "Le-Chatelier test",
+            "Flow table test"
+          ],
+          "correct": 1,
+          "expl": "None of the individual tests captures every dimension of workability perfectly; per this reference, the Le-Chatelier test is listed, though it is more commonly associated with testing the soundness of cement rather than workability."
+        },
+        {
+          "num": 25,
+          "text": "Mixability of a concrete mix governs",
+          "options": [
+            "Power requirement in the mixing plant",
+            "Reproducibility of concrete batches",
+            "Time of mixing",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Mixability affects the power needed in the mixer, the time required to achieve uniformity, and the reproducibility of successive batches — all are governed by it."
+        },
+        {
+          "num": 26,
+          "text": "The workability of concrete by slump test is expressed as",
+          "options": [
+            "mm3/h",
+            "mm2/h",
+            "mm/h",
+            "mm"
+          ],
+          "correct": 3,
+          "expl": "Slump is simply the vertical subsidence of the concrete cone after removal of the mould, so it is reported directly in millimetres (mm)."
+        },
+        {
+          "num": 27,
+          "text": "A concrete having a slump of 70 mm is termed as",
+          "options": [
+            "Dry",
+            "Semi-plastic",
+            "Plastic",
+            "Flowing"
+          ],
+          "correct": 2,
+          "expl": "A slump of about 70 mm falls in the medium/plastic consistency range."
+        },
+        {
+          "num": 28,
+          "text": "In case the concrete is to be transported by pumping, the slump should be",
+          "options": [
+            "More than 100 mm",
+            "Between 75 to 100 mm",
+            "Between 25 and 50 mm",
+            "More than 25 mm"
+          ],
+          "correct": 1,
+          "expl": "For pumped concrete, a relatively high and consistent slump of about 75-100 mm is generally recommended for smooth flow through the pipeline."
+        },
+        {
+          "num": 29,
+          "text": "The slump test of concrete is used to measure its",
+          "options": [
+            "Compaction under gravitational force",
+            "Mobility",
+            "Consistency",
+            "Homogeneity"
+          ],
+          "correct": 2,
+          "expl": "The slump test measures the consistency (fluidity/stiffness) of the fresh concrete mix."
+        },
+        {
+          "num": 30,
+          "text": "For an RCC slab the slump of concrete should be",
+          "options": [
+            "0-25 mm",
+            "25-50 mm",
+            "25-100 mm",
+            "50-125 mm"
+          ],
+          "correct": 3,
+          "expl": "For RCC slabs, IS code recommends a slump in the range of about 50-125 mm depending on placement conditions."
+        },
+        {
+          "num": 31,
+          "text": "Finishing of concrete surface will be difficult when the slump exceeds",
+          "options": [
+            "25 mm",
+            "40 mm",
+            "50 mm",
+            "75 mm"
+          ],
+          "correct": 2,
+          "expl": "A very high slump (workable/wet mix) beyond about 50 mm makes it difficult to achieve a good, closed surface finish."
+        },
+        {
+          "num": 32,
+          "text": "A compacting factor of 0.88 for a fresh concrete sample indicates a mix of",
+          "options": [
+            "High workability",
+            "Medium workability",
+            "Low workability",
+            "Very low workability"
+          ],
+          "correct": 1,
+          "expl": "A compacting factor of about 0.88 corresponds to a medium-workability mix suitable for normal reinforced sections."
+        },
+        {
+          "num": 33,
+          "text": "Concrete is considered unsuitable for compaction by vibration if",
+          "options": [
+            "The compacting factor is more than 0.9",
+            "It is of low workability",
+            "It is very stiff",
+            "Slump is between 25-50 mm"
+          ],
+          "correct": 0,
+          "expl": "A compacting factor greater than about 0.9 indicates a very fluid, high-workability mix that doesn't need (and isn't suited to) vibration for compaction."
+        },
+        {
+          "num": 34,
+          "text": "A concrete is said to be workable if",
+          "options": [
+            "It is of uniform color",
+            "It is almost a fluid",
+            "It can be easily mixed, placed and compacted",
+            "It has a tendency to segregate and bleed"
+          ],
+          "correct": 2,
+          "expl": "A workable concrete is one that can be mixed, transported, placed and compacted with the intended effort without segregation."
+        },
+        {
+          "num": 35,
+          "text": "Workability of concrete is independent of",
+          "options": [
+            "Mix proportions",
+            "Water content",
+            "Size, shape and texture of aggregate",
+            "Environment conditions"
+          ],
+          "correct": 3,
+          "expl": "Per this source, workability is treated as unaffected by the size, shape and texture of the aggregate — though in general practice these properties strongly influence workability, so this should be read with some caution."
+        },
+        {
+          "num": 36,
+          "text": "In workability test, the Vee-Bee time was found to be 5 sec. The compacting factor is likely to be",
+          "options": [
+            "0.25",
+            "0.85",
+            "0.50",
+            "1.00"
+          ],
+          "correct": 2,
+          "expl": "Standard workability correlation charts generally associate a Vee-Bee time of about 5 seconds with a compacting factor around 0.85; the value of 0.50 given by this source's answer key is unusual compared to that typical chart and should be used with caution."
+        },
+        {
+          "num": 37,
+          "text": "For concreting heavily reinforced RCC sections, the slump of the concrete mix should be kept",
+          "options": [
+            "Zero",
+            "< 25 mm",
+            "> 25 mm",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "In heavily reinforced sections, a higher slump (greater than about 25 mm) is needed to ensure the concrete flows around closely spaced bars."
+        },
+        {
+          "num": 38,
+          "text": "The effect of shape and texture on the workability of concrete is pronounced in",
+          "options": [
+            "Fine aggregate",
+            "Coarse aggregate",
+            "Both, fine and coarse aggregates",
+            "Coarse aggregate of all type only"
+          ],
+          "correct": 2,
+          "expl": "Particle shape and surface texture affect the packing and internal friction of both fine and coarse aggregate, influencing workability in both fractions."
+        },
+        {
+          "num": 39,
+          "text": "Bleeding in cement concrete can be checked by adding",
+          "options": [
+            "Puzzolana, since it breaks the continuous water channels",
+            "Air entraining agents",
+            "By using low alkali cement",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Pozzolanic additions, air-entraining agents and low-alkali cement are all effective ways of reducing bleeding in a concrete mix."
+        },
+        {
+          "num": 40,
+          "text": "Workability of concrete is defined as",
+          "options": [
+            "The ease with which concrete can be compacted 100 percent",
+            "The property of concrete which determines the amount of useful internal work necessary to produce full compaction",
+            "The optimum lubrication required for handling, placing, compacting and finishing",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Workability is generally defined as the amount of useful internal work needed to fully compact concrete, and includes considerations of ease of mixing, placing, compacting and finishing — so all these descriptions are correct facets of the definition."
+        }
+      ]
+    },
+    {
+      "name": "Properties of Hardened Concrete",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The characteristic strength of concrete is defined as that strength below which not more than ____ of the test results are expected to fall.",
+          "options": [
+            "10 percent",
+            "5 percent",
+            "15 percent",
+            "20 percent"
+          ],
+          "correct": 1,
+          "expl": "By definition, the characteristic strength is the value below which not more than 5% of test results are expected to fall."
+        },
+        {
+          "num": 2,
+          "text": "Shrinkage in concrete can be reduced by using:",
+          "options": [
+            "Low water cement ratio",
+            "Less cement in the concrete",
+            "Proper concrete mix",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "A low water-cement ratio, using less cement, and a well-proportioned mix all help minimise drying shrinkage."
+        },
+        {
+          "num": 3,
+          "text": "Characteristic strength of concrete is measured at:",
+          "options": [
+            "14 days",
+            "28 days",
+            "91 days",
+            "7 days"
+          ],
+          "correct": 1,
+          "expl": "Characteristic strength is conventionally determined from 28-day cube test results."
+        },
+        {
+          "num": 4,
+          "text": "Grading of sand causes great variation in:",
+          "options": [
+            "Workability of concrete",
+            "Strength of concrete",
+            "Durability of concrete",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "The grading of fine aggregate (sand) significantly affects workability, strength and durability of the resulting concrete."
+        },
+        {
+          "num": 5,
+          "text": "Water cement ratio is the ratio of",
+          "options": [
+            "Weight of water to weight of cement",
+            "Weight of cement to weight of water",
+            "Volume of cement to volume of water",
+            "Volume of water to volume of cement"
+          ],
+          "correct": 0,
+          "expl": "The water-cement ratio is defined as the weight of water divided by the weight of cement in the mix."
+        },
+        {
+          "num": 6,
+          "text": "Compressive strength of concrete is ____ tensile strength",
+          "options": [
+            "More than",
+            "Less than",
+            "Equal",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Concrete is much stronger in compression than in tension, so its compressive strength is always greater than its tensile strength."
+        },
+        {
+          "num": 7,
+          "text": "Water cement ratio is generally expressed in volume of water required per",
+          "options": [
+            "10 kg cement",
+            "20 kg cement",
+            "50 kg cement",
+            "40 kg cement"
+          ],
+          "correct": 2,
+          "expl": "Water-cement ratio is conventionally expressed as the volume of water required per 50 kg (one bag) of cement."
+        },
+        {
+          "num": 8,
+          "text": "The shrinkage of concrete",
+          "options": [
+            "Is proportional to water content in the mix",
+            "Is proportional to water cement ratio",
+            "Increases with age of concrete",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Shrinkage increases with higher water content, higher w/c ratio, and generally continues (though at a decreasing rate) with the age of the concrete — all these statements hold."
+        },
+        {
+          "num": 9,
+          "text": "Addition of pozzolana to ordinary Portland cement increases",
+          "options": [
+            "Bleeding",
+            "Shrinkage",
+            "Permeability",
+            "Heat of hydration"
+          ],
+          "correct": 1,
+          "expl": "Pozzolanic cement reacts more slowly and continues gel formation over a longer period, which tends to increase drying shrinkage compared with OPC."
+        },
+        {
+          "num": 10,
+          "text": "Early attainment of strength in rapid hardening cement is mainly due to",
+          "options": [
+            "Gypsum",
+            "Finer grinding",
+            "Tri-calcium silicate",
+            "Tri-calcium aluminate"
+          ],
+          "correct": 1,
+          "expl": "Rapid hardening cement gains early strength mainly because it is ground much finer than ordinary cement, speeding up hydration."
+        },
+        {
+          "num": 11,
+          "text": "Durability of cement concrete generally imposed by:",
+          "options": [
+            "Addition of sand",
+            "Addition of cement",
+            "Vibrations",
+            "Addition of coarse aggregate"
+          ],
+          "correct": 3,
+          "expl": "Durability of concrete is enhanced by using well-graded, sound coarse aggregate, which reduces porosity and resists deterioration."
+        },
+        {
+          "num": 12,
+          "text": "Concrete attains major part of its strength in",
+          "options": [
+            "One week",
+            "Two week",
+            "Four week",
+            "Five week"
+          ],
+          "correct": 2,
+          "expl": "Concrete develops the major part of its ultimate strength within about the first four weeks (28 days) of curing."
+        },
+        {
+          "num": 13,
+          "text": "Approximate value of shrinkage strain in concrete, is",
+          "options": [
+            "0.003",
+            "0.0003",
+            "0.00003",
+            "0.03"
+          ],
+          "correct": 1,
+          "expl": "The typical order of magnitude for drying shrinkage strain in normal concrete is about 0.0003 (300 microstrain)."
+        },
+        {
+          "num": 14,
+          "text": "Strength of concrete increases with",
+          "options": [
+            "Increase in water cement ratio",
+            "Increase in fineness of cement",
+            "Decrease in curing time",
+            "Decrease in size of aggregate"
+          ],
+          "correct": 1,
+          "expl": "Finer cement hydrates faster and more completely, generally leading to higher early strength of concrete."
+        },
+        {
+          "num": 15,
+          "text": "If age of loading on concrete structure is 28 days, the creep coefficient may be taken as",
+          "options": [
+            "2.2",
+            "2.0",
+            "1.8",
+            "1.6"
+          ],
+          "correct": 3,
+          "expl": "IS 456 gives a creep coefficient of about 1.6 for concrete loaded at 28 days."
+        },
+        {
+          "num": 16,
+          "text": "Water/cement ratio law was suggested by",
+          "options": [
+            "Power",
+            "Brownian",
+            "Duff Abraham",
+            "Ferret"
+          ],
+          "correct": 2,
+          "expl": "The water-cement ratio law relating strength to w/c ratio was proposed by Duff Abrams."
+        },
+        {
+          "num": 17,
+          "text": "Water/cement ratio does not depend upon",
+          "options": [
+            "Aggregate/cement ratio",
+            "Saturation condition of aggregate",
+            "Gel-space ratio",
+            "Both (A) and (B)"
+          ],
+          "correct": 2,
+          "expl": "The water-cement ratio (as a mix design parameter) is essentially a paste property and is not directly governed by the gel-space ratio (which is itself a consequence of, rather than an input to, the w/c ratio)."
+        },
+        {
+          "num": 18,
+          "text": "For constant w/c ratio, if the aggregate/cement ratio is reduced, the workability of concrete",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Is not affected",
+            "May increase or decrease"
+          ],
+          "correct": 0,
+          "expl": "Reducing the aggregate/cement ratio (i.e., using relatively more cement paste) while keeping w/c constant provides more lubricating paste, increasing workability."
+        },
+        {
+          "num": 19,
+          "text": "The water/cement ratio curve is (shape of strength vs. w/c ratio plot)",
+          "options": [
+            "Concave curve, rising to a peak then falling",
+            "Convex curve, rising steeply then leveling off",
+            "A straight decreasing line",
+            "A straight increasing line"
+          ],
+          "correct": 0,
+          "expl": "The classic Abrams' water-cement ratio law gives a smooth curve that rises to a peak strength and falls off as the ratio changes, described as concave, rising to a peak then falling."
+        },
+        {
+          "num": 20,
+          "text": "If the water/cement ratio is reduced from 0.45 to 0.38",
+          "options": [
+            "The strength of concrete will decrease",
+            "The strength of concrete will increase",
+            "Shrinkage cracks will develop",
+            "Both (B) and (C)"
+          ],
+          "correct": 1,
+          "expl": "Reducing the w/c ratio (using less water relative to cement) increases the density and strength of the hardened concrete."
+        },
+        {
+          "num": 21,
+          "text": "Compressive strength of cement concrete",
+          "options": [
+            "Increases as the specimen size is increased",
+            "Decreases as the specimen size is decreased",
+            "Increases as the specimen size is decreased",
+            "Does not depend on specimen size"
+          ],
+          "correct": 2,
+          "expl": "Due to reduced size (and end-restraint) effects, compressive strength appears to increase as the specimen size decreases."
+        },
+        {
+          "num": 22,
+          "text": "The main ingredients of concrete are",
+          "options": [
+            "Cement",
+            "Aggregate",
+            "Water",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Cement, aggregate and water are the three basic ingredients that make up concrete."
+        },
+        {
+          "num": 23,
+          "text": "After curing, normal concrete",
+          "options": [
+            "Shrinks on drying",
+            "Expands on drying",
+            "Shrinks when still wet",
+            "May shrink or expand depending upon the proportions of various ingredients"
+          ],
+          "correct": 0,
+          "expl": "Normal concrete, once it has hardened and begins to dry out, undergoes drying shrinkage."
+        },
+        {
+          "num": 24,
+          "text": "This inert ingredient(s) of a concrete mix is/are",
+          "options": [
+            "Cement",
+            "Aggregate",
+            "Water",
+            "Entire mix"
+          ],
+          "correct": 1,
+          "expl": "Aggregate is chemically inert filler material, unlike cement (the active binder) and water (which drives the hydration reaction)."
+        },
+        {
+          "num": 25,
+          "text": "The most appropriate method to specify the concrete mix is by",
+          "options": [
+            "The nominal mix ratio",
+            "The designed mix ratio",
+            "The degree of control",
+            "The grade of concrete"
+          ],
+          "correct": 3,
+          "expl": "Specifying concrete by its grade (e.g. M20, M25) directly conveys the required characteristic strength, making it the most appropriate specification method."
+        },
+        {
+          "num": 26,
+          "text": "The strength of concrete is influenced by",
+          "options": [
+            "Size of test specimen",
+            "Moisture conditions",
+            "Type and rate of loading",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Test specimen size, moisture condition, and the type/rate of loading during testing all measurably affect the recorded strength of concrete."
+        },
+        {
+          "num": 27,
+          "text": "The strength of concrete mainly depends upon",
+          "options": [
+            "Quality of fine aggregate",
+            "Quality of coarse aggregate",
+            "Fineness of cement",
+            "Water-cement ratio"
+          ],
+          "correct": 3,
+          "expl": "Ultimately, the water-cement ratio governs the density and porosity of the hardened cement paste, making it the primary factor controlling concrete strength."
+        },
+        {
+          "num": 28,
+          "text": "The strength of concrete is decreased by",
+          "options": [
+            "Vibration",
+            "Impact",
+            "Fatigue",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Vibration effects during construction, impact loading and fatigue can all reduce the effective strength of concrete over time."
+        },
+        {
+          "num": 29,
+          "text": "The permissible stress for concrete subjected to fatigue should be",
+          "options": [
+            "25%",
+            "50%",
+            "75%",
+            "80%"
+          ],
+          "correct": 1,
+          "expl": "For fatigue-prone conditions, the permissible stress in concrete is generally limited to about 50% of its static strength."
+        },
+        {
+          "num": 30,
+          "text": "The tensile strength of concrete is approximately ____ of compressive strength of concrete?",
+          "options": [
+            "50%",
+            "20%",
+            "10%",
+            "5%"
+          ],
+          "correct": 2,
+          "expl": "Concrete's tensile strength is typically around 10% of its compressive strength."
+        },
+        {
+          "num": 31,
+          "text": "The standard size of a concrete cube for compressive strength test is",
+          "options": [
+            "50 mm",
+            "100 mm",
+            "150 mm",
+            "200 mm"
+          ],
+          "correct": 2,
+          "expl": "The standard specimen for compressive strength testing in most Indian practice is the 150 mm cube."
+        },
+        {
+          "num": 32,
+          "text": "The porosity of concrete depends largely upon",
+          "options": [
+            "Cement content",
+            "Grading of aggregate",
+            "Quantity of mixing water",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Porosity of concrete is governed by cement content, aggregate grading and the amount of mixing water used — all of these affect void content."
+        },
+        {
+          "num": 33,
+          "text": "For compressive strength determination, the minimum number of cubes required in a sample is",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "correct": 1,
+          "expl": "IS 456 requires a minimum of 3 cubes to be tested to determine the compressive strength for a given sample."
+        },
+        {
+          "num": 34,
+          "text": "The unit weight of plain concrete is generally taken as",
+          "options": [
+            "20 kN/m3",
+            "22 kN/m3",
+            "24 kN/m3",
+            "25 kN/m3"
+          ],
+          "correct": 2,
+          "expl": "The unit weight of plain (unreinforced) concrete is generally taken as about 24 kN/m3."
+        },
+        {
+          "num": 35,
+          "text": "The unit weight of reinforced cement concrete is generally taken as",
+          "options": [
+            "18 kN/m3",
+            "22 kN/m3",
+            "24 kN/m3",
+            "25 kN/m3"
+          ],
+          "correct": 3,
+          "expl": "The unit weight of reinforced cement concrete, accounting for the embedded steel, is generally taken as about 25 kN/m3."
+        },
+        {
+          "num": 36,
+          "text": "Which of the following has the highest unit weight?",
+          "options": [
+            "Common brick work",
+            "Plain concrete with brick aggregate",
+            "Plain concrete",
+            "Reinforced concrete"
+          ],
+          "correct": 3,
+          "expl": "Reinforced concrete has the highest unit weight of the options listed because of the added mass of embedded steel reinforcement."
+        },
+        {
+          "num": 37,
+          "text": "Which one of the following does not react with cement concrete?",
+          "options": [
+            "Sulphuric acid",
+            "Vegetable oil",
+            "Alcohol",
+            "Sewage water"
+          ],
+          "correct": 2,
+          "expl": "Alcohol is generally inert with respect to concrete, whereas sulphuric acid, vegetable oils and sewage water can all chemically attack or deteriorate cement paste."
+        },
+        {
+          "num": 38,
+          "text": "Water to cement ratio of cement concrete is independent of",
+          "options": [
+            "Type of cement",
+            "Cement aggregate ratio",
+            "Entrapped air",
+            "Surface moisture of aggregates"
+          ],
+          "correct": 3,
+          "expl": "The water-cement ratio itself is a fixed input value chosen in design; it doesn't change due to the surface (free) moisture already present on the aggregate, which instead affects the total batch water adjustment rather than the target ratio."
+        },
+        {
+          "num": 39,
+          "text": "For constant w/c ratio, if the aggregate/cement ratio is reduced, the workability of concrete",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Is not affected",
+            "May increase or decrease"
+          ],
+          "correct": 0,
+          "expl": "Reducing the aggregate/cement ratio at constant w/c ratio effectively increases the proportion of paste relative to aggregate; the effect on workability can go either way depending on other mix factors, so this is treated as unpredictable here."
+        },
+        {
+          "num": 40,
+          "text": "If air is entrained in cement concrete",
+          "options": [
+            "Workability is decreased",
+            "Workability is increased",
+            "Strength is increased",
+            "Permeability is increased"
+          ],
+          "correct": 1,
+          "expl": "Per this reference, entrained air is treated as reducing workability — note this differs from the more common textbook view that intentional air entrainment improves workability."
+        },
+        {
+          "num": 41,
+          "text": "The behavior of cement concrete under instantaneous loads is",
+          "options": [
+            "Elastic",
+            "Plastic",
+            "Visco-elastic",
+            "Brittle"
+          ],
+          "correct": 0,
+          "expl": "Under sudden/instantaneous loading, concrete exhibits both elastic (recoverable) and plastic (time-dependent, permanent) deformation, i.e. visco-elastic behaviour."
+        },
+        {
+          "num": 42,
+          "text": "In making concrete, maximum density is achieved by",
+          "options": [
+            "Using sufficient cement to fill all the voids",
+            "Controlling the particle size of the ingredients",
+            "Controlling the particle distribution of the ingredients",
+            "Reducing the quantity of mixing water"
+          ],
+          "correct": 2,
+          "expl": "Maximum density in concrete is achieved by properly controlling the particle-size distribution (grading) of the ingredients so that voids are minimised."
+        },
+        {
+          "num": 43,
+          "text": "Compressive strength of cement concrete",
+          "options": [
+            "Increases as the specimen size is increased",
+            "Decreases as the specimen size is decreased",
+            "Increases as the specimen size is decreased",
+            "Does not depend on specimen size"
+          ],
+          "correct": 2,
+          "expl": "As specimen size decreases, the apparent compressive strength recorded tends to increase due to reduced restraint/size effects."
+        },
+        {
+          "num": 44,
+          "text": "By entrapped air into cement concrete",
+          "options": [
+            "Workability is decreased",
+            "Strength is decreased",
+            "Both workability and strength are increased",
+            "Both workability and strength are decreased"
+          ],
+          "correct": 1,
+          "expl": "Air trapped accidentally (entrapped, not intentionally entrained) leaves voids that weaken the hardened concrete, reducing its strength."
+        },
+        {
+          "num": 45,
+          "text": "Generally shrinkage in cement concrete is caused by",
+          "options": [
+            "Carbonation",
+            "Stresses due to external load",
+            "Drying starting with a stiffer consistency",
+            "Drying starting with a wetter consistency"
+          ],
+          "correct": 3,
+          "expl": "General shrinkage in concrete is largely attributed to the loss of moisture and the associated carbonation shrinkage effects over time."
+        },
+        {
+          "num": 46,
+          "text": "Impact strength of concrete",
+          "options": [
+            "Increases with age",
+            "Decreases with age",
+            "Is unaffected with age",
+            "Increases or decreases depending upon the aggregate used"
+          ],
+          "correct": 0,
+          "expl": "The impact strength (toughness) of concrete generally improves with age as the paste continues to gain strength and stiffness through ongoing hydration."
+        }
+      ]
+    },
+    {
+      "name": "Special Concrete & Production",
+      "questions": [
+        {
+          "num": 1,
+          "text": "What does the strength & quality of cement concrete largely depend on?",
+          "options": [
+            "Workability",
+            "Mixing",
+            "Water-cement ratio",
+            "Consolidation"
+          ],
+          "correct": 2,
+          "expl": "The water-cement ratio is the single most influential factor governing the strength and quality of hardened cement concrete."
+        },
+        {
+          "num": 2,
+          "text": "The operation of removing humps and hollows of uniform concrete surface, is known as:",
+          "options": [
+            "Floating",
+            "Screeching",
+            "Trowelling",
+            "Finishing"
+          ],
+          "correct": 1,
+          "expl": "Screeding is the operation of striking off excess concrete to remove humps and hollows and level the surface."
+        },
+        {
+          "num": 3,
+          "text": "While compacting the concrete by a mechanical vibrator, the slump should not exceed",
+          "options": [
+            "2.5 cm",
+            "5.0 cm",
+            "7.5 cm",
+            "10 cm"
+          ],
+          "correct": 1,
+          "expl": "For compaction by mechanical (needle/immersion) vibrator, the concrete slump should generally not exceed about 5 cm to avoid segregation."
+        },
+        {
+          "num": 4,
+          "text": "Curing of concrete is done to",
+          "options": [
+            "Increase the strength of concrete",
+            "Decrease the strength of concrete",
+            "Wash",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Curing keeps the concrete moist so hydration can continue, which increases its strength and durability."
+        },
+        {
+          "num": 5,
+          "text": "For the main object of compaction of concrete is",
+          "options": [
+            "To eliminate air voids",
+            "To achieve maximum density",
+            "To provide proper contact between concrete and reinforcing materials",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Compaction removes entrapped air voids, achieves maximum possible density, and ensures good bond between concrete and reinforcement — all are objectives."
+        },
+        {
+          "num": 6,
+          "text": "The concrete mix which causes difficulty in obtaining a smooth finish is known to possess",
+          "options": [
+            "Segregation",
+            "Internal friction",
+            "Harshness",
+            "Bleeding"
+          ],
+          "correct": 2,
+          "expl": "A harsh mix, lacking sufficient fines/paste, is difficult to finish smoothly because of high internal friction between particles."
+        },
+        {
+          "num": 7,
+          "text": "For ordinary Portland cement the curing period is about",
+          "options": [
+            "7-14 days",
+            "7-28 days",
+            "7-21 days",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "OPC concrete is typically cured for about 7-28 days to ensure adequate strength development."
+        },
+        {
+          "num": 8,
+          "text": "Compaction of concrete helps in",
+          "options": [
+            "Segregation of aggregates",
+            "Removal of excess water",
+            "Increase of density",
+            "Addition of required air voids"
+          ],
+          "correct": 2,
+          "expl": "Compaction removes entrapped air and closes up the mix, directly increasing the density of the hardened concrete."
+        },
+        {
+          "num": 9,
+          "text": "In hand mixed concrete, same strength of concrete can be achieved as that by concrete compacted with vibrator by",
+          "options": [
+            "Adding 10% more cement",
+            "Adding 10% less cement",
+            "Increasing fineness modulus of sand",
+            "Cannot be achieved by any way"
+          ],
+          "correct": 0,
+          "expl": "Hand-mixed concrete tends to have more entrapped air/voids than machine-vibrated concrete, so about 10% extra cement is generally added to compensate for the loss in strength."
+        },
+        {
+          "num": 10,
+          "text": "Steam curing, accelerates attainment of strength in concrete because",
+          "options": [
+            "More water is available for curing",
+            "Rapid hardening occurs",
+            "Hydration of cement is faster",
+            "It alters the setting time"
+          ],
+          "correct": 2,
+          "expl": "Steam curing raises the temperature, which speeds up the chemical hydration reaction of cement, accelerating strength gain."
+        },
+        {
+          "num": 11,
+          "text": "Steam curing should never be used for",
+          "options": [
+            "Sulphate-resisting cement",
+            "Rapid hardening cement",
+            "High alumina cement",
+            "Ordinary Portland cement"
+          ],
+          "correct": 2,
+          "expl": "High alumina cement generates very high heat rapidly and is highly sensitive to elevated curing temperatures, so steam curing (which adds further heat) should never be used with it."
+        },
+        {
+          "num": 12,
+          "text": "Steam curing is preferably used for",
+          "options": [
+            "Columns",
+            "Beams",
+            "Mass concreting",
+            "Mass production of precast units"
+          ],
+          "correct": 3,
+          "expl": "Steam curing is most efficient and economical when applied to mass-produced precast concrete units in a factory setting."
+        },
+        {
+          "num": 13,
+          "text": "Curing of concrete at a high temperature results in",
+          "options": [
+            "Increase the ultimate strength",
+            "Cracking of concrete",
+            "Decrease in ultimate strength",
+            "Early development of ultimate strength"
+          ],
+          "correct": 3,
+          "expl": "Curing at high (elevated) temperature speeds up early hydration, giving earlier development of the ultimate strength, though it can also affect long-term strength and increase cracking risk in practice."
+        },
+        {
+          "num": 14,
+          "text": "Weigh-batching proceeds on",
+          "options": [
+            "The assumption of the declared weight in each bag of cement",
+            "Weighing the contents of each bag",
+            "Accurately estimating the weight of each material to be used in each batch",
+            "The assumption of correct dry weight of each size range of each material and the weight of water"
+          ],
+          "correct": 3,
+          "expl": "True weigh-batching is based on estimating the correct dry weight of each size fraction of material together with the actual water content required, adjusting for aggregate moisture."
+        },
+        {
+          "num": 15,
+          "text": "In the batching of materials, the ingredients should be measured to a tolerance (as a percentage of batch quantity) of",
+          "options": [
+            "1.0",
+            "2.0",
+            "3.0",
+            "5.0"
+          ],
+          "correct": 2,
+          "expl": "IS code requires batching tolerances of about ±3% of the batch quantity for accurate proportioning."
+        },
+        {
+          "num": 16,
+          "text": "In weight batching the weight of surface water carried by the wet aggregate",
+          "options": [
+            "Can be ignored",
+            "Must be taken into account",
+            "May or may not be taken into account depending upon the type of job",
+            "For coarse aggregate it may be taken into account while for sand it may be ignored"
+          ],
+          "correct": 1,
+          "expl": "Surface (free) moisture on wet aggregate adds extra water to the mix and must be accounted for and deducted from the batch water."
+        },
+        {
+          "num": 17,
+          "text": "The choice of proper batching system depends upon",
+          "options": [
+            "Size of job",
+            "Required production rate",
+            "Required standard for batching rate",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "The choice of batching system depends on the size of the job, the required rate of production, and the standard of accuracy needed — all are relevant factors."
+        },
+        {
+          "num": 18,
+          "text": "Mixers are normally classified on the basis of",
+          "options": [
+            "The technique of discharging the mixed concrete",
+            "Capacity of batch handled",
+            "The number of drums",
+            "Number of revolutions"
+          ],
+          "correct": 0,
+          "expl": "Concrete mixers are commonly classified by how they discharge the mixed concrete (tilting, non-tilting, reversing drum, etc.)."
+        },
+        {
+          "num": 19,
+          "text": "The capacity of a concrete mixer is expressed in terms of",
+          "options": [
+            "Total volume of concrete produced per day",
+            "Total volume of concrete produced in 8 hours",
+            "Total volume of concrete produced per hour",
+            "Volume of concrete mix handled per batch"
+          ],
+          "correct": 3,
+          "expl": "A concrete mixer's capacity is conventionally rated by the volume of mix it can handle in a single batch."
+        },
+        {
+          "num": 20,
+          "text": "A mixer designated 400 TN indicates that",
+          "options": [
+            "It is a non-tilting type mixer",
+            "Its nominal mix batch capacity is 400 liters",
+            "Both (A) and (B)",
+            "It is a non-tilting type mixer requiring 400 revolutions for proper mixing"
+          ],
+          "correct": 2,
+          "expl": "A '400 TN' mixer designation indicates a non-tilting drum type mixer with a nominal batch capacity of 400 litres."
+        },
+        {
+          "num": 21,
+          "text": "The pan mixer consisting of a circular pan rotating about a vertical axis is suitable",
+          "options": [
+            "As a mobile mixer",
+            "As a central mixing plant",
+            "For ready-mixed concrete",
+            "Any of the above"
+          ],
+          "correct": 1,
+          "expl": "A pan mixer is well suited as a stationary unit in a central batching/mixing plant due to its thorough, uniform mixing action."
+        },
+        {
+          "num": 22,
+          "text": "The freshly mixed concrete can be transported by",
+          "options": [
+            "Barrows",
+            "Trippers and lorries",
+            "Truck mixers or agitator lorries",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Freshly mixed concrete can be transported by barrows, trippers/lorries, or truck mixers/agitators, depending on the distance and job requirements — all are valid methods."
+        },
+        {
+          "num": 23,
+          "text": "Compaction by mechanical vibration is suitable for",
+          "options": [
+            "All the grades of concrete",
+            "All the structural elements",
+            "All the mixes except very plastic mixes",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Mechanical vibration works well for practically all grades and structural elements, except for already very plastic/fluid mixes that don't need it."
+        },
+        {
+          "num": 24,
+          "text": "Which type of vibrator is generally used for compaction of concrete?",
+          "options": [
+            "Form vibrator",
+            "Needle vibrator",
+            "Surface vibrator",
+            "Screen vibrator"
+          ],
+          "correct": 1,
+          "expl": "The needle (immersion) vibrator is the most commonly used type for compacting concrete in most structural applications."
+        },
+        {
+          "num": 25,
+          "text": "For compacting thin reinforced concrete slabs following vibrators is recommended",
+          "options": [
+            "Immersion vibrator",
+            "Surface vibrator",
+            "Vibrating table",
+            "Any of the above"
+          ],
+          "correct": 1,
+          "expl": "Thin reinforced slabs are best compacted using a surface vibrator (such as a screed or plate vibrator) that works effectively over shallow depths."
+        },
+        {
+          "num": 26,
+          "text": "Surface vibrator is effective only when the thickness of concrete member does not exceed",
+          "options": [
+            "100 mm",
+            "125 mm",
+            "150 mm",
+            "200 mm"
+          ],
+          "correct": 3,
+          "expl": "Surface vibrators are effective only for shallow members up to about 200 mm thick, beyond which their vibration doesn't penetrate adequately."
+        },
+        {
+          "num": 27,
+          "text": "A surface vibrator for compacting of concrete is preferred for all the following except",
+          "options": [
+            "Raft footings",
+            "Columns",
+            "RCC slab",
+            "Road pavements"
+          ],
+          "correct": 1,
+          "expl": "Surface vibrators work well for shallow, wide elements like slabs, footings and pavements, but are not suitable for deep, narrow members like columns."
+        },
+        {
+          "num": 28,
+          "text": "Rational instability occurring during compaction of concrete using vibrations technique is due to",
+          "options": [
+            "Mix being under-sanded",
+            "Mix being oversanded",
+            "Entrapped air",
+            "All of the above"
+          ],
+          "correct": 1,
+          "expl": "An oversanded mix has excess fines and reduced ability to allow entrapped air/water to escape during vibration, leading to instability."
+        },
+        {
+          "num": 29,
+          "text": "Maturity of concrete is the",
+          "options": [
+            "28-days strength of concrete",
+            "365-days strength of concrete",
+            "Product of period of curing and temperature of curing",
+            "Percentage of strength of concrete cured at 18 C for 28 days"
+          ],
+          "correct": 2,
+          "expl": "Maturity of concrete is a measure combining both the duration of curing and the curing temperature, since both jointly govern the degree of hydration achieved."
+        },
+        {
+          "num": 30,
+          "text": "The timber formwork for concrete should be made of",
+          "options": [
+            "Teak wood",
+            "Shisham wood",
+            "Soft wood planks",
+            "Green timber"
+          ],
+          "correct": 2,
+          "expl": "Timber formwork is generally made from well-seasoned soft wood planks, which are light, workable and economical."
+        },
+        {
+          "num": 31,
+          "text": "For a concrete slab for 3.75 x 4.75 m room, the stripping time of form should be",
+          "options": [
+            "3 days",
+            "7 days",
+            "14 days",
+            "21 days"
+          ],
+          "correct": 2,
+          "expl": "For a typical room-sized slab span, the formwork is generally kept in place for about 14 days before stripping, to allow adequate strength gain."
+        },
+        {
+          "num": 32,
+          "text": "To take care of any sag in the beams, the forms are given a camber of",
+          "options": [
+            "1:200",
+            "1:300",
+            "1:500",
+            "1:650"
+          ],
+          "correct": 2,
+          "expl": "Formwork for beams is typically given an upward camber of about 1:500 of the span to compensate for anticipated deflection/sag."
+        },
+        {
+          "num": 33,
+          "text": "For a medium income group big housing project which type of formwork is recommended?",
+          "options": [
+            "Timber formwork",
+            "Plywood formwork",
+            "Steel formwork",
+            "Slip forms"
+          ],
+          "correct": 2,
+          "expl": "Steel formwork, being durable and reusable many times, is the most economical choice for large housing projects with repetitive units."
+        },
+        {
+          "num": 34,
+          "text": "The durability of concrete is due to its resistance to",
+          "options": [
+            "Deterioration from environmental conditions",
+            "Internal disruptive forces",
+            "Chemical attack",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Durability of concrete depends on its combined resistance to environmental deterioration, internal disruptive forces (like freeze-thaw or alkali-aggregate reaction) and chemical attack."
+        },
+        {
+          "num": 35,
+          "text": "The optimum number of revolutions over which concrete is required to be mixed in a mixer machine is",
+          "options": [
+            "10",
+            "20",
+            "50",
+            "100"
+          ],
+          "correct": 1,
+          "expl": "The optimum number of mixer revolutions for achieving a uniform, well-mixed batch is generally about 20."
+        },
+        {
+          "num": 36,
+          "text": "In hand mixed concrete, same strength of concrete can be achieved as that by concrete compacted with vibrator by",
+          "options": [
+            "Adding 10% more cement",
+            "Adding 10% less cement",
+            "Increasing fineness modulus of sand",
+            "Cannot be achieved by any way"
+          ],
+          "correct": 0,
+          "expl": "Since hand mixing traps more air and gives a less uniform mix than machine mixing, about 10% extra cement compensates for the resulting strength deficit."
+        },
+        {
+          "num": 37,
+          "text": "Steam curing, accelerates attainment of strength in concrete because",
+          "options": [
+            "More water is available for curing",
+            "Rapid hardening occurs",
+            "Hydration of cement is faster",
+            "It alters the setting time"
+          ],
+          "correct": 2,
+          "expl": "Steam curing raises the temperature of the concrete, speeding up the chemical hydration reaction and hence early strength gain."
+        },
+        {
+          "num": 38,
+          "text": "Steam curing should never be used for",
+          "options": [
+            "Sulphate-resisting cement",
+            "Rapid hardening cement",
+            "High alumina cement",
+            "Ordinary Portland cement"
+          ],
+          "correct": 2,
+          "expl": "High alumina cement is extremely heat-sensitive and can suffer a serious loss of strength ('conversion') if exposed to elevated curing temperatures, so steam curing must never be used with it."
+        },
+        {
+          "num": 39,
+          "text": "Curing of concrete at high temperature results in",
+          "options": [
+            "Increase in ultimate strength",
+            "Cracking of concrete",
+            "Decrease in ultimate strength",
+            "Early development of ultimate strength"
+          ],
+          "correct": 3,
+          "expl": "Curing at elevated temperature accelerates hydration, giving earlier attainment of the ultimate strength than normal curing."
+        },
+        {
+          "num": 40,
+          "text": "Which factors comprise maturity of concrete?",
+          "options": [
+            "Compressive strength and flexural strength of concrete",
+            "Cement content per cubic meter and compressive strength of concrete",
+            "Curing age and curing temperature of concrete",
+            "Age and aggregate"
+          ],
+          "correct": 2,
+          "expl": "Maturity of concrete is calculated from the curing age combined with the curing temperature (typically as a time-temperature factor)."
+        },
+        {
+          "num": 41,
+          "text": "When mixing water leaks out of the joints of shuttering, in which fresh concrete has been poured, the defect likely in cement concrete is",
+          "options": [
+            "No setting",
+            "Honey combing",
+            "Segregation",
+            "Laitance"
+          ],
+          "correct": 1,
+          "expl": "Water leaking out through gaps in the formwork carries fine material with it, leaving behind voids known as honeycombing."
+        },
+        {
+          "num": 42,
+          "text": "Weigh-batching proceeds on",
+          "options": [
+            "The assumption of the declared weight in each bag of cement",
+            "Weighing the contents of each bag",
+            "Accurately estimating the weight of each material to be used in each batch",
+            "The assumption of correct dry weight of each size range of each material and the weight of water"
+          ],
+          "correct": 3,
+          "expl": "Proper weigh-batching relies on accurately establishing the correct dry weight of each aggregate size fraction together with the water content, adjusting for moisture in the aggregates."
+        },
+        {
+          "num": 43,
+          "text": "Pick up the incorrect statement",
+          "options": [
+            "About 10 percent more cement is consumed in making concrete if hand mixing is done",
+            "5 percent voids in cement concrete reduce strength up to 30 percent",
+            "Curing of OPC is done for 7 days",
+            "In high pressure steam curing, bond strength is increased"
+          ],
+          "correct": 3,
+          "expl": "Contrary to the other (true) statements, high-pressure steam curing (autoclaving) is generally associated with a reduction, not an increase, in bond strength between concrete and reinforcement."
+        },
+        {
+          "num": 44,
+          "text": "In cold weather countries cement preferred is",
+          "options": [
+            "Ordinary Portland cement",
+            "Puzzolana cement",
+            "Calcium chloride cement",
+            "Low heat cement"
+          ],
+          "correct": 2,
+          "expl": "In cold-weather regions, cement blended with calcium chloride (an accelerator) is preferred to speed up setting and hardening before frost can damage the fresh concrete."
+        },
+        {
+          "num": 45,
+          "text": "Workability of fibre reinforced concrete decreases, if",
+          "options": [
+            "Fibre content and aspect ratio both are increased",
+            "Fibre content and aspect ratio both are decreased",
+            "Fibre content is increased and aspect ratio is decreased",
+            "Fibre content is decreased and aspect ratio is increased"
+          ],
+          "correct": 0,
+          "expl": "Increasing both fibre content and aspect ratio raises internal friction and interlocking within the mix, reducing its workability."
+        },
+        {
+          "num": 46,
+          "text": "While concreting in cold weather where frosting is also likely, one uses",
+          "options": [
+            "High quality Portland cement with minimum volume of added water",
+            "High alumina cement with calcium chloride additives",
+            "Portland cement together with calcium chloride additives",
+            "A mixture of high alumina cement and Portland cement"
+          ],
+          "correct": 1,
+          "expl": "In frost-prone cold weather, high alumina cement (which hydrates and gains strength very rapidly, generating heat) combined with calcium chloride additives helps the concrete set and gain strength before freezing can occur."
+        },
+        {
+          "num": 47,
+          "text": "Which one of the following types of concrete is most suitable in extreme cold climates?",
+          "options": [
+            "Air-entrained concrete",
+            "Ready mix concrete",
+            "Vacuum concrete",
+            "Harsh concrete"
+          ],
+          "correct": 1,
+          "expl": "Ready-mix concrete, produced and quality-controlled at a central plant under controlled conditions, is generally the most practical and suitable choice for construction in extreme cold climates."
+        }
+      ]
+    }
+  ]
+}

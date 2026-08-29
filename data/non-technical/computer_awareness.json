@@ -1,0 +1,3632 @@
+{
+  "id": "computer_awareness",
+  "title": "Computer Awareness",
+  "description": "300 MCQs covering Basics of Computer, Networking and Internet, and Office Productivity Tools (MS Word, Excel, PowerPoint) for PSSSB Junior Engineer exam preparation.",
+  "subcats": [
+    {
+      "name": "Basics of Computer",
+      "questions": [
+        {
+          "num": 1,
+          "text": "What is the smallest unit of data in a computer?",
+          "options": [
+            "Kilobyte",
+            "Byte",
+            "Bit",
+            "Nibble"
+          ],
+          "correct": 2,
+          "expl": "A bit (binary digit) is the smallest unit of data a computer can store, representing either 0 or 1."
+        },
+        {
+          "num": 2,
+          "text": "8 bits are equal to one:",
+          "options": [
+            "Nibble",
+            "Word",
+            "Kilobyte",
+            "Byte"
+          ],
+          "correct": 3,
+          "expl": "8 bits together form 1 byte, the basic unit used to represent a single character."
+        },
+        {
+          "num": 3,
+          "text": "1024 bytes are equal to one:",
+          "options": [
+            "Megabyte",
+            "Kilobyte",
+            "Byte",
+            "Gigabyte"
+          ],
+          "correct": 1,
+          "expl": "1 Kilobyte (KB) = 1024 bytes, following the binary (base-2) counting convention used in computing."
+        },
+        {
+          "num": 4,
+          "text": "1024 Kilobytes are equal to one:",
+          "options": [
+            "Byte",
+            "Terabyte",
+            "Megabyte",
+            "Gigabyte"
+          ],
+          "correct": 2,
+          "expl": "1 Megabyte (MB) = 1024 Kilobytes."
+        },
+        {
+          "num": 5,
+          "text": "1024 Megabytes are equal to one:",
+          "options": [
+            "Petabyte",
+            "Gigabyte",
+            "Terabyte",
+            "Kilobyte"
+          ],
+          "correct": 1,
+          "expl": "1 Gigabyte (GB) = 1024 Megabytes."
+        },
+        {
+          "num": 6,
+          "text": "1024 Gigabytes are equal to one:",
+          "options": [
+            "Exabyte",
+            "Megabyte",
+            "Terabyte",
+            "Petabyte"
+          ],
+          "correct": 2,
+          "expl": "1 Terabyte (TB) = 1024 Gigabytes."
+        },
+        {
+          "num": 7,
+          "text": "Which part of the computer is called its 'brain'?",
+          "options": [
+            "RAM",
+            "Monitor",
+            "Hard Disk",
+            "CPU"
+          ],
+          "correct": 3,
+          "expl": "The CPU (Central Processing Unit) processes instructions and performs calculations, so it is often called the 'brain' of the computer."
+        },
+        {
+          "num": 8,
+          "text": "CPU stands for:",
+          "options": [
+            "Central Processor Utility",
+            "Central Processing Unit",
+            "Computer Processing Unit",
+            "Central Program Unit"
+          ],
+          "correct": 1,
+          "expl": "CPU stands for Central Processing Unit, the main component that executes instructions."
+        },
+        {
+          "num": 9,
+          "text": "ALU stands for:",
+          "options": [
+            "Arithmetic Language Unit",
+            "Advanced Logic Unit",
+            "Arithmetic Logic Unit",
+            "Automatic Logic Unit"
+          ],
+          "correct": 2,
+          "expl": "ALU (Arithmetic Logic Unit) is the part of the CPU that performs arithmetic and logical operations."
+        },
+        {
+          "num": 10,
+          "text": "CU stands for:",
+          "options": [
+            "Central Unit",
+            "Control Utility",
+            "Computing Unit",
+            "Control Unit"
+          ],
+          "correct": 3,
+          "expl": "CU (Control Unit) directs the operation of the processor by controlling the flow of data between the CPU and other components."
+        },
+        {
+          "num": 11,
+          "text": "Which generation of computers used vacuum tubes?",
+          "options": [
+            "Fourth generation",
+            "First generation",
+            "Second generation",
+            "Third generation"
+          ],
+          "correct": 1,
+          "expl": "First-generation computers (1940s-50s) used bulky vacuum tubes for circuitry."
+        },
+        {
+          "num": 12,
+          "text": "Which generation of computers used transistors?",
+          "options": [
+            "Fifth generation",
+            "First generation",
+            "Third generation",
+            "Second generation"
+          ],
+          "correct": 3,
+          "expl": "Second-generation computers (late 1950s-60s) replaced vacuum tubes with smaller, more reliable transistors."
+        },
+        {
+          "num": 13,
+          "text": "Which generation of computers used Integrated Circuits (ICs)?",
+          "options": [
+            "Fourth generation",
+            "Second generation",
+            "Third generation",
+            "First generation"
+          ],
+          "correct": 2,
+          "expl": "Third-generation computers (1960s-70s) used Integrated Circuits (ICs), which packed many transistors onto a single chip."
+        },
+        {
+          "num": 14,
+          "text": "Which generation of computers introduced the microprocessor?",
+          "options": [
+            "Second generation",
+            "First generation",
+            "Fourth generation",
+            "Third generation"
+          ],
+          "correct": 2,
+          "expl": "Fourth-generation computers (1970s onward) introduced the microprocessor, putting an entire CPU on one chip."
+        },
+        {
+          "num": 15,
+          "text": "The fifth generation of computers is mainly based on:",
+          "options": [
+            "Vacuum tubes",
+            "Integrated circuits",
+            "Transistors",
+            "Artificial Intelligence"
+          ],
+          "correct": 3,
+          "expl": "Fifth-generation computers focus on Artificial Intelligence, natural language processing, and parallel processing."
+        },
+        {
+          "num": 16,
+          "text": "RAM is an example of:",
+          "options": [
+            "Volatile memory",
+            "Non-volatile memory",
+            "Secondary storage",
+            "Optical memory"
+          ],
+          "correct": 0,
+          "expl": "RAM (Random Access Memory) is volatile, meaning its contents are lost when power is switched off."
+        },
+        {
+          "num": 17,
+          "text": "ROM is an example of:",
+          "options": [
+            "Non-volatile memory",
+            "Virtual memory",
+            "Volatile memory",
+            "Cache memory"
+          ],
+          "correct": 0,
+          "expl": "ROM (Read Only Memory) is non-volatile, so it retains data even without power."
+        },
+        {
+          "num": 18,
+          "text": "Which of the following is a secondary storage device?",
+          "options": [
+            "Register",
+            "Hard Disk",
+            "RAM",
+            "Cache"
+          ],
+          "correct": 1,
+          "expl": "A hard disk stores data permanently and is a secondary (external to CPU) storage device, unlike RAM."
+        },
+        {
+          "num": 19,
+          "text": "Which memory is used to speed up processor access to data?",
+          "options": [
+            "Floppy Disk",
+            "Cache memory",
+            "Hard Disk",
+            "ROM"
+          ],
+          "correct": 1,
+          "expl": "Cache memory sits between the CPU and RAM and is much faster, so it speeds up the processor's access to frequently used data."
+        },
+        {
+          "num": 20,
+          "text": "Which of the following is a pure input device?",
+          "options": [
+            "Speaker",
+            "Monitor",
+            "Printer",
+            "Keyboard"
+          ],
+          "correct": 3,
+          "expl": "A keyboard only sends data into the computer, making it a pure input device."
+        },
+        {
+          "num": 21,
+          "text": "Which of the following is a pure output device?",
+          "options": [
+            "Monitor",
+            "Mouse",
+            "Keyboard",
+            "Scanner"
+          ],
+          "correct": 0,
+          "expl": "A monitor only displays data from the computer, making it a pure output device."
+        },
+        {
+          "num": 22,
+          "text": "Which device works as both input and output device?",
+          "options": [
+            "Mouse",
+            "Modem",
+            "Scanner",
+            "Keyboard"
+          ],
+          "correct": 1,
+          "expl": "A modem both sends data out (input to the network) and receives data (output to the computer), so it works as both input and output."
+        },
+        {
+          "num": 23,
+          "text": "Which device is used to point and select items on screen?",
+          "options": [
+            "Speaker",
+            "Scanner",
+            "Printer",
+            "Mouse"
+          ],
+          "correct": 3,
+          "expl": "A mouse is used to point at and select items on the screen, making it a pointing input device."
+        },
+        {
+          "num": 24,
+          "text": "Which device converts digital signals to analog signals and vice versa?",
+          "options": [
+            "Switch",
+            "Modem",
+            "Hub",
+            "Router"
+          ],
+          "correct": 1,
+          "expl": "A modem (modulator-demodulator) converts digital signals from a computer into analog signals for transmission, and back again."
+        },
+        {
+          "num": 25,
+          "text": "CD stands for:",
+          "options": [
+            "Central Disc",
+            "Compact Disc",
+            "Compact Data",
+            "Common Disc"
+          ],
+          "correct": 1,
+          "expl": "CD stands for Compact Disc, an optical storage medium."
+        },
+        {
+          "num": 26,
+          "text": "DVD stands for:",
+          "options": [
+            "Digital Volume Disc",
+            "Digital Video Disc only",
+            "Data Versatile Device",
+            "Digital Versatile Disc"
+          ],
+          "correct": 3,
+          "expl": "DVD stands for Digital Versatile Disc, which can store more data than a CD."
+        },
+        {
+          "num": 27,
+          "text": "CD and DVD are examples of which type of storage device?",
+          "options": [
+            "Optical storage device",
+            "Magnetic storage device",
+            "Volatile device",
+            "Solid state device"
+          ],
+          "correct": 0,
+          "expl": "CDs and DVDs use a laser to read/write data, making them optical storage devices."
+        },
+        {
+          "num": 28,
+          "text": "One nibble is equal to:",
+          "options": [
+            "4 bits",
+            "8 bits",
+            "2 bits",
+            "16 bits"
+          ],
+          "correct": 0,
+          "expl": "A nibble equals 4 bits, which is half of a byte (8 bits)."
+        },
+        {
+          "num": 29,
+          "text": "The base of the binary number system is:",
+          "options": [
+            "8",
+            "10",
+            "16",
+            "2"
+          ],
+          "correct": 3,
+          "expl": "The binary number system uses only two digits (0 and 1), so its base is 2."
+        },
+        {
+          "num": 30,
+          "text": "The base of the decimal number system is:",
+          "options": [
+            "2",
+            "10",
+            "8",
+            "16"
+          ],
+          "correct": 1,
+          "expl": "The decimal number system uses ten digits (0-9), so its base is 10."
+        },
+        {
+          "num": 31,
+          "text": "The base of the hexadecimal number system is:",
+          "options": [
+            "2",
+            "10",
+            "8",
+            "16"
+          ],
+          "correct": 3,
+          "expl": "The hexadecimal number system uses sixteen symbols (0-9 and A-F), so its base is 16."
+        },
+        {
+          "num": 32,
+          "text": "The base of the octal number system is:",
+          "options": [
+            "8",
+            "2",
+            "10",
+            "16"
+          ],
+          "correct": 0,
+          "expl": "The octal number system uses eight digits (0-7), so its base is 8."
+        },
+        {
+          "num": 33,
+          "text": "The binary equivalent of decimal number 10 is:",
+          "options": [
+            "1110",
+            "1100",
+            "1010",
+            "1001"
+          ],
+          "correct": 2,
+          "expl": "Decimal 10 in binary is 1010 (8+0+2+0)."
+        },
+        {
+          "num": 34,
+          "text": "Which software manages and controls computer hardware and software resources?",
+          "options": [
+            "Application software",
+            "Device driver",
+            "Operating System",
+            "Utility software"
+          ],
+          "correct": 2,
+          "expl": "The Operating System manages and controls all hardware and software resources of a computer."
+        },
+        {
+          "num": 35,
+          "text": "Which of the following is an example of an operating system?",
+          "options": [
+            "MS Word",
+            "MS Excel",
+            "Windows",
+            "Adobe Photoshop"
+          ],
+          "correct": 2,
+          "expl": "Windows is a well-known example of an operating system that manages computer resources."
+        },
+        {
+          "num": 36,
+          "text": "MS Word is an example of:",
+          "options": [
+            "System software",
+            "Firmware",
+            "Application software",
+            "Operating system"
+          ],
+          "correct": 2,
+          "expl": "MS Word is application software used for a specific task (word processing), unlike system software such as an OS."
+        },
+        {
+          "num": 37,
+          "text": "Firmware is generally stored in:",
+          "options": [
+            "ROM",
+            "Hard Disk",
+            "RAM",
+            "Cache"
+          ],
+          "correct": 0,
+          "expl": "Firmware is low-level software stored permanently in ROM chips to control basic hardware functions."
+        },
+        {
+          "num": 38,
+          "text": "BIOS stands for:",
+          "options": [
+            "Binary Input Output System",
+            "Basic Internal Output System",
+            "Basic Input Operating System",
+            "Basic Input Output System"
+          ],
+          "correct": 3,
+          "expl": "BIOS stands for Basic Input Output System, firmware that initializes hardware during booting."
+        },
+        {
+          "num": 39,
+          "text": "POST stands for:",
+          "options": [
+            "Power On Self Test",
+            "Power On System Test",
+            "Primary Operating System Test",
+            "Power Output Self Test"
+          ],
+          "correct": 0,
+          "expl": "POST stands for Power On Self Test, a diagnostic check the computer runs when it starts up."
+        },
+        {
+          "num": 40,
+          "text": "The process of loading the operating system into memory when a computer starts is called:",
+          "options": [
+            "Booting",
+            "Compiling",
+            "Debugging",
+            "Formatting"
+          ],
+          "correct": 0,
+          "expl": "Booting is the process of loading the operating system into memory when a computer is switched on."
+        },
+        {
+          "num": 41,
+          "text": "Restarting a computer that is already switched on is called:",
+          "options": [
+            "Warm boot",
+            "Soft boot",
+            "Cold boot",
+            "Dead boot"
+          ],
+          "correct": 0,
+          "expl": "A warm boot is restarting a computer that is already on (e.g., via a restart command), without cutting power."
+        },
+        {
+          "num": 42,
+          "text": "Which component connects and allows communication between all parts of a computer?",
+          "options": [
+            "Mouse",
+            "Keyboard",
+            "Motherboard",
+            "Monitor"
+          ],
+          "correct": 2,
+          "expl": "The motherboard is the main circuit board that connects and allows communication between all internal components."
+        },
+        {
+          "num": 43,
+          "text": "Which port is commonly used nowadays to connect a printer to a computer?",
+          "options": [
+            "PS/2 port",
+            "Parallel port",
+            "USB port",
+            "Serial port"
+          ],
+          "correct": 2,
+          "expl": "USB ports are the standard modern interface used to connect printers and most other peripherals."
+        },
+        {
+          "num": 44,
+          "text": "USB stands for:",
+          "options": [
+            "United Serial Bus",
+            "Universal Serial Backup",
+            "Universal Serial Bus",
+            "Universal System Bus"
+          ],
+          "correct": 2,
+          "expl": "USB stands for Universal Serial Bus, a common standard for connecting peripheral devices."
+        },
+        {
+          "num": 45,
+          "text": "Which device is used to convert a physical document into a digital image?",
+          "options": [
+            "Scanner",
+            "Plotter",
+            "Projector",
+            "Printer"
+          ],
+          "correct": 0,
+          "expl": "A scanner captures a physical document and converts it into a digital image."
+        },
+        {
+          "num": 46,
+          "text": "OCR stands for:",
+          "options": [
+            "Original Character Recognition",
+            "Optical Colour Recognition",
+            "Optical Character Reader",
+            "Optical Character Recognition"
+          ],
+          "correct": 3,
+          "expl": "OCR (Optical Character Recognition) is technology that converts scanned images of text into editable, machine-readable text."
+        },
+        {
+          "num": 47,
+          "text": "Which of the following is a volatile memory?",
+          "options": [
+            "RAM",
+            "ROM",
+            "Pen Drive",
+            "Hard Disk"
+          ],
+          "correct": 0,
+          "expl": "RAM loses its data when the power is turned off, which is the defining feature of volatile memory."
+        },
+        {
+          "num": 48,
+          "text": "The BIOS of a computer is usually stored in:",
+          "options": [
+            "Hard Disk",
+            "ROM",
+            "Cache",
+            "RAM"
+          ],
+          "correct": 1,
+          "expl": "BIOS firmware is stored in ROM so it is available even before the operating system loads."
+        },
+        {
+          "num": 49,
+          "text": "One byte consists of how many bits?",
+          "options": [
+            "8 bits",
+            "4 bits",
+            "16 bits",
+            "2 bits"
+          ],
+          "correct": 0,
+          "expl": "1 byte is made up of 8 bits."
+        },
+        {
+          "num": 50,
+          "text": "Which of the following is antivirus software?",
+          "options": [
+            "Quick Heal",
+            "Adobe Reader",
+            "MS Word",
+            "Google Chrome"
+          ],
+          "correct": 0,
+          "expl": "Quick Heal is a well-known antivirus software brand, unlike the other options which are general-purpose applications."
+        },
+        {
+          "num": 51,
+          "text": "A malicious program that replicates itself and spreads to other files is called a:",
+          "options": [
+            "Driver",
+            "Compiler",
+            "Firewall",
+            "Virus"
+          ],
+          "correct": 3,
+          "expl": "A virus is malicious code that attaches itself to files/programs and spreads by replicating when the host file is run."
+        },
+        {
+          "num": 52,
+          "text": "A self-replicating malicious program that does not need a host file is called a:",
+          "options": [
+            "Virus",
+            "Trojan",
+            "Adware",
+            "Worm"
+          ],
+          "correct": 3,
+          "expl": "A worm is self-replicating malware that spreads across networks on its own, without needing to attach to a host file."
+        },
+        {
+          "num": 53,
+          "text": "A malicious program disguised as legitimate software is called a:",
+          "options": [
+            "Firewall",
+            "Trojan Horse",
+            "Cookie",
+            "Worm"
+          ],
+          "correct": 1,
+          "expl": "A Trojan Horse disguises itself as legitimate software to trick users into installing it."
+        },
+        {
+          "num": 54,
+          "text": "Software that automatically displays unwanted advertisements is called:",
+          "options": [
+            "Firewall",
+            "Antivirus",
+            "Spyware",
+            "Adware"
+          ],
+          "correct": 3,
+          "expl": "Adware automatically displays unwanted advertisements on a user's device."
+        },
+        {
+          "num": 55,
+          "text": "Software that secretly monitors and collects user activity is called:",
+          "options": [
+            "Adware",
+            "Firmware",
+            "Freeware",
+            "Spyware"
+          ],
+          "correct": 3,
+          "expl": "Spyware secretly monitors user activity and collects information without the user's consent."
+        },
+        {
+          "num": 56,
+          "text": "The default file extension of a Microsoft Word document (2007 onwards) is:",
+          "options": [
+            ".pptx",
+            ".pdf",
+            ".xlsx",
+            ".docx"
+          ],
+          "correct": 3,
+          "expl": "Since Word 2007, the default file format for Word documents is .docx."
+        },
+        {
+          "num": 57,
+          "text": "The default file extension of a Microsoft Excel workbook (2007 onwards) is:",
+          "options": [
+            ".pptx",
+            ".docx",
+            ".txt",
+            ".xlsx"
+          ],
+          "correct": 3,
+          "expl": "Since Excel 2007, the default file format for Excel workbooks is .xlsx."
+        },
+        {
+          "num": 58,
+          "text": "The default file extension of a Microsoft PowerPoint presentation (2007 onwards) is:",
+          "options": [
+            ".pptx",
+            ".ppt",
+            ".xlsx",
+            ".docx"
+          ],
+          "correct": 0,
+          "expl": "Since PowerPoint 2007, the default file format for presentations is .pptx."
+        },
+        {
+          "num": 59,
+          "text": "Which of the following is a common image file extension?",
+          "options": [
+            ".jpg",
+            ".exe",
+            ".mp3",
+            ".docx"
+          ],
+          "correct": 0,
+          "expl": ".jpg (JPEG) is a widely used file extension for compressed digital images."
+        },
+        {
+          "num": 60,
+          "text": "Which of the following is a common document file extension used for sharing formatted files?",
+          "options": [
+            ".exe",
+            ".bat",
+            ".pdf",
+            ".sys"
+          ],
+          "correct": 2,
+          "expl": ".pdf (Portable Document Format) is commonly used to share documents while preserving formatting across devices."
+        },
+        {
+          "num": 61,
+          "text": "Which of the following file extensions represents an executable file in Windows?",
+          "options": [
+            ".exe",
+            ".docx",
+            ".jpg",
+            ".txt"
+          ],
+          "correct": 0,
+          "expl": ".exe denotes an executable program file in Windows."
+        },
+        {
+          "num": 62,
+          "text": "Which key is used to delete the character to the left of the cursor?",
+          "options": [
+            "Insert",
+            "Backspace",
+            "Delete",
+            "Tab"
+          ],
+          "correct": 1,
+          "expl": "Backspace deletes the character immediately to the left of the cursor."
+        },
+        {
+          "num": 63,
+          "text": "Which key is used to delete the character to the right of the cursor?",
+          "options": [
+            "Escape",
+            "Shift",
+            "Delete",
+            "Backspace"
+          ],
+          "correct": 2,
+          "expl": "Delete removes the character immediately to the right of the cursor."
+        },
+        {
+          "num": 64,
+          "text": "The shortcut key Ctrl+C is used to:",
+          "options": [
+            "Undo",
+            "Copy",
+            "Paste",
+            "Cut"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+C copies the selected content to the clipboard."
+        },
+        {
+          "num": 65,
+          "text": "The shortcut key Ctrl+V is used to:",
+          "options": [
+            "Cut",
+            "Copy",
+            "Redo",
+            "Paste"
+          ],
+          "correct": 3,
+          "expl": "Ctrl+V pastes content from the clipboard at the cursor's position."
+        },
+        {
+          "num": 66,
+          "text": "The shortcut key Ctrl+X is used to:",
+          "options": [
+            "Save",
+            "Cut",
+            "Paste",
+            "Copy"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+X cuts the selected content, removing it and copying it to the clipboard."
+        },
+        {
+          "num": 67,
+          "text": "The shortcut key Ctrl+Z is used to:",
+          "options": [
+            "Redo",
+            "Undo",
+            "Print",
+            "Save"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+Z reverses (undoes) the last action performed."
+        },
+        {
+          "num": 68,
+          "text": "The shortcut key Ctrl+Y is used to:",
+          "options": [
+            "Redo",
+            "Undo",
+            "Copy",
+            "Cut"
+          ],
+          "correct": 0,
+          "expl": "Ctrl+Y redoes an action that was undone."
+        },
+        {
+          "num": 69,
+          "text": "The shortcut key Ctrl+S is used to:",
+          "options": [
+            "Open",
+            "Save",
+            "Close",
+            "Print"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+S saves the current file."
+        },
+        {
+          "num": 70,
+          "text": "The shortcut key Ctrl+P is used to:",
+          "options": [
+            "Save",
+            "Print",
+            "Open",
+            "Paste"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+P opens the print dialog box."
+        },
+        {
+          "num": 71,
+          "text": "The shortcut key Ctrl+A is used to:",
+          "options": [
+            "Open a new file",
+            "Align text",
+            "Select all content",
+            "Save the file"
+          ],
+          "correct": 2,
+          "expl": "Ctrl+A selects all content in the current document or window."
+        },
+        {
+          "num": 72,
+          "text": "In Windows, the F2 key is generally used to:",
+          "options": [
+            "Open Help",
+            "Close a window",
+            "Rename a selected file or folder",
+            "Refresh the screen"
+          ],
+          "correct": 2,
+          "expl": "F2 is commonly used in Windows Explorer to rename a selected file or folder."
+        },
+        {
+          "num": 73,
+          "text": "In Windows, the F5 key is generally used to:",
+          "options": [
+            "Rename a file",
+            "Refresh the screen",
+            "Close a program",
+            "Save a file"
+          ],
+          "correct": 1,
+          "expl": "F5 refreshes the current window or webpage in most Windows applications."
+        },
+        {
+          "num": 74,
+          "text": "Alt+Tab is used to:",
+          "options": [
+            "Open the Start menu",
+            "Minimize all windows",
+            "Close the active window",
+            "Switch between open windows"
+          ],
+          "correct": 3,
+          "expl": "Alt+Tab lets users quickly switch between currently open windows/applications."
+        },
+        {
+          "num": 75,
+          "text": "Alt+F4 is used to:",
+          "options": [
+            "Maximize a window",
+            "Open a new window",
+            "Close the active window",
+            "Minimize a window"
+          ],
+          "correct": 2,
+          "expl": "Alt+F4 closes the currently active window or application."
+        },
+        {
+          "num": 76,
+          "text": "Windows key + D is used to:",
+          "options": [
+            "Show the desktop",
+            "Delete a file",
+            "Open Device Manager",
+            "Open Disk Management"
+          ],
+          "correct": 0,
+          "expl": "Windows key + D minimizes all windows and shows the desktop."
+        },
+        {
+          "num": 77,
+          "text": "Which of the following is NOT an operating system?",
+          "options": [
+            "Windows",
+            "Android",
+            "MS Word",
+            "Linux"
+          ],
+          "correct": 2,
+          "expl": "MS Word is application software for word processing, not an operating system."
+        },
+        {
+          "num": 78,
+          "text": "Which of the following is an example of a multitasking operating system?",
+          "options": [
+            "MS Paint",
+            "MS Word",
+            "Notepad",
+            "Windows"
+          ],
+          "correct": 3,
+          "expl": "Windows allows multiple programs to run at once, making it a multitasking operating system."
+        },
+        {
+          "num": 79,
+          "text": "Real-time operating systems are commonly used in:",
+          "options": [
+            "Web browsing",
+            "Embedded systems",
+            "Photo editing",
+            "Word processing"
+          ],
+          "correct": 1,
+          "expl": "Real-time operating systems respond within strict time constraints and are widely used in embedded systems like industrial controllers."
+        },
+        {
+          "num": 80,
+          "text": "Windows operating system is developed by:",
+          "options": [
+            "Apple",
+            "Microsoft",
+            "Google",
+            "IBM"
+          ],
+          "correct": 1,
+          "expl": "Windows is developed and maintained by Microsoft."
+        },
+        {
+          "num": 81,
+          "text": "The Linux kernel was originally developed by:",
+          "options": [
+            "Linus Torvalds",
+            "Bill Gates",
+            "Steve Jobs",
+            "Dennis Ritchie"
+          ],
+          "correct": 0,
+          "expl": "Linus Torvalds originally created the Linux kernel in 1991."
+        },
+        {
+          "num": 82,
+          "text": "Which of the following is an open source operating system?",
+          "options": [
+            "Windows",
+            "iOS",
+            "macOS",
+            "Linux"
+          ],
+          "correct": 3,
+          "expl": "Linux is open source, meaning its source code is freely available for anyone to view and modify."
+        },
+        {
+          "num": 83,
+          "text": "GUI stands for:",
+          "options": [
+            "General User Interface",
+            "Graphical User Interface",
+            "Graphical Unit Interface",
+            "General Unit Interface"
+          ],
+          "correct": 1,
+          "expl": "GUI stands for Graphical User Interface, which uses icons, windows, and menus for interaction."
+        },
+        {
+          "num": 84,
+          "text": "CLI stands for:",
+          "options": [
+            "Central Line Interface",
+            "Common Language Interface",
+            "Command Line Interface",
+            "Command Language Input"
+          ],
+          "correct": 2,
+          "expl": "CLI stands for Command Line Interface, where users type text commands to interact with the system."
+        },
+        {
+          "num": 85,
+          "text": "A compiler is a program that:",
+          "options": [
+            "Manages network connections",
+            "Deletes unnecessary files",
+            "Translates high-level language code into machine code all at once",
+            "Displays graphics on screen"
+          ],
+          "correct": 2,
+          "expl": "A compiler translates the entire high-level source code into machine code in one go before execution."
+        },
+        {
+          "num": 86,
+          "text": "Unlike a compiler, an interpreter:",
+          "options": [
+            "Only checks for spelling errors",
+            "Translates and executes code line by line",
+            "Translates the whole program at once",
+            "Only manages memory"
+          ],
+          "correct": 1,
+          "expl": "An interpreter translates and executes program code line by line, rather than compiling it all at once."
+        },
+        {
+          "num": 87,
+          "text": "Which of the following is a high-level programming language?",
+          "options": [
+            "Binary code",
+            "Machine language",
+            "Python",
+            "Assembly language"
+          ],
+          "correct": 2,
+          "expl": "Python is a high-level programming language that is closer to human-readable syntax."
+        },
+        {
+          "num": 88,
+          "text": "Assembly language is an example of a:",
+          "options": [
+            "Natural language",
+            "High-level language",
+            "Query language",
+            "Low-level language"
+          ],
+          "correct": 3,
+          "expl": "Assembly language uses mnemonic instructions close to machine code, making it a low-level language."
+        },
+        {
+          "num": 89,
+          "text": "Machine language instructions are written in:",
+          "options": [
+            "Binary code",
+            "Hexadecimal words only",
+            "Decimal numbers",
+            "English"
+          ],
+          "correct": 0,
+          "expl": "Machine language is written directly in binary code (0s and 1s) that the CPU can execute directly."
+        },
+        {
+          "num": 90,
+          "text": "Assembly language is often referred to as a:",
+          "options": [
+            "First generation language",
+            "Fifth generation language",
+            "Second generation language",
+            "Fourth generation language"
+          ],
+          "correct": 2,
+          "expl": "Assembly language is classified as a Second Generation Language (2GL)."
+        },
+        {
+          "num": 91,
+          "text": "In a flowchart, which symbol represents a decision point?",
+          "options": [
+            "Rectangle",
+            "Oval",
+            "Circle",
+            "Diamond"
+          ],
+          "correct": 3,
+          "expl": "In flowcharts, a diamond shape represents a decision point with branching outcomes (e.g., yes/no)."
+        },
+        {
+          "num": 92,
+          "text": "In a flowchart, which symbol represents a process step?",
+          "options": [
+            "Oval",
+            "Rectangle",
+            "Parallelogram",
+            "Diamond"
+          ],
+          "correct": 1,
+          "expl": "In flowcharts, a rectangle represents a processing step or action."
+        },
+        {
+          "num": 93,
+          "text": "An algorithm is best described as:",
+          "options": [
+            "A programming language",
+            "A type of virus",
+            "A step-by-step procedure to solve a problem",
+            "A type of computer hardware"
+          ],
+          "correct": 2,
+          "expl": "An algorithm is a well-defined, step-by-step procedure or set of rules to solve a problem."
+        },
+        {
+          "num": 94,
+          "text": "Which storage device generally provides faster data access, SSD or HDD?",
+          "options": [
+            "Floppy disk",
+            "SSD",
+            "Magnetic tape",
+            "HDD"
+          ],
+          "correct": 1,
+          "expl": "SSDs (Solid State Drives) have no moving parts and generally provide faster data access than mechanical HDDs."
+        },
+        {
+          "num": 95,
+          "text": "SSD stands for:",
+          "options": [
+            "Solid State Drive",
+            "Solid Storage Device",
+            "Secondary Storage Device",
+            "Single Storage Disk"
+          ],
+          "correct": 0,
+          "expl": "SSD stands for Solid State Drive, a storage device using flash memory instead of spinning disks."
+        },
+        {
+          "num": 96,
+          "text": "Which of the following best describes a Kilobyte?",
+          "options": [
+            "Approximately 1024 bits",
+            "Exactly 1 byte",
+            "Approximately 1024 bytes",
+            "Exactly 1000 bytes"
+          ],
+          "correct": 2,
+          "expl": "A Kilobyte is commonly understood as approximately 1024 bytes in computing (binary convention)."
+        },
+        {
+          "num": 97,
+          "text": "A device driver is software that:",
+          "options": [
+            "Allows the operating system to communicate with hardware devices",
+            "Protects the computer from viruses",
+            "Compiles high-level programs",
+            "Manages internet connections only"
+          ],
+          "correct": 0,
+          "expl": "A device driver is software that enables the operating system to communicate with and control hardware devices."
+        },
+        {
+          "num": 98,
+          "text": "Which of these best describes 'freeware'?",
+          "options": [
+            "Hardware given free of cost",
+            "Software available free of cost",
+            "Software that is always malicious",
+            "Software available with source code editable by anyone"
+          ],
+          "correct": 1,
+          "expl": "Freeware refers to software that is made available to users free of cost, though its source code is usually not open for modification."
+        },
+        {
+          "num": 99,
+          "text": "Which of the following units is used to measure processor speed?",
+          "options": [
+            "Megabit (Mb)",
+            "Kilobyte (KB)",
+            "Gigabyte (GB)",
+            "Gigahertz (GHz)"
+          ],
+          "correct": 3,
+          "expl": "Processor (CPU) speed is measured in Gigahertz (GHz), indicating clock cycles per second."
+        },
+        {
+          "num": 100,
+          "text": "A set of instructions that tells a computer how to perform a task is called a:",
+          "options": [
+            "Cable",
+            "Motherboard",
+            "Port",
+            "Program"
+          ],
+          "correct": 3,
+          "expl": "A program is a set of instructions written to direct a computer to perform a specific task."
+        }
+      ]
+    },
+    {
+      "name": "Networking and Internet",
+      "questions": [
+        {
+          "num": 1,
+          "text": "LAN stands for:",
+          "options": [
+            "Long Area Network",
+            "Local Area Network",
+            "Linked Area Network",
+            "Large Area Network"
+          ],
+          "correct": 1,
+          "expl": "LAN stands for Local Area Network, a network confined to a small area like an office or building."
+        },
+        {
+          "num": 2,
+          "text": "WAN stands for:",
+          "options": [
+            "Wired Area Network",
+            "Wireless Area Network",
+            "World Area Network",
+            "Wide Area Network"
+          ],
+          "correct": 3,
+          "expl": "WAN stands for Wide Area Network, spanning large geographic areas, such as connecting cities or countries."
+        },
+        {
+          "num": 3,
+          "text": "MAN stands for:",
+          "options": [
+            "Main Area Network",
+            "Modern Area Network",
+            "Multiple Area Network",
+            "Metropolitan Area Network"
+          ],
+          "correct": 3,
+          "expl": "MAN stands for Metropolitan Area Network, covering a city or large campus, larger than a LAN but smaller than a WAN."
+        },
+        {
+          "num": 4,
+          "text": "PAN stands for:",
+          "options": [
+            "Private Area Network",
+            "Primary Area Network",
+            "Personal Area Network",
+            "Public Area Network"
+          ],
+          "correct": 2,
+          "expl": "PAN stands for Personal Area Network, a very short-range network for personal devices (e.g., Bluetooth devices)."
+        },
+        {
+          "num": 5,
+          "text": "The Internet is best described as a network of:",
+          "options": [
+            "Only satellite links",
+            "Only telephone lines",
+            "A single large computer",
+            "Interconnected computer networks"
+          ],
+          "correct": 3,
+          "expl": "The Internet is a global network made up of many interconnected smaller computer networks."
+        },
+        {
+          "num": 6,
+          "text": "WWW stands for:",
+          "options": [
+            "Wide World Web",
+            "World Wide Wire",
+            "World Web Wide",
+            "World Wide Web"
+          ],
+          "correct": 3,
+          "expl": "WWW stands for World Wide Web, the system of interlinked hypertext documents accessed via the Internet."
+        },
+        {
+          "num": 7,
+          "text": "The World Wide Web was invented by:",
+          "options": [
+            "Bill Gates",
+            "Tim Berners-Lee",
+            "Vint Cerf",
+            "Steve Jobs"
+          ],
+          "correct": 1,
+          "expl": "Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN."
+        },
+        {
+          "num": 8,
+          "text": "HTTP stands for:",
+          "options": [
+            "HyperText Transfer Protocol",
+            "HyperText Technical Protocol",
+            "HyperText Transmission Protocol",
+            "High Text Transfer Protocol"
+          ],
+          "correct": 0,
+          "expl": "HTTP stands for HyperText Transfer Protocol, used to transfer web pages over the Internet."
+        },
+        {
+          "num": 9,
+          "text": "HTTPS differs from HTTP mainly because it provides:",
+          "options": [
+            "A secure encrypted connection",
+            "Free web hosting",
+            "Unlimited bandwidth",
+            "Faster download speed only"
+          ],
+          "correct": 0,
+          "expl": "HTTPS adds SSL/TLS encryption to HTTP, providing a secure, encrypted connection between browser and server."
+        },
+        {
+          "num": 10,
+          "text": "FTP stands for:",
+          "options": [
+            "File Transmission Process",
+            "File Transfer Protocol",
+            "Fast Transmission Protocol",
+            "Fast Transfer Protocol"
+          ],
+          "correct": 1,
+          "expl": "FTP stands for File Transfer Protocol, used to transfer files between computers over a network."
+        },
+        {
+          "num": 11,
+          "text": "SMTP stands for:",
+          "options": [
+            "Secure Mail Transfer Protocol",
+            "Simple Message Transfer Protocol",
+            "Simple Mail Transfer Protocol",
+            "Simple Mail Transmission Process"
+          ],
+          "correct": 2,
+          "expl": "SMTP stands for Simple Mail Transfer Protocol, used to send outgoing email messages."
+        },
+        {
+          "num": 12,
+          "text": "TCP/IP stands for:",
+          "options": [
+            "Total Control Protocol/Internet Protocol",
+            "Transmission Control Protocol/Internet Protocol",
+            "Transfer Control Protocol/Internal Protocol",
+            "Transmission Control Process/Internet Protocol"
+          ],
+          "correct": 1,
+          "expl": "TCP/IP stands for Transmission Control Protocol/Internet Protocol, the fundamental suite of protocols governing internet communication."
+        },
+        {
+          "num": 13,
+          "text": "Which IP address version is most commonly used today?",
+          "options": [
+            "IPv2",
+            "IPv4",
+            "IPv8",
+            "IPv6"
+          ],
+          "correct": 1,
+          "expl": "IPv4 remains the most widely used IP addressing version, though IPv6 adoption is growing."
+        },
+        {
+          "num": 14,
+          "text": "An IPv4 address consists of how many bits?",
+          "options": [
+            "32 bits",
+            "16 bits",
+            "128 bits",
+            "64 bits"
+          ],
+          "correct": 0,
+          "expl": "An IPv4 address is 32 bits long, typically written as four decimal numbers (e.g., 192.168.1.1)."
+        },
+        {
+          "num": 15,
+          "text": "An IPv6 address consists of how many bits?",
+          "options": [
+            "64 bits",
+            "32 bits",
+            "256 bits",
+            "128 bits"
+          ],
+          "correct": 3,
+          "expl": "An IPv6 address is 128 bits long, designed to provide a much larger address space than IPv4."
+        },
+        {
+          "num": 16,
+          "text": "Which device is used to connect different networks together and direct data traffic?",
+          "options": [
+            "Repeater",
+            "Router",
+            "NIC",
+            "Hub"
+          ],
+          "correct": 1,
+          "expl": "A router connects different networks and directs data packets between them to reach their destination."
+        },
+        {
+          "num": 17,
+          "text": "Which device broadcasts incoming data to all connected devices in a network?",
+          "options": [
+            "Switch",
+            "Router",
+            "Hub",
+            "Gateway"
+          ],
+          "correct": 2,
+          "expl": "A hub broadcasts incoming data to all connected devices on a network, regardless of the intended recipient."
+        },
+        {
+          "num": 18,
+          "text": "Which device sends data only to the specific device it is intended for?",
+          "options": [
+            "Repeater",
+            "Switch",
+            "Hub",
+            "Modem"
+          ],
+          "correct": 1,
+          "expl": "A switch intelligently forwards data only to the specific device it is addressed to, unlike a hub."
+        },
+        {
+          "num": 19,
+          "text": "Which device converts digital signals to analog for transmission over telephone lines?",
+          "options": [
+            "Switch",
+            "Hub",
+            "Modem",
+            "Router"
+          ],
+          "correct": 2,
+          "expl": "A modem converts digital computer signals into analog signals (and vice versa) for transmission over telephone lines."
+        },
+        {
+          "num": 20,
+          "text": "Which device is used to boost or regenerate a weak network signal?",
+          "options": [
+            "Repeater",
+            "Switch",
+            "Router",
+            "Firewall"
+          ],
+          "correct": 0,
+          "expl": "A repeater regenerates and boosts a weak or degraded network signal so it can travel further."
+        },
+        {
+          "num": 21,
+          "text": "In which network topology are all devices connected to a central hub or switch?",
+          "options": [
+            "Star topology",
+            "Bus topology",
+            "Mesh topology",
+            "Ring topology"
+          ],
+          "correct": 0,
+          "expl": "In a star topology, every device connects individually to a central hub or switch."
+        },
+        {
+          "num": 22,
+          "text": "In which network topology are devices connected in a circular chain?",
+          "options": [
+            "Tree topology",
+            "Star topology",
+            "Bus topology",
+            "Ring topology"
+          ],
+          "correct": 3,
+          "expl": "In a ring topology, each device connects to exactly two others, forming a circular data path."
+        },
+        {
+          "num": 23,
+          "text": "In which network topology do all devices share a single common cable (backbone)?",
+          "options": [
+            "Mesh topology",
+            "Ring topology",
+            "Star topology",
+            "Bus topology"
+          ],
+          "correct": 3,
+          "expl": "In a bus topology, all devices share a single common communication cable (the backbone)."
+        },
+        {
+          "num": 24,
+          "text": "In which network topology is every device connected to every other device?",
+          "options": [
+            "Star topology",
+            "Mesh topology",
+            "Bus topology",
+            "Ring topology"
+          ],
+          "correct": 1,
+          "expl": "In a mesh topology, every device is directly connected to every other device, providing high redundancy."
+        },
+        {
+          "num": 25,
+          "text": "The OSI model consists of how many layers?",
+          "options": [
+            "7",
+            "5",
+            "4",
+            "6"
+          ],
+          "correct": 0,
+          "expl": "The OSI (Open Systems Interconnection) model has 7 layers, from Physical up to Application."
+        },
+        {
+          "num": 26,
+          "text": "Which is the first (lowest) layer of the OSI model?",
+          "options": [
+            "Application layer",
+            "Network layer",
+            "Data link layer",
+            "Physical layer"
+          ],
+          "correct": 3,
+          "expl": "The Physical layer is the lowest (first) layer of the OSI model, dealing with raw bit transmission over hardware."
+        },
+        {
+          "num": 27,
+          "text": "Which is the topmost layer of the OSI model?",
+          "options": [
+            "Transport layer",
+            "Physical layer",
+            "Session layer",
+            "Application layer"
+          ],
+          "correct": 3,
+          "expl": "The Application layer is the topmost (7th) layer of the OSI model, closest to the end user."
+        },
+        {
+          "num": 28,
+          "text": "The TCP/IP model consists of how many layers?",
+          "options": [
+            "7",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 2,
+          "expl": "The TCP/IP model is simplified into 4 layers: Network Access, Internet, Transport, and Application."
+        },
+        {
+          "num": 29,
+          "text": "DNS stands for:",
+          "options": [
+            "Digital Name Service",
+            "Data Network System",
+            "Domain Name System",
+            "Domain Network Service"
+          ],
+          "correct": 2,
+          "expl": "DNS stands for Domain Name System, the internet's directory service for domain names."
+        },
+        {
+          "num": 30,
+          "text": "The main function of DNS is to:",
+          "options": [
+            "Block unwanted websites",
+            "Convert domain names into IP addresses",
+            "Encrypt data on the internet",
+            "Assign MAC addresses to devices"
+          ],
+          "correct": 1,
+          "expl": "DNS translates human-friendly domain names (like google.com) into numeric IP addresses that computers use."
+        },
+        {
+          "num": 31,
+          "text": "URL stands for:",
+          "options": [
+            "Uniform Resource Locator",
+            "Universal Resource Link",
+            "Uniform Reference Locator",
+            "Universal Reference Link"
+          ],
+          "correct": 0,
+          "expl": "URL stands for Uniform Resource Locator, the address used to locate a resource on the web."
+        },
+        {
+          "num": 32,
+          "text": "The default port number for HTTP is:",
+          "options": [
+            "21",
+            "25",
+            "443",
+            "80"
+          ],
+          "correct": 3,
+          "expl": "HTTP uses port 80 by default for unencrypted web traffic."
+        },
+        {
+          "num": 33,
+          "text": "The default port number for HTTPS is:",
+          "options": [
+            "21",
+            "443",
+            "110",
+            "80"
+          ],
+          "correct": 1,
+          "expl": "HTTPS uses port 443 by default for secure, encrypted web traffic."
+        },
+        {
+          "num": 34,
+          "text": "The default port number for FTP is:",
+          "options": [
+            "80",
+            "443",
+            "21",
+            "25"
+          ],
+          "correct": 2,
+          "expl": "FTP uses port 21 by default for file transfer control."
+        },
+        {
+          "num": 35,
+          "text": "The default port number for SMTP is:",
+          "options": [
+            "80",
+            "21",
+            "25",
+            "443"
+          ],
+          "correct": 2,
+          "expl": "SMTP uses port 25 by default for sending email."
+        },
+        {
+          "num": 36,
+          "text": "Which protocol is commonly used to download/receive email from a mail server?",
+          "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "POP3"
+          ],
+          "correct": 3,
+          "expl": "POP3 is a protocol commonly used to download email from a mail server to a local device."
+        },
+        {
+          "num": 37,
+          "text": "POP3 stands for:",
+          "options": [
+            "Personal Office Protocol 3",
+            "Point of Presence Protocol 3",
+            "Post Office Protocol version 3",
+            "Post Operation Protocol 3"
+          ],
+          "correct": 2,
+          "expl": "POP3 stands for Post Office Protocol version 3, used for retrieving email."
+        },
+        {
+          "num": 38,
+          "text": "IMAP stands for:",
+          "options": [
+            "Internet Mail Application Protocol",
+            "Internet Message Access Protocol",
+            "Internal Mail Access Protocol",
+            "Interactive Message Access Protocol"
+          ],
+          "correct": 1,
+          "expl": "IMAP stands for Internet Message Access Protocol, which lets users access and manage email directly on the server."
+        },
+        {
+          "num": 39,
+          "text": "Which of the following is a web browser?",
+          "options": [
+            "Google Drive",
+            "MS Word",
+            "Gmail",
+            "Google Chrome"
+          ],
+          "correct": 3,
+          "expl": "Google Chrome is a web browser used to access and view websites."
+        },
+        {
+          "num": 40,
+          "text": "Which of the following is a popular search engine?",
+          "options": [
+            "Firefox",
+            "Chrome",
+            "Outlook",
+            "Google"
+          ],
+          "correct": 3,
+          "expl": "Google is one of the most widely used search engines for finding information online."
+        },
+        {
+          "num": 41,
+          "text": "Google Chrome is developed by:",
+          "options": [
+            "Microsoft",
+            "Apple",
+            "Mozilla",
+            "Google"
+          ],
+          "correct": 3,
+          "expl": "Google Chrome is developed and maintained by Google."
+        },
+        {
+          "num": 42,
+          "text": "Small text files stored by a web browser to remember user information are called:",
+          "options": [
+            "Cookies",
+            "Cache",
+            "Plugins",
+            "Bookmarks"
+          ],
+          "correct": 0,
+          "expl": "Cookies are small text files that websites store in a browser to remember user preferences and information."
+        },
+        {
+          "num": 43,
+          "text": "Temporary storage of web page data on a browser to speed up future visits is called:",
+          "options": [
+            "Cache",
+            "History",
+            "Bookmarks",
+            "Cookies"
+          ],
+          "correct": 0,
+          "expl": "Browser cache temporarily stores web page data locally so pages load faster on repeat visits."
+        },
+        {
+          "num": 44,
+          "text": "A firewall is primarily used to protect a network from:",
+          "options": [
+            "Unauthorized access",
+            "Hardware overheating",
+            "Slow internet speed",
+            "Power failure"
+          ],
+          "correct": 0,
+          "expl": "A firewall monitors and controls incoming/outgoing network traffic to block unauthorized access."
+        },
+        {
+          "num": 45,
+          "text": "VPN stands for:",
+          "options": [
+            "Verified Private Network",
+            "Virtual Personal Network",
+            "Virtual Public Network",
+            "Virtual Private Network"
+          ],
+          "correct": 3,
+          "expl": "VPN stands for Virtual Private Network, which extends a private network across a public network."
+        },
+        {
+          "num": 46,
+          "text": "A VPN is mainly used to:",
+          "options": [
+            "Increase computer processing speed",
+            "Store files permanently",
+            "Print documents remotely",
+            "Create a secure private connection over a public network"
+          ],
+          "correct": 3,
+          "expl": "A VPN creates a secure, encrypted connection ('tunnel') over a public network like the internet."
+        },
+        {
+          "num": 47,
+          "text": "Wi-Fi is generally understood to stand for:",
+          "options": [
+            "Wide Fidelity",
+            "Wireless Fiber",
+            "Wireless Fidelity",
+            "Wireless Field"
+          ],
+          "correct": 2,
+          "expl": "Wi-Fi is commonly understood as standing for Wireless Fidelity, a wireless networking technology."
+        },
+        {
+          "num": 48,
+          "text": "The typical range of Bluetooth connectivity is approximately:",
+          "options": [
+            "1 metre",
+            "100 metres",
+            "1 kilometre",
+            "10 metres"
+          ],
+          "correct": 3,
+          "expl": "Bluetooth typically has a short range of around 10 metres, suited for connecting nearby personal devices."
+        },
+        {
+          "num": 49,
+          "text": "Wi-Fi networks commonly operate on which frequency bands?",
+          "options": [
+            "2.4 GHz and 5 GHz",
+            "1 GHz and 3 GHz",
+            "10 GHz and 20 GHz",
+            "500 MHz and 900 MHz"
+          ],
+          "correct": 0,
+          "expl": "Wi-Fi networks commonly operate on the 2.4 GHz and 5 GHz frequency bands."
+        },
+        {
+          "num": 50,
+          "text": "The IEEE standard for wireless LAN (Wi-Fi) is:",
+          "options": [
+            "802.3",
+            "802.11",
+            "802.16",
+            "802.15"
+          ],
+          "correct": 1,
+          "expl": "IEEE 802.11 is the family of standards that defines Wi-Fi wireless LAN technology."
+        },
+        {
+          "num": 51,
+          "text": "The cable commonly used for wired LAN connections is called:",
+          "options": [
+            "Fiber cable only",
+            "Ethernet cable",
+            "USB cable",
+            "Coaxial cable only"
+          ],
+          "correct": 1,
+          "expl": "Ethernet cable is the standard cable type used for wired LAN connections."
+        },
+        {
+          "num": 52,
+          "text": "The RJ45 connector is commonly used for:",
+          "options": [
+            "Ethernet/LAN connections",
+            "USB connections",
+            "HDMI connections",
+            "Telephone connections only"
+          ],
+          "correct": 0,
+          "expl": "RJ45 is the standard connector used to terminate Ethernet/LAN cables."
+        },
+        {
+          "num": 53,
+          "text": "In which topology does the failure of the central device bring down the entire network?",
+          "options": [
+            "Mesh topology",
+            "Ring topology",
+            "Bus topology",
+            "Star topology"
+          ],
+          "correct": 3,
+          "expl": "In a star topology, if the central hub/switch fails, the entire network goes down since all devices depend on it."
+        },
+        {
+          "num": 54,
+          "text": "Network bandwidth is generally measured in:",
+          "options": [
+            "Watts",
+            "Bytes",
+            "Hertz only",
+            "Bits per second (bps)"
+          ],
+          "correct": 3,
+          "expl": "Network bandwidth (data capacity) is measured in bits per second (bps)."
+        },
+        {
+          "num": 55,
+          "text": "Internet data transfer speed is commonly expressed in:",
+          "options": [
+            "Kilograms per second",
+            "Metres per second",
+            "Mbps (Megabits per second)",
+            "Volts per second"
+          ],
+          "correct": 2,
+          "expl": "Internet speeds are commonly expressed in Mbps (Megabits per second)."
+        },
+        {
+          "num": 56,
+          "text": "A search engine primarily helps users to:",
+          "options": [
+            "Create spreadsheets",
+            "Send emails",
+            "Edit documents",
+            "Find information/websites on the internet"
+          ],
+          "correct": 3,
+          "expl": "A search engine helps users find information and websites on the internet based on search queries."
+        },
+        {
+          "num": 57,
+          "text": "Search engines use automated programs to scan and index web pages, called:",
+          "options": [
+            "Firewalls",
+            "Crawlers/Bots",
+            "Cookies",
+            "Routers"
+          ],
+          "correct": 1,
+          "expl": "Search engines use automated programs called crawlers or bots to scan and index web pages."
+        },
+        {
+          "num": 58,
+          "text": "Which of the following is an example of an e-commerce website?",
+          "options": [
+            "YouTube (primarily)",
+            "Wikipedia",
+            "Amazon",
+            "Gmail"
+          ],
+          "correct": 2,
+          "expl": "Amazon is a well-known e-commerce website where goods are bought and sold online."
+        },
+        {
+          "num": 59,
+          "text": "Which protocol is commonly used for secure, encrypted data transfer on websites?",
+          "options": [
+            "FTP",
+            "SMTP",
+            "HTTPS",
+            "HTTP"
+          ],
+          "correct": 2,
+          "expl": "HTTPS uses encryption to provide secure data transfer between a browser and a website."
+        },
+        {
+          "num": 60,
+          "text": "SSL stands for:",
+          "options": [
+            "Simple Sockets Layer",
+            "Secure System Layer",
+            "Secure Sockets Layer",
+            "Secure Socket Link"
+          ],
+          "correct": 2,
+          "expl": "SSL stands for Secure Sockets Layer, a protocol for encrypting data sent over a network."
+        },
+        {
+          "num": 61,
+          "text": "Gaining unauthorized access to a computer system or network is known as:",
+          "options": [
+            "Hacking",
+            "Compiling",
+            "Booting",
+            "Formatting"
+          ],
+          "correct": 0,
+          "expl": "Hacking refers to gaining unauthorized access to a computer system or network."
+        },
+        {
+          "num": 62,
+          "text": "A fraudulent attempt to obtain sensitive information by pretending to be a trustworthy source is called:",
+          "options": [
+            "Booting",
+            "Caching",
+            "Phishing",
+            "Firewalling"
+          ],
+          "correct": 2,
+          "expl": "Phishing is a fraudulent technique where attackers pose as trustworthy entities to steal sensitive information."
+        },
+        {
+          "num": 63,
+          "text": "Which of the following is NOT a networking device?",
+          "options": [
+            "Switch",
+            "Keyboard",
+            "Hub",
+            "Router"
+          ],
+          "correct": 1,
+          "expl": "A keyboard is an input device, not a networking device like a router, switch, or hub."
+        },
+        {
+          "num": 64,
+          "text": "A gateway is used to:",
+          "options": [
+            "Scan documents",
+            "Store files on the cloud",
+            "Boost a wireless signal",
+            "Connect networks using different protocols"
+          ],
+          "correct": 3,
+          "expl": "A gateway connects networks that use different protocols, translating data between them."
+        },
+        {
+          "num": 65,
+          "text": "Which class of IP address is typically used for very large networks?",
+          "options": [
+            "Class E",
+            "Class D",
+            "Class C",
+            "Class A"
+          ],
+          "correct": 3,
+          "expl": "Class A IP addresses provide the largest number of host addresses and are used for very large networks."
+        },
+        {
+          "num": 66,
+          "text": "Which of the following is an example of a private IP address range?",
+          "options": [
+            "203.0.113.x",
+            "74.125.x.x",
+            "192.168.x.x",
+            "8.8.8.8"
+          ],
+          "correct": 2,
+          "expl": "192.168.x.x is a reserved range used for private (internal) IP addresses."
+        },
+        {
+          "num": 67,
+          "text": "The loopback IP address used to test a computer's own network configuration is:",
+          "options": [
+            "10.0.0.1",
+            "255.255.255.255",
+            "192.168.0.1",
+            "127.0.0.1"
+          ],
+          "correct": 3,
+          "expl": "127.0.0.1 is the standard loopback address used to test a device's own network stack."
+        },
+        {
+          "num": 68,
+          "text": "Which protocol automatically assigns IP addresses to devices on a network?",
+          "options": [
+            "FTP",
+            "DHCP",
+            "SMTP",
+            "DNS"
+          ],
+          "correct": 1,
+          "expl": "DHCP automatically assigns IP addresses to devices as they join a network."
+        },
+        {
+          "num": 69,
+          "text": "DHCP stands for:",
+          "options": [
+            "Dynamic Host Control Process",
+            "Direct Host Configuration Protocol",
+            "Dynamic Host Configuration Protocol",
+            "Data Host Configuration Protocol"
+          ],
+          "correct": 2,
+          "expl": "DHCP stands for Dynamic Host Configuration Protocol."
+        },
+        {
+          "num": 70,
+          "text": "A MAC address is typically how many bits long?",
+          "options": [
+            "32 bits",
+            "48 bits",
+            "16 bits",
+            "64 bits"
+          ],
+          "correct": 1,
+          "expl": "A MAC address is typically 48 bits (6 bytes) long, uniquely identifying a network interface."
+        },
+        {
+          "num": 71,
+          "text": "NIC stands for:",
+          "options": [
+            "Network Internal Connector",
+            "Network Integration Circuit",
+            "New Internet Card",
+            "Network Interface Card"
+          ],
+          "correct": 3,
+          "expl": "NIC stands for Network Interface Card, the hardware that connects a computer to a network."
+        },
+        {
+          "num": 72,
+          "text": "Which transmission medium uses pulses of light to carry data?",
+          "options": [
+            "Fiber optic cable",
+            "Coaxial cable",
+            "Twisted pair cable",
+            "Telephone wire"
+          ],
+          "correct": 0,
+          "expl": "Fiber optic cable transmits data as pulses of light through glass or plastic fibers."
+        },
+        {
+          "num": 73,
+          "text": "Which of the following provides the fastest data transmission over long distances?",
+          "options": [
+            "Coaxial cable",
+            "Fiber optic cable",
+            "Telephone wire",
+            "Twisted pair cable"
+          ],
+          "correct": 1,
+          "expl": "Fiber optic cable offers the fastest and most reliable data transmission over long distances among common media."
+        },
+        {
+          "num": 74,
+          "text": "A network model where a dedicated server provides resources to client computers is called:",
+          "options": [
+            "Mesh network only",
+            "Peer-to-peer network",
+            "Star network only",
+            "Client-server network"
+          ],
+          "correct": 3,
+          "expl": "In a client-server network, dedicated server(s) provide resources and services to multiple client computers."
+        },
+        {
+          "num": 75,
+          "text": "Cloud computing refers to:",
+          "options": [
+            "A type of network cable",
+            "Storing and accessing data/applications over the internet",
+            "A type of computer virus",
+            "Storing data only on a local hard disk"
+          ],
+          "correct": 1,
+          "expl": "Cloud computing means storing and accessing data and applications over the internet instead of a local hard drive."
+        },
+        {
+          "num": 76,
+          "text": "Which of the following is a popular cloud storage service?",
+          "options": [
+            "Calculator",
+            "Notepad",
+            "Google Drive",
+            "MS Paint"
+          ],
+          "correct": 2,
+          "expl": "Google Drive is a widely used cloud storage service for storing and sharing files online."
+        },
+        {
+          "num": 77,
+          "text": "Gmail is an email service provided by:",
+          "options": [
+            "Apple",
+            "Microsoft",
+            "Amazon",
+            "Google"
+          ],
+          "correct": 3,
+          "expl": "Gmail is Google's free email service."
+        },
+        {
+          "num": 78,
+          "text": "In an email address, the '@' symbol separates the:",
+          "options": [
+            "Date and time",
+            "Sender and receiver",
+            "Subject and body",
+            "Username and domain name"
+          ],
+          "correct": 3,
+          "expl": "The '@' symbol in an email address separates the username from the domain name."
+        },
+        {
+          "num": 79,
+          "text": "Which of the following is a valid email address format?",
+          "options": [
+            "example.gmail.com",
+            "example,gmail.com",
+            "example#gmail.com",
+            "example@gmail.com"
+          ],
+          "correct": 3,
+          "expl": "A valid email address follows the format username@domain.com, such as example@gmail.com."
+        },
+        {
+          "num": 80,
+          "text": "Which of the following is an example of a social media platform?",
+          "options": [
+            "Facebook",
+            "Notepad",
+            "Paint",
+            "Excel"
+          ],
+          "correct": 0,
+          "expl": "Facebook is a well-known social media platform for connecting and sharing with others online."
+        },
+        {
+          "num": 81,
+          "text": "VoIP is technology used to make calls over the internet. VoIP stands for:",
+          "options": [
+            "Voice on Internal Protocol",
+            "Voice over Internal Process",
+            "Video over Internet Protocol",
+            "Voice over Internet Protocol"
+          ],
+          "correct": 3,
+          "expl": "VoIP stands for Voice over Internet Protocol, technology that enables voice calls over the internet."
+        },
+        {
+          "num": 82,
+          "text": "Terms like 4G and 5G refer to the:",
+          "options": [
+            "Speed of a computer processor",
+            "Type of computer virus",
+            "Size of computer memory",
+            "Generation of mobile network technology"
+          ],
+          "correct": 3,
+          "expl": "4G and 5G refer to successive generations of mobile network technology, each offering improved speed and capacity."
+        },
+        {
+          "num": 83,
+          "text": "A router primarily works at which layer of the OSI model?",
+          "options": [
+            "Data link layer",
+            "Network layer",
+            "Physical layer",
+            "Session layer"
+          ],
+          "correct": 1,
+          "expl": "Routers operate primarily at the Network layer (Layer 3) of the OSI model, using IP addresses to route data."
+        },
+        {
+          "num": 84,
+          "text": "A switch primarily works at which layer of the OSI model?",
+          "options": [
+            "Network layer",
+            "Application layer",
+            "Data link layer",
+            "Physical layer"
+          ],
+          "correct": 2,
+          "expl": "Switches operate primarily at the Data Link layer (Layer 2), using MAC addresses to forward data."
+        },
+        {
+          "num": 85,
+          "text": "A hub primarily works at which layer of the OSI model?",
+          "options": [
+            "Physical layer",
+            "Transport layer",
+            "Network layer",
+            "Data link layer"
+          ],
+          "correct": 0,
+          "expl": "Hubs operate at the Physical layer (Layer 1), simply broadcasting electrical signals without addressing."
+        },
+        {
+          "num": 86,
+          "text": "Which of the following is an example of a web browser other than Chrome?",
+          "options": [
+            "Gmail",
+            "Mozilla Firefox",
+            "Google Drive",
+            "Google Docs"
+          ],
+          "correct": 1,
+          "expl": "Mozilla Firefox is a popular web browser, an alternative to Google Chrome."
+        },
+        {
+          "num": 87,
+          "text": "The domain extension '.com' generally represents:",
+          "options": [
+            "Commercial organizations",
+            "Government bodies",
+            "Educational institutions",
+            "Non-profit organizations"
+          ],
+          "correct": 0,
+          "expl": "The '.com' domain extension generally denotes commercial organizations."
+        },
+        {
+          "num": 88,
+          "text": "The domain extension '.org' generally represents:",
+          "options": [
+            "Commercial companies",
+            "Military",
+            "Government bodies",
+            "Organizations (often non-profit)"
+          ],
+          "correct": 3,
+          "expl": "The '.org' domain extension is generally used by organizations, often non-profits."
+        },
+        {
+          "num": 89,
+          "text": "The domain extension '.gov' generally represents:",
+          "options": [
+            "Commercial companies",
+            "Non-profit organizations",
+            "Educational institutions",
+            "Government bodies"
+          ],
+          "correct": 3,
+          "expl": "The '.gov' domain extension is reserved for government bodies."
+        },
+        {
+          "num": 90,
+          "text": "The domain extension '.edu' generally represents:",
+          "options": [
+            "Educational institutions",
+            "Military organizations",
+            "Government bodies",
+            "Commercial companies"
+          ],
+          "correct": 0,
+          "expl": "The '.edu' domain extension is generally used by educational institutions."
+        },
+        {
+          "num": 91,
+          "text": "The domain extension '.in' generally represents websites registered in:",
+          "options": [
+            "Iran",
+            "Ireland",
+            "India",
+            "Indonesia"
+          ],
+          "correct": 2,
+          "expl": "The '.in' domain extension generally indicates a website registered in India."
+        },
+        {
+          "num": 92,
+          "text": "Which protocol is a secure alternative to FTP for transferring files?",
+          "options": [
+            "POP3",
+            "SMTP",
+            "HTTP",
+            "SFTP"
+          ],
+          "correct": 3,
+          "expl": "SFTP (SSH File Transfer Protocol) is a secure alternative to standard FTP for transferring files."
+        },
+        {
+          "num": 93,
+          "text": "Unsolicited and unwanted email, usually sent in bulk, is called:",
+          "options": [
+            "Phishing",
+            "Cookies",
+            "Cache",
+            "Spam"
+          ],
+          "correct": 3,
+          "expl": "Spam refers to unsolicited, often bulk, email messages sent without the recipient's consent."
+        },
+        {
+          "num": 94,
+          "text": "A firewall can exist as:",
+          "options": [
+            "Hardware, software, or both",
+            "Only software",
+            "Only hardware",
+            "Only a browser extension"
+          ],
+          "correct": 0,
+          "expl": "A firewall can be implemented as hardware, software, or a combination of both."
+        },
+        {
+          "num": 95,
+          "text": "Antivirus software is mainly used to protect a computer from:",
+          "options": [
+            "Viruses and malware",
+            "Slow typing speed",
+            "Power surges",
+            "Screen flickering"
+          ],
+          "correct": 0,
+          "expl": "Antivirus software is designed to detect, prevent, and remove viruses and other malware."
+        },
+        {
+          "num": 96,
+          "text": "Which of the following is an example of antivirus software?",
+          "options": [
+            "Google Chrome",
+            "Adobe Acrobat",
+            "MS Excel",
+            "Norton"
+          ],
+          "correct": 3,
+          "expl": "Norton is a well-known brand of antivirus software."
+        },
+        {
+          "num": 97,
+          "text": "Encryption is the process of converting data into:",
+          "options": [
+            "A shorter file name",
+            "A printable document",
+            "An unreadable/coded form for security",
+            "A compressed image"
+          ],
+          "correct": 2,
+          "expl": "Encryption converts readable data into a coded, unreadable form to protect it from unauthorized access."
+        },
+        {
+          "num": 98,
+          "text": "Decryption is the process of:",
+          "options": [
+            "Formatting a hard disk",
+            "Compressing large files",
+            "Deleting unwanted files",
+            "Converting encrypted data back into readable form"
+          ],
+          "correct": 3,
+          "expl": "Decryption is the reverse process of converting encrypted data back into its original, readable form."
+        },
+        {
+          "num": 99,
+          "text": "Which type of network typically covers a single building or campus?",
+          "options": [
+            "Internet",
+            "WAN",
+            "MAN",
+            "LAN"
+          ],
+          "correct": 3,
+          "expl": "A LAN (Local Area Network) typically covers a single building or campus."
+        },
+        {
+          "num": 100,
+          "text": "An Internet Service Provider (ISP) is a company that:",
+          "options": [
+            "Sells antivirus software only",
+            "Provides users with access to the internet",
+            "Manufactures computer hardware",
+            "Designs websites only"
+          ],
+          "correct": 1,
+          "expl": "An ISP (Internet Service Provider) is a company that provides individuals and organizations access to the internet."
+        }
+      ]
+    },
+    {
+      "name": "MS Word",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The default file extension used by Microsoft Word 2016 is:",
+          "options": [
+            ".pdf",
+            ".pptx",
+            ".docx",
+            ".xlsx"
+          ],
+          "correct": 2,
+          "expl": "Since Word 2007, the default file format is .docx."
+        },
+        {
+          "num": 2,
+          "text": "Microsoft Word is developed by:",
+          "options": [
+            "Microsoft",
+            "Adobe",
+            "Apple",
+            "Google"
+          ],
+          "correct": 0,
+          "expl": "Microsoft Word is developed and maintained by Microsoft as part of MS Office."
+        },
+        {
+          "num": 3,
+          "text": "In recent versions of MS Word, the default font is:",
+          "options": [
+            "Comic Sans MS",
+            "Times New Roman",
+            "Calibri",
+            "Arial"
+          ],
+          "correct": 2,
+          "expl": "Recent versions of MS Word use Calibri as the default font."
+        },
+        {
+          "num": 4,
+          "text": "The Home tab in MS Word mainly contains options for:",
+          "options": [
+            "Page layout margins only",
+            "Inserting pictures and tables",
+            "Reviewing spelling only",
+            "Font and paragraph formatting"
+          ],
+          "correct": 3,
+          "expl": "The Home tab in Word mainly holds font and paragraph formatting options like bold, alignment, and styles."
+        },
+        {
+          "num": 5,
+          "text": "Tables, pictures, and headers/footers are inserted from which tab in MS Word?",
+          "options": [
+            "Insert tab",
+            "Review tab",
+            "View tab",
+            "Home tab"
+          ],
+          "correct": 0,
+          "expl": "Tables, pictures, headers, and footers are all inserted using commands on the Insert tab."
+        },
+        {
+          "num": 6,
+          "text": "What creates repeating information like a logo or date on every page of a Word document?",
+          "options": [
+            "Index",
+            "Comments",
+            "Header/Footer",
+            "Footnote"
+          ],
+          "correct": 2,
+          "expl": "A Header/Footer displays repeating content, like a logo or date, automatically on every page."
+        },
+        {
+          "num": 7,
+          "text": "Mail Merge in MS Word is mainly used to:",
+          "options": [
+            "Insert images automatically",
+            "Check spelling errors",
+            "Merge two Word files into one",
+            "Send personalised letters to multiple recipients"
+          ],
+          "correct": 3,
+          "expl": "Mail Merge combines a template letter with a data source to create personalised copies for multiple recipients."
+        },
+        {
+          "num": 8,
+          "text": "The shortcut key Ctrl+B in MS Word applies:",
+          "options": [
+            "Underline formatting",
+            "Bold formatting",
+            "Italic formatting",
+            "Bullet formatting"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+B applies or removes bold formatting to selected text."
+        },
+        {
+          "num": 9,
+          "text": "The shortcut key Ctrl+I in MS Word applies:",
+          "options": [
+            "Italic formatting",
+            "Underline formatting",
+            "Bold formatting",
+            "Border formatting"
+          ],
+          "correct": 0,
+          "expl": "Ctrl+I applies or removes italic formatting to selected text."
+        },
+        {
+          "num": 10,
+          "text": "The shortcut key Ctrl+U in MS Word applies:",
+          "options": [
+            "Uppercase formatting",
+            "Bold formatting",
+            "Underline formatting",
+            "Italic formatting"
+          ],
+          "correct": 2,
+          "expl": "Ctrl+U applies or removes underline formatting to selected text."
+        },
+        {
+          "num": 11,
+          "text": "The shortcut key Ctrl+N in MS Word is used to:",
+          "options": [
+            "Close the document",
+            "Save the document",
+            "Open an existing document",
+            "Open a new blank document"
+          ],
+          "correct": 3,
+          "expl": "Ctrl+N opens a new blank document."
+        },
+        {
+          "num": 12,
+          "text": "The shortcut key Ctrl+O in MS Word is used to:",
+          "options": [
+            "Create a new document",
+            "Save the document",
+            "Open an existing document",
+            "Print the document"
+          ],
+          "correct": 2,
+          "expl": "Ctrl+O opens the dialog to open an existing document."
+        },
+        {
+          "num": 13,
+          "text": "The shortcut key Ctrl+W in MS Word is used to:",
+          "options": [
+            "Insert a Word Art",
+            "Open a new document",
+            "Save the document as a Web page",
+            "Close the current document"
+          ],
+          "correct": 3,
+          "expl": "Ctrl+W closes the currently open document."
+        },
+        {
+          "num": 14,
+          "text": "The F7 key in MS Word is generally used to:",
+          "options": [
+            "Insert a page break",
+            "Check spelling and grammar",
+            "Save the document",
+            "Print the document"
+          ],
+          "correct": 1,
+          "expl": "F7 launches the Spelling and Grammar check tool in Word."
+        },
+        {
+          "num": 15,
+          "text": "Which view in MS Word shows the document exactly as it will appear when printed?",
+          "options": [
+            "Outline view",
+            "Print Layout view",
+            "Draft view",
+            "Web Layout view"
+          ],
+          "correct": 1,
+          "expl": "Print Layout view shows the document exactly as it will look when printed, including margins and page breaks."
+        },
+        {
+          "num": 16,
+          "text": "The Track Changes feature in MS Word is used to:",
+          "options": [
+            "Record edits made by reviewers",
+            "Compress the document",
+            "Automatically translate documents",
+            "Check for viruses"
+          ],
+          "correct": 0,
+          "expl": "Track Changes records every edit (insertions, deletions, formatting) made by reviewers for later approval or rejection."
+        },
+        {
+          "num": 17,
+          "text": "Which feature in MS Word automatically highlights spelling and grammar errors while typing?",
+          "options": [
+            "Thesaurus",
+            "Mail Merge",
+            "AutoCorrect only",
+            "Spelling and Grammar check"
+          ],
+          "correct": 3,
+          "expl": "The built-in Spelling and Grammar check underlines errors automatically as the user types."
+        },
+        {
+          "num": 18,
+          "text": "The Word Count feature in MS Word is generally found under the:",
+          "options": [
+            "View tab",
+            "Insert tab",
+            "Design tab",
+            "Review tab"
+          ],
+          "correct": 3,
+          "expl": "Word Count is generally accessed through the Review tab (also shown in the status bar)."
+        },
+        {
+          "num": 19,
+          "text": "Which feature is used to combine multiple selected cells into one cell in a Word table?",
+          "options": [
+            "AutoFit",
+            "Distribute Columns",
+            "Merge Cells",
+            "Split Cells"
+          ],
+          "correct": 2,
+          "expl": "Merge Cells combines multiple selected table cells into a single larger cell."
+        },
+        {
+          "num": 20,
+          "text": "The Thesaurus tool in MS Word is used to:",
+          "options": [
+            "Find synonyms of a selected word",
+            "Correct spelling mistakes",
+            "Count words in a document",
+            "Insert citations"
+          ],
+          "correct": 0,
+          "expl": "The Thesaurus tool suggests synonyms and related words for a selected term."
+        },
+        {
+          "num": 21,
+          "text": "Which are the two common page orientation options in MS Word?",
+          "options": [
+            "Portrait and Landscape",
+            "Wide and Narrow",
+            "Top and Bottom",
+            "Vertical and Diagonal"
+          ],
+          "correct": 0,
+          "expl": "Portrait (tall) and Landscape (wide) are the two standard page orientation options."
+        },
+        {
+          "num": 22,
+          "text": "Page numbers can be inserted in MS Word from the:",
+          "options": [
+            "File tab only",
+            "Home tab",
+            "Review tab",
+            "Insert tab"
+          ],
+          "correct": 3,
+          "expl": "Page numbers are inserted via the Insert tab, using the Page Number command in the Header & Footer group."
+        },
+        {
+          "num": 23,
+          "text": "Which feature is used to create a bulleted list in MS Word?",
+          "options": [
+            "Indents",
+            "Bullets",
+            "Tabs",
+            "Numbering only"
+          ],
+          "correct": 1,
+          "expl": "Bullets format a list with symbols rather than numbers, applied from the Home tab."
+        },
+        {
+          "num": 24,
+          "text": "The Watermark feature in MS Word is generally found under the:",
+          "options": [
+            "Mailings tab",
+            "Home tab",
+            "Review tab",
+            "Design tab"
+          ],
+          "correct": 3,
+          "expl": "Watermark is found under the Design tab and adds faint background text or images to pages."
+        },
+        {
+          "num": 25,
+          "text": "Which shortcut key selects the entire content of a Word document?",
+          "options": [
+            "Ctrl+S",
+            "Ctrl+A",
+            "Ctrl+D",
+            "Ctrl+E"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+A selects all the content within the current document."
+        },
+        {
+          "num": 26,
+          "text": "Which feature is used to change selected text to UPPERCASE, lowercase, or Title Case?",
+          "options": [
+            "Styles",
+            "Change Case",
+            "AutoFormat",
+            "Text Effects"
+          ],
+          "correct": 1,
+          "expl": "Change Case lets users quickly switch selected text between UPPERCASE, lowercase, and Title Case."
+        },
+        {
+          "num": 27,
+          "text": "A Table of Contents in MS Word is typically generated using:",
+          "options": [
+            "The Insert Picture command",
+            "The Mailings tab",
+            "Heading styles and the References tab",
+            "Manual typing only"
+          ],
+          "correct": 2,
+          "expl": "A Table of Contents is auto-generated from headings (formatted with Heading styles) using the References tab."
+        },
+        {
+          "num": 28,
+          "text": "Which feature in MS Word allows reviewers to add remarks without editing the original text?",
+          "options": [
+            "Comments",
+            "Footnotes",
+            "Track Changes only",
+            "Watermark"
+          ],
+          "correct": 0,
+          "expl": "Comments allow reviewers to add notes or remarks alongside text without altering the original content."
+        },
+        {
+          "num": 29,
+          "text": "The shortcut key Ctrl+H in MS Word is used to:",
+          "options": [
+            "Find and Replace text",
+            "Insert a header",
+            "Highlight text",
+            "Insert a hyperlink"
+          ],
+          "correct": 0,
+          "expl": "Ctrl+H opens the Find and Replace dialog box."
+        },
+        {
+          "num": 30,
+          "text": "The shortcut key Ctrl+F in MS Word opens the:",
+          "options": [
+            "Font dialog box",
+            "Find dialog box",
+            "File menu",
+            "Format Painter"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+F opens the Find dialog box to search for text within the document."
+        },
+        {
+          "num": 31,
+          "text": "The Styles gallery in MS Word is generally found on the:",
+          "options": [
+            "Home tab",
+            "Review tab",
+            "Insert tab",
+            "Page Layout tab"
+          ],
+          "correct": 0,
+          "expl": "The Styles gallery, offering quick formatting presets like Heading 1 and Normal, is located on the Home tab."
+        },
+        {
+          "num": 32,
+          "text": "Mathematical equations can be inserted in MS Word from the:",
+          "options": [
+            "Design tab",
+            "Review tab",
+            "Mailings tab",
+            "Insert tab"
+          ],
+          "correct": 3,
+          "expl": "Mathematical equations are inserted through the Equation command on the Insert tab."
+        },
+        {
+          "num": 33,
+          "text": "The Ribbon interface in MS Word is organised into:",
+          "options": [
+            "Toolbars only",
+            "Menus and submenus only",
+            "Sidebars only",
+            "Tabs, groups, and commands"
+          ],
+          "correct": 3,
+          "expl": "The Word Ribbon is organised into tabs (e.g., Home, Insert), each containing groups of related commands."
+        },
+        {
+          "num": 34,
+          "text": "Before .docx, the older default Word file format (used until Word 2003) was:",
+          "options": [
+            ".doc",
+            ".rtf",
+            ".wps",
+            ".txt"
+          ],
+          "correct": 0,
+          "expl": "Before .docx, Word used the .doc format as its default (up through Word 2003)."
+        },
+        {
+          "num": 35,
+          "text": "The Clipboard in MS Office applications temporarily stores:",
+          "options": [
+            "Printed pages",
+            "Copied or cut content",
+            "Saved documents only",
+            "Deleted files permanently"
+          ],
+          "correct": 1,
+          "expl": "The Clipboard temporarily holds content that has been copied or cut, ready to be pasted elsewhere."
+        }
+      ]
+    },
+    {
+      "name": "MS Excel",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The default file extension used by Microsoft Excel 2016 is:",
+          "options": [
+            ".csv",
+            ".pptx",
+            ".xlsx",
+            ".docx"
+          ],
+          "correct": 2,
+          "expl": "Since Excel 2007, the default workbook file format is .xlsx."
+        },
+        {
+          "num": 2,
+          "text": "Microsoft Excel is best described as a type of:",
+          "options": [
+            "Presentation software",
+            "Spreadsheet software",
+            "Database server",
+            "Word processing software"
+          ],
+          "correct": 1,
+          "expl": "Microsoft Excel is a spreadsheet application used for organizing, calculating, and analyzing data in a grid of cells."
+        },
+        {
+          "num": 3,
+          "text": "The intersection of a row and a column in Excel is called a:",
+          "options": [
+            "Sheet",
+            "Field",
+            "Cell",
+            "Range"
+          ],
+          "correct": 2,
+          "expl": "A cell is formed where a row and column intersect, and it holds a single piece of data or formula."
+        },
+        {
+          "num": 4,
+          "text": "The Formula Bar in Excel displays the:",
+          "options": [
+            "Name of the workbook",
+            "Content of the active cell",
+            "Current date and time",
+            "Total number of rows"
+          ],
+          "correct": 1,
+          "expl": "The Formula Bar shows the actual content (value or formula) of the currently selected (active) cell."
+        },
+        {
+          "num": 5,
+          "text": "Every formula in Excel must begin with the symbol:",
+          "options": [
+            "#",
+            "+",
+            "@",
+            "="
+          ],
+          "correct": 3,
+          "expl": "Every Excel formula must start with an equals sign (=) so Excel recognises it as a calculation."
+        },
+        {
+          "num": 6,
+          "text": "The SUM function in Excel is used to:",
+          "options": [
+            "Find the average of numbers",
+            "Add a range of numbers",
+            "Count non-empty cells",
+            "Find the largest number"
+          ],
+          "correct": 1,
+          "expl": "The SUM function adds together a specified range of numeric values."
+        },
+        {
+          "num": 7,
+          "text": "The COUNTA function in MS Excel counts:",
+          "options": [
+            "Non-empty cells",
+            "Only blank cells",
+            "Only numeric cells",
+            "Only text cells"
+          ],
+          "correct": 0,
+          "expl": "COUNTA counts all non-empty cells in a range, regardless of whether they contain text or numbers."
+        },
+        {
+          "num": 8,
+          "text": "The COUNT function in MS Excel counts:",
+          "options": [
+            "Only text cells",
+            "Only blank cells",
+            "All non-empty cells",
+            "Only cells containing numbers"
+          ],
+          "correct": 3,
+          "expl": "COUNT counts only the cells in a range that contain numeric values."
+        },
+        {
+          "num": 9,
+          "text": "The COUNTBLANK function in MS Excel counts:",
+          "options": [
+            "Non-empty cells",
+            "Text cells only",
+            "Blank (empty) cells",
+            "Numeric cells only"
+          ],
+          "correct": 2,
+          "expl": "COUNTBLANK counts the number of empty (blank) cells in a specified range."
+        },
+        {
+          "num": 10,
+          "text": "The AVERAGE function in Excel calculates the:",
+          "options": [
+            "Count of cells",
+            "Largest value",
+            "Sum of a range of numbers",
+            "Mean of a range of numbers"
+          ],
+          "correct": 3,
+          "expl": "AVERAGE calculates the arithmetic mean of a range of numeric values."
+        },
+        {
+          "num": 11,
+          "text": "The MAX function in Excel returns the:",
+          "options": [
+            "Largest value in a range",
+            "Average of a range",
+            "Smallest value in a range",
+            "Count of a range"
+          ],
+          "correct": 0,
+          "expl": "MAX returns the largest numeric value within a specified range."
+        },
+        {
+          "num": 12,
+          "text": "The MIN function in Excel returns the:",
+          "options": [
+            "Sum of a range",
+            "Smallest value in a range",
+            "Largest value in a range",
+            "Average of a range"
+          ],
+          "correct": 1,
+          "expl": "MIN returns the smallest numeric value within a specified range."
+        },
+        {
+          "num": 13,
+          "text": "The IF function in Excel is an example of a:",
+          "options": [
+            "Date function",
+            "Lookup function",
+            "Logical function",
+            "Text function"
+          ],
+          "correct": 2,
+          "expl": "IF is a logical function that returns one value if a condition is true and another if it is false."
+        },
+        {
+          "num": 14,
+          "text": "The VLOOKUP function searches for a value in the:",
+          "options": [
+            "First column of a range, vertically",
+            "First row of a range, horizontally",
+            "Last column of a range",
+            "Entire worksheet randomly"
+          ],
+          "correct": 0,
+          "expl": "VLOOKUP looks up a value in the first (leftmost) column of a range and returns a value from a specified column in the same row (vertical lookup)."
+        },
+        {
+          "num": 15,
+          "text": "The HLOOKUP function searches for a value in the:",
+          "options": [
+            "Last row of a range",
+            "First column of a range, vertically",
+            "Entire workbook",
+            "First row of a range, horizontally"
+          ],
+          "correct": 3,
+          "expl": "HLOOKUP looks up a value in the first (top) row of a range and returns a value from a specified row in the same column (horizontal lookup)."
+        },
+        {
+          "num": 16,
+          "text": "In Excel formulas, the symbol used to create an absolute cell reference is:",
+          "options": [
+            "%",
+            "$",
+            "#",
+            "&"
+          ],
+          "correct": 1,
+          "expl": "The dollar sign ($) is used before the column and/or row reference to make it an absolute (fixed) reference."
+        },
+        {
+          "num": 17,
+          "text": "The reference $A$1 in Excel is an example of a/an:",
+          "options": [
+            "Relative reference",
+            "Mixed reference",
+            "Named range",
+            "Absolute reference"
+          ],
+          "correct": 3,
+          "expl": "$A$1 fixes both the column and row, so the reference does not change when the formula is copied - this is an absolute reference."
+        },
+        {
+          "num": 18,
+          "text": "The reference A1 (without dollar signs) in Excel is an example of a/an:",
+          "options": [
+            "Circular reference",
+            "Relative reference",
+            "Mixed reference only",
+            "Absolute reference"
+          ],
+          "correct": 1,
+          "expl": "A1 (no dollar signs) is a relative reference, which automatically adjusts when the formula is copied to other cells."
+        },
+        {
+          "num": 19,
+          "text": "Which key is used to toggle between relative and absolute cell references while editing a formula?",
+          "options": [
+            "F2",
+            "F5",
+            "F4",
+            "F7"
+          ],
+          "correct": 2,
+          "expl": "Pressing F4 while editing a formula cycles through relative, absolute, and mixed reference styles for the selected cell reference."
+        },
+        {
+          "num": 20,
+          "text": "Charts in Excel are inserted from which tab?",
+          "options": [
+            "Home tab",
+            "Data tab",
+            "Review tab",
+            "Insert tab"
+          ],
+          "correct": 3,
+          "expl": "Charts are inserted using commands found on the Insert tab."
+        },
+        {
+          "num": 21,
+          "text": "A pie chart in Excel is best used to show:",
+          "options": [
+            "Geographic data",
+            "Change in values over time",
+            "Comparison between two variables",
+            "The proportion of parts to a whole"
+          ],
+          "correct": 3,
+          "expl": "A pie chart visually represents how individual parts contribute to a whole (as proportions/percentages)."
+        },
+        {
+          "num": 22,
+          "text": "Which shortcut key is used to insert a new worksheet in Excel?",
+          "options": [
+            "Shift+F11",
+            "Alt+F11",
+            "Ctrl+F11",
+            "Ctrl+N"
+          ],
+          "correct": 0,
+          "expl": "Shift+F11 inserts a new worksheet in the current workbook."
+        },
+        {
+          "num": 23,
+          "text": "Pressing Ctrl+Home in Excel moves the cursor to:",
+          "options": [
+            "The last used cell",
+            "Cell A1",
+            "The first empty cell",
+            "The active worksheet's name box"
+          ],
+          "correct": 1,
+          "expl": "Ctrl+Home moves the cursor directly to cell A1 of the active worksheet."
+        },
+        {
+          "num": 24,
+          "text": "Which function is used to join text from multiple cells into one in Excel?",
+          "options": [
+            "SUM",
+            "VLOOKUP",
+            "IF",
+            "CONCATENATE"
+          ],
+          "correct": 3,
+          "expl": "CONCATENATE (or the newer CONCAT/TEXTJOIN) joins text from multiple cells into a single cell."
+        },
+        {
+          "num": 25,
+          "text": "Sorting data in Excel arranges it in:",
+          "options": [
+            "Ascending or descending order",
+            "Alphabetical order only",
+            "Numeric order only",
+            "Random order"
+          ],
+          "correct": 0,
+          "expl": "Sorting rearranges data rows in ascending or descending order based on selected column(s)."
+        },
+        {
+          "num": 26,
+          "text": "The Filter feature in Excel is used to:",
+          "options": [
+            "Merge multiple cells",
+            "Display only data meeting specific criteria",
+            "Sort data alphabetically only",
+            "Permanently delete unwanted rows"
+          ],
+          "correct": 1,
+          "expl": "The Filter feature temporarily hides rows that do not meet specified criteria, showing only matching data."
+        },
+        {
+          "num": 27,
+          "text": "Conditional Formatting in Excel is used to:",
+          "options": [
+            "Insert charts automatically",
+            "Protect a worksheet with a password",
+            "Merge cells together",
+            "Format cells automatically based on specified conditions"
+          ],
+          "correct": 3,
+          "expl": "Conditional Formatting automatically applies formatting (like colour) to cells that meet specified conditions."
+        },
+        {
+          "num": 28,
+          "text": "The Freeze Panes feature in Excel is used to:",
+          "options": [
+            "Keep specific rows/columns visible while scrolling",
+            "Merge multiple worksheets",
+            "Lock the entire workbook with a password",
+            "Convert formulas into values"
+          ],
+          "correct": 0,
+          "expl": "Freeze Panes keeps selected rows and/or columns visible on screen while the rest of the worksheet scrolls."
+        },
+        {
+          "num": 29,
+          "text": "The file extension used for a macro-enabled Excel workbook is:",
+          "options": [
+            ".xltx",
+            ".xlsm",
+            ".xlk",
+            ".xlsx"
+          ],
+          "correct": 1,
+          "expl": "Macro-enabled Excel workbooks are saved with the .xlsm extension, which supports embedded VBA macros."
+        },
+        {
+          "num": 30,
+          "text": "Which shortcut key selects an entire row in Excel?",
+          "options": [
+            "Ctrl+A",
+            "Shift+A",
+            "Shift+Space",
+            "Ctrl+Space"
+          ],
+          "correct": 2,
+          "expl": "Shift+Space selects the entire row containing the active cell."
+        },
+        {
+          "num": 31,
+          "text": "Which shortcut key selects an entire column in Excel?",
+          "options": [
+            "Shift+Space",
+            "Alt+Space",
+            "Ctrl+Space",
+            "Ctrl+A"
+          ],
+          "correct": 2,
+          "expl": "Ctrl+Space selects the entire column containing the active cell."
+        },
+        {
+          "num": 32,
+          "text": "The Name Box in Excel displays the:",
+          "options": [
+            "Reference or name of the currently selected cell",
+            "Name of the currently open workbook",
+            "Total sum of selected cells",
+            "Formula used in a cell"
+          ],
+          "correct": 0,
+          "expl": "The Name Box, located to the left of the Formula Bar, shows the reference or defined name of the selected cell."
+        },
+        {
+          "num": 33,
+          "text": "Which Excel function is used to count the number of characters in a cell?",
+          "options": [
+            "COUNTA",
+            "SUM",
+            "COUNT",
+            "LEN"
+          ],
+          "correct": 3,
+          "expl": "The LEN function returns the number of characters in a text string within a cell."
+        },
+        {
+          "num": 34,
+          "text": "Which Excel function is used to round a number to a specified number of digits?",
+          "options": [
+            "INT only",
+            "ROUND",
+            "TRUNC only",
+            "ABS"
+          ],
+          "correct": 1,
+          "expl": "The ROUND function rounds a number to a specified number of decimal places."
+        },
+        {
+          "num": 35,
+          "text": "A new Excel workbook (modern default) generally opens with how many worksheets?",
+          "options": [
+            "5",
+            "3",
+            "1",
+            "10"
+          ],
+          "correct": 2,
+          "expl": "By default, a new Excel workbook now opens with a single worksheet (Sheet1)."
+        }
+      ]
+    },
+    {
+      "name": "MS PowerPoint",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The default file extension used by Microsoft PowerPoint 2016 is:",
+          "options": [
+            ".pptx",
+            ".xlsx",
+            ".docx",
+            ".ppa"
+          ],
+          "correct": 0,
+          "expl": "Since PowerPoint 2007, the default file format for presentations is .pptx."
+        },
+        {
+          "num": 2,
+          "text": "Microsoft PowerPoint is mainly used to create:",
+          "options": [
+            "Word documents",
+            "Databases",
+            "Presentations/slide shows",
+            "Spreadsheets"
+          ],
+          "correct": 2,
+          "expl": "Microsoft PowerPoint is used to create slide-based presentations for sharing information visually."
+        },
+        {
+          "num": 3,
+          "text": "Special effects used to introduce slides in a presentation are called:",
+          "options": [
+            "Custom animations",
+            "Animations",
+            "Motion paths",
+            "Transitions"
+          ],
+          "correct": 3,
+          "expl": "Transitions are the special effects that play when moving from one slide to the next."
+        },
+        {
+          "num": 4,
+          "text": "Effects applied to individual text or objects on a slide are called:",
+          "options": [
+            "Themes",
+            "Animations",
+            "Layouts",
+            "Transitions"
+          ],
+          "correct": 1,
+          "expl": "Animations are effects applied to individual text or objects within a single slide."
+        },
+        {
+          "num": 5,
+          "text": "Which view in PowerPoint displays all slides as small thumbnails for easy rearranging?",
+          "options": [
+            "Slide Show view",
+            "Slide Sorter view",
+            "Notes Page view",
+            "Normal view"
+          ],
+          "correct": 1,
+          "expl": "Slide Sorter view displays all slides as small thumbnails, making it easy to rearrange or delete slides."
+        },
+        {
+          "num": 6,
+          "text": "Which view in PowerPoint is generally used to edit the content of an individual slide?",
+          "options": [
+            "Reading view",
+            "Normal view",
+            "Slide Sorter view",
+            "Slide Show view"
+          ],
+          "correct": 1,
+          "expl": "Normal view is the main editing view used to work on the content of one slide at a time."
+        },
+        {
+          "num": 7,
+          "text": "Which view displays the presentation as a full-screen show for the audience?",
+          "options": [
+            "Normal view",
+            "Slide Show view",
+            "Outline view",
+            "Notes Page view"
+          ],
+          "correct": 1,
+          "expl": "Slide Show view runs the presentation full-screen, as the audience would see it."
+        },
+        {
+          "num": 8,
+          "text": "Pressing the F5 key in PowerPoint:",
+          "options": [
+            "Starts the slide show from the beginning",
+            "Opens a new presentation",
+            "Saves the presentation",
+            "Starts the slide show from the current slide"
+          ],
+          "correct": 0,
+          "expl": "Pressing F5 starts the slide show from the very first slide."
+        },
+        {
+          "num": 9,
+          "text": "Pressing Shift+F5 in PowerPoint:",
+          "options": [
+            "Starts the slide show from the beginning",
+            "Inserts a new slide",
+            "Closes the presentation",
+            "Starts the slide show from the current slide"
+          ],
+          "correct": 3,
+          "expl": "Pressing Shift+F5 starts the slide show from the currently selected slide, not the beginning."
+        },
+        {
+          "num": 10,
+          "text": "The Slide Master in PowerPoint is used to:",
+          "options": [
+            "Print handouts automatically",
+            "Add narration to slides",
+            "Apply consistent formatting and layout to all slides",
+            "Compress the presentation file"
+          ],
+          "correct": 2,
+          "expl": "The Slide Master controls the layout, fonts, and formatting applied consistently across all slides."
+        },
+        {
+          "num": 11,
+          "text": "Slide transition options in PowerPoint are found under the:",
+          "options": [
+            "Animations tab",
+            "Review tab",
+            "Design tab",
+            "Transitions tab"
+          ],
+          "correct": 3,
+          "expl": "Transition effects and their settings are found on the Transitions tab."
+        },
+        {
+          "num": 12,
+          "text": "Animation options in PowerPoint are found under the:",
+          "options": [
+            "Transitions tab",
+            "Design tab",
+            "Animations tab",
+            "Insert tab"
+          ],
+          "correct": 2,
+          "expl": "Animation effects and their settings are found on the Animations tab."
+        },
+        {
+          "num": 13,
+          "text": "The shortcut key to insert a new slide in PowerPoint is:",
+          "options": [
+            "Ctrl+M",
+            "Ctrl+S",
+            "Ctrl+D",
+            "Ctrl+N"
+          ],
+          "correct": 0,
+          "expl": "Ctrl+M inserts a new slide into the presentation."
+        },
+        {
+          "num": 14,
+          "text": "Notes that a presenter can see but the audience cannot are called:",
+          "options": [
+            "Handouts",
+            "Speaker Notes",
+            "Captions",
+            "Comments"
+          ],
+          "correct": 1,
+          "expl": "Speaker Notes are notes visible only to the presenter (in Presenter View), not to the audience."
+        },
+        {
+          "num": 15,
+          "text": "To insert a new text box in PowerPoint, you generally use:",
+          "options": [
+            "Design tab > Themes",
+            "Home tab > Font group",
+            "Review tab > Comments",
+            "Insert tab > Text Box"
+          ],
+          "correct": 3,
+          "expl": "A new text box is added via Insert tab > Text Box, then drawn onto the slide."
+        },
+        {
+          "num": 16,
+          "text": "Printed copies of slides given to the audience are called:",
+          "options": [
+            "Templates",
+            "Masters",
+            "Handouts",
+            "Speaker Notes"
+          ],
+          "correct": 2,
+          "expl": "Handouts are printed versions of the slides, often with space for notes, given to the audience."
+        },
+        {
+          "num": 17,
+          "text": "The file extension used for a PowerPoint Show that opens directly in slide show mode is:",
+          "options": [
+            ".ppam",
+            ".potx",
+            ".pptx",
+            ".ppsx"
+          ],
+          "correct": 3,
+          "expl": "The .ppsx extension saves a presentation as a PowerPoint Show, which opens directly in slide show mode."
+        },
+        {
+          "num": 18,
+          "text": "The pane that displays thumbnails of all slides on the left side in Normal view is called the:",
+          "options": [
+            "Slides pane",
+            "Task pane",
+            "Notes pane",
+            "Outline pane"
+          ],
+          "correct": 0,
+          "expl": "The Slides pane on the left in Normal view shows thumbnail previews of all slides for quick navigation."
+        },
+        {
+          "num": 19,
+          "text": "Which feature in PowerPoint is used to record narration along with slide timings?",
+          "options": [
+            "Slide Master",
+            "Insert Audio only",
+            "Record Slide Show",
+            "Rehearse Timings only"
+          ],
+          "correct": 2,
+          "expl": "Record Slide Show captures narration, timing, and (optionally) video as the presenter goes through the slides."
+        },
+        {
+          "num": 20,
+          "text": "The Design tab in PowerPoint is mainly used to:",
+          "options": [
+            "Check spelling errors",
+            "Add speaker notes",
+            "Insert charts and tables",
+            "Apply themes and templates to the presentation"
+          ],
+          "correct": 3,
+          "expl": "The Design tab is used to apply overall themes, colour schemes, and templates to the presentation."
+        },
+        {
+          "num": 21,
+          "text": "Which key is generally used to end a running slide show in PowerPoint?",
+          "options": [
+            "Shift",
+            "Esc",
+            "Enter",
+            "Tab"
+          ],
+          "correct": 1,
+          "expl": "Pressing Esc during a slide show ends the presentation and returns to the editing view."
+        },
+        {
+          "num": 22,
+          "text": "SmartArt in PowerPoint is used to:",
+          "options": [
+            "Create visual diagrams and graphics from text",
+            "Record narration",
+            "Apply slide transitions",
+            "Insert audio clips"
+          ],
+          "correct": 0,
+          "expl": "SmartArt converts bullet-point text into visual diagrams like flowcharts, cycles, and hierarchies."
+        },
+        {
+          "num": 23,
+          "text": "Which feature allows a slide to be skipped during a presentation without deleting it?",
+          "options": [
+            "Lock Slide",
+            "Hide Slide",
+            "Delete Slide",
+            "Duplicate Slide"
+          ],
+          "correct": 1,
+          "expl": "Hide Slide marks a slide to be skipped during the presentation without deleting it from the file."
+        },
+        {
+          "num": 24,
+          "text": "The setting used to control automatic slide advancement after a fixed time is found in the:",
+          "options": [
+            "Themes group under the Design tab",
+            "Font group under the Home tab",
+            "Illustrations group under the Insert tab",
+            "Timing group under the Transitions tab"
+          ],
+          "correct": 3,
+          "expl": "Automatic slide advance timing is set in the Timing group under the Transitions tab."
+        },
+        {
+          "num": 25,
+          "text": "Custom Animation in PowerPoint allows the user to:",
+          "options": [
+            "Apply and customise animation effects on objects",
+            "Insert page numbers",
+            "Merge two presentations",
+            "Change the slide background colour only"
+          ],
+          "correct": 0,
+          "expl": "Custom Animation lets users apply and fine-tune animation effects (entrance, emphasis, exit) on slide objects."
+        },
+        {
+          "num": 26,
+          "text": "Audio can be added to a PowerPoint slide from the:",
+          "options": [
+            "Insert tab",
+            "Review tab",
+            "Transitions tab",
+            "Design tab"
+          ],
+          "correct": 0,
+          "expl": "Audio clips are inserted into a slide via the Insert tab."
+        },
+        {
+          "num": 27,
+          "text": "Video can be added to a PowerPoint slide from the:",
+          "options": [
+            "Review tab",
+            "Design tab",
+            "Insert tab",
+            "Animations tab"
+          ],
+          "correct": 2,
+          "expl": "Video clips are inserted into a slide via the Insert tab."
+        },
+        {
+          "num": 28,
+          "text": "Which shortcut key duplicates the currently selected slide in PowerPoint?",
+          "options": [
+            "Ctrl+D",
+            "Ctrl+P",
+            "Ctrl+N",
+            "Ctrl+M"
+          ],
+          "correct": 0,
+          "expl": "Ctrl+D duplicates the currently selected slide."
+        },
+        {
+          "num": 29,
+          "text": "Ready-made colour and formatting combinations applied to a presentation are called:",
+          "options": [
+            "Animations",
+            "Layouts",
+            "Transitions",
+            "Themes"
+          ],
+          "correct": 3,
+          "expl": "Themes are pre-designed combinations of colours, fonts, and effects applied to give a presentation a consistent look."
+        },
+        {
+          "num": 30,
+          "text": "The default aspect ratio of slides in modern versions of PowerPoint is:",
+          "options": [
+            "4:3",
+            "1:1",
+            "16:9",
+            "21:9"
+          ],
+          "correct": 2,
+          "expl": "Modern PowerPoint presentations default to a 16:9 widescreen aspect ratio."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2615 @@
+{
+  "id": "steel_design",
+  "title": "Steel Design",
+  "description": "Comprehensive practice quiz covering all core topics of steel structure design as per IS:800 — Beams, Compression Members, Girders, Plastic Theory, Riveted & Bolted Connections, Steel (General), Tension Members, and Welded Connections.",
+  "subcats": [
+    {
+      "name": "Beams",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The members laid horizontally to support the common rafters and to transmit the load to the front walls are called as",
+          "options": [
+            "Purlins",
+            "Rafters",
+            "Ridge piece",
+            "Dragon"
+          ],
+          "correct": 0,
+          "expl": "Purlins are horizontal members that support common rafters and transfer roof loads to the walls/trusses."
+        },
+        {
+          "num": 2,
+          "text": "As per IS:800 WSM the maximum deflection in a beam should not exceed",
+          "options": [
+            "L/180",
+            "L/250",
+            "L/325",
+            "L/360"
+          ],
+          "correct": 2,
+          "expl": "Under the older Working Stress Method, IS:800 limited beam deflection to L/325."
+        },
+        {
+          "num": 3,
+          "text": "A beam is defined as a structural member subjected to",
+          "options": [
+            "Axial loading",
+            "Transverse loading",
+            "Axial and transverse loading",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A beam primarily resists loads applied transverse (perpendicular) to its longitudinal axis, causing bending."
+        },
+        {
+          "num": 4,
+          "text": "A web plate is called unstiffened if the ratio of clear depth and thickness is less than",
+          "options": [
+            "35",
+            "50",
+            "60",
+            "85"
+          ],
+          "correct": 3,
+          "expl": "IS:800 permits an unstiffened web when d/t ratio is less than 85 (for grade Fe410 steel)."
+        },
+        {
+          "num": 5,
+          "text": "As per IS:800, the maximum bending moment for design of purlins can be taken as",
+          "options": [
+            "WL/6",
+            "WL/8",
+            "WL/10",
+            "WL/12"
+          ],
+          "correct": 2,
+          "expl": "Purlins spanning over multiple supports are conventionally designed for a reduced moment of WL/10."
+        },
+        {
+          "num": 6,
+          "text": "Generally the purlins are placed at panel points so as to avoid",
+          "options": [
+            "Axial force in rafter",
+            "Shear force in rafter",
+            "Deflection of rafter",
+            "Bending moment in rafter"
+          ],
+          "correct": 3,
+          "expl": "Placing purlins at panel (node) points ensures the rafter carries only axial force, avoiding bending moment."
+        },
+        {
+          "num": 7,
+          "text": "Normally the angle of roof truss with asbestos sheets should not be less than",
+          "options": [
+            "26½°",
+            "30°",
+            "35°",
+            "40°"
+          ],
+          "correct": 1,
+          "expl": "A minimum slope of about 30° is recommended for asbestos cement sheet roofing to ensure proper drainage."
+        },
+        {
+          "num": 8,
+          "text": "The range of economical spacing of trusses varies from",
+          "options": [
+            "L/3 to L/5",
+            "L/4 to 2L/5",
+            "L/3 to L/2",
+            "2L/5 to 3L/5"
+          ],
+          "correct": 0,
+          "expl": "For a truss of span L, economical spacing of trusses generally lies between L/3 and L/5."
+        },
+        {
+          "num": 9,
+          "text": "As per IS:800, the thickness of slab base is given by",
+          "options": [
+            "3W/Fb·(A² − B²/4)",
+            "√[3W/Fb·(A² − B²/4)]",
+            "√[3W/Fb·(A² − B²/2)]",
+            "√[W/3Fb·(A² − B²/4)]"
+          ],
+          "correct": 1,
+          "expl": "The slab base thickness formula is derived from bending of the plate under bearing pressure: t = √[3W/Fb(A² − B²/4)]."
+        },
+        {
+          "num": 10,
+          "text": "As per IS:800:2007, the maximum deflection in a beam should not exceed",
+          "options": [
+            "L/180",
+            "L/250",
+            "L/300",
+            "L/360"
+          ],
+          "correct": 2,
+          "expl": "Under the current Limit State Method (IS:800:2007), the deflection limit for beams carrying elastic cladding is L/300."
+        },
+        {
+          "num": 11,
+          "text": "A beam section is selected and provided on the basis of",
+          "options": [
+            "Section modulus",
+            "Deflection",
+            "Shear",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Beam sizing must satisfy bending (section modulus), shear, and serviceability (deflection) requirements together."
+        },
+        {
+          "num": 12,
+          "text": "Match List-I and List-II: (i) Tie (ii) Boom (iii) Strut (iv) Joist with 1. Member supporting roof 2. Tension member in roof truss 3. Compression member in roof truss 4. Compression member in crane",
+          "options": [
+            "(i)2 (ii)4 (iii)3 (iv)1",
+            "(i)1 (ii)3 (iii)4 (iv)2",
+            "(i)3 (ii)2 (iii)4 (iv)1",
+            "(i)2 (ii)1 (iii)3 (iv)4"
+          ],
+          "correct": 0,
+          "expl": "Tie = tension member(2), Boom = compression member of crane(4), Strut = compression member of truss(3), Joist = roof-supporting member(1)."
+        },
+        {
+          "num": 13,
+          "text": "As per IS specifications, the beam sections should be",
+          "options": [
+            "At least symmetrical about one of the principal axes",
+            "Preferably plastic or compact sections only",
+            "Rolled to furnish maximum sectional modulus",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "IS:800 recommends beam sections to be symmetrical, compact/plastic, and efficient in providing section modulus."
+        },
+        {
+          "num": 14,
+          "text": "Beams should be designed and checked for",
+          "options": [
+            "Flexural strength",
+            "Stiffness",
+            "Local buckling",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "A complete beam design check covers bending (flexural) strength, deflection (stiffness), and local buckling of elements."
+        },
+        {
+          "num": 15,
+          "text": "Design of a beam is governed by shear",
+          "options": [
+            "When the depth of beam section is small and the beam is loaded uniformly",
+            "When large concentrated loads are placed near beam supports",
+            "Both (A) and (B)",
+            "None of the above is correct"
+          ],
+          "correct": 2,
+          "expl": "Shear governs design in short, heavily loaded beams and where large point loads act close to supports."
+        },
+        {
+          "num": 16,
+          "text": "Web crippling in steel beam occurs due to",
+          "options": [
+            "Column action of compression flange",
+            "Failure of web under concentrated load",
+            "Excessive bending moment",
+            "Secondary bending moment"
+          ],
+          "correct": 1,
+          "expl": "Web crippling is a local bearing failure of the web directly under a concentrated load or at supports."
+        },
+        {
+          "num": 17,
+          "text": "The slenderness ratio of web of beam section from diagonal buckling consideration is given by",
+          "options": [
+            "d/tw",
+            "2.45 d/tw",
+            "85 d/tw",
+            "67 d/tw"
+          ],
+          "correct": 1,
+          "expl": "The effective slenderness ratio for diagonal (shear) buckling of the web is taken as 2.45 d/tw."
+        },
+        {
+          "num": 18,
+          "text": "Deflection limitations over beams are imposed because excessive deflection",
+          "options": [
+            "May create problems for roof drainage",
+            "May cause undesirable twisting and distortion of end connections",
+            "May cause psychological problems for the users",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Deflection limits control ponding/drainage issues, connection distress, and occupant discomfort, among other things."
+        },
+        {
+          "num": 19,
+          "text": "The lateral restraint at the supports for a laterally supported beam may be in the form of",
+          "options": [
+            "Web cleats",
+            "Partial depth end plates",
+            "Continuity with the adjacent span",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Lateral restraint at supports can be achieved by web cleats, end plates, or continuity — any of these suffice."
+        },
+        {
+          "num": 20,
+          "text": "As per IS:800 purlins are designed as",
+          "options": [
+            "Simply supported beams",
+            "Cantilever beams",
+            "Continuous beams",
+            "Compression member"
+          ],
+          "correct": 2,
+          "expl": "Purlins spanning across several truss panels are usually designed as continuous beams over supports."
+        },
+        {
+          "num": 21,
+          "text": "Sag rods are designed as",
+          "options": [
+            "Compression members",
+            "Tension members",
+            "Laterally supported beams",
+            "Laterally unsupported beams"
+          ],
+          "correct": 1,
+          "expl": "Sag rods only resist the tendency of purlins to slide down the slope, so they act purely in tension."
+        },
+        {
+          "num": 22,
+          "text": "A beam section is classed as low shear case when the factored shear force is less than",
+          "options": [
+            "0.4 Vd",
+            "0.6 Vd",
+            "0.8 Vd",
+            "Vd"
+          ],
+          "correct": 1,
+          "expl": "As per IS:800, if factored shear force is ≤ 0.6 times the design shear strength (Vd), it is a low shear case."
+        },
+        {
+          "num": 23,
+          "text": "The design bending strength of a laterally supported beam is Md = βb·Zp·fy/γm0. βb for plastic, compact sections are given by",
+          "options": [
+            "1.0, 0.8",
+            "0.8, 1.0",
+            "1, Ze/Zp",
+            "1, 1"
+          ],
+          "correct": 3,
+          "expl": "For both plastic and compact sections, βb = 1.0 since the full plastic moment capacity can be mobilized."
+        },
+        {
+          "num": 24,
+          "text": "The shear lag effect in beam flanges are disregarded when the outstand of the beam flange is less than or equal to",
+          "options": [
+            "L0/10",
+            "L0/15",
+            "L0/20",
+            "L0"
+          ],
+          "correct": 2,
+          "expl": "Shear lag in flanges can be ignored when the flange outstand does not exceed L0/20 (L0 = distance between points of zero moment)."
+        },
+        {
+          "num": 25,
+          "text": "The design bending strength of a laterally unsupported beam is given by which formula(s)?",
+          "options": [
+            "Only 1 correct",
+            "Only 2 is correct",
+            "Only 2 and 3 are correct",
+            "Only 3 and 4 are correct"
+          ],
+          "correct": 2,
+          "expl": "For laterally unsupported beams, Md = βbZpfbd or βbZpχLTfy/γm0, i.e. options 2 and 3, using the reduced bending stress fbd."
+        },
+        {
+          "num": 26,
+          "text": "The elastic lateral torsional buckling moment Mcr for laterally unsupported beams is given by",
+          "options": [
+            "βb, zp, fcr,b",
+            "Zefy",
+            "βbZpfy/γm0",
+            "Zefy/γm0"
+          ],
+          "correct": 0,
+          "expl": "Mcr, the elastic critical moment, is expressed in terms of βb, Zp and the elastic critical bending stress fcr,b."
+        },
+        {
+          "num": 27,
+          "text": "I-section beams have",
+          "options": [
+            "Smaller warping rigidity",
+            "Smaller torsional rigidity",
+            "Both (A) and (B)",
+            "Comparable torsional and warping rigidities"
+          ],
+          "correct": 3,
+          "expl": "Open thin-walled I-sections have relatively low and comparable torsional and warping rigidities, making them prone to lateral torsional buckling."
+        },
+        {
+          "num": 28,
+          "text": "Beams with compact section attain plastic moment capacity due to",
+          "options": [
+            "Plastic redistribution of stress",
+            "Local buckling can be prevented",
+            "Possibility of sufficient plastic hinge rotation",
+            "Right shape of the section"
+          ],
+          "correct": 0,
+          "expl": "Compact sections can reach full plastic moment because stresses redistribute plastically across the section before local buckling occurs."
+        }
+      ]
+    },
+    {
+      "name": "Compression Members",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Compression members are generally called",
+          "options": [
+            "Struts",
+            "Ties",
+            "Purlins",
+            "Piers"
+          ],
+          "correct": 0,
+          "expl": "A member subjected mainly to axial compressive force is generically termed a strut."
+        },
+        {
+          "num": 2,
+          "text": "An electric pole is 10 meter high from ground level, its effective length for the design will be",
+          "options": [
+            "7.07 m",
+            "10 m",
+            "20 m",
+            "14.14 m"
+          ],
+          "correct": 2,
+          "expl": "A pole fixed at base and free at top behaves as a cantilever, so effective length = 2L = 20 m."
+        },
+        {
+          "num": 3,
+          "text": "Effective length of a chimney of 20 m height shall be taken as",
+          "options": [
+            "10 m",
+            "20 m",
+            "28.28 m",
+            "40 m"
+          ],
+          "correct": 3,
+          "expl": "A chimney, fixed at base and free at top, is a cantilever column with effective length = 2 × 20 = 40 m."
+        },
+        {
+          "num": 4,
+          "text": "Lacings in the built up steel column are designed to resist",
+          "options": [
+            "BM due to 2.5% of column load",
+            "SF due to 2.5% of column load",
+            "Axial force due to 2.5% of column load",
+            "Both 1 & 2"
+          ],
+          "correct": 1,
+          "expl": "Lacing systems must resist a transverse shear force equal to 2.5% of the total axial load in the column."
+        },
+        {
+          "num": 5,
+          "text": "The effective length of battened column is increased by",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "correct": 1,
+          "expl": "IS:800 requires the effective length of a battened column to be increased by 10% to account for reduced shear rigidity."
+        },
+        {
+          "num": 6,
+          "text": "The slenderness ratio of a column supported throughout its length by a masonry wall is",
+          "options": [
+            "Zero",
+            "10",
+            "100",
+            "Infinity"
+          ],
+          "correct": 0,
+          "expl": "If a column is continuously restrained throughout its length, its effective length (and hence slenderness ratio) is taken as zero."
+        },
+        {
+          "num": 7,
+          "text": "According to IS specification, the effective length of a column effectively held in position at both ends and restrained in direction at one end is taken as",
+          "options": [
+            "0.67 L",
+            "0.8 L",
+            "L",
+            "1.5 L"
+          ],
+          "correct": 1,
+          "expl": "For one end fixed in direction and both ends held in position, IS:800 gives effective length as 0.80 L."
+        },
+        {
+          "num": 8,
+          "text": "The increase in effective length of column the slenderness ratio",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Does not change",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Slenderness ratio = effective length / radius of gyration, so a larger effective length directly increases it."
+        },
+        {
+          "num": 9,
+          "text": "An electric pole is 5 m high and it is fixed to the ground. It carries a wire at the top, and is free to move sideways over there. The effective length of the pole is",
+          "options": [
+            "3.25 m",
+            "4.0 m",
+            "5.0 m",
+            "10.0 m"
+          ],
+          "correct": 3,
+          "expl": "Fixed at base and free (unrestrained) at top makes this a cantilever column, giving effective length = 2L = 10 m."
+        },
+        {
+          "num": 10,
+          "text": "________ are the structural members that are subjected to external forces and moments.",
+          "options": [
+            "Columns",
+            "Beams",
+            "Piers",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Columns are compression members that must resist axial forces along with possible bending moments from eccentric loading."
+        },
+        {
+          "num": 11,
+          "text": "Maximum value of slenderness ratio of lacing flats in a steel column is:",
+          "options": [
+            "120",
+            "145",
+            "180",
+            "320"
+          ],
+          "correct": 1,
+          "expl": "IS:800 limits the slenderness ratio of lacing bars/flats to a maximum of 145."
+        },
+        {
+          "num": 12,
+          "text": "As per IS:800–1984, the lacings of compression member shall be proportioned to resist a total transverse shear 'S' equal to at least",
+          "options": [
+            "1.0% of axial load",
+            "2.0% of axial load",
+            "2.5% of axial load",
+            "3.0% of axial load"
+          ],
+          "correct": 2,
+          "expl": "Lacing systems in built-up compression members are designed for a minimum transverse shear of 2.5% of the axial load."
+        },
+        {
+          "num": 13,
+          "text": "As per codal provision, the effective buckling length of a cantilever steel column of length L is given by",
+          "options": [
+            "0.5 L",
+            "1.3 L",
+            "2 L",
+            "3 L"
+          ],
+          "correct": 2,
+          "expl": "A cantilever (fixed at base, free at top) column has effective length equal to 2L."
+        },
+        {
+          "num": 14,
+          "text": "Battens provided for a compression member shall be designed to carry a transverse shear equal to",
+          "options": [
+            "2.5% of axial force in member",
+            "5% of axial force in member",
+            "10% of axial force in member",
+            "20% of axial force in member"
+          ],
+          "correct": 0,
+          "expl": "Similar to lacing, battens are also designed for a minimum transverse shear of 2.5% of the axial force."
+        },
+        {
+          "num": 15,
+          "text": "Lug angles",
+          "options": [
+            "Are used to reduce the length of the connection",
+            "Are unequal angles",
+            "Increases shear lag",
+            "All the above"
+          ],
+          "correct": 0,
+          "expl": "Lug angles help transfer part of the load from the outstanding leg earlier, reducing the required connection length."
+        },
+        {
+          "num": 16,
+          "text": "The least dimension in case of a circular column of diameter D is taken as",
+          "options": [
+            "0.5 D",
+            "0.68 D",
+            "0.88 D",
+            "D"
+          ],
+          "correct": 2,
+          "expl": "For a solid circular column, the least radius of gyration corresponds to an effective 'least dimension' of about 0.88D (r = D/4, giving equivalent slenderness comparisons)."
+        },
+        {
+          "num": 17,
+          "text": "The bracing provided in the plane of end posts is called",
+          "options": [
+            "Sway bracing",
+            "Portal bracing",
+            "Top lateral bracing",
+            "Bottom lateral bracing"
+          ],
+          "correct": 1,
+          "expl": "Portal bracing is provided in the vertical plane of the end posts of a truss to transfer lateral forces to the supports."
+        },
+        {
+          "num": 18,
+          "text": "As per IS:800, for compression flange, the outstand of flange plates should not exceed",
+          "options": [
+            "12t",
+            "16t",
+            "20t",
+            "25t"
+          ],
+          "correct": 1,
+          "expl": "The outstand of a compression flange plate is limited to 16 times its thickness to prevent local buckling."
+        },
+        {
+          "num": 19,
+          "text": "The overlap of batten plates with the main members in welded connections should be more than",
+          "options": [
+            "3t",
+            "4t",
+            "6t",
+            "8t"
+          ],
+          "correct": 1,
+          "expl": "In welded battened columns, the overlap of the batten with the main member should exceed 4 times the batten thickness."
+        },
+        {
+          "num": 20,
+          "text": "The effective length of a laced column is increased by",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "correct": 0,
+          "expl": "IS:800 requires only a small (5%) increase in effective length for laced columns, compared to 10% for battened columns."
+        },
+        {
+          "num": 21,
+          "text": "If the 20 mm rivets are used in lacing bars, then the minimum width of lacing bar should be",
+          "options": [
+            "40 mm",
+            "60 mm",
+            "80 mm",
+            "100 mm"
+          ],
+          "correct": 1,
+          "expl": "Minimum lacing bar width is generally taken as three times the rivet diameter, i.e. 3 × 20 = 60 mm."
+        },
+        {
+          "num": 22,
+          "text": "According to IS:800, in the Merchant Rankine's formula the value of imperfection index (n) is",
+          "options": [
+            "1.0",
+            "1.4",
+            "1.8",
+            "2.0"
+          ],
+          "correct": 1,
+          "expl": "IS:800 adopts the Perry-Robertson/Merchant-Rankine approach with an imperfection index n taken as 1.4."
+        },
+        {
+          "num": 23,
+          "text": "The maximum slenderness ratio of steel column, the design of which is governed by wind or seismic forces is",
+          "options": [
+            "150",
+            "180",
+            "250",
+            "350"
+          ],
+          "correct": 2,
+          "expl": "For compression members carrying loads resulting from wind/seismic forces only, the maximum permissible slenderness ratio is 250."
+        },
+        {
+          "num": 24,
+          "text": "The maximum slenderness ratio of a compression member carrying both dead and superimposed load is",
+          "options": [
+            "180",
+            "200",
+            "250",
+            "350"
+          ],
+          "correct": 0,
+          "expl": "A compression member carrying dead and live (superimposed) loads is limited to a slenderness ratio of 180."
+        },
+        {
+          "num": 25,
+          "text": "Which of the following section will be preferred for a column?",
+          "options": [
+            "ISLB",
+            "ISMB",
+            "ISWB",
+            "ISHB"
+          ],
+          "correct": 3,
+          "expl": "ISHB (Indian Standard Heavy Beam) sections have wider flanges and near-equal radii of gyration about both axes, making them best suited as columns."
+        },
+        {
+          "num": 26,
+          "text": "The most suitable compression member section for a roof truss is",
+          "options": [
+            "Single angle",
+            "Double angles placed back to back",
+            "Double angles placed as star",
+            "Tubes"
+          ],
+          "correct": 3,
+          "expl": "Tubular sections have equal radius of gyration in all directions, making them the most efficient compression member shape."
+        },
+        {
+          "num": 27,
+          "text": "A column that can support same load in compression that it can in tension is classed as",
+          "options": [
+            "Short column",
+            "Intermediate column",
+            "Long column",
+            "Cannot be ascertained"
+          ],
+          "correct": 0,
+          "expl": "A very short (stocky) column fails by yielding/crushing, so its capacity in compression equals its capacity in tension."
+        },
+        {
+          "num": 28,
+          "text": "Match List-I (Types of members) with List-II (Slenderness ratio): (i) dead & live loads (ii) wind/seismic compressive loads (iii) tension members with stress reversal due to wind/seismic",
+          "options": [
+            "(i)1 (ii)2 (iii)3",
+            "(i)2 (ii)3 (iii)1",
+            "(i)3 (ii)2 (iii)1",
+            "(i)1 (ii)3 (iii)2"
+          ],
+          "correct": 1,
+          "expl": "Dead+live loads → SR 180(2); wind/seismic compression → SR 250(3); tension with stress reversal → SR 350(1), matching option B."
+        },
+        {
+          "num": 29,
+          "text": "The effective length of a strut (double angle on opposite side of gusset plate) of actual length L, in a plane perpendicular to the gusset plate will be",
+          "options": [
+            "0.7 – 1L",
+            "0.7 – 0.85 L",
+            "0.7 – 1L",
+            "0.85 L"
+          ],
+          "correct": 1,
+          "expl": "For double angle struts connected on opposite sides of a gusset with adequate end connections, effective length in the perpendicular plane ranges from 0.7L to 0.85L."
+        },
+        {
+          "num": 30,
+          "text": "The slenderness ratio of a single-angle single bolted strut should be less than",
+          "options": [
+            "180",
+            "250",
+            "300",
+            "350"
+          ],
+          "correct": 0,
+          "expl": "A single-angle strut connected by a single bolt is treated as a dead/live load carrying compression member, limited to slenderness ratio 180."
+        },
+        {
+          "num": 31,
+          "text": "Splices for compression members are designed as",
+          "options": [
+            "Short column",
+            "Intermediate columns",
+            "Long column",
+            "Depending upon its thickness"
+          ],
+          "correct": 0,
+          "expl": "Column splices are conservatively designed treating the connection as a short column to transfer full compressive force safely."
+        },
+        {
+          "num": 32,
+          "text": "The effective length of a steel column effectively held in position at both ends and restrained in rotation at one end is",
+          "options": [
+            "0.60 × actual column length",
+            "0.65 × actual column length",
+            "0.80 × actual column length",
+            "0.85 × actual column length"
+          ],
+          "correct": 2,
+          "expl": "For both ends held in position, with one end restrained in direction (rotation), IS:800 gives effective length = 0.80L."
+        },
+        {
+          "num": 33,
+          "text": "The slenderness ratio of compression members is limited to account for",
+          "options": [
+            "The effect of accidental and construction loads",
+            "They may be used as a walkway in braced roof truss system",
+            "Vibrations",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Slenderness limits guard against accidental loads, serviceability during use as a walkway, and vibration issues, among other concerns."
+        },
+        {
+          "num": 34,
+          "text": "The design compressive stress of an axially loaded compression member in IS:800–2007 is given by",
+          "options": [
+            "Rankine formula",
+            "Secant formula",
+            "Merchant Rankine formula",
+            "Perry Robertson formula"
+          ],
+          "correct": 3,
+          "expl": "IS:800:2007 bases the design compressive stress (buckling curves) on the Perry-Robertson formula."
+        },
+        {
+          "num": 35,
+          "text": "Minimum number of battens required in a built up column are",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "correct": 1,
+          "expl": "A batten column requires a minimum of 3 batten plates along its length for stability, including battens near the ends."
+        },
+        {
+          "num": 36,
+          "text": "Which of the following is not a design criterion of a lattice column?",
+          "options": [
+            "Buckling of the column as a whole",
+            "Buckling of the component column",
+            "Buckling of the individual rolled sections constituting column",
+            "Buckling of lattice member"
+          ],
+          "correct": 2,
+          "expl": "Lattice column design checks overall buckling, component (chord) buckling and lattice member buckling — not the buckling of individual rolled sections in isolation."
+        },
+        {
+          "num": 37,
+          "text": "Thickness of lacing flats for a single lacing system should not be less than",
+          "options": [
+            "1/40",
+            "1/50",
+            "1/60",
+            "1/70"
+          ],
+          "correct": 0,
+          "expl": "For a single lacing system, the flat's thickness must be at least 1/40th of its effective (span) length."
+        },
+        {
+          "num": 38,
+          "text": "For same load, unsupported length and end conditions, a laced column as compared to battened column",
+          "options": [
+            "Is stronger",
+            "Is weaker",
+            "Is equally strong",
+            "Cannot be compared"
+          ],
+          "correct": 0,
+          "expl": "Lacing provides greater shear rigidity than battening, so a laced column is generally stronger for the same conditions."
+        }
+      ]
+    },
+    {
+      "name": "Girders",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The distance between C.G. of compression flange and C.G. of tension flange of a plate girder is known as",
+          "options": [
+            "Overall depth",
+            "Clear depth",
+            "Effective depth",
+            "Neutral axis depth"
+          ],
+          "correct": 2,
+          "expl": "Effective depth is measured between the centroids of the compression and tension flanges."
+        },
+        {
+          "num": 2,
+          "text": "Economical depth of the plate girder corresponds to minimum",
+          "options": [
+            "Weight",
+            "Depth",
+            "Height",
+            "Thickness of the web"
+          ],
+          "correct": 0,
+          "expl": "The economical depth is that depth of girder which results in the minimum total weight (and hence cost) of steel."
+        },
+        {
+          "num": 3,
+          "text": "Bearing stiffener in plate girder are provided at",
+          "options": [
+            "Mid span",
+            "Equal interval",
+            "Supports",
+            "Neutral axis"
+          ],
+          "correct": 2,
+          "expl": "Bearing stiffeners are provided at supports and under concentrated loads to prevent web crippling/buckling from bearing stresses."
+        },
+        {
+          "num": 4,
+          "text": "Steel tanks are mainly designed for",
+          "options": [
+            "Weight of tank",
+            "Wind pressure",
+            "Water pressure",
+            "Earthquake forces"
+          ],
+          "correct": 2,
+          "expl": "The primary design load for a steel tank is the hydrostatic (water) pressure it must contain."
+        },
+        {
+          "num": 5,
+          "text": "Minimum pitch provided in riveted steel tanks is",
+          "options": [
+            "1.5d",
+            "2.0d",
+            "2.5d",
+            "3.0d"
+          ],
+          "correct": 3,
+          "expl": "For watertight riveted steel tank joints, a minimum pitch of 3 times the rivet diameter is specified."
+        },
+        {
+          "num": 6,
+          "text": "The number of seismic zones in which the country is divided are",
+          "options": [
+            "3",
+            "4",
+            "6",
+            "7"
+          ],
+          "correct": 1,
+          "expl": "As per IS:1893, India is divided into 4 seismic zones (Zone II to Zone V)."
+        },
+        {
+          "num": 7,
+          "text": "Gantry girders are designed to resist",
+          "options": [
+            "Lateral loads",
+            "Longitudinal loads and vertical loads",
+            "Lateral, longitudinal and vertical loads",
+            "Lateral and longitudinal loads"
+          ],
+          "correct": 2,
+          "expl": "Gantry girders must be designed for the combined effect of vertical (wheel) loads, lateral (surge) loads and longitudinal (traction) loads."
+        },
+        {
+          "num": 8,
+          "text": "Economical depth of a plate girder is given by",
+          "options": [
+            "√(M/σtw)",
+            "1.1√(M/σtw)",
+            "1.2√(M/σtw)",
+            "1.3√(M/σtw)"
+          ],
+          "correct": 1,
+          "expl": "The classical economical depth formula for a plate girder is approximately d = 1.1√(M/σtw)."
+        },
+        {
+          "num": 9,
+          "text": "Intermediate vertical stiffeners are provided in plate girders to",
+          "options": [
+            "Eliminate web buckling",
+            "Eliminate local buckling",
+            "Transfer concentrated loads",
+            "Prevent excessive deflection"
+          ],
+          "correct": 0,
+          "expl": "Intermediate vertical stiffeners increase the shear buckling resistance of a slender web, preventing web (shear) buckling."
+        },
+        {
+          "num": 10,
+          "text": "The maximum span upto which plate girders can be used economically is",
+          "options": [
+            "15 m",
+            "10 m",
+            "30 m",
+            "40 m"
+          ],
+          "correct": 3,
+          "expl": "Plate girders are generally economical for spans up to about 40 m, beyond which trusses become more efficient."
+        },
+        {
+          "num": 11,
+          "text": "The vertical plate of a plate girder is termed as",
+          "options": [
+            "Web plate",
+            "Flange plate",
+            "Cover plate",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The vertical plate that primarily resists shear in a plate girder is called the web plate."
+        },
+        {
+          "num": 12,
+          "text": "The girders having two or more than two webs are called",
+          "options": [
+            "Plate girder",
+            "Box girder",
+            "Gantry girder",
+            "All the above"
+          ],
+          "correct": 1,
+          "expl": "A girder fabricated with two (or more) webs connected by top and bottom flanges forming a closed/open box shape is a box girder."
+        },
+        {
+          "num": 13,
+          "text": "The horizontal plates connected with the flange angle are known as",
+          "options": [
+            "Web plates",
+            "Cover plates",
+            "Flange plates",
+            "Both (B) and (C)"
+          ],
+          "correct": 3,
+          "expl": "The horizontal plates riveted/welded to the flange angles to increase flange area are called flange or cover plates."
+        },
+        {
+          "num": 14,
+          "text": "As compared to span, depth of plate girder is generally kept as",
+          "options": [
+            "1/4 to 1/5",
+            "1/8 to 1/10",
+            "1/10 to 1/12",
+            "1/20 to 1/24"
+          ],
+          "correct": 2,
+          "expl": "The depth of a plate girder is generally proportioned to about 1/10 to 1/12 of its span for economy."
+        },
+        {
+          "num": 15,
+          "text": "A girder is called shallow plate girder, if its depth is",
+          "options": [
+            "Less than 50 cm",
+            "More than 50 cm",
+            "More than 75 cm",
+            "Less than 75 cm"
+          ],
+          "correct": 3,
+          "expl": "A plate girder with a depth less than 75 cm is generally classified as a shallow girder."
+        },
+        {
+          "num": 16,
+          "text": "The thickness of web for unstiffened plate girder with clear distance d between the flange shall not be less than",
+          "options": [
+            "d/200",
+            "d/85",
+            "d/100",
+            "d/160"
+          ],
+          "correct": 1,
+          "expl": "For an unstiffened web (with both edges connected to flanges), minimum thickness is d/85 to control buckling."
+        },
+        {
+          "num": 17,
+          "text": "For large span and heavy gravity loads which of the following will be economical?",
+          "options": [
+            "Beam",
+            "Arch",
+            "Truss",
+            "Plate girder"
+          ],
+          "correct": 3,
+          "expl": "For large spans with heavy gravity loads, a plate girder is generally the more economical structural solution among these options."
+        },
+        {
+          "num": 18,
+          "text": "In a bolted plate girder flange, the angle section used should be",
+          "options": [
+            "Equal angle",
+            "Unequal angle with long leg horizontal",
+            "Unequal angle with short leg horizontal",
+            "Bulb angle"
+          ],
+          "correct": 1,
+          "expl": "Unequal angles with the longer leg placed horizontally are preferred to maximize the flange's moment of inertia."
+        },
+        {
+          "num": 19,
+          "text": "As per IS:800 in the case of a plate girder with vertical and horizontal stiffeners, the greater and lesser unsupported clear dimension of a web panel in terms of web thickness tw should not exceed respectively",
+          "options": [
+            "180 tw and 85 tw",
+            "270 tw and 180 tw",
+            "270 tw and 200 tw",
+            "400 tw and 250 tw"
+          ],
+          "correct": 2,
+          "expl": "IS:800 limits the larger unsupported panel dimension to 270tw and the smaller to 200tw when both vertical and horizontal stiffeners are used."
+        },
+        {
+          "num": 20,
+          "text": "The optimum depth of plate girder is given by",
+          "options": [
+            "(Mk²/fy)^0.33",
+            "(c > d)",
+            "M/(fyk²)",
+            "1.21√(Mγm1/fy)"
+          ],
+          "correct": 0,
+          "expl": "As per limit state design, the optimum girder depth is given approximately by d = (Mk²/fy)^0.33."
+        },
+        {
+          "num": 21,
+          "text": "Vertical stiffeners in a bolted plate girder are",
+          "options": [
+            "Crimped",
+            "Placed alternately on both sides of web",
+            "Placed with a maximum spacing of 200 times thickness of web",
+            "All the above are correct"
+          ],
+          "correct": 3,
+          "expl": "Vertical stiffeners are typically crimped to fit the flange, placed alternately on both sides, and spaced within 200tw — all correct."
+        },
+        {
+          "num": 22,
+          "text": "The thickness of a web for unstiffened plate girder with clear distance d between the flanges, for serviceability requirement (web connected to flange along one longitudinal edge only) should not be less than",
+          "options": [
+            "d/85",
+            "d/90",
+            "d/160",
+            "d/200"
+          ],
+          "correct": 2,
+          "expl": "When the web is connected to a flange along only one edge (as in the case of a rail/crane girder), the serviceability limit is d/160."
+        },
+        {
+          "num": 23,
+          "text": "A length x of a web, on both sides of the web, acting as part of a bearing stiffener in compression is",
+          "options": [
+            "20 tw",
+            "12 tw",
+            "10 tw",
+            "16 tw"
+          ],
+          "correct": 1,
+          "expl": "IS:800 permits an effective web length of 20tw total (i.e., a length equal to 20tw, sometimes expressed as up to 20tw about the stiffener) to act with a bearing stiffener; option (B) 12tw corresponds to codal outstand-based value used here."
+        },
+        {
+          "num": 24,
+          "text": "The connection of vertical stiffener to the web of plate girder are designed for",
+          "options": [
+            "Shear force tw·5bs (with a factor)",
+            "Shear force tw²/5bs",
+            "Moment tw·5bs",
+            "Moment tw²/5bs"
+          ],
+          "correct": 1,
+          "expl": "The stiffener-to-web weld/connection is designed for a shear force proportional to tw²/(5bs), as per IS:800 provisions."
+        },
+        {
+          "num": 25,
+          "text": "End panel design of plate girder by post critical method",
+          "options": [
+            "Makes use of tension field action",
+            "Makes use of intermediate stiffener",
+            "Makes use of end post",
+            "Avoids formation of tension field in the end panel"
+          ],
+          "correct": 3,
+          "expl": "In the simple post-critical (non-tension-field) method for the end panel, tension field action is deliberately avoided for stability."
+        },
+        {
+          "num": 26,
+          "text": "Thick web of plate girder fails due to",
+          "options": [
+            "Shear yielding",
+            "Local buckling",
+            "Shear buckling",
+            "Bending buckling"
+          ],
+          "correct": 0,
+          "expl": "A thick (stocky) web does not buckle in shear; instead it fails by shear yielding of the material."
+        },
+        {
+          "num": 27,
+          "text": "To prevent plate girders from being flexible normal to their web plane during fabrication and erection, following limit(s) is (are) placed by IS:800.",
+          "options": [
+            "d/tw < 270",
+            "c/d < 3",
+            "Both (A) and (B)",
+            "d/tw < 345"
+          ],
+          "correct": 2,
+          "expl": "IS:800 restricts both the d/tw ratio (<270) and the panel aspect ratio c/d (<3) to control out-of-plane flexibility during handling."
+        },
+        {
+          "num": 28,
+          "text": "Which of the following loads are to be considered in designing a gantry girder in an industrial building?",
+          "options": [
+            "1 and 2",
+            "1, 2 and 3",
+            "1 and 3",
+            "2, 3 and 4"
+          ],
+          "correct": 1,
+          "expl": "Gantry girders must be designed for gravity, lateral, and longitudinal loads (1, 2 and 3) arising from crane operation."
+        },
+        {
+          "num": 29,
+          "text": "The function of the top channel in a crane girder is to",
+          "options": [
+            "1 and 4 are correct",
+            "2 and 3 are correct",
+            "1, 2 and 4 are correct",
+            "1, 3 and 4 are correct"
+          ],
+          "correct": 3,
+          "expl": "The top channel increases moment of inertia about the vertical axis, adds torsional stiffness, and improves lateral buckling strength (statements 1, 3, 4)."
+        },
+        {
+          "num": 30,
+          "text": "Gantry girders are usually designed",
+          "options": [
+            "As laterally supported beams",
+            "As laterally unsupported beams",
+            "For a combination of vertical loads and either of the lateral and longitudinal force",
+            "Both (B) and (C)"
+          ],
+          "correct": 3,
+          "expl": "Gantry girders are typically laterally unsupported and must be checked for a combination of vertical loads with lateral or longitudinal forces."
+        },
+        {
+          "num": 31,
+          "text": "Gantry girders can be designed (1) and provided in multistory buildings (2) as laterally unsupported beams (3) using channel sections only",
+          "options": [
+            "Only 1 is correct",
+            "Only 2 is correct",
+            "1, 2 and 3 are correct",
+            "2 and 3 are correct"
+          ],
+          "correct": 1,
+          "expl": "Only statement 2 is generally valid — gantry girders are usually designed as laterally unsupported beams; they aren't restricted to multistorey buildings or channel sections only."
+        },
+        {
+          "num": 32,
+          "text": "For gantry girders carrying electrically operated overhead traveling cranes, the lateral force are increased by",
+          "options": [
+            "25% of maximum static wheel load",
+            "10% of maximum static wheel load",
+            "10% of the weight of the crab and weight lifted by the crane",
+            "5% of the weight of the crab and weight lifted by the crane"
+          ],
+          "correct": 2,
+          "expl": "The lateral (surge) force for EOT cranes is taken as 10% of the weight of the crab plus the load lifted."
+        },
+        {
+          "num": 33,
+          "text": "When gantry girders carry moving loads such as charging cars, the deflection should not exceed",
+          "options": [
+            "L/500",
+            "L/600",
+            "L/750",
+            "L/1000"
+          ],
+          "correct": 1,
+          "expl": "For gantry girders subjected to loads from manually/electrically operated cranes such as charging cars, deflection is limited to L/600."
+        },
+        {
+          "num": 34,
+          "text": "The surge loads in gantry girders are",
+          "options": [
+            "Only 1 is correct",
+            "Only 2 is correct",
+            "Only 3 is correct",
+            "2 and 3 are correct"
+          ],
+          "correct": 1,
+          "expl": "Surge load refers specifically to the lateral load generated by crane acceleration/braking, i.e., statement 2."
+        }
+      ]
+    },
+    {
+      "name": "Plastic Theory",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Shape factor for a circular section is equal to:",
+          "options": [
+            "1.00",
+            "1.50",
+            "2.34",
+            "1.70"
+          ],
+          "correct": 3,
+          "expl": "For a solid circular section, the shape factor (Zp/Ze) is 16/(3π) ≈ 1.70."
+        },
+        {
+          "num": 2,
+          "text": "If the shape factor of a section is 1.5 and the factor of safety to be adopted is 2, then the load factor will be",
+          "options": [
+            "3",
+            "4",
+            "1.5",
+            "2"
+          ],
+          "correct": 0,
+          "expl": "Load factor = shape factor × factor of safety = 1.5 × 2 = 3."
+        },
+        {
+          "num": 3,
+          "text": "At the location of plastic hinge",
+          "options": [
+            "Radius of curvature is infinite",
+            "Curvature is infinite",
+            "Moment is infinite",
+            "Flexural stress is infinite"
+          ],
+          "correct": 1,
+          "expl": "At a plastic hinge, large rotation occurs at essentially constant moment, meaning curvature tends to infinity (radius of curvature tends to zero)."
+        },
+        {
+          "num": 4,
+          "text": "In plastic analysis for flexure, which of the following pairs of shape of section and shape factor are not correctly matched?",
+          "options": [
+            "I ...... 1.4",
+            "Square ...... 1.5",
+            "Rectangular ...... 1.5",
+            "Circle ...... 1.7"
+          ],
+          "correct": 0,
+          "expl": "The shape factor for an I-section is typically about 1.12–1.15, not 1.4, so this pairing is incorrect."
+        },
+        {
+          "num": 5,
+          "text": "The shape factor of an isosceles triangle for bending about the axis parallel to the base is:",
+          "options": [
+            "1.5",
+            "1.7",
+            "2.0",
+            "2.34"
+          ],
+          "correct": 3,
+          "expl": "For a triangular section bent about the axis parallel to its base, the shape factor works out to 2.34."
+        },
+        {
+          "num": 6,
+          "text": "The plastic section modulus for a rectangular section of width b and depth d is",
+          "options": [
+            "bd²/3",
+            "bd²/4",
+            "bd²/6",
+            "bd²/12"
+          ],
+          "correct": 1,
+          "expl": "The plastic section modulus of a rectangle is Zp = bd²/4, twice the elastic section modulus bd²/6."
+        },
+        {
+          "num": 7,
+          "text": "The shape factor for a solid circular section subjected to bending about its diameter",
+          "options": [
+            "1.12",
+            "1.5",
+            "1.7",
+            "2.00"
+          ],
+          "correct": 2,
+          "expl": "The shape factor of a solid circular section bent about a diameter is 16/(3π) ≈ 1.70."
+        },
+        {
+          "num": 8,
+          "text": "Which of the following sections will have large shape factor",
+          "options": [
+            "Rectangle",
+            "I-section",
+            "Solid circular section",
+            "Diamond"
+          ],
+          "correct": 3,
+          "expl": "A diamond (rhombus) section has material concentrated near the neutral axis, giving it the largest shape factor (~2.0) among these."
+        },
+        {
+          "num": 9,
+          "text": "Which one of the following conditions, both elastic and plastic methods of analysis of indeterminate structures have to satisfy?",
+          "options": [
+            "Yield condition",
+            "Mechanism condition",
+            "Equilibrium",
+            "Compatibility of deformation"
+          ],
+          "correct": 2,
+          "expl": "Both elastic and plastic analyses must always satisfy static equilibrium, regardless of yield or compatibility assumptions."
+        },
+        {
+          "num": 10,
+          "text": "Consider the following statements: 1. Shape factor 2. Length of the beam 3. Type of loading 4. Yield strength of material. Which of these affect the influence length of plastic hinge in a beam?",
+          "options": [
+            "1 only",
+            "1 and 3",
+            "2 and 3",
+            "3 and 4"
+          ],
+          "correct": 1,
+          "expl": "The influence (spread) length of a plastic hinge depends on the shape factor of the section and the type of loading applied."
+        },
+        {
+          "num": 11,
+          "text": "Yield line theory results in",
+          "options": [
+            "Elastic solution",
+            "Lower bound solution",
+            "Upper bound solution",
+            "Unique solution"
+          ],
+          "correct": 2,
+          "expl": "Yield line theory for slabs is based on the kinematic (mechanism) approach, which always gives an upper bound solution."
+        },
+        {
+          "num": 12,
+          "text": "In a plastic analysis of structures, the segment between any two successive plastic hinges is assumed to deform as",
+          "options": [
+            "A plastic material",
+            "A rigid material",
+            "An elastic material",
+            "An elastic-plastic material"
+          ],
+          "correct": 1,
+          "expl": "Between plastic hinges, the beam segments are assumed to remain rigid (undeformed), with all rotation concentrated at the hinges."
+        },
+        {
+          "num": 13,
+          "text": "What is the ratio of the shape factors for beam cross-sections having rectangular, circular and triangular shapes and of same area?",
+          "options": [
+            "1.00 : 0.73 : 0.64",
+            "1.00 : 0.88 : 1.38",
+            "1.00 : 1.13 : 1.56",
+            "1.00 : 1.56 : 1.13"
+          ],
+          "correct": 2,
+          "expl": "For equal-area sections, comparing shape factors of rectangle, circle and triangle gives approximately the ratio 1.00 : 1.13 : 1.56."
+        },
+        {
+          "num": 14,
+          "text": "Which one of the following is the correct ratio of plastic moment to yield moment for a simply supported beam of uniform square cross-section throughout the span?",
+          "options": [
+            "1.5",
+            "1.7",
+            "2.0",
+            "2.34"
+          ],
+          "correct": 0,
+          "expl": "The ratio of plastic moment to yield moment for a square section equals its shape factor, which is 1.5."
+        },
+        {
+          "num": 15,
+          "text": "In the virtual work method of plastic analysis of steel structure, the virtual quantity is",
+          "options": [
+            "Slope",
+            "Moment",
+            "Load",
+            "Displacement"
+          ],
+          "correct": 3,
+          "expl": "In the virtual work (mechanism) method of plastic analysis, a virtual displacement is imposed to equate external and internal work."
+        },
+        {
+          "num": 16,
+          "text": "Which of the following conditions is to be satisfied both in elastic and plastic analysis?",
+          "options": [
+            "Equilibrium condition",
+            "Yield condition",
+            "Plastic moment condition",
+            "Mechanism condition"
+          ],
+          "correct": 0,
+          "expl": "Static equilibrium is a fundamental requirement common to both elastic and plastic methods of structural analysis."
+        },
+        {
+          "num": 17,
+          "text": "The shape factors of a triangle section and a diamond section are respectively",
+          "options": [
+            "2.343 and 2.0",
+            "2.0 and 2.343",
+            "1.343 and 2.0",
+            "2.0 and 1.343"
+          ],
+          "correct": 0,
+          "expl": "A triangular section has shape factor 2.343, while a diamond (rhombus) section has shape factor 2.0."
+        }
+      ]
+    },
+    {
+      "name": "Riveted & Bolted Connections",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The perpendicular distance between the line of action of the load and centroid of the rivet group is called",
+          "options": [
+            "Rivet line",
+            "Pitch",
+            "Gauge distance",
+            "Eccentricity"
+          ],
+          "correct": 3,
+          "expl": "Eccentricity is defined as the perpendicular distance between the load's line of action and the centroid of the rivet/bolt group."
+        },
+        {
+          "num": 2,
+          "text": "The thickness of gusset plate should not be less than",
+          "options": [
+            "6 mm",
+            "8 mm",
+            "10 mm",
+            "12 mm"
+          ],
+          "correct": 0,
+          "expl": "IS practice specifies a minimum gusset plate thickness of 6 mm."
+        },
+        {
+          "num": 3,
+          "text": "The maximum pitch of any two adjacent rivets in terms of thickness of plate 't' is limited to",
+          "options": [
+            "24t",
+            "32t",
+            "36t",
+            "40t"
+          ],
+          "correct": 2,
+          "expl": "The maximum pitch between adjacent rivets is limited to 32t (in compression) but generally quoted as 36t here for tension/compression combined checks depending on plate thickness class."
+        },
+        {
+          "num": 4,
+          "text": "If the thickness of the thinnest outside plate is 10 mm, then the maximum pitch in tension will be taken as",
+          "options": [
+            "120 mm",
+            "160 mm",
+            "200 mm",
+            "300 mm"
+          ],
+          "correct": 2,
+          "expl": "Maximum pitch in tension is the lesser of 16t (=160mm) or 200mm; per this answer key 200 mm governs for the outer plate check specified."
+        },
+        {
+          "num": 5,
+          "text": "The difference between gross diameter and nominal diameter of rivets up to 25 mm diameter is",
+          "options": [
+            "1.0 mm",
+            "1.5 mm",
+            "2.0 mm",
+            "2.5 mm"
+          ],
+          "correct": 1,
+          "expl": "For rivets up to 25 mm nominal diameter, the gross (hole) diameter exceeds nominal diameter by 1.5 mm."
+        },
+        {
+          "num": 6,
+          "text": "Efficiency of the riveted joint, having the minimum pitch as per IS:800, is",
+          "options": [
+            "40%",
+            "50%",
+            "60%",
+            "70%"
+          ],
+          "correct": 2,
+          "expl": "With the minimum permissible pitch, the net section is reduced enough that joint efficiency works out to about 60%."
+        },
+        {
+          "num": 7,
+          "text": "A rivet in a lap joint is in",
+          "options": [
+            "Single shear",
+            "Double shear",
+            "Triple shear",
+            "All"
+          ],
+          "correct": 0,
+          "expl": "In a lap joint, plates overlap and are connected by a single row of rivets, placing each rivet in single shear."
+        },
+        {
+          "num": 8,
+          "text": "Net sectional area of a tension member is equal to its gross section area",
+          "options": [
+            "Plus the area of the rivet holes",
+            "Divided by the area of the rivet holes",
+            "Multiplied by the area of the rivet holes",
+            "Minus the area of the rivet holes"
+          ],
+          "correct": 3,
+          "expl": "Net area is obtained by subtracting the area of rivet/bolt holes from the gross cross-sectional area."
+        },
+        {
+          "num": 9,
+          "text": "To the calculated area of cover plates of a built up beam, an allowance for rivet holes to be added is",
+          "options": [
+            "10%",
+            "13%",
+            "15%",
+            "18%"
+          ],
+          "correct": 0,
+          "expl": "A conventional allowance of about 10% extra area is added to cover plates of built-up beams to account for rivet holes."
+        },
+        {
+          "num": 10,
+          "text": "The maximum centre to centre distance between rivets in a tension member of thickness 10 mm is",
+          "options": [
+            "200 mm",
+            "160 mm",
+            "120 mm",
+            "100 mm"
+          ],
+          "correct": 1,
+          "expl": "Maximum pitch in tension members is limited to 16t = 16×10 = 160 mm."
+        },
+        {
+          "num": 11,
+          "text": "A riveted joint can fail in",
+          "options": [
+            "Tearing of plate only",
+            "Shearing of rivet only",
+            "Bearing of plate or rivet only",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "A riveted joint may fail by any of several modes: plate tearing, rivet shearing, or bearing failure of plate/rivet."
+        },
+        {
+          "num": 12,
+          "text": "The gross diameter of a 14 mm nominal diameter rivet is",
+          "options": [
+            "15.5 mm",
+            "16 mm",
+            "16.5 mm",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "For rivets up to 25 mm, gross diameter = nominal diameter + 1.5 mm = 14 + 1.5 = 15.5 mm."
+        },
+        {
+          "num": 13,
+          "text": "The strength of field rivets as compare to shop rivets is",
+          "options": [
+            "Same",
+            "90%",
+            "80%",
+            "75%"
+          ],
+          "correct": 3,
+          "expl": "Field-driven rivets are less reliably formed than shop rivets, so their strength is taken as only 75% of shop rivet strength."
+        },
+        {
+          "num": 14,
+          "text": "Bolts are most suitable to carry",
+          "options": [
+            "Shear",
+            "Bending",
+            "Axial tension",
+            "Shear and bending"
+          ],
+          "correct": 2,
+          "expl": "Ordinary bolts are best suited for carrying axial tension, as they can be easily tightened to develop clamping/tensile capacity."
+        },
+        {
+          "num": 15,
+          "text": "Minimum thickness of main steel members, not exposed to weather, is:",
+          "options": [
+            "4.5 mm",
+            "6.0 mm",
+            "8.0 mm",
+            "8.5 mm"
+          ],
+          "correct": 1,
+          "expl": "IS:800 specifies a minimum thickness of 6 mm for main steel members not directly exposed to weathering."
+        },
+        {
+          "num": 16,
+          "text": "The size of the rivet is expressed by the",
+          "options": [
+            "Length of shank",
+            "Diameter of shank",
+            "Type of head",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Rivet size is conventionally specified by the (nominal) diameter of its shank."
+        },
+        {
+          "num": 17,
+          "text": "Minimum pitch of rivets should not be less than how many times of gross diameter of rivet?",
+          "options": [
+            "2 times",
+            "2.5 times",
+            "3 times",
+            "4 times"
+          ],
+          "correct": 1,
+          "expl": "IS:800 specifies a minimum pitch of 2.5 times the gross diameter of the rivet."
+        },
+        {
+          "num": 18,
+          "text": "The gross diameter of rivet (hole) for a rivet with nominal diameter of 27 mm is",
+          "options": [
+            "28 mm",
+            "28.5 mm",
+            "29 mm",
+            "29.5 mm"
+          ],
+          "correct": 2,
+          "expl": "For rivets over 25 mm nominal diameter, gross diameter = nominal + 2 mm = 27 + 2 = 29 mm."
+        },
+        {
+          "num": 19,
+          "text": "The maximum permissible stress in shear for power driven shop rivet is",
+          "options": [
+            "80 N/mm²",
+            "90 N/mm²",
+            "100 N/mm²",
+            "250 N/mm²"
+          ],
+          "correct": 2,
+          "expl": "Under the working stress method, the permissible shear stress for power-driven shop rivets is 100 N/mm²."
+        },
+        {
+          "num": 20,
+          "text": "Diameter of a rivet hole should be greater than the nominal diameter of rivet by about",
+          "options": [
+            "4 to 5 mm",
+            "2.5 to 4 mm",
+            "1.5 to 2 mm",
+            "0 to 1.5 mm"
+          ],
+          "correct": 2,
+          "expl": "The rivet hole diameter is drilled about 1.5 to 2 mm larger than the nominal rivet diameter to allow driving clearance."
+        },
+        {
+          "num": 21,
+          "text": "According to IS specifications, the maximum pitch of rivets in compression is",
+          "options": [
+            "Lesser of 200 mm and 12t",
+            "Lesser of 200 mm and 16t",
+            "Lesser of 300 mm and 32t",
+            "Lesser of 300 mm and 24t"
+          ],
+          "correct": 0,
+          "expl": "In compression members, the maximum pitch is limited to the lesser of 200 mm or 12 times the thickness of the thinnest outside plate."
+        },
+        {
+          "num": 22,
+          "text": "When the bolts are subjected to reversal of stresses, the most suitable type of bolt is",
+          "options": [
+            "Black bolt",
+            "Ordinary unfinished bolt",
+            "Turned and fitted bolt",
+            "High strength bolt"
+          ],
+          "correct": 3,
+          "expl": "High strength friction grip (HSFG) bolts resist load reversal well since they rely on clamping friction rather than bearing/shear alone."
+        },
+        {
+          "num": 23,
+          "text": "If the thickness of a plate to be connected by a rivet is 16 mm, then suitable size of rivet as per Unwin's formula will be",
+          "options": [
+            "16 mm",
+            "20 mm",
+            "24 mm",
+            "27 mm"
+          ],
+          "correct": 3,
+          "expl": "Unwin's formula d = 6.04√t gives d = 6.04×√16 ≈ 24.2 mm, rounded to the next standard size of 27 mm."
+        },
+        {
+          "num": 24,
+          "text": "As compared to field rivets, shop rivets are",
+          "options": [
+            "Stronger",
+            "Weaker",
+            "Equally strong",
+            "Any of the above"
+          ],
+          "correct": 0,
+          "expl": "Shop rivets, driven under better controlled conditions, are stronger and more reliable than field-driven rivets."
+        },
+        {
+          "num": 25,
+          "text": "Bending compressive and tensile stresses respectively are calculated based on",
+          "options": [
+            "Net area and gross area",
+            "Gross area and net area",
+            "Net area in both the cases",
+            "Gross area in both cases"
+          ],
+          "correct": 1,
+          "expl": "Bending compressive stress is calculated on gross section, while bending tensile stress is calculated on net section (accounting for holes)."
+        },
+        {
+          "num": 26,
+          "text": "When two plates are placed end-to-end and are joined by two cover plates, the joint is known as",
+          "options": [
+            "Lap joint",
+            "Butt joint",
+            "Chain riveted lap joint",
+            "Double cover butt joint"
+          ],
+          "correct": 3,
+          "expl": "Two plates joined end-to-end using cover plates on both faces form a double-cover butt joint."
+        },
+        {
+          "num": 27,
+          "text": "The rivets subjected to unpredictable tension during the placement are",
+          "options": [
+            "Shop rivets",
+            "Field rivets",
+            "Hot rivets",
+            "Cold rivets"
+          ],
+          "correct": 2,
+          "expl": "Hot-driven rivets develop unpredictable clamping tension as they cool and contract after installation."
+        },
+        {
+          "num": 28,
+          "text": "Load on connection is not eccentric for",
+          "options": [
+            "Lap joint",
+            "Single-cover butt joint",
+            "Double-cover butt joint",
+            "Any of the joints mentioned above"
+          ],
+          "correct": 2,
+          "expl": "A double-cover butt joint is symmetric about the main plate, so the load path has no eccentricity."
+        },
+        {
+          "num": 29,
+          "text": "Two steel plates, each of 12 mm thickness, are connected by a double-cover butt joint by bolts. If the bolt diameter is 20 mm and steel is Fe410, which section is most critical for a cover plate?",
+          "options": [
+            "Section 1–1",
+            "Section 2–2",
+            "Section 3–3",
+            "Both sections 1–1 and 2–2"
+          ],
+          "correct": 0,
+          "expl": "For the given cover plate geometry, section 1–1 (passing through the first row of bolt holes) has the least net area and governs."
+        },
+        {
+          "num": 30,
+          "text": "If the diameter of a bolt is 20 mm then the maximum number of bolt(s) that can be accommodated in one row in a 140 mm wide flat is (are)",
+          "options": [
+            "2",
+            "3",
+            "6",
+            "1"
+          ],
+          "correct": 0,
+          "expl": "With minimum pitch/edge distance requirements for 20 mm bolts, only 2 bolts fit within a 140 mm wide flat in one row."
+        },
+        {
+          "num": 31,
+          "text": "If the same number of bolts has been used in the joints, then which of the following patterns will yield highest efficiency?",
+          "options": [
+            "Chain",
+            "Staggered",
+            "Diamond",
+            "Staggered diamond"
+          ],
+          "correct": 2,
+          "expl": "A diamond (staggered, tapered) bolt pattern minimizes the reduction in net section at any one cross-section, giving the highest efficiency."
+        },
+        {
+          "num": 32,
+          "text": "A high strength bolt may be used for",
+          "options": [
+            "Slip resistant connection",
+            "Bearing type connection",
+            "A shear connection only",
+            "Both (A) and (D)"
+          ],
+          "correct": 3,
+          "expl": "High strength bolts (HSFG) can be designed either as slip-resistant (friction) connections or as bearing-type connections."
+        },
+        {
+          "num": 33,
+          "text": "The shear strength of long bolted joints is reduced by accounting for",
+          "options": [
+            "1 and 2 are correct",
+            "Only 3 is correct",
+            "3 and 1 are correct",
+            "Only 1 is correct"
+          ],
+          "correct": 3,
+          "expl": "Long joint reduction accounts specifically for overloading of end bolts due to uneven load sharing along the joint length (statement 1)."
+        },
+        {
+          "num": 34,
+          "text": "The partial safety factor for the material of bolts is",
+          "options": [
+            "1.0",
+            "1.10",
+            "1.15",
+            "1.25"
+          ],
+          "correct": 3,
+          "expl": "IS:800 specifies the partial safety factor γmb for bolt material as 1.25."
+        },
+        {
+          "num": 35,
+          "text": "The shear strength of the bolt with threads intercepting the interface can be written as fs·An, where fs is given by",
+          "options": [
+            "fy/√3 × 1.25",
+            "fu/√3 × 1.25",
+            "fy/√3 × 1.10",
+            "fu/√3 × 1.10"
+          ],
+          "correct": 1,
+          "expl": "The nominal shear strength per unit area for such bolts is fu/√3 with the design factor 1.25 (relating to threaded shank area)."
+        },
+        {
+          "num": 36,
+          "text": "The nominal tensile capacity of the bolt is given by",
+          "options": [
+            "0.9 fub/γub × Anb",
+            "0.9 fub × Anb",
+            "2.5 kb·d·t·fu/γmb",
+            "2.5 kb·d·t·fu"
+          ],
+          "correct": 1,
+          "expl": "IS:800 gives the nominal tensile capacity of a bolt as Tnb = 0.9 fub Anb (before dividing by the partial safety factor for design capacity)."
+        },
+        {
+          "num": 37,
+          "text": "Prying forces are the additional",
+          "options": [
+            "Shearing forces on the bolts because of long joints",
+            "Bending forces on the bolts because of long joints",
+            "Tensile forces due to the flexibility of connected parts leading to deformations",
+            "Forces due to friction between the connected parts"
+          ],
+          "correct": 2,
+          "expl": "Prying action induces extra tensile force in bolts due to flexing/deformation of the connected flange or plate under load."
+        },
+        {
+          "num": 38,
+          "text": "The tensile strength of the plate is given by",
+          "options": [
+            "0.9 fu·An",
+            "0.9 fu·An/γm1",
+            "0.9 fy·An/γm1",
+            "0.9 fu·An/γm0"
+          ],
+          "correct": 1,
+          "expl": "The design tensile (rupture) strength of the net section is 0.9 fu An divided by the partial safety factor γm1."
+        },
+        {
+          "num": 39,
+          "text": "The interaction equation for checking the bolts for combined shear and tension is",
+          "options": [
+            "Vb/Vdb + Tb/Tdb ≤ 1",
+            "Vb/Vdb + Tb/Tdb ≤ 1.4",
+            "(Vb/Vdb)² + (Tb/Tdb)² ≤ 1",
+            "(Vb/Vdb)² + (Tb/Tdb)² ≤ 1.4"
+          ],
+          "correct": 2,
+          "expl": "IS:800 uses a quadratic (elliptical) interaction formula: (Vsb/Vdb)² + (Tb/Tdb)² ≤ 1 for combined shear and tension in bolts."
+        },
+        {
+          "num": 40,
+          "text": "Proof stress for minimum bolt tension is given by",
+          "options": [
+            "0.5 fub",
+            "0.6 fub",
+            "0.7 fub",
+            "0.8 fub"
+          ],
+          "correct": 2,
+          "expl": "The minimum bolt pretension for HSFG bolts is specified as 0.70 times the ultimate tensile strength of the bolt material."
+        },
+        {
+          "num": 41,
+          "text": "Design of pins is primarily governed by",
+          "options": [
+            "Shear",
+            "Bearing",
+            "Flexure",
+            "All of them"
+          ],
+          "correct": 2,
+          "expl": "Pin connections are primarily designed for flexural (bending) stresses, since the pin spans between bearing surfaces like a small beam."
+        }
+      ]
+    },
+    {
+      "name": "Steel (General & Material Properties)",
+      "questions": [
+        {
+          "num": 1,
+          "text": "ISHB stands for",
+          "options": [
+            "India Standard High Beam",
+            "India Standard Hollow Beam",
+            "India Standard Heavy Beam",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "ISHB denotes the Indian Standard Heavy (wide-flange) Beam series of rolled sections."
+        },
+        {
+          "num": 2,
+          "text": "Steel of yield strength 400 MPa has been used in a structure. What is the value of the maximum allowable strength?",
+          "options": [
+            "240 MPa",
+            "200 MPa",
+            "120 MPa",
+            "96 MPa"
+          ],
+          "correct": 0,
+          "expl": "Under WSM, permissible stress is typically taken as 0.6 fy = 0.6×400 = 240 MPa."
+        },
+        {
+          "num": 3,
+          "text": "Steel structures are ideally suitable for impact loads because they have high:",
+          "options": [
+            "Toughness value",
+            "Elastic modulus",
+            "Design stress",
+            "Plastic modulus"
+          ],
+          "correct": 0,
+          "expl": "Structural steel has high toughness (ability to absorb energy before fracture), making it well suited to resist impact loading."
+        },
+        {
+          "num": 4,
+          "text": "According to IS:800-1962 the permissible bending stress in steel slab plates is",
+          "options": [
+            "1500 kg/cm²",
+            "1420 kg/cm²",
+            "2125 kg/cm²",
+            "1890 kg/cm²"
+          ],
+          "correct": 3,
+          "expl": "IS:800-1962 (WSM) specified a permissible bending stress of 1890 kg/cm² for steel slab base plates."
+        },
+        {
+          "num": 5,
+          "text": "The method of design of steel framework for greatest rigidity and economy in weight is known as",
+          "options": [
+            "Simple design",
+            "Semi-rigid design",
+            "Fully rigid design",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Fully rigid design, which maintains full moment continuity at joints, gives the greatest rigidity and can lead to economy in weight."
+        },
+        {
+          "num": 6,
+          "text": "The stress at which a material fractures under large number of reversals of stress is called",
+          "options": [
+            "Endurance limit",
+            "Creep",
+            "Ultimate strength",
+            "Residual stress"
+          ],
+          "correct": 0,
+          "expl": "The endurance (fatigue) limit is the stress level below which a material can withstand an infinite number of stress reversals without fracture."
+        },
+        {
+          "num": 7,
+          "text": "Match List 1 (Type of stress) with List 2 (Allowable value): (i) Axial tension (ii) Bending tension (iii) Max shear stress (iv) Bearing stress",
+          "options": [
+            "2,3,1,4",
+            "3,2,4,1",
+            "2,3,4,1",
+            "3,2,1,4"
+          ],
+          "correct": 1,
+          "expl": "Axial tension = 0.6fy(3), Bending tension = 0.66fy(2), Max shear = 0.4fy(4), Bearing = 0.75fy(1), matching option B."
+        },
+        {
+          "num": 8,
+          "text": "Load factor is defined as",
+          "options": [
+            "ultimate load/yield load",
+            "yield load/ultimate load",
+            "ultimate load/working load",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Load factor is the ratio of the ultimate (collapse) load capacity of a structure to its actual working load."
+        },
+        {
+          "num": 9,
+          "text": "The heaviest I-section for same depth is",
+          "options": [
+            "ISMB",
+            "ISLB",
+            "ISHB",
+            "ISWB"
+          ],
+          "correct": 2,
+          "expl": "For a given depth, ISHB (Heavy Beam) sections have the thickest flanges/webs, making them the heaviest among standard I-sections."
+        },
+        {
+          "num": 10,
+          "text": "Weight of steel per cubic metre is taken to be",
+          "options": [
+            "7900 kg",
+            "3000 kg",
+            "1200 kg",
+            "8000 kg"
+          ],
+          "correct": 0,
+          "expl": "The unit weight of structural steel is conventionally taken as about 7850–7900 kg/m³."
+        },
+        {
+          "num": 11,
+          "text": "The material cost of steel structures is usually about ____ of the total cost of the structure.",
+          "options": [
+            "80%",
+            "60%",
+            "50%",
+            "30%"
+          ],
+          "correct": 3,
+          "expl": "Material cost of steel typically forms about 30% of total steel structure cost, the rest being fabrication, erection and other costs."
+        },
+        {
+          "num": 12,
+          "text": "The life period of a steel commercial building is",
+          "options": [
+            "10 years",
+            "20 years",
+            "50 years",
+            "100 years"
+          ],
+          "correct": 2,
+          "expl": "Design life of a typical commercial steel building is conventionally taken as around 50 years."
+        },
+        {
+          "num": 13,
+          "text": "IS:800–2007 limits the values of width-to-thickness ratios of the elements of a steel section to place a check on",
+          "options": [
+            "Bending buckling",
+            "Torsional buckling",
+            "Flexural-torsional buckling",
+            "Local buckling"
+          ],
+          "correct": 3,
+          "expl": "Width-to-thickness (b/t) ratio limits in IS:800:2007 classify sections and prevent premature local buckling of plate elements."
+        },
+        {
+          "num": 14,
+          "text": "For a combination of dead load and earthquake load, the partial safety factors for limit state of strength are respectively",
+          "options": [
+            "1.5, 1",
+            "1.2, 1",
+            "1.2, 1.2",
+            "1, 1.2"
+          ],
+          "correct": 2,
+          "expl": "For the DL + EL load combination, IS:800 assigns partial safety factors of 1.2 for both dead load and earthquake load."
+        },
+        {
+          "num": 15,
+          "text": "For checking the deflection of beams, the partial safety factors for dead load and live load would be",
+          "options": [
+            "1, 1",
+            "1, 0.8",
+            "1, 1.2",
+            "1.2, 1.5"
+          ],
+          "correct": 0,
+          "expl": "Serviceability (deflection) checks use unfactored (partial safety factor = 1) loads for both dead and live load."
+        },
+        {
+          "num": 16,
+          "text": "The partial safety factor for materials governed by buckling is",
+          "options": [
+            "1.0",
+            "1.10",
+            "1.15",
+            "1.25"
+          ],
+          "correct": 1,
+          "expl": "IS:800 specifies γm0 = 1.10 as the partial safety factor for buckling failure of structural steel members."
+        },
+        {
+          "num": 17,
+          "text": "Which of the following is not into a serviceability criteria?",
+          "options": [
+            "Deflection",
+            "Ponding",
+            "Vibration",
+            "Fatigue"
+          ],
+          "correct": 3,
+          "expl": "Fatigue is a strength (ultimate) limit state concern, not a serviceability criterion like deflection, ponding, or vibration."
+        },
+        {
+          "num": 18,
+          "text": "Which of the following is not a limit state of strength?",
+          "options": [
+            "Fracture due to fatigue",
+            "Brittle fracture",
+            "Rupture of the structure",
+            "Vibrations in structures"
+          ],
+          "correct": 3,
+          "expl": "Vibration is a serviceability limit state, not a strength limit state like fatigue fracture, brittle fracture, or rupture."
+        },
+        {
+          "num": 19,
+          "text": "Upper yield point in the stress-strain curve in structural steel can be avoided by",
+          "options": [
+            "Cold working",
+            "Hot working",
+            "Quenching",
+            "Galvanizing"
+          ],
+          "correct": 0,
+          "expl": "Cold working of steel removes the distinct upper yield point observed in the stress-strain curve of as-rolled (hot-worked) steel."
+        }
+      ]
+    },
+    {
+      "name": "Tension Members",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The permissible tensile stress in a steel member is given by",
+          "options": [
+            "0.5 fy",
+            "0.6 fy",
+            "0.7 fy",
+            "0.66 fy"
+          ],
+          "correct": 1,
+          "expl": "Under the Working Stress Method, permissible axial tensile stress is conventionally taken as 0.6fy."
+        },
+        {
+          "num": 2,
+          "text": "A tension member, if subjected to possible reversal of stress due to wind, the slenderness ratio of the member should not exceed",
+          "options": [
+            "180",
+            "200",
+            "250",
+            "350"
+          ],
+          "correct": 3,
+          "expl": "Tension members subject to stress reversal from wind/seismic action are limited to a maximum slenderness ratio of 350."
+        },
+        {
+          "num": 3,
+          "text": "According to IS:800–1984, the permissible stress in axial tension in steel is [fy = minimum yield stress]",
+          "options": [
+            "0.56 fy",
+            "0.66 fy",
+            "0.70 fy",
+            "0.6 fy"
+          ],
+          "correct": 3,
+          "expl": "IS:800-1984 (WSM) specifies the permissible axial tensile stress as 0.6 times the yield stress."
+        },
+        {
+          "num": 4,
+          "text": "When the secondary stresses are taken into account along with primary stresses then the allowable stress is increased by",
+          "options": [
+            "16⅔%",
+            "25%",
+            "33⅓%",
+            "50%"
+          ],
+          "correct": 2,
+          "expl": "IS:800 permits a 33⅓% increase in allowable stress when secondary stresses are combined with primary stresses."
+        },
+        {
+          "num": 5,
+          "text": "In a tension member, when one or more than one rivet hole is off the line, then the failure of the plate depends upon",
+          "options": [
+            "Diameter of rivet hole",
+            "Pitch of rivets",
+            "Gauge of rivets",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "For a staggered (zig-zag) failure path, the net section depends on hole diameter, pitch, and gauge — all these factors together."
+        },
+        {
+          "num": 6,
+          "text": "The net sectional area of a tension member is equal to",
+          "options": [
+            "Gross sectional area minus the maximum deduction for rivet holes",
+            "Gross sectional area plus maximum deduction for rivet holes",
+            "Two times the gross sectional area",
+            "Gross sectional area"
+          ],
+          "correct": 0,
+          "expl": "Net area is the gross area reduced by subtracting the maximum area lost to rivet/bolt holes along the critical failure path."
+        },
+        {
+          "num": 7,
+          "text": "A structural member subjected to tensile force in the direction parallel to its longitudinal axis is called",
+          "options": [
+            "A tension member or a tie",
+            "Strut",
+            "Stanchion",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A member carrying axial tension along its longitudinal axis is termed a tension member or tie."
+        },
+        {
+          "num": 8,
+          "text": "In a structure generally wires and cables are used as",
+          "options": [
+            "Compression member",
+            "Tension member",
+            "Compression or tension",
+            "To resist shear stresses only"
+          ],
+          "correct": 1,
+          "expl": "Wires and cables have negligible flexural or compressive stiffness and can only usefully carry tensile forces."
+        },
+        {
+          "num": 9,
+          "text": "Ties are load carrying members of a frame which are subjected to",
+          "options": [
+            "Transverse loads",
+            "Axial tension loads",
+            "Axial compressive loads",
+            "Torsional loads"
+          ],
+          "correct": 1,
+          "expl": "A tie, by definition, is a member designed to carry purely axial tensile load."
+        },
+        {
+          "num": 10,
+          "text": "The net effective cross sectional area calculated in the steel angle tension member design, accounts for",
+          "options": [
+            "The tensile force and bolts holes",
+            "The eccentricity of the end connections and the bolt holes",
+            "The effectiveness of the tack connection along the length",
+            "The effectiveness of the end connection"
+          ],
+          "correct": 1,
+          "expl": "The effective net area formula for angle sections accounts for both the eccentricity of end connections and the deduction for bolt holes."
+        },
+        {
+          "num": 11,
+          "text": "A steel plate is 30 cm wide and 10 mm thick. A rivet of nominal diameter 18 mm is driven. The net sectional area of the plate is",
+          "options": [
+            "18.00 cm²",
+            "28.20 cm²",
+            "28.05 cm²",
+            "32.42 cm²"
+          ],
+          "correct": 2,
+          "expl": "Gross diameter = 18+1.5=19.5mm; Net area = (300−19.5)×10 = 2805 mm² = 28.05 cm²."
+        },
+        {
+          "num": 12,
+          "text": "The best tension member section will be a",
+          "options": [
+            "Bolted single-angle section",
+            "Welded single-angle section",
+            "Double-angle section on opposite side of gusset plate",
+            "Channel section"
+          ],
+          "correct": 2,
+          "expl": "A double-angle section placed symmetrically on opposite sides of a gusset plate avoids eccentricity, making it the most efficient tension member."
+        },
+        {
+          "num": 13,
+          "text": "What is the effective net width of the plate for carrying tension? (Holes dia 25mm; plate 300mm wide; edge offsets 50 & 100mm; gauge 40 & 50mm)",
+          "options": [
+            "212.5 mm",
+            "237.5 mm",
+            "225 mm",
+            "275 mm"
+          ],
+          "correct": 1,
+          "expl": "The effective net width is obtained by deducting hole diameters and adding staggered pitch corrections (p²/4g terms) per IS:800, giving 237.5 mm here."
+        },
+        {
+          "num": 14,
+          "text": "A tension member splice is designed for",
+          "options": [
+            "0.5 times the member design capacity",
+            "Maximum of factored tensile force or 0.3 times the design strength of the member",
+            "Service load",
+            "Maximum of compressive or tensile force in the member"
+          ],
+          "correct": 1,
+          "expl": "IS:800 requires splices to be designed for the greater of the actual factored force or a minimum of 0.3 times the member's design strength."
+        },
+        {
+          "num": 15,
+          "text": "In case of angle section lug angles, their attachment to the member should be capable of developing x% in excess of the force in outstanding leg of the angle, where x is",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ],
+          "correct": 3,
+          "expl": "Lug angle connections must be designed to develop 40% in excess of the force carried by the outstanding leg."
+        },
+        {
+          "num": 16,
+          "text": "The unstiffened top edge of a gusset plate (fy = 250 MPa) should be limited to",
+          "options": [
+            "12t",
+            "16t",
+            "20t",
+            "42t"
+          ],
+          "correct": 3,
+          "expl": "For fy = 250 MPa, IS:800 limits the unstiffened free edge of a gusset plate to 42 times its thickness."
+        },
+        {
+          "num": 17,
+          "text": "A gusset plate is subjected to",
+          "options": [
+            "Direct stress",
+            "Shear stress",
+            "Bending stress",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "A gusset plate transferring forces between multiple members experiences a combination of direct, shear and bending stresses."
+        },
+        {
+          "num": 18,
+          "text": "The design tensile strength of a member due to yielding of gross section Tdg is given by",
+          "options": [
+            "Ag fu/γm1",
+            "Ag fy/γm1",
+            "Ag fu/γm0",
+            "Ag fy/γm0"
+          ],
+          "correct": 3,
+          "expl": "Design strength governed by yielding of the gross section is Tdg = Ag fy / γm0."
+        },
+        {
+          "num": 19,
+          "text": "The design tensile strength of a plate due to rupture of critical section is given by",
+          "options": [
+            "0.8 An fu/γm1",
+            "0.9 An fu/γm1",
+            "0.8 An fy/γm0",
+            "0.9 An fy/γm0"
+          ],
+          "correct": 1,
+          "expl": "Design strength governed by rupture of the net section is Tdn = 0.9 An fu / γm1."
+        }
+      ]
+    },
+    {
+      "name": "Welded Connections",
+      "questions": [
+        {
+          "num": 1,
+          "text": "A fillet weld is known as standard fillet weld if the cross section of the fillet weld is triangle of the angle of",
+          "options": [
+            "45°",
+            "60°",
+            "30°",
+            "75°"
+          ],
+          "correct": 0,
+          "expl": "A standard fillet weld has a cross-section forming a right-angled isosceles triangle, i.e., 45° angle on each leg."
+        },
+        {
+          "num": 2,
+          "text": "A butt weld is specified by",
+          "options": [
+            "Effective throat thickness",
+            "Plate thickness",
+            "Size of weld",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Butt welds are specified in terms of their effective throat thickness, unlike fillet welds specified by leg size."
+        },
+        {
+          "num": 3,
+          "text": "Which of the following does not describe a weld type?",
+          "options": [
+            "Butt weld",
+            "Plug weld",
+            "Zigzag weld",
+            "Lap weld"
+          ],
+          "correct": 2,
+          "expl": "'Zigzag weld' is not a standard weld type classification (butt, plug, fillet, lap/slot are standard types)."
+        },
+        {
+          "num": 4,
+          "text": "A plate used for connecting two or more structural members intersecting each other is called",
+          "options": [
+            "Template",
+            "Base plate",
+            "Gusset plate",
+            "Anchor plate"
+          ],
+          "correct": 2,
+          "expl": "A gusset plate is used to connect two or more intersecting structural members at a joint."
+        },
+        {
+          "num": 5,
+          "text": "The effective length of a fillet weld of length ℓ is",
+          "options": [
+            "L − 4s",
+            "(2/3) ℓ",
+            "L − 2s",
+            "(4/5) ℓ"
+          ],
+          "correct": 2,
+          "expl": "The effective length of a fillet weld deducts twice the weld size from its overall length: L − 2s."
+        },
+        {
+          "num": 6,
+          "text": "Welded connections are preferred to riveted connection because",
+          "options": [
+            "They are economical",
+            "Of the ease of connection",
+            "The loss of member strength is smaller",
+            "They reduce the secondary stresses"
+          ],
+          "correct": 0,
+          "expl": "Welded connections generally reduce material and labor requirements compared to riveting, making them more economical."
+        },
+        {
+          "num": 7,
+          "text": "As compared to riveting, welding is preferred these days because",
+          "options": [
+            "It is a silent process",
+            "It is more economical",
+            "It has more efficiency",
+            "All the above are correct"
+          ],
+          "correct": 3,
+          "expl": "Welding is preferred over riveting for being quieter, more economical, and achieving higher joint efficiency — all correct."
+        },
+        {
+          "num": 8,
+          "text": "The effective length of the fillet weld is",
+          "options": [
+            "Total length −2× throat size",
+            "Total length −2× weld size",
+            "0.7× total length",
+            "Total length − weld size/√2"
+          ],
+          "correct": 1,
+          "expl": "Effective length of a fillet weld equals its overall (total) length minus twice the weld (leg) size."
+        },
+        {
+          "num": 9,
+          "text": "The actual thickness of butt weld as compared to thickness of plate is usually",
+          "options": [
+            "More",
+            "Less",
+            "Equal",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Butt welds are usually built up slightly thicker than the plate (with reinforcement) to ensure full strength development."
+        },
+        {
+          "num": 10,
+          "text": "For a standard 45° fillet, the ratio of size of fillet to throat thickness is",
+          "options": [
+            "1:1",
+            "1:√2",
+            "√2:1",
+            "2:1"
+          ],
+          "correct": 2,
+          "expl": "For a standard 45° fillet weld, throat thickness = 0.707×size, so the ratio of size to throat is √2:1."
+        },
+        {
+          "num": 11,
+          "text": "The effective length of a fillet weld should not be less than",
+          "options": [
+            "Two times the weld size",
+            "Four times the weld size",
+            "Six times the weld size",
+            "Weld size"
+          ],
+          "correct": 2,
+          "expl": "IS:800 requires the effective length of a fillet weld to be at least 4 times its size, per some codal statements minimum length is taken as 6 times the weld size for effectiveness in this reference."
+        },
+        {
+          "num": 12,
+          "text": "In the cross-section of a weld, the throat is the",
+          "options": [
+            "Minimum dimension",
+            "Average dimension",
+            "Maximum dimension",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The throat thickness of a fillet weld is its minimum (critical) dimension, used to determine its design strength."
+        },
+        {
+          "num": 13,
+          "text": "Which one of the following is the mode of failure in a fillet weld material?",
+          "options": [
+            "Tension",
+            "Shear",
+            "Bearing crushing",
+            "Crushing"
+          ],
+          "correct": 1,
+          "expl": "Fillet weld material is assumed to fail in shear across its throat section under design loads."
+        },
+        {
+          "num": 14,
+          "text": "For two plates of equal thickness, full strength of fillet weld can be ensured if its maximum size, for square edge, is limited to",
+          "options": [
+            "1.5 mm less than the thickness",
+            "75% of the thickness",
+            "80% of the thickness",
+            "Thickness of the plate"
+          ],
+          "correct": 0,
+          "expl": "For a square-edged plate, the maximum fillet weld size is limited to 1.5 mm less than the plate thickness to avoid edge melt-through."
+        },
+        {
+          "num": 15,
+          "text": "Spot welding is used when two plates are placed",
+          "options": [
+            "One below the other",
+            "One butting against the other",
+            "One next to other",
+            "At right angles to each other"
+          ],
+          "correct": 0,
+          "expl": "Spot welding joins two overlapping plates placed one on top of the other by fusing them at discrete spot locations."
+        },
+        {
+          "num": 16,
+          "text": "The design nominal strength of a fillet weld is",
+          "options": [
+            "fu",
+            "fu/√3",
+            "fy",
+            "fu/(√3 γmw)"
+          ],
+          "correct": 1,
+          "expl": "The nominal shear strength of fillet weld metal is taken as fu/√3, based on the ultimate strength of the weaker connected part."
+        },
+        {
+          "num": 17,
+          "text": "The design capacity of a weld is reduced when the length of welded joint is greater than",
+          "options": [
+            "16t",
+            "100t",
+            "150t",
+            "200t"
+          ],
+          "correct": 2,
+          "expl": "IS:800 requires a reduction in design strength for long welded lap joints when the joint length exceeds 150 times the weld throat thickness."
+        },
+        {
+          "num": 18,
+          "text": "The imperfection factor for welded steel sections is",
+          "options": [
+            "0.21",
+            "0.35",
+            "0.42",
+            "0.49"
+          ],
+          "correct": 3,
+          "expl": "IS:800 assigns a higher imperfection factor (α = 0.49, buckling curve 'c' or 'd') to welded built-up sections due to residual stresses."
+        }
+      ]
+    }
+  ]
+}

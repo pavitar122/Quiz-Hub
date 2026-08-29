@@ -1,0 +1,2658 @@
+{
+  "id": "rcc-complete",
+  "title": "Reinforced Cement Concrete",
+  "description": "All RCC practice questions, covering Beams, Columns, IS Code Provisions, Methods of RCC Design, Prestress & Footings, Shear/Bond/Torsion, and Slabs as per IS 456:2000 and IS 1343.",
+  "subcats": [
+    {
+      "name": "Beams",
+      "questions": [
+        {
+          "num": 1,
+          "text": "What is the Limiting Value of neutral axis depth ratio (Xu,max/d) for Fe-415 HYSD Steel Bars?",
+          "options": [
+            "0.53",
+            "0.48",
+            "0.46",
+            "0.43"
+          ],
+          "correct": 1,
+          "expl": "IS 456 Table gives xu,max/d = 0.53 for Fe250, 0.48 for Fe415 and 0.46 for Fe500."
+        },
+        {
+          "num": 2,
+          "text": "What is the required minimum area of tension reinforcement in beams as per IS 456-2000?",
+          "options": [
+            "0.85bd/fy",
+            "0.65bd/fy",
+            "0.80bd/fy",
+            "0.95bd/fy"
+          ],
+          "correct": 0,
+          "expl": "Clause 26.5.1.1 of IS 456 specifies minimum tension reinforcement As/bd = 0.85/fy."
+        },
+        {
+          "num": 3,
+          "text": "In a cantilever beam, main reinforcement is provided:",
+          "options": [
+            "Above the neutral axis",
+            "As vertical stirrups",
+            "As helical reinforcement",
+            "Below the neutral axis"
+          ],
+          "correct": 0,
+          "expl": "A cantilever has hogging moment, so tension occurs at the top fibre and main steel is placed above the neutral axis."
+        },
+        {
+          "num": 4,
+          "text": "A simply supported beam is considered as a deep beam if the ratio of effective span to overall depth is less than:",
+          "options": [
+            "1",
+            "4",
+            "3",
+            "2"
+          ],
+          "correct": 3,
+          "expl": "As per IS 456, a simply supported beam is 'deep' when effective span/overall depth < 2."
+        },
+        {
+          "num": 5,
+          "text": "In a singly reinforced beam, the effective depth is measured from its extreme compression edge to",
+          "options": [
+            "Tensile edge",
+            "Tensile reinforcement",
+            "Neutral axis of the beam",
+            "Longitudinal central axis"
+          ],
+          "correct": 1,
+          "expl": "Effective depth is the distance from the compression face to the centroid of the tension reinforcement."
+        },
+        {
+          "num": 6,
+          "text": "The final deflection due to all loads including the effects of temperature, creep and shrinkage, measured from the as-cast level, should not exceed",
+          "options": [
+            "Span/350",
+            "Span/300",
+            "Span/250",
+            "Span/200"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 23.2 limits the final deflection under all loads to span/250."
+        },
+        {
+          "num": 7,
+          "text": "The assumption that plane sections normal to the axis before bending remain plane after bending is used",
+          "options": [
+            "Only in working stress method",
+            "Only in limit state method",
+            "In both working stress and limit state methods",
+            "Only in ultimate load method"
+          ],
+          "correct": 2,
+          "expl": "The plane-section (Bernoulli) assumption underlies both the working stress and limit state methods of flexural design."
+        },
+        {
+          "num": 8,
+          "text": "Doubly reinforced beam is provided when",
+          "options": [
+            "Depth is restricted",
+            "B.M is very low",
+            "Superimposed load is small",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Compression steel is added when the depth of the section is architecturally restricted and singly-reinforced capacity is inadequate."
+        },
+        {
+          "num": 9,
+          "text": "In balanced section beam the moment of resistance of concrete is given by",
+          "options": [
+            "Qb2d",
+            "Qbd",
+            "Qbd2",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "For a balanced section, Mu (concrete) = Q·b·d², where Q is the moment of resistance factor."
+        },
+        {
+          "num": 10,
+          "text": "In over reinforced section area of tensile steel provided is ______ the Area of steel provided in balanced section.",
+          "options": [
+            "More than",
+            "Less than",
+            "Equal",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Over-reinforced sections have more tension steel than the balanced amount, so concrete fails first."
+        },
+        {
+          "num": 11,
+          "text": "Minimum percentage of tension steel in an RCC beam for Fe 500 steel is",
+          "options": [
+            "0.12",
+            "0.17",
+            "0.22",
+            "0.80"
+          ],
+          "correct": 1,
+          "expl": "Min steel % = 85/fy = 85/500 = 0.17%."
+        },
+        {
+          "num": 12,
+          "text": "As per IS 456, the effective length of cantilever shall be taken as",
+          "options": [
+            "Clear span",
+            "Clear span + effective depth/2",
+            "Clear span + effective depth",
+            "Clear span + effective width"
+          ],
+          "correct": 1,
+          "expl": "For a cantilever, effective length = clear span + d/2 as per IS 456 Clause 22.2."
+        },
+        {
+          "num": 13,
+          "text": "In a singly reinforced beam, if the permissible stress in concrete reaches earlier than the permissible stress in steel, the beam section is called",
+          "options": [
+            "Under reinforced section",
+            "Over reinforced section",
+            "Balanced section",
+            "Economic section"
+          ],
+          "correct": 1,
+          "expl": "Concrete reaching its limit first (before steel) indicates excess tension steel — an over-reinforced section."
+        },
+        {
+          "num": 14,
+          "text": "Side face reinforcement shall be provided in the RC beam when depth of web exceeds",
+          "options": [
+            "500mm",
+            "750mm",
+            "1000mm",
+            "1200mm"
+          ],
+          "correct": 1,
+          "expl": "IS 456 Clause 26.5.1.3 requires side face reinforcement when the web/overall depth exceeds 750 mm."
+        },
+        {
+          "num": 15,
+          "text": "The maximum percentage of steel in a RCC beam is",
+          "options": [
+            "1%",
+            "2%",
+            "3%",
+            "4%"
+          ],
+          "correct": 3,
+          "expl": "IS 456 limits maximum tension (and compression) reinforcement in beams to 4% of the gross cross-sectional area."
+        },
+        {
+          "num": 16,
+          "text": "The maximum shear stress in a rectangular beam is",
+          "options": [
+            "1.25 times the average",
+            "1.50 times the average",
+            "1.75 times the average",
+            "2.0 times the average"
+          ],
+          "correct": 1,
+          "expl": "For a parabolic shear distribution in a rectangular section, max shear stress = 1.5 × average shear stress."
+        },
+        {
+          "num": 17,
+          "text": "The effective depth of R.C.C beam is taken from topmost compressive fiber to the",
+          "options": [
+            "Top of the tensile steel reinforcement",
+            "Bottom of the tensile steel reinforcement",
+            "Center of gravity of the tensile steel",
+            "Bottom of the beam"
+          ],
+          "correct": 2,
+          "expl": "Effective depth is measured to the centroid (c.g.) of the tension reinforcement."
+        },
+        {
+          "num": 18,
+          "text": "If d and n are the effective depth and depth of the neutral axis of a singly reinforced beam, the lever arm of the beam is",
+          "options": [
+            "d",
+            "n",
+            "d + n/3",
+            "d − n/3"
+          ],
+          "correct": 3,
+          "expl": "Lever arm = d − (n/3), the distance between the resultant compressive and tensile forces."
+        },
+        {
+          "num": 19,
+          "text": "In a T beam the ratio of span to overall depth should not exceed",
+          "options": [
+            "10",
+            "12",
+            "18",
+            "20"
+          ],
+          "correct": 3,
+          "expl": "For deflection control, the span/overall-depth ratio for a T-beam should not exceed about 20."
+        },
+        {
+          "num": 20,
+          "text": "If the depth of actual neutral axis is more than critical neutral axis, section is",
+          "options": [
+            "Balanced",
+            "Under-reinforced",
+            "Over-reinforced",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Actual NA depth greater than the critical (balanced) NA depth means excess tension steel — over-reinforced section."
+        },
+        {
+          "num": 21,
+          "text": "The maximum strain in concrete at the outer most fiber is",
+          "options": [
+            "0.002",
+            "0.003",
+            "0.0035",
+            "0.0025"
+          ],
+          "correct": 2,
+          "expl": "IS 456 assumes the maximum compressive strain in concrete at the outermost fibre in bending as 0.0035."
+        },
+        {
+          "num": 22,
+          "text": "Overall depth of the beam is obtained by adding effective depth and",
+          "options": [
+            "Clear cover",
+            "Minimum cover",
+            "Effective cover",
+            "Nominal cover"
+          ],
+          "correct": 2,
+          "expl": "Overall depth D = effective depth d + effective cover (cover to centre of bar)."
+        },
+        {
+          "num": 23,
+          "text": "The maximum amount of compression reinforcement in doubly reinforced beam is",
+          "options": [
+            "0.05bD",
+            "0.06bD",
+            "0.03bD",
+            "0.04bD"
+          ],
+          "correct": 3,
+          "expl": "IS 456 limits compression reinforcement in beams to a maximum of 4% (0.04bD) of the gross area."
+        },
+        {
+          "num": 24,
+          "text": "A doubly reinforced beam is considered less economical compared to a singly reinforced beam because",
+          "options": [
+            "The size of the section is small",
+            "The depth of the section is small",
+            "Concrete is not stressed to its full value",
+            "Tensile stress is under stressed"
+          ],
+          "correct": 2,
+          "expl": "In doubly reinforced sections, added compression steel means the concrete is not utilised to its full compressive capacity, making it less economical."
+        },
+        {
+          "num": 25,
+          "text": "For a reinforced concrete section, the shape of a shear stress diagram is",
+          "options": [
+            "Wholly rectangular",
+            "Wholly parabolic",
+            "Rectangular above N.A. and parabolic below N.A.",
+            "Parabolic above N.A. and rectangular below N.A."
+          ],
+          "correct": 3,
+          "expl": "For a flanged (T) section, shear stress varies parabolically in the flange region above the NA and is roughly uniform in the web below."
+        },
+        {
+          "num": 26,
+          "text": "The maximum reinforcement in RCC slab consists of 10mm bars at 100mm c/c spacing. If it is desired to replace 10mm bars with 12mm bars then spacing of 12mm bars should be",
+          "options": [
+            "112mm",
+            "128mm",
+            "144mm",
+            "160mm"
+          ],
+          "correct": 2,
+          "expl": "Equal area: spacing = (Area of 12mm/Area of 10mm) × 100 = (113/78.5) × 100 ≈ 144 mm."
+        },
+        {
+          "num": 27,
+          "text": "As per IS: 456-2000 a continuous beam is said to be deep if effective span to overall depth is less than",
+          "options": [
+            "1.5",
+            "2.0",
+            "2.5",
+            "3.0"
+          ],
+          "correct": 2,
+          "expl": "For a continuous beam, IS 456 defines it as 'deep' when effective span/overall depth < 2.5."
+        },
+        {
+          "num": 28,
+          "text": "A floor slab of thickness t is cast monolithically transverse to a rectangular continuous beam of span L and width B. If L0 is the distance between consecutive points of contraflexure, the effective width of compression flange at a continuous support is",
+          "options": [
+            "B",
+            "L/3",
+            "B + 12t",
+            "B + 6t + L0/6"
+          ],
+          "correct": 3,
+          "expl": "IS 456 Clause 23.1.2 gives the effective flange width at a continuous support as bw + 6Df + L0/6."
+        },
+        {
+          "num": 29,
+          "text": "The span to depth ratio limit specified in IS 456:1978 for RC beams ensures that",
+          "options": [
+            "tensile crack width is below a limit",
+            "shear failure is avoided",
+            "stress in tension reinforcement is less than allowable",
+            "deflection of the beam is below a limiting value"
+          ],
+          "correct": 3,
+          "expl": "Span/depth ratio limits are an indirect (deemed-to-satisfy) method of controlling deflection."
+        },
+        {
+          "num": 30,
+          "text": "The effective width of an RC T-beam flange under compression as per IS 456:2000, with l0 the distance between zero moment points, b the rib width and D the flange thickness, is",
+          "options": [
+            "l0/6 + B + 6D",
+            "l0 + 6D",
+            "l0/6 + 6D",
+            "l0/6 + b"
+          ],
+          "correct": 0,
+          "expl": "IS 456 gives effective flange width bf = l0/6 + bw + 6Df for a T-beam."
+        },
+        {
+          "num": 31,
+          "text": "In the limit state design method, the recommended partial material safety factor (γm) for steel as per IS 456:2000 is",
+          "options": [
+            "1.5",
+            "1.15",
+            "1.00",
+            "0.87"
+          ],
+          "correct": 1,
+          "expl": "IS 456 Clause 36.4.2.1 specifies γm = 1.15 for steel."
+        },
+        {
+          "num": 32,
+          "text": "The partial factor of safety for concrete as per IS 456:2000 is",
+          "options": [
+            "1.50",
+            "1.15",
+            "0.87",
+            "0.446"
+          ],
+          "correct": 0,
+          "expl": "IS 456 specifies γm = 1.5 for concrete in limit state design."
+        },
+        {
+          "num": 33,
+          "text": "If fck (characteristic strength) is the strength below which not more than 50% of test results are expected to fall, fck in terms of mean strength fm and standard deviation S would be",
+          "options": [
+            "fm − 0.1645S",
+            "fm − 1.645S",
+            "fm",
+            "fm + 1.645S"
+          ],
+          "correct": 2,
+          "expl": "For a normal distribution the median (50th percentile) equals the mean, so at the 50% level fck = fm (the standard 5% definition instead gives fck = fm − 1.645S)."
+        },
+        {
+          "num": 34,
+          "text": "A reinforced concrete structure has to be constructed along a sea coast. The minimum grade of concrete to be used as per IS 456:2000 is",
+          "options": [
+            "M15",
+            "M20",
+            "M25",
+            "M30"
+          ],
+          "correct": 3,
+          "expl": "For very severe/coastal exposure conditions, IS 456 requires a minimum grade of M30."
+        },
+        {
+          "num": 35,
+          "text": "The modulus of rupture of concrete in terms of its characteristic cube compressive strength (fck) in MPa as per IS 456:2000 is",
+          "options": [
+            "5000fck",
+            "0.7fck",
+            "5000√fck",
+            "0.7√fck"
+          ],
+          "correct": 3,
+          "expl": "IS 456 gives the flexural strength (modulus of rupture) fcr = 0.7√fck."
+        },
+        {
+          "num": 36,
+          "text": "For the given T-beam roof section (span 6.0 m, M20, Fe415), if checked for serviceability limit state of deflection, it will be found that",
+          "options": [
+            "the section is checked for serviceability limit state of deflection",
+            "the section needs revision",
+            "the section is safe",
+            "it cannot be judged from the given data"
+          ],
+          "correct": 3,
+          "expl": "Without the full percentage-of-tension-steel and modification factor data worked out, the deflection adequacy cannot be judged from the given data alone."
+        },
+        {
+          "num": 37,
+          "text": "A reinforced cantilever beam of span 4m, cross-section 150 mm × 500 mm. If checked for lateral stability and deflection, the beam will",
+          "options": [
+            "fail in deflection only",
+            "fail in lateral stability only",
+            "fail in both lateral stability and deflection",
+            "satisfy both requirements"
+          ],
+          "correct": 2,
+          "expl": "A narrow, deep cantilever (150×500 over 4 m span) is prone to lateral-torsional instability as well as excessive deflection."
+        },
+        {
+          "num": 38,
+          "text": "In a reinforced concrete T-beam (flange in compression), the position of neutral axis will",
+          "options": [
+            "be within the flange",
+            "be within the web",
+            "depend on flange thickness relative to total depth and % reinforcement",
+            "be at the junction of flange and web"
+          ],
+          "correct": 2,
+          "expl": "Whether the NA lies in the flange or web depends on the relative flange thickness and the amount of tension reinforcement provided."
+        },
+        {
+          "num": 39,
+          "text": "In case of deep beam or thin webbed RCC members, the first crack that forms is",
+          "options": [
+            "flexural crack",
+            "diagonal crack due to compression",
+            "diagonal crack due to tension",
+            "shear crack"
+          ],
+          "correct": 2,
+          "expl": "In deep beams, diagonal tension cracking typically initiates before flexural cracking due to the dominant shear/strut action."
+        },
+        {
+          "num": 40,
+          "text": "Which of the following deformations are important in case of deep beams compared to flexure alone?",
+          "options": [
+            "shear",
+            "axial",
+            "torsional",
+            "bearing"
+          ],
+          "correct": 0,
+          "expl": "In deep beams shear deformation is significant and cannot be neglected as in ordinary flexural beam theory."
+        },
+        {
+          "num": 41,
+          "text": "Shrinkage in a concrete slab",
+          "options": [
+            "causes shear cracks",
+            "causes tension cracks",
+            "causes compression cracks",
+            "does not cause any cracking"
+          ],
+          "correct": 1,
+          "expl": "As concrete shrinks and is restrained, tensile stresses develop, leading to tension (shrinkage) cracks."
+        },
+        {
+          "num": 42,
+          "text": "A T-beam roof section has: slab thickness 100mm; rib width 300mm; beam depth 500mm; c/c beam spacing 3.0m; effective span 6.0m; distance between points of contraflexure 3.6m. What is the effective flange width?",
+          "options": [
+            "3000 mm",
+            "1900 mm",
+            "1600 mm",
+            "1500 mm"
+          ],
+          "correct": 3,
+          "expl": "bf = l0/6 + bw + 6Df = 3600/6 + 300 + 6(100) = 600+300+600 = 1500 mm (using l0, the distance between contraflexure points, since the beam is continuous), which also satisfies the c/c spacing limit."
+        },
+        {
+          "num": 43,
+          "text": "A T-beam behaves as a rectangular beam of width equal to its flange if its neutral axis",
+          "options": [
+            "coincides with centroid of reinforcement",
+            "coincides with centroid of T-section",
+            "remains within the flange",
+            "remains in the web"
+          ],
+          "correct": 2,
+          "expl": "If the NA stays within the flange thickness, the compression zone is entirely flange concrete, so the beam acts as a rectangular beam of flange width."
+        },
+        {
+          "num": 44,
+          "text": "How is the deflection in RC beams controlled as per IS:456?",
+          "options": [
+            "By using large aspect ratio",
+            "By using small modular ratio",
+            "By controlling span/depth ratio",
+            "By moderating water–cement ratio"
+          ],
+          "correct": 2,
+          "expl": "IS 456 uses the deemed-to-satisfy span-to-effective-depth ratio approach to control deflection."
+        },
+        {
+          "num": 45,
+          "text": "In RCC beams, as the percentage area of tensile steel increases",
+          "options": [
+            "depth of neutral axis increases",
+            "depth of neutral axis decreases",
+            "depth of neutral axis does not change",
+            "lever arm increases"
+          ],
+          "correct": 0,
+          "expl": "More tension steel requires a larger compression area (and hence a deeper NA) to maintain equilibrium."
+        },
+        {
+          "num": 46,
+          "text": "In the limit state method, balanced design of a reinforced concrete beam gives",
+          "options": [
+            "smallest concrete section and maximum area of reinforcement",
+            "largest concrete section and maximum area of reinforcement",
+            "smallest concrete section and minimum area of reinforcement",
+            "largest concrete section and minimum area of reinforcement"
+          ],
+          "correct": 0,
+          "expl": "A balanced section utilises both concrete and steel to their permissible limits simultaneously, giving the most economical (smallest) section for the maximum steel that section can take."
+        },
+        {
+          "num": 47,
+          "text": "The maximum percent of moment redistribution allowed in RCC beams is",
+          "options": [
+            "10%",
+            "20%",
+            "30%",
+            "40%"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 37.1.1 permits moment redistribution up to 30% in continuous beams/frames."
+        },
+        {
+          "num": 48,
+          "text": "A reinforced concrete cantilever porch has thickness t. The main reinforcement steel will be placed",
+          "options": [
+            "At mid-thickness",
+            "At t/3 from the top",
+            "Close to the bottom surface",
+            "Close to the top surface"
+          ],
+          "correct": 3,
+          "expl": "A cantilever porch slab has hogging moment, so tension (and hence main steel) is near the top surface."
+        },
+        {
+          "num": 49,
+          "text": "What is the assumption in the steel beam theory of doubly reinforced beams?",
+          "options": [
+            "Only steel bars will resist tension",
+            "Only concrete will resist tension",
+            "Stress in tension steel equals the stress in compression steel",
+            "Both concrete and steel will resist compression"
+          ],
+          "correct": 2,
+          "expl": "In the steel-beam (transformed) theory of doubly-reinforced sections, the tension and compression steel are assumed to be stressed equally."
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The design ultimate load on the short axially loaded column is computed by which of the following equations?",
+          "options": [
+            "0.3fckAc + 0.57fyAsc",
+            "0.3fckAc + 0.67fyAsc",
+            "0.4fckAc + 0.67fyAsc",
+            "0.4fckAc + 0.87fyAsc"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 39.3 gives Pu = 0.4fckAc + 0.67fyAsc for short axially loaded columns."
+        },
+        {
+          "num": 2,
+          "text": "What should be the effective length of compression members effectively held in position & restrained against rotation at both ends as per IS code?",
+          "options": [
+            "0.75 L",
+            "0.65 L",
+            "0.55L",
+            "0.45 L"
+          ],
+          "correct": 1,
+          "expl": "For both ends fixed (held in position and restrained against rotation), theoretical effective length is 0.5L; IS 456 recommends a design value of 0.65L."
+        },
+        {
+          "num": 3,
+          "text": "According to IS:456-2000, the maximum reinforcement in a column is:",
+          "options": [
+            "4%",
+            "2%",
+            "6%",
+            "8%"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 26.5.3.1 permits a maximum longitudinal reinforcement of 6% of gross cross-sectional area (though practically limited to 4% away from laps)."
+        },
+        {
+          "num": 4,
+          "text": "A column is regarded as a long column if the ratio of its effective length and lateral dimension exceeds",
+          "options": [
+            "10",
+            "12",
+            "20",
+            "30"
+          ],
+          "correct": 1,
+          "expl": "IS 456 classifies a column as slender (long) if the slenderness ratio (leff/least lateral dimension) exceeds 12."
+        },
+        {
+          "num": 5,
+          "text": "Min. diameter of rod in RCC column as per IS 456 is",
+          "options": [
+            "14mm",
+            "16mm",
+            "12mm",
+            "10mm"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 26.5.3.1(a) requires a minimum longitudinal bar diameter of 12 mm in columns."
+        },
+        {
+          "num": 6,
+          "text": "In an RCC column the minimum number of bars in a square column are",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 2,
+          "expl": "A square (rectangular) column requires a minimum of 4 longitudinal bars, one at each corner."
+        },
+        {
+          "num": 7,
+          "text": "A long column fails in",
+          "options": [
+            "Compression",
+            "Buckling",
+            "Tension",
+            "None"
+          ],
+          "correct": 1,
+          "expl": "Slender (long) columns fail primarily by lateral buckling rather than pure material crushing."
+        },
+        {
+          "num": 8,
+          "text": "In case of circular column the minimum number of bars recommended by IS: 456",
+          "options": [
+            "10",
+            "8",
+            "6",
+            "4"
+          ],
+          "correct": 2,
+          "expl": "IS 456 requires a minimum of 6 longitudinal bars in a circular column."
+        },
+        {
+          "num": 9,
+          "text": "The load carrying capacity of a column designed by working stress method is 500 kN. The collapse load of the column is",
+          "options": [
+            "500.0kN",
+            "662.50kN",
+            "750.0kN",
+            "1100.0kN"
+          ],
+          "correct": 2,
+          "expl": "Collapse load ≈ working load × load factor (≈1.5 for columns): 500 × 1.5 = 750 kN."
+        },
+        {
+          "num": 10,
+          "text": "Columns may be made of plain concrete if their unsupported length does not exceed their least lateral dimension by",
+          "options": [
+            "Two times",
+            "Three times",
+            "Four times",
+            "Five times"
+          ],
+          "correct": 2,
+          "expl": "IS 456 permits plain concrete pedestals/columns when unsupported length does not exceed four times the least lateral dimension."
+        },
+        {
+          "num": 11,
+          "text": "The effective width of a column strip of a flat slab is",
+          "options": [
+            "One-fourth the width of the panel",
+            "Half the width of the panel",
+            "Radius of the column",
+            "Diameter of the column"
+          ],
+          "correct": 1,
+          "expl": "In flat slab design, the column strip is taken as half the panel width (with the remainder being the middle strip)."
+        },
+        {
+          "num": 12,
+          "text": "The minimum cover provided in the column is",
+          "options": [
+            "35mm",
+            "40mm",
+            "50mm",
+            "30mm"
+          ],
+          "correct": 1,
+          "expl": "IS 456 Clause 26.4.1 specifies a minimum clear cover of 40 mm (or bar diameter, whichever is greater) for columns."
+        },
+        {
+          "num": 13,
+          "text": "The pitch of lateral ties in a column should not be more than",
+          "options": [
+            "200mm",
+            "250mm",
+            "300mm",
+            "100mm"
+          ],
+          "correct": 2,
+          "expl": "Tie spacing is the least of: least lateral column dimension, 16 × longitudinal bar diameter, or 300 mm."
+        },
+        {
+          "num": 14,
+          "text": "If a column of length L is restrained against horizontal & vertical displacement and is free to rotate at both ends, its equivalent length will be",
+          "options": [
+            "2L",
+            "L",
+            "0.5L",
+            "0.707L"
+          ],
+          "correct": 1,
+          "expl": "With both ends pinned (translation restrained, rotation free), the effective length equals the actual length, L."
+        },
+        {
+          "num": 15,
+          "text": "All R.C. columns must be designed for a minimum eccentricity of",
+          "options": [
+            "l/50 + D/3",
+            "l/25 + D/30",
+            "l/500 + D/30",
+            "l/30 + D/500"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 25.4 specifies minimum eccentricity emin = l/500 + D/30 (subject to a minimum of 20 mm)."
+        },
+        {
+          "num": 16,
+          "text": "Maximum spacing of longitudinal bars measured along the periphery of the RC column shall not exceed",
+          "options": [
+            "200mm",
+            "250mm",
+            "300mm",
+            "20 times dia. of longitudinal bar"
+          ],
+          "correct": 2,
+          "expl": "IS 456 limits the spacing between longitudinal bars along the column periphery to 300 mm."
+        },
+        {
+          "num": 17,
+          "text": "A compression member is termed as column or strut if the ratio of its effective length to the least lateral dimension is more than",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "1"
+          ],
+          "correct": 1,
+          "expl": "A compression member is classified as a column/strut once its effective length exceeds about 3 times its least lateral dimension; shorter members are treated as pedestals."
+        },
+        {
+          "num": 18,
+          "text": "The purpose of lateral ties in short concrete columns is:",
+          "options": [
+            "To avoid buckling of longitudinal bars",
+            "To facilitate construction",
+            "To facilitate compaction of concrete",
+            "To increase the load carrying capacity"
+          ],
+          "correct": 0,
+          "expl": "Lateral ties primarily restrain the longitudinal bars from buckling outward under compression."
+        },
+        {
+          "num": 19,
+          "text": "Axial load carrying capacity of an RC column (gross concrete area Ac, steel area As, permissible stresses σc, σs, modular ratio m) is given as",
+          "options": [
+            "σcAc + (m − 1)σcAs",
+            "σsAs + mσcAs",
+            "σcAs + σcAs",
+            "σc(Ac − As) + σcAs"
+          ],
+          "correct": 0,
+          "expl": "In WSM elastic theory, steel is transformed using modular ratio m, giving P = σcAc + (m−1)σcAs, accounting for the concrete area displaced by steel."
+        },
+        {
+          "num": 20,
+          "text": "The lateral ties in a reinforced concrete rectangular column under axial compression are used to",
+          "options": [
+            "avoid the buckling of the longitudinal steel",
+            "provide adequate shear capacity",
+            "provide adequate confinement to concrete",
+            "reduce the axial deformation of the column"
+          ],
+          "correct": 0,
+          "expl": "Ties primarily prevent lateral buckling of the compression (longitudinal) reinforcement."
+        },
+        {
+          "num": 21,
+          "text": "In a reinforced concrete beam-column, the increase in flexural strength along with the increase in axial strength occurs",
+          "options": [
+            "beyond the elastic limit of the material",
+            "when the yielding of the tension reinforcement governs the strength",
+            "when crushing of concrete in the compression zone governs the strength",
+            "never"
+          ],
+          "correct": 1,
+          "expl": "On the ascending (tension-controlled) branch of the interaction curve, both moment and axial capacity increase together while tension steel yielding governs."
+        },
+        {
+          "num": 22,
+          "text": "IS 456:1978 recommends providing certain minimum steel in an RCC beam",
+          "options": [
+            "to ensure compression failure",
+            "to avoid rupture of steel in case a flexural failure occurs",
+            "to hold the stirrup steel in position",
+            "to provide enough ductility to the beam"
+          ],
+          "correct": 1,
+          "expl": "Minimum steel ensures the section does not fail suddenly/brittlely upon first cracking (avoids sudden rupture)."
+        },
+        {
+          "num": 23,
+          "text": "In an axially loaded spirally reinforced short column, the concrete inside the core is subjected to",
+          "options": [
+            "bending and compression",
+            "biaxial compression",
+            "triaxial compression",
+            "uniaxial compression"
+          ],
+          "correct": 2,
+          "expl": "The spiral confines the core concrete laterally in addition to the applied axial load, producing a triaxial compressive state."
+        },
+        {
+          "num": 24,
+          "text": "Which of the following are the additional moments considered for design of slender compression members in lieu of deflection in x and y directions?",
+          "options": [
+            "Puℓ²ex/2000D and Puℓ²ey/2000D",
+            "Puℓex/2000D and Puℓey/2000D",
+            "Puℓ²ex/2000D and Puℓ²ey/2000b",
+            "Puℓ²ex/200D and Puℓ²ey/200b"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 39.7.1 gives additional moments Max = Puℓex²/2000D and May = Puℓey²/2000b for slender columns."
+        },
+        {
+          "num": 25,
+          "text": "An axially loaded column is 300 mm × 300 mm, effective length 3 m. What is the minimum eccentricity of the axial load?",
+          "options": [
+            "0",
+            "10 mm",
+            "16 mm",
+            "20 mm"
+          ],
+          "correct": 3,
+          "expl": "emin = l/500 + D/30 = 3000/500 + 300/30 = 6 + 10 = 16 mm, but IS 456 also requires a minimum of 20 mm, so the governing value is 20 mm."
+        }
+      ]
+    },
+    {
+      "name": "IS Code Provisions",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The minimum thickness of a reinforced concrete wall should be:",
+          "options": [
+            "7.5 cm",
+            "10 cm",
+            "15 cm",
+            "12.5 cm"
+          ],
+          "correct": 1,
+          "expl": "A minimum RC wall thickness of 100 mm is generally recommended for practical and structural adequacy."
+        },
+        {
+          "num": 2,
+          "text": "The minimum head room over a stair must be:",
+          "options": [
+            "200 cm",
+            "205 cm",
+            "210 cm",
+            "220 cm"
+          ],
+          "correct": 2,
+          "expl": "Building byelaws generally require a minimum stair headroom of about 2.1 m (210 cm)."
+        },
+        {
+          "num": 3,
+          "text": "Minimum thickness of load bearing RCC wall should be",
+          "options": [
+            "5 cm",
+            "10 cm",
+            "15 cm",
+            "20 cm"
+          ],
+          "correct": 1,
+          "expl": "Load bearing RC walls are typically required to be at least 100 mm thick."
+        },
+        {
+          "num": 4,
+          "text": "Modular ratio 'm' for M25 grade of concrete is",
+          "options": [
+            "16.67",
+            "13.33",
+            "10.93",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "m = 280/(3σcbc); for M25, σcbc = 8.5 N/mm², giving m = 280/(3×8.5) ≈ 10.98 ≈ 10.93."
+        },
+        {
+          "num": 5,
+          "text": "Permissible deviation from specified dimensions of cross-section of columns & beams as per IS Standard is",
+          "options": [
+            "+10mm, -4mm",
+            "+12mm, -6mm",
+            "+14mm, -8mm",
+            "None"
+          ],
+          "correct": 1,
+          "expl": "IS 456 specifies a construction tolerance of +12 mm and −6 mm on beam and column cross-sectional dimensions."
+        },
+        {
+          "num": 6,
+          "text": "Expansion joints are provided if the length of concrete structure exceeds",
+          "options": [
+            "10m",
+            "15m",
+            "35m",
+            "45m"
+          ],
+          "correct": 3,
+          "expl": "IS 456 recommends expansion joints for structures longer than about 45 m."
+        },
+        {
+          "num": 7,
+          "text": "Which of the following load combinations is NOT considered for the limit state of collapse?",
+          "options": [
+            "0.9DL + 1.5WL",
+            "1.5DL + 1.5WL",
+            "1.5DL + 1.5WL + 1.5EL",
+            "1.2DL + 1.2IL + 1.2WL"
+          ],
+          "correct": 2,
+          "expl": "Wind load (WL) and earthquake load (EL) are not applied simultaneously in the same load combination, so 1.5DL+1.5WL+1.5EL is not a valid IS 456/875 combination."
+        },
+        {
+          "num": 8,
+          "text": "Various types of load on a building are",
+          "options": [
+            "D.L",
+            "C.L",
+            "W.L",
+            "All"
+          ],
+          "correct": 3,
+          "expl": "A building must be designed for all applicable loads — dead, live, wind, earthquake, etc."
+        },
+        {
+          "num": 9,
+          "text": "Retrofitting is",
+          "options": [
+            "Redesigning whole building",
+            "Fitting new door",
+            "Fitting new windows",
+            "To upgrade/earthquake resistance of existing building to make it safer"
+          ],
+          "correct": 3,
+          "expl": "Retrofitting means strengthening an existing structure, typically to improve its seismic/earthquake resistance."
+        },
+        {
+          "num": 10,
+          "text": "Minimum admissible water-cement ratio for mild environmental exposure should be",
+          "options": [
+            "0.55",
+            "0.50",
+            "0.45",
+            "0.40"
+          ],
+          "correct": 0,
+          "expl": "IS 456 Table 5 permits a maximum free w/c ratio of 0.55 for mild exposure conditions."
+        },
+        {
+          "num": 11,
+          "text": "A cantilever retaining wall should not be used for heights more than",
+          "options": [
+            "4m",
+            "6m",
+            "8m",
+            "10m"
+          ],
+          "correct": 1,
+          "expl": "Cantilever retaining walls are generally economical up to about 6 m; beyond that, counterfort walls are preferred."
+        },
+        {
+          "num": 12,
+          "text": "For the modern box-girder bridges deployed in flyovers nowadays",
+          "options": [
+            "The depth of the box girder in the middle is maximum",
+            "The depth of the box girder on the support is maximum",
+            "The depth remains same along the length",
+            "The depth does not matter"
+          ],
+          "correct": 1,
+          "expl": "In continuous box-girder bridges, bending moments (and hence required depth) are greatest at the supports, so girder depth is maximum there."
+        },
+        {
+          "num": 13,
+          "text": "The minimum cement content recommended by IS: 456 for RCC with normal weight 20mm aggregates under moderate exposure, in Kg/m3",
+          "options": [
+            "300",
+            "320",
+            "340",
+            "360"
+          ],
+          "correct": 0,
+          "expl": "IS 456 Table 5 specifies a minimum cement content of 300 kg/m³ for moderate exposure."
+        },
+        {
+          "num": 14,
+          "text": "The concrete having a slump of 6.5 cm is said to be",
+          "options": [
+            "Dry",
+            "Earth moist",
+            "Semi-plastic",
+            "Plastic"
+          ],
+          "correct": 3,
+          "expl": "A slump of about 25-100 mm (here 65 mm) corresponds to a 'plastic' workability classification."
+        },
+        {
+          "num": 15,
+          "text": "Minimum spacing between horizontal parallel reinforcement of different size should not be less than",
+          "options": [
+            "One diameter of thinner bar",
+            "One diameter of thicker bar",
+            "Sum of diameter of thinner and thicker bars",
+            "Twice the diameter of thinner bar"
+          ],
+          "correct": 1,
+          "expl": "IS 456 requires the clear spacing to be not less than the diameter of the larger (thicker) bar."
+        },
+        {
+          "num": 16,
+          "text": "The modular ratio for M15 grade concrete, according to IS:456 is",
+          "options": [
+            "14",
+            "15",
+            "18",
+            "19"
+          ],
+          "correct": 3,
+          "expl": "m = 280/(3σcbc); for M15, σcbc = 5 N/mm², giving m = 280/15 ≈ 18.67 ≈ 19."
+        },
+        {
+          "num": 17,
+          "text": "The minimum clear distance between main reinforcement bars is",
+          "options": [
+            "Equal to the diameter of the reinforcing bar",
+            "Equal to the size of the aggregate",
+            "5mm more than the maximum size of coarse aggregate",
+            "Greater of (A) and (C) above"
+          ],
+          "correct": 3,
+          "expl": "IS 456 Clause 26.3.2 requires clear spacing to be the greater of the bar diameter or (aggregate size + 5 mm)."
+        },
+        {
+          "num": 18,
+          "text": "Expansion joint in masonry walls are provided in wall lengths more than",
+          "options": [
+            "10m",
+            "20m",
+            "30m",
+            "40m"
+          ],
+          "correct": 3,
+          "expl": "Expansion joints in long masonry walls are generally provided at intervals exceeding about 40 m."
+        },
+        {
+          "num": 19,
+          "text": "In any case the bearing of a lintel should not be less than",
+          "options": [
+            "10cm",
+            "15cm",
+            "20cm",
+            "30cm"
+          ],
+          "correct": 1,
+          "expl": "A minimum bearing length of about 150 mm (15 cm) is generally provided for lintels on supporting walls."
+        },
+        {
+          "num": 20,
+          "text": "For good quality cement the specific surface of cement should not be less than",
+          "options": [
+            "2250cm2/gm",
+            "2500cm2/gm",
+            "2750cm2/gm",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "IS specifications require a minimum Blaine's specific surface (fineness) of about 2250 cm²/g for OPC."
+        },
+        {
+          "num": 21,
+          "text": "The number of seismic zones India has been divided into as per IS 1893-2000",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct": 1,
+          "expl": "India is currently divided into 4 seismic zones (II, III, IV, and V)."
+        },
+        {
+          "num": 22,
+          "text": "Maximum spacing of side face reinforcement of beams with web depth more than 750 mm is",
+          "options": [
+            "300mm",
+            "Width of web of the beam",
+            "Smaller of A & B",
+            "Greater of A & B"
+          ],
+          "correct": 2,
+          "expl": "IS 456 limits side-face reinforcement spacing to the smaller of 300 mm or the web width."
+        },
+        {
+          "num": 23,
+          "text": "The characteristic strength of concrete is defined as that compressive strength below which NOT more than",
+          "options": [
+            "5% of results fall",
+            "2% of results fall",
+            "None of these",
+            "10% of results fall"
+          ],
+          "correct": 0,
+          "expl": "By definition, characteristic strength is the value below which not more than 5% of test results are expected to fall."
+        },
+        {
+          "num": 24,
+          "text": "The horizontal distance between parallel main reinforcement in RC slab shall not be more than",
+          "options": [
+            "2 times effective depth of slab",
+            "4 times effective depth of slab",
+            "5 times effective depth of slab",
+            "3 times effective depth of slab"
+          ],
+          "correct": 3,
+          "expl": "IS 456 limits main bar spacing in slabs to the lesser of 3 times the effective depth or 300 mm."
+        },
+        {
+          "num": 25,
+          "text": "As per IS 456-2000, the organic content of water used for making concrete should NOT be more than",
+          "options": [
+            "150mg/L",
+            "200mg/L",
+            "250mg/L",
+            "100mg/L"
+          ],
+          "correct": 1,
+          "expl": "IS 456 limits organic matter in mixing water to a maximum of 200 mg/L."
+        },
+        {
+          "num": 26,
+          "text": "The value of ultimate creep coefficient for concrete:",
+          "options": [
+            "Increases with age of loading",
+            "Decreases with age of loading",
+            "Remains constant",
+            "Is taken as 0.0003"
+          ],
+          "correct": 1,
+          "expl": "The creep coefficient decreases as the age of concrete at loading increases (more mature concrete creeps less)."
+        },
+        {
+          "num": 27,
+          "text": "A column is a compression member with effective length exceeding three times its least lateral dimension. This is applicable to:",
+          "options": [
+            "Rectangular and circular section",
+            "I section and circular section",
+            "Rectangular, circular and I section",
+            "All the shapes of sections"
+          ],
+          "correct": 3,
+          "expl": "This definition of a column/strut applies generally, regardless of the cross-sectional shape."
+        },
+        {
+          "num": 28,
+          "text": "Minimum cement content required for M35 grade of concrete for very severe exposure condition as per IS 456-2000, kg/m3",
+          "options": [
+            "300",
+            "320",
+            "340",
+            "360"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Table 5 specifies a minimum cement content of 340 kg/m³ for very severe exposure."
+        },
+        {
+          "num": 29,
+          "text": "As per IS: 456-2000, minimum recommended grade of concrete for structural use is",
+          "options": [
+            "M30",
+            "M25",
+            "M20",
+            "M15"
+          ],
+          "correct": 2,
+          "expl": "IS 456 recommends a minimum grade of M20 for general reinforced concrete structural work."
+        },
+        {
+          "num": 30,
+          "text": "What is the pH value of potable water, as specified by IS 456:2000?",
+          "options": [
+            "Equal to 7",
+            "between 6 and 9",
+            "Less than 6",
+            "Not less than 6"
+          ],
+          "correct": 3,
+          "expl": "IS 456 specifies that mixing water should have a pH not less than 6."
+        }
+      ]
+    },
+    {
+      "name": "Methods of RCC Design",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Partial safety factors for concrete and steel respectively may be taken as:",
+          "options": [
+            "1.5 & 1.15",
+            "1.5 & 1.78",
+            "3 & 1.78",
+            "3 & 1.2"
+          ],
+          "correct": 0,
+          "expl": "IS 456 limit state design specifies γm = 1.5 for concrete and 1.15 for steel."
+        },
+        {
+          "num": 2,
+          "text": "The characteristic strength of concrete in the actual structure is taken as:",
+          "options": [
+            "fck",
+            "0.85fck",
+            "0.67fck",
+            "0.447fck"
+          ],
+          "correct": 2,
+          "expl": "IS 456 assumes the in-situ (structure) strength of concrete as 0.67fck, reflecting differences between cube tests and actual member strength."
+        },
+        {
+          "num": 3,
+          "text": "The characteristic strength of concrete is defined as that strength below which not more than ___ of the test results are expected to fall.",
+          "options": [
+            "10 percent",
+            "5 percent",
+            "15 percent",
+            "20 percent"
+          ],
+          "correct": 1,
+          "expl": "Standard definition: characteristic strength corresponds to the 5th percentile of test results."
+        },
+        {
+          "num": 4,
+          "text": "The minimum grade of reinforced concrete in sea water as per IS 456:2000 is:",
+          "options": [
+            "M15",
+            "M20",
+            "M30",
+            "M40"
+          ],
+          "correct": 2,
+          "expl": "For very severe/coastal (sea water) exposure, IS 456 requires a minimum grade of M30."
+        },
+        {
+          "num": 5,
+          "text": "Characteristic strength of concrete is measured at:",
+          "options": [
+            "14 days",
+            "28 days",
+            "91 days",
+            "7 days"
+          ],
+          "correct": 1,
+          "expl": "Concrete characteristic (design) strength is standardly measured at 28 days of curing."
+        },
+        {
+          "num": 6,
+          "text": "Ordinary concrete is not used for concrete grade",
+          "options": [
+            "M100",
+            "M150",
+            "M250",
+            "M400"
+          ],
+          "correct": 3,
+          "expl": "M400 requires special high-strength concrete technology and is beyond the range of ordinary concrete mixes."
+        },
+        {
+          "num": 7,
+          "text": "Characteristic compression strength of M20 concrete is",
+          "options": [
+            "30N/sqmm",
+            "27N/sqmm",
+            "28N/sqmm",
+            "20N/sqmm"
+          ],
+          "correct": 3,
+          "expl": "The 'M20' grade designation itself denotes a characteristic cube compressive strength of 20 N/mm²."
+        },
+        {
+          "num": 8,
+          "text": "Water cement ratio is the ratio of",
+          "options": [
+            "Weight of water to weight of cement",
+            "Weight of cement to weight of water",
+            "Volume of cement to volume of water",
+            "Volume of water to volume of cement"
+          ],
+          "correct": 0,
+          "expl": "Water-cement ratio is conventionally defined as the ratio of weight of water to weight of cement in the mix."
+        },
+        {
+          "num": 9,
+          "text": "The total no. of grades as specified by IS 456-2000 are",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "25"
+          ],
+          "correct": 2,
+          "expl": "IS 456:2000 specifies 15 standard grades of concrete, from M10 up to M60/M65."
+        },
+        {
+          "num": 10,
+          "text": "Compressive strength of concrete is ___ tensile strength",
+          "options": [
+            "More than",
+            "Less than",
+            "Equal",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "Concrete is much stronger in compression than in direct tension (tensile strength is typically only about 1/10th of compressive strength)."
+        },
+        {
+          "num": 11,
+          "text": "Reinforced Cement Concrete (RCC) was evolved because plain concrete has",
+          "options": [
+            "High tensile strength",
+            "Low tensile strength",
+            "Tensile strength",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Steel reinforcement is added because plain concrete is weak (low) in tension."
+        },
+        {
+          "num": 12,
+          "text": "The size of cube used to determine characteristic compressive strength of concrete is",
+          "options": [
+            "150 × 150 × 150 mm",
+            "300 × 300 × 300 mm",
+            "200 × 200 × 200 mm",
+            "450 × 450 × 450 mm"
+          ],
+          "correct": 0,
+          "expl": "The standard test cube specified by IS codes is 150 mm × 150 mm × 150 mm."
+        },
+        {
+          "num": 13,
+          "text": "A slump cone is used primarily to provide an indication of which of the following in concrete",
+          "options": [
+            "Durability and finish",
+            "Air entrainment and chemical resistance",
+            "Strength and workability",
+            "Appearance and color"
+          ],
+          "correct": 2,
+          "expl": "The slump test is a simple field indicator primarily of the workability (consistency) of fresh concrete."
+        },
+        {
+          "num": 14,
+          "text": "For the construction of RCC slabs, columns, beams etc the minimum recommended grade of concrete mix is",
+          "options": [
+            "M10",
+            "M15",
+            "M20",
+            "M25"
+          ],
+          "correct": 2,
+          "expl": "IS 456 recommends M20 as the minimum grade for reinforced concrete structural members."
+        },
+        {
+          "num": 15,
+          "text": "The modulus of elasticity of M-25 grade concrete (in N/mm2) as per IS: 456-2000 is assumed as",
+          "options": [
+            "36,000",
+            "30,000",
+            "28,500",
+            "25,000"
+          ],
+          "correct": 3,
+          "expl": "Ec = 5000√fck = 5000√25 = 25,000 N/mm²."
+        },
+        {
+          "num": 16,
+          "text": "Plain cement concrete has very high",
+          "options": [
+            "Flexural strength",
+            "Compressive strength",
+            "Tensile strength",
+            "Shear strength"
+          ],
+          "correct": 1,
+          "expl": "Plain (unreinforced) concrete is characteristically strong in compression."
+        },
+        {
+          "num": 17,
+          "text": "Permissible compressive strength of M200 concrete grade is",
+          "options": [
+            "100 kg/cm2",
+            "150 kg/cm2",
+            "200 kg/cm2",
+            "250 kg/cm2"
+          ],
+          "correct": 2,
+          "expl": "As per the older kg/cm² grade nomenclature, M200 corresponds to a permissible compressive strength of about 200 kg/cm²."
+        },
+        {
+          "num": 18,
+          "text": "For testing compressive and tensile strength of cement, cement mortar is made by mixing cement and standard sand in the proportion of",
+          "options": [
+            "1:2",
+            "1:3",
+            "1:4",
+            "1:5"
+          ],
+          "correct": 1,
+          "expl": "Standard cement mortar test cubes/briquettes use a 1:3 cement-to-sand ratio by weight."
+        },
+        {
+          "num": 19,
+          "text": "The ratio between the ultimate tensile stress and the working stress is known as",
+          "options": [
+            "Factor of safety",
+            "Compression",
+            "Ultimate load factor",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "This ratio, by definition, is the factor of safety used in working stress design."
+        },
+        {
+          "num": 20,
+          "text": "The ratio of collapse load to the working load is known as",
+          "options": [
+            "Load factor",
+            "Collapse load factor",
+            "Working load factor",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "This ratio is termed the load factor, linking working stress and limit state (ultimate) concepts."
+        },
+        {
+          "num": 21,
+          "text": "The BIS code which is meant for concrete mix is",
+          "options": [
+            "BIS 456:1978",
+            "BIS 800:1984",
+            "BIS 2800:1979",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "IS 456 is the principal Indian code covering plain and reinforced concrete, including mix design provisions (historically referenced as IS 456:1978)."
+        },
+        {
+          "num": 22,
+          "text": "The bulk density of ordinary concrete is about",
+          "options": [
+            "23 kN/m3",
+            "25 kN/m3",
+            "27 kN/m3",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "The typical unit weight of ordinary reinforced concrete is about 24-25 kN/m³, which does not exactly match the other given options."
+        },
+        {
+          "num": 23,
+          "text": "The working stress of a material is expected to be",
+          "options": [
+            "Equal to ultimate stress",
+            "Equal to yield stress",
+            "Less than yield stress",
+            "More than yield stress"
+          ],
+          "correct": 2,
+          "expl": "Working (permissible) stress is deliberately kept below the yield stress to provide a margin of safety."
+        },
+        {
+          "num": 24,
+          "text": "To estimate 28-day crushing strength of concrete cubes from 7-day cube strength, we multiply the 7-day cube strength by",
+          "options": [
+            "3",
+            "2.5",
+            "1.5",
+            "1.2"
+          ],
+          "correct": 2,
+          "expl": "As a rule of thumb, 7-day strength is roughly two-thirds of the 28-day strength, so 28-day strength ≈ 1.5 × 7-day strength."
+        },
+        {
+          "num": 25,
+          "text": "The thermal expansion coefficient (α) of steel is",
+          "options": [
+            "13×10⁻⁶/°C and closely resembles α of concrete",
+            "11×10⁻⁶/°C and differs widely from α of concrete",
+            "12×10⁻⁶/°C and close to α of concrete",
+            "10×10⁻⁶/°C but nearly equal to α of concrete"
+          ],
+          "correct": 2,
+          "expl": "Steel's thermal expansion coefficient (~12×10⁻⁶/°C) is close to that of concrete, which is why RCC works well as a composite material under temperature change."
+        },
+        {
+          "num": 26,
+          "text": "The concrete mix design is conducted as per",
+          "options": [
+            "IS: 456",
+            "IS: 10262",
+            "IS: 13920",
+            "IS: 383"
+          ],
+          "correct": 1,
+          "expl": "IS 10262 is the Indian standard specifically dealing with concrete mix design/proportioning guidelines."
+        },
+        {
+          "num": 27,
+          "text": "To determine the modulus of rupture, the size of specimen used is",
+          "options": [
+            "150 × 150 × 500mm",
+            "100 × 100 × 700mm",
+            "150 × 150 × 700mm",
+            "100 × 100 × 500 mm"
+          ],
+          "correct": 2,
+          "expl": "IS 516 specifies a standard flexure test beam of 150 mm × 150 mm × 700 mm for normal aggregate sizes."
+        },
+        {
+          "num": 28,
+          "text": "Approximate value of shrinkage strain in concrete, is",
+          "options": [
+            "0.003",
+            "0.0003",
+            "0.00003",
+            "0.03"
+          ],
+          "correct": 1,
+          "expl": "IS 456 assumes an approximate total shrinkage strain of 0.0003 for design purposes (in the absence of test data)."
+        },
+        {
+          "num": 29,
+          "text": "The relation between modulus of rupture fcr and direct tensile strength fct is given by",
+          "options": [
+            "fcr = fcs = fct",
+            "fcr > fcs > fct",
+            "fcr < fcs < fct",
+            "fcs > fcr > fct"
+          ],
+          "correct": 1,
+          "expl": "Modulus of rupture (flexural) > splitting tensile strength > direct (axial) tensile strength, as different failure mechanisms give progressively lower apparent strengths."
+        },
+        {
+          "num": 30,
+          "text": "The approximate value of the ratio between direct tensile strength and flexural strength is",
+          "options": [
+            "0.33",
+            "0.5",
+            "0.75",
+            "1.0"
+          ],
+          "correct": 1,
+          "expl": "Direct tensile strength is typically about half the flexural strength (modulus of rupture) of concrete."
+        },
+        {
+          "num": 31,
+          "text": "The relation between modulus of rupture fcr and characteristic strength of concrete fck is given by",
+          "options": [
+            "fcr = 0.35√fck",
+            "fcr = 0.5√fck",
+            "fcr = 0.7√fck",
+            "fcr = 1.2√fck"
+          ],
+          "correct": 2,
+          "expl": "IS 456 gives the modulus of rupture as fcr = 0.7√fck (MPa)."
+        },
+        {
+          "num": 32,
+          "text": "According to IS:456-1978, the modulus of elasticity of concrete Ec (in N/mm2) can be taken as",
+          "options": [
+            "Ec = 5000√fck",
+            "Ec = 570√fck",
+            "Ec = 5700√fck",
+            "Ec = 700√fck"
+          ],
+          "correct": 0,
+          "expl": "IS 456 provides the empirical relation Ec = 5000√fck (N/mm²) for short-term static modulus of elasticity."
+        }
+      ]
+    },
+    {
+      "name": "Prestress and Footings",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The critical section for two-way shear of footing is at the",
+          "options": [
+            "Face of the column",
+            "Distance d from the column face",
+            "Distance d/2 from the column face",
+            "Distance 2d from the column face"
+          ],
+          "correct": 2,
+          "expl": "IS 456 defines the punching (two-way) shear critical perimeter at d/2 from the column face."
+        },
+        {
+          "num": 2,
+          "text": "As per IS:456-2000 recommendations, the thickness of footing edge on soils should not be less than",
+          "options": [
+            "100mm",
+            "120mm",
+            "150mm",
+            "200mm"
+          ],
+          "correct": 2,
+          "expl": "IS 456 Clause 34.1.2 requires a minimum footing edge thickness of 150 mm on soil."
+        },
+        {
+          "num": 3,
+          "text": "For a number of columns constructed in a row, the type of foundation provided is",
+          "options": [
+            "Footing",
+            "Raft",
+            "Strap",
+            "Strip"
+          ],
+          "correct": 3,
+          "expl": "A row of closely-spaced columns is typically supported on a continuous strip footing."
+        },
+        {
+          "num": 4,
+          "text": "Normally counterforts in a retaining wall are spaced at an interval of:",
+          "options": [
+            "6 to 8m",
+            "4 to 6m",
+            "2 to 3m",
+            "1 to 3m"
+          ],
+          "correct": 2,
+          "expl": "Counterforts in a counterfort retaining wall are generally spaced about 2 to 3 m apart."
+        },
+        {
+          "num": 5,
+          "text": "Most commonly used method of pre-stressing in industries is",
+          "options": [
+            "Hoyer's Method",
+            "Freyssinet Method",
+            "Magnel Method",
+            "Lee McCall Method"
+          ],
+          "correct": 1,
+          "expl": "The Freyssinet system is one of the most widely used post-tensioning methods in industrial practice."
+        },
+        {
+          "num": 6,
+          "text": "The critical section for two way shear in an isolated spread footing is at the",
+          "options": [
+            "Face of the column",
+            "Distance 1.5d from column face",
+            "Distance d from column face",
+            "Distance d/2 from column face"
+          ],
+          "correct": 3,
+          "expl": "As per IS 456, punching shear is checked at a perimeter d/2 away from the column/pedestal face."
+        },
+        {
+          "num": 7,
+          "text": "Critical section for calculating bending moment for a spread concrete footing of effective depth d is given by the plane at",
+          "options": [
+            "75mm from column face",
+            "d/2 from column face",
+            "D from column face",
+            "column face"
+          ],
+          "correct": 3,
+          "expl": "IS 456 takes the critical section for maximum bending moment in an isolated footing at the face of the column/pedestal."
+        },
+        {
+          "num": 8,
+          "text": "In reinforced and plain concrete footing resting on soils, the thickness at edge shall not be less than",
+          "options": [
+            "25cm",
+            "30cm",
+            "50cm",
+            "15cm"
+          ],
+          "correct": 3,
+          "expl": "IS 456 requires a minimum footing edge thickness of 150 mm (15 cm) on soil."
+        },
+        {
+          "num": 9,
+          "text": "Counterfort retaining wall is generally constructed when height of the earth to be retained exceeds",
+          "options": [
+            "3m",
+            "8m",
+            "6m",
+            "10cm"
+          ],
+          "correct": 2,
+          "expl": "Beyond about 6 m of retained height, counterfort walls become more economical than plain cantilever walls."
+        },
+        {
+          "num": 10,
+          "text": "The loss of prestress due to elastic shortening of concrete is least in",
+          "options": [
+            "one wire pre-tensioned beam",
+            "one wire post-tensioned beam",
+            "multiple wire pre-tensioned beam with sequential cutting of wires",
+            "multiple wire post-tensioned beam subjected to sequential prestressing"
+          ],
+          "correct": 1,
+          "expl": "In a single-wire post-tensioned beam, there is no other tendon whose subsequent stressing would cause additional elastic shortening loss, so the loss is minimal."
+        },
+        {
+          "num": 11,
+          "text": "IS:1343:1980 limits the minimum characteristic strength of pre-stressed concrete for post tensioned work and pretension work as",
+          "options": [
+            "25 MPa, 30 MPa respectively",
+            "25 MPa, 35 MPa respectively",
+            "30 MPa, 35 MPa respectively",
+            "30 MPa, 40 MPa respectively"
+          ],
+          "correct": 3,
+          "expl": "IS 1343 specifies minimum grades of M30 for post-tensioned and M40 for pre-tensioned prestressed concrete work."
+        },
+        {
+          "num": 12,
+          "text": "In a reinforced concrete retaining wall, a shear key is provided if the",
+          "options": [
+            "shear stress in the vertical stem is excessive",
+            "shear force in the toe slab is more than in the heel slab",
+            "retaining wall is not safe against sliding",
+            "retaining wall is not safe against overturning"
+          ],
+          "correct": 2,
+          "expl": "A shear key beneath the base slab increases passive resistance, provided when the wall is inadequate against sliding."
+        },
+        {
+          "num": 13,
+          "text": "A buttress in a wall is intended to provide",
+          "options": [
+            "lateral support to roof slab only",
+            "lateral support to wall",
+            "resistance to vertical loads only",
+            "lateral support to roof beams only"
+          ],
+          "correct": 1,
+          "expl": "A buttress is a projecting support built to resist lateral forces on a wall, providing it lateral stability."
+        },
+        {
+          "num": 14,
+          "text": "In a combined footing for two columns carrying unequal loads, the maximum hogging moment occurs at",
+          "options": [
+            "inside face of the heavier column",
+            "a section equidistant from both columns",
+            "a section having maximum shear force",
+            "a section having zero shear force"
+          ],
+          "correct": 3,
+          "expl": "As in any beam, the bending moment is maximum (here, maximum hogging) where the shear force diagram crosses zero."
+        },
+        {
+          "num": 15,
+          "text": "The critical section for maximum bending moment in the footing under a masonry wall is located at",
+          "options": [
+            "the middle of the wall",
+            "the face of the wall",
+            "mid-way between the face and the middle of the wall",
+            "a distance equal to the effective depth of footing from the face of the wall"
+          ],
+          "correct": 2,
+          "expl": "For footings under masonry walls, IS 456 takes the critical BM section midway between the wall face and the centreline of the wall."
+        },
+        {
+          "num": 16,
+          "text": "In case of pre-tensioned RC beams",
+          "options": [
+            "Shrinkage of concrete is of the order of 3×10⁻⁴",
+            "relaxation of steel can be ignored",
+            "only one wire can be stretched at a time",
+            "even mild steel can be used for prestressing"
+          ],
+          "correct": 0,
+          "expl": "The design shrinkage strain assumed for pretensioned members is on the order of 3×10⁻⁴ (0.0003), causing prestress loss."
+        },
+        {
+          "num": 17,
+          "text": "Prestressed concrete is more desirable in case of",
+          "options": [
+            "cylindrical pipe subjected to internal fluid pressure",
+            "cylindrical pipe subjected to external fluid pressure",
+            "cylindrical pipe subjected to equal internal and external pressures",
+            "cylindrical pipe subjected to end pressures"
+          ],
+          "correct": 0,
+          "expl": "Circumferential prestressing counteracts the tensile hoop stresses caused by internal pressure in pipes, making PSC very suitable for this case."
+        },
+        {
+          "num": 18,
+          "text": "In a load-balanced prestressed concrete beam under self load, the cross-section is subjected to",
+          "options": [
+            "axial stress",
+            "bending stress",
+            "axial and shear stress",
+            "axial and bending stress"
+          ],
+          "correct": 0,
+          "expl": "In the load-balancing concept, the tendon profile is chosen so that the transverse component of prestress exactly balances the self-weight, leaving only a uniform axial stress."
+        },
+        {
+          "num": 19,
+          "text": "Which one of the following statements is correct?",
+          "options": [
+            "Web shear cracks start due to high diagonal tension in beams with thin webs and high prestressing force",
+            "Shear design for a prestressed concrete beam is based on elastic theory",
+            "In the zone where bending moment is dominant and shear is insignificant, cracks occur at 20° to 30°",
+            "After diagonal cracking, shear transfer mechanism in PSC is very different from RC"
+          ],
+          "correct": 0,
+          "expl": "In thin-webbed, highly prestressed beams, web-shear cracking occurs due to high diagonal (principal) tensile stresses even before flexural cracking."
+        },
+        {
+          "num": 20,
+          "text": "The magnitude of loss of prestress due to relaxation of steel is in the range of",
+          "options": [
+            "zero to 1%",
+            "2 to 8%",
+            "8 to 12%",
+            "12 to 14%"
+          ],
+          "correct": 1,
+          "expl": "Relaxation losses in prestressing steel are typically of the order of 2-8% of the initial prestress."
+        },
+        {
+          "num": 21,
+          "text": "The ultimate strength of the steel used for prestressing is nearly",
+          "options": [
+            "250 N/mm2",
+            "415 N/mm2",
+            "500 N/mm2",
+            "1500 N/mm2"
+          ],
+          "correct": 3,
+          "expl": "High-tensile prestressing steel (wires/strands) typically has an ultimate tensile strength around 1500-1900 N/mm²."
+        },
+        {
+          "num": 22,
+          "text": "In a post-tensioned prestressed concrete beam, the end block zone is the zone between the end of the beam and the section where",
+          "options": [
+            "no lateral stresses exist",
+            "only longitudinal stresses exist",
+            "only shear stresses exist",
+            "the shear stresses are maximum"
+          ],
+          "correct": 1,
+          "expl": "The end (anchorage) block is where transverse (bursting/spalling) stresses dissipate; beyond it, only the longitudinal (uniform) stress distribution remains."
+        },
+        {
+          "num": 23,
+          "text": "The propagation of a shear crack in a prestressed concrete member depends on",
+          "options": [
+            "tensile reinforcement",
+            "compression reinforcement",
+            "shear reinforcement",
+            "shape of the cross-section of the beam"
+          ],
+          "correct": 3,
+          "expl": "In PSC members shear-crack propagation is strongly influenced by the geometry (shape) of the cross-section, which governs the stress distribution."
+        },
+        {
+          "num": 24,
+          "text": "In pre-tensioning scheme, pre-stress load is transferred in",
+          "options": [
+            "a single stage process",
+            "multi stage process",
+            "either single or multi-stage depending on load magnitude",
+            "the same manner as in post-tensioning"
+          ],
+          "correct": 0,
+          "expl": "In pretensioning, prestress is transferred to concrete instantaneously (single stage) when the tendons are released/cut after concrete hardens."
+        },
+        {
+          "num": 25,
+          "text": "In the conventional prestressing, the diagonal tension in concrete",
+          "options": [
+            "increases",
+            "decrease",
+            "does not change",
+            "may increase or decrease"
+          ],
+          "correct": 1,
+          "expl": "Prestressing induces a compressive stress field that reduces the net diagonal tension in the concrete."
+        },
+        {
+          "num": 26,
+          "text": "In prestressed concrete, high grade concrete is used for",
+          "options": [
+            "controlling the prestress loss",
+            "having concrete of low ductility",
+            "having concrete of high brittleness",
+            "having low creep"
+          ],
+          "correct": 3,
+          "expl": "High-grade (high-strength) concrete exhibits lower creep, which helps minimise long-term prestress loss."
+        },
+        {
+          "num": 27,
+          "text": "In the Limit state design of prestressed concrete structures, the strain distribution is assumed to be",
+          "options": [
+            "Linear",
+            "Non-linear",
+            "Parabolic",
+            "parabolic and rectangular"
+          ],
+          "correct": 0,
+          "expl": "As with RC design, the plane-sections assumption gives a linear strain distribution across the depth in PSC limit state design."
+        },
+        {
+          "num": 28,
+          "text": "High strength steel used in prestressed concrete can take how much maximum strain?",
+          "options": [
+            "2%",
+            "3%",
+            "4%",
+            "6%"
+          ],
+          "correct": 2,
+          "expl": "High-tensile prestressing steel typically has an elongation/strain capacity of about 4% at rupture."
+        },
+        {
+          "num": 29,
+          "text": "The use of 'concordant cables' in prestressed continuous beam induces",
+          "options": [
+            "initial support reactions",
+            "no initial support reactions",
+            "excess cracking",
+            "excess deflection"
+          ],
+          "correct": 1,
+          "expl": "A concordant tendon profile produces no secondary (parasitic) reactions/moments at the supports of a continuous beam."
+        },
+        {
+          "num": 30,
+          "text": "In case of prestressed concrete members, the bursting stresses develop at",
+          "options": [
+            "Bond zone",
+            "maximum bending moment zone",
+            "Maximum shear stress zone",
+            "Anchorage zone"
+          ],
+          "correct": 3,
+          "expl": "Bursting (transverse tensile) stresses arise near the anchorage zone due to the spreading of the concentrated prestressing force."
+        },
+        {
+          "num": 31,
+          "text": "A prestressed concrete section is said to have failed in strength at the moment when all the material in the section has exhausted its",
+          "options": [
+            "Stress limitations",
+            "Strain limitations",
+            "Stress as well as strain limitations",
+            "load limitations"
+          ],
+          "correct": 1,
+          "expl": "In limit state/ultimate design, failure is defined by the material reaching its ultimate strain capacity."
+        },
+        {
+          "num": 32,
+          "text": "Spalling stresses are produced in post-tensioned prestressed concrete members because of",
+          "options": [
+            "bursting force",
+            "highly concentrated tendon force",
+            "inadequate anchor block",
+            "maximum shear zone"
+          ],
+          "correct": 1,
+          "expl": "Spalling stresses arise from the highly concentrated anchorage force spreading out over the section near the end of the member."
+        },
+        {
+          "num": 33,
+          "text": "A concordant cable profile in pre-stressed concrete is",
+          "options": [
+            "parallel to the beam axis",
+            "one which coincides with the centroidal axis of the beam",
+            "one which does not cause secondary stresses",
+            "one which eliminates primary stresses"
+          ],
+          "correct": 2,
+          "expl": "A concordant cable profile follows the pressure line of the applied loads such that it produces no secondary (parasitic) stresses in a continuous member."
+        },
+        {
+          "num": 34,
+          "text": "Spalling stresses are produced in post-tensioned prestressed concrete members at",
+          "options": [
+            "locations of maximum bending moment only",
+            "locations of maximum shear zone",
+            "anchorage zone",
+            "bond-developing zone"
+          ],
+          "correct": 2,
+          "expl": "Spalling stresses, like bursting stresses, are localized at the anchorage (end-block) zone of post-tensioned members."
+        }
+      ]
+    },
+    {
+      "name": "Shear, Bond and Torsion",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Shear reinforcement is provided in the form of:",
+          "options": [
+            "Vertical bars",
+            "Inclined bars",
+            "Combination of vertical and inclined bars",
+            "Any one of the above"
+          ],
+          "correct": 3,
+          "expl": "IS 456 permits shear reinforcement as vertical stirrups, inclined (bent-up) bars, or a combination of both."
+        },
+        {
+          "num": 2,
+          "text": "Tension bars in a cantilever beam must be enclosed in the support up to:",
+          "options": [
+            "Ld",
+            "Ld/3",
+            "12",
+            "D"
+          ],
+          "correct": 0,
+          "expl": "Tension reinforcement must extend into the support by the full development length, Ld, to be adequately anchored."
+        },
+        {
+          "num": 3,
+          "text": "The propagation of a shear crack in a prestressed concrete member depends on",
+          "options": [
+            "Tensile Reinforcement",
+            "Compression Reinforcement",
+            "Shear reinforcement",
+            "Shape of the Cross-section of beam"
+          ],
+          "correct": 0,
+          "expl": "Shear crack propagation depth in PSC members is affected by the amount and disposition of tensile reinforcement resisting the crack opening."
+        },
+        {
+          "num": 4,
+          "text": "The shear reinforcement has to be designed when nominal shear stress is ___ permissible shear stress",
+          "options": [
+            "Less than",
+            "Equal than",
+            "More than",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "Shear reinforcement is required whenever the applied nominal shear stress (τv) exceeds the concrete's permissible shear strength (τc)."
+        },
+        {
+          "num": 5,
+          "text": "In the absence of shear stirrups, where do cracks in an RCC beam constructed in a frame come first?",
+          "options": [
+            "Center of the beam",
+            "Near the supports",
+            "Point of inflection",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Shear force is maximum near the supports, so diagonal shear cracks initiate there first in the absence of stirrups."
+        },
+        {
+          "num": 6,
+          "text": "As per IS:456-2000, the shear strength variation along the section is assumed",
+          "options": [
+            "Constant",
+            "Linearly varying",
+            "Parabolic",
+            "Non uniform"
+          ],
+          "correct": 2,
+          "expl": "IS 456 assumes a parabolic distribution of shear stress across the depth of an RC section, similar to elastic beam theory."
+        },
+        {
+          "num": 7,
+          "text": "The minimum spacing of the vertical stirrups to resist shear in a beam, in terms of effective depth 'd', is restricted to",
+          "options": [
+            "D",
+            "0.5d",
+            "0.75d",
+            "3d"
+          ],
+          "correct": 2,
+          "expl": "IS 456 limits the maximum spacing of vertical shear stirrups to 0.75d."
+        },
+        {
+          "num": 8,
+          "text": "The development length in tension in HYSD bars when used with M20 grade of concrete is",
+          "options": [
+            "68 times the nominal dia. of bar",
+            "51 times the nominal dia. of bar",
+            "46 times the nominal dia. of bar",
+            "78 times the nominal dia. of bar"
+          ],
+          "correct": 2,
+          "expl": "For Fe415 HYSD bars in M20 concrete, IS 456 gives a development length of about 47 (≈46) times the bar diameter."
+        },
+        {
+          "num": 9,
+          "text": "The anchorage value of a 45° bend in reinforcing bar embedded in concrete is assumed to be",
+          "options": [
+            "2 times the diameter of bar",
+            "4 times the diameter of bar",
+            "8 times the diameter of bar",
+            "16 times the diameter of bar"
+          ],
+          "correct": 1,
+          "expl": "IS 456 assigns an anchorage value of 4 times the bar diameter for each 45° bend."
+        },
+        {
+          "num": 10,
+          "text": "Shear reinforcement is provided to resist",
+          "options": [
+            "Diagonal compression",
+            "Diagonal bending",
+            "Diagonal tension",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Shear reinforcement (stirrups/bent-up bars) is designed to resist diagonal tension cracking caused by combined shear and flexure."
+        },
+        {
+          "num": 11,
+          "text": "For deformed bars, bond stress is",
+          "options": [
+            "More than plain bar",
+            "Less than plain bar",
+            "Equal to plain bar",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Deformed (ribbed/HYSD) bars mechanically interlock with concrete, giving higher bond stress than smooth, plain bars."
+        },
+        {
+          "num": 12,
+          "text": "The spacing of nominal shear reinforcement is given by",
+          "options": [
+            "0.8fyAsv/0.4d",
+            "0.80fyAsv/0.25b",
+            "0.87fyAsv/0.25d",
+            "0.87fyAsv/0.4b"
+          ],
+          "correct": 3,
+          "expl": "IS 456 gives the minimum shear reinforcement spacing formula Sv = 0.87fyAsv/(0.4b)."
+        },
+        {
+          "num": 13,
+          "text": "When the shear stress exceeds the permissible limit in a slab, then to bring the shear stress within limits",
+          "options": [
+            "Its depth should be increased",
+            "Shear reinforcement should be provided",
+            "Torque steel should be used",
+            "Steel should be provided on compression side"
+          ],
+          "correct": 0,
+          "expl": "Slabs generally do not use shear reinforcement, so the depth is increased to reduce the shear stress within permissible limits."
+        },
+        {
+          "num": 14,
+          "text": "When HYSD bars are used in place of mild steel bars, the bond strength",
+          "options": [
+            "Increases",
+            "Decreases",
+            "Does not change",
+            "Becomes zero"
+          ],
+          "correct": 0,
+          "expl": "Deformed HYSD bars provide better mechanical interlock, increasing bond strength compared to plain mild steel bars."
+        },
+        {
+          "num": 15,
+          "text": "In limit state method of design, for HYSD bars the values of bond stress shall be",
+          "options": [
+            "Decreased by 50%",
+            "Increased by 60%",
+            "Decreased by 60%",
+            "Increased by 50%"
+          ],
+          "correct": 1,
+          "expl": "IS 456 permits the design bond stress for deformed bars to be increased by 60% over that for plain bars."
+        },
+        {
+          "num": 16,
+          "text": "The main reason for providing a number of reinforcing bars at a support in a simply supported beam is to resist in that zone",
+          "options": [
+            "compressive stress",
+            "shear stress",
+            "bond stress",
+            "tensile stress"
+          ],
+          "correct": 2,
+          "expl": "Continuing bars into supports provides sufficient bond/anchorage length to develop the required bond stress there."
+        },
+        {
+          "num": 17,
+          "text": "Torsion resisting capacity of a given RC section",
+          "options": [
+            "decreases with decrease in stirrup spacing",
+            "decreases with increase in longitudinal bars",
+            "does not depend upon stirrup and longitudinal steels",
+            "increases with the increase in stirrup and longitudinal steels"
+          ],
+          "correct": 3,
+          "expl": "Both closed stirrups and longitudinal steel contribute to torsional resistance, so increasing either enhances torsional capacity."
+        },
+        {
+          "num": 18,
+          "text": "If the nominal shear stress (τv) at a section does not exceed the permissible shear stress (τc)",
+          "options": [
+            "minimum shear reinforcement is still provided",
+            "shear reinforcement is provided to resist the nominal shear stress",
+            "no shear reinforcement is provided",
+            "shear reinforcement is provided for the difference of the two"
+          ],
+          "correct": 0,
+          "expl": "Even when τv < τc, IS 456 requires minimum (nominal) shear reinforcement to be provided as a precaution against unforeseen forces."
+        },
+        {
+          "num": 19,
+          "text": "In limit state design, permissible bond stress in the case of deformed bars is more than that in plain bars by",
+          "options": [
+            "60%",
+            "50%",
+            "40%",
+            "25%"
+          ],
+          "correct": 0,
+          "expl": "IS 456 permits a 60% increase in design bond stress for deformed (HYSD) bars over plain bars."
+        },
+        {
+          "num": 20,
+          "text": "Shear span is defined as the zone where",
+          "options": [
+            "bending moment is zero",
+            "shear force is zero",
+            "shear force is constant",
+            "bending moment is constant"
+          ],
+          "correct": 2,
+          "expl": "Shear span refers to the region between a support/load point where the shear force remains constant."
+        },
+        {
+          "num": 21,
+          "text": "Assertion (A): The development length for HYSD Fe 415 bars is less than that for mild steel plain bars. Reason (R): The permissible bond stress for HYSD Fe 415 bars is more than that for mild steel plain bars.",
+          "options": [
+            "both A and R are true and R is correct explanation of A",
+            "both A and R are true but R is not correct explanation of A",
+            "A is true but R is false",
+            "A is false but R is true"
+          ],
+          "correct": 0,
+          "expl": "Higher bond stress for HYSD bars directly reduces the required development length, so R correctly explains A."
+        },
+        {
+          "num": 22,
+          "text": "Diagonal tension reinforcement is provided in a beam as",
+          "options": [
+            "longitudinal bars",
+            "bent up bars",
+            "helical reinforcement",
+            "90° bend at the ends of main bars"
+          ],
+          "correct": 1,
+          "expl": "Bent-up (inclined) bars are commonly used, in addition to vertical stirrups, to resist diagonal tension from shear."
+        },
+        {
+          "num": 23,
+          "text": "When HYSD bars are used in place of mild steel bars in a beam, the bond strength",
+          "options": [
+            "does not change",
+            "increases",
+            "decrease",
+            "becomes zero"
+          ],
+          "correct": 1,
+          "expl": "The ribbed surface of HYSD bars improves mechanical interlock, increasing bond strength."
+        },
+        {
+          "num": 24,
+          "text": "What is the bond stress acting parallel to the reinforcement on the interface between bar and concrete?",
+          "options": [
+            "Shear stress",
+            "Local stress",
+            "Flexural stress",
+            "Bearing stress"
+          ],
+          "correct": 0,
+          "expl": "Bond stress is essentially a shear stress acting along the bar-concrete interface, transferring force between the two materials."
+        },
+        {
+          "num": 25,
+          "text": "The appropriate expression in assessing development length is",
+          "options": [
+            "Ld = φσs/(4τbd)",
+            "Ld = φσbc/τbd",
+            "Ld = σs/(4τbd)",
+            "Ld = φσs/(8τbd)"
+          ],
+          "correct": 0,
+          "expl": "Development length is derived by equating bar force (φ²σs/4) to bond resistance (πφLdτbd), giving Ld = φσs/(4τbd)."
+        },
+        {
+          "num": 26,
+          "text": "Lap length of reinforcement in compression shall not be less than",
+          "options": [
+            "30φ",
+            "24φ",
+            "20φ",
+            "15φ (where φ = diameter of bar)"
+          ],
+          "correct": 1,
+          "expl": "IS 456 specifies a minimum compression lap length of 24 times the bar diameter."
+        },
+        {
+          "num": 27,
+          "text": "In a reinforced concrete member, the best way to ensure adequate bond is",
+          "options": [
+            "to provide minimum number of large diameter bars",
+            "to provide large number of smaller diameter bars",
+            "to increase the cover for reinforcement",
+            "to provide additional stirrups"
+          ],
+          "correct": 1,
+          "expl": "Smaller diameter bars in greater number give more total surface area for a given steel area, improving bond."
+        }
+      ]
+    },
+    {
+      "name": "Slabs",
+      "questions": [
+        {
+          "num": 1,
+          "text": "In case of simply supported slabs with free edges, what are the design moments as per code?",
+          "options": [
+            "Mx = axwLx², My = aywLx²",
+            "Mx = axwLx², My = aywLx²",
+            "Mx = axwLy², My = aywLx²",
+            "Mx = axwLy², My = aywLy²"
+          ],
+          "correct": 1,
+          "expl": "IS 456 Annex D gives moment coefficients based on the shorter span Lx for both Mx and My: Mx = axwLx², My = aywLx²."
+        },
+        {
+          "num": 2,
+          "text": "What recommendation is given for basic value of span/effective depth ratio in IS code 456-2000 for continuous beams up to 10m span?",
+          "options": [
+            "29",
+            "28",
+            "27",
+            "26"
+          ],
+          "correct": 3,
+          "expl": "IS 456 Clause 23.2.1 gives a basic span/depth ratio of 26 for continuous spans."
+        },
+        {
+          "num": 3,
+          "text": "The minimum cover of a slab should neither be less than the diameter of bar nor less than",
+          "options": [
+            "10 mm",
+            "15 mm",
+            "20mm",
+            "13mm"
+          ],
+          "correct": 1,
+          "expl": "IS 456 requires a minimum clear cover of 15 mm (or the bar diameter, whichever is greater) for slabs."
+        },
+        {
+          "num": 4,
+          "text": "The minimum reinforcement in slabs should not be less than ___ % of the total cross-sectional area when HYSD bars are used in either direction.",
+          "options": [
+            "0.10",
+            "0.12",
+            "0.15",
+            "0.18"
+          ],
+          "correct": 1,
+          "expl": "IS 456 Clause 26.5.2.1 specifies a minimum reinforcement of 0.12% of the gross area for HYSD bars in slabs."
+        },
+        {
+          "num": 5,
+          "text": "The ratio of the diameter of reinforcing bars and the slab thickness is",
+          "options": [
+            "1/4",
+            "1/5",
+            "1/6",
+            "1/8"
+          ],
+          "correct": 3,
+          "expl": "IS 456 limits the maximum bar diameter to 1/8 of the total slab thickness."
+        },
+        {
+          "num": 6,
+          "text": "Distribution steel is provided",
+          "options": [
+            "In one way slab",
+            "In beam",
+            "In column",
+            "None"
+          ],
+          "correct": 0,
+          "expl": "In a one-way slab, distribution (secondary) reinforcement is provided transverse to the main steel to distribute load and control shrinkage/temperature cracking."
+        },
+        {
+          "num": 7,
+          "text": "In case of slabs using Mild Steel bars, the minimum %age of steel recommended is",
+          "options": [
+            "1.0%",
+            "0.3%",
+            "0.15%",
+            "0.12%"
+          ],
+          "correct": 2,
+          "expl": "IS 456 specifies a minimum reinforcement of 0.15% of gross area for slabs using mild steel bars."
+        },
+        {
+          "num": 8,
+          "text": "In case of simply supported beam of span 15m, the minimum effective depth to satisfy vertical deflection limit should be",
+          "options": [
+            "450 mm",
+            "600 mm",
+            "750 mm",
+            "900 mm"
+          ],
+          "correct": 2,
+          "expl": "Using the basic span/depth ratio of 20 for simply supported beams: d = 15000/20 = 750 mm."
+        },
+        {
+          "num": 9,
+          "text": "In a two way slab, main reinforcement is provided along",
+          "options": [
+            "Width of the slab",
+            "Length of the slab",
+            "Diagonal of the slab",
+            "Length and width of the slab"
+          ],
+          "correct": 3,
+          "expl": "In a two-way slab, both spans carry significant moment, so main reinforcement runs in both directions (length and width)."
+        },
+        {
+          "num": 10,
+          "text": "The effective span of a simply supported slab is",
+          "options": [
+            "Distance between the centres of the bearings",
+            "Clear distance between inner faces of walls plus twice the thickness of wall",
+            "Clear span plus effective depth of the slab",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "IS 456 defines effective span using several criteria (least of distance between bearing centres, clear span + effective depth, etc.), so effectively all apply as governing conditions."
+        },
+        {
+          "num": 11,
+          "text": "For a continuous floor slab supported on beams, the ratio of end span length and intermediate span length is",
+          "options": [
+            "0.6",
+            "0.7",
+            "0.8",
+            "0.9"
+          ],
+          "correct": 3,
+          "expl": "IS 456's simplified moment coefficient method for continuous slabs applies when the end span is not less than 0.9 times the intermediate span."
+        },
+        {
+          "num": 12,
+          "text": "For cantilever slab, span to depth ratio as per control of deflection is",
+          "options": [
+            "7",
+            "20",
+            "25",
+            "30"
+          ],
+          "correct": 0,
+          "expl": "IS 456 gives a basic span/effective-depth ratio of 7 for cantilever members."
+        },
+        {
+          "num": 13,
+          "text": "If ly/lx > 2.0 the slab is",
+          "options": [
+            "Two way slab",
+            "Continuous slab",
+            "Flat slab",
+            "One way slab"
+          ],
+          "correct": 3,
+          "expl": "When the long-to-short span ratio exceeds 2, load transfer predominantly occurs along the shorter span, and the slab is designed as one-way."
+        },
+        {
+          "num": 14,
+          "text": "In a two way slab, main reinforcement is provided along",
+          "options": [
+            "Width of the slab",
+            "Length of the slab",
+            "Diagonal of the slab",
+            "Length and width of the slab"
+          ],
+          "correct": 3,
+          "expl": "As with Q9, a two-way slab requires main reinforcement in both the length and width directions."
+        },
+        {
+          "num": 15,
+          "text": "A flat slab is supported on",
+          "options": [
+            "Beams",
+            "Columns",
+            "Walls",
+            "Columns monolithically built with slab"
+          ],
+          "correct": 1,
+          "expl": "A flat slab is a slab system supported directly on columns without beams."
+        },
+        {
+          "num": 16,
+          "text": "In case of two-way slab, the depth of slab is based on",
+          "options": [
+            "Long span",
+            "Mostly long span but sometimes short span",
+            "Short span",
+            "Independent of the span"
+          ],
+          "correct": 2,
+          "expl": "Two-way slab depth is generally governed by the shorter span, since it carries a greater share of the load."
+        },
+        {
+          "num": 17,
+          "text": "Minimum percentage of torsion (torsion/corner) steel in RCC slab is",
+          "options": [
+            "0.1%bD",
+            "0.12%bD",
+            "0.15%bD",
+            "0.2%bD"
+          ],
+          "correct": 1,
+          "expl": "The minimum reinforcement provision of 0.12%bD (as for HYSD main/distribution steel) also applies to torsion steel at corners of two-way slabs."
+        },
+        {
+          "num": 18,
+          "text": "Maximum permitted spacing of main bars in a slab is",
+          "options": [
+            "100m",
+            "3d",
+            "5d",
+            "450mm"
+          ],
+          "correct": 1,
+          "expl": "IS 456 limits main reinforcement spacing in slabs to the lesser of 3 times the effective depth (3d) or 300 mm."
+        },
+        {
+          "num": 19,
+          "text": "A slab-beam floor system may be supported on brick walls or framed into a system of RC columns. The floor thickness (slab + beam web) for the same span will be",
+          "options": [
+            "less when framed into a system of RC columns",
+            "less when supported on brick walls",
+            "the same in both cases",
+            "equal to the wall thickness or size of column"
+          ],
+          "correct": 0,
+          "expl": "Framing into columns (continuous construction) generally reduces effective span moments/ deflection demand compared to simply-supported wall bearing, allowing a thinner floor system."
+        },
+        {
+          "num": 20,
+          "text": "The sum of nodal forces at any yield line intersection in a slab is",
+          "options": [
+            "zero",
+            "infinity",
+            "independent of the reinforcement",
+            "indeterminate"
+          ],
+          "correct": 0,
+          "expl": "In yield line theory, equilibrium requires that the nodal forces at any yield line intersection sum to zero."
+        },
+        {
+          "num": 21,
+          "text": "Shrinkage in a concrete slab",
+          "options": [
+            "causes shear cracks",
+            "causes tension cracks",
+            "causes compression cracks",
+            "does not cause any cracking"
+          ],
+          "correct": 1,
+          "expl": "Restrained shrinkage generates tensile stresses in the slab, leading to tension (shrinkage) cracks."
+        }
+      ]
+    }
+  ]
+}

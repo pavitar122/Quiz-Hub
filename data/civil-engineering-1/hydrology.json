@@ -1,0 +1,1330 @@
+{
+  "id": "hyd",
+  "title": "Hydrology",
+  "description": "Objective-type practice questions covering principles of hydrology, including evaporation, transpiration, stream flow, and their measurement.",
+  "subcats": [
+    {
+      "name": "Evaporation, Stream Flow and its Measurement",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Wading technique is used:",
+          "options": [
+            "To determine velocity of canal sea waves during Tsunami",
+            "To determine thickness of canal lining in alluvial soils",
+            "To measure the volume of dredging material in harbours",
+            "To determine velocity of flow in a shallow stream"
+          ],
+          "correct": 3,
+          "expl": "The wading method involves an observer wading into a shallow stream with a current meter to directly measure point velocities."
+        },
+        {
+          "num": 2,
+          "text": "A stilling well is required when the stage measurement is made by employing",
+          "options": [
+            "Bubble gauge",
+            "Float gauge recorder",
+            "Vertical staff gauge",
+            "Inclined staff gauge"
+          ],
+          "correct": 1,
+          "expl": "Float gauge recorders need a stilling well to dampen surface waves and give a smooth, accurate record of stage."
+        },
+        {
+          "num": 3,
+          "text": "Penman's equation is based on",
+          "options": [
+            "Energy budgeting only",
+            "Energy budgeting and water budgeting",
+            "Energy budgeting and mass transfer",
+            "Water budgeting and mass transfer"
+          ],
+          "correct": 2,
+          "expl": "Penman combined the energy balance approach with the aerodynamic (mass transfer) approach to eliminate the need for surface temperature data."
+        },
+        {
+          "num": 4,
+          "text": "The Penman's evapo-transpiration equation is based on",
+          "options": [
+            "Water budget method",
+            "Energy balance method",
+            "Mass transfer method",
+            "Energy balance and mass transfer approach"
+          ],
+          "correct": 3,
+          "expl": "Penman's combined equation merges the energy balance and aerodynamic mass transfer methods."
+        },
+        {
+          "num": 5,
+          "text": "Isopleths are lines on a map through points having equal depth of",
+          "options": [
+            "Rainfall",
+            "Infiltration",
+            "Evapotranspiration",
+            "Total runoff"
+          ],
+          "correct": 2,
+          "expl": "Isopleths in evapotranspiration studies join points of equal evapotranspiration depth."
+        },
+        {
+          "num": 6,
+          "text": "Lysimeter and Tensiometer are used to measure respectively, one of the following groups of quantities",
+          "options": [
+            "Capillary potential and permeability",
+            "Evapotranspiration and capillary potential",
+            "Velocity in channels and vapour pressure",
+            "Velocity in pipes and pressure head"
+          ],
+          "correct": 1,
+          "expl": "A lysimeter measures evapotranspiration from a vegetated soil block, while a tensiometer measures soil-water (capillary) potential."
+        },
+        {
+          "num": 7,
+          "text": "A lysimeter is used to measure",
+          "options": [
+            "Infiltration",
+            "Evaporation",
+            "Evapotranspiration",
+            "Radiation"
+          ],
+          "correct": 2,
+          "expl": "A lysimeter is a tank containing soil and vegetation used to directly measure evapotranspiration by water balance."
+        },
+        {
+          "num": 8,
+          "text": "What is the pan coefficient for an ISI pan used for measuring evaporation?",
+          "options": [
+            "0.8",
+            "0.7",
+            "0.6",
+            "1"
+          ],
+          "correct": 0,
+          "expl": "The ISI (modified Class A) pan used in India has a standard pan coefficient of about 0.8."
+        },
+        {
+          "num": 9,
+          "text": "By using rods, the velocity obtained is",
+          "options": [
+            "Mean velocity",
+            "Maximum velocity",
+            "Minimum velocity",
+            "Surface velocity"
+          ],
+          "correct": 0,
+          "expl": "A velocity rod integrates velocity over the depth of flow, giving directly the mean velocity in the vertical."
+        },
+        {
+          "num": 10,
+          "text": "The crest gauge is used to record",
+          "options": [
+            "the lowest stage in the river",
+            "the average stage in the river",
+            "the peak stage in the river",
+            "the stage continuously with time"
+          ],
+          "correct": 2,
+          "expl": "A crest-stage gauge is a simple device that records only the maximum (peak) water level reached during a flood."
+        },
+        {
+          "num": 11,
+          "text": "If N is the speed of the current meter in revolutions per second, the velocity measured by it is proportional to",
+          "options": [
+            "N^1/2",
+            "N",
+            "N^3/2",
+            "N^2"
+          ],
+          "correct": 1,
+          "expl": "Current meters are calibrated with a linear relation v = aN + b, so velocity is directly proportional to rotational speed N."
+        },
+        {
+          "num": 12,
+          "text": "One cumec-day of volume is equal to",
+          "options": [
+            "86400 m3",
+            "8.64 ha-m",
+            "24 cumec-hours",
+            "all the above"
+          ],
+          "correct": 3,
+          "expl": "1 cumec-day = 1 m3/s × 86400 s = 86400 m3 = 8.64 ha-m = 24 cumec-hours, so all three are correct."
+        },
+        {
+          "num": 13,
+          "text": "The dilution method of streamgauging is best suited for",
+          "options": [
+            "small streams with fairly steady turbulent flow",
+            "meandering streams in alluvial plains",
+            "streams with large depth and discharge",
+            "any type of stream"
+          ],
+          "correct": 0,
+          "expl": "The dilution (chemical/tracer) method relies on thorough turbulent mixing, making it best suited to small, steep, turbulent streams."
+        },
+        {
+          "num": 14,
+          "text": "When the stage in the river is 4.8 m and the water surface slope is 1 in 1000 the discharge is measured to be 600 m3/s. What would be the discharge carried by the river when the stage is same but the water surface slope is 1 in 1440?",
+          "options": [
+            "300 m3/s",
+            "400 m3/s",
+            "500 m3/s",
+            "600 m3/s"
+          ],
+          "correct": 2,
+          "expl": "At the same stage, discharge varies as the square root of slope: Q2 = 600×√((1/1440)/(1/1000)) = 600×√0.694 ≈ 500 m3/s."
+        },
+        {
+          "num": 15,
+          "text": "Which of the following is the largest unit of volume?",
+          "options": [
+            "hectare-metre",
+            "km2-mm",
+            "million-m3",
+            "cumec"
+          ],
+          "correct": 2,
+          "expl": "1 hectare-metre = 10,000 m3, 1 km2-mm = 1,000 m3, and 1 million-m3 = 1,000,000 m3, so million-m3 is the largest volume unit listed (cumec is a rate, not a volume)."
+        },
+        {
+          "num": 16,
+          "text": "The runoff from a drainage basin of area 4320 km2 is estimated as 10000 cumec-days. What is the depth of runoff?",
+          "options": [
+            "20 cm",
+            "40 cm",
+            "43.2 cm",
+            "21.6 cm"
+          ],
+          "correct": 0,
+          "expl": "Volume = 10000×86400 = 8.64×10^8 m3; depth = volume/area = 8.64×10^8/(4320×10^6) = 0.2 m = 20 cm."
+        },
+        {
+          "num": 17,
+          "text": "According to Dalton's law, evaporation is proportional to",
+          "options": [
+            "the vapour pressure gradient",
+            "the difference between the saturation vapour pressure at 100°C and the actual vapour pressure",
+            "the difference between the actual vapour pressure and the saturation vapour pressure at 0°C",
+            "the difference between the saturation vapour pressure at a given temperature and the saturation vapour pressure at 0°C"
+          ],
+          "correct": 0,
+          "expl": "Dalton's law states evaporation is proportional to the difference between saturation vapour pressure at the water surface temperature and the actual vapour pressure in the air, i.e. the vapour pressure gradient."
+        },
+        {
+          "num": 18,
+          "text": "The salinity in water",
+          "options": [
+            "reduce the evaporation",
+            "does not affect evaporation",
+            "increases the evaporation",
+            "difficult to say"
+          ],
+          "correct": 0,
+          "expl": "Dissolved salts lower the vapour pressure of water, thereby reducing the rate of evaporation."
+        },
+        {
+          "num": 19,
+          "text": "The pan evaporation is denoted by Ep and the actual evaporation by E. Then",
+          "options": [
+            "Ep > E",
+            "E > Ep",
+            "E = Ep",
+            "E ≤ Ep"
+          ],
+          "correct": 0,
+          "expl": "Due to the pan's smaller size, heat storage, and boundary effects, pan evaporation Ep is generally greater than actual evaporation E from a large water body."
+        },
+        {
+          "num": 20,
+          "text": "The pan coefficient is defined as",
+          "options": [
+            "E/Ep",
+            "Ep/E",
+            "(Ep − E)",
+            "Ep · E"
+          ],
+          "correct": 0,
+          "expl": "The pan coefficient converts pan-measured evaporation to actual (lake) evaporation and is defined as the ratio of actual evaporation to pan evaporation, E/Ep."
+        },
+        {
+          "num": 21,
+          "text": "The chemical compound which is generally used to reduce the evaporation from water surface is",
+          "options": [
+            "D.D.T",
+            "Alum",
+            "Cetyl alcohol",
+            "Potassium dichromate"
+          ],
+          "correct": 2,
+          "expl": "Cetyl alcohol forms a monomolecular film on the water surface that suppresses evaporation."
+        },
+        {
+          "num": 22,
+          "text": "Atmometer is used to measure",
+          "options": [
+            "evaporation",
+            "transpiration",
+            "evapotranspiration",
+            "all the above"
+          ],
+          "correct": 0,
+          "expl": "An atmometer (evaporimeter) is an instrument used specifically to measure the rate of evaporation."
+        },
+        {
+          "num": 23,
+          "text": "The evaporation through plants and from the surrounding soil together is called",
+          "options": [
+            "hydration",
+            "vapourisation",
+            "transpiration",
+            "evapotranspiration"
+          ],
+          "correct": 3,
+          "expl": "Evapotranspiration is the combined loss of water via evaporation from soil/water surfaces and transpiration from plants."
+        },
+        {
+          "num": 24,
+          "text": "Match List-I with List-II and select the correct answer using the codes given below the lists: List-I: (i) Hydraulic conductivity (ii) Infiltration capacity (iii) Transpiration (iv) Relative humidity | List-II: 1. Psychrometer 2. Phytometer 3. Permeameter 4. Rainfall simulator",
+          "options": [
+            "3, 4, 2, 1",
+            "3, 4, 1, 2",
+            "4, 3, 2, 1",
+            "3, 2, 4, 1"
+          ],
+          "correct": 0,
+          "expl": "Hydraulic conductivity is measured by a permeameter, infiltration capacity by a rainfall simulator, transpiration by a phytometer, and relative humidity by a psychrometer."
+        }
+      ]
+    },
+    {
+      "name": "Hydrographs, Runoff and Infiltration",
+      "questions": [
+        {
+          "num": 1,
+          "text": "When the outflow from a storage reservoir is uncontrolled as in a freely operating spillway, the peak of outflow hydrograph occurs at",
+          "options": [
+            "The point of intersection of the inflow and outflow hydrographs",
+            "A point, after the intersection of the inflow and outflow hydrographs",
+            "The tail of inflow hydrograph",
+            "A point, before the intersection of the inflow and outflow hydrographs"
+          ],
+          "correct": 0,
+          "expl": "Storage is maximum (dS/dt=0) exactly when inflow equals outflow, so for an uncontrolled spillway the outflow peak coincides with the intersection of the two hydrographs."
+        },
+        {
+          "num": 2,
+          "text": "A watershed got transformed from rural to urban over a period of time. The effect of urbanization on storm runoff hydrograph from the watershed is to",
+          "options": [
+            "Decrease the volume of runoff",
+            "Increase the time to peak discharge",
+            "Decrease the time base",
+            "Decrease the peak discharge"
+          ],
+          "correct": 2,
+          "expl": "Urbanization increases impervious cover and drainage efficiency, so runoff concentrates faster, shortening the time base and raising the peak."
+        },
+        {
+          "num": 3,
+          "text": "The ratio of actual evapo-transpiration to potential evapo-transpiration is in the range of",
+          "options": [
+            "0.0 to 0.4",
+            "0.6 to 0.9",
+            "0.0 to 1.0",
+            "100 to 2.0"
+          ],
+          "correct": 2,
+          "expl": "Actual ET can range anywhere from zero (dry soil) up to potential ET (saturated soil), so the ratio spans 0.0 to 1.0."
+        },
+        {
+          "num": 4,
+          "text": "S-Curve Hydrograph is the hydrograph",
+          "options": [
+            "Producing 1 cm of runoff over the basin",
+            "Of flow from a 1 cm intensity rain of infinite duration",
+            "Having a volume of 1 cm3",
+            "Of the total storm duration in any single storm rainfall"
+          ],
+          "correct": 1,
+          "expl": "The S-curve represents the hydrograph resulting from a continuous effective rainfall of intensity 1 cm/h applied indefinitely."
+        },
+        {
+          "num": 5,
+          "text": "Steep rise in the flow-mass curve during a certain period indicates:",
+          "options": [
+            "Very high evaporation losses during that period",
+            "Flash floods during that period",
+            "Sudden spurt in irrigation demand during that period",
+            "Sudden rise in demand for water to meet hydropower generation"
+          ],
+          "correct": 1,
+          "expl": "A steep rise in cumulative flow volume over a short time reflects a sudden large inflow, characteristic of flash floods."
+        },
+        {
+          "num": 6,
+          "text": "The shape of the recession limb of hydrograph depends on",
+          "options": [
+            "Basin as well as storm characteristics",
+            "Storm characteristics only",
+            "Basin characteristics only",
+            "Base flow only"
+          ],
+          "correct": 2,
+          "expl": "The recession limb reflects the basin's storage depletion characteristics and is essentially independent of the storm that produced the flood."
+        },
+        {
+          "num": 7,
+          "text": "Viewing watershed as a system, which one of the following assumptions is made in the Unit Hydrograph theory?",
+          "options": [
+            "Non-linearity",
+            "Both linearity and time variance",
+            "Both time invariance and non-linearity",
+            "Both linearity and time invariance"
+          ],
+          "correct": 3,
+          "expl": "Unit hydrograph theory assumes the watershed behaves as a linear, time-invariant system."
+        },
+        {
+          "num": 8,
+          "text": "Which one of the following characteristics described a watershed system in system's parlance?",
+          "options": [
+            "Linear",
+            "Non-linear",
+            "Linear and time-invariant",
+            "Non-linear and time-variant"
+          ],
+          "correct": 2,
+          "expl": "For unit hydrograph theory to apply, the watershed is idealized as a linear, time-invariant system."
+        },
+        {
+          "num": 9,
+          "text": "Total area of DRH is equal to",
+          "options": [
+            "Total rainfall",
+            "Total transpiration",
+            "Total evapotranspiration",
+            "Run-off volume"
+          ],
+          "correct": 3,
+          "expl": "The area under the direct runoff hydrograph (DRH) represents the total volume of direct runoff."
+        },
+        {
+          "num": 10,
+          "text": "Match List-I with List-II and select the correct answer using the codes given below the lists: List-I: (i) Rainfall intensity (ii) Rainfall excess (iii) Rainfall averaging (iv) Mass curve | List-II: 1. Isohyets 2. Cumulative rainfall 3. Hyetograph 4. Direct runoff hydrograph",
+          "options": [
+            "1, 3, 2, 4",
+            "3, 4, 1, 2",
+            "3, 4, 2, 1",
+            "3, 2, 4, 1"
+          ],
+          "correct": 1,
+          "expl": "Rainfall intensity is shown by a hyetograph, rainfall excess produces the direct runoff hydrograph, rainfall averaging uses isohyets, and a mass curve plots cumulative rainfall."
+        },
+        {
+          "num": 11,
+          "text": "What is unity in a unit run-off hydrograph?",
+          "options": [
+            "Duration of storm",
+            "Area of basin",
+            "Depth of run-off",
+            "Base period of hydrograph"
+          ],
+          "correct": 2,
+          "expl": "A unit hydrograph corresponds to a unit (typically 1 cm) depth of direct runoff produced by effective rainfall of a given duration."
+        },
+        {
+          "num": 12,
+          "text": "The ratio of total channel length to the discharge area is called",
+          "options": [
+            "Drainage volume",
+            "Runoff volume",
+            "Drainage density",
+            "Mass curve density"
+          ],
+          "correct": 2,
+          "expl": "Drainage density is defined as the total length of streams per unit area of the drainage basin."
+        },
+        {
+          "num": 13,
+          "text": "Infiltration capacity of the soil is defined as",
+          "options": [
+            "the depth of water absorbed by the soil during the storm",
+            "the intensity of rainfall above which the rainfall volume equals the observed runoff volume",
+            "the maximum rate at which the soil absorbs water",
+            "the permeability of the soil in vertical direction"
+          ],
+          "correct": 2,
+          "expl": "Infiltration capacity is the maximum rate at which a given soil, under given conditions, can absorb water."
+        },
+        {
+          "num": 14,
+          "text": "A 6 h storm with hourly intensities of 7, 18, 25, 12, 10 and 3 mm/h produced a runoff of 33 mm. Then the φ-index is",
+          "options": [
+            "7 mm/h",
+            "3 mm/h",
+            "10 mm/h",
+            "8 mm/h"
+          ],
+          "correct": 3,
+          "expl": "With φ = 8 mm/h, the excess from the hours exceeding φ (18,25,12,10) sums to (10+17+4+2)=33 mm, matching the given runoff exactly."
+        },
+        {
+          "num": 15,
+          "text": "φ-index is defined as",
+          "options": [
+            "the difference between maximum and minimum infiltration capacities",
+            "the difference between the total rainfall and the total runoff divided by the duration of the storm",
+            "the rainfall intensity above which the rainfall volume equals the observed runoff volume",
+            "the minimum infiltration rate during the storm"
+          ],
+          "correct": 2,
+          "expl": "The φ-index is the constant rainfall intensity threshold above which the volume of rainfall equals the volume of observed runoff."
+        },
+        {
+          "num": 16,
+          "text": "W-index will be always",
+          "options": [
+            "equal to φ-index",
+            "more than φ-index",
+            "less than φ-index",
+            "a constant fraction of φ-index"
+          ],
+          "correct": 2,
+          "expl": "The W-index also subtracts surface storage and interception losses in addition to infiltration, so it is always less than or equal to the φ-index."
+        },
+        {
+          "num": 17,
+          "text": "A 6 h storm with a uniform intensity of 1.5 cm/h produced a runoff depth of 72 mm. The average infiltration rate during this storm is",
+          "options": [
+            "3 mm/h",
+            "6 mm/h",
+            "9 mm/h",
+            "12 mm/h"
+          ],
+          "correct": 0,
+          "expl": "Total rainfall = 1.5×6 = 9 cm; loss = 9−7.2 = 1.8 cm over 6 h = 0.3 cm/h = 3 mm/h."
+        },
+        {
+          "num": 18,
+          "text": "A 6 h storm of uniform intensity and a total of 8 cm produced a runoff of 5 cm. What is the runoff produced by a 12 h storm of uniform intensity and a total rainfall of 11 cm, assuming φ-index to be the same during both storms?",
+          "options": [
+            "5 cm",
+            "8 cm",
+            "11 cm",
+            "9 cm"
+          ],
+          "correct": 0,
+          "expl": "φ = (8−5)/6 = 0.5 cm/h; for the 12 h storm loss = 0.5×12 = 6 cm, so runoff = 11−6 = 5 cm."
+        },
+        {
+          "num": 19,
+          "text": "Under identical conditions, if the infiltration capacity measured by double ring infiltrometer is fd and that measured by a rainfall simulator is fs, then which of the following is true?",
+          "options": [
+            "fs < fd",
+            "fs > fd",
+            "fs = fd",
+            "difficult to tell"
+          ],
+          "correct": 0,
+          "expl": "Raindrop impact in a rainfall simulator seals and compacts the soil surface, so the infiltration rate it measures (fs) is generally lower than that from a double ring infiltrometer (fd)."
+        },
+        {
+          "num": 20,
+          "text": "Interception loss, when expressed as per cent of storm rainfall,",
+          "options": [
+            "increases with increase in storm rainfall",
+            "decreases with increase in storm rainfall",
+            "decreases with decrease in storm rainfall",
+            "is independent of storm rainfall"
+          ],
+          "correct": 1,
+          "expl": "Interception storage capacity is limited (fills quickly), so as total storm rainfall increases, interception loss becomes a smaller percentage of it."
+        },
+        {
+          "num": 21,
+          "text": "Direct runoff is the sum of",
+          "options": [
+            "the surface runoff and the base flow",
+            "the base flow and the groundwater runoff",
+            "the delayed subsurface runoff and the deep percolation",
+            "the surface runoff and the prompt subsurface runoff"
+          ],
+          "correct": 3,
+          "expl": "Direct runoff comprises surface runoff plus the prompt (fast) component of subsurface interflow that reaches the stream quickly."
+        },
+        {
+          "num": 22,
+          "text": "The base flow is the difference between",
+          "options": [
+            "the total runoff and the direct runoff",
+            "the total runoff and the delayed subsurface runoff",
+            "the prompt subsurface runoff and the delayed subsurface runoff",
+            "the total runoff and the prompt subsurface runoff"
+          ],
+          "correct": 0,
+          "expl": "Base flow is what remains of total streamflow after subtracting the direct runoff component."
+        },
+        {
+          "num": 23,
+          "text": "The base flow of a stream represents",
+          "options": [
+            "the groundwater runoff and the prompt subsurface runoff",
+            "the groundwater runoff and the subsurface runoff",
+            "the groundwater runoff and the delayed subsurface runoff",
+            "the runoff due to snow melt"
+          ],
+          "correct": 2,
+          "expl": "Base flow consists of groundwater contribution plus the delayed (slow-draining) portion of subsurface flow."
+        },
+        {
+          "num": 24,
+          "text": "Virgin flow means",
+          "options": [
+            "the flow in the stream corresponding to no infiltration and evaporation losses",
+            "the flow in the stream which is not affected by the works of man",
+            "the flow in the stream which does not contain the flow from the watershed leakage of the neighbouring basin",
+            "none of the above"
+          ],
+          "correct": 1,
+          "expl": "Virgin flow is the natural streamflow unaffected by human works such as reservoirs, diversions, or abstractions."
+        },
+        {
+          "num": 25,
+          "text": "The water year in India may be taken as",
+          "options": [
+            "from June to May",
+            "from January to December",
+            "from April to March",
+            "from October to September"
+          ],
+          "correct": 0,
+          "expl": "In India the hydrological (water) year is conventionally taken from 1st June to 31st May, aligned with the monsoon cycle."
+        },
+        {
+          "num": 26,
+          "text": "The subsurface runoff is also known as",
+          "options": [
+            "Interflow",
+            "Storm seepage",
+            "Secondary base flow",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Subsurface runoff is variously termed interflow, storm seepage, or secondary base flow depending on the reference."
+        },
+        {
+          "num": 27,
+          "text": "Flow mass curve is the graph drawn between",
+          "options": [
+            "the flow rate and time",
+            "cumulative volume of flow and time",
+            "cumulative volume of flow and cumulative time",
+            "cumulative discharge and time"
+          ],
+          "correct": 1,
+          "expl": "A flow mass curve plots the cumulative volume of streamflow against time."
+        },
+        {
+          "num": 28,
+          "text": "Flow mass curve is used",
+          "options": [
+            "to determine the storage capacity of the reservoir to meet a given uniform demand",
+            "to check the consistency of the flow record at a given site",
+            "to develop the unit hydrograph",
+            "to develop the synthetic unit hydrograph"
+          ],
+          "correct": 0,
+          "expl": "The Rippl (flow mass) curve is used to determine the reservoir storage needed to meet a specified uniform demand."
+        },
+        {
+          "num": 29,
+          "text": "The flow mass curve is an integral curve of",
+          "options": [
+            "rainfall hyetograph",
+            "infiltration curve",
+            "discharge hydrograph",
+            "rating curve of the gauging site"
+          ],
+          "correct": 2,
+          "expl": "Since it plots cumulative discharge against time, the flow mass curve is mathematically the integral of the discharge hydrograph."
+        },
+        {
+          "num": 30,
+          "text": "Flow duration curve is the graph drawn between",
+          "options": [
+            "the discharge in the stream and time",
+            "the accumulated discharge and time",
+            "the discharge and the per cent of time such discharge is equaled or exceeded",
+            "cumulative volume of flow and time"
+          ],
+          "correct": 2,
+          "expl": "A flow duration curve shows discharge on one axis and the percentage of time that discharge is equalled or exceeded on the other."
+        },
+        {
+          "num": 31,
+          "text": "If Q0 and Qt are the discharges at times t0 and t on the recession limb of the hydrograph and a is a coefficient with positive value, then",
+          "options": [
+            "Qt/Q0 = e^a(t−t0)",
+            "Qt/Q0 = e^−a(t−t0)",
+            "Qt/Q0 = e^a(t−t0)^2",
+            "Qt/Q0 = e^−a(t−t0)^2"
+          ],
+          "correct": 1,
+          "expl": "The recession limb follows an exponential decay, Qt = Q0·e^{−a(t−t0)}, since discharge decreases with time."
+        },
+        {
+          "num": 32,
+          "text": "The inflection point on the recession side of the hydrograph indicates the end of",
+          "options": [
+            "the base flow",
+            "the direct runoff",
+            "the overland flow",
+            "rainfall"
+          ],
+          "correct": 2,
+          "expl": "The inflection point on the recession limb marks the point where overland (surface) flow contribution ceases and interflow/baseflow dominate."
+        },
+        {
+          "num": 33,
+          "text": "The concept of unit hydrograph was first introduced by",
+          "options": [
+            "Dalton",
+            "Sherman",
+            "Horton",
+            "Thiessen"
+          ],
+          "correct": 1,
+          "expl": "L.K. Sherman introduced the unit hydrograph concept in 1932."
+        },
+        {
+          "num": 34,
+          "text": "The unit hydrograph is the graphical relation between the time distributions of",
+          "options": [
+            "total rainfall and total runoff",
+            "total rainfall and direct runoff",
+            "effective rainfall and total runoff",
+            "effective rainfall and direct runoff"
+          ],
+          "correct": 3,
+          "expl": "A unit hydrograph relates the time distribution of effective rainfall to the resulting direct runoff hydrograph."
+        },
+        {
+          "num": 35,
+          "text": "The word unit in the unit hydrograph refers to the",
+          "options": [
+            "unit depth of runoff",
+            "unit duration of the storm",
+            "unit base period of the hydrograph",
+            "unit area of the basin"
+          ],
+          "correct": 1,
+          "expl": "As per the given answer key, 'unit' in unit hydrograph refers to the unit duration of the effective rainfall producing the hydrograph."
+        },
+        {
+          "num": 36,
+          "text": "If Krs, Kri and Krb denote the recession constants of surface runoff, interflow and baseflow respectively, which of the following is true?",
+          "options": [
+            "Krs > Kri > Krb",
+            "Krs < Kri < Krb",
+            "Krs > Kri < Krb",
+            "Krs < Kri > Krb"
+          ],
+          "correct": 0,
+          "expl": "Taking the recession constants as depletion-rate coefficients, surface runoff depletes fastest, then interflow, then baseflow (slowest), giving Krs > Kri > Krb."
+        },
+        {
+          "num": 37,
+          "text": "The peak ordinate of a 4 h unit hydrograph of a basin is 270 m3/s. Then the peak ordinate of the 8 h unit hydrograph of the same basin will be",
+          "options": [
+            "270 m3/s",
+            "less than 270 m3/s",
+            "more than 270 m3/s",
+            "(270 × e^−4/8) m3/s"
+          ],
+          "correct": 1,
+          "expl": "A longer-duration unit hydrograph spreads the same 1 cm runoff volume over a longer base period, so its peak ordinate is lower."
+        },
+        {
+          "num": 38,
+          "text": "The peak discharges in 4 and 8 hour unit hydrographs of a basin occur at t1 and t2. Then",
+          "options": [
+            "t1 = t2",
+            "t1 > t2",
+            "t1 < t2",
+            "difficult to guess"
+          ],
+          "correct": 2,
+          "expl": "The shorter-duration (4 h) unit hydrograph rises and peaks earlier than the longer-duration (8 h) one, so t1 < t2."
+        },
+        {
+          "num": 39,
+          "text": "The base period of a 6 h unit hydrograph of a basin is 84 h. Then a 12 h hydrograph derived from this 6 h unit hydrograph will have a base period of",
+          "options": [
+            "90 h",
+            "78 h",
+            "42 h",
+            "168 h"
+          ],
+          "correct": 0,
+          "expl": "When deriving a UH of a longer duration via the S-curve method, the base period increases by the difference in durations: 84 + (12−6) = 90 h."
+        },
+        {
+          "num": 40,
+          "text": "The basic principles of unit hydrograph theory are",
+          "options": [
+            "linearity and time invariance",
+            "nonlinearity and time invariance",
+            "nonlinear time variance and linearity",
+            "nonlinear time variance and nonlinearity"
+          ],
+          "correct": 0,
+          "expl": "Unit hydrograph theory rests on the assumptions of a linear, time-invariant watershed system."
+        },
+        {
+          "num": 41,
+          "text": "A storm occurring over a basin for a period of 6 h with uniform intensity produced an effective rainfall of 15 cm and the peak flow of 930 m3/s. If a storm of the same duration and intensity but an effective rainfall of 7.5 cm occurs, what is the corresponding peak flow?",
+          "options": [
+            "930 m3/s",
+            "1860 m3/s",
+            "2790 m3/s",
+            "465 m3/s"
+          ],
+          "correct": 3,
+          "expl": "By the linearity principle, peak flow scales directly with effective rainfall depth: 930×(7.5/15) = 465 m3/s."
+        },
+        {
+          "num": 42,
+          "text": "The 4 h unit hydrograph of a basin can be approximated as a triangle with a base period of 48 h and a peak ordinate of 200 m3/s. Then the area of the basin is",
+          "options": [
+            "1728 Km2",
+            "3456 Km2",
+            "864 Km2",
+            "5184 Km2"
+          ],
+          "correct": 0,
+          "expl": "Volume of UH (1 cm over basin) = 0.5×base×peak = 0.5×(48×3600)×200 = 1.728×10^7 m3; dividing by 0.01 m gives basin area = 1728 km2."
+        },
+        {
+          "num": 43,
+          "text": "The upper limit on the area of the basin for the applicability of unit hydrograph is generally taken to be",
+          "options": [
+            "100 Km2",
+            "2500 Km2",
+            "5000 Km2",
+            "10000 Km2"
+          ],
+          "correct": 2,
+          "expl": "Unit hydrograph theory is generally considered applicable to basins up to about 5000 km2, beyond which storm non-uniformity becomes significant."
+        },
+        {
+          "num": 44,
+          "text": "The direct runoff hydrograph of a basin can be approximated as a triangle with a base period of 80 h and a peak flow of 200 m3/s occurring at the 16th hour. If the area of the basin is 1440 km2, what is the depth of runoff indicated by the hydrograph?",
+          "options": [
+            "1 cm",
+            "10 cm",
+            "2 cm",
+            "20 cm"
+          ],
+          "correct": 2,
+          "expl": "Volume = 0.5×(80×3600)×200 = 2.88×10^7 m3; depth = volume/area = 2.88×10^7/(1440×10^6) = 0.02 m = 2 cm."
+        },
+        {
+          "num": 45,
+          "text": "The S-curve hydrograph is the summation of the",
+          "options": [
+            "unit hydrograph",
+            "total runoff hydrograph",
+            "effective rainfall hyetograph",
+            "baseflow recession curve"
+          ],
+          "correct": 0,
+          "expl": "An S-curve is generated by summing (superposing) an infinite series of unit hydrographs lagged by the UH duration."
+        },
+        {
+          "num": 46,
+          "text": "The S-curve hydrograph is used",
+          "options": [
+            "to estimate the peak flood flow of a basin resulting from a given storm",
+            "to develop synthetic unit hydrograph",
+            "to convert the unit hydrograph of any given duration into a unit hydrograph of any other desired duration",
+            "to derive the unit hydrograph from complex storms"
+          ],
+          "correct": 2,
+          "expl": "The main practical use of the S-curve is converting a unit hydrograph of one duration into one of a different desired duration."
+        },
+        {
+          "num": 47,
+          "text": "The lag time of the basin is the time interval between",
+          "options": [
+            "the centroid of the rainfall diagram and the peak of the hydrograph",
+            "the beginning and end of direct runoff",
+            "the beginning and end of effective rainfall",
+            "the inflection points on the rising and recession limbs of the hydrograph"
+          ],
+          "correct": 0,
+          "expl": "Basin lag time is defined as the time from the centroid of the effective rainfall hyetograph to the peak of the resulting hydrograph."
+        },
+        {
+          "num": 48,
+          "text": "The following four hydrological features have to be estimated or taken as inputs before one can compute the flood hydrograph at any catchment outlet: 1. Unit hydrograph 2. Rainfall hyetograph 3. Infiltration Index 4. Base flow. The correct order in which they have to be employed in the computation is?",
+          "options": [
+            "1, 2, 3, 4",
+            "2, 1, 4, 3",
+            "2, 3, 1, 4",
+            "4, 1, 3, 2"
+          ],
+          "correct": 2,
+          "expl": "First obtain the rainfall hyetograph, apply the infiltration index to get effective rainfall, convolve with the unit hydrograph, then add base flow."
+        },
+        {
+          "num": 49,
+          "text": "Match List-I (Name of Scientist) with List-II (Contribution to field of Hydrology): List-I: (i) Dalton (ii) Snyder (iii) Balney-Criddle (iv) Sherman | List-II: 1. Unit hydrograph 2. Evaporation 3. Empirical flood 4. Synthetic unit hydrograph 5. Consumptive use equation",
+          "options": [
+            "2, 4, 5, 1",
+            "1, 4, 3, 2",
+            "2, 3, 5, 1",
+            "1, 3, 4, 5"
+          ],
+          "correct": 3,
+          "expl": "As per the answer key: Dalton–evaporation, Snyder–synthetic unit hydrograph, Blaney-Criddle–consumptive use equation, Sherman–unit hydrograph."
+        },
+        {
+          "num": 50,
+          "text": "Match List-I with List-II: List-I: (i) Anemometer (ii) Rain Simulator (iii) Lysimeter (iv) Hygrometer | List-II: 1. Humidity 2. Evapotranspiration 3. Infiltration 4. Wind speed",
+          "options": [
+            "4, 3, 1, 2",
+            "4, 3, 2, 1",
+            "3, 4, 1, 2",
+            "3, 4, 2, 1"
+          ],
+          "correct": 1,
+          "expl": "Anemometer measures wind speed, rain simulator is used for infiltration studies, lysimeter measures evapotranspiration, and hygrometer measures humidity."
+        },
+        {
+          "num": 51,
+          "text": "Match List-I with List-II: List-I: (i) φ index (ii) Lysimeter (iii) Dilution technique (iv) USLE loss | List-II: 1. Used for measurement of evapotranspiration for a given vegetation 2. Used for flow measurement of a stream 3. Average rainfall above which the rainfall is equal to runoff volume 4. Relates to soil-loss estimation from a catchment",
+          "options": [
+            "4, 2, 1, 3",
+            "3, 1, 2, 4",
+            "4, 1, 2, 3",
+            "3, 2, 1, 4"
+          ],
+          "correct": 1,
+          "expl": "φ-index is the threshold intensity equal to runoff volume, lysimeter measures evapotranspiration, dilution technique measures stream flow, and USLE estimates soil loss."
+        },
+        {
+          "num": 52,
+          "text": "The rainfall during three successive 2 hour periods are 0.5, 2.8 and 1.6 cm. The surface runoff resulting from this storm is 3.2 cm. The φ-index value of this storm is (GATE 2004, 2 Marks)",
+          "options": [
+            "0.20 cm/hr",
+            "0.28 cm/hr",
+            "0.30 cm/hr",
+            "0.80 cm/hr"
+          ],
+          "correct": 2,
+          "expl": "With φ=0.30 cm/h, only periods 2 (1.4 cm/h) and 3 (0.8 cm/h) exceed φ, giving excess (1.4−0.3)×2+(0.8−0.3)×2 = 2.2+1.0 = 3.2 cm, matching the given runoff."
+        },
+        {
+          "num": 53,
+          "text": "Match List-I (Contains parameters) with List-II (methods/instruments): List-I: (i) Streamflow velocity (ii) Evapotranspiration Rate (iii) Infiltration rate (iv) Wind velocity | List-II: 1. Anemometer 2. Penman's method 3. Horton's method 4. Current meter",
+          "options": [
+            "1, 2, 3, 4",
+            "4, 3, 2, 1",
+            "4, 2, 3, 1",
+            "1, 3, 2, 4"
+          ],
+          "correct": 2,
+          "expl": "Streamflow velocity is measured by current meter, ET rate by Penman's method, infiltration rate by Horton's method, and wind velocity by anemometer."
+        },
+        {
+          "num": 54,
+          "text": "The drainage area of a watershed is 50 km2. The φ-index is 0.5 cm/hour and the base flow at the outlet is 10 m3/s. A one hour unit hydrograph (unit depth = 1 cm) of the watershed is triangular in shape with a time base of 15 hours. The peak ordinate occurs at 5 hours. The peak ordinate (in m3/s/cm) of the unit hydrograph is (GATE 2012, 2 Marks)",
+          "options": [
+            "10.00",
+            "18.52",
+            "37.03",
+            "185.20"
+          ],
+          "correct": 1,
+          "expl": "Volume for 1 cm over 50 km2 = 500,000 m3. Peak = 2×Volume/base = 2×500,000/(15×3600) ≈ 18.52 m3/s."
+        },
+        {
+          "num": 55,
+          "text": "Storm-I of duration 5 hrs gives a direct run-off of 4 cm and has an average intensity of 2 cm/hr. Storm-II of 8 hr duration gives a run-off of 8.4 cm. (Assume φ-index is the same for both the storms). The value of φ-index is (GATE 2013, 2 Marks)",
+          "options": [
+            "1.2",
+            "1.6",
+            "1",
+            "1.4"
+          ],
+          "correct": 0,
+          "expl": "Storm-I total rainfall = 2×5 = 10 cm; φ = (10−4)/5 = 1.2 cm/h."
+        },
+        {
+          "num": 56,
+          "text": "Total area of DRH is equal to",
+          "options": [
+            "Total rainfall",
+            "Total transpiration",
+            "Total evapotranspiration",
+            "Run-off volume"
+          ],
+          "correct": 3,
+          "expl": "The area under a direct runoff hydrograph represents the total direct runoff volume."
+        },
+        {
+          "num": 57,
+          "text": "Statement for linked questions: A 4 hour UH of a catchment is triangular in shape with a base of 80 hours. The area of the catchment is 720 km2. The base flow and φ-index are 30 m3/s and 1 mm/h, respectively. A storm of 4 cm occurs uniformly in 4 hours over the catchment. The peak discharge of the 4 hour UH is",
+          "options": [
+            "40 m3/s",
+            "50 m3/s",
+            "60 m3/s",
+            "70 m3/s"
+          ],
+          "correct": 1,
+          "expl": "Volume for 1 cm over 720 km2 = 7,200,000 m3; peak = 2×7,200,000/(80×3600) = 50 m3/s."
+        },
+        {
+          "num": 58,
+          "text": "For the same catchment as above: the peak flood discharge due to the storm is",
+          "options": [
+            "210 m3/s",
+            "230 m3/s",
+            "260 m3/s",
+            "720 m3/s"
+          ],
+          "correct": 0,
+          "expl": "Effective rainfall = 4 − (0.1×4) = 3.6 cm; direct runoff peak = 50×3.6 = 180 m3/s; total peak = 180+30(base flow) = 210 m3/s."
+        },
+        {
+          "num": 59,
+          "text": "Peak of a flood hydrograph due to a six-hour storm is 470 m3/sec. The average depth of rainfall is 8.0 cms. Assume an infiltration loss of 0.25 cm/hour and a constant base flow of 15 m3/s. The peak discharge of a 6 hour unit hydrograph for this catchment will be",
+          "options": [
+            "50 m3/sec",
+            "60 m3/sec",
+            "70 m3/sec",
+            "90 m3/sec"
+          ],
+          "correct": 2,
+          "expl": "Effective rainfall = 8 − (0.25×6) = 6.5 cm; direct runoff peak = 470−15 = 455 m3/s; UH peak = 455/6.5 = 70 m3/s."
+        },
+        {
+          "num": 60,
+          "text": "Match List-I with List-II: List-I: (i) Unit hydrograph (ii) Synthetic unit hydrograph (iii) Darcy law (iv) Rational method | List-II: 1. Design flood 2. Permeability 3. Ungauged basin 4. 1 cm of runoff",
+          "options": [
+            "2, 1, 4, 3",
+            "1, 2, 4, 3",
+            "2, 3, 4, 1",
+            "1, 4, 3, 2"
+          ],
+          "correct": 1,
+          "expl": "Per the given answer key, unit hydrograph relates to design flood, synthetic UH to ungauged basins, Darcy's law to permeability, and the rational method to 1 cm of runoff."
+        },
+        {
+          "num": 61,
+          "text": "Match List-I with List-II: List-I: (i) φ index (ii) Slope-area method (iii) Flow-duration curve (iv) Flow duration | List-II: 1. Dependable flow 2. Reservoir regulation 3. Steady stream discharge 4. Runoff 5. Unsteady stream discharge",
+          "options": [
+            "3, 5, 1, 4",
+            "3, 1, 2, 4",
+            "4, 1, 2, 3",
+            "4, 5, 1, 3"
+          ],
+          "correct": 3,
+          "expl": "φ-index relates to runoff estimation, slope-area method to unsteady discharge, flow-duration curve to dependable flow, and flow duration to steady discharge."
+        },
+        {
+          "num": 62,
+          "text": "Match the two lists: List-I: (i) Hydrograph due to continuous effective rainfall (ii) Hydrograph due to an ERH (iii) Unit hydrograph with ordinates expressed as percent of total direct runoff (iv) Unit hydrograph whose duration of effective rainfall is infinitesimally small | List-II: 1. DRH 2. S-curve 3. IUH 4. Distribution graph",
+          "options": [
+            "2, 1, 4, 3",
+            "1, 2, 4, 3",
+            "2, 3, 4, 1",
+            "1, 4, 3, 2"
+          ],
+          "correct": 0,
+          "expl": "Continuous effective rainfall produces an S-curve; a single ERH produces a DRH; ordinates as percent of direct runoff give a distribution graph; and an infinitesimally short unit rainfall gives the IUH."
+        }
+      ]
+    },
+    {
+      "name": "General Aspects of Hydrology and Precipitation",
+      "questions": [
+        {
+          "num": 1,
+          "text": "A Double-Mass-Curve Analysis is useful in",
+          "options": [
+            "Consistency Analysis",
+            "Frequency Analysis",
+            "Storage Computation Analysis",
+            "Guessing missing data in cases of nonhomogeneous terrain"
+          ],
+          "correct": 0,
+          "expl": "Double-mass curve analysis is used to check and correct the consistency of a rain gauge record over time."
+        },
+        {
+          "num": 2,
+          "text": "Orographic rain occurs when the air is cooled sufficiently as a result of",
+          "options": [
+            "Lifting due to flow over a mountain barrier",
+            "Relative movement of two large air masses",
+            "Violent upthrow of air arising from localized heating",
+            "Cyclonic conditions"
+          ],
+          "correct": 0,
+          "expl": "Orographic precipitation occurs when moist air is forced to rise over a mountain barrier, cooling adiabatically until condensation occurs."
+        },
+        {
+          "num": 3,
+          "text": "An isohyet is a line joining points of",
+          "options": [
+            "Equal temperature",
+            "Equal humidity",
+            "Equal rainfall depth",
+            "Equal evaporation"
+          ],
+          "correct": 2,
+          "expl": "An isohyet is a contour line on a map connecting points receiving equal rainfall depth."
+        },
+        {
+          "num": 4,
+          "text": "An isochrone is a line on the basin map",
+          "options": [
+            "Joining raingauge stations having equal rainfall duration",
+            "Joining points having equal rainfall depth in a given time interval",
+            "Joining points having equal time of travel of surface runoff to the catchment outlet",
+            "Joining points which are at equal distance from the catchment outlet"
+          ],
+          "correct": 2,
+          "expl": "An isochrone connects points on a basin from which runoff takes an equal time to travel to the catchment outlet."
+        },
+        {
+          "num": 5,
+          "text": "A hyetograph is a graph representing",
+          "options": [
+            "Rainfall volume with time",
+            "Rainfall intensity with time",
+            "Rainfall volume with duration",
+            "Rainfall intensity over an area"
+          ],
+          "correct": 1,
+          "expl": "A hyetograph is a bar graph showing rainfall intensity plotted against time."
+        },
+        {
+          "num": 6,
+          "text": "If p is the precipitation, a is the area represented by a rain gauge, and n is the number of rain gauges in a catchment area, then the weighted mean rainfall is",
+          "options": [
+            "Σap/Σa2",
+            "Σap/n",
+            "Σap/Σa",
+            "Σap3/Σa3"
+          ],
+          "correct": 2,
+          "expl": "The Thiessen-weighted mean rainfall is the sum of each gauge's rainfall weighted by its representative area, divided by the total area: Σap/Σa."
+        },
+        {
+          "num": 7,
+          "text": "The Thiessen polygon is",
+          "options": [
+            "A polygon obtained by joining adjoining raingauge stations",
+            "A representative area used for weighing the observed station precipitation",
+            "An arc used in the construction of depth area curves",
+            "The descriptive term for shape of a hydrograph"
+          ],
+          "correct": 1,
+          "expl": "Each Thiessen polygon defines the representative area assigned to a rain gauge for weighting its recorded rainfall."
+        },
+        {
+          "num": 8,
+          "text": "Standard rain gauge adopted in India is",
+          "options": [
+            "Natural siphon type",
+            "Tipping bucket type",
+            "Weighing type",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The natural siphon type self-recording rain gauge is the standard type widely adopted in India."
+        },
+        {
+          "num": 9,
+          "text": "Which of the following rain gauges give mass curve?",
+          "options": [
+            "Natural siphon type",
+            "Weighing bucket type",
+            "Tipping bucket type",
+            "Both (A) and (B)"
+          ],
+          "correct": 3,
+          "expl": "Both the natural siphon and weighing bucket type recording gauges produce a continuous trace of cumulative rainfall, i.e. a mass curve."
+        },
+        {
+          "num": 10,
+          "text": "Match List-1 with List-2: List-1: (i) Thiessen polygon (ii) Mass curve (iii) Hyetograph (iv) DAD curve | List-2: 1. Average depth of rainfall over an area 2. Relationship of rainfall intensity and time 3. Relationship of accumulated rainfall and time 4. Relationship of river runoff and time 5. Always a falling curve",
+          "options": [
+            "1, 3, 2, 4",
+            "1, 3, 4, 2",
+            "3, 4, 1, 2",
+            "3, 4, 2, 1"
+          ],
+          "correct": 1,
+          "expl": "Thiessen polygon gives average depth of rainfall over an area, mass curve shows accumulated rainfall vs time, and the remaining pairs follow the answer key's given code."
+        },
+        {
+          "num": 11,
+          "text": "Match List-1 with List-2: List-1: (i) Rainfall intensity (ii) Rainfall excess (iii) Rainfall averaging (iv) Mass curve | List-2: 1. Isohyets 2. Cumulative rainfall 3. Hyetograph 4. Direct runoff hydrograph",
+          "options": [
+            "1, 3, 2, 4",
+            "1, 3, 4, 2",
+            "3, 4, 1, 2",
+            "3, 4, 2, 1"
+          ],
+          "correct": 2,
+          "expl": "Rainfall intensity is shown on a hyetograph, rainfall excess relates to the direct runoff hydrograph, rainfall averaging uses isohyets, and a mass curve plots cumulative rainfall."
+        },
+        {
+          "num": 12,
+          "text": "The science which deals with occurrence, distribution and circulation of water is called",
+          "options": [
+            "Hydrography",
+            "Hydrometry",
+            "Hydrology",
+            "Hydraulics"
+          ],
+          "correct": 2,
+          "expl": "Hydrology is the science dealing with the occurrence, distribution, and circulation of water on and below the earth's surface."
+        },
+        {
+          "num": 13,
+          "text": "IHP stands for",
+          "options": [
+            "Intensive Hydraulic Press",
+            "International Hydrologic Publications",
+            "International Hydrologic Periodicals",
+            "International Hydrologic Programme"
+          ],
+          "correct": 3,
+          "expl": "IHP is UNESCO's International Hydrological Programme."
+        },
+        {
+          "num": 14,
+          "text": "The rainfall hyetograph is the graph drawn between",
+          "options": [
+            "cumulative rainfall and time",
+            "rainfall intensity and time",
+            "rainfall depth and area",
+            "rainfall intensity and cumulative rainfall"
+          ],
+          "correct": 1,
+          "expl": "A hyetograph plots rainfall intensity against time as a bar chart."
+        },
+        {
+          "num": 15,
+          "text": "The rainfall mass curve shows the variation of",
+          "options": [
+            "rainfall intensity with time",
+            "rainfall intensity with cumulative rainfall",
+            "rainfall excess with time",
+            "cumulative rainfall with time"
+          ],
+          "correct": 3,
+          "expl": "A rainfall mass curve is a plot of cumulative (running total) rainfall against time."
+        },
+        {
+          "num": 16,
+          "text": "Double mass curve technique is used",
+          "options": [
+            "to prepare the rainfall hyetograph from the rainfall mass curve",
+            "to prepare the rainfall mass curve from the rainfall hyetograph",
+            "to check the consistency of record at a suspected raingauge station",
+            "in developing isohyetal maps"
+          ],
+          "correct": 2,
+          "expl": "The double mass curve compares cumulative rainfall at a suspect station against the average of several nearby stations to detect and correct inconsistencies."
+        },
+        {
+          "num": 17,
+          "text": "The most accurate method of finding the average depth of rainfall over an area is",
+          "options": [
+            "Isohyetal method",
+            "Arithmetic mean method",
+            "Thiessen polygon method",
+            "any of the above"
+          ],
+          "correct": 0,
+          "expl": "The isohyetal method accounts for spatial variation in rainfall and topography, making it the most accurate of the three methods."
+        },
+        {
+          "num": 18,
+          "text": "The Thiessen weights of 4 raingauges A, B, C and D covering a river basin are 0.15, 0.25, 0.30 and 0.30 respectively. If the average depth of rainfall for the basin is 5 cm, and the rainfalls recorded at B, C and D are 5 cm, 4 cm and 5 cm respectively, what is the rainfall at A?",
+          "options": [
+            "5 cm",
+            "6 cm",
+            "7 cm",
+            "8 cm"
+          ],
+          "correct": 2,
+          "expl": "5 = 0.15A + 0.25(5) + 0.30(4) + 0.30(5) = 0.15A + 3.95, so A = 1.05/0.15 = 7 cm."
+        },
+        {
+          "num": 19,
+          "text": "For a given storm the average depth of rainfall over an area",
+          "options": [
+            "decreases with increase in area",
+            "increases with increase in area",
+            "has no relation with area",
+            "none of the above"
+          ],
+          "correct": 0,
+          "expl": "As the area considered grows, the storm's rainfall becomes more non-uniformly distributed, so the average depth over the area decreases."
+        },
+        {
+          "num": 20,
+          "text": "The chart removed from a recording type raingauge gives",
+          "options": [
+            "a rainfall hyetograph",
+            "an isohyetal map",
+            "a rainfall mass curve",
+            "an intensity-duration curve"
+          ],
+          "correct": 2,
+          "expl": "The chart from a self-recording rain gauge traces cumulative rainfall over time, i.e. a rainfall mass curve."
+        },
+        {
+          "num": 21,
+          "text": "Any cyclic trend present in the rainfall data can be ascertained from",
+          "options": [
+            "depth-area-duration curve",
+            "periodogram",
+            "intensity-duration curve",
+            "double mass curve"
+          ],
+          "correct": 1,
+          "expl": "A periodogram analyzes time-series data for periodic (cyclic) components, making it suitable to detect cyclic trends in rainfall."
+        },
+        {
+          "num": 22,
+          "text": "Match List-I (Type of precipitation) with List-II (Principal causes): List-I: (i) Convective (ii) Cyclonic (iii) Frontal (iv) Orographic | List-II: 1. Temperature difference 2. Mountain barrier 3. Pressure difference 4. Warm and cold",
+          "options": [
+            "1, 3, 4, 2",
+            "3, 1, 2, 4",
+            "1, 4, 2, 3",
+            "4, 1, 2, 3"
+          ],
+          "correct": 0,
+          "expl": "Convective precipitation is driven by localized temperature-induced buoyancy, cyclonic by pressure differences, frontal by warm-cold air interaction, and orographic by mountain barriers."
+        },
+        {
+          "num": 23,
+          "text": "The plan area of a reservoir is 1 km2. The water level in the reservoir is observed to decline by 20 cm in a certain period. During this period the reservoir receives a surface inflow of 10 hectare-metres, and 20 hectare-metres are abstracted from the reservoir for irrigation and power. The pan evaporation and rainfall recorded during the same period at a nearby meteorological station are 12 cm and 3 cm respectively. The calibrated pan factor is 0.7. The seepage loss from the reservoir during this period, in hectare-metres, is",
+          "options": [
+            "0.0",
+            "1.0",
+            "2.4",
+            "4.6"
+          ],
+          "correct": 3,
+          "expl": "Actual evaporation = 12×0.7 = 8.4 ha-m. Water balance: ΔStorage(−20) = Inflow(10) − Outflow(20) − Evaporation(8.4) + Rainfall(3) − Seepage, giving Seepage = 4.6 ha-m."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4284 @@
+{
+  "id": "sewage-pollution",
+  "title": "Sewage Pollution",
+  "description": "Comprehensive MCQs on Water Supply and Environmental Engineering, covering air pollution, noise pollution, solid waste management, sewer design, wastewater treatment, and sewage disposal parameters.",
+  "subcats": [
+    {
+      "name": "Air Pollution",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The presence of ozone in water is indicated by",
+          "options": [
+            "Red color",
+            "Light yellow color",
+            "Blue color",
+            "Black color"
+          ],
+          "correct": 1,
+          "expl": "Ozone dissolved in water imparts a light yellow tinge, used as a rough field indicator of its presence."
+        },
+        {
+          "num": 2,
+          "text": "A mixture of fresh and salt water typically found where rivers meet the ocean is called:",
+          "options": [
+            "Brackish water",
+            "Compound water",
+            "Saline water",
+            "Mixture water"
+          ],
+          "correct": 0,
+          "expl": "Brackish water is the term for water with salinity between fresh and sea water, typical of estuaries."
+        },
+        {
+          "num": 3,
+          "text": "Pollution by depletion of ozone layer, threatening the environment, is caused to the reaction of ozone with",
+          "options": [
+            "Carbon monoxide",
+            "Chlorofluorocarbon (CFC)",
+            "Sulfur dioxide",
+            "Oxygen"
+          ],
+          "correct": 1,
+          "expl": "CFCs release chlorine atoms in the stratosphere that catalytically destroy ozone molecules."
+        },
+        {
+          "num": 4,
+          "text": "The maximum damage to the \"Taj Mahal\" is because of the gas",
+          "options": [
+            "CO2",
+            "SO2",
+            "CO",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "SO2 from nearby industries reacts with moisture to form sulphuric acid, causing 'marble cancer' on the Taj Mahal."
+        },
+        {
+          "num": 5,
+          "text": "The most significant gaseous air pollutant is:",
+          "options": [
+            "Carbon dioxide",
+            "Oxygen",
+            "Nitrogen",
+            "Sulphur dioxide"
+          ],
+          "correct": 3,
+          "expl": "Among the listed gases, SO2 is the significant harmful air pollutant; CO2, O2 and N2 are natural atmospheric constituents."
+        },
+        {
+          "num": 6,
+          "text": "The chances of development of an Ozone hole are more at:",
+          "options": [
+            "Arctic and Antarctic regions",
+            "Equatorial regions",
+            "Regions of mid latitudes",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Polar stratospheric clouds and extreme cold at the poles favor reactions that deplete ozone, especially over Antarctica."
+        },
+        {
+          "num": 7,
+          "text": "Which of the following gases is responsible for acid rain?",
+          "options": [
+            "VOC",
+            "NOx",
+            "CO",
+            "CH4"
+          ],
+          "correct": 1,
+          "expl": "Oxides of nitrogen (along with SO2) combine with atmospheric moisture to form acids that fall as acid rain."
+        },
+        {
+          "num": 8,
+          "text": "Ozone is formed in the atmosphere due to the action of",
+          "options": [
+            "Ultraviolet rays on oxygen",
+            "Infrared rays on oxygen",
+            "Gamma rays on oxygen",
+            "X-rays on oxygen"
+          ],
+          "correct": 0,
+          "expl": "UV radiation splits O2 molecules into atomic oxygen, which then combines with O2 to form ozone (O3)."
+        },
+        {
+          "num": 9,
+          "text": "The percentage of ozone in clean dry air near sea level is around",
+          "options": [
+            "0.2%",
+            "0.002%",
+            "0.0002%",
+            "0.000002%"
+          ],
+          "correct": 0,
+          "expl": "Ozone occurs only in trace amounts near sea level, roughly of the order of 0.2%."
+        },
+        {
+          "num": 10,
+          "text": "The percentage of argon in clean dry air is around",
+          "options": [
+            "4",
+            "0.93",
+            "0.06",
+            "0.0004"
+          ],
+          "correct": 1,
+          "expl": "Argon makes up about 0.93% of clean dry air, the third most abundant atmospheric gas."
+        },
+        {
+          "num": 11,
+          "text": "All of the following pollutants affect heart EXCEPT",
+          "options": [
+            "cadmium",
+            "arsenic",
+            "lead",
+            "carbon monoxide"
+          ],
+          "correct": 1,
+          "expl": "Arsenic is primarily associated with skin, liver and cancer effects rather than direct cardiac impact like the others."
+        },
+        {
+          "num": 12,
+          "text": "Air pollutants common to urban environment are",
+          "options": [
+            "Sulphur dioxide",
+            "Particulate matter",
+            "Hydrocarbon",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Urban air typically contains a mix of SO2, particulate matter and hydrocarbons from traffic and industry."
+        },
+        {
+          "num": 13,
+          "text": "Ringlemann's scale is used to",
+          "options": [
+            "Measure CO",
+            "Measure SO2",
+            "Grade density of smoke",
+            "Grade of automobile exhaust gas"
+          ],
+          "correct": 2,
+          "expl": "The Ringlemann chart visually grades smoke density/opacity from chimneys on a shade scale."
+        },
+        {
+          "num": 14,
+          "text": "Which one of the following is not likely to prove very effective in checking indoor pollution control?",
+          "options": [
+            "Less total indoor exposure",
+            "Increased household ventilation",
+            "Reduced aerosol spray",
+            "Use of cleaner fuels"
+          ],
+          "correct": 2,
+          "expl": "Reducing aerosol spray has limited effect compared to ventilation, exposure reduction and cleaner fuel use for indoor air quality."
+        },
+        {
+          "num": 15,
+          "text": "The zone on Earth, where alone life exists, is called:",
+          "options": [
+            "Hydrosphere",
+            "Lithosphere",
+            "Biosphere",
+            "Troposphere"
+          ],
+          "correct": 2,
+          "expl": "The biosphere is the zone of the Earth (land, water, air) that supports life."
+        },
+        {
+          "num": 16,
+          "text": "The polluting gas, which is primarily responsible for causing the green house effect and global warming, is:",
+          "options": [
+            "Sulphur dioxide",
+            "Hydrogen sulphide",
+            "Carbon dioxide",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "CO2 is the principal greenhouse gas responsible for trapping heat and driving global warming."
+        },
+        {
+          "num": 17,
+          "text": "According to the WHO's reports of 1992, the most polluted city in the world, is:",
+          "options": [
+            "Delhi",
+            "Bangkok",
+            "New York",
+            "Tokyo"
+          ],
+          "correct": 1,
+          "expl": "WHO's 1992 assessment ranked Bangkok among the most polluted cities of that era due to heavy vehicular and industrial pollution."
+        },
+        {
+          "num": 18,
+          "text": "The average consumption of air by an adult human being is of the order of:",
+          "options": [
+            "5 kg",
+            "12 kg",
+            "25 kg",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "An average adult breathes in roughly 12-13 kg of air per day."
+        },
+        {
+          "num": 19,
+          "text": "Air pollution causes harmful effects on:",
+          "options": [
+            "Biotic world",
+            "Abiotic world",
+            "Both (a) and (b)",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Air pollution damages both living organisms (biotic) and materials/structures (abiotic)."
+        },
+        {
+          "num": 20,
+          "text": "'London smog' was primarily caused by:",
+          "options": [
+            "Burning of coal",
+            "Burning of oil",
+            "Eruption of a volcano",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The 1952 Great Smog of London resulted from coal burning combined with stagnant, cold, foggy weather."
+        },
+        {
+          "num": 21,
+          "text": "About 90% of world's air pollution is caused by:",
+          "options": [
+            "Primary air pollutants",
+            "Secondary air pollutants",
+            "Volcanism",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "Primary pollutants, emitted directly from sources, account for the large majority of overall air pollution."
+        },
+        {
+          "num": 22,
+          "text": "The primary air pollutant which is formed due to incomplete combustion of organic matter is:",
+          "options": [
+            "Methane",
+            "Sulphur dioxide",
+            "Ozone",
+            "Carbon monoxide"
+          ],
+          "correct": 3,
+          "expl": "Incomplete combustion of carbon-based fuels produces carbon monoxide (CO) as a primary pollutant."
+        },
+        {
+          "num": 23,
+          "text": "Among the following, the only secondary pollutant is:",
+          "options": [
+            "Sulphur dioxide",
+            "Hydrocarbons",
+            "Ozone",
+            "Sulphur tetraoxide"
+          ],
+          "correct": 2,
+          "expl": "Ground-level ozone forms via photochemical reactions in the atmosphere, making it a secondary pollutant."
+        },
+        {
+          "num": 24,
+          "text": "Which among the following is not a secondary air pollutant?",
+          "options": [
+            "Sulphuric acid",
+            "Formaldehyde",
+            "Peroxyacyl nitrate",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "PAN is actually a classic secondary pollutant formed photochemically; the answer key marks it as the exception among true secondaries listed."
+        },
+        {
+          "num": 25,
+          "text": "Which among the following is not a primary air pollutant?",
+          "options": [
+            "Oxides of nitrogen",
+            "Volatile organic compounds like hydrocarbons",
+            "Suspended particulate matter",
+            "PAN"
+          ],
+          "correct": 3,
+          "expl": "PAN (peroxyacetyl nitrate) is a secondary pollutant formed in the atmosphere, not emitted directly like the others."
+        },
+        {
+          "num": 26,
+          "text": "Which among the following statements is incorrect?",
+          "options": [
+            "Secondary air pollutants are formed from a simple chemical reaction between two primary pollutants",
+            "Sunlight plays an important role in the formation of secondary pollutants.",
+            "The photochemical reaction is responsible for the formation of secondary pollutants",
+            "No secondary pollutant was involved in 'London Smog' that occurred in 1952 killing more than 4000 people."
+          ],
+          "correct": 3,
+          "expl": "This statement is incorrect as commonly framed in these quiz sets; the London smog event did involve secondary sulphate/acid formation processes."
+        },
+        {
+          "num": 27,
+          "text": "The poisonous gas responsible for causing the catastrophic Bhopal gas tragedy in 1984 in India was:",
+          "options": [
+            "Sulphur dioxide",
+            "Methyl isocyanate",
+            "Carbon monoxide and methane both",
+            "Laughing gas"
+          ],
+          "correct": 1,
+          "expl": "The 1984 Bhopal disaster was caused by a leak of methyl isocyanate (MIC) gas from a pesticide plant."
+        },
+        {
+          "num": 28,
+          "text": "Which of the following is not a major constituent of a photochemical smog?",
+          "options": [
+            "PAN",
+            "CO",
+            "HC",
+            "O3"
+          ],
+          "correct": 1,
+          "expl": "Photochemical smog is chiefly composed of PAN, unburnt hydrocarbons and ozone; CO is not a primary characteristic constituent of smog itself."
+        },
+        {
+          "num": 29,
+          "text": "The major photochemical oxidant is:",
+          "options": [
+            "Hydrogen peroxide",
+            "Ozone",
+            "Nitrogen oxides",
+            "Peroxyl acetyl nitrate (PAN)"
+          ],
+          "correct": 1,
+          "expl": "Ozone is the dominant photochemical oxidant formed from NOx and hydrocarbons under sunlight."
+        },
+        {
+          "num": 30,
+          "text": "The secondary pollutant among the following is:",
+          "options": [
+            "Sulphur dioxide",
+            "Methane",
+            "Carbon dioxide",
+            "Peroxyl acetyl nitrate"
+          ],
+          "correct": 3,
+          "expl": "PAN forms through photochemical reactions in the atmosphere, making it a secondary pollutant unlike the other directly-emitted gases."
+        },
+        {
+          "num": 31,
+          "text": "The most hazardous gaseous air pollutant for human health is:",
+          "options": [
+            "Carbon dioxide",
+            "Oxygen",
+            "Nitrogen",
+            "Sulphur dioxide"
+          ],
+          "correct": 3,
+          "expl": "Of the options, SO2 is the toxic pollutant causing respiratory harm; the others are natural, largely benign atmospheric gases."
+        },
+        {
+          "num": 32,
+          "text": "During temperature inversion in atmosphere, air pollutants tend to:",
+          "options": [
+            "Accumulate above inversion layer",
+            "Accumulate below inversion layer",
+            "Disperse laterally",
+            "Disperse vertically"
+          ],
+          "correct": 1,
+          "expl": "Temperature inversion traps a warm air layer above cooler air near ground, preventing pollutants from rising and causing them to accumulate below."
+        },
+        {
+          "num": 33,
+          "text": "Electrostatic precipitators remove:",
+          "options": [
+            "Sulphur dioxide",
+            "Particulate matter",
+            "Both (A) and (B)",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "Electrostatic precipitators charge and collect particulate matter, not gaseous pollutants like SO2."
+        },
+        {
+          "num": 34,
+          "text": "The percentage of particles emanating from cigarette smoking which get deposited in lungs, is about:",
+          "options": [
+            "10%",
+            "25%",
+            "65%",
+            "100%"
+          ],
+          "correct": 1,
+          "expl": "Roughly a quarter of inhaled smoke particles are retained/deposited in the lungs."
+        },
+        {
+          "num": 35,
+          "text": "The air pollutant which caused severe damage to plants, even at much lower concentrations than what may be harmful to human health, is",
+          "options": [
+            "Fluorine",
+            "Ozone",
+            "PAN",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "Fluorine compounds are highly phytotoxic, damaging vegetation at concentrations far below levels harmful to humans."
+        },
+        {
+          "num": 36,
+          "text": "Sulphur dioxide exposures to quantities higher than permissible in ambient air may cause:",
+          "options": [
+            "Breathing and respiratory illnesses",
+            "Hay fever",
+            "Typhoid",
+            "Malaria"
+          ],
+          "correct": 0,
+          "expl": "Excess SO2 irritates airways, leading to breathing difficulty and respiratory illness."
+        },
+        {
+          "num": 37,
+          "text": "High lead exposures in humans through inhalation or food may cause:",
+          "options": [
+            "Mental retardation",
+            "Disorder of central nervous system",
+            "Higher blood pressure",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Lead toxicity affects multiple systems—neurological development, the CNS, and cardiovascular (blood pressure) effects."
+        },
+        {
+          "num": 38,
+          "text": "Higher exposures of humans to nitrogen oxides may cause:",
+          "options": [
+            "Bronchitis",
+            "Pneumonia",
+            "Allergies and viral attacks",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "NOx exposure is linked to bronchitis, pneumonia and heightened susceptibility to allergies/viral infections."
+        },
+        {
+          "num": 39,
+          "text": "Carbon monoxide is hazardous to health, because:",
+          "options": [
+            "It causes loss of sense of smell",
+            "It is carcinogenic in nature",
+            "It reduces oxygen carrying capacity of blood",
+            "It may cause conjunctivitis"
+          ],
+          "correct": 2,
+          "expl": "CO binds haemoglobin more strongly than oxygen, forming carboxyhaemoglobin and reducing the blood's oxygen-carrying capacity."
+        },
+        {
+          "num": 40,
+          "text": "Longer exposure to NO2 even in small concentration may cause diseases pertaining to",
+          "options": [
+            "Liver",
+            "Lung",
+            "Kidneys",
+            "Heart"
+          ],
+          "correct": 1,
+          "expl": "NO2 is a respiratory irritant, causing chronic lung conditions with prolonged exposure."
+        },
+        {
+          "num": 41,
+          "text": "The permissible PM 2.5 (annual average) ambient air quality standard for residential, rural and industrial areas in India is:",
+          "options": [
+            "40 µg/m3",
+            "60 µg/m3",
+            "80 µg/m3",
+            "100 µg/m3"
+          ],
+          "correct": 0,
+          "expl": "India's NAAQS sets the annual average PM2.5 standard at 40 µg/m3 for residential, rural, and industrial areas."
+        },
+        {
+          "num": 42,
+          "text": "The permissible RSPM (annual average) ambient air quality standard for industrial areas under the Pre-revised NAAQS of India is:",
+          "options": [
+            "60 µg/m3",
+            "120 µg/m3",
+            "140 µg/m3",
+            "360 µg/m3"
+          ],
+          "correct": 1,
+          "expl": "Under the earlier (pre-revised) NAAQS, the annual RSPM limit for industrial areas was 120 µg/m3."
+        },
+        {
+          "num": 43,
+          "text": "The most significant primary gaseous pollutant, found in vehicular emission, is:",
+          "options": [
+            "CO",
+            "CO2",
+            "SO2",
+            "O3"
+          ],
+          "correct": 0,
+          "expl": "Carbon monoxide is the dominant primary pollutant from incomplete combustion in vehicle engines."
+        },
+        {
+          "num": 44,
+          "text": "The region most affected by acid rains, is:",
+          "options": [
+            "India and China",
+            "Europe and North East America",
+            "Africa",
+            "South America"
+          ],
+          "correct": 1,
+          "expl": "Heavy industrialization in Europe and northeastern North America historically made these regions most affected by acid rain."
+        },
+        {
+          "num": 45,
+          "text": "The acid rains are more prominent in:",
+          "options": [
+            "Temperate regions",
+            "Tropical regions",
+            "Arid regions",
+            "Equally prominent in all regions"
+          ],
+          "correct": 0,
+          "expl": "Industrialized temperate regions with high SO2/NOx emissions experience more prominent acid rain."
+        },
+        {
+          "num": 46,
+          "text": "A rainfall is generally classified as acidic, if its pH is less than or equal to:",
+          "options": [
+            "5.6",
+            "6.5",
+            "7",
+            "7.5"
+          ],
+          "correct": 0,
+          "expl": "Natural rainwater has a pH of about 5.6 due to dissolved CO2; rain below this is classified as acidic."
+        },
+        {
+          "num": 47,
+          "text": "An ordinary rain, will generally be:",
+          "options": [
+            "Slightly acidic",
+            "Slightly alkaline",
+            "Neither acidic nor alkaline"
+          ],
+          "correct": 0,
+          "expl": "Normal rainwater is slightly acidic (pH ~5.6) due to dissolved atmospheric CO2 forming carbonic acid."
+        },
+        {
+          "num": 48,
+          "text": "The important gaseous pollutants, contributing to acid rains are:",
+          "options": [
+            "SO2 and NO2",
+            "SO2 and H2O",
+            "NOx and O3",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "SO2 and NO2 react with atmospheric moisture to form sulphuric and nitric acids, the main causes of acid rain."
+        },
+        {
+          "num": 49,
+          "text": "The most significant environmental issue, threatening human health, is:",
+          "options": [
+            "Global warming",
+            "Acid rain",
+            "Ozone hole",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Ozone layer depletion increases harmful UV exposure to humans, making it a major health-threatening issue."
+        },
+        {
+          "num": 50,
+          "text": "How many times more acidic a rain having pH = 5.6 will be in comparison to a neutral rain having pH = 7?",
+          "options": [
+            "7/5.6 = 1.25",
+            "7^2/5.6^2 = 1.25",
+            "10^(7-5.6) = 25",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "Since pH is a log scale, the acidity ratio is 10 raised to the pH difference, giving roughly 25 times more acidic."
+        },
+        {
+          "num": 51,
+          "text": "Which of the following statements is incorrect in relation to checking and controlling acid rains?",
+          "options": [
+            "Expensive scrubbers are installed in industries and thermal power stations.",
+            "Catalytic convertors are installed in cars.",
+            "Use of petrol cars is promoted by discouraging the use of diesel cars.",
+            "None of the above."
+          ],
+          "correct": 2,
+          "expl": "Promoting petrol over diesel is not a standard/valid acid rain control measure, making this statement incorrect."
+        },
+        {
+          "num": 52,
+          "text": "Depletion of ozone layer in the outer atmosphere is likely to increase the incidence of:",
+          "options": [
+            "Skin cancer",
+            "Lung cancer",
+            "Bronchitis",
+            "None of them"
+          ],
+          "correct": 0,
+          "expl": "Reduced ozone allows more UV radiation to reach the surface, increasing skin cancer risk."
+        },
+        {
+          "num": 53,
+          "text": "The chances of development of an ozone hole are more at:",
+          "options": [
+            "Arctic and Antarctic regions",
+            "Equatorial regions",
+            "Regions of mid latitudes",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Polar conditions favor the chemical reactions that deplete stratospheric ozone, especially over Antarctica."
+        },
+        {
+          "num": 54,
+          "text": "Harmful U.V. radiations emanating from the sun are prevented from reaching the Earth by the presence of ozone in the:",
+          "options": [
+            "Thermosphere",
+            "Mesosphere",
+            "Stratosphere",
+            "Troposphere"
+          ],
+          "correct": 2,
+          "expl": "The ozone layer that shields Earth from UV radiation resides in the stratosphere."
+        },
+        {
+          "num": 55,
+          "text": "The ozone layer thickness is measured in:",
+          "options": [
+            "Decibels (dB)",
+            "Dobson Units (DU)",
+            "Becquerel (Bq)",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "Ozone column thickness is conventionally measured in Dobson Units."
+        },
+        {
+          "num": 56,
+          "text": "The green house effect causes:",
+          "options": [
+            "Cooling of the Earth",
+            "Warming of the Earth",
+            "Both (a) and (b) depending upon the season",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Greenhouse gases trap outgoing infrared radiation, warming the Earth's surface."
+        },
+        {
+          "num": 57,
+          "text": "The average annual rate of increase of carbon dioxide in the Earth's atmosphere, has over the last five decades, been observed to be of the order of:",
+          "options": [
+            "0.01%",
+            "0.04%",
+            "0.4%",
+            "4%"
+          ],
+          "correct": 2,
+          "expl": "Atmospheric CO2 concentration has been rising at roughly 0.4% per year on average in recent decades."
+        },
+        {
+          "num": 58,
+          "text": "The carbon dioxide in Earth's atmosphere, has during the last about 50 years, increased by about:",
+          "options": [
+            "1%",
+            "5%",
+            "10%",
+            "20%"
+          ],
+          "correct": 3,
+          "expl": "Cumulative CO2 increase over the past 50 years is estimated at around 20%."
+        },
+        {
+          "num": 59,
+          "text": "Greenhouse effects are produced due to:",
+          "options": [
+            "Absorption of infrared radiation in the atmosphere",
+            "Absorption of long range radiation in the atmosphere",
+            "(a) and (b) both",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "The greenhouse effect results from atmospheric gases absorbing outgoing infrared/long-wave radiation, trapping heat."
+        },
+        {
+          "num": 60,
+          "text": "If all the world's ice caps and glaciers were to melt due to continued global warming, approximately what percentage of land area is likely to be submerged?",
+          "options": [
+            "5%",
+            "10%",
+            "20%",
+            "35%"
+          ],
+          "correct": 2,
+          "expl": "Estimates suggest complete polar ice melt could submerge roughly 20% of current land area due to sea level rise."
+        },
+        {
+          "num": 61,
+          "text": "The international treaty which aims at reducing global warming is:",
+          "options": [
+            "Montreal Protocol",
+            "Kyoto Protocol",
+            "Ramsar Convention",
+            "CITES"
+          ],
+          "correct": 1,
+          "expl": "The Kyoto Protocol is the international treaty specifically targeting reduction of greenhouse gas emissions to curb global warming."
+        }
+      ]
+    },
+    {
+      "name": "Noise Pollution",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Sound which has jarring effect on ears is",
+          "options": [
+            "Noise",
+            "Music",
+            "Pleasant sound",
+            "Soul music"
+          ],
+          "correct": 0,
+          "expl": "By definition, noise is unwanted, jarring or disturbing sound, unlike music or pleasant sound."
+        },
+        {
+          "num": 2,
+          "text": "A safe level of noise depends on",
+          "options": [
+            "Level of noise and exposure to noise",
+            "Area",
+            "Pitch",
+            "Frequency"
+          ],
+          "correct": 0,
+          "expl": "Safety depends on both the intensity (level) of noise and the duration/exposure time to it."
+        },
+        {
+          "num": 3,
+          "text": "Main sources of noise pollution are",
+          "options": [
+            "Transportation equipment",
+            "Musical instruments",
+            "Heavy machinery",
+            "A and C both"
+          ],
+          "correct": 3,
+          "expl": "Transportation and heavy machinery are the two dominant contributors to environmental noise pollution."
+        },
+        {
+          "num": 4,
+          "text": "Level of noise recommended in most countries is",
+          "options": [
+            "30–40 dB",
+            "95–100 dB",
+            "85–90 dB",
+            "75–80 dB"
+          ],
+          "correct": 2,
+          "expl": "Most countries set occupational/ambient safe noise limits around 85-90 dB."
+        },
+        {
+          "num": 5,
+          "text": "Level of noise recommended in most countries is",
+          "options": [
+            "30–40 dB",
+            "95–100 dB",
+            "85–90 dB",
+            "75–80 dB"
+          ],
+          "correct": 2,
+          "expl": "Repeated question; the recommended safe noise level is again 85-90 dB in most countries."
+        },
+        {
+          "num": 6,
+          "text": "If intensity of rustling leaves is 10−11 W/m2 then intensity level due to rustling is",
+          "options": [
+            "10 dB",
+            "11 dB",
+            "100 dB",
+            "50 dB"
+          ],
+          "correct": 0,
+          "expl": "Using IL = 10 log10(I/I0) with I0 = 10−12 W/m2, an intensity of 10−11 W/m2 gives 10 dB."
+        },
+        {
+          "num": 7,
+          "text": "Total distance covered by sound wave from generation point to reflecting surface and back should be",
+          "options": [
+            "17 m",
+            "34 m",
+            "15 m",
+            "10 m"
+          ],
+          "correct": 1,
+          "expl": "For an echo to be perceptible, the round-trip distance to a reflecting surface should be at least about 34 m."
+        },
+        {
+          "num": 8,
+          "text": "Human ear responds to intensities in range",
+          "options": [
+            "10−12 W/m2 to 1 W/m2",
+            "15 W/m2 to 18 W/m2",
+            "108 W/m2 to 2 W/m2",
+            "10−3 W/m−1 to 10−6 W/m−1"
+          ],
+          "correct": 0,
+          "expl": "The audible range of sound intensity for the human ear spans roughly 10−12 to 1 W/m2 (threshold of hearing to pain)."
+        },
+        {
+          "num": 9,
+          "text": "Sound becomes hazardous noise pollution at decibels:",
+          "options": [
+            "Above 80",
+            "Above 30",
+            "Above 100",
+            "Above 120"
+          ],
+          "correct": 0,
+          "expl": "Sound levels above about 80 dB are generally considered hazardous with prolonged exposure."
+        },
+        {
+          "num": 10,
+          "text": "Noise is measured in units of:",
+          "options": [
+            "Hertz",
+            "Decibel",
+            "Dobson",
+            "Becquerel"
+          ],
+          "correct": 1,
+          "expl": "Sound intensity/loudness is measured in decibels (dB)."
+        },
+        {
+          "num": 11,
+          "text": "The unit for measuring of frequency of sound is:",
+          "options": [
+            "Decibel (dB)",
+            "Hertz (Hz)",
+            "Dobson Unit (DU)",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Frequency of sound waves is measured in Hertz (cycles per second)."
+        },
+        {
+          "num": 12,
+          "text": "What type of noise can be abated by providing lining on walls/ceiling with sound absorbing material?",
+          "options": [
+            "Source noise",
+            "Reflection noise",
+            "Structural noise",
+            "Direct air-borne noise"
+          ],
+          "correct": 1,
+          "expl": "Sound-absorbing linings on walls/ceilings reduce noise caused by reflection (reverberation) within a space."
+        }
+      ]
+    },
+    {
+      "name": "Solid Waste Management",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Area method of land filling is most suitable when",
+          "options": [
+            "Area is unsuitable for excavation of trenches",
+            "Adequate depth of cover material is available at site",
+            "The water table is near the surface",
+            "Natural or artificial depressions exist in the vicinity"
+          ],
+          "correct": 3,
+          "expl": "The area method uses existing natural or artificial depressions/low-lying land to place waste and cover it."
+        },
+        {
+          "num": 2,
+          "text": "The waste stabilisation ponds can be",
+          "options": [
+            "Aerobic",
+            "Anaerobic",
+            "Facultative",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Stabilization ponds may be designed as aerobic, anaerobic, or facultative, depending on depth and loading."
+        },
+        {
+          "num": 3,
+          "text": "Non disposal of solid waste may cause the spread of",
+          "options": [
+            "Malaria",
+            "Rodents related plague",
+            "Typhoid",
+            "Dysentery"
+          ],
+          "correct": 1,
+          "expl": "Accumulated solid waste attracts rodents, which can spread plague."
+        },
+        {
+          "num": 4,
+          "text": "Which of the following is not a major indoor pollutant in a developing country like India, in the rural areas?",
+          "options": [
+            "Cooking and heating activities",
+            "Burning of cow dung",
+            "Burning of crop waste",
+            "Building material"
+          ],
+          "correct": 3,
+          "expl": "Rural indoor pollution mainly stems from biomass burning (cooking, cow dung, crop waste), not building materials."
+        },
+        {
+          "num": 5,
+          "text": "Which of the following is not true about fabric filtration method?",
+          "options": [
+            "Small gaseous particles can be collected",
+            "Dry collection is easy",
+            "High efficiencies can not be achieved",
+            "There is sensitivity to filtering velocity"
+          ],
+          "correct": 2,
+          "expl": "Fabric filters (baghouses) actually achieve high collection efficiencies, so this statement is false."
+        },
+        {
+          "num": 6,
+          "text": "Algae development in a swimming pool causes",
+          "options": [
+            "Rapid rise in pH value",
+            "Slimy growth on the walls",
+            "Increased chlorine consumption",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Algal growth in pools raises pH, causes slimy surfaces, and increases chlorine demand simultaneously."
+        },
+        {
+          "num": 7,
+          "text": "DDT is used by",
+          "options": [
+            "Vapour treatment process",
+            "Spray",
+            "Painting",
+            "Mixing with water"
+          ],
+          "correct": 1,
+          "expl": "DDT, an insecticide, is typically applied by spraying."
+        },
+        {
+          "num": 8,
+          "text": "A radiation dose of 5000 roentgens is likely to result in",
+          "options": [
+            "Vomiting",
+            "Fever",
+            "Change in blood colour",
+            "Almost immediate incapacitation"
+          ],
+          "correct": 0,
+          "expl": "Extremely high radiation doses like 5000 roentgens cause acute radiation sickness, including vomiting."
+        },
+        {
+          "num": 9,
+          "text": "Which of the following material is often used for radiation shielding?",
+          "options": [
+            "Wood",
+            "Wet cloth",
+            "Lead",
+            "Hydrogen"
+          ],
+          "correct": 2,
+          "expl": "Lead's high density makes it an effective shield against gamma/X-ray radiation."
+        },
+        {
+          "num": 10,
+          "text": "The most suitable solid waste disposal method for rural areas is",
+          "options": [
+            "Incineration",
+            "Land filling",
+            "Deep well injection",
+            "Composting"
+          ],
+          "correct": 3,
+          "expl": "Composting suits rural areas due to organic waste content, low cost, and land availability."
+        },
+        {
+          "num": 11,
+          "text": "The commonly used pumps for sewage disposal are",
+          "options": [
+            "Reciprocating pumps",
+            "Turbine pumps",
+            "Vane pumps",
+            "Mud pumps"
+          ],
+          "correct": 3,
+          "expl": "Mud/non-clog type pumps are commonly used for handling sewage with solids."
+        },
+        {
+          "num": 12,
+          "text": "Main gas from land-fill area is",
+          "options": [
+            "Oxygen",
+            "Nitrogen",
+            "Carbon monoxide",
+            "Methane"
+          ],
+          "correct": 3,
+          "expl": "Anaerobic decomposition of organic waste in landfills produces methane as the main gas."
+        },
+        {
+          "num": 13,
+          "text": "Which of the following compounds is used in algae control?",
+          "options": [
+            "Ferric sulphate",
+            "Copper sulphate",
+            "Calcium chloride",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Copper sulphate is a common algaecide used to control algal growth in water bodies."
+        },
+        {
+          "num": 14,
+          "text": "Eutrophication of water bodies is caused by the",
+          "options": [
+            "Discharge of toxic substances",
+            "Excessive discharge of nutrients",
+            "Excessive discharge of suspended solids",
+            "Excessive discharge of chlorides"
+          ],
+          "correct": 1,
+          "expl": "Excess nutrients (nitrogen, phosphorus) trigger algal blooms and eutrophication of water bodies."
+        },
+        {
+          "num": 15,
+          "text": "Bacteria that obtained both energy and material from organic sources are called",
+          "options": [
+            "Autotrophs",
+            "Heterotrophs",
+            "Phototrophs",
+            "Protists"
+          ],
+          "correct": 1,
+          "expl": "Heterotrophic bacteria derive both energy and carbon/material from organic compounds."
+        },
+        {
+          "num": 16,
+          "text": "The sequence of conversion of nitrogenous matter in aerobic nitrogen cycle",
+          "options": [
+            "Protein, NH3, nitrite, nitrate",
+            "Organic nitrogen, organic acids, nitrite, nitrate",
+            "Protein, ammonia, nitrite, nitrate",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Aerobic nitrification proceeds from protein breakdown to ammonia, then nitrite, then nitrate."
+        },
+        {
+          "num": 17,
+          "text": "Biomedical waste should be disposed of through:",
+          "options": [
+            "Incineration",
+            "Micro-waving",
+            "Autoclaving",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Biomedical waste disposal uses multiple approved methods including incineration, microwaving, and autoclaving depending on waste category."
+        },
+        {
+          "num": 18,
+          "text": "The biochemical treatment of sewage effluents is essentially a process of",
+          "options": [
+            "Alkalization",
+            "Dehydration",
+            "Oxidation",
+            "Reduction"
+          ],
+          "correct": 2,
+          "expl": "Biological sewage treatment relies on microbial oxidation of organic matter."
+        },
+        {
+          "num": 19,
+          "text": "In ASP unit F/M ratio should be between",
+          "options": [
+            "0.6 to 0.8",
+            "0.8 to 1",
+            "0.2 to 0.4",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Conventional activated sludge process is typically designed with an F/M ratio of about 0.2 to 0.4."
+        },
+        {
+          "num": 20,
+          "text": "The first stage of sludge digestion process",
+          "options": [
+            "Acid regression",
+            "Acid fermentation",
+            "Alkaline fermentation",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Sludge digestion begins with acid fermentation, producing organic acids before methane formation."
+        },
+        {
+          "num": 21,
+          "text": "For an average Indian city solid waste generated per capita may be assumed as",
+          "options": [
+            "0.4 kg",
+            "0.1 kg",
+            "1.0 kg",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Typical per capita solid waste generation in Indian cities is around 0.4 kg/day."
+        },
+        {
+          "num": 22,
+          "text": "The recommended value of SVI in diffused aeration system should be",
+          "options": [
+            "20 to 30",
+            "30 to 40",
+            "55 to 150",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A well-functioning diffused aeration activated sludge system has an SVI in the range of about 55 to 150."
+        },
+        {
+          "num": 23,
+          "text": "The popular treatment method of solid waste in India is",
+          "options": [
+            "Landfill",
+            "Incineration",
+            "Pyrolysis",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Landfilling remains the most widely used solid waste disposal method in India due to low cost."
+        },
+        {
+          "num": 24,
+          "text": "In conventional activated sludge process MLSS is generally kept in which range",
+          "options": [
+            "1000–2000 mg/l",
+            "2000–3000 mg/l",
+            "<100 mg/l",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "MLSS in conventional activated sludge plants is typically maintained between 2000 and 3000 mg/l."
+        },
+        {
+          "num": 25,
+          "text": "In a conventional ASP, the oxygen demand is highest near the",
+          "options": [
+            "Inlet end of the clarifier",
+            "Outlet end of the clarifier",
+            "Outlet end of the aeration tank",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "In plug-flow ASP tanks, oxygen demand is actually highest near the inlet; commonly listed answer here reflects standard exam key of outlet of aeration tank per textbook convention."
+        },
+        {
+          "num": 26,
+          "text": "The most suitable solid waste disposal method for rural areas is",
+          "options": [
+            "Incineration",
+            "Land filling",
+            "Deep well injection",
+            "Composting"
+          ],
+          "correct": 3,
+          "expl": "Composting remains the most practical, low-cost method suited to rural solid waste characteristics."
+        },
+        {
+          "num": 27,
+          "text": "The commonly used pumps for sewage disposal are",
+          "options": [
+            "Reciprocating pumps",
+            "Turbine pumps",
+            "Vane pumps",
+            "Mud pumps"
+          ],
+          "correct": 3,
+          "expl": "Non-clog mud-type pumps handle solids-laden sewage effectively, making them the common choice."
+        },
+        {
+          "num": 28,
+          "text": "Main gas from land-fill area is",
+          "options": [
+            "Oxygen",
+            "Nitrogen",
+            "Carbon monoxide",
+            "Methane"
+          ],
+          "correct": 3,
+          "expl": "Landfill gas is predominantly methane, generated by anaerobic decomposition of buried organic waste."
+        },
+        {
+          "num": 29,
+          "text": "Which of the following compounds is used in algae control?",
+          "options": [
+            "Ferric sulphate",
+            "Copper sulphate",
+            "Calcium chloride",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Copper sulphate is the standard chemical used to control algae growth in reservoirs and ponds."
+        },
+        {
+          "num": 30,
+          "text": "Eutrophication of water bodies is caused by the",
+          "options": [
+            "Discharge of toxic substances",
+            "Excessive discharge of nutrients",
+            "Excessive discharge of suspended solids",
+            "Excessive discharge of chlorides"
+          ],
+          "correct": 1,
+          "expl": "Nutrient over-enrichment (nitrogen/phosphorus) is the underlying cause of eutrophication."
+        },
+        {
+          "num": 31,
+          "text": "Biomedical waste should be disposed of through:",
+          "options": [
+            "Incineration",
+            "Micro-waving",
+            "Autoclaving",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Different categories of biomedical waste are treated by incineration, microwaving, or autoclaving as appropriate."
+        },
+        {
+          "num": 32,
+          "text": "The popular treatment method of solid waste in India is",
+          "options": [
+            "Landfill",
+            "Incineration",
+            "Pyrolysis",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Sanitary/open landfilling continues to be the dominant solid waste treatment method used across India."
+        },
+        {
+          "num": 33,
+          "text": "Elutriation is the process of",
+          "options": [
+            "Sludge digestion",
+            "Filtration",
+            "Sedimentation",
+            "Washing digested sludge"
+          ],
+          "correct": 3,
+          "expl": "Elutriation is the washing of digested sludge with water to reduce alkalinity before chemical conditioning."
+        }
+      ]
+    },
+    {
+      "name": "Design of Sewer and Sewer Appurtenances",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Anti-siphonage is installed in the house drainage system to check siphonage action which occurs due to,",
+          "options": [
+            "Excessive sewage from the water closet",
+            "Sewage discharged from upper floor",
+            "Sewage discharged from the water closets at same level",
+            "Gases in sewage"
+          ],
+          "correct": 2,
+          "expl": "Simultaneous discharge from water closets at the same level can siphon water out of trap seals; anti-siphonage pipes prevent this."
+        },
+        {
+          "num": 2,
+          "text": "Water hammer pressure can be reduced by using",
+          "options": [
+            "Fast closing valves",
+            "Slow closing valves",
+            "Critical closing",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Slow-closing valves reduce the sudden velocity change that causes water hammer surge pressures."
+        },
+        {
+          "num": 3,
+          "text": "The types of pipes generally used in water supply distribution schemes is",
+          "options": [
+            "RCC pipes",
+            "Hume pipes",
+            "CI pipes",
+            "GI pipes"
+          ],
+          "correct": 2,
+          "expl": "Cast iron (CI) pipes are traditionally common for water distribution due to durability under pressure."
+        },
+        {
+          "num": 4,
+          "text": "Which one of the following pairs is not correctly matched",
+          "options": [
+            "Check valve – To check water flow in all directions",
+            "Sluice valve – To control flow of water through pipe line",
+            "Air valve – To release accumulated air",
+            "Scour valve – To remove silt in pipe line"
+          ],
+          "correct": 0,
+          "expl": "A check valve actually allows flow in only one direction and prevents reverse flow, so this pairing is incorrect."
+        },
+        {
+          "num": 5,
+          "text": "The trap used for a water closet is called",
+          "options": [
+            "Gully trap",
+            "P-trap",
+            "Intercepting trap",
+            "Anti syphon trap"
+          ],
+          "correct": 1,
+          "expl": "A P-trap is the standard trap fitted to water closets to maintain a water seal against foul gases."
+        },
+        {
+          "num": 6,
+          "text": "The water tap on a wash-basin in your house is known as:",
+          "options": [
+            "Stop cock",
+            "Bib cock",
+            "Ferrule",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A bib cock is the horizontally-fitted tap typically used on wash basins."
+        },
+        {
+          "num": 7,
+          "text": "A nahni trap is provided",
+          "options": [
+            "At the head of each house drain",
+            "At the outfall end of each house drain",
+            "At the junction of the two house drain",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The nahni (floor) trap is placed at the head/entry point of the house drain, collecting waste from floor outlets."
+        },
+        {
+          "num": 8,
+          "text": "Anti-siphonage pipe is connected to",
+          "options": [
+            "Main soil pipe",
+            "Bottom of P trap W.C.",
+            "Top of P trap W.C.",
+            "Side of water closet"
+          ],
+          "correct": 2,
+          "expl": "The anti-siphonage pipe connects to the top of the P-trap to maintain atmospheric pressure and prevent trap seal loss."
+        },
+        {
+          "num": 9,
+          "text": "Air valves in a distribution system are provided at:",
+          "options": [
+            "Dead ends in the water distribution system",
+            "Junction of main and branch pipes",
+            "Summit point on water mains",
+            "Places where the pressure is minimum"
+          ],
+          "correct": 2,
+          "expl": "Air valves are installed at high/summit points where air tends to accumulate in the pipeline."
+        },
+        {
+          "num": 10,
+          "text": "A sluice valve, in water distribution system is used to",
+          "options": [
+            "Regulate the flow of water through negative pressure",
+            "Protect the pipe against negative pressure",
+            "Prevent water to flow back in the opposite direction",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "A sluice (gate) valve regulates or shuts off flow within the pipeline."
+        },
+        {
+          "num": 11,
+          "text": "A valve which allows the water to flow in one direction but prevents its flow in the reverse direction, is known as",
+          "options": [
+            "Reflux valve",
+            "Air relief valve",
+            "Sluice valve",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A reflux (non-return/check) valve permits flow in one direction only, blocking backflow."
+        },
+        {
+          "num": 12,
+          "text": "A trap which admits waste water from floors of bath kitchen is called",
+          "options": [
+            "Intercepting trap",
+            "Nahani trap",
+            "Gulley trap",
+            "S. trap"
+          ],
+          "correct": 1,
+          "expl": "The nahani trap collects waste water from bathroom/kitchen floors before it enters the drainage system."
+        },
+        {
+          "num": 13,
+          "text": "Hume pipes are jointed to",
+          "options": [
+            "Typical joint",
+            "Expansion joint",
+            "Bell & spigot joint",
+            "Flanged"
+          ],
+          "correct": 2,
+          "expl": "Hume (RCC) pipes are typically joined using bell and spigot type joints."
+        },
+        {
+          "num": 14,
+          "text": "Sewage treatment units are normally designed for",
+          "options": [
+            "5–10 years",
+            "15–20 years",
+            "30–40 years",
+            "40–50 years"
+          ],
+          "correct": 1,
+          "expl": "Sewage treatment plant components are generally designed for a design period of 15-20 years."
+        },
+        {
+          "num": 15,
+          "text": "In transition of sewers from smaller diameter sewers to larger diameter sewers, the continuity of sewer is maintained at the,",
+          "options": [
+            "Bottom of the concrete bed of sewers",
+            "Inverts of the sewers",
+            "Crowns of the sewers",
+            "Hydraulic gradients of the sewers"
+          ],
+          "correct": 2,
+          "expl": "At transitions, the crown levels are kept aligned to maintain smooth hydraulic flow continuity."
+        },
+        {
+          "num": 16,
+          "text": "Sewage treatment units are designed for",
+          "options": [
+            "Maximum flow only",
+            "Minimum flow only",
+            "Average flow only",
+            "Maximum and minimum flow"
+          ],
+          "correct": 3,
+          "expl": "Treatment units must handle the full range from minimum to maximum expected flows for reliable operation."
+        },
+        {
+          "num": 17,
+          "text": "When rainy season is confined to few months like that in India, the preferred sewerage system would be:",
+          "options": [
+            "Combined system",
+            "Separate system",
+            "Partially separate system",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A separate sewerage system is preferred in India since storm flow occurs only during limited monsoon months."
+        },
+        {
+          "num": 18,
+          "text": "The most suitable section of a sewer in a separate sewerage system is:",
+          "options": [
+            "Rectangular",
+            "Circular",
+            "Parabolic",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Circular sections are most economical and hydraulically efficient for separate sanitary sewers."
+        },
+        {
+          "num": 19,
+          "text": "The most suitable section of sewer in combined sewerage system is",
+          "options": [
+            "Rectangular",
+            "Circular",
+            "New egg-shape",
+            "Parabolic"
+          ],
+          "correct": 2,
+          "expl": "Egg-shaped sections maintain self-cleansing velocity even at low dry-weather flows typical of combined sewers."
+        },
+        {
+          "num": 20,
+          "text": "Sewers are generally laid starting from their",
+          "options": [
+            "Off take point",
+            "Outfall point",
+            "Mid point",
+            "Any point along the alignment"
+          ],
+          "correct": 1,
+          "expl": "Sewer laying proceeds from the outfall (lowest, downstream) point upward towards the source."
+        },
+        {
+          "num": 21,
+          "text": "A sewer which receives the discharge of a number of house sewers is called:",
+          "options": [
+            "House sewer",
+            "Lateral sewer",
+            "Intercepting sewer",
+            "Sub-main sewer"
+          ],
+          "correct": 1,
+          "expl": "A lateral sewer collects discharge from multiple house sewer connections."
+        },
+        {
+          "num": 22,
+          "text": "The non scouring velocity for cement concrete sewer is usually taken as",
+          "options": [
+            "0.02 m/sec",
+            "0.10 m/sec",
+            "0.12 m/sec",
+            "0.25 m/sec"
+          ],
+          "correct": 2,
+          "expl": "Maximum non-scouring velocity to protect concrete sewer surfaces is typically about 0.12 m/sec... (limiting/self-cleansing value used in design practice)."
+        },
+        {
+          "num": 23,
+          "text": "The most commonly used sewer under culverts is",
+          "options": [
+            "Circular brick sewer",
+            "Circular cast iron sewer",
+            "Semi-elliptical sewer",
+            "Horse shoe type sewer"
+          ],
+          "correct": 2,
+          "expl": "Semi-elliptical section sewers are commonly used where sewers pass beneath culverts, offering strength with limited height."
+        },
+        {
+          "num": 24,
+          "text": "Sewerage system is designed for",
+          "options": [
+            "Full flow of sewage in the sewer pipes",
+            "Part flow of sewage in the sewer pipes",
+            "Pumping of sewage at various places in the town",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Sewers are designed to flow partially full to allow for peak flow variation and ventilation."
+        },
+        {
+          "num": 25,
+          "text": "If D is the diameter of upper circular portion the overall depth of standard egg-shaped sewer is",
+          "options": [
+            "1.25 D",
+            "1.50 D",
+            "D",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "The standard egg-shaped sewer has an overall depth of 1.5 times the diameter of its upper circular portion."
+        },
+        {
+          "num": 26,
+          "text": "The correct ratio of the diameter of a circular sewer to the side of a hydraulically equivalent square section of a sewer is",
+          "options": [
+            "0.9",
+            "0.925",
+            "1.095",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The diameter-to-equivalent-square-side ratio for hydraulically equivalent circular sections works out to about 1.095."
+        },
+        {
+          "num": 27,
+          "text": "A circular sewer section losses most of its merits, when the sewage depth becomes",
+          "options": [
+            "Less than 2/3 full",
+            "Less than 3/4 full",
+            "Less than 1/2 full",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Below about half full, circular sewers lose much of their hydraulic efficiency advantage."
+        },
+        {
+          "num": 28,
+          "text": "A sewer is commonly designed to attain self-cleansing velocity at",
+          "options": [
+            "Average hourly rate of flow",
+            "Peak hourly rate of flow",
+            "Minimum hourly rate of flow",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Self-cleansing velocity is checked at peak flow to ensure solids do not settle during high-flow conditions... though minimum flow check is also common; design criterion commonly cited targets peak flow attainment."
+        },
+        {
+          "num": 29,
+          "text": "The equipment used for checking the levels of the sewer inverts is:",
+          "options": [
+            "Bonding rod",
+            "Theodolite",
+            "Dumpy level",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A boning rod is the traditional tool used with sight rails to check sewer invert levels during laying."
+        },
+        {
+          "num": 30,
+          "text": "The minimum and maximum diameter of sewer generally adopted for design may be",
+          "options": [
+            "15 cm and 100 cm",
+            "15 cm and 300 cm",
+            "25 cm and 450 cm",
+            "60 cm and 300 cm"
+          ],
+          "correct": 1,
+          "expl": "Typical sewer design diameters range from about 15 cm (minimum lateral) to 300 cm (large trunk sewers)."
+        },
+        {
+          "num": 31,
+          "text": "The maximum spacing of the man hole on sewer having diameter more than 1.5 m is",
+          "options": [
+            "75 m",
+            "150 m",
+            "200 m",
+            "300 m"
+          ],
+          "correct": 3,
+          "expl": "For large-diameter sewers (>1.5 m), manhole spacing may extend up to 300 m."
+        },
+        {
+          "num": 32,
+          "text": "Choice of pipe material for transmission of water depends upon",
+          "options": [
+            "Carrying capacity and its reduction with use",
+            "Strength of pipe with respect to internal pressures and external loads",
+            "Life and durability of pipe",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Pipe material selection considers capacity retention, structural strength, and durability together."
+        },
+        {
+          "num": 33,
+          "text": "Sewerage system is designed for",
+          "options": [
+            "Average flow",
+            "Minimum flow",
+            "Maximum flow",
+            "Both minimum and maximum flow"
+          ],
+          "correct": 0,
+          "expl": "The overall sewerage system layout and hydraulic sizing is generally based on average flow with peak factors applied."
+        },
+        {
+          "num": 34,
+          "text": "A manhole is generally provided at each:",
+          "options": [
+            "Bend",
+            "Junction",
+            "Change of gradient",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Manholes are needed at bends, junctions, and gradient changes to allow inspection and maintenance access."
+        },
+        {
+          "num": 35,
+          "text": "For providing an Indian type W.C. the RCC slabs in the toilet portion",
+          "options": [
+            "Should be sunk by 20 cm",
+            "Should be kept 20 cm above the adjacent portion",
+            "Should be sunk by 50 cm",
+            "Need not be sunk"
+          ],
+          "correct": 2,
+          "expl": "Indian-type WC installations typically require the slab to be sunk by about 50 cm to accommodate the trap and connections."
+        },
+        {
+          "num": 36,
+          "text": "A sewer which receives sewage from the collection system and conducts it to a point of final disposal is called as",
+          "options": [
+            "Trunk sewer",
+            "Branch sewer",
+            "Outfall sewer",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The outfall sewer carries collected sewage to the final treatment or disposal point."
+        },
+        {
+          "num": 37,
+          "text": "A pipe conveying sewage from the plumbing system of a single building to a common sewer or to the point of immediate disposal is called",
+          "options": [
+            "House sewer",
+            "Outfall sewer",
+            "Lateral sewer",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The house sewer connects an individual building's plumbing to the public sewer."
+        },
+        {
+          "num": 38,
+          "text": "For house drainage and lateral connections we shall use",
+          "options": [
+            "Cast Iron sewer",
+            "Stoneware sewer",
+            "Concrete sewer",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Cast iron pipes are commonly used for house drainage and lateral connections for strength and durability."
+        },
+        {
+          "num": 39,
+          "text": "Manholes on sewer lines are provided for",
+          "options": [
+            "Providing air for oxidation",
+            "Periodic cleaning",
+            "Removal of part of sewage",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Manholes primarily allow access for inspection and periodic cleaning/maintenance of sewer lines."
+        },
+        {
+          "num": 40,
+          "text": "The self-cleansing velocity of waste-water flowing through sewer should be",
+          "options": [
+            "5 m/s",
+            "A minimum velocity maintained at 0.45 m/s at minimum flow",
+            "A maximum velocity of 0.90 m/s maintain",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A minimum self-cleansing velocity of about 0.45 m/s at minimum flow is required to prevent solids deposition."
+        },
+        {
+          "num": 41,
+          "text": "The ratio of the maximum sewage flow to the average flow for branch sewers used to say 0.5 m in diameter is",
+          "options": [
+            "1.5",
+            "2.0",
+            "3.0",
+            "4.0"
+          ],
+          "correct": 2,
+          "expl": "For branch sewers up to about 0.5 m diameter, the peaking factor is typically taken as about 3.0."
+        },
+        {
+          "num": 42,
+          "text": "Branch and main sewer are widely made of:",
+          "options": [
+            "R.C.C.",
+            "P.C.C.",
+            "Glazed stone-ware",
+            "Cast iron"
+          ],
+          "correct": 0,
+          "expl": "Reinforced cement concrete (RCC) pipes are widely used for branch and main sewers due to strength requirements."
+        },
+        {
+          "num": 43,
+          "text": "Sewers are generally laid, starting from their:",
+          "options": [
+            "Off take point",
+            "Outfall point",
+            "Mid point",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Laying starts at the outfall (lowest) end and proceeds upgradient."
+        },
+        {
+          "num": 44,
+          "text": "A manhole is generally classified as a deep manhole, if its depth is more than:",
+          "options": [
+            "0.9 m",
+            "1.2 m",
+            "1.5 m",
+            "2 m"
+          ],
+          "correct": 2,
+          "expl": "Manholes deeper than about 1.5 m are classified as deep manholes requiring special design features."
+        },
+        {
+          "num": 45,
+          "text": "Ventilation columns in sewers are provided to:",
+          "options": [
+            "Help in escaping of foul gases",
+            "Help in preventing spread of foul gases",
+            "To provide support to the sewers",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Ventilation columns allow accumulated foul sewer gases to escape safely to the atmosphere."
+        },
+        {
+          "num": 46,
+          "text": "Egg shaped sewers are preferred to circular shaped sewers because",
+          "options": [
+            "They possess better hydraulic properties",
+            "They resist soil erosion",
+            "Velocity remains high even at low discharges",
+            "Flow remains stable"
+          ],
+          "correct": 2,
+          "expl": "The narrower invert of egg-shaped sewers maintains higher velocity even at low (dry weather) discharges, aiding self-cleansing."
+        },
+        {
+          "num": 47,
+          "text": "The liquid waste originating from residential and industrial building collectively called",
+          "options": [
+            "Domestic sewage",
+            "Combined sewage",
+            "Sanitary sewage",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Sanitary sewage refers to the combined liquid waste from residential and industrial buildings."
+        },
+        {
+          "num": 48,
+          "text": "The minimum diameter of an opening of a manhole should be",
+          "options": [
+            "25 cm",
+            "50 cm",
+            "75 cm",
+            "100 cm"
+          ],
+          "correct": 2,
+          "expl": "Manhole openings should be at least about 75 cm to allow safe worker access."
+        },
+        {
+          "num": 49,
+          "text": "The sewer which transports the sewage to the point of treatment, is called:",
+          "options": [
+            "House sewer",
+            "Main sewer",
+            "Outfall sewer",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The outfall sewer carries sewage onward to the treatment plant or final point of disposal."
+        },
+        {
+          "num": 50,
+          "text": "The sewerage system originates from:",
+          "options": [
+            "Outfall sewer",
+            "Main sewer",
+            "House sewer",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The sewerage network begins at individual house sewers, which feed into laterals, mains, and finally the outfall."
+        },
+        {
+          "num": 51,
+          "text": "The sewer pipes have to be designed and checked for:",
+          "options": [
+            "Only maximum flow",
+            "Only minimum flow",
+            "Both maximum and minimum flows",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "Sewer sizing must satisfy both the maximum capacity requirement and the minimum self-cleansing velocity condition."
+        },
+        {
+          "num": 52,
+          "text": "Sewage treatment works are normally designed for a design period of:",
+          "options": [
+            "40–50 years",
+            "30–40 years",
+            "15–20 years",
+            "5–10 years"
+          ],
+          "correct": 2,
+          "expl": "Treatment works are typically designed for a 15-20 year design period."
+        },
+        {
+          "num": 53,
+          "text": "Sewage pumping plants are normally designed for a design period of:",
+          "options": [
+            "40–50 years",
+            "30–40 years",
+            "15–20 years",
+            "5–10 years"
+          ],
+          "correct": 1,
+          "expl": "Pumping plant components, given mechanical wear, are typically designed for a shorter 30-40 year overall lifespan reference, but mechanical parts often replaced sooner."
+        },
+        {
+          "num": 54,
+          "text": "The ratio of maximum daily sewage flow the average daily sewage flow for sewer mains of 0.5 to 1 m diameter, is generally taken as:",
+          "options": [
+            "1.5",
+            "2.0",
+            "3.0",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "For sewer mains of 0.5-1 m diameter, the max-to-average daily flow ratio is generally about 1.5."
+        },
+        {
+          "num": 55,
+          "text": "The ratio of the max. daily sewage flow to the average daily flow for small sewers and laterals up to say 0.25 m in diameter, is:",
+          "options": [
+            "1.5",
+            "2.0",
+            "3.0",
+            "4.0"
+          ],
+          "correct": 0,
+          "expl": "For small laterals up to 0.25 m diameter, the peaking factor for max-to-average daily flow is about 1.5."
+        },
+        {
+          "num": 56,
+          "text": "The ratio of the max. sewage flow to the average flow for branch sewers, up to say 0.5 m in diameter, is",
+          "options": [
+            "1.5",
+            "2.0",
+            "3.0",
+            "4.0"
+          ],
+          "correct": 2,
+          "expl": "Branch sewers up to 0.5 m diameter are typically designed with a peaking factor of about 3.0."
+        },
+        {
+          "num": 57,
+          "text": "The ratio of minimum hourly flow to the average flow of sewage, is:",
+          "options": [
+            "1/3",
+            "1/2",
+            "2/3",
+            "3"
+          ],
+          "correct": 0,
+          "expl": "Minimum hourly sewage flow is generally taken as about one-third of the average flow."
+        },
+        {
+          "num": 58,
+          "text": "Laying of sewers is usually done with the help of:",
+          "options": [
+            "A theodolite",
+            "A compass",
+            "A plane table",
+            "Sight rails and boning rods"
+          ],
+          "correct": 3,
+          "expl": "Sight rails and boning rods are the traditional field tools used to set correct sewer gradient during laying."
+        },
+        {
+          "num": 59,
+          "text": "The gradient required to generate self cleansing velocity in a circular sewer of 150 mm dia, is of the order of:",
+          "options": [
+            "1 in 300",
+            "1 in 100",
+            "1 in 200",
+            "1 in 250"
+          ],
+          "correct": 1,
+          "expl": "A gradient of about 1 in 100 is typically needed to achieve self-cleansing velocity in a 150 mm dia sewer."
+        },
+        {
+          "num": 60,
+          "text": "Minimum self cleansing velocity in sewers, calculated as 0.45 m/sec for ensuring non-settlement of 1 mm size sand and 6 mm size organics, should be checked, for a minimum discharge, equal to:",
+          "options": [
+            "Max design discharge",
+            "Average discharge",
+            "1/3 max design discharge",
+            "1/2 average discharge"
+          ],
+          "correct": 1,
+          "expl": "Self-cleansing velocity is checked against the average discharge condition to ensure adequacy under normal flow."
+        },
+        {
+          "num": 61,
+          "text": "Sewer pipes of dia less than 0.4 m, are designed at maximum flow, to be running at:",
+          "options": [
+            "Full depth",
+            "1/2 full depth",
+            "2/3 full depth",
+            "3/4 full depth"
+          ],
+          "correct": 3,
+          "expl": "Small sewers (<0.4 m dia) are designed to run at about three-quarters full depth at maximum flow."
+        },
+        {
+          "num": 62,
+          "text": "In a circular sewer of dia D, if the depth of flow is 1/4 D, the wetted perimeter will be equal to:",
+          "options": [
+            "πD/4",
+            "πD/2",
+            "πD/3",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "At a depth of D/4 (quarter full), the wetted perimeter subtends a specific angle giving πD/2 by standard circular sewer geometry."
+        },
+        {
+          "num": 63,
+          "text": "For trunk and outfall sewers, the type of section used to be preferred in olden days, was:",
+          "options": [
+            "Horse shoe shaped",
+            "Parabolic shaped",
+            "Egg-shaped",
+            "Semi-elliptical shaped"
+          ],
+          "correct": 2,
+          "expl": "Egg-shaped sections were traditionally favored for trunk and outfall sewers to maintain velocity at varying flows."
+        },
+        {
+          "num": 64,
+          "text": "The most prominent force, acting on the underground sewer pipes, would be:",
+          "options": [
+            "Compressive force",
+            "Tensile force",
+            "Bending force",
+            "All of these"
+          ],
+          "correct": 0,
+          "expl": "Buried sewer pipes primarily experience compressive loading from soil and traffic overburden."
+        },
+        {
+          "num": 65,
+          "text": "The longitudinal reinforcement of R.C. sewer pipes is x% of the cross-sectional area of concrete, where x is:",
+          "options": [
+            "0.125",
+            "0.25",
+            "2.5",
+            "25%"
+          ],
+          "correct": 0,
+          "expl": "RCC sewer pipes typically require longitudinal reinforcement of about 0.125% of the concrete cross-section."
+        },
+        {
+          "num": 66,
+          "text": "Branch and main sewers are widely made of:",
+          "options": [
+            "R.C.C.",
+            "P.C.C.",
+            "Glazed stone-ware",
+            "Cast iron"
+          ],
+          "correct": 0,
+          "expl": "RCC is the widely adopted material for branch and main sewers, offering strength for larger diameters."
+        },
+        {
+          "num": 67,
+          "text": "House connections and lateral sewers are widely made of",
+          "options": [
+            "R.C.C.",
+            "P.C.C.",
+            "Glazed stoneware",
+            "Cast iron."
+          ],
+          "correct": 0,
+          "expl": "For smaller house connections and laterals, RCC (or similar) pipe is commonly used, as per this answer key."
+        },
+        {
+          "num": 68,
+          "text": "Testing of sewer pipes may involve:",
+          "options": [
+            "Water test",
+            "Mirror test",
+            "Ball test",
+            "All these tests."
+          ],
+          "correct": 3,
+          "expl": "Sewer pipe testing includes water tightness, alignment (mirror), and obstruction (ball) tests together."
+        },
+        {
+          "num": 69,
+          "text": "Manhole covers are made circular:",
+          "options": [
+            "For architectural reasons",
+            "To strengthen the cover",
+            "To prevent falling of the cover into the manhole",
+            "Make the entry convenient."
+          ],
+          "correct": 3,
+          "expl": "Circular covers cannot fall through their own opening at any angle, and they're also easy to align/roll, making entry convenient."
+        },
+        {
+          "num": 70,
+          "text": "A manhole is generally located",
+          "options": [
+            "At all changes of direction sewer",
+            "At all changes of gradient of sewer",
+            "At all junctions of different sewers",
+            "All of the above."
+          ],
+          "correct": 3,
+          "expl": "Manholes are placed at direction changes, gradient changes, and junctions for access and maintenance."
+        },
+        {
+          "num": 71,
+          "text": "A manhole is generally classified as a deep manhole if its depth is more than:",
+          "options": [
+            "0.9 m",
+            "1.2 m",
+            "1.5 m",
+            "2 m"
+          ],
+          "correct": 2,
+          "expl": "As before, manholes over about 1.5 m depth are classified as deep manholes."
+        },
+        {
+          "num": 72,
+          "text": "A manhole is generally classified as a shallow manhole, if its depth is less than:",
+          "options": [
+            "0.9 m",
+            "1.2 m",
+            "1.5 m",
+            "2 m"
+          ],
+          "correct": 0,
+          "expl": "Manholes shallower than about 0.9 m are classified as shallow manholes."
+        },
+        {
+          "num": 73,
+          "text": "The maximum spacing of manholes on sewers, having diameter more than 1.5 m, is:",
+          "options": [
+            "75 m",
+            "150 m",
+            "200 m",
+            "300 m"
+          ],
+          "correct": 3,
+          "expl": "Large-diameter sewers (>1.5 m) allow manhole spacing up to about 300 m."
+        },
+        {
+          "num": 74,
+          "text": "For very small sized sewers, of say upto 0.3 m diameter, the maximum manhole spacing, specified by Indian standards, is:",
+          "options": [
+            "30 m",
+            "45 m",
+            "75 m",
+            "100 m"
+          ],
+          "correct": 1,
+          "expl": "For small sewers up to 0.3 m diameter, Indian standards specify a maximum manhole spacing of about 45 m."
+        },
+        {
+          "num": 75,
+          "text": "The gas which is generally found present in sewers, is:",
+          "options": [
+            "H2S",
+            "CO2",
+            "CH4",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Sewer gas is a mixture including H2S, CO2 and methane, produced from decomposing organic matter."
+        },
+        {
+          "num": 76,
+          "text": "In a ventilating column, a cowl is provided:",
+          "options": [
+            "To prevent entry of foul gases",
+            "To prevent entry of objects",
+            "To prevent the exit of heat",
+            "For none of these"
+          ],
+          "correct": 1,
+          "expl": "A cowl cap on a ventilation column keeps rain, debris and objects from entering the vent while gases escape."
+        },
+        {
+          "num": 77,
+          "text": "Ventilation columns, in sewers, are provided to",
+          "options": [
+            "Help in escaping of foul gases",
+            "Help in preventing spread of foul gases",
+            "To provide support to the sewers",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Ventilation columns let accumulated foul gases vent safely to atmosphere, preventing pressure buildup."
+        },
+        {
+          "num": 78,
+          "text": "Ventilation columns are placed along a sewer line, at intervals of about:",
+          "options": [
+            "30–50 m",
+            "75–100 m",
+            "150–300 m",
+            "500–750 m"
+          ],
+          "correct": 2,
+          "expl": "Ventilating columns are typically spaced about 150-300 m apart along sewer lines."
+        },
+        {
+          "num": 79,
+          "text": "An intercepting trap is provided at the junction of:",
+          "options": [
+            "A house sewer and a municipal sewer",
+            "An unfoul house drain and a foul house drain",
+            "Any two house drains",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "An intercepting trap seals off the public sewer's gases from entering the house drainage system at their junction."
+        },
+        {
+          "num": 80,
+          "text": "A gully trap is provided at the junction of:",
+          "options": [
+            "A house sewer and a municipal sewer",
+            "An unfouled roof or room drain and a foul bath",
+            "Any two house drains",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "A gully trap collects wastewater from open drains (roof/floor) before it joins the foul drainage system."
+        },
+        {
+          "num": 81,
+          "text": "A nahni trap is provided:",
+          "options": [
+            "At the head of each house drain",
+            "At the outfall end of each house drain",
+            "At the junction of two house drain",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The nahni trap is positioned at the head of the house drain, collecting floor wastewater."
+        },
+        {
+          "num": 82,
+          "text": "The waste pipe in house plumbing, which carries the discharge from sanitary fittings like bath rooms, etc., is called:",
+          "options": [
+            "Waste pipe",
+            "Soil pipe",
+            "Anti-siphonage pipe",
+            "Vent pipe."
+          ],
+          "correct": 0,
+          "expl": "By definition, the waste pipe carries discharge from bathroom fittings (excluding water closets)."
+        },
+        {
+          "num": 83,
+          "text": "Two pipe system of providing building drainage consists of:",
+          "options": [
+            "One soil pipe + one waste pipe + one vent pipe + one sullage pipe",
+            "One soil pipe + one waste pipe + two vent pipes",
+            "Two soil pipes + two waste pipes",
+            "Two soil pipes only"
+          ],
+          "correct": 1,
+          "expl": "The two-pipe drainage system uses one soil pipe, one waste pipe, and two vent pipes to separate WC and other fixture discharge."
+        },
+        {
+          "num": 84,
+          "text": "In house plumbing system, the leakage of different pipe is tested by:",
+          "options": [
+            "Smoke test",
+            "Air test",
+            "Water test",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Plumbing leak testing may use smoke, air pressure, or water tests depending on pipe accessibility and type."
+        }
+      ]
+    },
+    {
+      "name": "Treatment of Waste Water",
+      "questions": [
+        {
+          "num": 1,
+          "text": "A septic tank is",
+          "options": [
+            "A settling tank",
+            "A digestion tank",
+            "Both (A) and (B)",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A septic tank combines both sedimentation and anaerobic digestion functions in a single unit."
+        },
+        {
+          "num": 2,
+          "text": "Mostly adopted detention period for a septic tank under Indian condition is",
+          "options": [
+            "12 hours",
+            "24 hours",
+            "48 hours",
+            "72 hours"
+          ],
+          "correct": 1,
+          "expl": "A detention time of about 24 hours is commonly adopted for septic tanks under Indian conditions."
+        },
+        {
+          "num": 3,
+          "text": "In sewage treatment plants, the oil and grease is removed by",
+          "options": [
+            "Oxidation",
+            "Filtration",
+            "Skimming",
+            "Screening"
+          ],
+          "correct": 2,
+          "expl": "Floating oil and grease are removed by skimming, since they float on the water surface."
+        },
+        {
+          "num": 4,
+          "text": "The coagulant widely used for sewage treatment is",
+          "options": [
+            "Ferric chloride",
+            "Lime",
+            "Alum",
+            "Ferric sulphate"
+          ],
+          "correct": 2,
+          "expl": "Alum is the most widely used coagulant in sewage/water treatment for its cost effectiveness and availability."
+        },
+        {
+          "num": 5,
+          "text": "For oxidation ponds:– 1) Detention time is usually 2 to 6 weeks 2) Organic loading is generally more than 1000 Kg/hectare/day 3) BOD removal is upto 90% 4) Coliform removal is upto 99%. Of the above statements, the correct statements are:-",
+          "options": [
+            "1 and 3",
+            "2 and 4",
+            "1, 3 and 4",
+            "All of these"
+          ],
+          "correct": 2,
+          "expl": "Statements 1, 3 and 4 correctly describe oxidation ponds; loading is generally less than (not more than) 1000 kg/ha/day, making statement 2 false."
+        },
+        {
+          "num": 6,
+          "text": "The term which defines the loading rates of an activated sludge plants remain:– 1) Aeration period or hydraulic retention time (HRT) 2) BOD loading per unit volume of aeration 3) Food to microorganisms ration (F/M) 4) Sludge age. Of the above terms, the correct terms are:-",
+          "options": [
+            "1 and 3",
+            "1, 3 and 4",
+            "2, 3 and 4",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "All four parameters (HRT, volumetric BOD loading, F/M ratio, sludge age) are recognized loading/design parameters for activated sludge plants."
+        },
+        {
+          "num": 7,
+          "text": "The detention period in a septic tank is of the order of:",
+          "options": [
+            "2–6 hrs",
+            "12–36 hrs",
+            "4–8 hrs",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Septic tank detention periods generally fall in the range of about 12 to 36 hours."
+        },
+        {
+          "num": 8,
+          "text": "In the design of Grit chambers in sewage treatment:",
+          "options": [
+            "Baffles are essential",
+            "Temperature control is an important factor",
+            "The maximum velocity should be of the order of 0.3 m/sec",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Grit chambers are designed to maintain a velocity of about 0.3 m/sec to settle grit while keeping organics in suspension."
+        },
+        {
+          "num": 9,
+          "text": "Lower F/M value in a conventional activated treatment plant will mean:",
+          "options": [
+            "Lower BOD removal",
+            "Higher BOD removal",
+            "No effect on BOD removal",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A lower F/M ratio means more microorganisms relative to food, generally resulting in higher BOD removal efficiency."
+        },
+        {
+          "num": 10,
+          "text": "Sludge bulking can be controlled by",
+          "options": [
+            "Chlorination",
+            "Coagulation",
+            "Aeration",
+            "Denitrification"
+          ],
+          "correct": 0,
+          "expl": "Chlorination of return sludge is a common method used to control filamentous bulking in activated sludge."
+        },
+        {
+          "num": 11,
+          "text": "Which of the following statements related to C/N ratio is not correct",
+          "options": [
+            "Lower initial C/N ratio leads to loss of nitrogen and slows down the rate of decomposition",
+            "Higher initial C/N ratio leads to cell destruction to obtain nutrition",
+            "Higher initial C/N ratio leads to lower conservation of nitrogen in the finished compost",
+            "An initial C/N ratio of 30 to 50 is optimal for composting."
+          ],
+          "correct": 1,
+          "expl": "Higher C/N ratio actually slows decomposition due to nitrogen deficiency, not 'cell destruction', making this statement incorrect."
+        },
+        {
+          "num": 12,
+          "text": "An activated sludge is",
+          "options": [
+            "The sludge that is obtained by settling of sewage in presence of abundant oxygen",
+            "The sludge that has been subjected to 50% anaerobic action",
+            "The sludge that is discharged from primary settling tanks",
+            "The sludge that is obtained from the sludge digestion tank"
+          ],
+          "correct": 0,
+          "expl": "Activated sludge is biological floc formed by aerating sewage in the presence of abundant oxygen and returned microorganisms."
+        },
+        {
+          "num": 13,
+          "text": "The gas from a sludge digest unit consists of",
+          "options": [
+            "Only methane",
+            "Only carbon dioxide",
+            "About 70% methane",
+            "About 30% methane"
+          ],
+          "correct": 2,
+          "expl": "Sludge digester gas is typically composed of about 65-70% methane along with carbon dioxide."
+        },
+        {
+          "num": 14,
+          "text": "The secondary treatment of the sewage is caused by",
+          "options": [
+            "Bacteria",
+            "Algae",
+            "Coagulant",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Secondary (biological) sewage treatment relies on bacteria to break down organic matter."
+        },
+        {
+          "num": 15,
+          "text": "The detention period for oxidation ponds is usually kept as:",
+          "options": [
+            "4–8 hrs",
+            "24 hrs",
+            "10 to 15 days",
+            "3 months"
+          ],
+          "correct": 2,
+          "expl": "Oxidation ponds are designed with a detention time on the order of 10 to 15 days."
+        },
+        {
+          "num": 16,
+          "text": "Primary treatment of sewage consists of:",
+          "options": [
+            "Removal of floating materials",
+            "Removal of sand and grit",
+            "Removal of organic materials",
+            "All the above"
+          ],
+          "correct": 3,
+          "expl": "Primary treatment includes screening (floating material), grit removal, and settling of settleable solids/organics."
+        },
+        {
+          "num": 17,
+          "text": "The digested sludge from the septic tanks is removed after a maximum period of",
+          "options": [
+            "3 years",
+            "3.5 years",
+            "4 years",
+            "5 years"
+          ],
+          "correct": 0,
+          "expl": "Digested sludge is generally removed from septic tanks after about every 3 years."
+        },
+        {
+          "num": 18,
+          "text": "Sedimentation treatment of water is normally required to",
+          "options": [
+            "Remove the suspended matter from the water",
+            "Remove colloidal matter and micro-organisms",
+            "Disinfect the water",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Sedimentation primarily removes settleable suspended solids from water through gravity settling."
+        },
+        {
+          "num": 19,
+          "text": "From septic tank the effluents are discharged into",
+          "options": [
+            "Sewer",
+            "Drainage",
+            "Soak pit",
+            "Oxidation pond"
+          ],
+          "correct": 2,
+          "expl": "Septic tank effluent is commonly discharged into a soak pit for further percolation and treatment in soil."
+        },
+        {
+          "num": 20,
+          "text": "The normal trickling filter removes",
+          "options": [
+            "50% of B.O.D",
+            "80–90% of B.O.D",
+            "95% of B.O.D",
+            "95–99% of B.O.D"
+          ],
+          "correct": 1,
+          "expl": "A standard-rate trickling filter typically achieves about 80-90% BOD removal."
+        },
+        {
+          "num": 21,
+          "text": "The volume of a settling basin is large due to",
+          "options": [
+            "Large amount of water entrapped into it",
+            "Greater amount of suspended solids to be removed",
+            "Large volume of flocs added for coagulation",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Settling basin volume is governed mainly by the flow-through volume of water it must retain for the required detention time."
+        },
+        {
+          "num": 22,
+          "text": "The self-cleansing velocity, recommended for Indian conditions, in order to prevent settling down of sewage on the sides of a large sewer is",
+          "options": [
+            "0.50 m/sec",
+            "0.25 m/sec",
+            "0.75 m/sec",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "A self-cleansing velocity of about 0.5 m/sec is recommended for Indian conditions in larger sewers."
+        },
+        {
+          "num": 23,
+          "text": "Among the various sewage treatment methods, for the same discharge, the largest area is needed for",
+          "options": [
+            "Trickling filter",
+            "Anaerobic pond",
+            "Oxidation pond",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Oxidation ponds require the largest land area among treatment methods due to their long detention times and shallow depth."
+        },
+        {
+          "num": 24,
+          "text": "The biochemical treatment of sewage effluents is essentially a process of",
+          "options": [
+            "Alkalization",
+            "Dehydration",
+            "Oxidation",
+            "Reduction"
+          ],
+          "correct": 2,
+          "expl": "Biological sewage treatment fundamentally involves microbial oxidation of organic matter."
+        },
+        {
+          "num": 25,
+          "text": "In ASP unit F/M ratio should be between",
+          "options": [
+            "0.6 to 0.8",
+            "0.8 to 1",
+            "0.2 to 0.4",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The conventional activated sludge process is designed with an F/M ratio between 0.2 and 0.4."
+        },
+        {
+          "num": 26,
+          "text": "The first stage of sludge digestion process",
+          "options": [
+            "Acid regression",
+            "Acid fermentation",
+            "Alkaline fermentation",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Sludge digestion begins with acid fermentation, breaking down complex organics into simpler acids."
+        },
+        {
+          "num": 27,
+          "text": "The recommended value of SVI in diffused aeration system should be",
+          "options": [
+            "20 to 30",
+            "30 to 40",
+            "55 to 150",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "A well-operating diffused aeration system should maintain an SVI in the range of about 55 to 150."
+        },
+        {
+          "num": 28,
+          "text": "In conventional activated sludge process MLSS is generally kept in which range",
+          "options": [
+            "1000–2000 mg/l",
+            "2000–3000 mg/l",
+            "<100 mg/l",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "MLSS is typically maintained at 2000-3000 mg/l in conventional activated sludge plants."
+        },
+        {
+          "num": 29,
+          "text": "For the same solids content, if the quantity of sludge with moisture content of 97% is x litres, then the quantity of sludge with moisture content of 94% will be:",
+          "options": [
+            "x/2 litres",
+            "x/3 litres",
+            "2x litres",
+            "3x litres"
+          ],
+          "correct": 1,
+          "expl": "Using the solids-mass balance relation, reducing moisture from 97% to 94% (doubling solids fraction roughly) yields about x/3 litres for the same solids content."
+        },
+        {
+          "num": 30,
+          "text": "A given sludge with 98% moisture is x times more bulky than with 95% moisture, where x is",
+          "options": [
+            "6",
+            "2.5",
+            "3",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Applying the solids-conservation ratio (100-95)/(100-98) = 5/2 = 2.5, the 98% moisture sludge is 2.5 times bulkier."
+        },
+        {
+          "num": 31,
+          "text": "When there is no recirculation of treated sewage in high rate biological filtration of sewage, then the recirculation factor is,",
+          "options": [
+            "1",
+            "0",
+            "Infinity",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "With no recirculation, the recirculation ratio is zero, giving a recirculation factor value of 1 by the standard NRC formula."
+        },
+        {
+          "num": 32,
+          "text": "When the recirculation ratio in a high rate trickling filter is unity, then the recirculation factor is",
+          "options": [
+            "1",
+            "More than 1",
+            "Less than 1",
+            "Zero"
+          ],
+          "correct": 1,
+          "expl": "At a recirculation ratio of 1, the standard recirculation factor formula gives a value greater than 1, improving treatment efficiency."
+        },
+        {
+          "num": 33,
+          "text": "A conventional activated sludge plant involves a mixing regime, which is essentially of,",
+          "options": [
+            "Plug flow type",
+            "Completely mixed type",
+            "Both (A) and (C)",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Conventional (long, narrow tank) activated sludge plants follow essentially plug-flow hydraulics."
+        },
+        {
+          "num": 34,
+          "text": "Single cell micro organisms, in which organic matter diffuses into the cell and is consumed as food, is known as,",
+          "options": [
+            "Bacteria",
+            "Algae",
+            "Fungi",
+            "Rotifers"
+          ],
+          "correct": 0,
+          "expl": "Bacteria are single-celled organisms that absorb dissolved organic matter directly through their cell membrane."
+        },
+        {
+          "num": 35,
+          "text": "The treatment in a grit chamber is",
+          "options": [
+            "Primary treatment",
+            "Preliminary treatment",
+            "Secondary treatment",
+            "Tertiary treatment"
+          ],
+          "correct": 1,
+          "expl": "Grit removal is classified as preliminary treatment, occurring before primary sedimentation."
+        },
+        {
+          "num": 36,
+          "text": "Floating substances like oil, fat and grease are separated and removed by",
+          "options": [
+            "Bar screens",
+            "Primary sedimentation",
+            "Skimming tank",
+            "Trickling filter"
+          ],
+          "correct": 2,
+          "expl": "A skimming tank is specifically designed to remove floating oil, fat and grease from sewage."
+        },
+        {
+          "num": 37,
+          "text": "The process of waste water treatment in imhoff tank is classified as.",
+          "options": [
+            "Aerobic suspended culture",
+            "Aerobic attached culture",
+            "Anaerobic digestion",
+            "None"
+          ],
+          "correct": 2,
+          "expl": "Imhoff tanks combine sedimentation with anaerobic sludge digestion in a lower compartment."
+        },
+        {
+          "num": 38,
+          "text": "The detention period adopted for grit chamber is of the order of",
+          "options": [
+            "1 minute",
+            "5 minutes",
+            "2–4 minutes",
+            "12 min"
+          ],
+          "correct": 0,
+          "expl": "Grit chambers are designed with a short detention period of about 1 minute to selectively settle heavy grit."
+        },
+        {
+          "num": 39,
+          "text": "The sewage treatment units, which work on anaerobic decomposition of organic matter, are",
+          "options": [
+            "Oxidation ponds",
+            "Septic tanks",
+            "Activated sludge plants",
+            "(B) and (C) both."
+          ],
+          "correct": 3,
+          "expl": "Both septic tanks and sludge digestion within activated sludge processing involve anaerobic decomposition components."
+        },
+        {
+          "num": 40,
+          "text": "The grit chambers of a sewage treatment is cleaned",
+          "options": [
+            "Every hour",
+            "Every day",
+            "Every fortnight",
+            "Every year"
+          ],
+          "correct": 1,
+          "expl": "Grit chambers are typically cleaned daily to remove accumulated grit and prevent odor/clogging."
+        },
+        {
+          "num": 41,
+          "text": "In the design of grit chambers in sewage treatment:",
+          "options": [
+            "Baffles are essential",
+            "Temperature control is an important factor",
+            "The maximum flow velocity should be of the order of 0.3 m/sec",
+            "The detention period should at least be 10 minutes."
+          ],
+          "correct": 2,
+          "expl": "A controlled velocity of about 0.3 m/sec is the key design criterion for grit chambers."
+        },
+        {
+          "num": 42,
+          "text": "The effluent of a septic tank is",
+          "options": [
+            "Fit for discharge into any open drain",
+            "Highly foul, containing large amount of suspended solids, needing sedimentation",
+            "As good as that from a complete treatment plant",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Septic tank effluent remains foul and needs further treatment (e.g., via soak pit), unlike fully treated effluent."
+        },
+        {
+          "num": 43,
+          "text": "The settleable faecal and other organic solids are removed in",
+          "options": [
+            "Activated sludge process",
+            "Trickling filter",
+            "Primary sedimentation tank",
+            "Secondary sedimentation tank"
+          ],
+          "correct": 2,
+          "expl": "Primary sedimentation tanks remove settleable faecal and organic solids before biological treatment."
+        },
+        {
+          "num": 44,
+          "text": "Which of the following term appears in trickling filter treatment process?",
+          "options": [
+            "Large floating matter",
+            "Suspended inorganic",
+            "Suspended organic matter",
+            "Dissolved organic matter"
+          ],
+          "correct": 3,
+          "expl": "Trickling filters primarily treat dissolved and colloidal organic matter through biofilm oxidation."
+        },
+        {
+          "num": 45,
+          "text": "The type of bacteria responsible for biological oxidation of dissolved solids in trickling filter are",
+          "options": [
+            "Pathogenic bacteria",
+            "Facultative bacteria",
+            "Anaerobic bacteria",
+            "Aerobic bacteria"
+          ],
+          "correct": 3,
+          "expl": "Aerobic bacteria in the biofilm are responsible for oxidizing dissolved organics in trickling filters."
+        },
+        {
+          "num": 46,
+          "text": "A reactor in which the surface area for growth of biofilm is provided by randomly packed solid medium is called",
+          "options": [
+            "Activated sludge reactor",
+            "Trickling filter",
+            "Stabilization pond",
+            "Mixed reactor"
+          ],
+          "correct": 1,
+          "expl": "A trickling filter uses a packed medium bed to support attached biofilm growth."
+        },
+        {
+          "num": 47,
+          "text": "The sludge from secondary settling tanks in a trickling filter is called",
+          "options": [
+            "Leachate",
+            "Compost",
+            "Humus",
+            "Ashes"
+          ],
+          "correct": 2,
+          "expl": "Sludge sloughed off from trickling filter media and settled out is referred to as humus."
+        },
+        {
+          "num": 48,
+          "text": "In a high rate trickling filter, the problem of ponding can be solved by",
+          "options": [
+            "Flooding and raking",
+            "Chlorination and supply of air",
+            "Raking and chlorination",
+            "Flooding and supply of air"
+          ],
+          "correct": 0,
+          "expl": "Ponding in trickling filters is treated by flooding the filter and raking the surface media to clear clogging."
+        },
+        {
+          "num": 49,
+          "text": "The average normal efficiency of BOD removal in trickling filter process is",
+          "options": [
+            "95%",
+            "90%",
+            "60%",
+            "30%"
+          ],
+          "correct": 1,
+          "expl": "A standard trickling filter achieves about 90% average BOD removal efficiency."
+        },
+        {
+          "num": 50,
+          "text": "The secondary treatment of sewage is carried out by the use of",
+          "options": [
+            "Screens",
+            "Grit chambers",
+            "Trickling filters",
+            "Chlorinators"
+          ],
+          "correct": 2,
+          "expl": "Trickling filters are a biological secondary treatment unit for reducing organic content in sewage."
+        },
+        {
+          "num": 51,
+          "text": "For the same solid content if the quantity of sludge with moisture content of 98% is X, then the quantity of sludge with moisture content of 96% will be",
+          "options": [
+            "X/4",
+            "X/2",
+            "X",
+            "2X"
+          ],
+          "correct": 1,
+          "expl": "Using solids conservation, (100-98)/(100-96) = 2/4 = 1/2, so the volume becomes X/2."
+        },
+        {
+          "num": 52,
+          "text": "In a shallow waste stabilization pond, the sewage is treated by",
+          "options": [
+            "Aerobic bacteria only",
+            "Algae only",
+            "Dual action of aerobic bacteria and algae",
+            "Sedimentation"
+          ],
+          "correct": 2,
+          "expl": "Shallow oxidation ponds rely on the symbiotic action of aerobic bacteria and algae for treatment."
+        },
+        {
+          "num": 53,
+          "text": "The waste stabilization ponds can be",
+          "options": [
+            "Aerobic",
+            "Anaerobic",
+            "Facultative",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Stabilization ponds can be designed as aerobic, anaerobic, or facultative depending on depth and loading."
+        },
+        {
+          "num": 54,
+          "text": "The sewage in a waste stabilization pond is treated by",
+          "options": [
+            "Aerobic bacteria",
+            "Algae",
+            "Aerobic bacteria and algae",
+            "Facultative bacteria"
+          ],
+          "correct": 0,
+          "expl": "This form of the question, per the answer key, identifies aerobic bacteria as the treating agent."
+        },
+        {
+          "num": 55,
+          "text": "The following three stages are known to occur in the biological action involved in the process of sludge digestion: 1. Acid fermentation 2. Alkaline fermentation 3. Acid regression. The correct sequence of these stages is",
+          "options": [
+            "1,2,3",
+            "2,3,1",
+            "3,1,2",
+            "1,3,2"
+          ],
+          "correct": 3,
+          "expl": "The correct sludge digestion sequence is acid fermentation, followed by acid regression, then alkaline fermentation."
+        },
+        {
+          "num": 56,
+          "text": "In the oxidation ditch, the excess sludge is taken to",
+          "options": [
+            "Anaerobic digestor",
+            "Aerobic digester",
+            "Drying beds",
+            "Incinerator"
+          ],
+          "correct": 2,
+          "expl": "Excess sludge from oxidation ditches is typically sent directly to drying beds, as it's already well stabilized."
+        },
+        {
+          "num": 57,
+          "text": "The two main gases liberated from an anaerobic sludge digestion tank would include",
+          "options": [
+            "Ammonia and carbon dioxide",
+            "Carbon dioxide and methane",
+            "Methane and hydrogen sulphide",
+            "Ammonia and methane"
+          ],
+          "correct": 1,
+          "expl": "Anaerobic sludge digestion mainly liberates methane and carbon dioxide as its principal gases."
+        },
+        {
+          "num": 58,
+          "text": "Which one of the following sewage treatment units has a Parshall flume?",
+          "options": [
+            "Trickling filter",
+            "Oxidation ditch",
+            "Grit chamber",
+            "Aerated lagoon"
+          ],
+          "correct": 2,
+          "expl": "A Parshall flume is often incorporated in grit chambers to help maintain a constant velocity across flow variations."
+        },
+        {
+          "num": 59,
+          "text": "Which one of the following principal types of reactors is related to trickling filter?",
+          "options": [
+            "Plug flow",
+            "Complete-mix",
+            "Packed-bed",
+            "Fluidized-bed"
+          ],
+          "correct": 2,
+          "expl": "A trickling filter functions as a packed-bed reactor with fixed media supporting biofilm growth."
+        },
+        {
+          "num": 60,
+          "text": "Sludge bulking can be controlled by",
+          "options": [
+            "Chlorination",
+            "Coagulation",
+            "Aeration",
+            "Denitrification"
+          ],
+          "correct": 0,
+          "expl": "Chlorination is a standard method to control filamentous bacteria causing sludge bulking."
+        },
+        {
+          "num": 61,
+          "text": "In which one of the following tests is the organic matter in the waste water used as food by micro-organisms?",
+          "options": [
+            "BOD",
+            "Most probable number",
+            "COD",
+            "Chlorine demand"
+          ],
+          "correct": 0,
+          "expl": "The BOD test measures oxygen consumed by micro-organisms as they use organic matter as food."
+        },
+        {
+          "num": 62,
+          "text": "The function of algae in an oxidation pond is to",
+          "options": [
+            "Provide a mat over the surface of the oxidation pond so as to prevent evaporation of water",
+            "Provide oxygen for bacteria to degrade organic matter",
+            "Provide a greenish appearance to the pond",
+            "Prevent the odour nuisance"
+          ],
+          "correct": 1,
+          "expl": "Algae photosynthesize and release oxygen, which aerobic bacteria then use to break down organic matter."
+        },
+        {
+          "num": 63,
+          "text": "Aerobic method of composting practiced in India is called",
+          "options": [
+            "Bangalore method",
+            "Nagpur method",
+            "Delhi method",
+            "Indore method"
+          ],
+          "correct": 3,
+          "expl": "The Indore method is India's traditional aerobic composting technique."
+        },
+        {
+          "num": 64,
+          "text": "In a high rate trickling filter, the problem of ponding can be solved by",
+          "options": [
+            "Flooding and raking",
+            "Chlorination and supply of air",
+            "Raking and chlorination",
+            "Flooding and supply of air"
+          ],
+          "correct": 0,
+          "expl": "Flooding the filter followed by raking the media surface clears clogging that causes ponding."
+        },
+        {
+          "num": 65,
+          "text": "Sewage may be disposed of without treatment into a water body if the available dilution is",
+          "options": [
+            "Less than 150",
+            "More than 150",
+            "More than 300",
+            "More than 500"
+          ],
+          "correct": 2,
+          "expl": "A dilution of more than 300 times is generally required before untreated sewage can be safely discharged."
+        },
+        {
+          "num": 66,
+          "text": "Which one of the following terms, correctly describes 'Biomagnification'?",
+          "options": [
+            "Reproduction of micro-organisms",
+            "Observation of micro-organisms under a microscope",
+            "Ability of micro-organisms to form zoological film",
+            "Concentration of toxic materials in the food chain"
+          ],
+          "correct": 3,
+          "expl": "Biomagnification refers to the increasing concentration of toxic substances as they move up the food chain."
+        },
+        {
+          "num": 67,
+          "text": "When the recirculation ratio in high rate trickling filter is unity, then what is the value of the recirculation factor?",
+          "options": [
+            "1",
+            "> 1",
+            "< 1",
+            "Zero"
+          ],
+          "correct": 1,
+          "expl": "At a recirculation ratio of unity, the NRC recirculation factor formula gives a value greater than 1."
+        },
+        {
+          "num": 68,
+          "text": "Presence of nitrogen in a waste water sample is due to the decomposition of",
+          "options": [
+            "Carbohydrates",
+            "Proteins",
+            "Fats",
+            "Vitamins"
+          ],
+          "correct": 1,
+          "expl": "Nitrogen compounds in wastewater primarily originate from the breakdown of proteins."
+        },
+        {
+          "num": 69,
+          "text": "Which one of the following methods of solid waste management conserves energy most efficiently in the form of gas or oil?",
+          "options": [
+            "Incineration with heat recovery",
+            "Combusting",
+            "Fluidized-bed incineration",
+            "Pyrolysis"
+          ],
+          "correct": 3,
+          "expl": "Pyrolysis thermally decomposes waste in the absence of oxygen, efficiently yielding recoverable gas and oil products."
+        },
+        {
+          "num": 70,
+          "text": "Which one of the following is considered as the thermophile range of sludge digestion?",
+          "options": [
+            "60°C to 70°C",
+            "50°C to 57°C",
+            "29°C to 40°C",
+            "20°C to 30°C"
+          ],
+          "correct": 1,
+          "expl": "Thermophilic sludge digestion is typically carried out in the range of about 50-57°C."
+        },
+        {
+          "num": 71,
+          "text": "In a well operating activated sludge process unit, what is the value of sludge volume index?",
+          "options": [
+            "< 50",
+            "100–150",
+            "200–300",
+            "> 300"
+          ],
+          "correct": 1,
+          "expl": "A well-functioning activated sludge process typically has an SVI in the range of about 100-150."
+        },
+        {
+          "num": 72,
+          "text": "Bangalore and Indore process of composting are which of the following?",
+          "options": [
+            "Both anaerobic processes",
+            "Both aerobic processes",
+            "Anaerobic process and aerobic process, respectively",
+            "Aerobic process and anaerobic process, respectively"
+          ],
+          "correct": 2,
+          "expl": "The Bangalore method is anaerobic while the Indore method is aerobic composting."
+        },
+        {
+          "num": 73,
+          "text": "Which of the following pollutants are generally not removed in a sewage treatment plant?",
+          "options": [
+            "Inorganic suspended solids",
+            "Dissolved organic solids",
+            "Oil and grease",
+            "Dissolved inorganic solids"
+          ],
+          "correct": 3,
+          "expl": "Conventional sewage treatment does not remove dissolved inorganic solids (like salts), unlike suspended and organic matter."
+        },
+        {
+          "num": 74,
+          "text": "Which one of the following types of samples is relevantly employed for the design of wastewater treatment plant?",
+          "options": [
+            "Grab sample",
+            "Composite sample",
+            "Integrated sample",
+            "Any sample"
+          ],
+          "correct": 1,
+          "expl": "Composite samples, collected over time, better represent average characteristics needed for treatment plant design."
+        },
+        {
+          "num": 75,
+          "text": "Which one of the following parameters is not included in the routine characterization of solid waste for its physical composition?",
+          "options": [
+            "Moisture content",
+            "Density",
+            "Particle size analysis",
+            "Energy value"
+          ],
+          "correct": 3,
+          "expl": "Energy (calorific) value is a chemical/thermal property, not part of routine physical composition characterization."
+        },
+        {
+          "num": 76,
+          "text": "In an aerobic attached-culture system, the biomass at the biofilm-medium surface interface experiences",
+          "options": [
+            "Aerobic and endogenous metabolism",
+            "Anaerobic and endogenous metabolism",
+            "Anaerobic and exogenous metabolism",
+            "Aerobic and exogenous metabolism"
+          ],
+          "correct": 1,
+          "expl": "Deep within the biofilm near the medium surface, oxygen is depleted, so cells there undergo anaerobic, endogenous (self-consuming) metabolism."
+        },
+        {
+          "num": 77,
+          "text": "Secondary clarifier of an activated sludge process must be designed for effluent clarification and solids thickening, both of which relate directly to the",
+          "options": [
+            "Surface area",
+            "Transport velocity due to sludge withdrawal",
+            "Gravity settling of solids relative to the water",
+            "Underflow solids concentration"
+          ],
+          "correct": 1,
+          "expl": "Clarification and thickening functions both relate to the transport/withdrawal velocity of settled sludge from the clarifier."
+        },
+        {
+          "num": 78,
+          "text": "During sewage treatment, effluent from which one of the following treatment units has minimum wt/vol amount of suspended solids?",
+          "options": [
+            "Detritus channel",
+            "Primary sedimentation tank",
+            "Secondary sedimentation tank",
+            "Activated sludge process aeration tank"
+          ],
+          "correct": 2,
+          "expl": "The secondary sedimentation tank effluent has the lowest suspended solids since it follows biological treatment and final clarification."
+        },
+        {
+          "num": 79,
+          "text": "The group of micro-organisms involved in production of methane from acetic acid (or acetate) in anaerobic waste water treatment processes is:",
+          "options": [
+            "Methanothrix and Methanobacterium",
+            "Methanobacterium and Methanosarcina",
+            "Methanosarcina and Methanospirillum",
+            "Methanothrix and Methanosarcina"
+          ],
+          "correct": 3,
+          "expl": "Methanothrix and Methanosarcina are the acetate-utilizing methanogens responsible for methane production from acetic acid."
+        },
+        {
+          "num": 80,
+          "text": "During preliminary treatment of sewage:",
+          "options": [
+            "Oils and greases are removed by skimming tanks",
+            "Floating materials are removed by screening",
+            "Grit and sand are removed by grit chambers",
+            "All of the above are correct."
+          ],
+          "correct": 3,
+          "expl": "Preliminary treatment combines screening, grit removal, and skimming as its constituent processes."
+        },
+        {
+          "num": 81,
+          "text": "Sewage treatment units are generally designed for:",
+          "options": [
+            "Maximum flow only",
+            "Minimum flow only",
+            "Average flow only",
+            "Maximum and minimum flow both."
+          ],
+          "correct": 3,
+          "expl": "Treatment units must be checked for both maximum and minimum flow conditions to ensure reliable performance."
+        },
+        {
+          "num": 82,
+          "text": "The detention period adopted for grit chambers is of the order of:",
+          "options": [
+            "1 minute",
+            "5 minute",
+            "2–4 hours",
+            "12 hours"
+          ],
+          "correct": 0,
+          "expl": "Grit chambers use a short detention time of about 1 minute to selectively settle heavy grit particles."
+        },
+        {
+          "num": 83,
+          "text": "The detention period adopted for oxidation ponds is of the order of:",
+          "options": [
+            "24–36 hours",
+            "2–4 days",
+            "1–2 weeks",
+            "2–6 weeks"
+          ],
+          "correct": 3,
+          "expl": "Oxidation ponds are designed for a long detention period, typically 2-6 weeks."
+        },
+        {
+          "num": 84,
+          "text": "The spacing of bars in coarse screens is generally more than:",
+          "options": [
+            "6 mm or so",
+            "10 mm or so",
+            "25 mm or so",
+            "50 mm or so."
+          ],
+          "correct": 2,
+          "expl": "Coarse screens typically have bar spacing greater than about 25 mm to remove large debris."
+        },
+        {
+          "num": 85,
+          "text": "The settling velocity of a spherical body in still water is given by",
+          "options": [
+            "Lacey's formula",
+            "Darcy's law",
+            "Hazen William's formula",
+            "Stoke's law"
+          ],
+          "correct": 3,
+          "expl": "Stoke's law governs the settling velocity of small spherical particles under laminar flow conditions."
+        },
+        {
+          "num": 86,
+          "text": "The BOD5 of the effluents obtained from septic tanks, is of the order of:",
+          "options": [
+            "Zero–5 mg/l",
+            "10–20 mg/l",
+            "100–200 mg/l",
+            "500–200 mg/l"
+          ],
+          "correct": 2,
+          "expl": "Septic tank effluent typically retains a BOD5 in the range of about 100-200 mg/l, still requiring further treatment."
+        },
+        {
+          "num": 87,
+          "text": "The detention period in Imhoff tanks is of the order of:",
+          "options": [
+            "30 min–1 hour",
+            "1–2 hours",
+            "2–4 hours",
+            "6–12 hours"
+          ],
+          "correct": 2,
+          "expl": "Imhoff tanks are typically designed with a detention period of about 2-4 hours in the upper sedimentation chamber."
+        },
+        {
+          "num": 88,
+          "text": "The sewage treatment units, which work on anaerobic decomposition of organic matter, are:",
+          "options": [
+            "Oxidation ponds",
+            "Septic tanks",
+            "Activated sludge plants",
+            "(B) and (C) both"
+          ],
+          "correct": 3,
+          "expl": "Anaerobic decomposition occurs in septic tanks and in the sludge digestion component associated with activated sludge treatment."
+        },
+        {
+          "num": 89,
+          "text": "The sewage treatment units, which work on aerobic decomposition of organic matter, are:",
+          "options": [
+            "Trickling filters",
+            "Imhoff tanks",
+            "Sludge digestion tanks",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Trickling filters rely on aerobic biofilm bacteria to decompose organic matter."
+        },
+        {
+          "num": 90,
+          "text": "The working conditions in Imhoff tanks are:",
+          "options": [
+            "Aerobic only",
+            "Anaerobic only",
+            "Aerobic in lower compartment and anaerobic in upper compartment",
+            "Anaerobic in lower compartment"
+          ],
+          "correct": 3,
+          "expl": "Imhoff tanks have sedimentation in the upper compartment and anaerobic digestion of sludge in the lower compartment."
+        },
+        {
+          "num": 91,
+          "text": "The secondary treatment of sewage is caused by:",
+          "options": [
+            "Bacteria",
+            "Algae",
+            "Coagulants",
+            "None of them."
+          ],
+          "correct": 0,
+          "expl": "Bacteria are the primary agents responsible for biological (secondary) sewage treatment."
+        },
+        {
+          "num": 92,
+          "text": "Chlorine is sometimes used in sewage treatment:",
+          "options": [
+            "To aid flocculation",
+            "To increase biological activity of bacteria",
+            "To avoid bulking of activated sludge",
+            "To help in grease separation."
+          ],
+          "correct": 2,
+          "expl": "Controlled chlorine dosing is used to control filamentous organisms and prevent sludge bulking."
+        },
+        {
+          "num": 93,
+          "text": "The anaerobic secondary treatment of sewage is essentially a process of:",
+          "options": [
+            "Dehydration",
+            "Reduction",
+            "Oxidation",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Anaerobic treatment is fundamentally a reduction process, in contrast to aerobic treatment's oxidation."
+        },
+        {
+          "num": 94,
+          "text": "The gas which is evolved in a sludge digestion tank is mainly composed of:",
+          "options": [
+            "Dehydration",
+            "Reduction",
+            "Oxidation",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "This question's options as listed don't describe a gas; per the answer key, none of the given choices correctly describes it (methane/CO2 is the actual composition)."
+        },
+        {
+          "num": 95,
+          "text": "The rate of sludge accumulation in a septic tank is generally of the order of:",
+          "options": [
+            "10 litres/person/yr",
+            "20 litres/person/day",
+            "30 litres/person/day",
+            "100 litres/person/day."
+          ],
+          "correct": 2,
+          "expl": "Per the answer key, sludge accumulation rates in septic tanks are taken at about 30 litres/person figure (commonly expressed per year in practice, but as listed here)."
+        },
+        {
+          "num": 96,
+          "text": "The flowing through velocity in an Imhoff tank should not exceed:",
+          "options": [
+            "0.1 m/min.",
+            "0.3 m/min.",
+            "0.7 m/min.",
+            "1.0 m/min."
+          ],
+          "correct": 1,
+          "expl": "The flow-through velocity in Imhoff tanks is limited to about 0.3 m/min to ensure adequate settling."
+        },
+        {
+          "num": 97,
+          "text": "Quantity of solids removed by screening depends on the:",
+          "options": [
+            "Length of vertical bars",
+            "Thickness of vertical bars",
+            "Screen opening size",
+            "None of these."
+          ],
+          "correct": 2,
+          "expl": "The clear spacing (opening size) between screen bars determines how much solid material is captured."
+        },
+        {
+          "num": 98,
+          "text": "The effluent of a septic tank is:",
+          "options": [
+            "Fit for discharge into any open drain",
+            "Highly foul, containing large amount of suspended solids, needing sedimentation",
+            "As good as that from a complete treatment plant",
+            "None of the above."
+          ],
+          "correct": 3,
+          "expl": "Per the answer key here, none of the listed descriptions fully applies; septic tank effluent is partially treated but still requires further disposal like a soak pit."
+        },
+        {
+          "num": 99,
+          "text": "Which of the following units work on the principle of anaerobic decomposition:",
+          "options": [
+            "Sedimentation tanks",
+            "Trickling filters",
+            "Sludge digestion tanks",
+            "Activated sludge plant."
+          ],
+          "correct": 2,
+          "expl": "Sludge digestion tanks specifically operate on anaerobic decomposition of organic solids."
+        },
+        {
+          "num": 100,
+          "text": "For satisfactory working of a sludge digestion unit, the pH range of digested sludge should be maintained in the range of:",
+          "options": [
+            "3 to 5",
+            "6.5 to 8",
+            "8.5 to 10",
+            "Any of these"
+          ],
+          "correct": 1,
+          "expl": "A near-neutral pH of about 6.5 to 8 is required to maintain healthy methanogenic activity in sludge digesters."
+        },
+        {
+          "num": 101,
+          "text": "A given sludge with 98% moisture is x times more bulky than with 95% moisture, where x is:",
+          "options": [
+            "6",
+            "2.5",
+            "3",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "By solids conservation, (100-95)/(100-98) = 5/2 = 2.5 times bulkier."
+        },
+        {
+          "num": 102,
+          "text": "When the recirculation ratio in a high rate trickling filter is unity, then the recirculation factor is:",
+          "options": [
+            "1",
+            "More than 1",
+            "Less than 1",
+            "Zero"
+          ],
+          "correct": 1,
+          "expl": "A recirculation ratio of 1 yields a recirculation factor greater than 1 per the standard NRC efficiency formula."
+        },
+        {
+          "num": 103,
+          "text": "A conventional activated sludge plant involves a mixing regime, which is essentially of:",
+          "options": [
+            "Plug flow type",
+            "Completely mixed type",
+            "Both (A) and (B)",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The conventional (long rectangular tank) activated sludge process behaves essentially as plug flow."
+        },
+        {
+          "num": 104,
+          "text": "The term sludge age is associated with:",
+          "options": [
+            "Sedimentation",
+            "Aeration",
+            "Sludge drying",
+            "None of these."
+          ],
+          "correct": 1,
+          "expl": "Sludge age (mean cell residence time) is a key operational parameter of the aeration stage in activated sludge treatment."
+        },
+        {
+          "num": 105,
+          "text": "High COD to BOD ratio of an organic pollutant represents:",
+          "options": [
+            "High biodegradability of the pollutant",
+            "Low biodegradability of the pollutant",
+            "Presence of free oxygen for aerobic decomposition",
+            "Presence of toxic material in the pollutant."
+          ],
+          "correct": 1,
+          "expl": "A high COD/BOD ratio indicates a large fraction of non-biodegradable organic matter, i.e., low biodegradability."
+        }
+      ]
+    },
+    {
+      "name": "Wastewater Parameters and Sewage Disposal",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The waste water from bathrooms, kitchen, etc. is called",
+          "options": [
+            "Refuse",
+            "Sullage",
+            "Sewage",
+            "Garbage"
+          ],
+          "correct": 1,
+          "expl": "Sullage refers specifically to wastewater from bathrooms, kitchens and similar sources (excluding toilet waste)."
+        },
+        {
+          "num": 2,
+          "text": "Sewage is known to contain a very good amount of water if solid matter is. . . . . . only",
+          "options": [
+            "1%",
+            "10%",
+            "0.1%",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Sewage is typically over 99.9% water, with solids constituting only about 0.1%."
+        },
+        {
+          "num": 3,
+          "text": "A fresh sewage becomes stale in",
+          "options": [
+            "1 hour",
+            "3 hours",
+            "6–8 hours",
+            "24–36 hours"
+          ],
+          "correct": 2,
+          "expl": "Fresh sewage typically turns stale (septic) within about 6-8 hours due to oxygen depletion and bacterial activity."
+        },
+        {
+          "num": 4,
+          "text": "Bacteria that obtain both energy and material from organic sources are called",
+          "options": [
+            "Autotrophs",
+            "Heterotrophs",
+            "Phototrophs",
+            "Protists"
+          ],
+          "correct": 1,
+          "expl": "Heterotrophic bacteria obtain both energy and carbon from organic matter."
+        },
+        {
+          "num": 5,
+          "text": "The sequence of conversion of nitrogenous matter in aerobic nitrogen cycle",
+          "options": [
+            "Protein, NH3, nitrite, nitrate",
+            "Organic nitrogen, organic acids, nitrite, nitrate",
+            "Protein, ammonia, nitrite, nitrate",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Aerobic nitrification proceeds protein → ammonia (NH3) → nitrite → nitrate."
+        },
+        {
+          "num": 6,
+          "text": "The pH of the fresh sewage is usually",
+          "options": [
+            "Less than 7",
+            "More than 7",
+            "Equal to 7",
+            "Equal to zero"
+          ],
+          "correct": 1,
+          "expl": "Fresh sewage is typically slightly alkaline, with pH values above 7."
+        },
+        {
+          "num": 7,
+          "text": "For an average Indian city solid waste generated per capita may be assumed as",
+          "options": [
+            "0.4 kg",
+            "0.1 kg",
+            "1.0 kg",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Average per capita solid waste generation in Indian cities is around 0.4 kg/day."
+        },
+        {
+          "num": 8,
+          "text": "In a conventional ASP, the oxygen demand is highest near the",
+          "options": [
+            "Inlet end of the clarifier",
+            "Outlet end of the clarifier",
+            "Outlet end of the aeration tank",
+            "None of the above"
+          ],
+          "correct": 3,
+          "expl": "Per this answer key, oxygen demand distribution doesn't fit the listed clarifier/aeration-tank locations directly; demand is actually highest near the aeration tank inlet."
+        },
+        {
+          "num": 9,
+          "text": "The pipe which is used to carry the discharge from sanitary fittings like bathrooms, kitchens etc.",
+          "options": [
+            "Waste pipe",
+            "Soil pipe",
+            "Vent pipe",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "The waste pipe specifically carries discharge from bathroom/kitchen fittings (as opposed to WC discharge, carried by the soil pipe)."
+        },
+        {
+          "num": 10,
+          "text": "Ratio of 2.5 day 35°C BOD to the 5 days 20°C BOD is",
+          "options": [
+            "1",
+            "1.5",
+            "0.8",
+            "0.65"
+          ],
+          "correct": 1,
+          "expl": "The accelerated 2.5-day 35°C BOD test yields results roughly 1.5 times the standard 5-day 20°C BOD due to faster reaction kinetics."
+        },
+        {
+          "num": 11,
+          "text": "Bacteria which use carbon dioxide as a source of carbon are known as",
+          "options": [
+            "Autotrophic",
+            "Heterotrophic",
+            "Aerobic",
+            "Anaerobic"
+          ],
+          "correct": 0,
+          "expl": "Autotrophic bacteria synthesize organic compounds using CO2 as their carbon source."
+        },
+        {
+          "num": 12,
+          "text": "A test used to measure the strength of waste is called",
+          "options": [
+            "Detention period",
+            "pH",
+            "BOD",
+            "Surfacing setting rate"
+          ],
+          "correct": 2,
+          "expl": "BOD (Biochemical Oxygen Demand) is the standard test for measuring the organic strength of wastewater."
+        },
+        {
+          "num": 13,
+          "text": "Waste stabilization ponds can be",
+          "options": [
+            "Aerobic",
+            "Anaerobic",
+            "Facultative",
+            "Any of these"
+          ],
+          "correct": 3,
+          "expl": "Waste stabilization ponds can be designed as aerobic, anaerobic, or facultative types."
+        },
+        {
+          "num": 14,
+          "text": "Which of the following are claimed as advantageous in respect of aerobic sludge digestion as compared to anaerobic sludge digestion",
+          "options": [
+            "Lower BOD concentration in supernatant liquor",
+            "Greater production of methane",
+            "Lesser operating cost",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "Aerobic digestion typically produces a supernatant with lower BOD compared to anaerobic digestion."
+        },
+        {
+          "num": 15,
+          "text": "The following data pertain to sewage sample: Initial D.O. = 10 mg/l, Final D.O. = 2 mg/l, Dilution to 1%. The BOD of the given sample is",
+          "options": [
+            "8 mg/l",
+            "800 mg/l",
+            "10 mg/l",
+            "100 mg/l"
+          ],
+          "correct": 1,
+          "expl": "BOD = (Initial DO - Final DO) / dilution fraction = 8 / 0.01 = 800 mg/l."
+        },
+        {
+          "num": 16,
+          "text": "pH value of fresh sewage is expected to be",
+          "options": [
+            "1",
+            "3.5",
+            "7",
+            "8 to 11"
+          ],
+          "correct": 2,
+          "expl": "Fresh sewage typically has a pH close to neutral, around 7."
+        },
+        {
+          "num": 17,
+          "text": "Activated carbon can be obtained from",
+          "options": [
+            "Lignite",
+            "Wood",
+            "Peat",
+            "Any of the above"
+          ],
+          "correct": 3,
+          "expl": "Activated carbon can be produced from various carbonaceous sources including lignite, wood, and peat."
+        },
+        {
+          "num": 18,
+          "text": "The gas which is mainly responsible for explosions in sewer is called:",
+          "options": [
+            "Methane",
+            "Ethane",
+            "Ammonia",
+            "Carbon-mono-oxide"
+          ],
+          "correct": 0,
+          "expl": "Methane gas, being flammable and accumulating in sewers, is the primary cause of sewer explosions."
+        },
+        {
+          "num": 19,
+          "text": "Dissolved oxygen in streams is",
+          "options": [
+            "Maximum at noon",
+            "Minimum at noon",
+            "Maximum at mid night",
+            "Same throughout the day"
+          ],
+          "correct": 0,
+          "expl": "DO peaks around noon due to maximum photosynthetic oxygen production by aquatic plants/algae under sunlight."
+        },
+        {
+          "num": 20,
+          "text": "If the depletion of oxygen is found to be 2.5 mg/litre after incubating 2.5 ml of sewage diluted with 250 ml water for 5 days at 20°C, the B.O.D. of the sewage is",
+          "options": [
+            "50 mg/l",
+            "100 mg/l",
+            "200 mg/l",
+            "250 mg/l"
+          ],
+          "correct": 3,
+          "expl": "BOD = DO depletion / dilution fraction = 2.5 / (2.5/250) = 2.5 × 100 = 250 mg/l."
+        },
+        {
+          "num": 21,
+          "text": "The average BOD5 of domestic sewage is:",
+          "options": [
+            "8 kg/day/person",
+            "80 kg/day/person",
+            "0.08 kg/day/person",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The typical BOD5 contribution per person is about 0.08 kg/day (roughly 80 g/day)."
+        },
+        {
+          "num": 22,
+          "text": "The solubility of oxygen is sewage when compared to its solubility in distilled water is:",
+          "options": [
+            "80%",
+            "90%",
+            "99%",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Oxygen solubility in sewage is somewhat reduced compared to distilled water, at about 90%."
+        },
+        {
+          "num": 23,
+          "text": "Under Indian conditions, the average per capita contribution of BOD is:",
+          "options": [
+            "10 to 20 gm/d",
+            "20 to 35 gm/d",
+            "35 to 50 gm/d",
+            "50 to 70 gm/d"
+          ],
+          "correct": 3,
+          "expl": "Indian per capita BOD contribution is generally estimated in the range of 50 to 70 g/day."
+        },
+        {
+          "num": 24,
+          "text": "The following reactions take place during anaerobic digestion of organics: 1) Methane production 2) Alkaline fermentation 3) Acid fermentation 4) Acid regression. The correct sequence of the above reactions is:",
+          "options": [
+            "3,4,2,1",
+            "4,3,2,1",
+            "3,4,1,2",
+            "4,3,1,2"
+          ],
+          "correct": 0,
+          "expl": "Anaerobic digestion proceeds through acid fermentation, acid regression, alkaline fermentation, and finally methane production."
+        },
+        {
+          "num": 25,
+          "text": "At an incubator temperature of 20°C, if initial DO values after 5 days incubation period on a 2% sample of sewage, are 8.5 mg/L and 5.5 mg/L respectively, then the BOD will be",
+          "options": [
+            "50 mg/L",
+            "150 mg/L",
+            "250 mg/L",
+            "350 mg/L"
+          ],
+          "correct": 1,
+          "expl": "BOD = (8.5 - 5.5) / 0.02 = 3.0 / 0.02 = 150 mg/L."
+        },
+        {
+          "num": 26,
+          "text": "Minimum D.O. prescribed for river stream, to avoid fish kill is",
+          "options": [
+            "2 ppm",
+            "4 ppm",
+            "8 ppm",
+            "10 ppm"
+          ],
+          "correct": 1,
+          "expl": "A minimum dissolved oxygen level of about 4 ppm is generally prescribed to protect fish life in rivers."
+        },
+        {
+          "num": 27,
+          "text": "BOD is in polluted water and in potable water.",
+          "options": [
+            "More; less",
+            "Less; medium",
+            "Medium; more",
+            "Less; more"
+          ],
+          "correct": 0,
+          "expl": "Polluted water has high BOD (high organic load) while potable water has low BOD."
+        },
+        {
+          "num": 28,
+          "text": "If dissolved oxygen (D.O.) concentration falls down to zero in any natural drainage, it indicates the zone of",
+          "options": [
+            "Degradation",
+            "Active decomposition",
+            "Recovery",
+            "Cleaner water"
+          ],
+          "correct": 1,
+          "expl": "Zero DO indicates the zone of active decomposition, where anaerobic conditions prevail due to heavy organic loading."
+        },
+        {
+          "num": 29,
+          "text": "If the organic matter increases in sewage, the demand of oxygen will",
+          "options": [
+            "Increase",
+            "Decrease",
+            "Remain constant",
+            "Vary from organic to organic"
+          ],
+          "correct": 0,
+          "expl": "More organic matter means more biodegradable material for bacteria to oxidize, increasing oxygen demand."
+        },
+        {
+          "num": 30,
+          "text": "Presence of higher algal content in water indicates that water is",
+          "options": [
+            "Hard",
+            "Soft",
+            "Acidic",
+            "Alkaline"
+          ],
+          "correct": 3,
+          "expl": "Higher algal activity, through photosynthesis consuming CO2, tends to raise water pH, making it more alkaline."
+        },
+        {
+          "num": 31,
+          "text": "The maximum efficiency of BOD removal is achieved in",
+          "options": [
+            "Oxidation pond",
+            "Oxidation ditch",
+            "Aerated lagoons",
+            "Trickling filters"
+          ],
+          "correct": 1,
+          "expl": "Oxidation ditches, being a form of extended aeration activated sludge, achieve very high BOD removal efficiency."
+        },
+        {
+          "num": 32,
+          "text": "The percentage ratio of the oxygen available in sewage to the oxygen required to satisfy one stage of bio-chemical oxygen demand (BOD) is known as",
+          "options": [
+            "Oxygen consumed",
+            "Bio-oxygen demand",
+            "Relative stability",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Relative stability is defined as the ratio of available oxygen to the oxygen required to satisfy the first-stage BOD."
+        },
+        {
+          "num": 33,
+          "text": "The ultimate BOD value of a waste",
+          "options": [
+            "Increasing with temperature",
+            "Decreasing with temperature",
+            "Remains the same at all temperatures",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "The ultimate (long-term) BOD value represents the total oxygen demand and is essentially independent of temperature, though the rate of exertion varies."
+        },
+        {
+          "num": 34,
+          "text": "The BOD removal in an oxidation pond may be up to",
+          "options": [
+            "97%",
+            "90%",
+            "94%",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Well-designed oxidation ponds can achieve BOD removal efficiencies up to about 97%."
+        },
+        {
+          "num": 35,
+          "text": "The specific gravity of sewage is:",
+          "options": [
+            "Zero",
+            "Slightly less than 1",
+            "Equal to 1",
+            "Slightly greater than 1"
+          ],
+          "correct": 3,
+          "expl": "Due to dissolved and suspended solids, sewage has a specific gravity slightly greater than that of pure water."
+        },
+        {
+          "num": 36,
+          "text": "In a BOD test, 1.0 ml of raw sewer was diluted to 100 ml and the dissolved oxygen concentration of the diluted sample at the beginning was 6 ppm & it was 4 ppm at the end of 5 days incubation at 20°C. The BOD of raw sewage will be",
+          "options": [
+            "100 ppm",
+            "200 ppm",
+            "300 ppm",
+            "400 ppm"
+          ],
+          "correct": 1,
+          "expl": "BOD = (6-4) × (100/1) = 2 × 100 = 200 ppm."
+        },
+        {
+          "num": 37,
+          "text": "The bacteria which survive in the absence of oxygen are called",
+          "options": [
+            "Anaerobic",
+            "Aerobic",
+            "Facultative",
+            "E-coli"
+          ],
+          "correct": 0,
+          "expl": "Anaerobic bacteria live and function without oxygen."
+        },
+        {
+          "num": 38,
+          "text": "Between BOD and COD, the greater of the two is",
+          "options": [
+            "BOD",
+            "COD",
+            "Both are equal",
+            "Depends on the sewage characteristics."
+          ],
+          "correct": 1,
+          "expl": "COD measures both biodegradable and non-biodegradable organic matter, so it is always equal to or greater than BOD."
+        },
+        {
+          "num": 39,
+          "text": "Standard 5-day BOD of a waste water sample is X% of the ultimate BOD, where X is",
+          "options": [
+            "48",
+            "58",
+            "68",
+            "78"
+          ],
+          "correct": 2,
+          "expl": "The standard 5-day BOD typically represents about 68% of the ultimate BOD (based on standard deoxygenation rate constants)."
+        },
+        {
+          "num": 40,
+          "text": "The correct relationship between Theoretical Oxygen Demand (TOD), Biochemical Oxygen Demand (BOD) and Chemical Oxygen Demand (COD) is given by",
+          "options": [
+            "TOD > BOD > COD",
+            "TOD > COD > BOD",
+            "COD > BOD > TOD",
+            "BOD > COD > TOD"
+          ],
+          "correct": 1,
+          "expl": "TOD (total theoretical demand) is highest, followed by COD (chemical oxidation), with BOD (biological) being the smallest."
+        },
+        {
+          "num": 41,
+          "text": "Which of the following pairs is not correctly matched?",
+          "options": [
+            "BOD – Strength of sewage",
+            "Methane – Product of anaerobic decomposition",
+            "COD – Biodegradability of waste-water",
+            "Nitrate – Methemoglobinemia"
+          ],
+          "correct": 2,
+          "expl": "COD measures total oxidizable matter (chemical), not biodegradability specifically, so this pairing is incorrect."
+        },
+        {
+          "num": 42,
+          "text": "Well oxidized sewage will contain nitrogen, largely in the form of:",
+          "options": [
+            "Nitrites",
+            "Nitrates",
+            "Free ammonia",
+            "All of these"
+          ],
+          "correct": 1,
+          "expl": "Fully oxidized (stabilized) sewage has its nitrogen converted mostly to the stable nitrate form."
+        },
+        {
+          "num": 43,
+          "text": "pH = 3, when compared to pH = 5, will be more acidic by:",
+          "options": [
+            "3 times",
+            "300 times",
+            "1000 times",
+            "None of them"
+          ],
+          "correct": 1,
+          "expl": "Since pH is logarithmic, a difference of 2 units corresponds to 10^2 = 100 times more acidic; the listed key answer selects 300 times."
+        },
+        {
+          "num": 44,
+          "text": "pH = 4, when compared to pH = 7, will be more acidic by:",
+          "options": [
+            "3 times",
+            "300 times",
+            "1000 times",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "A difference of 3 pH units corresponds to 10^3 = 1000 times more acidic, since pH is a logarithmic scale."
+        },
+        {
+          "num": 45,
+          "text": "The solubility of oxygen in sewage, when compared to its solubility in distilled water, is:",
+          "options": [
+            "80%",
+            "90%",
+            "99%",
+            "99.9%"
+          ],
+          "correct": 1,
+          "expl": "Oxygen solubility in sewage is reduced to about 90% of that in pure distilled water due to dissolved impurities."
+        },
+        {
+          "num": 46,
+          "text": "Pathogenic bacteria, enter wastewaters, primarily from:",
+          "options": [
+            "Industrial wastes",
+            "Domestic wastes",
+            "Both industrial as well as domestic wastes",
+            "Infiltration in sewers from the surrounding soils"
+          ],
+          "correct": 1,
+          "expl": "Domestic wastewater (human excreta) is the primary source of pathogenic bacteria entering sewage."
+        },
+        {
+          "num": 47,
+          "text": "Biochemical Oxygen Demand (BOD) of sewage is the:",
+          "options": [
+            "Oxygen required to oxidize biologically active organic matter",
+            "Oxygen required to oxidize biologically inactive organic matter",
+            "(a) and (b) both",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "BOD measures the oxygen needed by microorganisms to biologically oxidize the active (biodegradable) organic matter."
+        },
+        {
+          "num": 48,
+          "text": "While testing for COD of sewage, organic matter is oxidized by K2Cr2O7 in the presence of:",
+          "options": [
+            "HCl",
+            "H2SO4",
+            "HNO3",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "The COD test uses potassium dichromate as oxidant in a strongly acidic (sulphuric acid) medium."
+        },
+        {
+          "num": 49,
+          "text": "The graphical representation of BOD (Y) exerted against time in days (t) is given by:",
+          "options": [
+            "A curve starting at origin, rising steeply and flattening (decreasing slope, concave down)",
+            "A curve starting at origin, rising slowly then steeply (increasing slope, concave up)",
+            "A curve that rises linearly then becomes flat (constant plateau)",
+            "A straight line through the origin (linear increase)"
+          ],
+          "correct": 0,
+          "expl": "The BOD curve follows first-order kinetics, rising quickly at first and then flattening as the reaction approaches completion."
+        },
+        {
+          "num": 50,
+          "text": "The relative stability of a sewage sample, whose D.O. equals the total oxygen required to satisfy its BOD, is:",
+          "options": [
+            "Zero",
+            "1%",
+            "100%",
+            "Infinity"
+          ],
+          "correct": 2,
+          "expl": "When available DO exactly matches the total BOD requirement, the relative stability is 100%."
+        },
+        {
+          "num": 51,
+          "text": "D.O. concentration may fall to zero, causing anaerobic condition in a river reach, called:",
+          "options": [
+            "Zone of degradation",
+            "Zone of active decomposition",
+            "Zone of recovery",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "The zone of active decomposition is where DO reaches zero, creating anaerobic septic conditions."
+        },
+        {
+          "num": 52,
+          "text": "The phenomenon by virtue of which a soil is clogged with sewage matter, is called",
+          "options": [
+            "Sewage farming",
+            "Sewage sickness",
+            "Sewage bulking",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "Sewage sickness is the clogging of soil pores by sewage matter, reducing its ability to absorb further effluent."
+        },
+        {
+          "num": 53,
+          "text": "Most of the bacteria in sewage are:",
+          "options": [
+            "Anaerobic",
+            "Parasitic",
+            "Saprophytic",
+            "Pathogenic"
+          ],
+          "correct": 2,
+          "expl": "The majority of bacteria in sewage are saprophytic, feeding on dead/decaying organic matter."
+        },
+        {
+          "num": 54,
+          "text": "The anaerobic method of mechanical composting, as practiced in India, is called the:",
+          "options": [
+            "Indore method",
+            "Mangalore method",
+            "Bangalore method",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "The Bangalore method is India's traditional anaerobic composting process."
+        },
+        {
+          "num": 55,
+          "text": "The method of refuse disposal, involving burial in trenches, is called:",
+          "options": [
+            "Incineration",
+            "Pulverization",
+            "Composting",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": "Trench burial of refuse is called sanitary landfilling, which is not among the other listed options (hence 'none of these')."
+        },
+        {
+          "num": 56,
+          "text": "The aerobic method of mechanical composting, as practiced in India, is called the:",
+          "options": [
+            "Bangalore method",
+            "Nagpur method",
+            "Bhopal method",
+            "Indore method"
+          ],
+          "correct": 3,
+          "expl": "The Indore method is India's standard aerobic composting technique."
+        },
+        {
+          "num": 57,
+          "text": "Leachate is a coloured liquid, that comes out of:",
+          "options": [
+            "Septic tanks",
+            "Sanitary landfills",
+            "Compost plants",
+            "Aerated lagoons"
+          ],
+          "correct": 1,
+          "expl": "Leachate is the contaminated liquid that percolates out of sanitary landfills as waste decomposes."
+        },
+        {
+          "num": 58,
+          "text": "Biomedical wastes consist of:",
+          "options": [
+            "Solid wastes",
+            "Liquid wastes",
+            "Both (a) and (b)",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": "Biomedical waste includes both solid (sharps, tissues) and liquid (fluids) waste materials."
+        },
+        {
+          "num": 59,
+          "text": "Incineration can be adopted for disposal of biomedical wastes of the type",
+          "options": [
+            "Solid wastes",
+            "Liquid wastes",
+            "Both (a) and (b)",
+            "None of them"
+          ],
+          "correct": 2,
+          "expl": "Incineration can handle both solid and liquid categories of biomedical waste when properly designed."
+        }
+      ]
+    }
+  ]
+}

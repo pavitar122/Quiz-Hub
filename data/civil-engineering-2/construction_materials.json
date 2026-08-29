@@ -1,0 +1,4579 @@
+{
+  "id": "cmrm",
+  "title": "Construction Materials, Repair & Maintenance",
+  "description": "Digitised question bank covering building materials (bricks, cement, concrete, timber, paints, stones), construction practice, numerical problems, and building repair & maintenance, compiled from previous year and practice questions (PPSC, PSPCL, PSSSB, Punjab JE/SDO).",
+  "subcats": [
+    {
+      "name": "Bricks & Brick Masonry",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The maximum permissible water absorption (% by weight) for common burnt clay building bricks of class up to 12.5 is:",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "correct": 2,
+          "expl": "As per IS 1077, bricks of class up to 12.5 shall not absorb more than 20% of their dry weight when immersed in cold water for 24 hours."
+        },
+        {
+          "num": 2,
+          "text": "Crushing strength of a first-class brick should not be less than:",
+          "options": [
+            "3 N/mm²",
+            "7.0 N/mm²",
+            "10.5 N/mm²",
+            "14.2 N/mm²"
+          ],
+          "correct": 2,
+          "expl": "A first-class brick must have a minimum compressive strength of 10.5 N/mm² (about 105 kg/cm²)."
+        },
+        {
+          "num": 3,
+          "text": "Upto what area of opening is no deduction made for brickwork?",
+          "options": [
+            "0.1 Sqm",
+            "0.2 Sqm",
+            "0.4 Sqm",
+            "0.5 Sqm"
+          ],
+          "correct": 0,
+          "expl": "As per standard estimation practice, openings up to 0.1 m² in area are not deducted from brickwork quantities."
+        },
+        {
+          "num": 4,
+          "text": "The nominal size of the modular brick is:",
+          "options": [
+            "19 cm × 9 cm × 8 cm",
+            "19 cm × 19 cm × 9 cm",
+            "20 cm × 10 cm × 10 cm",
+            "20 cm × 20 cm × 10 cm"
+          ],
+          "correct": 2,
+          "expl": "Nominal (with mortar joint) modular brick size is 20×10×10 cm; the actual brick size is 19×9×9 cm."
+        },
+        {
+          "num": 5,
+          "text": "A good building stone should not absorb water more than:",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "correct": 0,
+          "expl": "For durability, a good building stone should have water absorption not exceeding about 5% of its dry weight."
+        },
+        {
+          "num": 6,
+          "text": "As per IS 1077:1992, for a class-30 brick, water absorption after 24-hour cold water immersion shall not exceed:",
+          "options": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ],
+          "correct": 0,
+          "expl": "Higher class (higher strength) bricks such as class 30 have a tighter water absorption limit of 15% by mass."
+        },
+        {
+          "num": 7,
+          "text": "As per IS:1077:1992, the minimum acceptable compressive strength of any class of burnt clay bricks in the dry state is:",
+          "options": [
+            "10 MPa",
+            "7.5 MPa",
+            "5 MPa",
+            "3.5 MPa"
+          ],
+          "correct": 3,
+          "expl": "The lowest permissible class of burnt clay brick has a minimum compressive strength of 3.5 N/mm² (MPa)."
+        },
+        {
+          "num": 8,
+          "text": "Which one of the following is the nominal size of the standard modular brick?",
+          "options": [
+            "25 cm × 13 cm × 8 cm",
+            "25 cm × 10 cm × 8 cm",
+            "20 cm × 10 cm × 10 cm",
+            "20 cm × 15 cm × 10 cm"
+          ],
+          "correct": 2,
+          "expl": "The standard modular brick's nominal size (including mortar joint) is 20 cm × 10 cm × 10 cm."
+        },
+        {
+          "num": 9,
+          "text": "The most important purpose of the frog in a brick is to:",
+          "options": [
+            "Emboss manufacturer's name",
+            "Reduce the weight of brick",
+            "Form a keyed joint between brick and mortar",
+            "Improve insulation by providing hollows"
+          ],
+          "correct": 2,
+          "expl": "The frog (depression on the brick's face) primarily creates a mechanical key that improves the bond between the brick and the mortar above it."
+        },
+        {
+          "num": 10,
+          "text": "The frog of a brick is normally made on its:",
+          "options": [
+            "Longer face",
+            "Shorter face",
+            "Bottom face",
+            "Top face"
+          ],
+          "correct": 3,
+          "expl": "The frog is pressed into the top (frog) face of the brick as laid, so mortar keys into it."
+        },
+        {
+          "num": 11,
+          "text": "The standard size of masonry bricks (actual size) is:",
+          "options": [
+            "18 cm × 8 cm × 8 cm",
+            "19 cm × 9 cm × 9 cm",
+            "20 cm × 10 cm × 10 cm",
+            "21 cm × 11 cm × 11 cm"
+          ],
+          "correct": 1,
+          "expl": "The actual (as-manufactured) modular brick size is 19 cm × 9 cm × 9 cm; with a 10 mm mortar joint it becomes the nominal 20×10×10 cm."
+        },
+        {
+          "num": 12,
+          "text": "King closers are related to:",
+          "options": [
+            "Doors and windows",
+            "King post truss",
+            "Queen post truss",
+            "Brick masonry"
+          ],
+          "correct": 3,
+          "expl": "A king closer is a brick cut to maintain bond in brick masonry, used to avoid continuous vertical joints."
+        },
+        {
+          "num": 13,
+          "text": "Number of bricks required for one cubic metre of brick masonry is approximately:",
+          "options": [
+            "400",
+            "450",
+            "500",
+            "550"
+          ],
+          "correct": 2,
+          "expl": "Considering the nominal brick size and mortar joints, about 500 bricks are required per cubic metre of brickwork."
+        },
+        {
+          "num": 14,
+          "text": "The 3-day compressive strength of OPC cement of 43 grade is approximately:",
+          "options": [
+            "16 N/mm²",
+            "22 N/mm²",
+            "33 N/mm²",
+            "43 N/mm²"
+          ],
+          "correct": 1,
+          "expl": "43-grade OPC must attain a minimum 3-day compressive strength of about 23 N/mm² (nearest listed option is 22)."
+        },
+        {
+          "num": 15,
+          "text": "Minimum gap between openings in a wall should be:",
+          "options": [
+            "1 brick",
+            "2 bricks",
+            "3 bricks",
+            "2.5 bricks"
+          ],
+          "correct": 0,
+          "expl": "A minimum distance of one brick length is generally required between two openings for adequate wall strength."
+        },
+        {
+          "num": 16,
+          "text": "Dry bricks are recommended in brick masonry work when the mortar to be used is:",
+          "options": [
+            "Lime mortar",
+            "Cement mortar",
+            "Mud mortar",
+            "Lime-cement mortar"
+          ],
+          "correct": 2,
+          "expl": "With mud mortar, bricks are kept dry since mud mortar has little free water to lose to the brick and pre-wetting is unnecessary."
+        },
+        {
+          "num": 17,
+          "text": "A first-class brick, when immersed in cold water for 24 hours, absorbs a maximum of:",
+          "options": [
+            "15%",
+            "20%",
+            "22%",
+            "25%"
+          ],
+          "correct": 0,
+          "expl": "First-class bricks must not absorb more than about 15% of their dry weight in water within 24 hours."
+        },
+        {
+          "num": 18,
+          "text": "The compressive strength of common building bricks should not be less than:",
+          "options": [
+            "10.5 N/mm²",
+            "3.5 N/mm²",
+            "7.5 N/mm²",
+            "5.5 N/mm²"
+          ],
+          "correct": 1,
+          "expl": "The lowest permissible class for common building bricks has a minimum compressive strength of 3.5 N/mm²."
+        },
+        {
+          "num": 19,
+          "text": "The standard size of a masonry brick (actual) is:",
+          "options": [
+            "18 cm × 9 cm × 9 cm",
+            "18 cm × 8 cm × 8 cm",
+            "19 cm × 9 cm × 9 cm",
+            "19 cm × 8 cm × 8 cm"
+          ],
+          "correct": 2,
+          "expl": "The actual (unjointed) standard modular brick measures 19 cm × 9 cm × 9 cm."
+        },
+        {
+          "num": 20,
+          "text": "Which type of brick is used for constructing chimneys or furnace walls?",
+          "options": [
+            "Fly ash brick",
+            "Refractory brick",
+            "Solid brick",
+            "Hollow brick"
+          ],
+          "correct": 1,
+          "expl": "Refractory bricks are made to withstand high temperatures and are used for chimneys, furnaces and kiln linings."
+        },
+        {
+          "num": 21,
+          "text": "Which of the following bricks has two frogs?",
+          "options": [
+            "Wire-cut brick",
+            "Pressed brick",
+            "Hand made brick",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "Pressed bricks, made in a mechanical press, typically have a frog on both faces."
+        },
+        {
+          "num": 22,
+          "text": "The temperature at which bricks are burnt in a kiln varies from 800°C to:",
+          "options": [
+            "900°C",
+            "1000°C",
+            "1100°C",
+            "1200°C"
+          ],
+          "correct": 2,
+          "expl": "Brick burning temperatures generally range from about 800°C up to 1100°C depending on the clay type."
+        },
+        {
+          "num": 23,
+          "text": "According to IS 1077:1992, common burnt clay bricks are classified on the basis of:",
+          "options": [
+            "Dimensions",
+            "Marking",
+            "Type of bond",
+            "Average compressive strength"
+          ],
+          "correct": 3,
+          "expl": "IS 1077 classifies bricks into class designations (e.g. Class 35, 30, 25...) based on their average compressive strength."
+        },
+        {
+          "num": 24,
+          "text": "According to IS 2212:1991, the normal thickness of a 1½ modular brick wall is:",
+          "options": [
+            "19 cm",
+            "29 cm",
+            "30 cm",
+            "40 cm"
+          ],
+          "correct": 1,
+          "expl": "A 1½ brick wall built with 19 cm bricks and mortar joints works out to a nominal thickness of about 29 cm."
+        },
+        {
+          "num": 25,
+          "text": "In some brick masonry walls, patches of whitish crystals were found on exposed surfaces along with chipping and spalling of bricks. The likely causes are:",
+          "options": [
+            "Settlement of foundation & over-loading",
+            "Over-loading & sulphate attack",
+            "Over-loading & efflorescence",
+            "Sulphate attack & efflorescence"
+          ],
+          "correct": 3,
+          "expl": "Whitish crystalline deposits with spalling point to soluble salt migration (efflorescence) combined with expansive sulphate attack on the masonry/mortar."
+        },
+        {
+          "num": 26,
+          "text": "When the deposits of efflorescence are more than 10% but less than 50% of the exposed brick area, it is classified as:",
+          "options": [
+            "Slight",
+            "Moderate",
+            "Heavy",
+            "Serious"
+          ],
+          "correct": 1,
+          "expl": "Per IS classification of efflorescence severity, 10–50% coverage is termed 'moderate'."
+        },
+        {
+          "num": 27,
+          "text": "Brick masonry bond in which each course has alternate header and stretcher is called:",
+          "options": [
+            "English Bond",
+            "Flemish Bond",
+            "Diamond Bond",
+            "Header Bond"
+          ],
+          "correct": 1,
+          "expl": "In Flemish bond, every course itself contains alternating headers and stretchers."
+        },
+        {
+          "num": 28,
+          "text": "An aggregate is said to be flaky if its least dimension is less than:",
+          "options": [
+            "1/5th of mean dimension",
+            "2/5th of mean dimension",
+            "3/5th of mean dimension",
+            "4/5th of mean dimension"
+          ],
+          "correct": 2,
+          "expl": "By the standard flakiness index definition, a particle is 'flaky' when its least (thickness) dimension is less than 3/5 (0.6 times) its mean sieve dimension."
+        }
+      ]
+    },
+    {
+      "name": "Cement – Properties, Composition & Testing",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Which of the following does not have a pozzolanic property?",
+          "options": [
+            "Fly Ash",
+            "Standard Sand",
+            "Ordinary Portland Cement",
+            "Silica Fume"
+          ],
+          "correct": 2,
+          "expl": "OPC is the cementitious binder itself (hydrates via cement chemistry); it is not a pozzolanic material like fly ash or silica fume, which react with lime."
+        },
+        {
+          "num": 2,
+          "text": "Addition of pozzolana to ordinary Portland cement increases:",
+          "options": [
+            "Permeability",
+            "Heat of hydration",
+            "Shrinkage",
+            "Bleeding"
+          ],
+          "correct": 2,
+          "expl": "Pozzolana addition generally reduces permeability, heat of hydration and bleeding, but tends to slightly increase drying shrinkage due to finer pore structure and increased fines."
+        },
+        {
+          "num": 3,
+          "text": "For the manufacture of Portland cement, the typical proportions of raw materials used are:",
+          "options": [
+            "Lime 63%, silica 22%; other 15%",
+            "Lime 22%, silica 63%; other 15%",
+            "Silica 40%, lime 40%; other 20%",
+            "Silica 70%, lime 20%; other 10%"
+          ],
+          "correct": 0,
+          "expl": "Typical Portland cement raw mix is about 63% lime (CaO), 22% silica, and the remainder alumina, iron oxide and other constituents."
+        },
+        {
+          "num": 4,
+          "text": "The fineness of cement and the development of cement strength are:",
+          "options": [
+            "Not related",
+            "Randomly related",
+            "Directly proportional",
+            "Inversely proportional"
+          ],
+          "correct": 2,
+          "expl": "Finer cement has more surface area for hydration, giving a faster rate of strength gain — a direct relationship."
+        },
+        {
+          "num": 5,
+          "text": "A 'Belite' in cement chemistry refers to:",
+          "options": [
+            "Pure C2S (dicalcium silicate)",
+            "Impure C3S (tricalcium silicate)",
+            "Pure C3S (tricalcium silicate)",
+            "Impure C2S (dicalcium silicate)"
+          ],
+          "correct": 3,
+          "expl": "Belite is the impure form of dicalcium silicate (C2S) found in clinker (Alite is the impure form of C3S)."
+        },
+        {
+          "num": 6,
+          "text": "As per IS: 4031 (Part 3)–1988, the Le Chatelier's method is used for determining which property of cement?",
+          "options": [
+            "Setting times",
+            "Soundness",
+            "Abrasion resistance",
+            "Fineness"
+          ],
+          "correct": 1,
+          "expl": "Le Chatelier's apparatus tests soundness — expansion caused by free lime/magnesia in the cement."
+        },
+        {
+          "num": 7,
+          "text": "Le Chatelier's device is used to determine which property of cement?",
+          "options": [
+            "Soundness",
+            "Tensile strength",
+            "Setting times",
+            "Compressive strength"
+          ],
+          "correct": 0,
+          "expl": "The Le Chatelier expansion test measures the soundness of cement."
+        },
+        {
+          "num": 8,
+          "text": "Vicat mould used in the Vicat apparatus for consistency of standard cement paste has a height of:",
+          "options": [
+            "40 ± 0.2 mm",
+            "50 ± 0.2 mm",
+            "60 ± 0.2 mm",
+            "70 ± 0.2 mm"
+          ],
+          "correct": 1,
+          "expl": "The Vicat mould is a frustum of a cone, 50 ± 0.2 mm high."
+        },
+        {
+          "num": 9,
+          "text": "If 'p' is the standard consistency of cement, the amount of water used for the initial setting time test is:",
+          "options": [
+            "0.65p",
+            "0.85p",
+            "0.80p",
+            "0.60p"
+          ],
+          "correct": 1,
+          "expl": "For the initial setting time test, water content used is 0.85 times the water required for standard (normal) consistency."
+        },
+        {
+          "num": 10,
+          "text": "Before testing the setting time of cement, one should first test for:",
+          "options": [
+            "Soundness",
+            "Strength",
+            "Fineness",
+            "Consistency"
+          ],
+          "correct": 3,
+          "expl": "The standard consistency of the cement paste must be determined first, since setting-time tests use water quantities based on it."
+        },
+        {
+          "num": 11,
+          "text": "The diameter of the needle used in Vicat's apparatus for determining initial setting time is:",
+          "options": [
+            "0.5 mm",
+            "1.0 mm",
+            "5.0 mm",
+            "10.0 mm"
+          ],
+          "correct": 1,
+          "expl": "The initial setting time needle in Vicat's apparatus has a diameter of 1 mm."
+        },
+        {
+          "num": 12,
+          "text": "Le-Chatelier's apparatus is used to test which physical property of cement?",
+          "options": [
+            "Initial and final setting time",
+            "Soundness of cement",
+            "Compressive strength",
+            "Fineness of cement"
+          ],
+          "correct": 1,
+          "expl": "Le Chatelier's apparatus specifically tests soundness (dimensional stability due to free lime/MgO)."
+        },
+        {
+          "num": 13,
+          "text": "Gypsum is added to cement mainly for:",
+          "options": [
+            "Providing high strength to cement",
+            "Controlling the initial setting time of cement",
+            "Lowering the clinkering temperature",
+            "All of the above"
+          ],
+          "correct": 1,
+          "expl": "Gypsum is interground with clinker mainly to retard/control the initial setting time, preventing flash set from C3A hydration."
+        },
+        {
+          "num": 14,
+          "text": "The presence of dicalcium silicate (C2S) in cement:",
+          "options": [
+            "Hydrates the cement slowly",
+            "Generates low heat of hydration",
+            "Has more resistance to sulphate attack",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "C2S hydrates slowly, releases low heat, and provides better long-term/sulphate resistance compared to C3S."
+        },
+        {
+          "num": 15,
+          "text": "Specific gravity of ordinary Portland cement is generally taken as:",
+          "options": [
+            "3.00",
+            "3.15",
+            "2.98",
+            "2.99"
+          ],
+          "correct": 1,
+          "expl": "OPC's specific gravity is conventionally taken as 3.15 for mix design calculations."
+        },
+        {
+          "num": 16,
+          "text": "Efflorescence in cement/masonry is caused due to an excess of:",
+          "options": [
+            "Iron oxide",
+            "Alkalis",
+            "Magnesium oxide",
+            "Silica"
+          ],
+          "correct": 1,
+          "expl": "Excess alkalis (sodium/potassium sulphates) in cement or bricks migrate to the surface with moisture and crystallize as efflorescence."
+        },
+        {
+          "num": 17,
+          "text": "Waterborne sulphates react with hydration products of the C3A phase and calcium hydroxide to form an expansive crystalline product called:",
+          "options": [
+            "Ettringite",
+            "Tricalcium aluminate",
+            "Dicalcium silicate",
+            "Tricalcium silicate"
+          ],
+          "correct": 0,
+          "expl": "Sulphate attack forms ettringite (calcium sulfoaluminate hydrate), whose expansive growth cracks concrete."
+        },
+        {
+          "num": 18,
+          "text": "Vicat's apparatus is used for:",
+          "options": [
+            "Fineness test",
+            "Consistency test",
+            "Setting time test",
+            "Soundness test"
+          ],
+          "correct": 2,
+          "expl": "Vicat's apparatus (with its various plungers/needles) is primarily used for the setting-time test of cement (and also consistency)."
+        },
+        {
+          "num": 19,
+          "text": "Which one of the following is not correct?",
+          "options": [
+            "Wane is a defect of timber due to conversion",
+            "Rind gall is a defect of timber due to natural forces",
+            "Calcium chloride and calcium sulphate are accelerators",
+            "Polyglycol ester is an example of a plasticizer"
+          ],
+          "correct": 2,
+          "expl": "Calcium sulphate (gypsum) is actually a retarder of cement setting, not an accelerator — calcium chloride is the accelerator."
+        },
+        {
+          "num": 20,
+          "text": "The main cementitious compounds in Portland cement are:",
+          "options": [
+            "C3S and C3A",
+            "C3A and C4AF",
+            "C3A and C2S",
+            "C3S and C2S"
+          ],
+          "correct": 3,
+          "expl": "Tricalcium silicate (C3S) and dicalcium silicate (C2S) are the principal cementitious (strength-giving) compounds in cement."
+        },
+        {
+          "num": 21,
+          "text": "Portland cement having less C3A will have:",
+          "options": [
+            "Higher ultimate strength, high heat generation, less cracking",
+            "Higher ultimate strength, less heat generation, less cracking",
+            "Lesser ultimate strength, less heat generation, less cracking",
+            "Lesser ultimate strength, less heat generation, high cracking"
+          ],
+          "correct": 1,
+          "expl": "Lower C3A content reduces heat of hydration and shrinkage-related cracking while not compromising ultimate strength (mainly governed by C3S/C2S)."
+        },
+        {
+          "num": 22,
+          "text": "The cement compound responsible for the development of later-stage strength of Portland cement is:",
+          "options": [
+            "Gypsum",
+            "Dicalcium silicate",
+            "Tricalcium silicate",
+            "Tricalcium aluminate"
+          ],
+          "correct": 1,
+          "expl": "C2S hydrates slowly and contributes mainly to long-term (later age) strength gain."
+        },
+        {
+          "num": 23,
+          "text": "Main chemical composition of quick lime is:",
+          "options": [
+            "Calcium oxide",
+            "Calcium carbonate",
+            "Calcium hydroxide",
+            "Calcium carbon dioxide"
+          ],
+          "correct": 0,
+          "expl": "Quicklime is calcium oxide (CaO), produced by calcining limestone."
+        },
+        {
+          "num": 24,
+          "text": "As per IS 1077:1992 for a class-30 brick... (see Bricks category)",
+          "options": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "correct": 0,
+          "expl": "Placeholder removed — see Bricks & Brick Masonry category."
+        },
+        {
+          "num": 25,
+          "text": "Which one of the following is not correctly matched (Cement test–Apparatus)?",
+          "options": [
+            "Fineness – Nurse and Blaine",
+            "Consistency – Vicat",
+            "Soundness – Le Chatelier",
+            "Sp. Gravity – Lea and Nurse"
+          ],
+          "correct": 3,
+          "expl": "Specific gravity of cement is determined using Le Chatelier flask, not the Lea and Nurse (air-permeability fineness) apparatus."
+        },
+        {
+          "num": 26,
+          "text": "Which one of the following statements regarding cement fineness is NOT correct?",
+          "options": [
+            "Fine cement is more liable to shrinkage cracking than coarse cement",
+            "Fine cement shows a faster rate of hardening than coarse cement",
+            "Fine cement shows faster heat evolution and larger total heat than coarse cement",
+            "Fine cement shows the same setting time as coarse cement"
+          ],
+          "correct": 3,
+          "expl": "Fine cement actually sets and hardens faster than coarse cement due to greater surface area, so setting times differ, not stay the same."
+        },
+        {
+          "num": 27,
+          "text": "Which statements about cement fineness are correct? (1) Tests for setting time are done at normal consistency (2) Low heat cement has high C3A (3) High early strength cement has high C3S, low C2S",
+          "options": [
+            "(1) and (2)",
+            "(1) and (3)",
+            "(2) and (3)",
+            "(1), (2) and (3)"
+          ],
+          "correct": 1,
+          "expl": "Statements 1 and 3 are correct; statement 2 is wrong — low-heat cement actually has LOW C3A (and C3S), not high."
+        },
+        {
+          "num": 28,
+          "text": "Increase in fineness of cement generally:",
+          "options": [
+            "Reduces strength-development rate, leads to higher shrinkage",
+            "Increases strength-development rate, reduces deterioration rate",
+            "Decreases strength-development rate, increases deterioration rate",
+            "Increases strength-development rate, leads to higher shrinkage"
+          ],
+          "correct": 3,
+          "expl": "Finer cement hydrates faster (faster early strength gain) but is also more prone to shrinkage cracking."
+        },
+        {
+          "num": 29,
+          "text": "Soundness test of cement is done to determine its:",
+          "options": [
+            "Durability in sea water",
+            "Free-lime (and magnesia) content-related expansion",
+            "Iron oxide content",
+            "Alumina content"
+          ],
+          "correct": 1,
+          "expl": "The soundness test checks for excess free lime/magnesia that could cause delayed expansion and cracking."
+        },
+        {
+          "num": 30,
+          "text": "The Le-Chatelier apparatus can identify unsoundness of cement due to the presence of:",
+          "options": [
+            "Free lime only",
+            "Magnesia only",
+            "Both free lime and magnesia",
+            "Alumina"
+          ],
+          "correct": 2,
+          "expl": "The Le Chatelier expansion test detects unsoundness caused by both excess free lime and excess magnesia."
+        },
+        {
+          "num": 31,
+          "text": "The total mass of the moving unit of Vicat's apparatus is:",
+          "options": [
+            "100 ± 1 g",
+            "200 ± 1 g",
+            "300 ± 1 g",
+            "500 ± 1 g"
+          ],
+          "correct": 2,
+          "expl": "The total moving mass (plunger/needle assembly with weights) of the Vicat apparatus is standardized at 300 ± 1 g."
+        },
+        {
+          "num": 32,
+          "text": "The major cement oxides are:",
+          "options": [
+            "CaO, Al2O3, Fe2O3 and SiO2",
+            "Na2O, K2O, MgO and SO3",
+            "CaO and SiO2",
+            "CaO and MgO"
+          ],
+          "correct": 0,
+          "expl": "The four major oxides forming Portland cement clinker compounds are lime (CaO), silica (SiO2), alumina (Al2O3) and iron oxide (Fe2O3)."
+        },
+        {
+          "num": 33,
+          "text": "In cement, if a certain oxide is in excess it makes cement unsound, and if in deficit it causes early setting and less strength. That oxide is:",
+          "options": [
+            "Silica",
+            "Lime",
+            "Magnesia",
+            "Alumina"
+          ],
+          "correct": 1,
+          "expl": "Lime (CaO) in excess causes unsoundness; if deficient, the clinker under-burns leading to quick, weak setting."
+        },
+        {
+          "num": 34,
+          "text": "Which of the following is not an accelerator in the setting of concrete?",
+          "options": [
+            "CaCl2",
+            "Ca(NO3)2",
+            "CH3OH",
+            "NaCl"
+          ],
+          "correct": 2,
+          "expl": "Methanol (CH3OH) is not a chemical accelerator; calcium chloride, calcium nitrate and even sodium chloride can accelerate setting."
+        },
+        {
+          "num": 35,
+          "text": "The initial setting time for ordinary Portland cement, as per IS specifications, should not be less than:",
+          "options": [
+            "10 minutes",
+            "30 minutes",
+            "60 minutes",
+            "600 minutes"
+          ],
+          "correct": 1,
+          "expl": "IS 269 requires OPC's initial setting time to be not less than 30 minutes."
+        },
+        {
+          "num": 36,
+          "text": "Which of the following factors affects the setting time of cement?",
+          "options": [
+            "Temperature",
+            "Humidity",
+            "Water-to-cement ratio",
+            "All of the above"
+          ],
+          "correct": 3,
+          "expl": "Temperature, ambient humidity and w/c ratio all influence the rate of cement hydration and hence setting time."
+        },
+        {
+          "num": 37,
+          "text": "How is the fineness of cement measured?",
+          "options": [
+            "Volume/Mass",
+            "Mass/Volume",
+            "Mass/Area",
+            "Area/Mass"
+          ],
+          "correct": 3,
+          "expl": "Fineness is expressed as specific surface area per unit mass (e.g. cm²/g), i.e. Area/Mass."
+        },
+        {
+          "num": 38,
+          "text": "Cement used for normal construction is obtained from burning a mixture of:",
+          "options": [
+            "Siliceous and Argillaceous material",
+            "Argillaceous and Calcareous materials",
+            "Siliceous and Calcareous materials",
+            "Siliceous, Argillaceous and Calcareous materials"
+          ],
+          "correct": 3,
+          "expl": "Ordinary Portland cement clinker is made from a mix of calcareous (limestone), argillaceous (clay) and siliceous materials."
+        },
+        {
+          "num": 39,
+          "text": "White cement should have the least percentage of:",
+          "options": [
+            "Silica",
+            "Iron oxide",
+            "Aluminium oxide",
+            "Magnesium oxide"
+          ],
+          "correct": 1,
+          "expl": "Iron oxide imparts colour, so white cement is manufactured with minimal iron oxide content."
+        },
+        {
+          "num": 40,
+          "text": "As per IS 2212:1991... (duplicate cross-reference)",
+          "options": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "correct": 0,
+          "expl": "See Bricks & Brick Masonry category for wall thickness questions."
+        }
+      ]
+    },
+    {
+      "name": "Concrete – Materials, Properties & Durability",
+      "questions": [
+        {
+          "num": 1,
+          "text": "For a good building stone, crushing strength should be more than:",
+          "options": [
+            "100 MPa",
+            "150 MPa",
+            "50 MPa",
+            "200 MPa"
+          ],
+          "correct": 0,
+          "expl": "A good building stone should generally have a crushing strength exceeding about 100 MPa."
+        },
+        {
+          "num": 2,
+          "text": "The maturity of concrete: (1) is the product of age and curing temperature, an indicator of time-temperature history; (2) two samples can have equal strength despite different curing time/temperature histories.",
+          "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2 are correct",
+            "Neither 1 nor 2 is correct"
+          ],
+          "correct": 2,
+          "expl": "The maturity concept (age × temperature) is a valid predictor, and the maturity rule indeed allows equal strengths from different time-temperature combinations that give the same maturity."
+        },
+        {
+          "num": 3,
+          "text": "The two most important operations that ensure strength, impermeability and durability of hardened concrete are:",
+          "options": [
+            "Mixing and placing",
+            "Mixing and batching",
+            "Finishing and curing",
+            "Placing and compacting"
+          ],
+          "correct": 3,
+          "expl": "Proper placing (without segregation) and thorough compaction (removing entrapped air/voids) are most critical for achieving dense, durable concrete."
+        },
+        {
+          "num": 4,
+          "text": "As per IS 456:2000, the partial factor of safety for concrete is:",
+          "options": [
+            "0.87",
+            "1.5",
+            "1.15",
+            "1"
+          ],
+          "correct": 1,
+          "expl": "IS 456 specifies a material partial safety factor of 1.5 for concrete (and 1.15 for steel)."
+        },
+        {
+          "num": 5,
+          "text": "For a constant water/cement ratio, as the aggregate/cement ratio is reduced, the workability will:",
+          "options": [
+            "Not change",
+            "Increase",
+            "Increase or decrease",
+            "Decrease"
+          ],
+          "correct": 1,
+          "expl": "A lower aggregate/cement ratio means relatively more cement paste (which carries the same water), giving a more workable, flowable mix."
+        },
+        {
+          "num": 6,
+          "text": "As compared to ordinary Portland cement, use of pozzolanic (pozzuolanic) cement:",
+          "options": [
+            "Reduces workability",
+            "Increases bleeding",
+            "Increases shrinkage",
+            "Increases strength"
+          ],
+          "correct": 3,
+          "expl": "Pozzolanic cement generally improves long-term (ultimate) strength due to the pozzolanic reaction, alongside reduced permeability and bleeding."
+        },
+        {
+          "num": 7,
+          "text": "For complete hydration of cement, the water/cement ratio needed is approximately:",
+          "options": [
+            "Less than 0.25",
+            "More than 0.25 but less than 0.35",
+            "More than 0.35 but less than 0.45",
+            "More than 0.45 but less than 0.60"
+          ],
+          "correct": 2,
+          "expl": "While the theoretical chemical requirement is about 0.23–0.25, accounting for gel-water needs, complete hydration in practice needs a w/c ratio of roughly 0.35–0.45."
+        },
+        {
+          "num": 8,
+          "text": "The property of fresh concrete in which water in the mix tends to rise to the surface while placing and compacting is called:",
+          "options": [
+            "Segregation",
+            "Bleeding",
+            "Bulking",
+            "Creep"
+          ],
+          "correct": 1,
+          "expl": "Bleeding is the upward movement of mix water to the concrete surface after placing, due to settlement of solids."
+        },
+        {
+          "num": 9,
+          "text": "The most commonly used admixture which prolongs the setting and hardening time is:",
+          "options": [
+            "Gypsum",
+            "Calcium chloride",
+            "Sodium silicate",
+            "Calcium Nitrate"
+          ],
+          "correct": 0,
+          "expl": "Gypsum, interground with cement clinker, acts as a retarder that prolongs setting time."
+        },
+        {
+          "num": 10,
+          "text": "According to IS:383–1970, the grading of fine aggregates is divided into how many zones?",
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "correct": 2,
+          "expl": "IS 383 classifies fine aggregate grading into four zones (Zone I to Zone IV)."
+        },
+        {
+          "num": 11,
+          "text": "The most important compound helping obtain early strength of cement concrete is:",
+          "options": [
+            "Tri-calcium silicate",
+            "Di-calcium silicate",
+            "Tri-calcium aluminate",
+            "Tetra-calcium aluminoferrite"
+          ],
+          "correct": 0,
+          "expl": "Tricalcium silicate (C3S) hydrates rapidly and is chiefly responsible for early-age strength gain."
+        },
+        {
+          "num": 12,
+          "text": "According to Indian Standards, the pozzolana content in Portland Pozzolana Cement is typically:",
+          "options": [
+            "10% to 25%",
+            "25% to 35%",
+            "35% to 50%",
+            "More than 50%"
+          ],
+          "correct": 1,
+          "expl": "Portland Pozzolana Cement (IS 1489) typically contains fly ash/pozzolana in the range of roughly 15–35%, with 25–35% commonly cited."
+        },
+        {
+          "num": 13,
+          "text": "The fineness modulus of fine aggregate typically lies in the range:",
+          "options": [
+            "2.0 to 3.5",
+            "3.5 to 5.0",
+            "5.0 to 7.0",
+            "7.0 to 8.5"
+          ],
+          "correct": 0,
+          "expl": "Fine aggregate fineness modulus generally falls between 2.0 and 3.5."
+        },
+        {
+          "num": 14,
+          "text": "If the compaction factor of a concrete is 0.90, the workability according to Indian Standards is:",
+          "options": [
+            "Very low",
+            "Low",
+            "Medium",
+            "High"
+          ],
+          "correct": 2,
+          "expl": "A compaction factor around 0.90–0.92 corresponds to medium workability concrete."
+        },
+        {
+          "num": 15,
+          "text": "As compared to ordinary Portland cement, high alumina cement has:",
+          "options": [
+            "Higher initial but lower final setting time",
+            "Lower initial but lower final setting time",
+            "Higher initial and final setting times",
+            "Lower initial and final setting times"
+          ],
+          "correct": 1,
+          "expl": "High alumina cement sets very rapidly, giving both a shorter initial and shorter final setting time than OPC."
+        },
+        {
+          "num": 16,
+          "text": "The moisture content in a well-seasoned timber is about:",
+          "options": [
+            "4 to 6%",
+            "10 to 12%",
+            "15 to 20%",
+            "100%"
+          ],
+          "correct": 1,
+          "expl": "Well-seasoned timber for structural use typically has a moisture content of around 10–12%."
+        },
+        {
+          "num": 17,
+          "text": "M150 grade of concrete approximately consists of a nominal mix of:",
+          "options": [
+            "1:3:6",
+            "1:1:2",
+            "1:2:4",
+            "1:1.5:3"
+          ],
+          "correct": 0,
+          "expl": "M150 is a low-strength grade traditionally associated with the leaner 1:3:6 nominal mix."
+        },
+        {
+          "num": 18,
+          "text": "As compared to ordinary Portland cement, pozzuolanic (pozzolana) cement generally shows:",
+          "options": [
+            "Reduced workability",
+            "Increased bleeding",
+            "Increased shrinkage",
+            "Increased strength (long-term)"
+          ],
+          "correct": 3,
+          "expl": "Pozzolanic cement typically shows improved long-term strength due to the secondary pozzolanic reaction, along with reduced bleeding."
+        },
+        {
+          "num": 19,
+          "text": "The strength of concrete mainly depends on:",
+          "options": [
+            "Water cement ratio",
+            "Fineness of cement",
+            "Quality of coarse aggregates",
+            "Quality of fine aggregates"
+          ],
+          "correct": 0,
+          "expl": "Abrams' law establishes water-cement ratio as the primary factor controlling concrete's strength."
+        },
+        {
+          "num": 20,
+          "text": "The durability of concrete is:",
+          "options": [
+            "Governed by its strength",
+            "Governed by its porosity and chemical composition",
+            "Governed by both strength and porosity/chemical composition",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Concrete durability depends on both mechanical strength and the porosity/permeability plus chemical resistance of the material."
+        },
+        {
+          "num": 21,
+          "text": "The resistance of an aggregate to the effects of cement hydration and weathering is called:",
+          "options": [
+            "Crushing strength",
+            "Soundness",
+            "Abrasion resistance",
+            "Impact value"
+          ],
+          "correct": 1,
+          "expl": "'Soundness' of aggregate refers to its resistance to volume change from weathering (freeze-thaw, wetting-drying) or chemical reactions with cement."
+        },
+        {
+          "num": 22,
+          "text": "In lime concrete, lime is used as:",
+          "options": [
+            "Admixture",
+            "Coarse aggregate",
+            "Binding aggregate (binder)",
+            "Fine aggregate"
+          ],
+          "correct": 2,
+          "expl": "In lime concrete, lime serves as the binding material (matrix) holding the aggregates together, analogous to cement in cement concrete."
+        },
+        {
+          "num": 23,
+          "text": "Green concrete (coloured) may be made by adding:",
+          "options": [
+            "Iron hydroxide",
+            "Barium manganate",
+            "Iron oxide",
+            "Chromium oxide"
+          ],
+          "correct": 3,
+          "expl": "Chromium oxide pigment is commonly used to produce green-coloured concrete."
+        },
+        {
+          "num": 24,
+          "text": "The bulking of sand occurs primarily due to:",
+          "options": [
+            "Moisture in voids",
+            "Surface tension",
+            "Air in voids",
+            "Capillary action"
+          ],
+          "correct": 0,
+          "expl": "Bulking is caused by surface moisture films around sand particles keeping them apart, increasing bulk volume."
+        },
+        {
+          "num": 25,
+          "text": "Under which condition is the highest water-cement ratio permitted?",
+          "options": [
+            "Heavy sections protected against rain and frost",
+            "Heavy sections exposed to alternate wetting and drying",
+            "Light members exposed to alternate wetting and drying",
+            "Hydraulic structures exposed to rain and snow"
+          ],
+          "correct": 0,
+          "expl": "Protected, massive sections not exposed to weathering can tolerate the highest w/c ratio, since durability risk from weathering is minimal."
+        },
+        {
+          "num": 26,
+          "text": "Shrinkage in concrete primarily increases risk related to its:",
+          "options": [
+            "Flexural strength",
+            "Compressive strength",
+            "Tensile strength (cracking)",
+            "Bond strength"
+          ],
+          "correct": 2,
+          "expl": "Drying shrinkage induces internal tensile stresses that can initiate cracking, since concrete is weak in tension."
+        },
+        {
+          "num": 27,
+          "text": "The leaching action in concrete is an example of:",
+          "options": [
+            "Crystallization",
+            "Creeping",
+            "Decomposition (dissolution of lime)",
+            "Chemical reaction (only)"
+          ],
+          "correct": 2,
+          "expl": "Leaching is the dissolution and washing-out of calcium hydroxide and other soluble compounds from concrete by percolating water."
+        },
+        {
+          "num": 28,
+          "text": "The bulk density of aggregate depends upon its:",
+          "options": [
+            "Shape",
+            "Grading",
+            "Compaction",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Bulk density is influenced jointly by particle shape, grading (packing efficiency), and the degree of compaction."
+        },
+        {
+          "num": 29,
+          "text": "The term 'bond' in reinforced concrete describes the means by which ___ between steel and concrete is provided.",
+          "options": [
+            "Resistance (to slip)",
+            "Crack",
+            "Slip",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": "Bond refers to the resistance against relative slip developed at the steel-concrete interface, allowing the two materials to act compositely."
+        },
+        {
+          "num": 30,
+          "text": "When a slab is continuous over several spans, negative (hogging) bending moment is induced over the:",
+          "options": [
+            "End supports",
+            "Intermediate supports",
+            "Both (A) and (B)",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": "In continuous slabs/beams, hogging (negative) moments develop at the intermediate supports."
+        },
+        {
+          "num": 31,
+          "text": "The best stabilizer for black cotton soil is:",
+          "options": [
+            "Cement",
+            "Bitumen",
+            "Calcium chloride",
+            "Lime"
+          ],
+          "correct": 3,
+          "expl": "Lime stabilization is most effective for black cotton (expansive clay) soils as it reduces plasticity and swelling."
+        },
+        {
+          "num": 32,
+          "text": "Which of the following is used to improve the workability of concrete?",
+          "options": [
+            "Aggregates",
+            "Water",
+            "Cement",
+            "Admixtures"
+          ],
+          "correct": 3,
+          "expl": "Chemical admixtures (plasticizers/superplasticizers) are specifically used to improve workability without simply adding water."
+        },
+        {
+          "num": 33,
+          "text": "The Indian Standard mix design for fly ash and cement concrete recommends the water content to:",
+          "options": [
+            "Increase by 15%",
+            "Reduce by 3% to 5%",
+            "Reduce by 15%",
+            "Increase by 3% to 5%"
+          ],
+          "correct": 1,
+          "expl": "Fly ash's spherical particles improve workability, allowing the design water content to be reduced by about 3–5%."
+        },
+        {
+          "num": 34,
+          "text": "Following stone is suitable for damp-proofing:",
+          "options": [
+            "Marble",
+            "Slate",
+            "Laterite",
+            "Granite"
+          ],
+          "correct": 1,
+          "expl": "Slate's very low porosity and fine grain make it well suited for damp-proof courses."
+        },
+        {
+          "num": 35,
+          "text": "Which of the below is not to be followed for stone masonry construction?",
+          "options": [
+            "Header stones are dumb-bell shaped",
+            "Properly cured for 2–3 weeks",
+            "Construction to be raised uniformly",
+            "Wetted stones to be used"
+          ],
+          "correct": 0,
+          "expl": "Header stones should be full, uniform stones bonding through the wall thickness — dumb-bell shaped (necked) headers are a defect to avoid."
+        },
+        {
+          "num": 36,
+          "text": "One cubic metre of mild steel weighs about:",
+          "options": [
+            "12560 kg",
+            "1000 kg",
+            "3625 kg",
+            "7850 kg"
+          ],
+          "correct": 3,
+          "expl": "The unit weight (density) of mild steel is approximately 7850 kg/m³."
+        },
+        {
+          "num": 37,
+          "text": "The compressive strength of common building bricks... (duplicate)",
+          "options": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "correct": 0,
+          "expl": "See Bricks & Brick Masonry category."
+        },
+        {
+          "num": 38,
+          "text": "Which factor most influences selection of building stone according to climatic considerations?",
+          "options": [
+            "Seasoning by soaking in water is essential",
+            "Specific gravity should exceed 2.7",
+            "Porosity affects durability",
+            "Climatic conditions decide the type of stone used"
+          ],
+          "correct": 2,
+          "expl": "Among these statements, porosity affecting durability, specific gravity above ~2.7, and climate dictating stone choice are all valid selection criteria (soaking is not how stones are 'seasoned')."
+        },
+        {
+          "num": 39,
+          "text": "Hydrophobic, rapid-hardening and quick-setting/white cement statements: (1) Hydrophobic cement has low wetting ability (2) Rapid-hardening cement is useful for concreting under static/running water (3) Quick-setting cement helps attain high initial strength (4) White cement is OPC free of colouring oxides. Correct statements are:",
+          "options": [
+            "1 and 4 only",
+            "1 and 3 only",
+            "2 and 4 only",
+            "2 and 3 only"
+          ],
+          "correct": 0,
+          "expl": "Hydrophobic cement genuinely resists wetting (useful for storage in humid conditions), and white cement is essentially OPC made without iron oxide/colouring compounds; rapid-hardening cement is not particularly suited to underwater work."
+        },
+        {
+          "num": 40,
+          "text": "Rich mixes and bleeding: (1) Rich mixes are less prone to bleeding than lean ones (2) Bleeding can be reduced by increasing the fineness of cement. Which are correct?",
+          "options": [
+            "1 only",
+            "2 only",
+            "Both 1 and 2",
+            "Neither 1 nor 2"
+          ],
+          "correct": 2,
+          "expl": "Both statements are true — richer (more cement) mixes and finer cement both reduce the tendency of the mix to bleed."
+        },
+        {
+          "num": 41,
+          "text": "To produce low-heat cement, it is necessary to reduce the compound:",
+          "options": [
+            "C3S",
+            "C2S",
+            "C3A",
+            "C4AF"
+          ],
+          "correct": 2,
+          "expl": "Low-heat cement is produced primarily by limiting C3A (and also C3S), since C3A generates the most heat of hydration rapidly."
+        },
+        {
+          "num": 42,
+          "text": "The construction joints in cement concrete:",
+          "options": [
+            "Should be located where bending moment is large",
+            "Should be spaced at 3 m apart in huge structures",
+            "Should not be provided at the corners",
+            "Should be located where shear force is large"
+          ],
+          "correct": 1,
+          "expl": "Construction joints in massive structures are commonly spaced at intervals (often cited as ~3 m) and are ideally placed where shear/bending effects are minimum."
+        },
+        {
+          "num": 43,
+          "text": "The soundness of cement is tested by:",
+          "options": [
+            "Compression testing machine",
+            "Le-Chatelier apparatus",
+            "Standard briquette test",
+            "Vicat's apparatus"
+          ],
+          "correct": 1,
+          "expl": "Soundness of cement is determined using the Le-Chatelier apparatus (expansion test)."
+        },
+        {
+          "num": 44,
+          "text": "The permissible range of fly ash constituent in PPC as per IS 1489 (Part-1) is:",
+          "options": [
+            "5%–10%",
+            "10%–20%",
+            "15%–35%",
+            "25%–50%"
+          ],
+          "correct": 2,
+          "expl": "IS 1489 (Part 1) permits fly ash content in Portland Pozzolana Cement in the range of 15% to 35%."
+        },
+        {
+          "num": 45,
+          "text": "As per IS 456-2000, the pH of potable water used for concreting should be:",
+          "options": [
+            "Less than 6",
+            "Between 6 to 9",
+            "Not less than 6",
+            "Not less than 6.5"
+          ],
+          "correct": 1,
+          "expl": "IS 456 specifies mixing/curing water should have a pH between 6 and 9."
+        },
+        {
+          "num": 46,
+          "text": "Copper slag can be used:",
+          "options": [
+            "For producing slag cement",
+            "For producing pozzolana cement",
+            "As a performance improver in OPC",
+            "As a set retarder"
+          ],
+          "correct": 2,
+          "expl": "Copper slag is used as a supplementary material/performance improver blended with OPC (also used as fine aggregate replacement)."
+        },
+        {
+          "num": 47,
+          "text": "Consider statements on high-strength concrete (HSC): (i) HSC typically exceeds ~6000 psi compressive strength (ii) used in bridges/high-rises (iii) requires special curing (iv) more cost-effective than standard mixes. Correct statements are:",
+          "options": [
+            "ii and iii",
+            "ii and iv",
+            "i and iii",
+            "i and ii"
+          ],
+          "correct": 0,
+          "expl": "HSC is indeed used extensively in bridges and high-rises and needs careful/special curing due to low w/c ratios; it is not more cost-effective than standard concrete."
+        },
+        {
+          "num": 48,
+          "text": "Which of the following statements are true regarding lime and its use in construction? (i) used as a binder in mortar/plaster (ii) quicklime = calcium oxide, from heating limestone (iii) hydrated lime = slaked lime, from adding water to quicklime (iv) lime has high compressive strength suited to load-bearing use.",
+          "options": [
+            "i, ii and iii",
+            "ii and iii",
+            "iii",
+            "i and ii"
+          ],
+          "correct": 0,
+          "expl": "Statements i, ii and iii are correct; statement iv is false — lime has relatively low compressive strength and is not suited for major load-bearing structural use."
+        },
+        {
+          "num": 49,
+          "text": "The property of fresh concrete where water rises to the surface during placing/compacting is (duplicate):",
+          "options": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "correct": 0,
+          "expl": "See earlier 'bleeding' question in this category."
+        },
+        {
+          "num": 50,
+          "text": "Which property of concrete is considered while doing mix design for pavement (rigid) concrete?",
+          "options": [
+            "Characteristic compressive strength",
+            "Shear strength",
+            "Bond strength",
+            "Flexural strength"
+          ],
+          "correct": 3,
+          "expl": "Pavement (rigid pavement) concrete mix design is based on flexural strength (modulus of rupture), since slabs are primarily subjected to bending under wheel loads."
+        }
+      ]
+    },
+    {
+      "name": "Concrete – Workability, Testing & Mix Design",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Which type of mixer has its axis always horizontal, discharging by inserting a chute into the drum or reversing the drum's rotation?",
+          "options": [
+            "Tilting mixer",
+            "Dual drum mixer",
+            "Pan-type mixer",
+            "Non-tilting mixer"
+          ],
+          "correct": 3,
+          "expl": "A non-tilting drum mixer has a fixed horizontal axis; discharge is achieved via a chute or by reversing drum rotation, not by tilting."
+        },
+        {
+          "num": 2,
+          "text": "Batching in concrete work refers to:",
+          "options": [
+            "Controlling the quantity of each material into each batch",
+            "Controlling the total quantity at each batch",
+            "Weighing accurately the quantity of each material for a job before mixing",
+            "Adjusting water added per batch per moisture content"
+          ],
+          "correct": 2,
+          "expl": "Batching means accurately measuring (usually by weight) each ingredient for a batch before mixing begins."
+        },
+        {
+          "num": 3,
+          "text": "Match: Screeding, Floating, Trowelling with their functions.",
+          "options": [
+            "Screed=finishing, Float=remove irregularities, Trowel=strike off excess",
+            "Screed=strike off excess, Float=remove irregularities, Trowel=final finishing",
+            "Screed=remove irregularities, Float=strike off excess, Trowel=finishing",
+            "Screed=remove irregularities, Float=finishing, Trowel=strike off excess"
+          ],
+          "correct": 1,
+          "expl": "Screeding strikes off excess concrete to the required level; floating removes surface irregularities; trowelling is the final smooth-finishing operation."
+        },
+        {
+          "num": 4,
+          "text": "The compaction factor test of cement concrete determines its:",
+          "options": [
+            "Strength",
+            "Porosity",
+            "Degree of compaction under loads",
+            "Workability"
+          ],
+          "correct": 3,
+          "expl": "The compaction factor test is a standard method for measuring the workability of fresh concrete."
+        },
+        {
+          "num": 5,
+          "text": "What is the top (internal) diameter of the slump cone mould as per Indian Standards?",
+          "options": [
+            "100 mm",
+            "150 mm",
+            "200 mm",
+            "300 mm"
+          ],
+          "correct": 0,
+          "expl": "The standard slump cone has a top diameter of 100 mm, bottom diameter of 200 mm, and height of 300 mm."
+        },
+        {
+          "num": 6,
+          "text": "A batch mixer with a horizontal axis, discharging via chute insertion or drum-rotation reversal, is known as:",
+          "options": [
+            "Non-tilting drum mixer",
+            "Pan-type mixer",
+            "Dual drum mixer",
+            "Tilting mixer"
+          ],
+          "correct": 0,
+          "expl": "This describes the non-tilting drum mixer configuration."
+        },
+        {
+          "num": 7,
+          "text": "The mass of aggregate required to fill a container of unit volume is called:",
+          "options": [
+            "Dry density",
+            "Specific density",
+            "Bulk density",
+            "Void density"
+          ],
+          "correct": 2,
+          "expl": "Bulk density is defined as the mass of aggregate that fills a container of unit volume, including voids."
+        },
+        {
+          "num": 8,
+          "text": "What is the primary function of air-entraining admixtures in concrete?",
+          "options": [
+            "Increase strength",
+            "Improve workability",
+            "Reduce shrinkage",
+            "Enhance durability in freezing conditions"
+          ],
+          "correct": 3,
+          "expl": "Air-entraining admixtures create microscopic air bubbles that primarily improve resistance to freeze-thaw damage (durability in cold climates)."
+        },
+        {
+          "num": 9,
+          "text": "What is the primary purpose of fiber-reinforced concrete?",
+          "options": [
+            "Increase workability",
+            "Improve aesthetic appearance",
+            "Enhance tensile strength (crack control)",
+            "Reduce cost"
+          ],
+          "correct": 2,
+          "expl": "Fibers primarily improve tensile/flexural capacity and control crack propagation in concrete."
+        },
+        {
+          "num": 10,
+          "text": "Rebound hammer is used to determine:",
+          "options": [
+            "Compressive strength of coarse aggregate",
+            "Compressive strength of concrete in plastic state",
+            "Compressive strength of concrete in hardened state",
+            "Tensile strength of concrete"
+          ],
+          "correct": 2,
+          "expl": "The rebound (Schmidt) hammer is a non-destructive test estimating the compressive strength of hardened, in-place concrete."
+        },
+        {
+          "num": 11,
+          "text": "Impact test on aggregates enables one to estimate the property of:",
+          "options": [
+            "Hardness",
+            "Toughness",
+            "Strength",
+            "Creep"
+          ],
+          "correct": 1,
+          "expl": "The aggregate impact value test measures resistance to sudden shock/impact loading, i.e. toughness."
+        },
+        {
+          "num": 12,
+          "text": "What is the primary function of a diaphragm wall in construction?",
+          "options": [
+            "To provide lateral support for excavation",
+            "To increase the compressive strength of the structure",
+            "To distribute live loads to columns",
+            "To resist bending moments"
+          ],
+          "correct": 0,
+          "expl": "Diaphragm walls are built to retain soil and provide lateral support during deep excavation, often also serving as permanent basement walls."
+        },
+        {
+          "num": 13,
+          "text": "What does a 'damp-proof course' in construction refer to?",
+          "options": [
+            "A layer to resist water ingress through floors or walls",
+            "A layer to prevent air leaks in buildings",
+            "A layer to increase insulation of a wall",
+            "A fire-resistant layer"
+          ],
+          "correct": 0,
+          "expl": "A DPC is a moisture-impermeable layer installed to prevent rising damp/ water ingress into walls and floors."
+        },
+        {
+          "num": 14,
+          "text": "Which of the following methods is used to estimate the strength of steel reinforcement embedded in concrete?",
+          "options": [
+            "Rebound hammer test",
+            "Ultrasonic pulse velocity test",
+            "Tensile test (on extracted sample)",
+            "Split cylinder test"
+          ],
+          "correct": 2,
+          "expl": "Direct tensile testing of an extracted steel sample is used to assess reinforcement strength, unlike rebound/UPV which assess the concrete."
+        },
+        {
+          "num": 15,
+          "text": "Which test determines the workability of concrete?",
+          "options": [
+            "Cube test",
+            "Slump test",
+            "Compression test",
+            "Flexural test"
+          ],
+          "correct": 1,
+          "expl": "The slump test is the most common field test to assess the workability of fresh concrete."
+        },
+        {
+          "num": 16,
+          "text": "What is the main reason for using admixtures in concrete?",
+          "options": [
+            "To improve appearance",
+            "To accelerate or retard the setting time",
+            "To increase the weight",
+            "To make concrete fire-resistant"
+          ],
+          "correct": 1,
+          "expl": "Admixtures are chiefly used to modify setting time, workability, strength development, or durability properties as needed."
+        },
+        {
+          "num": 17,
+          "text": "What is the typical slump value for low-workability concrete?",
+          "options": [
+            "100 mm",
+            "50 mm",
+            "10 mm",
+            "200 mm"
+          ],
+          "correct": 2,
+          "expl": "Low workability concrete typically has a slump in the range of about 0–25 mm; 10 mm fits this range."
+        },
+        {
+          "num": 18,
+          "text": "What is the primary purpose of a concrete cube test?",
+          "options": [
+            "To determine the mix ratio",
+            "To assess workability",
+            "To determine compressive strength",
+            "To determine curing time"
+          ],
+          "correct": 2,
+          "expl": "The standard cube test measures the compressive strength of hardened concrete."
+        },
+        {
+          "num": 19,
+          "text": "In a concrete pump, the part receiving and holding concrete before it enters the pumping cylinder is called the:",
+          "options": [
+            "Intake hopper",
+            "Outer hopper",
+            "Inlet pipe",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "The intake (receiving) hopper holds fresh concrete before it is drawn into the pumping cylinder."
+        },
+        {
+          "num": 20,
+          "text": "Ready-mix concrete is completely mixed in a truck mixer, typically requiring how many revolutions to fully mix?",
+          "options": [
+            "50 to 80 revolutions",
+            "20 to 50 revolutions",
+            "80 to 170 revolutions",
+            "70 to 100 revolutions"
+          ],
+          "correct": 3,
+          "expl": "Standard practice specifies about 70 to 100 revolutions of the truck mixer drum at mixing speed to achieve thorough mixing."
+        },
+        {
+          "num": 21,
+          "text": "If in a concrete mix the fineness modulus of coarse aggregate is 7.6, fine aggregate is 2.8, and the economical combined FM is 6.4, what is the proportion of fine aggregate?",
+          "options": [
+            "25%",
+            "33.33%",
+            "50%",
+            "66.67%"
+          ],
+          "correct": 0,
+          "expl": "Using the FM proportioning formula: %FA = (FMca − FMcombined)/(FMca − FMfa) × 100 = (7.6−6.4)/(7.6−2.8) × 100 = 25%."
+        },
+        {
+          "num": 22,
+          "text": "The yield of concrete per bag of cement for a mix proportion of 1:1.5:3 (adopting 2/3 as the coefficient) is:",
+          "options": [
+            "0.090 m³",
+            "0.128 m³",
+            "0.135 m³",
+            "0.146 m³"
+          ],
+          "correct": 1,
+          "expl": "Using the standard yield calculation with the 2/3 coefficient for a 1:1.5:3 mix and one cement bag (0.035 m³), the yield works out to about 0.128 m³."
+        },
+        {
+          "num": 23,
+          "text": "The concrete slump recommended for columns is:",
+          "options": [
+            "25 to 50 mm",
+            "25 to 75 mm",
+            "75 to 125 mm",
+            "50 to 100 mm"
+          ],
+          "correct": 0,
+          "expl": "For column concreting, a lower slump range of about 25–50 mm is generally recommended, adjusted per congestion of reinforcement."
+        },
+        {
+          "num": 24,
+          "text": "Preferable range of slump for concrete in heavily reinforced sections (slabs, beams, walls, columns) is:",
+          "options": [
+            "25 mm to 50 mm",
+            "50 mm to 100 mm",
+            "100 mm to 125 mm",
+            "125 mm to 150 mm"
+          ],
+          "correct": 1,
+          "expl": "IS 456 recommends a slump range of roughly 50–100 mm for heavily reinforced sections to ensure proper flow around congested steel."
+        },
+        {
+          "num": 25,
+          "text": "If the engineer-in-charge approves that a 10 cm cube may be used for a work test of concrete, the maximum nominal aggregate size should not exceed:",
+          "options": [
+            "10 mm",
+            "15 mm",
+            "20 mm",
+            "25 mm"
+          ],
+          "correct": 2,
+          "expl": "For a 10 cm cube specimen, the maximum aggregate size permitted is generally taken as 20 mm (about 1/5 of the mould dimension)."
+        },
+        {
+          "num": 26,
+          "text": "Slump and compaction factor for a slump value of 0–20 mm correspond to a compaction factor range of:",
+          "options": [
+            "0.50–0.70",
+            "0.70–0.80",
+            "0.80–0.85",
+            "0.85–0.92"
+          ],
+          "correct": 0,
+          "expl": "Very low slump (0–20 mm, i.e. very low workability) corresponds to a low compaction factor range, roughly 0.5–0.7."
+        },
+        {
+          "num": 27,
+          "text": "To make one cubic metre of 1:2:4 (by volume) concrete, the volume of coarse aggregate required is approximately:",
+          "options": [
+            "0.98 m³",
+            "0.88 m³",
+            "0.78 m³",
+            "0.68 m³"
+          ],
+          "correct": 1,
+          "expl": "For a 1:2:4 nominal mix, the standard dry volume calculation gives approximately 0.88 m³ of coarse aggregate per m³ of concrete."
+        },
+        {
+          "num": 28,
+          "text": "The approximate quantity of cement (in 50 kg bags) required for 100 m³ of 1:2:4 ratio concrete is:",
+          "options": [
+            "533 bags",
+            "566 bags",
+            "633 bags",
+            "666 bags"
+          ],
+          "correct": 2,
+          "expl": "Standard calculation for a 1:2:4 mix gives about 6.33 bags of cement per m³, i.e. approximately 633 bags per 100 m³."
+        },
+        {
+          "num": 29,
+          "text": "If in a concrete mix the FM of coarse aggregate is 7.6, fine aggregate 2.8, and economical combined FM is 6.4, the proportion of fine aggregate is (repeated):",
+          "options": [
+            "25%",
+            "33.33%",
+            "50%",
+            "66.67%"
+          ],
+          "correct": 0,
+          "expl": "Same calculation as before: (7.6−6.4)/(7.6−2.8) × 100 = 25%."
+        },
+        {
+          "num": 30,
+          "text": "The approximate ratio of strength of a 15 cm × 30 cm concrete cylinder to that of a 15 cm cube of the same concrete is:",
+          "options": [
+            "1.25",
+            "1.00",
+            "0.85",
+            "0.50"
+          ],
+          "correct": 2,
+          "expl": "A standard 150×300 mm cylinder typically shows about 80–85% of the compressive strength of an equivalent 150 mm cube."
+        },
+        {
+          "num": 31,
+          "text": "Tensile strength of concrete is measured by:",
+          "options": [
+            "Direct tension test in a universal testing machine",
+            "Applying compressive load on the diameter of a cylinder",
+            "Applying third-point loading on a prism",
+            "Applying tensile load along the diameter of a cylinder"
+          ],
+          "correct": 1,
+          "expl": "The split (indirect) tensile strength test involves applying a compressive line load along the diameter of a cylinder, which induces tensile splitting."
+        },
+        {
+          "num": 32,
+          "text": "According to I.S. specifications, concrete should be cured under a humidity of at least about:",
+          "options": [
+            "60%",
+            "70%",
+            "80%",
+            "90%"
+          ],
+          "correct": 3,
+          "expl": "Curing conditions require a high relative humidity, typically cited as around 90%, to prevent moisture loss and ensure hydration."
+        },
+        {
+          "num": 33,
+          "text": "If one intends to obtain the best workability of concrete, the preferred shape of aggregate is:",
+          "options": [
+            "Round",
+            "Annular",
+            "Triangular",
+            "Flinty"
+          ],
+          "correct": 0,
+          "expl": "Rounded aggregates have lower surface area and interlock, giving the best workability for a given water content."
+        },
+        {
+          "num": 34,
+          "text": "The bulking of sand occurs mainly due to (workability/testing context):",
+          "options": [
+            "Moisture in voids",
+            "Surface tension",
+            "Air in voids",
+            "Capillary action"
+          ],
+          "correct": 0,
+          "expl": "Bulking is caused by moisture films around sand particles preventing close packing."
+        },
+        {
+          "num": 35,
+          "text": "The fineness modulus of an aggregate is roughly proportional to:",
+          "options": [
+            "Specific gravity of the aggregate",
+            "Shape of the aggregate",
+            "Grading of the aggregate",
+            "Average size of particles in the aggregate"
+          ],
+          "correct": 3,
+          "expl": "A higher fineness modulus indicates coarser (larger average) particle size, so FM is proportional to average particle size."
+        },
+        {
+          "num": 36,
+          "text": "Following stone is suitable for damp proofing (workability/durability context, repeated):",
+          "options": [
+            "Slate",
+            "Marble",
+            "Laterite",
+            "Granite"
+          ],
+          "correct": 0,
+          "expl": "Slate, being dense and low in porosity, is preferred for damp-proof courses."
+        },
+        {
+          "num": 37,
+          "text": "Consider the following strengths of concrete: 1. Cube strength 2. Cylinder strength 3. Split-tensile strength 4. Modulus of rupture. Correct increasing order is:",
+          "options": [
+            "3, 4, 2, 1",
+            "3, 4, 1, 2",
+            "4, 3, 2, 1",
+            "4, 3, 1, 2"
+          ],
+          "correct": 0,
+          "expl": "In increasing magnitude: split-tensile strength is lowest, then modulus of rupture, then cylinder strength, then cube strength (highest)."
+        },
+        {
+          "num": 38,
+          "text": "Consider statements on workability of concrete: (1) Workability increases with increase in water content (2) Small-sized aggregate concrete is more workable than large-sized (3) For same water, rounded aggregates give more workable mix than angular/flaky (4) Zero slump indicates very poor workability. Which are correct?",
+          "options": [
+            "1, 2 and 3 only",
+            "1, 2 and 4 only",
+            "1, 3 and 4 only",
+            "2, 3 and 4 only"
+          ],
+          "correct": 1,
+          "expl": "Statements 1, 2 and 4 are true; statement 2 is actually reversed in common practice — larger aggregate (for a given cement content) tends to need less paste and can be more workable, but the widely accepted exam answer selects 1, 2 and 4."
+        },
+        {
+          "num": 39,
+          "text": "Which of the following coarse aggregate shapes requires minimum cement paste?",
+          "options": [
+            "Rounded",
+            "Irregular",
+            "Angular",
+            "Flaky"
+          ],
+          "correct": 0,
+          "expl": "Rounded aggregates have the lowest surface area to volume ratio and best packing, requiring the least cement paste to coat and fill voids."
+        },
+        {
+          "num": 40,
+          "text": "A cement bag contains 0.035 cubic metre of cement by volume. How many bags comprise one tonne of cement?",
+          "options": [
+            "17",
+            "16",
+            "18",
+            "20"
+          ],
+          "correct": 3,
+          "expl": "With cement density ≈ 1440 kg/m³, one bag weighs about 1440 × 0.035 ≈ 50 kg; 1000 kg / 50 kg = 20 bags."
+        }
+      ]
+    },
+    {
+      "name": "Admixtures",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Which of the following is not a workability improvement agent?",
+          "options": [
+            "Plasticizer",
+            "Silica fume",
+            "Superplasticizer",
+            "Air-entraining agent"
+          ],
+          "correct": 1,
+          "expl": "Silica fume is a supplementary cementitious/pozzolanic material that actually tends to reduce workability, unlike plasticizers, superplasticizers and air-entrainers."
+        },
+        {
+          "num": 2,
+          "text": "Admixtures which cause early setting and hardening of concrete are called:",
+          "options": [
+            "Workability admixtures",
+            "Accelerators",
+            "Retarders",
+            "Air-entraining agents"
+          ],
+          "correct": 1,
+          "expl": "Accelerators speed up the setting and early strength development of concrete."
+        },
+        {
+          "num": 3,
+          "text": "Match List I (Admixtures) with List II (Chemicals): Water-reducing admixture, Air-entraining agent, Super plasticizer, Accelerator with Lignosulphonate, Sulphonated melamine formaldehyde, Neutralized vinsol resin, Calcium chloride.",
+          "options": [
+            "2, 4, 1, 3",
+            "1, 3, 4, 2",
+            "3, 4, 1, 2",
+            "3, 4, 2, 1"
+          ],
+          "correct": 2,
+          "expl": "Water reducer = Lignosulphonate; Air-entrainer = Neutralized vinsol resin; Superplasticizer = Sulphonated melamine formaldehyde; Accelerator = Calcium chloride."
+        },
+        {
+          "num": 4,
+          "text": "Which material is commonly used as an admixture in concrete to accelerate its setting time?",
+          "options": [
+            "Silica",
+            "Calcium chloride",
+            "Lime",
+            "Gypsum"
+          ],
+          "correct": 1,
+          "expl": "Calcium chloride is a classic and common chemical accelerator for concrete."
+        },
+        {
+          "num": 5,
+          "text": "What is the primary function of seasoning timber?",
+          "options": [
+            "Increase strength",
+            "Improve appearance",
+            "Reduce moisture content",
+            "Enhance durability"
+          ],
+          "correct": 2,
+          "expl": "Seasoning primarily aims to reduce the moisture content of timber to a level suitable for use, which in turn improves strength, durability and dimensional stability."
+        },
+        {
+          "num": 6,
+          "text": "Sand is mixed with lime mortar mainly to:",
+          "options": [
+            "Improve strength",
+            "Reduce cost",
+            "Reduce setting time",
+            "Prevent shrinkage"
+          ],
+          "correct": 3,
+          "expl": "Sand acts as a filler in lime mortar chiefly to reduce excessive shrinkage that pure lime paste would otherwise undergo."
+        },
+        {
+          "num": 7,
+          "text": "Surkhi is added to lime mortar to:",
+          "options": [
+            "Prevent shrinkage",
+            "Decrease setting time",
+            "Increase bulk",
+            "Impart hydraulicity"
+          ],
+          "correct": 3,
+          "expl": "Surkhi (powdered burnt brick) is a pozzolanic material added to fat lime mortar to impart hydraulic (water-setting) properties."
+        },
+        {
+          "num": 8,
+          "text": "Consider the following statements: (1) Hydrophobic cement grains have low wetting ability (2) Rapid-hardening cement is useful for concreting under static/running water (3) Quick-setting cement helps attain high initial strength (4) White cement is OPC free of colouring oxides.",
+          "options": [
+            "1 and 4 only",
+            "1 and 3 only",
+            "2 and 4 only",
+            "2 and 3 only"
+          ],
+          "correct": 0,
+          "expl": "Statements 1 and 4 correctly describe hydrophobic and white cement; rapid-hardening cement is not specifically suited to underwater work."
+        },
+        {
+          "num": 9,
+          "text": "Which of the following is not an accelerator in the setting of concrete? (admixture context)",
+          "options": [
+            "CaCl2",
+            "Ca(NO3)2",
+            "CH3OH",
+            "NaCl"
+          ],
+          "correct": 2,
+          "expl": "Methanol has no accelerating chemical action on cement hydration, unlike CaCl2, Ca(NO3)2 and (to a lesser extent) NaCl."
+        }
+      ]
+    },
+    {
+      "name": "Timber",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The objective of seasoning wood is to:",
+          "options": [
+            "Decrease strength, durability and workability",
+            "Increase its weight",
+            "Reduce shrinkage and warping after placement in a structure",
+            "Increase tendency to split and decay"
+          ],
+          "correct": 2,
+          "expl": "Seasoning removes excess moisture from timber, minimizing subsequent shrinkage, warping and decay once installed in a structure."
+        },
+        {
+          "num": 2,
+          "text": "In which direction is the strength of timber maximum?",
+          "options": [
+            "Perpendicular to grains",
+            "Parallel to grains",
+            "45 degrees to grains",
+            "Same in all directions"
+          ],
+          "correct": 1,
+          "expl": "Timber is strongest along the direction of its grain (fibres), i.e. parallel to grains."
+        },
+        {
+          "num": 3,
+          "text": "Seasoning of timber is:",
+          "options": [
+            "A process of removing sap (moisture)",
+            "Creosoting",
+            "Painting with sodium silicate",
+            "Coating with tar"
+          ],
+          "correct": 0,
+          "expl": "Seasoning is fundamentally the controlled removal of moisture (sap) from freshly cut timber."
+        },
+        {
+          "num": 4,
+          "text": "Which of the following trees yield hardwood?",
+          "options": [
+            "Deodar",
+            "Chir",
+            "Shishum",
+            "Pine"
+          ],
+          "correct": 2,
+          "expl": "Shishum (Indian rosewood) is a broadleaf hardwood; deodar, chir and pine are softwood conifers."
+        },
+        {
+          "num": 5,
+          "text": "The quality of timber does not significantly depend on:",
+          "options": [
+            "Height of tree",
+            "Nature of soil",
+            "Maturity of tree",
+            "Time of felling"
+          ],
+          "correct": 0,
+          "expl": "Tree height has little bearing on timber quality compared to soil condition, maturity at felling and the season of felling."
+        },
+        {
+          "num": 6,
+          "text": "Sections of more uniform moisture content are obtained by:",
+          "options": [
+            "Tangential sawing",
+            "Ordinary sawing",
+            "Radial sawing",
+            "Quarter sawing"
+          ],
+          "correct": 3,
+          "expl": "Quarter sawing cuts radially through the log, producing sections with more uniform grain, moisture content and reduced warping."
+        },
+        {
+          "num": 7,
+          "text": "'Red Shortness' is the defect related to:",
+          "options": [
+            "Timber",
+            "Brick",
+            "Limestone",
+            "Steel"
+          ],
+          "correct": 3,
+          "expl": "Red shortness is a steel defect (brittleness at red-hot temperatures) caused by excess sulphur content, causing cracking during hot working."
+        },
+        {
+          "num": 8,
+          "text": "The practical limit of moisture content achieved in air drying of timber is about:",
+          "options": [
+            "5%",
+            "15%",
+            "25%",
+            "35%"
+          ],
+          "correct": 1,
+          "expl": "Natural air drying can typically bring timber's moisture content down to about 15% (equilibrium with ambient air), not lower without kiln drying."
+        },
+        {
+          "num": 9,
+          "text": "The time required for seasoning of timber in air is about:",
+          "options": [
+            "30 to 60 days",
+            "60 to 90 days",
+            "120 to 180 days",
+            "180 to 240 days"
+          ],
+          "correct": 2,
+          "expl": "Air seasoning of timber generally takes several months, commonly cited as roughly 120–180 days depending on species and section size."
+        },
+        {
+          "num": 10,
+          "text": "Timber can be made more fire resistant by:",
+          "options": [
+            "Dipping and steeping process",
+            "Sirable's process",
+            "Charring",
+            "Hot and cold open tank treatment"
+          ],
+          "correct": 2,
+          "expl": "Charring the surface of timber creates an insulating char layer that slows further burning, improving fire resistance."
+        },
+        {
+          "num": 11,
+          "text": "A timber piece whose breadth and thickness exceed 5 cm and length is less than 20 times its breadth is known as:",
+          "options": [
+            "Baulk",
+            "Veneer",
+            "Scantling",
+            "Batten"
+          ],
+          "correct": 2,
+          "expl": "Scantling refers to a converted timber piece of moderate cross-section (width/thickness over 5 cm) used for general construction."
+        },
+        {
+          "num": 12,
+          "text": "Assertion: Shishum is used for decorative woodwork. Reason: Shishum can be polished to an excellent finish.",
+          "options": [
+            "Both true, R is correct explanation of A",
+            "Both true, R is not correct explanation of A",
+            "A true, R false",
+            "A false, R true"
+          ],
+          "correct": 0,
+          "expl": "Shishum is indeed prized for decorative work precisely because it takes an excellent polish/finish, so the reason correctly explains the assertion."
+        },
+        {
+          "num": 13,
+          "text": "Plywood has the advantage of:",
+          "options": [
+            "Greater tensile strength in the longer direction",
+            "Greater tensile strength in the shorter direction",
+            "Same tensile strength in all directions",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": "Because plywood is made of veneers glued with alternating grain direction, it achieves fairly uniform strength in all directions."
+        },
+        {
+          "num": 14,
+          "text": "The core of black boards (per IS 1659) is made of strips of wood each not exceeding a certain width, glued between at least two surface veneers. That width is:",
+          "options": [
+            "25 mm",
+            "50 mm",
+            "55 mm",
+            "75 mm"
+          ],
+          "correct": 0,
+          "expl": "IS 1659 specifies core strips in blackboards should not exceed 25 mm in width, to limit warping."
+        },
+        {
+          "num": 15,
+          "text": "When piles (veneers) are bonded together with water-soluble glues such as casein glue, ___ plywood is obtained.",
+          "options": [
+            "Exterior grade plywood",
+            "Start plywood",
+            "Interior grade plywood",
+            "Diagonal plywood"
+          ],
+          "correct": 2,
+          "expl": "Casein glue is a water-soluble adhesive, unsuitable for outdoor exposure, so plywood bonded with it is classified as interior grade."
+        },
+        {
+          "num": 16,
+          "text": "Which crack pattern in timber is caused by uncontrolled and non-uniform loss of moisture?",
+          "options": [
+            "Knot",
+            "Cross grain",
+            "Warping",
+            "Shake"
+          ],
+          "correct": 2,
+          "expl": "Warping (twisting/distortion) results from non-uniform drying/moisture loss causing uneven shrinkage across the timber section."
+        },
+        {
+          "num": 17,
+          "text": "Radial splits in timber originating near the outer surface (bark) and narrowing towards the pith are known as:",
+          "options": [
+            "Heart shakes",
+            "Star shakes",
+            "Cup shakes",
+            "Knots"
+          ],
+          "correct": 1,
+          "expl": "Star shakes are radial splits, wider at the outer circumference and tapering inward, radiating like a star pattern."
+        },
+        {
+          "num": 18,
+          "text": "Match: Deciduous, Conifer, Endogenous, Exogenous trees with: Hardwood, Softwood, Bamboo, Eucalyptus.",
+          "options": [
+            "Deciduous=Hardwood, Conifer=Softwood, Endogenous=Bamboo, Exogenous=Eucalyptus",
+            "Deciduous=Softwood, Conifer=Hardwood, Endogenous=Eucalyptus, Exogenous=Bamboo",
+            "Deciduous=Hardwood, Conifer=Softwood, Endogenous=Eucalyptus, Exogenous=Bamboo",
+            "Deciduous=Softwood, Conifer=Hardwood, Endogenous=Bamboo, Exogenous=Eucalyptus"
+          ],
+          "correct": 0,
+          "expl": "Deciduous trees generally yield hardwood, conifers yield softwood; bamboo is an endogenous plant, and eucalyptus is exogenous."
+        },
+        {
+          "num": 19,
+          "text": "The ratio of modulus of elasticity of wood perpendicular to the grain, to the value parallel to the grain, falls in the range:",
+          "options": [
+            "1/20 to 1/12",
+            "1/3 to 1/2",
+            "2 to 3",
+            "5 to 10"
+          ],
+          "correct": 0,
+          "expl": "Timber is far stiffer along the grain than across it; the perpendicular/parallel modulus ratio is typically only about 1/20 to 1/12."
+        },
+        {
+          "num": 20,
+          "text": "Match: Blue Stain, Brown Rot, White Rot fungal decay with: Sap Wood, Cellulose, Lignin.",
+          "options": [
+            "Blue Stain=Sap Wood, Brown Rot=Cellulose, White Rot=Lignin",
+            "Blue Stain=Cellulose, Brown Rot=Sap Wood, White Rot=Lignin",
+            "Blue Stain=Lignin, Brown Rot=Sap Wood, White Rot=Cellulose",
+            "Blue Stain=Sap Wood, Brown Rot=Lignin, White Rot=Cellulose"
+          ],
+          "correct": 0,
+          "expl": "Blue stain fungus discolours sapwood; brown rot fungi consume cellulose (leaving brownish lignin residue); white rot fungi consume lignin (leaving whitish cellulose)."
+        }
+      ]
+    },
+    {
+      "name": "Paints, Varnishes & Finishes",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Distemper is used to coat:",
+          "options": [
+            "Interior surfaces not exposed to weather",
+            "External concrete surfaces",
+            "Compound walls",
+            "Wood work"
+          ],
+          "correct": 0,
+          "expl": "Distemper is a water-based, low-durability paint suitable only for interior surfaces sheltered from weather."
+        },
+        {
+          "num": 2,
+          "text": "The varnishes that use methylated spirit of wine as a solvent, in which soft resins such as lac or shellac are dissolved, are known as:",
+          "options": [
+            "Spirit varnishes",
+            "Water varnishes",
+            "Oil varnishes",
+            "Turpentine varnishes"
+          ],
+          "correct": 0,
+          "expl": "Spirit varnishes dissolve resins like shellac/lac in methylated spirit (alcohol)."
+        },
+        {
+          "num": 3,
+          "text": "Paints which are highly reflective and applied over radiators are:",
+          "options": [
+            "Asbestos paints",
+            "Cellulose paints",
+            "Aluminium paints",
+            "Bronze paints"
+          ],
+          "correct": 2,
+          "expl": "Aluminium paint has high heat-reflectivity, making it suitable for coating radiators and metal surfaces exposed to heat."
+        },
+        {
+          "num": 4,
+          "text": "The process of rubbing down a wood surface with pumice stone or glass paper after the prime coat, then filling cracks/nail holes with putty, is known as:",
+          "options": [
+            "Knotting",
+            "Stopping",
+            "Preparation of surface",
+            "Under coating"
+          ],
+          "correct": 1,
+          "expl": "This surface-levelling operation with putty filling is termed 'stopping' in the painting process sequence."
+        },
+        {
+          "num": 5,
+          "text": "The constituent of paint used to hide surface imperfections and impart the desired colour is:",
+          "options": [
+            "Pigment",
+            "Base",
+            "Solvent",
+            "Vehicle"
+          ],
+          "correct": 0,
+          "expl": "Pigment provides opacity (hiding power) and colour to a paint film."
+        },
+        {
+          "num": 6,
+          "text": "Snowcem is:",
+          "options": [
+            "A distemper",
+            "A synthetic enamel paint",
+            "A primer",
+            "A waterproof cement paint"
+          ],
+          "correct": 3,
+          "expl": "Snowcem is a cement-based, water-resistant exterior paint used mainly on masonry surfaces."
+        },
+        {
+          "num": 7,
+          "text": "For covering sheds required in chemical industries, the sheets used are usually made of:",
+          "options": [
+            "Galvanized iron",
+            "Asbestos cement sheets",
+            "Aluminium",
+            "Bitumen"
+          ],
+          "correct": 1,
+          "expl": "Asbestos cement sheets offer good chemical resistance, making them common roofing for chemical-industry sheds."
+        },
+        {
+          "num": 8,
+          "text": "For skylights and north-light trusses, the type of glass used is:",
+          "options": [
+            "Sheet glass",
+            "Plate glass",
+            "Wired glass",
+            "Laminated glass"
+          ],
+          "correct": 2,
+          "expl": "Wired glass, with embedded wire mesh, resists shattering and is used in overhead glazing like skylights and north-light roofs."
+        },
+        {
+          "num": 9,
+          "text": "Stainless steel contains approximately:",
+          "options": [
+            "18% chromium and 8% nickel",
+            "8% chromium and 18% nickel",
+            "12% chromium and 36% nickel",
+            "36% chromium and 12% nickel"
+          ],
+          "correct": 0,
+          "expl": "The most common (18-8) grade of stainless steel contains about 18% chromium and 8% nickel."
+        },
+        {
+          "num": 10,
+          "text": "Putty is made up of:",
+          "options": [
+            "White lead and turpentine",
+            "Powdered chalk and raw linseed oil",
+            "Red lead and linseed oil",
+            "Zinc oxide and boiled linseed oil"
+          ],
+          "correct": 1,
+          "expl": "Ordinary glazier's/painter's putty is a mixture of whiting (powdered chalk) and raw linseed oil."
+        },
+        {
+          "num": 11,
+          "text": "Snowcem is (alternative description):",
+          "options": [
+            "Powdered lime",
+            "Chalk powder",
+            "A mixture of chalk powder and lime",
+            "Coloured cement (cement-based paint)"
+          ],
+          "correct": 3,
+          "expl": "Snowcem is essentially a coloured, cement-based exterior paint, not simply lime or chalk powder."
+        },
+        {
+          "num": 12,
+          "text": "Turpentine oil is used in paint as a:",
+          "options": [
+            "Carrier",
+            "Base",
+            "Thinner",
+            "Drier"
+          ],
+          "correct": 2,
+          "expl": "Turpentine is commonly used as a thinner/solvent to reduce paint viscosity for application."
+        },
+        {
+          "num": 13,
+          "text": "Match List I (Ingredients) with List II: Pigment, Drier, Thinner, Extender with Iron oxide, Zinc sulphate, Turpentine, Aluminium silicate.",
+          "options": [
+            "Pigment=Iron oxide, Drier=Turpentine, Thinner=Zinc sulphate, Extender=Aluminium silicate",
+            "Pigment=Zinc sulphate, Drier=Turpentine, Thinner=Iron oxide, Extender=Aluminium silicate",
+            "Pigment=Iron oxide, Drier=Turpentine, Thinner=Aluminium silicate, Extender=Zinc sulphate",
+            "Pigment=Iron oxide, Drier=Zinc sulphate, Thinner=Turpentine, Extender=Aluminium silicate"
+          ],
+          "correct": 3,
+          "expl": "Pigment (colour) = iron oxide; drier = zinc sulphate; thinner = turpentine; extender = aluminium silicate — the combination that gives a consistent, logical match."
+        },
+        {
+          "num": 14,
+          "text": "The formula for Pigment Volume Concentration (PVC) is:",
+          "options": [
+            "Volume of non-volatile vehicle / volume of pigment",
+            "Total volume of non-volatile constituents / volume of pigment",
+            "Volume of pigment / total volume of non-volatile constituents",
+            "Volume of pigment / total volume of non-volatile vehicle constituents"
+          ],
+          "correct": 2,
+          "expl": "PVC is defined as the ratio of the volume of pigment to the total volume of non-volatile (solid) constituents in the dried paint film."
+        },
+        {
+          "num": 15,
+          "text": "Base pigments in paint are used mainly for:",
+          "options": [
+            "Shining",
+            "Protection",
+            "Smooth surface",
+            "Easy spreading"
+          ],
+          "correct": 1,
+          "expl": "The 'base' provides body/hiding power and forms a protective film over the coated surface."
+        },
+        {
+          "num": 16,
+          "text": "Which of the following is generally used as a thinner in oil paints?",
+          "options": [
+            "Linseed oil",
+            "Turpentine",
+            "Alcohol",
+            "Water"
+          ],
+          "correct": 1,
+          "expl": "Turpentine is the standard thinner for oil-based paints."
+        },
+        {
+          "num": 17,
+          "text": "Match List I with List II: Alumina, Iron oxide, Silica; and Red colour, Plastic character, Strength & hardness.",
+          "options": [
+            "I. Alumina only correctly matched",
+            "II, III only correctly matched",
+            "I, II, III all correctly matched",
+            "III only correctly matched"
+          ],
+          "correct": 3,
+          "expl": "Only Silica → strength and hardness is correctly matched; alumina actually imparts plasticity (not red colour) and iron oxide gives red colour (not plasticity), so both I and II are mismatched."
+        },
+        {
+          "num": 18,
+          "text": "Which of the following statements is wrong (regarding minerals)?",
+          "options": [
+            "Quartz has a greasy lustre",
+            "Feldspar is a silicate of aluminium with varying potash, soda or lime",
+            "A stone with a large percentage of quartz is very soft",
+            "All of the above"
+          ],
+          "correct": 2,
+          "expl": "This statement is wrong: quartz makes stone very hard (not soft) — quartz-rich stones like granite are noted for high hardness/durability."
+        }
+      ]
+    },
+    {
+      "name": "Stones & Aggregates",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Which of the following pairs is correctly matched?",
+          "options": [
+            "Sandstone – Igneous rock",
+            "Basalt – Metamorphic rock",
+            "Limestone – Sedimentary rock",
+            "Granite – Argillaceous rock"
+          ],
+          "correct": 2,
+          "expl": "Limestone is a classic sedimentary rock; sandstone is also sedimentary (not igneous), basalt is igneous (not metamorphic), and granite is igneous (not argillaceous)."
+        },
+        {
+          "num": 2,
+          "text": "Quarrying using a channelling machine is employed for quarrying in:",
+          "options": [
+            "Sand stones",
+            "Quartzite",
+            "Soft rock",
+            "Hard rock"
+          ],
+          "correct": 0,
+          "expl": "Channelling machines cut straight channels and are typically employed in relatively softer, more workable rocks like sandstone and limestone."
+        },
+        {
+          "num": 3,
+          "text": "Sandstone is a/an:",
+          "options": [
+            "Only sedimentary rock",
+            "Both sedimentary and aqueous rock",
+            "Both sedimentary and silicious rock",
+            "Sedimentary, aqueous and silicious rock"
+          ],
+          "correct": 3,
+          "expl": "Sandstone is classified geologically as sedimentary (aqueous, water-deposited) and chemically as a silicious (quartz-rich) rock — all three descriptors apply."
+        },
+        {
+          "num": 4,
+          "text": "A good brick, when immersed in a water bath for 24 hours, should not absorb more than (aggregate/masonry water absorption context):",
+          "options": [
+            "20% of its dry weight",
+            "30% of its saturated weight",
+            "10% of its dry weight",
+            "20% of its saturated weight"
+          ],
+          "correct": 0,
+          "expl": "The standard water-absorption limit for a good ordinary brick is 20% of its dry weight."
+        },
+        {
+          "num": 5,
+          "text": "An aggregate is said to be flaky when:",
+          "options": [
+            "Its least dimension is three-fifths of its mean dimension",
+            "Its length equals its mean dimension",
+            "Its least dimension equals its mean dimension",
+            "Its length equals 1.8 times its mean dimension"
+          ],
+          "correct": 0,
+          "expl": "By definition, a flaky particle's least (thickness) dimension is less than three-fifths (0.6) of its mean sieve dimension."
+        },
+        {
+          "num": 6,
+          "text": "The specific gravity of sandstone is typically:",
+          "options": [
+            "2.65 to 2.95",
+            "1.1 to 1.8",
+            "1.8 to 2.65",
+            "2.95 to 3.4"
+          ],
+          "correct": 0,
+          "expl": "Sandstone's specific gravity typically ranges from about 2.65 to 2.95."
+        },
+        {
+          "num": 7,
+          "text": "The coefficient of linear expansion of granite is in a range similar to that of:",
+          "options": [
+            "Glass",
+            "Bamboo",
+            "Mild steel",
+            "High carbon steel"
+          ],
+          "correct": 2,
+          "expl": "Granite's coefficient of thermal expansion is broadly comparable in magnitude to that of mild steel (both around 8–12 × 10⁻⁶/°C)."
+        },
+        {
+          "num": 8,
+          "text": "What is the impact of a large percentage of mica in sand?",
+          "options": [
+            "It increases the strength of concrete or mortar",
+            "It reduces the strength of concrete or mortar",
+            "It has no effect on strength",
+            "It marginally enhances strength"
+          ],
+          "correct": 1,
+          "expl": "Mica flakes are weak, platy minerals with poor bond, and their presence in sand reduces the strength of resulting concrete/mortar."
+        },
+        {
+          "num": 9,
+          "text": "The permissible range of fly ash constituent in PPC per IS 1489 (repeated):",
+          "options": [
+            "5%–10%",
+            "10%–20%",
+            "15%–35%",
+            "25%–50%"
+          ],
+          "correct": 2,
+          "expl": "IS 1489 (Part 1) specifies fly ash content of 15% to 35% in Portland Pozzolana Cement."
+        },
+        {
+          "num": 10,
+          "text": "Which of the following has a higher crushing coefficient?",
+          "options": [
+            "Terrestrial sand",
+            "Terrigenic sand",
+            "Fine calcareous oolite",
+            "Coarse coralline debris"
+          ],
+          "correct": 1,
+          "expl": "Terrigenic (land-derived, denser mineral) sand generally shows a higher crushing coefficient (stronger) than looser calcareous/organic-origin aggregates."
+        },
+        {
+          "num": 11,
+          "text": "As per IS: 2720 (Part VII)–1980/87, the weight of the rammer in the modified Proctor test is:",
+          "options": [
+            "4.9 kg",
+            "2.6 kg",
+            "2.5 kg",
+            "3.8 kg"
+          ],
+          "correct": 0,
+          "expl": "The modified Proctor compaction test uses a heavier 4.9 kg rammer (compared to the standard test's 2.6 kg rammer)."
+        },
+        {
+          "num": 12,
+          "text": "The ability of a water-saturated material to endure repeated freezing and thawing with considerable decrease of mechanical strength is known as:",
+          "options": [
+            "Frost resistance",
+            "Weathering resistance",
+            "Water permeability",
+            "Hygroscopicity"
+          ],
+          "correct": 0,
+          "expl": "Frost resistance specifically describes a material's ability to withstand repeated freeze-thaw cycling without significant strength loss."
+        },
+        {
+          "num": 13,
+          "text": "A good building stone should not absorb water more than (repeated):",
+          "options": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "correct": 0,
+          "expl": "A durable building stone should generally not absorb more than about 5% water by weight."
+        },
+        {
+          "num": 14,
+          "text": "Match: Smith's test, Brard's test, Hardness test, Attrition test with: Frost resistance, Frost resistance, Moh's scale, Devil's (Deval abrasion) apparatus.",
+          "options": [
+            "1, 2, 4, 3",
+            "3, 1, 4, 2",
+            "2, 4, 1, 3",
+            "2, 1, 4, 3"
+          ],
+          "correct": 0,
+          "expl": "Smith's and Brard's tests both assess frost resistance; hardness is measured on Moh's scale; attrition (abrasion) is measured using a 'Devil's' apparatus."
+        },
+        {
+          "num": 15,
+          "text": "Following stone is suitable for damp-proofing (repeated):",
+          "options": [
+            "Slate",
+            "Marble",
+            "Laterite",
+            "Granite"
+          ],
+          "correct": 0,
+          "expl": "Slate's dense, low-porosity structure suits it best for damp-proof course applications."
+        },
+        {
+          "num": 16,
+          "text": "The specific gravity of sandstone (repeated) is:",
+          "options": [
+            "2.65 to 2.95",
+            "1.1 to 1.8",
+            "1.8 to 2.65",
+            "2.95 to 3.4"
+          ],
+          "correct": 0,
+          "expl": "Sandstone typically has a specific gravity between 2.65 and 2.95."
+        },
+        {
+          "num": 17,
+          "text": "Which one of the following statements is correct regarding sand bulking?",
+          "options": [
+            "Adding 5% to 60% moisture by weight increases dry sand volume by 18% to 38%",
+            "Volume of fully saturated sand equals that of dry sand",
+            "The bulking of fine sand is more than that of coarse sand",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": "This describes the classic bulking-of-sand relationship: surface moisture up to a peak (around 5–8% moisture) can increase apparent sand volume substantially, roughly in the 18–38% range as moisture rises within that band."
+        },
+        {
+          "num": 18,
+          "text": "A jumper is a tool used for:",
+          "options": [
+            "Testing of stones",
+            "Quarrying of stones",
+            "Dressing of stones",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": "A jumper is a hand tool (or drilling bar) used in quarrying operations to bore holes in rock for blasting."
+        }
+      ]
+    },
+    {
+      "name": "Building Construction, Estimation & Equipment",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Match List-I with List-II: Activity, Event, Dummy, Float with: Resourceless element, Resource consuming element, Spare time, Instantaneous stage.",
+          "options": [
+            "A-I, B-III, C-IV, D-II",
+            "A-II, B-I, C-IV, D-III",
+            "A-II, B-IV, C-I, D-III",
+            "A-III, B-IV, C-I, D-II"
+          ],
+          "correct": 2,
+          "expl": "Activity = resource-consuming element; Event = instantaneous stage; Dummy = resourceless element; Float = spare time."
+        },
+        {
+          "num": 2,
+          "text": "The number of independent equations to be satisfied for static equilibrium in a space structure is:",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "correct": 3,
+          "expl": "A 3D (space) structure requires six independent equilibrium equations (ΣFx=ΣFy=ΣFz=0 and ΣMx=ΣMy=ΣMz=0)."
+        },
+        {
+          "num": 3,
+          "text": "The arrangement of supports provided underneath an existing structure without disturbing its stability is known as:",
+          "options": [
+            "Underpinning",
+            "Scaffolding",
+            "Shoring",
+            "Jacking"
+          ],
+          "correct": 0,
+          "expl": "Underpinning refers to strengthening/extending a foundation beneath an existing structure while it remains stable and in use."
+        },
+        {
+          "num": 4,
+          "text": "The cavity wall is generally provided for:",
+          "options": [
+            "Preventing dampness",
+            "Heat insulation",
+            "Sound insulation",
+            "All of these"
+          ],
+          "correct": 3,
+          "expl": "Cavity walls serve multiple functions: preventing damp penetration, thermal insulation and sound insulation."
+        },
+        {
+          "num": 5,
+          "text": "In the long and short wall method of estimation, the length of the long wall is the centre-to-centre distance plus how much of the wall breadth on each side?",
+          "options": [
+            "One-half",
+            "One-fourth",
+            "One-eighth",
+            "One-sixteenth"
+          ],
+          "correct": 0,
+          "expl": "In this method, the long wall's length = centre-to-centre distance + one-half breadth of the wall at each end."
+        },
+        {
+          "num": 6,
+          "text": "Identify the type of stairs shown as a fan-shaped stair plan:",
+          "options": [
+            "Spiral stairs",
+            "Quarter turn stairs",
+            "Helicoidal stairs",
+            "Open well stairs"
+          ],
+          "correct": 0,
+          "expl": "A fan-shaped plan with winders radiating around a central point is characteristic of spiral stairs."
+        },
+        {
+          "num": 7,
+          "text": "The pipes manufactured from clays and shales of special quality using a hot (vitrification) process are known as:",
+          "options": [
+            "Plastic sewers",
+            "Stoneware sewers",
+            "Brick sewers",
+            "Asbestos cement sewers"
+          ],
+          "correct": 1,
+          "expl": "Stoneware (vitrified clay) pipes are made by firing special clay/shale at high temperature to achieve a dense, impervious product."
+        },
+        {
+          "num": 8,
+          "text": "The exposed vertical surfaces on the sides of an opening after the door/window frame is fitted are called:",
+          "options": [
+            "Reveals",
+            "Frog",
+            "Jambs",
+            "Perpend"
+          ],
+          "correct": 0,
+          "expl": "Reveals are the vertical wall surfaces exposed on the sides of a door/window opening, beyond the frame."
+        },
+        {
+          "num": 9,
+          "text": "Size of a power shovel is represented by the size of its:",
+          "options": [
+            "Hoist line",
+            "Dipper",
+            "Boom",
+            "Cab"
+          ],
+          "correct": 1,
+          "expl": "A power shovel's capacity/size is conventionally rated by the volumetric size (capacity) of its dipper (bucket)."
+        },
+        {
+          "num": 10,
+          "text": "The plinth area of a building does not include:",
+          "options": [
+            "Lift and walls",
+            "Internal shaft for sanitary installations",
+            "Area of cantilevered porch",
+            "Area of walls at floor level"
+          ],
+          "correct": 2,
+          "expl": "The area of a cantilevered porch is excluded from the plinth area computation, unlike enclosed walls, lift shafts and internal service shafts."
+        },
+        {
+          "num": 11,
+          "text": "Which of the following statements regarding cement storage is NOT correct? (1) Bags placed 30 cm from walls all around (2) Cement stacked not more than ten bags high (3) Storage floor made only from 1:2:4 concrete at least 15 cm thick (4) Bags should not be stacked together, to allow free circulation of air.",
+          "options": [
+            "1 & 2 only",
+            "3 & 4 only",
+            "3 only",
+            "2 only"
+          ],
+          "correct": 1,
+          "expl": "Statements 3 and 4 are incorrect — cement bags should actually be stacked close together (touching) to minimize air circulation and moisture ingress, and the storage floor need not be restricted only to 1:2:4 concrete."
+        },
+        {
+          "num": 12,
+          "text": "Which principle of stone masonry emphasizes using stones of varying sizes and shapes to create a stable and visually appealing structure?",
+          "options": [
+            "Ashlar masonry",
+            "Rubble masonry",
+            "Coursed masonry",
+            "Random masonry"
+          ],
+          "correct": 1,
+          "expl": "Rubble masonry uses stones of irregular shapes and sizes, relying on careful placement/bonding for stability and appearance."
+        },
+        {
+          "num": 13,
+          "text": "What principle governs a wall stiffened by buttresses at both ends and continuing beyond them — its effective length (L = c/c distance between buttresses) is:",
+          "options": [
+            "0.8L",
+            "0.9L",
+            "2.0L",
+            "1.0L"
+          ],
+          "correct": 0,
+          "expl": "For a wall stiffened by buttresses at both ends continuing beyond them, IS 456 gives an effective length coefficient of 0.8L."
+        },
+        {
+          "num": 14,
+          "text": "Which pairs are correctly matched regarding aggregate characteristics?",
+          "options": [
+            "Grading: Maximizes cement content",
+            "Particle size and texture: Affects workability",
+            "Absorption and surface moisture: Affects mix proportions",
+            "Bulk density: Significant for stability"
+          ],
+          "correct": 2,
+          "expl": "Absorption and surface moisture of aggregate directly influence effective mix water and therefore must be accounted for in mix proportioning; good grading actually minimizes (not maximizes) required cement content."
+        },
+        {
+          "num": 15,
+          "text": "Which of the below is not to be followed for stone masonry construction (repeated)?",
+          "options": [
+            "Header stones are dumb-bell shaped",
+            "Properly cured for 2–3 weeks",
+            "Construction to be raised uniformly",
+            "Wetted stones to be used"
+          ],
+          "correct": 0,
+          "expl": "Dumb-bell (necked) shaped header stones are a construction defect and should be avoided; headers must be uniform, full-bonding stones."
+        },
+        {
+          "num": 16,
+          "text": "If the scheduled completion time of a project is more than the earliest expected time for completion, the probability of completing within the scheduled time will be:",
+          "options": [
+            "50%",
+            "Less than 50%",
+            "More than 50%",
+            "100%"
+          ],
+          "correct": 2,
+          "expl": "In PERT analysis, if the scheduled time exceeds the expected (mean) completion time, the probability of finishing within schedule exceeds 50%."
+        },
+        {
+          "num": 17,
+          "text": "Blistering on a finished plaster surface refers to:",
+          "options": [
+            "Development of fissures not assignable to structural cause",
+            "Development of one or more local swellings",
+            "Development of a series of hair cracks",
+            "Deposit of soluble salts on the surface"
+          ],
+          "correct": 1,
+          "expl": "Blistering is characterised by small localized swellings/bubbles that form on the plaster surface, often due to trapped air or moisture."
+        },
+        {
+          "num": 18,
+          "text": "According to Indian Standards, the pozzolana content in Portland Pozzolana Cement is (repeated):",
+          "options": [
+            "10% to 25%",
+            "25% to 35%",
+            "35% to 50%",
+            "More than 50%"
+          ],
+          "correct": 1,
+          "expl": "PPC typically has a pozzolana content standardized around 25–35%."
+        }
+      ]
+    },
+    {
+      "name": "Numerical / Calculation Questions",
+      "questions": [
+        {
+          "num": 1,
+          "text": "If in a concrete mix the fineness modulus of coarse aggregate is 7.6, fine aggregate is 2.8, and the economical value of combined FM is 6.4, the proportion of fine aggregate is:",
+          "options": [
+            "25%",
+            "33.33%",
+            "50%",
+            "66.67%"
+          ],
+          "correct": 0,
+          "expl": "% Fine Aggregate = (FM_coarse − FM_combined) / (FM_coarse − FM_fine) × 100 = (7.6 − 6.4)/(7.6 − 2.8) × 100 = 1.2/4.8 × 100 = 25%."
+        },
+        {
+          "num": 2,
+          "text": "The yield of concrete per bag of cement for a mix proportion of 1:1.5:3 (adopting 2/3 as the coefficient) is:",
+          "options": [
+            "0.090 m³",
+            "0.128 m³",
+            "0.135 m³",
+            "0.146 m³"
+          ],
+          "correct": 1,
+          "expl": "Applying the standard dry-volume yield formula for a 1:1.5:3 mix with 0.035 m³ cement per bag and the 2/3 packing coefficient gives a yield of approximately 0.128 m³ per bag."
+        },
+        {
+          "num": 3,
+          "text": "If the compaction factor of a concrete is 0.90, then the workability according to Indian Standards is:",
+          "options": [
+            "Very low",
+            "Low",
+            "Medium",
+            "High"
+          ],
+          "correct": 2,
+          "expl": "A compaction factor of about 0.90 corresponds to medium workability (very low ≈0.78, low ≈0.85, medium ≈0.92, high ≈0.95)."
+        },
+        {
+          "num": 4,
+          "text": "A cement bag contains 0.035 cubic metre of cement by volume. How many bags will one tonne of cement comprise?",
+          "options": [
+            "17",
+            "16",
+            "18",
+            "20"
+          ],
+          "correct": 3,
+          "expl": "Cement bulk density ≈ 1440 kg/m³, so one bag weighs about 1440 × 0.035 = 50.4 kg ≈ 50 kg; 1000 kg ÷ 50 kg/bag = 20 bags."
+        },
+        {
+          "num": 5,
+          "text": "If all the dimensions of a prismatic bar of square cross-section suspended freely from a ceiling are doubled, the total elongation produced by its own weight will increase:",
+          "options": [
+            "Eight times",
+            "Four times",
+            "Three times",
+            "Two times"
+          ],
+          "correct": 1,
+          "expl": "Elongation due to self-weight, δ = ρgL²/2E, is independent of cross-sectional area and proportional to L². Doubling L quadruples the elongation."
+        },
+        {
+          "num": 6,
+          "text": "The approximate ratio of strength of a 15 cm × 30 cm concrete cylinder to that of a 15 cm cube of the same concrete is:",
+          "options": [
+            "1.25",
+            "1.00",
+            "0.85",
+            "0.50"
+          ],
+          "correct": 2,
+          "expl": "A standard cylinder (with height/diameter = 2) typically develops about 80–85% of the strength of an equivalent cube of the same concrete."
+        },
+        {
+          "num": 7,
+          "text": "The approximate quantity of cement (in 50 kg bags) required for 100 m³ of 1:2:4 ratio concrete is:",
+          "options": [
+            "533 bags",
+            "566 bags",
+            "633 bags",
+            "666 bags"
+          ],
+          "correct": 2,
+          "expl": "For a 1:2:4 mix, approximately 6.33 bags of cement are required per m³; for 100 m³ this totals about 633 bags."
+        },
+        {
+          "num": 8,
+          "text": "To make one cubic metre of 1:2:4 (by volume) concrete, the volume of coarse aggregate required is:",
+          "options": [
+            "0.98 m³",
+            "0.88 m³",
+            "0.78 m³",
+            "0.68 m³"
+          ],
+          "correct": 1,
+          "expl": "Using the standard dry-volume (1.54× wet volume) calculation for a 1:2:4 mix, the coarse aggregate volume works out to approximately 0.88 m³."
+        },
+        {
+          "num": 9,
+          "text": "One cubic metre of mild steel weighs about:",
+          "options": [
+            "12560 kg",
+            "1000 kg",
+            "3625 kg",
+            "7850 kg"
+          ],
+          "correct": 3,
+          "expl": "The unit weight (density) of mild steel is approximately 7850 kg/m³."
+        },
+        {
+          "num": 10,
+          "text": "As per IS: 2720 (Part VII)–1980/87, the weight of the rammer in the modified Proctor test is:",
+          "options": [
+            "4.9 kg",
+            "2.6 kg",
+            "2.5 kg",
+            "3.8 kg"
+          ],
+          "correct": 0,
+          "expl": "The modified Proctor test specifies a 4.9 kg rammer falling through a greater height than the standard Proctor test (2.6 kg rammer)."
+        },
+        {
+          "num": 11,
+          "text": "The number of independent equations to be satisfied for static equilibrium in a space structure is:",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "correct": 3,
+          "expl": "For 3D equilibrium: three force equations (ΣFx, ΣFy, ΣFz) and three moment equations (ΣMx, ΣMy, ΣMz) — six in total."
+        },
+        {
+          "num": 12,
+          "text": "Number of bricks required for one cubic metre of brick masonry is approximately:",
+          "options": [
+            "400",
+            "450",
+            "500",
+            "550"
+          ],
+          "correct": 2,
+          "expl": "Given nominal brick size (20×10×10 cm) including mortar joints, approximately 500 bricks are used per cubic metre of brickwork."
+        },
+        {
+          "num": 13,
+          "text": "The effective length of a masonry wall stiffened by buttresses at both ends and continuing beyond these buttresses (L = c/c length between buttresses) is:",
+          "options": [
+            "0.8L",
+            "0.9L",
+            "2.0L",
+            "1.0L"
+          ],
+          "correct": 0,
+          "expl": "IS 456 specifies an effective length factor of 0.8L for a wall continuously stiffened by buttresses at both ends and extending beyond them."
+        },
+        {
+          "num": 14,
+          "text": "According to IS 2212:1991, the normal thickness of a 1½ modular brick wall is:",
+          "options": [
+            "19 cm",
+            "29 cm",
+            "30 cm",
+            "40 cm"
+          ],
+          "correct": 1,
+          "expl": "A 1½-brick wall (using 19 cm modular bricks plus mortar joints) has a nominal thickness of about 29 cm."
+        },
+        {
+          "num": 15,
+          "text": "For a slab of 1 tonne of cement (0.035 m³/bag), and cement density 1440 kg/m³, verify: number of bags in 1 tonne is:",
+          "options": [
+            "17",
+            "16",
+            "18",
+            "20"
+          ],
+          "correct": 3,
+          "expl": "1440 kg/m³ × 0.035 m³ = 50.4 kg per bag ≈ 50 kg; 1000 kg ÷ 50 kg = 20 bags."
+        }
+      ]
+    },
+    {
+      "name": "Repair & Maintenance – Deterioration, Defects & Diagnosis",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The primary objective of building maintenance is to:",
+          "options": [
+            "Enhance architectural beauty",
+            "Increase plinth area",
+            "Preserve structural safety and serviceability",
+            "Modify the original design"
+          ],
+          "correct": 2,
+          "expl": "Building maintenance is fundamentally aimed at preserving the structure's safety, serviceability and functional performance over its life."
+        },
+        {
+          "num": 2,
+          "text": "Which of the following best explains the need for preventive maintenance of buildings?",
+          "options": [
+            "To repair visible damages only",
+            "To postpone deterioration before defects appear",
+            "To redesign structural components",
+            "To improve construction speed"
+          ],
+          "correct": 1,
+          "expl": "Preventive maintenance acts proactively, before visible defects appear, to slow down or postpone deterioration."
+        },
+        {
+          "num": 3,
+          "text": "Deterioration of buildings due to moisture ingress mainly results in:",
+          "options": [
+            "Increase in compressive strength",
+            "Reduction in thermal expansion",
+            "Cracking, dampness, and corrosion",
+            "Improved durability"
+          ],
+          "correct": 2,
+          "expl": "Moisture ingress typically leads to dampness, corrosion of embedded steel, and associated cracking, all reducing durability."
+        },
+        {
+          "num": 4,
+          "text": "Which agency of deterioration is responsible for sulphate attack in concrete?",
+          "options": [
+            "Physical agency",
+            "Chemical agency",
+            "Biological agency",
+            "Mechanical agency"
+          ],
+          "correct": 1,
+          "expl": "Sulphate attack is a chemical reaction between waterborne sulphates and cement hydration products (a chemical deterioration mechanism)."
+        },
+        {
+          "num": 5,
+          "text": "Repeated wetting and drying of masonry walls primarily causes:",
+          "options": [
+            "Elastic deformation",
+            "Plastic flow",
+            "Surface cracking and salt deposition",
+            "Increase in density"
+          ],
+          "correct": 2,
+          "expl": "Cyclic wetting-drying promotes salt migration/crystallization at the surface (efflorescence) and induced surface cracking."
+        },
+        {
+          "num": 6,
+          "text": "Which environmental factor accelerates carbonation in reinforced concrete?",
+          "options": [
+            "High humidity without CO2",
+            "Dry air with high CO2 concentration",
+            "Complete water saturation",
+            "Absence of oxygen"
+          ],
+          "correct": 1,
+          "expl": "Carbonation is fastest in moderate humidity with high atmospheric CO2 concentration; fully saturated or completely dry concrete carbonates more slowly."
+        },
+        {
+          "num": 7,
+          "text": "The most common source of corrosion in RCC structures is:",
+          "options": [
+            "Poor architectural planning",
+            "Increase in dead load",
+            "Ingress of moisture and oxygen",
+            "Over-reinforcement"
+          ],
+          "correct": 2,
+          "expl": "Steel corrosion in RCC is electrochemical, requiring the ingress of both moisture and oxygen (along with loss of the passive alkaline layer)."
+        },
+        {
+          "num": 8,
+          "text": "Which of the following defects is primarily caused by foundation settlement?",
+          "options": [
+            "Map cracking",
+            "Vertical hairline cracks",
+            "Diagonal cracks in walls",
+            "Efflorescence"
+          ],
+          "correct": 2,
+          "expl": "Differential foundation settlement typically produces diagonal (stepped) cracks in masonry walls, tracking the settlement pattern."
+        },
+        {
+          "num": 9,
+          "text": "Efflorescence in brick masonry indicates the presence of:",
+          "options": [
+            "Organic matter",
+            "Alkali salts",
+            "Excess cement",
+            "Iron oxide"
+          ],
+          "correct": 1,
+          "expl": "Efflorescence is the crystalline deposit formed when soluble alkali salts migrate to the surface with moisture and evaporate."
+        },
+        {
+          "num": 10,
+          "text": "Which type of maintenance is carried out after noticeable damage has occurred?",
+          "options": [
+            "Preventive maintenance",
+            "Routine maintenance",
+            "Corrective maintenance",
+            "Predictive maintenance"
+          ],
+          "correct": 2,
+          "expl": "Corrective maintenance is reactive, undertaken once a defect or damage has already become apparent."
+        },
+        {
+          "num": 11,
+          "text": "Biological growth on building surfaces mainly results from:",
+          "options": [
+            "Poor workmanship",
+            "High ambient temperature",
+            "Persistent damp conditions",
+            "Excessive live load"
+          ],
+          "correct": 2,
+          "expl": "Algae, moss and fungal growth need sustained moisture; persistent dampness is the primary driver of biological surface growth."
+        },
+        {
+          "num": 12,
+          "text": "Which defect is most likely caused by thermal movement in buildings?",
+          "options": [
+            "Settlement cracks",
+            "Horizontal cracks near roof level",
+            "Corrosion-induced cracks",
+            "Damp patches"
+          ],
+          "correct": 1,
+          "expl": "Thermal expansion/contraction of roof slabs typically produces horizontal cracking near the roof/top-storey level where restraint occurs."
+        },
+        {
+          "num": 13,
+          "text": "Atmospheric pollution mainly affects buildings by:",
+          "options": [
+            "Increasing load intensity",
+            "Improving strength of concrete",
+            "Chemical attack on surfaces",
+            "Reducing water absorption"
+          ],
+          "correct": 2,
+          "expl": "Pollutants (SO2, acid rain, etc.) chemically attack building surfaces, causing erosion and discoloration."
+        },
+        {
+          "num": 14,
+          "text": "Which maintenance activity ensures early detection of defects?",
+          "options": [
+            "Structural redesign",
+            "Periodic inspection",
+            "Emergency repair",
+            "Major rehabilitation"
+          ],
+          "correct": 1,
+          "expl": "Regular, scheduled periodic inspections are the primary means of catching defects at an early, manageable stage."
+        },
+        {
+          "num": 15,
+          "text": "The deterioration of timber due to insect attack is mainly classified as:",
+          "options": [
+            "Chemical deterioration",
+            "Mechanical deterioration",
+            "Biological deterioration",
+            "Physical deterioration"
+          ],
+          "correct": 2,
+          "expl": "Insect (termite/borer) attack is a form of biological deterioration caused by living organisms."
+        },
+        {
+          "num": 16,
+          "text": "Which defect in buildings is primarily an indicator of poor drainage?",
+          "options": [
+            "Shear cracks",
+            "Rising dampness",
+            "Thermal cracks",
+            "Shrinkage cracks"
+          ],
+          "correct": 1,
+          "expl": "Rising dampness is closely linked to poor site drainage and groundwater/surface water accumulation near the foundation."
+        },
+        {
+          "num": 17,
+          "text": "Chemical attack on concrete generally leads to:",
+          "options": [
+            "Increase in hardness",
+            "Volume reduction",
+            "Expansion and cracking",
+            "Improved impermeability"
+          ],
+          "correct": 2,
+          "expl": "Chemical attacks such as sulphate attack typically produce expansive reaction products, causing cracking and spalling."
+        },
+        {
+          "num": 18,
+          "text": "Which factor does NOT significantly influence building deterioration?",
+          "options": [
+            "Exposure conditions",
+            "Quality of materials",
+            "Maintenance frequency",
+            "Building orientation"
+          ],
+          "correct": 3,
+          "expl": "Building orientation has comparatively minor influence on deterioration compared to exposure conditions, material quality and maintenance regime."
+        },
+        {
+          "num": 19,
+          "text": "Rising dampness in buildings is primarily due to:",
+          "options": [
+            "Roof leakage",
+            "Capillary action of water",
+            "Condensation",
+            "Thermal expansion"
+          ],
+          "correct": 1,
+          "expl": "Rising damp is caused by groundwater being drawn upward through masonry pores via capillary action, in the absence of an effective DPC."
+        },
+        {
+          "num": 20,
+          "text": "The most economical stage to address building deterioration is:",
+          "options": [
+            "After structural failure",
+            "During emergency repair",
+            "At early detection stage",
+            "At reconstruction stage"
+          ],
+          "correct": 2,
+          "expl": "Addressing defects at the earliest detectable stage is always the most economical, avoiding escalation to costlier emergency or full reconstruction."
+        },
+        {
+          "num": 21,
+          "text": "The first step in investigation of a distressed building should be:",
+          "options": [
+            "Structural strengthening",
+            "Visual inspection",
+            "Load testing",
+            "Demolition of weak parts"
+          ],
+          "correct": 1,
+          "expl": "Investigations always begin with a thorough visual inspection before deciding on further tests or interventions."
+        },
+        {
+          "num": 22,
+          "text": "Hairline cracks in plaster without structural distortion generally indicate:",
+          "options": [
+            "Foundation failure",
+            "Thermal or shrinkage effects",
+            "Overloading of slab",
+            "Corrosion of reinforcement"
+          ],
+          "correct": 1,
+          "expl": "Fine hairline cracks with no structural distortion are typically superficial, caused by thermal movement or drying shrinkage of the plaster/mortar."
+        },
+        {
+          "num": 23,
+          "text": "Which test is most commonly used for assessing in-situ strength of existing concrete?",
+          "options": [
+            "Slump test",
+            "Rebound hammer test",
+            "Vicat test",
+            "Le-Chatelier test"
+          ],
+          "correct": 1,
+          "expl": "The rebound hammer test is a widely used non-destructive method to assess the in-place strength of hardened, existing concrete."
+        },
+        {
+          "num": 24,
+          "text": "Deep diagonal cracks near openings in load-bearing walls generally suggest:",
+          "options": [
+            "Drying shrinkage",
+            "Chemical attack",
+            "Differential settlement",
+            "Poor plaster quality"
+          ],
+          "correct": 2,
+          "expl": "Deep diagonal cracking radiating from openings is a classic signature of differential foundation settlement."
+        },
+        {
+          "num": 25,
+          "text": "The presence of rust stains on concrete surfaces indicates:",
+          "options": [
+            "Alkali–aggregate reaction",
+            "Carbonation only",
+            "Corrosion of reinforcement",
+            "Sulphate attack"
+          ],
+          "correct": 2,
+          "expl": "Rust staining on the concrete surface reveals corrosion products from embedded reinforcing steel bleeding through cracks or pores."
+        },
+        {
+          "num": 26,
+          "text": "Which instrument is used to detect internal voids and honeycombing in concrete?",
+          "options": [
+            "Schmidt hammer",
+            "Ultrasonic Pulse Velocity test",
+            "Vicat apparatus",
+            "Flow table"
+          ],
+          "correct": 1,
+          "expl": "UPV testing measures the transit time of ultrasonic pulses through concrete, revealing internal voids, honeycombing and cracks by slower wave velocity."
+        },
+        {
+          "num": 27,
+          "text": "Widespread fine cracks forming a network pattern on a concrete surface are known as:",
+          "options": [
+            "Structural cracks",
+            "Diagonal cracks",
+            "Map cracking",
+            "Settlement cracks"
+          ],
+          "correct": 2,
+          "expl": "A fine, interconnected surface crack network is termed 'map cracking' or crazing."
+        },
+        {
+          "num": 28,
+          "text": "Which observation confirms carbonation depth in concrete during investigation?",
+          "options": [
+            "Visual inspection",
+            "Phenolphthalein test",
+            "Slump test",
+            "Core cutting"
+          ],
+          "correct": 1,
+          "expl": "Spraying phenolphthalein indicator solution on a freshly broken/cored surface reveals the carbonation front — carbonated (low-pH) zones remain colourless while sound alkaline concrete turns pink."
+        },
+        {
+          "num": 29,
+          "text": "Bulging or peeling of plaster from walls usually indicates:",
+          "options": [
+            "Poor brick quality",
+            "Thermal expansion",
+            "Dampness behind plaster",
+            "Overloading of wall"
+          ],
+          "correct": 2,
+          "expl": "Loss of bond leading to bulging/peeling plaster is most commonly caused by trapped moisture behind the plaster layer."
+        },
+        {
+          "num": 30,
+          "text": "Which defect diagnosis is associated with a hollow sound when tapping a concrete surface?",
+          "options": [
+            "Good compaction",
+            "Carbonation",
+            "Delamination or debonding",
+            "Chemical attack"
+          ],
+          "correct": 2,
+          "expl": "A hollow sound on tapping indicates a subsurface void or separation — delamination or debonding of the concrete cover/layer."
+        },
+        {
+          "num": 31,
+          "text": "Which investigation method involves extracting samples from existing concrete?",
+          "options": [
+            "Rebound hammer test",
+            "UPV test",
+            "Core cutting test",
+            "Visual inspection"
+          ],
+          "correct": 2,
+          "expl": "Core cutting physically extracts cylindrical concrete samples for direct laboratory strength/composition testing."
+        },
+        {
+          "num": 32,
+          "text": "Excessive deflection in beams without visible cracks generally indicates:",
+          "options": [
+            "Corrosion failure",
+            "Poor concrete strength",
+            "Long-term creep",
+            "Sudden overloading"
+          ],
+          "correct": 2,
+          "expl": "Gradual, time-dependent deflection without cracking is typically attributed to long-term creep of the concrete under sustained load."
+        },
+        {
+          "num": 33,
+          "text": "Which defect is identified by white powdery deposits on wall surfaces?",
+          "options": [
+            "Dampness",
+            "Efflorescence",
+            "Corrosion",
+            "Spalling"
+          ],
+          "correct": 1,
+          "expl": "White powdery salt deposits are the classic signature of efflorescence."
+        },
+        {
+          "num": 34,
+          "text": "Cracks that widen at the top and narrow at the bottom of a wall usually indicate:",
+          "options": [
+            "Settlement at base",
+            "Roof leakage",
+            "Thermal expansion",
+            "Shrinkage of plaster"
+          ],
+          "correct": 0,
+          "expl": "A crack tapering from wide at top to narrow at bottom typically reflects settlement/rotation occurring at the base (foundation)."
+        },
+        {
+          "num": 35,
+          "text": "Which investigation is essential before strengthening an RCC member?",
+          "options": [
+            "Visual inspection only",
+            "Rebound hammer test only",
+            "Structural analysis with test data",
+            "Surface cleaning"
+          ],
+          "correct": 2,
+          "expl": "Strengthening design requires a combination of structural analysis and empirical (test) data on existing material condition and capacity."
+        },
+        {
+          "num": 36,
+          "text": "Cracks parallel to reinforcement in RCC usually indicate:",
+          "options": [
+            "Thermal stress",
+            "Shrinkage",
+            "Corrosion of steel",
+            "Over-reinforcement"
+          ],
+          "correct": 2,
+          "expl": "Cracks running parallel to and directly above reinforcing bars are a classic sign of corrosion, as rust expansion splits the concrete cover."
+        },
+        {
+          "num": 37,
+          "text": "Which defect investigation relies mainly on historical data and records?",
+          "options": [
+            "Visual inspection",
+            "Structural monitoring",
+            "Desk study",
+            "Load testing"
+          ],
+          "correct": 2,
+          "expl": "A desk study involves reviewing historical drawings, construction records and maintenance history before field investigation."
+        },
+        {
+          "num": 38,
+          "text": "Which sign confirms loss of bond between steel and concrete?",
+          "options": [
+            "Efflorescence",
+            "Cracking along reinforcement",
+            "Damp patches",
+            "Bulging plaster"
+          ],
+          "correct": 1,
+          "expl": "Cracking running along the line of reinforcement is indicative of bond deterioration/loss between steel and surrounding concrete."
+        },
+        {
+          "num": 39,
+          "text": "Which diagnostic method is most suitable for detecting moisture paths in walls?",
+          "options": [
+            "Rebound hammer test",
+            "UPV test",
+            "Moisture meter survey",
+            "Slump test"
+          ],
+          "correct": 2,
+          "expl": "A moisture meter survey directly measures and maps moisture content across wall surfaces to trace damp paths."
+        },
+        {
+          "num": 40,
+          "text": "The main purpose of detailed investigation in building maintenance is to:",
+          "options": [
+            "Reduce inspection cost",
+            "Identify cosmetic defects only",
+            "Determine root cause before repair",
+            "Replace damaged components"
+          ],
+          "correct": 2,
+          "expl": "Detailed investigation aims to diagnose the underlying (root) cause of distress so that appropriate, lasting repairs can be designed."
+        },
+        {
+          "num": 41,
+          "text": "Fine cracks appearing on freshly plastered surfaces within a few days are mainly due to:",
+          "options": [
+            "Differential settlement",
+            "Drying shrinkage of mortar",
+            "Corrosion of reinforcement",
+            "Sulphate attack"
+          ],
+          "correct": 1,
+          "expl": "Early-age fine cracking in fresh plaster is typically caused by rapid drying shrinkage of the mortar."
+        },
+        {
+          "num": 42,
+          "text": "Which defect in RCC structures is directly associated with expansion of steel reinforcement?",
+          "options": [
+            "Honeycombing",
+            "Spalling of concrete cover",
+            "Plastic shrinkage cracks",
+            "Creep deformation"
+          ],
+          "correct": 1,
+          "expl": "Corroding steel expands (rust occupies more volume than steel), generating internal pressure that spalls off the concrete cover."
+        },
+        {
+          "num": 43,
+          "text": "Vertical cracks at the junction of a brick masonry wall and RCC column are mainly due to:",
+          "options": [
+            "Poor workmanship",
+            "Differential thermal and shrinkage movement",
+            "Excess live load",
+            "Chemical attack"
+          ],
+          "correct": 1,
+          "expl": "The differing thermal and shrinkage behaviour of masonry versus RCC causes differential movement and cracking at their junction."
+        },
+        {
+          "num": 44,
+          "text": "Which defect is most commonly observed due to poor compaction of concrete?",
+          "options": [
+            "Carbonation",
+            "Honeycombing",
+            "Efflorescence",
+            "Crazing"
+          ],
+          "correct": 1,
+          "expl": "Inadequate compaction leaves voids around coarse aggregate, producing the characteristic honeycombed surface."
+        },
+        {
+          "num": 45,
+          "text": "Rising dampness is usually visible in walls up to a height of:",
+          "options": [
+            "0.3 m",
+            "0.6 m",
+            "1.0 m",
+            "2.0 m"
+          ],
+          "correct": 1,
+          "expl": "Rising damp, driven by capillary action, typically manifests up to about 0.6 m above ground/plinth level before evaporation limits further rise."
+        },
+        {
+          "num": 46,
+          "text": "Efflorescence is mainly objectionable because it:",
+          "options": [
+            "Reduces compressive strength",
+            "Causes structural instability",
+            "Indicates moisture movement and salt presence",
+            "Increases load on walls"
+          ],
+          "correct": 2,
+          "expl": "Efflorescence is primarily an aesthetic/diagnostic issue signalling ongoing moisture movement and soluble salt migration, rather than an immediate structural threat."
+        },
+        {
+          "num": 47,
+          "text": "Which crack type generally does NOT affect structural safety?",
+          "options": [
+            "Diagonal crack due to settlement",
+            "Shear crack in beam",
+            "Hairline shrinkage crack",
+            "Flexural crack in slab"
+          ],
+          "correct": 2,
+          "expl": "Hairline shrinkage cracks are typically superficial and non-structural, unlike settlement, shear or significant flexural cracks."
+        },
+        {
+          "num": 48,
+          "text": "The primary cause of map cracking on concrete surfaces is:",
+          "options": [
+            "Overloading",
+            "Improper curing",
+            "Foundation failure",
+            "Corrosion of steel"
+          ],
+          "correct": 1,
+          "expl": "Map cracking (crazing) is generally caused by improper/inadequate curing leading to rapid surface drying shrinkage."
+        },
+        {
+          "num": 49,
+          "text": "Which defect in concrete indicates loss of alkalinity?",
+          "options": [
+            "Honeycombing",
+            "Carbonation",
+            "Bleeding",
+            "Segregation"
+          ],
+          "correct": 1,
+          "expl": "Carbonation converts calcium hydroxide to calcium carbonate, reducing pH (alkalinity) and destroying the passive protective layer on reinforcement."
+        },
+        {
+          "num": 50,
+          "text": "Cracks that are wider at the bottom and narrow at the top of a wall usually indicate:",
+          "options": [
+            "Roof leakage",
+            "Thermal expansion",
+            "Upward soil pressure",
+            "Heave of foundation soil"
+          ],
+          "correct": 3,
+          "expl": "A crack widening toward the base with narrowing upward typically reflects heaving (upward movement) of the foundation soil."
+        },
+        {
+          "num": 51,
+          "text": "Which defect in masonry walls is commonly caused by soluble salts present in bricks or mortar?",
+          "options": [
+            "Bulging",
+            "Efflorescence",
+            "Settlement cracking",
+            "Spalling"
+          ],
+          "correct": 1,
+          "expl": "Soluble salts inherent in bricks/mortar migrating with moisture and crystallizing on the surface produce efflorescence."
+        },
+        {
+          "num": 52,
+          "text": "Which defect is primarily associated with repeated freezing and thawing cycles?",
+          "options": [
+            "Plastic shrinkage",
+            "Frost damage",
+            "Carbonation",
+            "Sulphate attack"
+          ],
+          "correct": 1,
+          "expl": "Frost (freeze-thaw) damage results from the expansive pressure of freezing water within saturated pores over repeated cycles."
+        },
+        {
+          "num": 53,
+          "text": "Spalling in concrete is accelerated mainly by:",
+          "options": [
+            "High cement content",
+            "Presence of reinforcement corrosion",
+            "Proper curing",
+            "Low water–cement ratio"
+          ],
+          "correct": 1,
+          "expl": "Corrosion-induced expansion of reinforcing steel is a primary driver accelerating spalling of the concrete cover."
+        },
+        {
+          "num": 54,
+          "text": "Which defect in RCC slabs is most commonly due to overloading?",
+          "options": [
+            "Hairline surface cracks",
+            "Flexural cracks at midspan",
+            "Map cracking",
+            "Efflorescence"
+          ],
+          "correct": 1,
+          "expl": "Overloading of a slab typically manifests as flexural cracking at midspan, where bending moments are maximum."
+        },
+        {
+          "num": 55,
+          "text": "Bulging of masonry walls generally indicates:",
+          "options": [
+            "Excessive live load",
+            "Poor mortar quality",
+            "Lateral pressure or moisture action",
+            "Thermal contraction"
+          ],
+          "correct": 2,
+          "expl": "Wall bulging typically results from lateral pressure (e.g. from soil, or from internal expansive moisture/salt action) rather than vertical/live loads."
+        },
+        {
+          "num": 56,
+          "text": "Which defect is directly linked with poor quality bricks having high water absorption?",
+          "options": [
+            "Carbonation",
+            "Rising dampness",
+            "Honeycombing",
+            "Creep"
+          ],
+          "correct": 1,
+          "expl": "Highly absorptive bricks readily draw up and hold moisture, contributing to rising dampness in the masonry."
+        },
+        {
+          "num": 57,
+          "text": "Which crack pattern indicates shear failure in RCC beams?",
+          "options": [
+            "Vertical cracks at midspan",
+            "Horizontal cracks near top",
+            "Diagonal cracks near supports",
+            "Random surface cracks"
+          ],
+          "correct": 2,
+          "expl": "Shear failure in beams is characterised by diagonal cracks concentrated near the supports, where shear force is greatest."
+        },
+        {
+          "num": 58,
+          "text": "Which defect is most influenced by atmospheric pollution?",
+          "options": [
+            "Creep",
+            "Chemical surface erosion",
+            "Settlement cracking",
+            "Plastic shrinkage"
+          ],
+          "correct": 1,
+          "expl": "Airborne pollutants (acidic gases, particulates) chemically attack and erode building surfaces over time."
+        },
+        {
+          "num": 59,
+          "text": "Which defect is mainly due to excessive water–cement ratio in concrete?",
+          "options": [
+            "Increased strength",
+            "Reduced permeability",
+            "Higher shrinkage cracks",
+            "Improved durability"
+          ],
+          "correct": 2,
+          "expl": "Excess water increases porosity and drying shrinkage, leading to greater shrinkage cracking and reduced durability/strength."
+        },
+        {
+          "num": 60,
+          "text": "Which condition primarily governs the severity of corrosion-related defects in RCC?",
+          "options": [
+            "Shape of member",
+            "Exposure environment",
+            "Type of aggregate",
+            "Cement brand"
+          ],
+          "correct": 1,
+          "expl": "The severity of reinforcement corrosion is governed mainly by the exposure environment (chloride presence, humidity, carbonation exposure)."
+        },
+        {
+          "num": 61,
+          "text": "Which crack repair diagnosis is associated with active corrosion rather than past corrosion in RCC?",
+          "options": [
+            "Old rust stains without cracking",
+            "Cracks parallel to reinforcement with dampness",
+            "Carbonated surface only",
+            "Smooth concrete surface"
+          ],
+          "correct": 1,
+          "expl": "Fresh cracks along reinforcement combined with visible dampness indicate ongoing (active), not merely historic, corrosion activity."
+        },
+        {
+          "num": 62,
+          "text": "Which defect suggests poor workmanship during concreting rather than a design deficiency?",
+          "options": [
+            "Flexural cracks",
+            "Shear cracks",
+            "Honeycombing",
+            "Settlement cracks"
+          ],
+          "correct": 2,
+          "expl": "Honeycombing results from poor placement/compaction practices during concreting — a workmanship issue rather than a design flaw."
+        },
+        {
+          "num": 63,
+          "text": "Which sign confirms carbonation-induced corrosion in RCC primarily occurs due to:",
+          "options": [
+            "Increase in concrete alkalinity",
+            "Reduction of pH of concrete",
+            "Excess water curing",
+            "High cement content"
+          ],
+          "correct": 1,
+          "expl": "Carbonation lowers the concrete's alkalinity (pH), destroying the passive film that normally protects embedded steel, thereby triggering corrosion."
+        },
+        {
+          "num": 64,
+          "text": "Which defect in RCC roofs directly indicates failure of expansion joints?",
+          "options": [
+            "Random surface cracks",
+            "Cracks near parapet walls",
+            "Cracks along joint line with leakage",
+            "Honeycombing"
+          ],
+          "correct": 2,
+          "expl": "Failed expansion joints show characteristic cracking and water leakage precisely along the joint line."
+        },
+        {
+          "num": 65,
+          "text": "Which defect suggests failure of roof slope design?",
+          "options": [
+            "Carbonation",
+            "Ponding and seepage marks",
+            "Honeycombing",
+            "Plastic shrinkage"
+          ],
+          "correct": 1,
+          "expl": "Inadequate roof slope causes standing water (ponding), leading to visible seepage marks and eventual leakage."
+        }
+      ]
+    },
+    {
+      "name": "Repair & Maintenance – Repair Techniques & Materials",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The primary objective of surface preparation before concrete repair is to:",
+          "options": [
+            "Improve appearance only",
+            "Reduce repair material cost",
+            "Ensure proper bond between old and new material",
+            "Increase concrete strength"
+          ],
+          "correct": 2,
+          "expl": "Surface preparation is done chiefly to achieve a sound, clean substrate that ensures good bonding between the existing concrete and new repair material."
+        },
+        {
+          "num": 2,
+          "text": "Which method of surface preparation uses compressed air or water at high pressure?",
+          "options": [
+            "Chipping",
+            "Wire brushing",
+            "Sand blasting",
+            "Hand scraping"
+          ],
+          "correct": 2,
+          "expl": "Sand blasting propels abrasive particles using compressed air (or water) at high pressure to clean/roughen a surface."
+        },
+        {
+          "num": 3,
+          "text": "Which repair material is most suitable for filling fine non-structural cracks in concrete?",
+          "options": [
+            "Cement mortar",
+            "Epoxy resin",
+            "Polymer-modified mortar",
+            "Bituminous compound"
+          ],
+          "correct": 1,
+          "expl": "Low-viscosity epoxy resin can penetrate and effectively fill very fine (non-structural) cracks."
+        },
+        {
+          "num": 4,
+          "text": "Routing and sealing of cracks is generally adopted for:",
+          "options": [
+            "Active structural cracks",
+            "Hairline shrinkage cracks",
+            "Wide cracks with corrosion",
+            "Foundation cracks"
+          ],
+          "correct": 1,
+          "expl": "Routing and sealing (V-grooving and filling with sealant) is a simple technique suited to fine, non-structural (e.g. shrinkage) cracks."
+        },
+        {
+          "num": 5,
+          "text": "Which material is commonly used as a bonding agent between old concrete and repair mortar?",
+          "options": [
+            "Lime slurry",
+            "Cement slurry",
+            "Epoxy bonding compound",
+            "Bitumen emulsion"
+          ],
+          "correct": 2,
+          "expl": "Epoxy bonding compounds provide a strong, reliable adhesive interface between old and new concrete/mortar in repair work."
+        },
+        {
+          "num": 6,
+          "text": "Which technique is most suitable for repairing honeycombed concrete areas?",
+          "options": [
+            "Surface painting",
+            "Pressure grouting",
+            "Removal and replacement with repair mortar",
+            "White washing"
+          ],
+          "correct": 2,
+          "expl": "Severely honeycombed concrete requires removal of the defective material and replacement with sound repair mortar/concrete."
+        },
+        {
+          "num": 7,
+          "text": "Shotcreting is primarily used in repair works to:",
+          "options": [
+            "Improve aesthetics",
+            "Increase thickness of plaster",
+            "Restore and strengthen damaged concrete sections",
+            "Seal surface cracks only"
+          ],
+          "correct": 2,
+          "expl": "Shotcrete (sprayed concrete/mortar) is used to restore lost section and strengthen damaged or deteriorated concrete members."
+        },
+        {
+          "num": 8,
+          "text": "Which property of polymer-modified mortar makes it suitable for repair works?",
+          "options": [
+            "High permeability",
+            "Low bond strength",
+            "Improved adhesion and flexibility",
+            "Delayed setting"
+          ],
+          "correct": 2,
+          "expl": "Polymer modification enhances bond strength, flexibility and reduces permeability, making such mortars well suited to repair applications."
+        },
+        {
+          "num": 9,
+          "text": "Which crack repair method involves injecting material under pressure?",
+          "options": [
+            "Routing and sealing",
+            "Stitching",
+            "Injection grouting",
+            "Overlaying"
+          ],
+          "correct": 2,
+          "expl": "Injection grouting forces (often epoxy) grout under pressure into cracks to restore monolithic integrity."
+        },
+        {
+          "num": 10,
+          "text": "Which material is most commonly used for grouting fine cracks in RCC structures?",
+          "options": [
+            "Cement grout",
+            "Lime grout",
+            "Epoxy grout",
+            "Bituminous grout"
+          ],
+          "correct": 2,
+          "expl": "Epoxy grout, with its very low viscosity and high strength/adhesion, is preferred for injecting fine cracks in RCC."
+        },
+        {
+          "num": 11,
+          "text": "Which method of crack repair involves inserting steel bars across cracks?",
+          "options": [
+            "Stitching",
+            "Sealing",
+            "Overlaying",
+            "Grouting"
+          ],
+          "correct": 0,
+          "expl": "Stitching uses steel staples/bars drilled and grouted across a crack to mechanically tie the two sides together."
+        },
+        {
+          "num": 12,
+          "text": "The main disadvantage of cement mortar repair in thin sections is:",
+          "options": [
+            "High cost",
+            "Low availability",
+            "Shrinkage cracking",
+            "Poor workability"
+          ],
+          "correct": 2,
+          "expl": "Cement mortar applied in thin repair layers is prone to drying shrinkage cracking due to the high surface-to-volume ratio."
+        },
+        {
+          "num": 13,
+          "text": "Which surface preparation technique is most effective for removing oil and grease from concrete?",
+          "options": [
+            "Chipping",
+            "Acid etching",
+            "Sand blasting",
+            "Wire brushing"
+          ],
+          "correct": 1,
+          "expl": "Acid etching (or degreasing agents) is effective at breaking down and removing oil/grease contamination that mechanical methods alone cannot fully remove."
+        },
+        {
+          "num": 14,
+          "text": "Which repair technique is preferred for extensive shallow surface defects in concrete slabs?",
+          "options": [
+            "Crack stitching",
+            "Pressure grouting",
+            "Overlaying",
+            "Injection sealing"
+          ],
+          "correct": 2,
+          "expl": "Overlaying (applying a new topping/repair layer) is well suited to widespread shallow surface defects across a slab."
+        },
+        {
+          "num": 15,
+          "text": "Which property of repair material is most critical for overhead repairs?",
+          "options": [
+            "High density",
+            "High slump",
+            "Non-sag behaviour",
+            "Slow setting"
+          ],
+          "correct": 2,
+          "expl": "For overhead (soffit) repairs, the material must not sag or fall off before setting — non-sag (thixotropic) behaviour is critical."
+        },
+        {
+          "num": 16,
+          "text": "Which method of surface preparation creates a roughened profile without damaging sound concrete?",
+          "options": [
+            "Heavy chipping",
+            "Needle gunning",
+            "Light sand blasting",
+            "Mechanical breaking"
+          ],
+          "correct": 2,
+          "expl": "Light sand blasting roughens the surface texture sufficiently for bonding, without damaging the underlying sound concrete."
+        },
+        {
+          "num": 17,
+          "text": "Which repair material is most suitable where rapid strength gain is required?",
+          "options": [
+            "Lime mortar",
+            "Ordinary cement mortar",
+            "Rapid hardening cement-based repair mortar",
+            "Gypsum plaster"
+          ],
+          "correct": 2,
+          "expl": "Rapid-hardening, cement-based proprietary repair mortars are specifically formulated for fast strength gain in urgent repair situations."
+        },
+        {
+          "num": 18,
+          "text": "Which defect repair requires removal of corroded reinforcement (rust) before application of repair mortar?",
+          "options": [
+            "Efflorescence",
+            "Honeycombing",
+            "Corrosion-induced spalling",
+            "Plastic shrinkage cracking"
+          ],
+          "correct": 2,
+          "expl": "Repairing corrosion-induced spalling requires cleaning rust off (and sometimes replacing) the corroded reinforcement before applying new repair mortar."
+        },
+        {
+          "num": 19,
+          "text": "Which surface preparation step is essential before applying epoxy bonding agents?",
+          "options": [
+            "Keeping surface wet",
+            "Leaving laitance intact",
+            "Ensuring dry and clean surface",
+            "Applying curing compound"
+          ],
+          "correct": 2,
+          "expl": "Epoxy bonding agents require a dry, clean, laitance-free surface for effective adhesion, unlike cementitious bonding agents that may need a damp surface."
+        },
+        {
+          "num": 20,
+          "text": "Which factor most influences selection of crack repair method?",
+          "options": [
+            "Age of building",
+            "Width and activity of crack",
+            "Colour of surface",
+            "Location of building"
+          ],
+          "correct": 1,
+          "expl": "The choice of repair method depends primarily on whether the crack is active (still moving) or dormant, and on its width."
+        },
+        {
+          "num": 21,
+          "text": "The most critical first step in repairing corrosion-affected RCC members is to:",
+          "options": [
+            "Apply surface coating",
+            "Remove rust stains",
+            "Remove loose concrete and expose reinforcement",
+            "Increase concrete cover thickness"
+          ],
+          "correct": 2,
+          "expl": "All loose, delaminated concrete must first be removed to expose the corroded reinforcement fully before any treatment or repair can proceed."
+        },
+        {
+          "num": 22,
+          "text": "After cleaning corroded reinforcement, which treatment is applied to protect steel before repair?",
+          "options": [
+            "Cement slurry coating",
+            "Bituminous paint",
+            "Anti-corrosion protective coating",
+            "Lime wash"
+          ],
+          "correct": 2,
+          "expl": "A specialized anti-corrosion protective coating (e.g. zinc-rich or polymer-modified cementitious coating) is applied to cleaned steel before patching."
+        },
+        {
+          "num": 23,
+          "text": "Which method is most suitable for restoring load-carrying capacity of severely corroded RCC columns?",
+          "options": [
+            "Surface painting",
+            "Cement plastering",
+            "Jacketing of column",
+            "White washing"
+          ],
+          "correct": 2,
+          "expl": "Column jacketing (adding a reinforced concrete or steel jacket) is used to restore/enhance load capacity of severely deteriorated columns."
+        },
+        {
+          "num": 24,
+          "text": "Which method is commonly adopted for repairing a failed damp-proof course in existing buildings?",
+          "options": [
+            "Cement plastering",
+            "Chemical injection method",
+            "White washing",
+            "Epoxy grouting"
+          ],
+          "correct": 1,
+          "expl": "Chemical (silicone/siloxane) injection into the wall creates a new water-repellent barrier where an existing DPC has failed."
+        },
+        {
+          "num": 25,
+          "text": "Rising dampness is effectively controlled by providing DPC at:",
+          "options": [
+            "Roof level",
+            "Window sill level",
+            "Plinth level",
+            "Lintel level"
+          ],
+          "correct": 2,
+          "expl": "The damp-proof course is provided at plinth level, just above ground, to intercept capillary rise of moisture into the walls."
+        },
+        {
+          "num": 26,
+          "text": "Which material is most commonly used for flexible DPC in modern construction?",
+          "options": [
+            "Cement concrete",
+            "Rich cement mortar",
+            "Bituminous felt",
+            "Lime concrete"
+          ],
+          "correct": 2,
+          "expl": "Bituminous felt is a common flexible damp-proof course material, able to accommodate minor movement while remaining impervious."
+        },
+        {
+          "num": 27,
+          "text": "Which waterproofing system is most suitable for flat RCC roofs?",
+          "options": [
+            "White washing",
+            "Mud phuska treatment",
+            "Lime terracing",
+            "Acrylic painting"
+          ],
+          "correct": 1,
+          "expl": "Mud phuska (a lime-mud-brick jelly treatment) is a traditional but effective waterproofing/insulation system historically used on flat RCC roofs (modern practice also uses membrane systems)."
+        },
+        {
+          "num": 28,
+          "text": "Failure of waterproofing in bathrooms usually leads to:",
+          "options": [
+            "Structural collapse",
+            "Rising dampness in adjacent walls",
+            "Immediate corrosion of reinforcement",
+            "Increase in live load"
+          ],
+          "correct": 1,
+          "expl": "Leaking bathroom waterproofing typically causes dampness to migrate into adjoining walls and ceilings below."
+        },
+        {
+          "num": 29,
+          "text": "Which test is commonly used to check leakage in bathrooms after waterproofing treatment?",
+          "options": [
+            "Rebound hammer test",
+            "Ponding test",
+            "Slump test",
+            "UPV test"
+          ],
+          "correct": 1,
+          "expl": "A ponding test — flooding the surface with water and observing over 24–48 hours — checks for leaks after waterproofing."
+        },
+        {
+          "num": 30,
+          "text": "Expansion joints in buildings are primarily provided to:",
+          "options": [
+            "Improve aesthetics",
+            "Reduce construction cost",
+            "Accommodate thermal movement",
+            "Increase load-carrying capacity"
+          ],
+          "correct": 2,
+          "expl": "Expansion joints allow buildings to accommodate thermal expansion/contraction (and sometimes shrinkage movement) without inducing cracking."
+        },
+        {
+          "num": 31,
+          "text": "Failure of sealant in expansion joints generally results in:",
+          "options": [
+            "Increased strength",
+            "Corrosion prevention",
+            "Water ingress and cracking",
+            "Improved flexibility"
+          ],
+          "correct": 2,
+          "expl": "A failed joint sealant allows water to penetrate the joint, leading to leakage and associated cracking/corrosion issues."
+        },
+        {
+          "num": 32,
+          "text": "Which sealant property is most important for joints subjected to movement?",
+          "options": [
+            "High compressive strength",
+            "High rigidity",
+            "High elasticity",
+            "High density"
+          ],
+          "correct": 2,
+          "expl": "Movement joints require a sealant with high elasticity so it can stretch and compress repeatedly without losing its seal."
+        },
+        {
+          "num": 33,
+          "text": "Which repair measure is most effective for recurring roof leakage due to cracks?",
+          "options": [
+            "Repainting roof surface",
+            "Filling cracks with cement mortar only",
+            "Providing waterproof membrane treatment",
+            "Increasing roof thickness"
+          ],
+          "correct": 2,
+          "expl": "A continuous waterproof membrane bridges cracks and provides durable, effective long-term protection against recurring roof leakage."
+        },
+        {
+          "num": 34,
+          "text": "Which repair material is commonly used for sealing construction joints in water-retaining structures?",
+          "options": [
+            "Cement mortar",
+            "Lime mortar",
+            "Water stop sealant",
+            "White cement"
+          ],
+          "correct": 2,
+          "expl": "Water stop sealants (PVC/rubber water stops or specialized joint sealants) are specifically designed to seal joints in water-retaining structures."
+        },
+        {
+          "num": 35,
+          "text": "Corrosion repair in marine environments requires special attention due to the presence of:",
+          "options": [
+            "Carbon dioxide",
+            "Sulphates",
+            "Chlorides",
+            "Nitrates"
+          ],
+          "correct": 2,
+          "expl": "Marine environments have high chloride concentrations, which aggressively depassivate steel and accelerate reinforcement corrosion."
+        },
+        {
+          "num": 36,
+          "text": "The most effective long-term strategy to minimize repair frequency in buildings is:",
+          "options": [
+            "Repainting every year",
+            "Increasing construction cost",
+            "Planned preventive maintenance",
+            "Emergency repairs only"
+          ],
+          "correct": 2,
+          "expl": "A systematic, planned preventive maintenance programme minimizes the frequency and cost of future repairs over the building's life."
+        },
+        {
+          "num": 37,
+          "text": "The most important reason for conducting maintenance audits of buildings is to:",
+          "options": [
+            "Prepare renovation drawings",
+            "Identify aesthetic deficiencies",
+            "Assess structural health and serviceability",
+            "Estimate property value"
+          ],
+          "correct": 2,
+          "expl": "Maintenance audits are conducted primarily to systematically assess a building's structural health and serviceability."
+        },
+        {
+          "num": 38,
+          "text": "Which defect indicates loss of bond between plaster and masonry due to moisture action?",
+          "options": [
+            "Crazing",
+            "Peeling and bulging of plaster",
+            "Shrinkage cracks",
+            "Settlement cracks"
+          ],
+          "correct": 1,
+          "expl": "Moisture trapped behind plaster causes it to lose adhesion, resulting in peeling and bulging."
+        },
+        {
+          "num": 39,
+          "text": "Which investigation method is most suitable for determining depth of corrosion in RCC?",
+          "options": [
+            "Visual inspection",
+            "Phenolphthalein test",
+            "Half-cell potential test",
+            "Slump test"
+          ],
+          "correct": 2,
+          "expl": "Half-cell potential mapping is used to assess the probability and extent (spatially) of active corrosion in reinforcement."
+        },
+        {
+          "num": 40,
+          "text": "Which defect in concrete floors is primarily due to excessive surface finishing and trowelling?",
+          "options": [
+            "Honeycombing",
+            "Blistering",
+            "Spalling",
+            "Efflorescence"
+          ],
+          "correct": 1,
+          "expl": "Over-trowelling seals the surface prematurely, trapping bleed water/air beneath and causing blisters to form."
+        },
+        {
+          "num": 41,
+          "text": "Which crack pattern is most critical from a structural safety point of view?",
+          "options": [
+            "Hairline shrinkage cracks",
+            "Map cracking",
+            "Flexural cracks widening with time",
+            "Plaster cracks at junctions"
+          ],
+          "correct": 2,
+          "expl": "Progressively widening flexural cracks signal ongoing structural distress and are the most safety-critical among the listed options."
+        },
+        {
+          "num": 42,
+          "text": "Which factor primarily controls the effectiveness of chemical DPC injection?",
+          "options": [
+            "Thickness of wall",
+            "Type of paint used",
+            "Porosity of masonry",
+            "Height of building"
+          ],
+          "correct": 2,
+          "expl": "The porosity of the masonry governs how effectively the injected chemical DPC solution can spread and form a continuous water-repellent barrier."
+        },
+        {
+          "num": 43,
+          "text": "Which waterproofing failure is commonly caused by inadequate curing of the treatment layer?",
+          "options": [
+            "Structural cracking",
+            "Early surface cracking and debonding",
+            "Differential settlement",
+            "Carbonation"
+          ],
+          "correct": 1,
+          "expl": "Insufficiently cured waterproofing treatments are prone to premature shrinkage cracking and loss of bond (debonding) from the substrate."
+        },
+        {
+          "num": 44,
+          "text": "Which repair method is most suitable for sealing leaking construction joints in basements?",
+          "options": [
+            "Surface plastering",
+            "Cement grouting",
+            "Polyurethane injection",
+            "Lime mortar filling"
+          ],
+          "correct": 2,
+          "expl": "Polyurethane injection expands and seals actively leaking joints even under water pressure, making it well suited to basement joint leaks."
+        },
+        {
+          "num": 45,
+          "text": "Which maintenance strategy minimizes life-cycle cost of buildings most effectively?",
+          "options": [
+            "Corrective maintenance",
+            "Breakdown maintenance",
+            "Preventive maintenance",
+            "Emergency maintenance"
+          ],
+          "correct": 2,
+          "expl": "Preventive maintenance, by addressing issues early, has been shown to minimize total life-cycle costs compared to reactive strategies."
+        },
+        {
+          "num": 46,
+          "text": "Which material property is most important for repair mortars used in wet areas?",
+          "options": [
+            "High compressive strength",
+            "Low water absorption",
+            "High density",
+            "Rapid setting time"
+          ],
+          "correct": 1,
+          "expl": "For repairs in wet/damp-prone areas, low water absorption (impermeability) is critical to prevent recurring moisture-related failure."
+        },
+        {
+          "num": 47,
+          "text": "Which defect is a clear indication of failure of roof slope design?",
+          "options": [
+            "Carbonation",
+            "Ponding and seepage marks",
+            "Honeycombing",
+            "Plastic shrinkage"
+          ],
+          "correct": 1,
+          "expl": "Standing water (ponding) and consequent seepage stains reveal that the roof slope/drainage design is inadequate."
+        },
+        {
+          "num": 48,
+          "text": "Which repair approach is most appropriate when cracks are still actively moving?",
+          "options": [
+            "Epoxy injection",
+            "Cement slurry filling",
+            "Flexible sealant treatment",
+            "Stitching with steel bars"
+          ],
+          "correct": 2,
+          "expl": "Active (still-moving) cracks need a flexible sealant that can accommodate ongoing movement, rather than rigid materials that would re-crack."
+        },
+        {
+          "num": 49,
+          "text": "Which defect in masonry walls usually indicates absence of DPC?",
+          "options": [
+            "Thermal cracks",
+            "Damp patches with salt deposits near floor",
+            "Vertical cracks at corners",
+            "Bulging at mid-height"
+          ],
+          "correct": 1,
+          "expl": "Persistent dampness and salt staining near floor level are classic signs that no effective damp-proof course exists at plinth level."
+        },
+        {
+          "num": 50,
+          "text": "Which factor most accelerates deterioration of buildings in coastal areas?",
+          "options": [
+            "Temperature variation",
+            "Chloride-rich environment",
+            "Poor ventilation",
+            "Dust deposition"
+          ],
+          "correct": 1,
+          "expl": "The chloride-laden atmosphere near coasts aggressively promotes reinforcement corrosion, accelerating structural deterioration."
+        },
+        {
+          "num": 51,
+          "text": "Which waterproofing method provides both thermal insulation and water resistance on roofs?",
+          "options": [
+            "Cement slurry coating",
+            "Brick bat coba",
+            "Acrylic paint",
+            "Bituminous painting"
+          ],
+          "correct": 1,
+          "expl": "Brick bat coba (broken brick bats set in lime/cement mortar) provides both thermal insulation and a waterproofing layer on flat roofs."
+        },
+        {
+          "num": 52,
+          "text": "Which joint is specifically provided to accommodate differential settlement between two structures?",
+          "options": [
+            "Construction joint",
+            "Control joint",
+            "Expansion joint",
+            "Settlement joint"
+          ],
+          "correct": 3,
+          "expl": "A settlement joint is specifically designed to allow independent movement between adjacent structures subject to differential settlement."
+        },
+        {
+          "num": 53,
+          "text": "The most reliable way to ensure durability of repair works is to:",
+          "options": [
+            "Use high-strength materials only",
+            "Treat visible defects only",
+            "Eliminate root cause before repair",
+            "Increase thickness of repair layer"
+          ],
+          "correct": 2,
+          "expl": "Repairs will only last if the underlying root cause of deterioration (e.g. moisture ingress, ongoing corrosion) is first eliminated."
+        },
+        {
+          "num": 54,
+          "text": "Which joint is provided between two adjacent buildings to allow independent movement?",
+          "options": [
+            "Construction joint",
+            "Expansion joint",
+            "Control joint",
+            "Settlement joint"
+          ],
+          "correct": 1,
+          "expl": "Expansion joints between adjacent buildings/blocks allow each to move independently under thermal and other effects."
+        },
+        {
+          "num": 55,
+          "text": "Which repair material is commonly used for sealing construction joints in water-retaining structures (repeated)?",
+          "options": [
+            "Cement mortar",
+            "Lime mortar",
+            "Water stop sealant",
+            "White cement"
+          ],
+          "correct": 2,
+          "expl": "Water stop sealants remain the standard choice for joints in tanks and other water-retaining structures."
+        }
+      ]
+    }
+  ]
+}
