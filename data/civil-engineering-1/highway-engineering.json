@@ -1230,7 +1230,7 @@
             "Zero",
             "15 cm",
             "75 cm",
-            "120 cm"
+            "100 cm"
           ],
           "correct": 3,
           "expl": "For overtaking sight distance, the driver’s eye height and the height of the object/vehicle are taken as 1.2 m (120 cm) above the road surface."
@@ -3614,5 +3614,6 @@
         }
       ]
     }
-  ]
+  ],
+  "group": "civil1"
 }

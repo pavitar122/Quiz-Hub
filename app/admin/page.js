@@ -59,7 +59,28 @@ export default function AdminPage(){
     msgTimer.current = setTimeout(() => setMsg(null), 4500);
   };
 
-  const refreshCats = () => fetch("/api/questions").then(r => r.json()).then(d => setCats(d.categories || []));
+  // Every mutation goes through this so a failure is always visible instead
+  // of silently doing nothing: network errors and non-JSON error pages (e.g.
+  // a 500 from a filesystem write that failed) both get turned into a
+  // flashed message rather than an uncaught rejection.
+  const apiRequest = async (url, options) => {
+    let res;
+    try {
+      res = await fetch(url, { cache: "no-store", ...options });
+    } catch {
+      flash("err", "Couldn't reach the server. Check your connection and try again.");
+      return { ok: false, json: null };
+    }
+    let json = null;
+    try { json = await res.json(); }
+    catch {
+      flash("err", `Server error (${res.status}). The change was not saved.`);
+      return { ok: false, json: null };
+    }
+    return { ok: res.ok, json };
+  };
+
+  const refreshCats = () => fetch("/api/questions", { cache: "no-store" }).then(r => r.json()).then(d => setCats(d.categories || []));
 
   const loadCat = async (id) => {
     setSelectedId(id);
@@ -68,7 +89,7 @@ export default function AdminPage(){
     setOpenSubs({});
     setRenaming(null);
     setQSearch({});
-    const d = await fetch(`/api/questions?id=${id}`).then(r => r.json());
+    const d = await fetch(`/api/questions?id=${id}`, { cache: "no-store" }).then(r => r.json());
     setEditCat(d.category);
     setMetaForm({ title: d.category?.title || "", description: d.category?.description || "", group: d.category?.group || "civil1" });
   };
@@ -141,14 +162,13 @@ export default function AdminPage(){
       data: payload,
       action: isEdit ? "editQuestion" : "addQuestion",
     };
-    const res = await fetch("/api/admin/subjects", {
+    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
       method: isEdit ? "PUT" : "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
     });
-    const j = await res.json();
     setBusy(false);
-    if (!res.ok) { flash("err", j.error || "Something went wrong."); return; }
+    if (!ok) { if (j) flash("err", j.error || "Something went wrong."); return; }
     flash("ok", isEdit ? "Question updated." : "Question added.");
     const keepSubIdx = formMode.subIdx;
     cancelForm();
@@ -158,7 +178,7 @@ export default function AdminPage(){
 
   // like loadCat but keeps the given subtopic open + tab state, for smooth in-place edits
   const loadCatQuiet = async (id, keepSubIdx) => {
-    const d = await fetch(`/api/questions?id=${id}`).then(r => r.json());
+    const d = await fetch(`/api/questions?id=${id}`, { cache: "no-store" }).then(r => r.json());
     setEditCat(d.category);
     if (keepSubIdx !== undefined) setOpenSubs(s => ({ ...s, [keepSubIdx]: true }));
   };
@@ -171,31 +191,28 @@ export default function AdminPage(){
     if (!confirmState) return;
     setConfirmState(s => ({ ...s, busy: true }));
     if (confirmState.kind === "question") {
-      const res = await fetch("/api/admin/subjects", {
+      const { ok, json: j } = await apiRequest("/api/admin/subjects", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ catId: editCat.id, subIdx: confirmState.subIdx, num: confirmState.num }),
       });
-      const j = await res.json();
-      if (!res.ok) { flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
+      if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
       flash("ok", "Question deleted.");
       loadCatQuiet(editCat.id, confirmState.subIdx);
       refreshCats();
     } else if (confirmState.kind === "subtopic") {
-      const res = await fetch("/api/admin/subjects", {
+      const { ok, json: j } = await apiRequest("/api/admin/subjects", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ catId: editCat.id, subIdx: confirmState.subIdx, action: "deleteSubtopic" }),
       });
-      const j = await res.json();
-      if (!res.ok) { flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
+      if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
       flash("ok", "Subtopic deleted.");
       loadCat(editCat.id);
       refreshCats();
     } else if (confirmState.kind === "subject") {
-      const res = await fetch(`/api/admin/subjects?id=${editCat.id}`, { method: "DELETE" });
-      const j = await res.json();
-      if (!res.ok) { flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
+      const { ok, json: j } = await apiRequest(`/api/admin/subjects?id=${editCat.id}`, { method: "DELETE" });
+      if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
       flash("ok", "Subject deleted.");
       setSelectedId(null);
       setEditCat(null);
@@ -207,14 +224,13 @@ export default function AdminPage(){
   const saveSubjectMeta = async () => {
     if (!metaForm.title.trim()) { flash("err", "Subject title can't be empty."); return; }
     setBusy(true);
-    const res = await fetch("/api/admin/subjects", {
+    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "updateSubject", catId: editCat.id, title: metaForm.title, description: metaForm.description, group: metaForm.group }),
     });
-    const j = await res.json();
     setBusy(false);
-    if (!res.ok) { flash("err", j.error || "Update failed."); return; }
+    if (!ok) { if (j) flash("err", j.error || "Update failed."); return; }
     flash("ok", "Subject details saved.");
     loadCat(editCat.id);
     refreshCats();
@@ -223,14 +239,13 @@ export default function AdminPage(){
   const handleCreateSubject = async () => {
     if (!newSubject.title.trim()) { flash("err", "Give the new subject a title."); return; }
     setBusy(true);
-    const res = await fetch("/api/admin/subjects", {
+    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "createSubject", title: newSubject.title, description: newSubject.description, group: newSubject.group }),
     });
-    const j = await res.json();
     setBusy(false);
-    if (!res.ok) { flash("err", j.error || "Could not create subject."); return; }
+    if (!ok) { if (j) flash("err", j.error || "Could not create subject."); return; }
     flash("ok", `Created "${j.category.title}".`);
     setNewSubject({ title: "", description: "", group: "civil1" });
     setNewSubjectOpen(false);
@@ -241,14 +256,13 @@ export default function AdminPage(){
   const handleAddSubtopic = async () => {
     if (!newSubtopicName.trim()) { flash("err", "Give the subtopic a name."); return; }
     setBusy(true);
-    const res = await fetch("/api/admin/subjects", {
+    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "addSubtopic", catId: editCat.id, name: newSubtopicName }),
     });
-    const j = await res.json();
     setBusy(false);
-    if (!res.ok) { flash("err", j.error || "Could not add subtopic."); return; }
+    if (!ok) { if (j) flash("err", j.error || "Could not add subtopic."); return; }
     flash("ok", "Subtopic added.");
     setNewSubtopicName("");
     await loadCat(editCat.id);
@@ -261,14 +275,13 @@ export default function AdminPage(){
   const submitRename = async () => {
     if (!renaming || !renaming.value.trim()) { flash("err", "Subtopic name can't be empty."); return; }
     setBusy(true);
-    const res = await fetch("/api/admin/subjects", {
+    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "renameSubtopic", catId: editCat.id, subIdx: renaming.subIdx, name: renaming.value }),
     });
-    const j = await res.json();
     setBusy(false);
-    if (!res.ok) { flash("err", j.error || "Rename failed."); return; }
+    if (!ok) { if (j) flash("err", j.error || "Rename failed."); return; }
     flash("ok", "Subtopic renamed.");
     const keepSubIdx = renaming.subIdx;
     setRenaming(null);
@@ -290,14 +303,13 @@ export default function AdminPage(){
       if (m) { try { obj = JSON.parse(m[1]); } catch { obj = eval("(" + m[1] + ")"); } }
     }
     setBusy(true);
-    const res = await fetch("/api/admin/import", {
+    const { ok, json: j } = await apiRequest("/api/admin/import", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ data: obj, group: importGroup }),
     });
-    const j = await res.json();
     setBusy(false);
-    if (!res.ok) { flash("err", j.error || "Import failed."); return; }
+    if (!ok) { if (j) flash("err", j.error || "Import failed."); return; }
     flash("ok", `Imported "${j.category.title}".`);
     setImportFile(null);
     refreshCats();
