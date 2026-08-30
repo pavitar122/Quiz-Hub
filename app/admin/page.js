@@ -76,6 +76,30 @@ export default function AdminPage(){
   const toggleSub = (i) => setOpenSubs(s => ({ ...s, [i]: !s[i] }));
   const toggleGroup = (g) => setCollapsedGroups(s => ({ ...s, [g]: !s[g] }));
 
+  const exportSubject = async (cat) => {
+    if (!cat) return;
+    try {
+      const res = await fetch(`/api/admin/subjects?action=export&id=${encodeURIComponent(cat.id)}`);
+      if (!res.ok) {
+        const j = await res.json().catch(() => ({}));
+        flash("err", j.error || "Export failed.");
+        return;
+      }
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${cat.id}.json`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      flash("ok", `Exported "${cat.title}".`);
+    } catch {
+      flash("err", "Export failed.");
+    }
+  };
+
   const copyId = () => {
     if (!editCat) return;
     navigator.clipboard?.writeText(editCat.id).catch(() => {});
@@ -436,6 +460,7 @@ export default function AdminPage(){
                     </div>
                     {editCat.description && <p style={{ marginTop: 10, fontFamily: "Spectral, Georgia, serif", fontSize: 14, color: "var(--muted)" }}>{editCat.description}</p>}
                   </div>
+                  <button className="btn small secondary" onClick={() => exportSubject(editCat)}>⭳ Export JSON</button>
                 </div>
 
                 <div className="admin-tabs">

@@ -69,8 +69,15 @@ export async function POST(req){
     const obj={...prog.bestScores};
     if(!prev || pct>prev.pct) obj[body.catId][body.kind]={correct:body.score,total:body.total,pct,date:Date.now()};
     prog.bestScores=obj;
+
+    const ac={...prog.attemptCounts};
+    if(!ac[body.catId]) ac[body.catId]={};
+    ac[body.catId][body.kind]=(ac[body.catId][body.kind]||0)+1;
+    prog.attemptCounts=ac;
+
     prog.stats.sessionsCompleted++;
     prog.markModified("bestScores");
+    prog.markModified("attemptCounts");
     prog.markModified("stats");
     await prog.save();
     return NextResponse.json({ok:true});

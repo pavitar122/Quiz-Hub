@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useParams, useSearchParams, useRouter } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Confetti from "@/components/Confetti";
 import Toast from "@/components/Toast";
@@ -9,7 +9,6 @@ import Counter from "@/components/Counter";
 export default function QuizPage(){
   const { id } = useParams();
   const sp = useSearchParams();
-  const router=useRouter();
   const mode = sp.get("mode")||"test";
   const type = sp.get("type")||"full";
   const idx = sp.get("idx");
@@ -18,6 +17,7 @@ export default function QuizPage(){
   const [progress,setProgress]=useState(null);
   const [toastMsg,setToastMsg]=useState("");
   const [toastShow,setToastShow]=useState(false);
+  const [empty,setEmpty]=useState(false);
 
   const flashToast=(msg)=>{
     setToastMsg(msg);
@@ -26,12 +26,13 @@ export default function QuizPage(){
   };
 
   useEffect(()=>{
+    setEmpty(false);
     fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>{
       if(!d.category) return;
       setCat(d.category);
       const q = buildQueue(d.category, type, idx);
-      if(q.length===0){ alert("Nothing to practice here yet."); router.push(`/subject/${id}`); return; }
-      initQuiz(q, d.category);
+      if(q.length===0 && type!=="bookmarked" && type!=="missed"){ setEmpty(true); return; }
+      if(q.length>0) initQuiz(q, d.category);
     });
     fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress)).catch(()=>{});
   },[id,type,idx,mode]);
@@ -62,19 +63,19 @@ export default function QuizPage(){
 
   // handle bookmark/missed queues after progress loads
   useEffect(()=>{
-    if(!cat || !progress) return;
+    if(!cat || !progress || quiz) return;
     if(type==="bookmarked"){
       const keys=new Set(progress.bookmarks?.[cat.id]||[]);
       const out=[];
       cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(q=>{ if(keys.has(sIdx+"-"+q.num)) out.push({subIdx:sIdx, subName:sc.name, q}); }));
-      if(out.length>0) initQuiz(out, cat);
+      if(out.length>0) initQuiz(out, cat); else setEmpty(true);
     }
     if(type==="missed"){
       const miss=progress.missCounts?.[cat.id]||{};
       const keys=Object.keys(miss).filter(k=>miss[k]>0);
       const out=[];
       cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(q=>{ if(keys.includes(sIdx+"-"+q.num)) out.push({subIdx:sIdx, subName:sc.name, q}); }));
-      if(out.length>0) initQuiz(shuffle(out), cat);
+      if(out.length>0) initQuiz(shuffle(out), cat); else setEmpty(true);
     }
   },[progress,cat]);
 
@@ -178,19 +179,44 @@ export default function QuizPage(){
 
   const toggleBookmark=async()=>{
     if(!current) return;
-    await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
-      type:"bookmark",
-      catId: id,
-      subIdx: current.subIdx,
-      num: current.q.num,
-    })});
-    // refresh progress
-    const d=await fetch("/api/progress").then(r=>r.json());
-    setProgress(d.progress);
-    const nowBookmarked = d.progress?.bookmarks?.[id]?.includes(current.subIdx+"-"+current.q.num);
-    flashToast(nowBookmarked ? "★ Bookmarked" : "Bookmark removed");
+    const key=current.subIdx+"-"+current.q.num;
+    // optimistic local update so the UI reacts instantly
+    const wasBookmarked = !!progress?.bookmarks?.[id]?.includes(key);
+    setProgress(p=>{
+      const base=p||{};
+      const existing=base.bookmarks?.[id]||[];
+      const nextList = wasBookmarked ? existing.filter(k=>k!==key) : [...existing, key];
+      return { ...base, bookmarks: { ...(base.bookmarks||{}), [id]: nextList } };
+    });
+    flashToast(wasBookmarked ? "Bookmark removed" : "★ Bookmarked");
+    try{
+      await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+        type:"bookmark",
+        catId: id,
+        subIdx: current.subIdx,
+        num: current.q.num,
+      })});
+    }catch{}
   };
   const isBookmarked = progress && progress.bookmarks?.[id]?.includes(current?.subIdx+"-"+current?.q?.num);
+
+  const restart=()=>{
+    if(!cat) return;
+    const q = buildQueue(cat, type, idx);
+    if(q.length>0){ initQuiz(q, cat); return; }
+    // bookmarked/missed queues depend on progress
+    if(type==="bookmarked" || type==="missed") setQuiz(null);
+  };
+
+  if(empty) return (
+    <div className="dwg-card">
+      <span className="dwg-tag mono">NOTHING TO PRACTICE</span>
+      <p style={{marginTop:10}}>There's nothing queued up here yet.</p>
+      <div className="btn-row">
+        <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back to Subject</Link>
+      </div>
+    </div>
+  );
 
   if(!cat || !quiz) return (
     <div className="loading-row"><span className="spinner"></span> Loading quiz…</div>
@@ -205,7 +231,7 @@ export default function QuizPage(){
           <p className="result-pct mono">{quiz.pct}%</p>
           <div className="progress-bar"><div className="progress-fill" style={{width:quiz.pct+"%"}}></div></div>
           <div className="btn-row">
-            <button className="btn" onClick={()=>location.reload()}>Retry</button>
+            <button className="btn" onClick={restart}>Retry</button>
             <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back to Subject</Link>
             <Link href="/" className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Home</Link>
           </div>
@@ -235,7 +261,7 @@ export default function QuizPage(){
             <div className="stat-box"><div className="num serif"><Counter value={quiz.firstTryCorrect} /></div><div className="lab mono">First Try Correct</div></div>
           </div>
           <div className="btn-row">
-            <button className="btn" onClick={()=>location.reload()}>Retry</button>
+            <button className="btn" onClick={restart}>Retry</button>
             <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back</Link>
           </div>
         </div>

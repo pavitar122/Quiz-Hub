@@ -16,6 +16,34 @@ function slugify(s){
   return (s||"").toString().toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/(^-+|-+$)/g,"")||"subject";
 }
 
+export async function GET(req){
+  if(!isAdmin()) return NextResponse.json({error:"Admin only"},{status:403});
+  const { searchParams } = new URL(req.url);
+  const id=searchParams.get("id");
+  const action=searchParams.get("action");
+  if(action==="export" && id){
+    const cat=getCategoryById(id);
+    if(!cat) return NextResponse.json({error:"Subject not found"},{status:404});
+    const toExport={
+      id: cat.id,
+      title: cat.title,
+      description: cat.description || "",
+      group: cat.group,
+      subcats: cat.subcats,
+    };
+    const json=JSON.stringify(toExport, null, 2);
+    const filename=`${cat.id}.json`;
+    return new NextResponse(json, {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json",
+        "Content-Disposition": `attachment; filename="${filename}"`,
+      },
+    });
+  }
+  return NextResponse.json({error:"Unknown action"},{status:400});
+}
+
 export async function POST(req){
   if(!isAdmin()) return NextResponse.json({error:"Admin only"},{status:403});
   const body=await req.json();

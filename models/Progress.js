@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const ProgressSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", unique: true, required: true },
   bestScores: { type: Object, default: {} }, // catId -> key -> {correct,total,pct,date}
+  attemptCounts: { type: Object, default: {} }, // catId -> key -> number of test-mode attempts
   bookmarks: { type: Object, default: {} }, // catId -> ["subIdx-num"]
   missCounts: { type: Object, default: {} },
   mastery: { type: Object, default: {} },

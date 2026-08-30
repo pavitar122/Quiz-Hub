@@ -51,6 +51,8 @@ export default function SubjectPage(){
   const missCount=Object.values(progress?.missCounts?.[cat.id]||{}).filter(v=>v>0).length;
   const fullBest=(progress?.bestScores?.[cat.id]||{})["FULL"];
   const randomBest=(progress?.bestScores?.[cat.id]||{})["RANDOM"];
+  const fullAttempts=(progress?.attemptCounts?.[cat.id]||{})["FULL"]||0;
+  const randomAttempts=(progress?.attemptCounts?.[cat.id]||{})["RANDOM"]||0;
 
   return (
     <>
@@ -71,14 +73,14 @@ export default function SubjectPage(){
         <div className="dwg-card full-run-card">
           <span className="dwg-tag mono">DWG-00 · FULL CATEGORY RUN</span>
           <h2 className="serif">Full Category Run — All {totalQ} Questions</h2>
-          <div className="meta mono">{cat.subcats.length} subtopics{fullBest ? ` · Best: ${fullBest.correct}/${fullBest.total} (${fullBest.pct}%)`:""}</div>
+          <div className="meta mono">{cat.subcats.length} subtopics{fullBest ? ` · Best: ${fullBest.correct}/${fullBest.total} (${fullBest.pct}%)`:""}{fullAttempts>0 ? ` · Attempted ${fullAttempts}×`:""}</div>
         </div>
       </Link>
       <Link href={`/quiz/${cat.id}?mode=${mode}&type=random`} style={{textDecoration:"none"}}>
         <div className="dwg-card full-run-card alt">
           <span className="dwg-tag mono">DWG-R0 · RANDOM DRAW</span>
           <h2 className="serif">Random 30 Questions</h2>
-          <div className="meta mono">Shuffled mix{randomBest ? ` · Best: ${randomBest.correct}/${randomBest.total} (${randomBest.pct}%)`:""}</div>
+          <div className="meta mono">Shuffled mix{randomBest ? ` · Best: ${randomBest.correct}/${randomBest.total} (${randomBest.pct}%)`:""}{randomAttempts>0 ? ` · Attempted ${randomAttempts}×`:""}</div>
         </div>
       </Link>
       <div className="btn-row" style={{marginBottom:26}}>
@@ -93,6 +95,7 @@ export default function SubjectPage(){
         {filtered.length===0 ? <div className="empty-note">No subtopics match.</div> :
           filtered.map(({sc,i})=>{
             const best=(progress?.bestScores?.[cat.id]||{})[String(i)];
+            const attempts=(progress?.attemptCounts?.[cat.id]||{})[String(i)]||0;
             const pct=best?best.pct:0;
             return (
               <Link key={i} href={`/quiz/${cat.id}?mode=${mode}&type=sub&idx=${i}`} style={{textDecoration:"none"}}>
@@ -101,6 +104,7 @@ export default function SubjectPage(){
                   <h3 className="serif">{sc.name}</h3>
                   <div className="row"><span>{sc.questions.length} questions</span>{best ? <span className="best">{best.correct}/{best.total} ({best.pct}%)</span> : <span>Not attempted</span>}</div>
                   <div className="mini-bar"><div className="mini-bar-fill" style={{width:pct+"%"}}></div></div>
+                  {attempts>0 && <div className="attempt-count mono">Tested {attempts}×</div>}
                 </div>
               </Link>
             );
