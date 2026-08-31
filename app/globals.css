@@ -455,8 +455,53 @@ h1,h2,h3,.display{font-family:"Big Shoulders Display",'Arial Narrow',sans-serif;
 .confirm-title{font-family:"Spectral",Georgia,serif;font-size:18px;font-weight:600;color:var(--ink-deep);margin-bottom:8px;}
 .confirm-message{font-size:13.5px;color:var(--muted);line-height:1.55;margin-bottom:18px;font-family:"Spectral",Georgia,serif;}
 
+/* ---------- Chapter strip (admin) ---------- */
+.chapter-strip{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+.chapter-chip{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.02em;padding:8px 13px;border:1px solid var(--card-border);border-radius:999px;background:var(--option-bg);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:border-color .15s var(--ease-soft), color .15s var(--ease-soft), background .15s var(--ease-soft), transform .12s var(--ease-soft);}
+.chapter-chip:hover{border-color:var(--card-border-strong);transform:translateY(-1px);}
+.chapter-chip.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);}
+.chapter-chip.add{color:var(--muted);border-style:dashed;}
+.chapter-chip.add:hover{color:var(--accent);border-color:var(--accent);}
+.chapter-chip .chip-count{font-size:10.5px;color:var(--muted);background:var(--option-dim);border-radius:999px;padding:1px 7px;}
+.chapter-chip.active .chip-count{color:var(--accent);}
+
+.chapter-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border:1px solid var(--card-border);border-radius:var(--radius-sm);background:var(--option-bg);padding:9px 12px;margin-bottom:14px;}
+
+/* ---------- Filter bar + question table (admin) ---------- */
+.filter-bar{display:flex;gap:10px;align-items:center;margin-bottom:14px;}
+.filter-bar .filter-search{flex:1;}
+
+.table-wrap{overflow-x:auto;border:1px solid var(--card-border);border-radius:var(--radius);}
+.table-wrap .admin-table{margin:0;}
+.table-wrap .admin-table th,.table-wrap .admin-table td{padding:11px 12px;}
+.table-wrap .admin-table tr:last-child td{border-bottom:none;}
+
+.qtable-row{cursor:pointer;transition:background .12s ease;}
+.qtable-row:hover{background:var(--option-bg);}
+.qtable-num{color:var(--dim);font-size:11.5px;}
+.qtable-chapter{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);}
+.qtable-text{font-family:"Spectral",Georgia,serif;font-size:14px;line-height:1.45;color:var(--ink);}
+.qtable-ans{color:var(--accent);font-weight:700;text-align:center;}
+.qtable-actions{display:flex;gap:6px;flex-wrap:nowrap;justify-content:flex-end;}
+
+.pagination{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px;}
+.pagination-label{font-size:11.5px;color:var(--muted);}
+
+/* ---------- Question modal (admin) ---------- */
+.modal-overlay{position:fixed;inset:0;background:rgba(3,12,24,0.55);backdrop-filter:blur(3px);display:flex;align-items:flex-start;justify-content:center;z-index:4000;padding:36px 20px;overflow-y:auto;animation:fadeIn .18s var(--ease);}
+.modal-panel{background:var(--card);border:1px solid var(--card-border-strong);border-radius:var(--radius);max-width:640px;width:100%;box-shadow:0 24px 60px -20px rgba(0,0,0,0.5);animation:fadeInUp .22s var(--ease-spring) both;display:flex;flex-direction:column;max-height:calc(100vh - 72px);}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:20px 22px 14px;border-bottom:1px solid var(--card-border);flex-shrink:0;}
+.modal-head h3{margin:2px 0 0;font-size:19px;color:var(--ink-deep);}
+.modal-eyebrow{font-size:10.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
+.modal-close{background:none;border:none;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;padding:4px 6px;border-radius:6px;transition:color .15s ease, background .15s ease, transform .15s var(--ease-soft);}
+.modal-close:hover{color:var(--ink);background:var(--option-bg);transform:rotate(90deg);}
+.modal-body{padding:18px 22px;overflow-y:auto;}
+.modal-foot{display:flex;align-items:center;gap:10px;padding:14px 22px;border-top:1px solid var(--card-border);flex-shrink:0;}
+
 @media(max-width:840px){
   .admin-sidebar{max-height:none;}
+  .modal-overlay{padding:0;align-items:flex-end;}
+  .modal-panel{max-width:none;border-radius:var(--radius) var(--radius) 0 0;max-height:92vh;}
 }
 
 @media(max-width:840px){
