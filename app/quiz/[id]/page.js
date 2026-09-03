@@ -96,6 +96,7 @@ export default function QuizPage(){
       attempts:0,
       firstTryCorrect:0,
       retryCounts:{},
+      wrongAnswers:{},
       practiceCurrent: mode==="practice"? queue[0] : null,
       startTime:Date.now(),
     });
@@ -124,6 +125,7 @@ export default function QuizPage(){
         updated.mastered++;
       } else {
         updated.retryCounts[rkey]=(updated.retryCounts[rkey]||0)+1;
+        updated.wrongAnswers={...quiz.wrongAnswers, [rkey]:{item, selected:choiceIdx}};
         const insertPos = updated.remaining.length===0 ? 0 : 1+Math.floor(Math.random()*updated.remaining.length);
         updated.remaining.splice(insertPos,0,item);
       }
@@ -208,6 +210,15 @@ export default function QuizPage(){
     if(type==="bookmarked" || type==="missed") setQuiz(null);
   };
 
+  const retryWrong=()=>{
+    if(!cat || !quiz) return;
+    const wrongItems = quiz.mode==="test"
+      ? quiz.missed.map(m=>m.item)
+      : Object.values(quiz.wrongAnswers||{}).map(w=>w.item);
+    if(wrongItems.length===0) return;
+    initQuiz(wrongItems, cat);
+  };
+
   if(empty) return (
     <div className="dwg-card">
       <span className="dwg-tag mono">NOTHING TO PRACTICE</span>
@@ -231,7 +242,8 @@ export default function QuizPage(){
           <p className="result-pct mono">{quiz.pct}%</p>
           <div className="progress-bar"><div className="progress-fill" style={{width:quiz.pct+"%"}}></div></div>
           <div className="btn-row">
-            <button className="btn" onClick={restart}>Retry</button>
+            <button className="btn" onClick={restart}>Retry Full Batch</button>
+            {quiz.missed.length>0 && <button className="btn secondary" onClick={retryWrong}>Retry Wrong Answers ({quiz.missed.length})</button>}
             <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back to Subject</Link>
             <Link href="/" className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Home</Link>
           </div>
@@ -251,8 +263,11 @@ export default function QuizPage(){
         </div>
       );
     } else {
+      const wrongList = Object.values(quiz.wrongAnswers||{});
+      const practicePct = quiz.totalUnique>0 ? Math.round((quiz.firstTryCorrect/quiz.totalUnique)*100) : 0;
       return (
         <div className="dwg-card">
+          {practicePct>=70 && <Confetti />}
           <span className="dwg-tag mono">RESULT · PRACTICE MODE</span>
           <p className="result-score serif">Mastered {quiz.totalUnique}</p>
           <div className="stat-grid">
@@ -261,9 +276,23 @@ export default function QuizPage(){
             <div className="stat-box"><div className="num serif"><Counter value={quiz.firstTryCorrect} /></div><div className="lab mono">First Try Correct</div></div>
           </div>
           <div className="btn-row">
-            <button className="btn" onClick={restart}>Retry</button>
+            <button className="btn" onClick={restart}>Retry Full Batch</button>
+            {wrongList.length>0 && <button className="btn secondary" onClick={retryWrong}>Retry Wrong Answers ({wrongList.length})</button>}
             <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back</Link>
           </div>
+          {wrongList.length>0 && (
+            <div className="review-list">
+              <span className="dwg-tag mono">ANSWERED WRONG AT LEAST ONCE ({wrongList.length})</span>
+              {wrongList.map((m,i)=> (
+                <div key={i} className="review-item">
+                  <div className="rq serif">{m.item.q.text}</div>
+                  <div className="ra wrong-ans mono">Your: {String.fromCharCode(65+m.selected)}) {m.item.q.options[m.selected]}</div>
+                  <div className="ra right-ans mono">Correct: {String.fromCharCode(65+m.item.q.correct)}) {m.item.q.options[m.item.q.correct]}</div>
+                  <div className="mono" style={{fontSize:12,marginTop:6}}>{m.item.q.expl}</div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       );
     }
