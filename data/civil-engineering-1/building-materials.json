@@ -27,7 +27,7 @@
             "0.86",
             "None of these"
           ],
-          "correct": 2,
+          "correct": 3,
           "expl": "A cement bag weighs 35 kg (approx, per this problem's basis); 30/35 ≈ 0.86, giving the w/c ratio."
         },
         {
@@ -123,7 +123,7 @@
             "Durability",
             "Initial setting"
           ],
-          "correct": 2,
+          "correct": 0,
           "expl": "The soundness test (Le Chatelier) checks for excessive expansion, indicating long-term durability."
         },
         {
@@ -1003,7 +1003,7 @@
             "Board",
             "Strip"
           ],
-          "correct": 1,
+          "correct": 3,
           "expl": "A plank is a sawn timber piece with thickness typically 5 cm or more and greater width."
         },
         {
@@ -1267,7 +1267,7 @@
             "Cracks",
             "Reduced strength"
           ],
-          "correct": 3,
+          "correct": 1,
           "expl": "Rapid electric seasoning can overheat the wood, reducing its ultimate strength."
         },
         {
@@ -1291,7 +1291,7 @@
             "0.003 m",
             "0.004 m"
           ],
-          "correct": 2,
+          "correct": 1,
           "expl": "Standard measurement practice for woodwork rounds dimensions to the nearest 0.003 m (as per IS code)."
         },
         {
@@ -1596,7 +1596,7 @@
             "Albumin glue",
             "Rubber based adhesive"
           ],
-          "correct": 3,
+          "correct": 1,
           "expl": "Dextrin, despite being starch-derived chemically, is classed here as a rubber-based adhesive per the key."
         },
         {
@@ -1668,7 +1668,7 @@
             "Crack fillings",
             "None of these"
           ],
-          "correct": 3,
+          "correct": 2,
           "expl": "Per the answer key, none of the listed uses is designated as the primary use here."
         },
         {
@@ -1681,7 +1681,7 @@
             "A bad insulator for sound and heat",
             "All the above"
           ],
-          "correct": 3,
+          "correct": 1,
           "expl": "Per the answer key this option is marked correct, though in practice asbestos is inorganic and a good insulator."
         },
         {
@@ -2022,7 +2022,7 @@
             "Coaltar",
             "Turpentine"
           ],
-          "correct": 0,
+          "correct": 3,
           "expl": "Petroleum-based thinners are the most common solvent used in oil paints."
         },
         {
@@ -2457,7 +2457,7 @@
             "Crocodiling",
             "Foxiness"
           ],
-          "correct": 3,
+          "correct": 1,
           "expl": "Stopping/'stopping' is a preparatory filling operation in painting, not a defect like the others."
         },
         {
@@ -6045,5 +6045,6 @@
         }
       ]
     }
-  ]
+  ],
+  "group": "civil1"
 }
