@@ -2,7 +2,7 @@
 // Required for Chrome to treat "Add to Home screen" as a real install
 // (rather than a plain bookmark shortcut that always opens a new tab).
 
-const CACHE_VERSION = "quiz-hub-v1";
+const CACHE_VERSION = "quiz-hub-v2";
 const CORE_ASSETS = [
   "/",
   "/manifest.json",
@@ -37,6 +37,19 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  // Never cache API responses. They're dynamic and user-specific
+  // (auth state, saved progress, etc.), so they must always be read
+  // from the network. Previously these fell through to the generic
+  // cache-first handler below, which meant /api/auth/me and
+  // /api/progress could serve a stale cached response after reload
+  // (e.g. showing a user as logged out, or showing old progress) even
+  // though the cookie was still valid and progress had actually been
+  // saved to the database.
+  if (url.pathname.startsWith("/api/")) {
+    event.respondWith(fetch(request));
+    return;
+  }
 
   if (request.mode === "navigate") {
     event.respondWith(
