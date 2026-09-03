@@ -30,7 +30,8 @@ export default function Confetti({ count = 60, sound = true }) {
             background: p.color,
             animationDelay: p.delay + "s",
             animationDuration: p.duration + "s",
-            transform: `rotate(${p.rotate}deg) translateX(${p.drift}px)`,
+            "--rot": `${p.rotate}deg`,
+            "--drift": `${p.drift}px`,
           }}
         />
       ))}
