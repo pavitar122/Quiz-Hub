@@ -148,34 +148,41 @@ export default function QuizPage(){
     if(quiz.mode==="test"){
       const nextPos=quiz.pos+1;
       if(nextPos>=quiz.order.length){
-        // finish, record best & session
+        // finish, record best & session — use functional update so pct
+        // is computed from the freshest score even if the closure is stale
+        const snap = quiz;
         await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
           type:"complete",
-          catId: quiz.catId,
+          catId: snap.catId,
           kind: type==="full"?"FULL": type==="random"?"RANDOM": type==="bookmarked"?"BOOKMARKED": type==="missed"?"MISSED": String(idx),
-          score: quiz.score + (quiz.answered && quiz.selected===current.q.correct ? 0:0), // score already includes last answer? Actually we updated score above
-          total: quiz.total,
+          score: snap.score,
+          total: snap.total,
           mode:"test"
         })});
         // show result inline instead of navigating
-        setQuiz({...quiz, finished:true, pct: Math.round(quiz.score/quiz.total*100)});
+        setQuiz(q => ({...q, finished:true, pct: Math.round(q.score/q.total*100)}));
         return;
       }
-      setQuiz({...quiz, pos: nextPos, answered:false, selected:null});
+      setQuiz(q => ({...q, pos: nextPos, answered:false, selected:null}));
     } else {
       if(quiz.remaining.length===0){
+        const snap = quiz;
         await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
           type:"practiceComplete",
-          catId: quiz.catId,
-          totalUnique: quiz.totalUnique,
-          attempts: quiz.attempts,
+          catId: snap.catId,
+          totalUnique: snap.totalUnique,
+          attempts: snap.attempts,
           mode:"practice"
         })});
-        setQuiz({...quiz, finished:true});
+        setQuiz(q => ({...q, finished:true}));
         return;
       }
-      const nextItem=quiz.remaining.shift();
-      setQuiz({...quiz, practiceCurrent: nextItem, answered:false, selected:null, remaining:[...quiz.remaining]});
+      // avoid mutating state directly — copy first
+      setQuiz(q => {
+        const remaining = [...q.remaining];
+        const nextItem = remaining.shift();
+        return {...q, practiceCurrent: nextItem, answered:false, selected:null, remaining};
+      });
     }
   };
 
@@ -234,13 +241,21 @@ export default function QuizPage(){
   );
   if(quiz.finished){
     if(quiz.mode==="test"){
+      const isCelebrated = quiz.pct >= 70;
+      const badgeLabel = quiz.pct >= 90 ? "Outstanding" : quiz.pct >= 80 ? "Great Work" : quiz.pct >= 70 ? "Well Done" : null;
       return (
-        <div className="dwg-card">
-          {quiz.pct>=70 && <Confetti />}
-          <span className="dwg-tag mono">RESULT · TEST MODE</span>
-          <p className="result-score serif">{quiz.score}/{quiz.total}</p>
-          <p className="result-pct mono">{quiz.pct}%</p>
+        <div className={`dwg-card ${isCelebrated ? "result-celebrated" : ""}`}>
+          {isCelebrated && <Confetti />}
+          {isCelebrated ? (
+            <span className="result-badge">{badgeLabel} · {quiz.pct >= 90 ? "✦ Excellent" : quiz.pct >= 70 ? "✦ Passed" : ""}</span>
+          ) : (
+            <span className="dwg-tag mono">RESULT · TEST MODE</span>
+          )}
+          <p className={`result-score serif ${isCelebrated ? "has-sparkles" : ""}`}>{quiz.score}/{quiz.total}</p>
+          <p className="result-pct mono">{quiz.pct}% {isCelebrated ? "· Celebration unlocked" : "· Keep practicing"}</p>
           <div className="progress-bar"><div className="progress-fill" style={{width:quiz.pct+"%"}}></div></div>
+          {isCelebrated && <p className="verdict serif">You cleared the threshold — blueprint complete. The fireworks are for you.</p>}
+          {!isCelebrated && quiz.pct < 70 && <p className="verdict serif">Almost there — review your misses and try again. The next celebration is closer than you think.</p>}
           <div className="btn-row">
             <button className="btn" onClick={restart}>Retry Full Batch</button>
             {quiz.missed.length>0 && <button className="btn secondary" onClick={retryWrong}>Retry Wrong Answers ({quiz.missed.length})</button>}
@@ -265,16 +280,25 @@ export default function QuizPage(){
     } else {
       const wrongList = Object.values(quiz.wrongAnswers||{});
       const practicePct = quiz.totalUnique>0 ? Math.round((quiz.firstTryCorrect/quiz.totalUnique)*100) : 0;
+      const isCelebrated = practicePct >= 70;
+      const badgeLabel = practicePct >= 90 ? "Mastery" : practicePct >= 80 ? "Strong Grasp" : practicePct >= 70 ? "Well Practiced" : null;
       return (
-        <div className="dwg-card">
-          {practicePct>=70 && <Confetti />}
-          <span className="dwg-tag mono">RESULT · PRACTICE MODE</span>
-          <p className="result-score serif">Mastered {quiz.totalUnique}</p>
+        <div className={`dwg-card ${isCelebrated ? "result-celebrated" : ""}`}>
+          {isCelebrated && <Confetti />}
+          {isCelebrated ? (
+            <span className="result-badge">{badgeLabel} · {practicePct}% first-try</span>
+          ) : (
+            <span className="dwg-tag mono">RESULT · PRACTICE MODE</span>
+          )}
+          <p className={`result-score serif ${isCelebrated ? "has-sparkles" : ""}`}>Mastered {quiz.totalUnique}</p>
+          {isCelebrated && <p className="result-pct mono">All questions mastered — {practicePct}% on first try</p>}
+          {!isCelebrated && <p className="result-pct mono">{practicePct}% first-try · Resilience counts too</p>}
           <div className="stat-grid">
             <div className="stat-box"><div className="num serif"><Counter value={quiz.totalUnique} /></div><div className="lab mono">Mastered</div></div>
             <div className="stat-box"><div className="num serif"><Counter value={quiz.attempts} /></div><div className="lab mono">Attempts</div></div>
             <div className="stat-box"><div className="num serif"><Counter value={quiz.firstTryCorrect} /></div><div className="lab mono">First Try Correct</div></div>
           </div>
+          {isCelebrated && <p className="verdict serif">Every re-queue you survived made this glow possible. Beautiful persistence.</p>}
           <div className="btn-row">
             <button className="btn" onClick={restart}>Retry Full Batch</button>
             {wrongList.length>0 && <button className="btn secondary" onClick={retryWrong}>Retry Wrong Answers ({wrongList.length})</button>}
