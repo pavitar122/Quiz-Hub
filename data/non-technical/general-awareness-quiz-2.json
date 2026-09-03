@@ -1,0 +1,4384 @@
+{
+  "id": "general-awareness-quiz-2",
+  "title": "General Awareness",
+  "description": "Books & Authors, Scientists & Inventions, Space, Art & Culture, Awards, Sports, and Miscellaneous objective questions with answers.",
+  "subcats": [
+    {
+      "name": "Freedom Movement & Political Literature",
+      "questions": [
+        {
+          "num": 1,
+          "text": "The book 'India Wins Freedom' is the autobiography of",
+          "options": [
+            "Dr. Rajendra Prasad",
+            "Jawaharlal Nehru",
+            "Maulana Abul Kalam Azad",
+            "Humayun Kabir"
+          ],
+          "correct": 2,
+          "expl": "'India Wins Freedom' is Maulana Abul Kalam Azad's autobiography."
+        },
+        {
+          "num": 2,
+          "text": "Who has written the book named 'Gita Rahasya'?",
+          "options": [
+            "Mahatma Gandhi",
+            "Bal Gangadhar Tilak",
+            "Vinoba Bhave",
+            "Gopal Krishna Gokhale"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Which one of the following pairs is correctly matched?",
+          "options": [
+            "Abul Kalam Azad - Hind Swaraj",
+            "Annie Besant - New India",
+            "Bal Gangadhar Tilak - Common Weal",
+            "Mahatma Gandhi - India Wins Freedom"
+          ],
+          "correct": 1,
+          "expl": "Annie Besant founded and edited the journal 'New India'."
+        },
+        {
+          "num": 4,
+          "text": "The memoirs entitled 'Bapu : My Mother' was written by",
+          "options": [
+            "B.R. Nanda",
+            "Rajkumari Amrita Kaur",
+            "Mahadev Desai",
+            "Manubehn"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Which one of the following books was written by Tilak?",
+          "options": [
+            "India in Transition",
+            "Gita Rahasya",
+            "Gokhale-My Political Guru",
+            "Discovery of India"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "'Srimad Bhagavat Gita Rahasya' was written by",
+          "options": [
+            "Aurobindo Ghosh",
+            "Bal Gangadhar Tilak",
+            "Gopal Krishna Gokhale",
+            "Mohandas Karamchand Gandhi"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "Aurobindo Ghosh wrote",
+          "options": [
+            "Extremist Movement",
+            "Moderate Movement",
+            "Kesari",
+            "The Life Divine"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Which of the following is not correctly matched?",
+          "options": [
+            "Unhappy India - Bal Gangadhar Tilak",
+            "Durgesh Nandini - Bankim Chandra Chatterjee",
+            "India Wins Freedom - Abul Kalam Azad",
+            "Poverty and Un-British Rule in India - DadabhaiNaoroji"
+          ],
+          "correct": 0,
+          "expl": "'Unhappy India' was written by Lala Lajpat Rai, not Tilak."
+        },
+        {
+          "num": 9,
+          "text": "Who among the following is the author of 'Poverty and Un-British Rule in India'?",
+          "options": [
+            "R.C. Dutt",
+            "Henry Cotton",
+            "Mahatma Gandhi",
+            "DadabhaiNaoroji"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Which one of the following is correctly matched?",
+          "options": [
+            "Valentine Chirol - Indian Struggle",
+            "Rafiq Zakaria - The Man Who Divided India",
+            "Subhash Chandra Bose - Indian Unrest",
+            "V.D. Savarkar - Unhappy India"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Who was the author of Indian Unrest?",
+          "options": [
+            "DadabhaiNaoroji",
+            "Annie Besant",
+            "Lala Lajpat Rai",
+            "Valentine Chirol"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Who wrote the book 'A Nation In The Making'?",
+          "options": [
+            "Raja Ram Mohan Roy",
+            "Surendra Nath Bannerjee",
+            "B.G. Tilak",
+            "S.C. Bose"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "Which one of the following pairs is not correctly matched?",
+          "options": [
+            "Jawaharlal Nehru - Hind Swaraj",
+            "Maulana Abul Kalam Azad - India Wins Freedom",
+            "Subhash Chandra Bose - Indian Struggle",
+            "Lala Lajpat Rai - Unhappy India"
+          ],
+          "correct": 0,
+          "expl": "'Hind Swaraj' was written by Mahatma Gandhi, not Nehru."
+        },
+        {
+          "num": 14,
+          "text": "The book entitled 'Indian Struggle' on Indian National Movement was written by",
+          "options": [
+            "Subhash Chandra Bose",
+            "PattabhiSitaramaiyya",
+            "Jawaharlal Nehru",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "Which one of the following pairs is not correctly matched?",
+          "options": [
+            "V.D. Savarakar - The Indian War of Independence",
+            "R.C. Majumdar - The Sepoy Mutiny and Revolt of 1857",
+            "Radha Kamal Mukherjee - Awadh in Revolt (1857-1858)",
+            "S.B. Chaudhari - Civil Rebellions in the Indian Mutinies 1857-1859"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "The book 'Springing Tiger' is the biography of",
+          "options": [
+            "Bhagat Singh",
+            "Subhash Chandra Bose",
+            "Chandra Shekhar Azad",
+            "Ramprasad Bismil"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "Which one of the following is not correctly matched?",
+          "options": [
+            "Bhagat Singh - The Indian Sociologist",
+            "Sachindra Nath Sanyal - Bandijivan",
+            "Lala Ramsaran Das - Dreamland",
+            "Bhagwati Charan Vohra - The Philosophy of Bomb"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "Who is the author of 'Annihilation of Caste'?",
+          "options": [
+            "Jyotirao Phule",
+            "Dr. B.R. Ambedkar",
+            "Kanshi Ram",
+            "Ram Mohan Roy"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "Which one of the following pairs is not correctly matched?",
+          "options": [
+            "S.C. Bose - Indian Struggle",
+            "DadabhaiNaoroji - Poverty and Un-British Rule in India",
+            "Rajendra Prasad - India Divided",
+            "Frank Moraes - India from Curzon to Nehru and After"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "The author of 'Hind Swaraj' was",
+          "options": [
+            "B.G. Tilak",
+            "Vinoba Bhave",
+            "Chandra Shekhar Azad",
+            "Mahatma Gandhi"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "The book 'India Wins Freedom' is written by",
+          "options": [
+            "A.K. Azad",
+            "M.K. Gandhi",
+            "M.A. Ansari",
+            "Sarojini Naidu"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "In which of the following books did Mahatma Gandhi call British Parliament as sterile and prostitute?",
+          "options": [
+            "Sarvodaya or Universal dawn",
+            "An Autobiography or the Story of My Experiments with Truth",
+            "Hind Swaraj",
+            "The Story of a Satyagrahi"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 23,
+          "text": "Mahatma Gandhi wrote his autobiography originally in",
+          "options": [
+            "Hindi",
+            "Marathi",
+            "Gujarati",
+            "English"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 24,
+          "text": "Who was the Author of 'My Experiments with Truth'?",
+          "options": [
+            "Jawaharlal Nehru",
+            "Indira Gandhi",
+            "Narsimha Rao",
+            "Mahatma Gandhi"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 25,
+          "text": "'Hindi Swaraj' was written by Mahatma Gandhi in",
+          "options": [
+            "Hindi",
+            "Gujarati",
+            "English",
+            "Urdu"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 26,
+          "text": "In which one of the following jails, the book 'Discovery of India' was written by Jawaharlal Nehru?",
+          "options": [
+            "Alipur Central Jail",
+            "Yerwada Jail",
+            "Naini Central Jail",
+            "Ahmadnagar Fort Jail"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 27,
+          "text": "'Indian War of Independence 1857' is written by",
+          "options": [
+            "S.N. Sen",
+            "R.C. Majumdar",
+            "V.D. Savarkar",
+            "S.B. Chaudhuri"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 28,
+          "text": "Who amongst the following drafted the 'Sarvodaya Plan'?",
+          "options": [
+            "M.N. Roy",
+            "Jai Prakash Narayan",
+            "Morarji Desai",
+            "Shriman Narayan Aggarwal"
+          ],
+          "correct": 3,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Fiction, Poetry & Patriotic Songs",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Who wrote the book 'Gokhale-my political guru'?",
+          "options": [
+            "M.A. Jinnah",
+            "M.K. Gandhi",
+            "Shaukat Ali",
+            "C.R. Das"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "Who among the following wrote the book 'Bahubivah'?",
+          "options": [
+            "Raja Ram Mohan Roy",
+            "Ishwar Chandra Vidyasagar",
+            "Pandita Ramabai",
+            "Rabindra Nath Tagore"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "The author of the novel 'Chandrakanta' is",
+          "options": [
+            "Bhartendu Harishchandra",
+            "Premchand",
+            "Rabindra Nath Tagore",
+            "Devkinandan Khatri"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "The famous book, 'Das Capital' was written by",
+          "options": [
+            "Amartya Sen",
+            "Karl Marx",
+            "Gandhiji",
+            "Jawaharlal Nehru"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "The novel 'Durgesha Nandini' is written by",
+          "options": [
+            "Rabindra Nath Tagore",
+            "TaraknathGangopadhyaya",
+            "Swarna Kumari",
+            "Bankim Chandra Chatterjee"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "The song of VandeMataram which served as a great inspiration to the patriotic song of India in their freedom struggle is in book",
+          "options": [
+            "Anand Math",
+            "Durgesha Nandini",
+            "Meghanad-Vadh",
+            "Virangana Kavya"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "Who wrote the play 'Andher Nagari Chaupat Raja'?",
+          "options": [
+            "Govardhan Ram M. Tripathi",
+            "Munshi Premchand",
+            "Fakir Mohan Senapati",
+            "Bhartendu Harishchandra"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Who is the author of 'Bharat Bharati'?",
+          "options": [
+            "Rabindra Nath Tagore",
+            "Mulkraj Anand",
+            "Maithili Sharan Gupta",
+            "Bankim Chandra"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "The Book 'Mother India' was written by",
+          "options": [
+            "Catherine Mayo",
+            "Lala Lajpat Rai",
+            "Bal Gangadhar Tilak",
+            "Bipin Chandra Pal"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Who is the author of flag song (JhandaGeet) of India?",
+          "options": [
+            "Rabindra Nath Tagore",
+            "Ramdhari Singh 'Dinkar'",
+            "Shyamlal Prashad Gupta",
+            "Ganesh Shankar Vidyarthi"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "The Nationalist song 'Aie Mere Watan Ke Logo' had been written by poet",
+          "options": [
+            "Javed Akhtar",
+            "Pradeep",
+            "Ramdhari Singh 'Dinkar'",
+            "Maithili Sharan Gupta"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Who wrote the famous song 'Sare Jahan Se Achcha Hindustan Hamara'?",
+          "options": [
+            "SahirLudhianvi",
+            "Sir Syed Ahmad Khan",
+            "Muhammad Iqbal",
+            "Bahadur Shah Zafar"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "The pamphlet 'Philosophy of Bomb' was written by",
+          "options": [
+            "B.K. Dutt",
+            "Bhagat Singh",
+            "Rajguru",
+            "Yashpal"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "The song 'Amar Sonar Bangla', written during the Swadeshi Movement, inspired the liberation struggle of Bangladesh and was adopted as its National Anthem. Who wrote this song?",
+          "options": [
+            "Rajni Kanta Sen",
+            "Dwijendralal Roy",
+            "Mukunda Das",
+            "Rabindra Nath Tagore"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "Who composed 'Jana Gana Mana'?",
+          "options": [
+            "Bankim Chandra Chatterjee",
+            "Aurobindo Ghosh",
+            "Rabindra Nath Tagore",
+            "Sarojini Naidu"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "The author of 'Nirmala' is",
+          "options": [
+            "Jaishankar Prasad",
+            "Munshi Premchand",
+            "Maithili Sharan Gupta",
+            "Mohan Rakesh"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "Which one of the following books is not written by Kalidas?",
+          "options": [
+            "Meghadut",
+            "Kumarasambhav",
+            "Uttararamacharit",
+            "Ritusamhar"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "The author of the book 'The Road Ahead' is",
+          "options": [
+            "Bill Clinton",
+            "Bill Gates",
+            "Vikram Seth",
+            "Salman Rushdie"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "Who wrote the book entitled 'Romancing with Life: An Autobiography'?",
+          "options": [
+            "Devanand",
+            "Kalpana Chawla",
+            "Amitabh Bachchan",
+            "Anupam Kher"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "Who has written the book 'Heart of India'?",
+          "options": [
+            "Khushwant Singh",
+            "Mark Tully",
+            "R.K. Narayanan",
+            "Anita Desai"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "The Book 'Nineteen Eighty Four' is written by",
+          "options": [
+            "R.K. Narayanan",
+            "Khushwant Singh",
+            "George Orwell",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "Which of the following Hindi works was written first?",
+          "options": [
+            "Indravati",
+            "Padmavati",
+            "Madhumalti",
+            "Mrigavati"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 23,
+          "text": "'India from Curzon to Nehru' is the book of",
+          "options": [
+            "Kuldip Nayyar",
+            "Durga Das",
+            "Nirad C. Chaudhuri",
+            "Jawaharlal Nehru"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 24,
+          "text": "The story of the book named 'The Proudest Day' is related to",
+          "options": [
+            "The integration of the Indian States",
+            "The independence of India",
+            "The Pokhran nuclear explosion",
+            "The formation of NDA Government in the centre"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 25,
+          "text": "What is the name of Khushwant Singh's autobiography?",
+          "options": [
+            "The Last Moor Last Sigh",
+            "Truth Love and a Little Malice",
+            "The End Racism",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 26,
+          "text": "Author of the book 'One-day Wonders' is",
+          "options": [
+            "Ravi Shastri",
+            "Sunil Gavaskar",
+            "G. Vishwanath",
+            "DilipVengasarkar"
+          ],
+          "correct": 1,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Match the Following",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Match List-I with List-II and select the correct answer using the code given below the lists.\nList-I (i.India Wins Freedom ii.Runs and Ruins iii.Young India iv.New India) with List-II (Sunil Gavaskar / Abul Kalam Azad / Mahatma Gandhi / Annie Besant)",
+          "options": [
+            "2,1,3,4",
+            "2,1,4,3",
+            "3,2,1,4",
+            "4,2,3,1"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "Match List-I with List-II and select the correct answer using the code given below the lists.\nList-I (i.Surendra Nath Banerjee ii.M.K. Gandhi iii.Subhash Chandra Bose iv.Lajpat Rai) with List-II (Hind Swaraj / The Indian Struggle / Autobiographical Writings / A Nation in Making)",
+          "options": [
+            "4,1,3,2",
+            "1,4,3,2",
+            "1,4,2,3",
+            "4,1,2,3"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Match List-I (Authors: i.Bankim Chandra Chatterjee ii.Michael Madhusudan Dutt iii.Rabindra Nath Tagore iv.Sarojini Naidu) with List-II (Works: Anand Math / Captive Lady / Gora / The Broken Wing)",
+          "options": [
+            "1,2,3,4",
+            "2,3,4,1",
+            "1,4,2,3",
+            "4,1,3,2"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "Match List-I (Authors: i.Bankim Chandra ii.Dinbandhu Mitra iii.Premchand iv.Chandrakanta) with List-II (Works: i.Shatranj KeKhilari ii.Debi Chaudhrani iii.Nil Darpan)",
+          "options": [
+            "2,4,1",
+            "3,4,2",
+            "2,3,1",
+            "3,1,4"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Match List-I (Books: a.The First Indian War of Independence b.Anand Math c.Life Divine d.Sadhana) with List-II (Authors: i.Rabindra Nath Tagore ii.Sri Aurobindo iii.Bankim Chandra Chatterjee iv.Vinayak Damodar Savarkar)",
+          "options": [
+            "4,3,2,1",
+            "3,4,1,2",
+            "4,3,1,2",
+            "3,4,2,1"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Match List-I (Works: i.Tabaqat-i-Akbari ii.Tabaqat-i-Nasiri iii.Tarikh-i-Firozshahi iv.Tarikh-i-Yamini) with List-II (Authors: Al Utbi / Minhaj-ud-din bin Siraj-ud-din / Nizamuddin / Zia-ud-din Barani)",
+          "options": [
+            "3,2,1,4",
+            "2,1,4,3",
+            "1,3,2,4",
+            "3,4,1,2"
+          ],
+          "correct": 0,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Inventors & Inventions",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Telescope was invented by",
+          "options": [
+            "Galileo",
+            "Gutenberg",
+            "Edison",
+            "Graham Bell"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "The microscope is used for the study of",
+          "options": [
+            "Distant objects",
+            "Nearby objects",
+            "Small objects",
+            "Micro and nearby objects"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "The machine-Gun was invented by",
+          "options": [
+            "J.L. Beared",
+            "G. Brousa",
+            "Karl Benz",
+            "James Puckle"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "Wilhelm Roentgen invented",
+          "options": [
+            "Radio",
+            "X-Ray Machine",
+            "Electric Bulb",
+            "Electric Motor"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Who invented Steam Engine?",
+          "options": [
+            "Robert Watson",
+            "James Watt",
+            "William Harvey",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "'Telephone' was invented by",
+          "options": [
+            "Graham Bell",
+            "Hoffman",
+            "Wilson",
+            "George Stephenson"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "Who discovered electric bulb?",
+          "options": [
+            "Thomas Edison",
+            "Alexander Graham Bell",
+            "William Cooke",
+            "Terry Addison"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Gas engine was invented by",
+          "options": [
+            "Diesel",
+            "Davy",
+            "Daimler",
+            "Charles"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "Who was the inventor of the fountain pen?",
+          "options": [
+            "Waterman",
+            "Parker",
+            "Chelpark",
+            "Shaeffers"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Who was the inventor of Radar?",
+          "options": [
+            "Robert Watson",
+            "Fleming",
+            "Bush Wall",
+            "Austin"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Alfred Nobel invented",
+          "options": [
+            "Microphone",
+            "Typewriter",
+            "Dynamite",
+            "Gramophone"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Who discovered Television?",
+          "options": [
+            "Edison",
+            "Galileo",
+            "Baird",
+            "Franklin"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "With what invention is the name of J.L. Baird associated with?",
+          "options": [
+            "Barometer",
+            "Helicopter",
+            "Television",
+            "Telephone"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "Who is the discoverer of Penicillin?",
+          "options": [
+            "Alexander Graham Bell",
+            "Alexander Fleming",
+            "Christopher Macdonald",
+            "Albert Einstein"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "In whose laboratory did the synthesis of DNA first take place?",
+          "options": [
+            "Miller",
+            "Khorana",
+            "D. Werls",
+            "Kelvin"
+          ],
+          "correct": 1,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Notable Scientists & Discoveries",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Who among the following scientists shared the Nobel Prize in Physics with his son?",
+          "options": [
+            "Max Plank",
+            "Albert Einstein",
+            "William Henry Bragg",
+            "Enrico Fermi"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "The principle of 'Black hole' was enunciated by",
+          "options": [
+            "C.V. Raman",
+            "H.J. Bhabha",
+            "S. Chandrashekhar",
+            "H. Khurana"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Scientist Albert Einstein is famous for",
+          "options": [
+            "The interpretation of atomic structure of hydrogen",
+            "The photoelectric effect",
+            "Planting first Nuclear Reactor",
+            "The prediction of the existence of neutrons"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "In Einstein's equation E = mc2, c denotes",
+          "options": [
+            "Velocity of sound",
+            "Speed of light",
+            "Wavelength",
+            "A constant"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "The fourth dimension in Physics was introduced by",
+          "options": [
+            "Newton",
+            "Einstein",
+            "Galileo",
+            "Neil Bohr"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Sir C.V. Raman received Nobel Prize for Physics in the year",
+          "options": [
+            "1928",
+            "1930",
+            "1932",
+            "1950"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "The National Science Day is observed on February 28 every year to commemorate",
+          "options": [
+            "Raman-effect day",
+            "The launch of the first artificial satellite Aryabhatta",
+            "The successful launch of ASLV",
+            "Homi J. Bhabha's birthday"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Who among the following scientists propounded the New Theory of Relativity?",
+          "options": [
+            "J.V. Narlikar",
+            "M.M. Krishnan",
+            "S. Chandrashekhar",
+            "B.D. Nag Choudhary"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "Who is called the Father of Atomic Energy in India?",
+          "options": [
+            "Prof. Satish Dhawan",
+            "Homi J. Bhabha",
+            "Dr. K.S. Krishna",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Stephen Hawking is a",
+          "options": [
+            "Pianist",
+            "Guitarist",
+            "Scientist",
+            "American politician"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Which one of the following scientists has carried out researches both in the field of Biology and Physics?",
+          "options": [
+            "Jagdish Chandra Bose",
+            "Har Govind Khurana",
+            "C.V. Raman",
+            "Homi J. Bhabha"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Who is associated with the development of India's Atomic Bomb?",
+          "options": [
+            "A.P.J. Abdul Kalam",
+            "Homi Bhabha",
+            "Raja Ramanna",
+            "Kastoorirangan"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "Who is not a Nobel Prize winner among the following scientists?",
+          "options": [
+            "Har Govind Khurana",
+            "C.V. Raman",
+            "S. Chandrashekhar",
+            "Jagdish Chandra Bose"
+          ],
+          "correct": 3,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Indian Space Programme",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Aryabhatta was launched on",
+          "options": [
+            "19th April, 1975",
+            "6th December, 1957",
+            "31st January, 1958",
+            "2nd October, 1980"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "INSAT-3C was launched from",
+          "options": [
+            "Hassan",
+            "Kaurou",
+            "Sriharikota",
+            "Thumba"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "The First Satellite of India sent to space, was",
+          "options": [
+            "Bhaskar",
+            "Rohini",
+            "Aryabhatta",
+            "Apple"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "Who amongst the following was the Chairman of I.S.R.O. when INSAT-3B was launched?",
+          "options": [
+            "Anil Kakodkar",
+            "Abdul Kalam",
+            "K. Kasturirangan",
+            "U.R. Rao"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Indian Satellite series which is being used for telecommunication system is",
+          "options": [
+            "Rohini",
+            "I.R.S.",
+            "CARTOSAT",
+            "INSAT"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "What is the name of the world's first private flight plan to go on the Moon?",
+          "options": [
+            "Moon Express",
+            "Moon Flight",
+            "Chandrayaan",
+            "Moon Mail"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "Apple was launched from",
+          "options": [
+            "Kourou (French Guiana)",
+            "Sriharikota (India)",
+            "Balkanoor (Russia)",
+            "Cape Canaveral (U.S.A)"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "The first Indian Communication Satellite APPLE was launched on",
+          "options": [
+            "27 February, 1982",
+            "18 September, 1981",
+            "19 June, 1981",
+            "25 December, 1981"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "India's first dedicated navigation satellite IRNSS-1A was launched from",
+          "options": [
+            "Sriharikota",
+            "Ahmedabad",
+            "Thiruvananthapuram",
+            "Bengaluru"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "ISRO's Master Control Facility is at Hasan, which is located",
+          "options": [
+            "Andhra Pradesh",
+            "Gujarat",
+            "Orissa",
+            "Karnataka"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Name of the spacecraft for India's mission Moon is",
+          "options": [
+            "Chandrayaan-I",
+            "Chandrayaan-II",
+            "Antariksha",
+            "Change-I"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Chandrayaan-I was launched from",
+          "options": [
+            "Orissa",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "The Project Director of Chandrayaan-II was",
+          "options": [
+            "C. Rangarajan",
+            "A.P.J. Kalam",
+            "P. Chidambaram",
+            "Dr. M. Annadurai"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "Thumba, known as a rocket launching station, is situated in",
+          "options": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Jharkhand",
+            "Kerala"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "Sriharikota Island lies near",
+          "options": [
+            "Chika lake",
+            "Pulicat lake",
+            "Mahanadi",
+            "Godavari Mouth"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "In which of the following States lies Sriharikota, the spaceport of India?",
+          "options": [
+            "Maharashtra",
+            "Andhra Pradesh",
+            "Tamil Nadu",
+            "Kerala"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "In February, 2004 a blast occurred in India's Space Centre at",
+          "options": [
+            "Ahmedabad",
+            "Bangalore",
+            "Sriharikota",
+            "Thumba"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "Which one of the following is not a space satellite?",
+          "options": [
+            "SLV-3",
+            "RS-D1",
+            "IRS-1D",
+            "INSAT-2D"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "India became the first country to send an Educational Services satellite into space, Edusat. When was the satellite launched?",
+          "options": [
+            "20th September, 2003",
+            "20th September, 2004",
+            "4th July, 2004",
+            "20th December, 2004"
+          ],
+          "correct": 1,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Global Space Missions & Concepts",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Which one of the following is NASA's last Space Shuttle?",
+          "options": [
+            "Atlantis",
+            "Colombia",
+            "Discovery",
+            "Endeavor"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "NASA's 'Cassini' spacecraft is on a mission for which planet?",
+          "options": [
+            "Jupiter",
+            "Mars",
+            "Saturn",
+            "Venus"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "In which atmospheric layer are the communication satellites located?",
+          "options": [
+            "Stratosphere",
+            "Ionosphere",
+            "Troposphere",
+            "Exosphere"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "NASA-U.S. space agency has launched a telescope named Kepler to find",
+          "options": [
+            "Distant stars",
+            "Distant planets",
+            "Distant satellites",
+            "Earth like Planets"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Television transmission is an example of which of the following?",
+          "options": [
+            "Simplex communication",
+            "Half-duplex communication",
+            "Full-duplex communication",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Which one of the following is a spacecraft?",
+          "options": [
+            "Apophis",
+            "Cassini",
+            "Spitzer",
+            "Tech Sar"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "The 'Black Box' of an aeroplane is of",
+          "options": [
+            "White colour",
+            "Red colour",
+            "Black colour",
+            "Orange colour"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "China developed a system nicknamed 'Micius' which is",
+          "options": [
+            "An ancient Chinese musical system",
+            "A quantum satellite communication system",
+            "A computer game",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "What is the name of NASA's vehicle on Mars?",
+          "options": [
+            "Phoenix",
+            "Roger",
+            "Florida",
+            "John Canaday"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "The first U.S. rover which reached Mars in January 2004 was",
+          "options": [
+            "Discovery",
+            "Pioneer",
+            "Spirit",
+            "Vanguard"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Methane is present in the atmosphere of",
+          "options": [
+            "Moon",
+            "Sun",
+            "Mars",
+            "Jupiter"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Which of the following animals was sent to space on 3rd November, 1957?",
+          "options": [
+            "Otolith",
+            "Laika",
+            "Baker",
+            "Belka"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "Apollo-8 was launched for space exploration on",
+          "options": [
+            "6 January, 1998",
+            "7 February, 1998",
+            "8 March, 1998",
+            "21 December, 1968"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "Selene-1, the lunar orbiter mission, belongs to which one of the following?",
+          "options": [
+            "China",
+            "European Union",
+            "Japan",
+            "USA"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "On which principle does a Jet Engine work?",
+          "options": [
+            "Conservation of linear momentum",
+            "Conservation of angular momentum",
+            "Conservation of energy",
+            "Conservation of mass"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "Cryogenic temperature stands for temperatures",
+          "options": [
+            "Below 150ºC",
+            "Above 150ºC",
+            "Below -150ºC",
+            "-273ºC"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "Which of the following is not used as a rocket propellant?",
+          "options": [
+            "Liquid hydrogen",
+            "Liquid oxygen",
+            "Liquid hydrazine",
+            "Kerosene oil"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "A rocket works on the principle of",
+          "options": [
+            "Avogadro's concept",
+            "Energy conservation",
+            "Momentum conservation",
+            "Bernoulli's theorem"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "An artificial satellite can be tracked very precisely from the Earth by using",
+          "options": [
+            "Doppler effect",
+            "Radar",
+            "Sonar",
+            "Pulsar"
+          ],
+          "correct": 0,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Festivals, Pilgrimage & Traditions",
+      "questions": [
+        {
+          "num": 1,
+          "text": "In which of the following places is Kumbh Mela not held?",
+          "options": [
+            "Nashik",
+            "Haridwar",
+            "Prayag",
+            "Varanasi"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "After how many years is 'Maha Kumbh' held?",
+          "options": [
+            "12 years",
+            "10 years",
+            "9 years",
+            "144 years"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "'Madhubani' painting is related to which State?",
+          "options": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Kerala",
+            "Tamil Nadu"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "In which places is Kumbh Mela held every twelfth year (in rotation)?",
+          "options": [
+            "Prayag-Haridwar-Ujjain-Nashik",
+            "Chitrakoot-Ujjain-Prayag-Haridwar",
+            "Rameshwaram-Puri-Badrinath-Dwarika",
+            "Ujjain-Puri-Prayag-Haridwar"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Consider the following pairs — Tradition-State: 1.Gatka, a traditional martial art-Kerala 2.Madhubani, a traditional painting-Bihar 3.SingheyKhabab Sindhu Darshan festival-Jammu and Kashmir. Which of the above pair(s) is/are correctly matched?",
+          "options": [
+            "1 and 2",
+            "Only 3",
+            "2 and 3",
+            "1, 2 and 3"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Onam is the festival of which State?",
+          "options": [
+            "Karnataka",
+            "Assam",
+            "Kerala",
+            "Tamil Nadu"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "'Bihu' is the folk dance of",
+          "options": [
+            "Uttar Pradesh",
+            "Assam",
+            "West Bengal",
+            "Maharashtra"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "'Pongal' is the festival of which State?",
+          "options": [
+            "Andhra Pradesh",
+            "Tamil Nadu",
+            "Maharashtra",
+            "Kerala"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "South Indian Festival of 'Onam' is associated with which of the following?",
+          "options": [
+            "Ram's Victory over Rawan",
+            "Durga's Killing of Mahishasur",
+            "Shiva Shakti",
+            "Mahabali"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "'Athapoo' is associated with which of the following festivals?",
+          "options": [
+            "Dol Yatra",
+            "Onam",
+            "Pongal",
+            "Vishwakarma Puja"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "'Tamasha' is the famous folk form of musical theatre in",
+          "options": [
+            "Uttar Pradesh",
+            "Punjab",
+            "Maharashtra",
+            "Bihar"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Name the holy place in which the main God is different from the other three?",
+          "options": [
+            "Amarnath",
+            "Jagannath",
+            "Kedarnath",
+            "Vishwanath"
+          ],
+          "correct": 1,
+          "expl": "Amarnath, Kedarnath and Vishwanath are all shrines of Shiva; Jagannath is a form of Vishnu/Krishna."
+        },
+        {
+          "num": 13,
+          "text": "Four Mathas established by Adi Shankaracharya are",
+          "options": [
+            "Joshimath, Dwarka, Puri, Sringeri",
+            "Sringeri, Dwarka, Joshimath, Prayag",
+            "Dwarka, Joshimath, Prayag, Kanchi",
+            "Puri, Sringeri, Dwarka, Varanasi"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "In India, many pilgrims travel to one of the twelve Jyotirlingas, which is located",
+          "options": [
+            "In Tapovan near Uttaranchal",
+            "In Tamil Nadu near Arunachal",
+            "In Andhra Pradesh near Kurnool",
+            "In Kerala near Kaladi"
+          ],
+          "correct": 2,
+          "expl": "Refers to Srisailam (Mallikarjuna Jyotirlinga), Andhra Pradesh, near Kurnool."
+        },
+        {
+          "num": 15,
+          "text": "In which State is the Buddhist site Tabo Monastery located?",
+          "options": [
+            "Arunachal Pradesh",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Uttarakhand"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "Losoong is a festival which is celebrated in",
+          "options": [
+            "Tibet",
+            "Arunachal Pradesh",
+            "Sikkim",
+            "Kerala"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "ChapcharKut is a festival celebrated in the State of",
+          "options": [
+            "Arunachal Pradesh",
+            "Assam",
+            "Mizoram",
+            "Sikkim"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "Ijtima Festival (Mela) is celebrated in",
+          "options": [
+            "Indore",
+            "Bhopal",
+            "Jabalpur",
+            "Raipur"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "Who was the grandfather of Arjun, the hero of Mahabharata?",
+          "options": [
+            "Vichitravirya",
+            "Shantanu",
+            "Chitrangad",
+            "Devadutt"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "What is 'Kaaba'?",
+          "options": [
+            "Hindu Shrine",
+            "Jew's Shrine",
+            "Muslim Shrine",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "What is the Jewish place of worship called?",
+          "options": [
+            "Church",
+            "Synagogue",
+            "Mosque",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "Where was the first Sanskrit University Chair established?",
+          "options": [
+            "England",
+            "France",
+            "Germany",
+            "Russia"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 23,
+          "text": "The earliest reference of the 'Magnetic Compass' is found in",
+          "options": [
+            "MiftahulFuzala",
+            "Chachnama",
+            "Ranazatu's Safar",
+            "JawamiulHikayat"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 24,
+          "text": "With reference to Buddhist history, tradition and culture in India, consider the following pairs — Famous shrine-Location: 1.Tabo monastery and temple complex-Spiti Valley 2.Lhotsava Lhakhang temple, Nako-Zanskar Valley 3.Alchi temple complex-Ladakh. Which of the pairs given above is/are correctly matched?",
+          "options": [
+            "Only 1",
+            "Only 2 and 3",
+            "Only 1 and 3",
+            "1, 2 and 3"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 25,
+          "text": "The Chitragupta Swami Temple, considered to be the only temple of Chitragupta, is situated in",
+          "options": [
+            "Kanchi",
+            "Mathura",
+            "Puri",
+            "Ujjain"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 26,
+          "text": "Name the place where the Thyagaraja festival is regularly celebrated in honour of composer Sri Thyagaraja?",
+          "options": [
+            "Adyar",
+            "Thanjavur",
+            "Mamallapuram",
+            "Udipi"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 27,
+          "text": "'Sufi Kalam', a type of devotional music, is characteristic of",
+          "options": [
+            "Gujarat",
+            "Kashmir",
+            "Rajasthan",
+            "None of these"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 28,
+          "text": "According to the Mimamsa system of philosophy, liberation is possible by means of",
+          "options": [
+            "Gyan",
+            "Bhakti",
+            "Yoga",
+            "Karma"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 29,
+          "text": "'Jagar' is a form of God-worship ritual prevalent in",
+          "options": [
+            "Madhya Pradesh",
+            "Uttarakhand",
+            "Haryana",
+            "Assam"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 30,
+          "text": "Where is the 'Rath Yatra' festival held?",
+          "options": [
+            "Konark",
+            "Puri",
+            "Dwarka",
+            "Haridwar"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 31,
+          "text": "Given below is a traditional list of dresses of women along with States. Which one of them is not correctly matched?",
+          "options": [
+            "Boku - Sikkim",
+            "Mekhala - Assam",
+            "Mundu - Chhattisgarh",
+            "Pheran - Kashmir"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 32,
+          "text": "Shanti Niketan is located in which district of West Bengal?",
+          "options": [
+            "Vardhman",
+            "Bankura",
+            "Murshidabad",
+            "Birbhum"
+          ],
+          "correct": 3,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Classical Dance & Music",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Which of the following is not correctly matched?",
+          "options": [
+            "Madhumita - Odissi dancer",
+            "Indira Chakravarty - Nutritional scientist",
+            "Meeta Bhatia - Jurist",
+            "Sadhvi Sadhana - Homemaker doctor"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "AllaRakha, the famous instrumentalist, is related with",
+          "options": [
+            "Violin",
+            "Pakhawaj",
+            "Tabla",
+            "Sitar recital"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Which of the following is not correctly matched?",
+          "options": [
+            "Debu Chaudhuri - Sitar",
+            "Amjad Ali Khan - Sarod",
+            "Panna Lal Ghosh - Tabla",
+            "Yahudi Menuhin - Violin"
+          ],
+          "correct": 2,
+          "expl": "Panna Lal Ghosh was a celebrated flautist, not associated with tabla."
+        },
+        {
+          "num": 4,
+          "text": "Which one of the following pairs of composers in different languages and their works on the Mahabharata theme is correctly matched?",
+          "options": [
+            "Sarladasa - Bengali",
+            "Kasirama - Oriya",
+            "Tikkana - Marathi",
+            "Pampa - Kannada"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "The first writer to use Urdu as the medium of poetic expression was",
+          "options": [
+            "Amir Khusrau",
+            "Mirza Ghalib",
+            "Bahadur Shah Zafar",
+            "Faiz"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "'Radha Govind Sangeet Sar', the renowned classical music composition, is the creation of",
+          "options": [
+            "Devarshi Bhatt Brajpal",
+            "Sawai Pratap Singh",
+            "Hiranand Vyas",
+            "Chatur Lal Sen"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "The brothers Umakant and Ramakant Gundecha are",
+          "options": [
+            "Dhrupad vocalists",
+            "Kathak dancers",
+            "Sarod maestros",
+            "Table players"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "The author of the 'Raga Kallpadrum' is",
+          "options": [
+            "Radhakrishnan",
+            "Krishnanand Vyas",
+            "Rana Hammir",
+            "Maharana Kumbha"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "Which 'Raga' is sung early in the morning?",
+          "options": [
+            "Todi",
+            "Darbari",
+            "Bhopali",
+            "Bhimpalasi"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Pandit Bhimsen Joshi is related to",
+          "options": [
+            "Astrology",
+            "Politics",
+            "Environment",
+            "Music"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "The famous classical singer Bhimsen Joshi is related to",
+          "options": [
+            "Banaras Gharana",
+            "Kirana Gharana",
+            "Lucknow Gharana",
+            "Rampur Gharana"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "'Odissi' dance belongs to",
+          "options": [
+            "Kerala",
+            "Andhra Pradesh",
+            "Orissa",
+            "Tamil Nadu"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "'Mohini Attam' is the folk dance of",
+          "options": [
+            "Andhra Pradesh",
+            "Karnataka",
+            "Kerala",
+            "Tamil Nadu"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "Which one of the following dances involves solo performance?",
+          "options": [
+            "Bharatnatyam",
+            "Kuchipudi",
+            "Mohiniyattam",
+            "Odissi"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "Which of the following dance styles originates from Eastern India?",
+          "options": [
+            "Kathakali",
+            "Kuchipudi",
+            "Bharatanatyam",
+            "Manipuri"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "Indrani Rahman is related to which classical dance system?",
+          "options": [
+            "Kathak",
+            "Bharatanatyam",
+            "Odissi",
+            "Kuchipudi"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "Girija Devi, famous singer of Thumri, belongs to",
+          "options": [
+            "Banaras Gharana",
+            "Lucknow Gharana",
+            "Jaipur Gharana",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "Which of the following musical instruments is not of Indo-Islamic origin?",
+          "options": [
+            "Sitar",
+            "Tabla",
+            "Sarangi",
+            "Shehnai"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "GangubaiHangal, who died a few months ago, was a",
+          "options": [
+            "Classical Singer",
+            "Dancer",
+            "Painter",
+            "Sitar Player"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "'Tera Tali' is the folk dance of",
+          "options": [
+            "Kerala",
+            "Rajasthan",
+            "Madhya Pradesh",
+            "Tamil Nadu"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "'Karagam', a religious folk dance, is associated with",
+          "options": [
+            "Tamil Nadu",
+            "Kerala",
+            "Andhra Pradesh",
+            "Karnataka"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "Which one of the following is not correctly matched?",
+          "options": [
+            "Vilayat Khan - Sitar",
+            "AllaRakha - Tabla",
+            "Hari Prasad - Flute Chaurasia",
+            "Amjad Ali Khan - Pakhawaj"
+          ],
+          "correct": 3,
+          "expl": "Amjad Ali Khan is a renowned Sarod player, not Pakhawaj."
+        },
+        {
+          "num": 23,
+          "text": "Sri V.G. Jog is famous for which of the following instrumental music?",
+          "options": [
+            "Sitar",
+            "Violin",
+            "Tabla",
+            "Santoor"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 24,
+          "text": "Who among the following is an excellent dancer of Kathak?",
+          "options": [
+            "AllaRakha",
+            "M.S. Reddy",
+            "Birju Maharaj",
+            "Raja Reddy"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 25,
+          "text": "Identify one from the following who is not associated with Kathak dance.",
+          "options": [
+            "Bindadin",
+            "Shambhu Maharaj",
+            "Lachhu Maharaj",
+            "Dhruvtara Joshi"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 26,
+          "text": "Who amongst the following is not a Kathak artist?",
+          "options": [
+            "Birju Maharaj",
+            "KishanMaharaj",
+            "LachhuMaharaj",
+            "Sitara Devi"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 27,
+          "text": "To which State does the folk art form of Madhubani belong?",
+          "options": [
+            "Orissa",
+            "West Bengal",
+            "Bihar",
+            "Rajasthan"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 28,
+          "text": "With reference to India's culture and tradition, what is 'Kalaripayattu'?",
+          "options": [
+            "An ancient Bhakti cult of Shaivism still prevalent in some parts of South India",
+            "An ancient style of bronze and brass work still found in the Southern part of Coromandel area",
+            "An ancient form of dance-drama and a living tradition in the Northern part of Malabar",
+            "An ancient martial art and a living tradition in some parts of South India"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 29,
+          "text": "Folk songs have paramount importance",
+          "options": [
+            "For entertainment",
+            "For the development of music",
+            "For preserving traditions",
+            "For livelihood"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 30,
+          "text": "The dance which is not classical is",
+          "options": [
+            "Kathak",
+            "Kuchipudi",
+            "Odissi",
+            "Garba"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 31,
+          "text": "Which one of the following is correct?",
+          "options": [
+            "Hari Prasad Chaurasia - Flute",
+            "Bismillah Khan - Tabla",
+            "AllaRakha - Sarod",
+            "Zakir Hussain - Veena"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 32,
+          "text": "Which one of the following pairs is wrong?",
+          "options": [
+            "Bhimsen Joshi - Classical Vocal Music",
+            "AllaRakha Khan - Tabla",
+            "Debu Chaudhari - Sitar",
+            "M.S. Subbalakshmi - Flute"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 33,
+          "text": "Which of the following Academies is responsible for fostering the development of dance, drama and music in India?",
+          "options": [
+            "Sangeet Academy",
+            "Lalit Kala Academy",
+            "Sahitya Academy",
+            "National School of Drama"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 34,
+          "text": "Who among the following is a flute player?",
+          "options": [
+            "Debu Chaudhari",
+            "MadhupMudgal",
+            "RonuMajumdar",
+            "Shafat Ahmad"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 35,
+          "text": "Ustad Amjad Ali Khan is a famous player of which musical instrument?",
+          "options": [
+            "Sitar",
+            "Tabla",
+            "Flute",
+            "Sarod"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 36,
+          "text": "Which of the following is not correctly matched?",
+          "options": [
+            "Birju Maharaj - Kathak",
+            "Bismillah Khan - Shahnai",
+            "Zakir Hussain - Harmonium",
+            "Amzad Ali Khan - Sarod"
+          ],
+          "correct": 2,
+          "expl": "Zakir Hussain is famous for tabla, not harmonium."
+        },
+        {
+          "num": 37,
+          "text": "Which one of the following is the most ancient musical instrument?",
+          "options": [
+            "Sitar",
+            "Veena",
+            "Sarod",
+            "Tabla"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 38,
+          "text": "Musical instrument sitar is the combination of",
+          "options": [
+            "Bansuri and Veena",
+            "Bansuri and Sarangi",
+            "Veena and Tambura",
+            "Veena and Piano"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 39,
+          "text": "Which one of the following pairs of folk dance forms and States is not correctly matched?",
+          "options": [
+            "Korku - Maharashtra",
+            "Jhumar - Haryana",
+            "Thali - Himachal Pradesh",
+            "Mukna - Manipur"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 40,
+          "text": "Kuchipudi dance started in",
+          "options": [
+            "Andhra Pradesh",
+            "Kerala",
+            "Orissa",
+            "Tamil Nadu"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 41,
+          "text": "Kuchipudi dance is related to",
+          "options": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 42,
+          "text": "The folk dance of Meghalaya is",
+          "options": [
+            "Nati",
+            "Loho",
+            "Bamboo dance",
+            "Khantum"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 43,
+          "text": "In Indian architecture, 'Surkhi' was introduced by",
+          "options": [
+            "Kushans",
+            "Guptas",
+            "Sultanate Sultans",
+            "Mughals"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 44,
+          "text": "Which one of the following is not a factor of 'Cultural Lag'?",
+          "options": [
+            "Religion",
+            "Politics",
+            "Law",
+            "Tradition"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 45,
+          "text": "Which dance is performed only by males?",
+          "options": [
+            "Mohini Attam",
+            "Odissi",
+            "Kathakali",
+            "Manipuri"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 46,
+          "text": "Mask dance is associated with which of the following dance styles?",
+          "options": [
+            "Kathakali",
+            "Naga",
+            "Odissi",
+            "Kuchipudi"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 47,
+          "text": "Which one of the following dances is related to Gujarat?",
+          "options": [
+            "Chunar",
+            "Bidesia",
+            "Raas dance",
+            "Kuchipudi"
+          ],
+          "correct": 2,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Cinema, Painting & Personalities",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Which one of the following signifies folk culture?",
+          "options": [
+            "Cultural practices of more civilized people",
+            "Cultural practices of urban people",
+            "Cultural practices of common people",
+            "Cultural practices of people of modern society"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "Kalamkari painting refers to",
+          "options": [
+            "A hand-painted cotton textile in South India",
+            "A handmade drawing on bamboo handicrafts in North-East India",
+            "A block-painted woollen cloth in the Western Himalayan region of India",
+            "A hand-painted decorative silk cloth in North-Western India"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Which one of the following pairs is not correctly matched?",
+          "options": [
+            "India's first technicolour film - Jhansi Ki Rani",
+            "India's first 3-D film - My Dear Kuttichathan",
+            "India's first insured film - Taal",
+            "India's first actress to win the Bharat Ratna - Meena Kumari"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "The lead character in the film 'The Bandit Queen' has been played by",
+          "options": [
+            "Seema Biswas",
+            "Shabana Azmi",
+            "Neeta Gupta",
+            "Pallavi Joshi"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Who was the producer of the famous T.V. serial 'Ramayan'?",
+          "options": [
+            "B.R. Chopra",
+            "Ramanand Sagar",
+            "ShyamBenegal",
+            "Mira Nair"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "The film 'The Making of the Mahatma' has been directed by",
+          "options": [
+            "Peter Ustinov",
+            "Richard Attenborough",
+            "ShyamBenegal",
+            "Mira Nair"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "Who played the role of Gandhi in the movie 'Gandhi'?",
+          "options": [
+            "Ben Kingsley",
+            "Richard Attenborough",
+            "Naseeruddin Shah",
+            "Roshan Seth"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Richard Attenborough is",
+          "options": [
+            "A writer",
+            "A painter",
+            "An actor",
+            "Producer and director"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "The first feature film (talkie) produced in India was",
+          "options": [
+            "Hatimtai",
+            "AlamArax",
+            "Pundalik",
+            "Raja Harishchandra"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Whom did the famous Indian actress Devika Rani marry?",
+          "options": [
+            "Painter Svetoslav Roerich",
+            "Writer Solzhenitsyn",
+            "Piano player and author Rubinstein",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Who was the producer of the serial 'Mahabharat'?",
+          "options": [
+            "ShyamBenegal",
+            "B.R. Chopra",
+            "Ramanand Sagar",
+            "Maniratnam"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Vidushaka, a common character in Sanskrit drama, is invariably",
+          "options": [
+            "Brahmana",
+            "Kshatriya",
+            "Vaisya",
+            "Shudra"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "K. Shankar Pillai was a",
+          "options": [
+            "Cartoonist",
+            "Painter",
+            "Dancer",
+            "Flute player"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "Raghu Rai is well known for which one of the following areas?",
+          "options": [
+            "Research in Mathematics",
+            "Photography",
+            "Water harvesting",
+            "Pollution control"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "The paintings of Abanindra Nath Tagore have been classified as",
+          "options": [
+            "Realistic",
+            "Socialistic",
+            "Revivalistic",
+            "Impressionistic"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "Who was Vishnu Chinchalkar?",
+          "options": [
+            "Chitrakar",
+            "Shilpkar",
+            "Kahanikar",
+            "Sahityakar"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "Who among the following established the 'Indian Society of Oriental Art'?",
+          "options": [
+            "Nihar Ranjan Ray",
+            "Narendra Mohan Mukherjee",
+            "Abanindra Nath Tagore",
+            "Barindra Kumar Ghosh"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "Who painted the famous 'Mona Lisa'?",
+          "options": [
+            "Michel Angelo",
+            "Jashua Reynolds",
+            "Rambrandt",
+            "Leonardo Da Vinci"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "'Merapiyagharaaya' has been sung by which Pakistani singer?",
+          "options": [
+            "Ghulam Ali",
+            "Nusrat Fateh Ali Khan",
+            "Mehdi Hassan",
+            "Faiz Ahmad Faiz"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "Jamini Roy was a",
+          "options": [
+            "Musician",
+            "Painter",
+            "Lyricist",
+            "None of these"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "What is Britney Spears famous for?",
+          "options": [
+            "Dancing",
+            "Singing",
+            "Writing",
+            "Modelling"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "Who among the following is considered the 'Tagore' of Punjabi language?",
+          "options": [
+            "Puran Singh",
+            "Mohan Singh",
+            "Amrita Pritam",
+            "Kartar Singh Duggal"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 23,
+          "text": "The famous painting 'Satyam Shivam Sundaram' was prepared by",
+          "options": [
+            "Shobha Singh",
+            "Nandkishore Sharma",
+            "ShivnandanNautiyal",
+            "Vishwanath Mehta"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 24,
+          "text": "The first Indian lady to climb Mount Everest was",
+          "options": [
+            "Bachendri Pal",
+            "Dicky Dolma",
+            "Santosh Yadav",
+            "P.T. Usha"
+          ],
+          "correct": 0,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "National & Civilian Awards",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Who was the first Indian to receive the Magsaysay award?",
+          "options": [
+            "Indira Gandhi",
+            "T.N. Seshan",
+            "Kiran Bedi",
+            "Vinoba Bhave"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "'Dronacharya' Award is given in recognition of",
+          "options": [
+            "Best coaching in sports",
+            "Best research work in medicines",
+            "Best N.C.C. cadet",
+            "Best wrestler"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "'Kalidas Samman' is given for contribution in which of the following fields?",
+          "options": [
+            "Art",
+            "Games",
+            "Medicine",
+            "Peace"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "Shanti Swarup Bhatnagar award is given for contribution in which of the following fields?",
+          "options": [
+            "Art and Handicraft",
+            "Literature",
+            "Science and Technology",
+            "Sports"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Which award is given for excellence in sports?",
+          "options": [
+            "Jamnalal Bajaj Award",
+            "Major Dhyan Chand Khel Ratna Award",
+            "Tagore Award",
+            "Moortidevi Award"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Who is the first Indian actress to receive the 'Padma Shree' Award?",
+          "options": [
+            "Smita Patil",
+            "Nargis Dutt",
+            "Meena Kumari",
+            "Madhubala"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "Who among the following is not a recipient of the Bharat Ratna Award?",
+          "options": [
+            "Ustad Bismillah Khan",
+            "Satyajit Ray",
+            "Lata Mangeshkar",
+            "Raj Kapoor"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "The first lady to receive the 'Gyanpeeth' Award is",
+          "options": [
+            "Ashapurna Devi",
+            "Mahashweta Devi",
+            "Mahadevi Verma",
+            "Amrita Pritam"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "Which Pakistani National was awarded the 'Bharat Ratna' by the Indian Government?",
+          "options": [
+            "Khan Abdul Ghaffar Khan",
+            "Liaqat Ali Khan",
+            "M.A. Jinnah",
+            "Muhammad Iqbal"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Which foreigner was awarded the 'Bharat Ratna' in 1990?",
+          "options": [
+            "Nelson Mandela",
+            "Mikhail Gorbachov",
+            "Abdul Ghaffar",
+            "Yasir Arafat"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "In which year was the first 'Bharat Ratna' awarded?",
+          "options": [
+            "1951",
+            "1953",
+            "1954",
+            "1956"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Bharat Ratna, the highest Civilian Award of India, was first given in the year and to the person:",
+          "options": [
+            "The year 1948 - C.V. Raman",
+            "The year 1952 - Lata Mangeshkar",
+            "The year 1953 - V. Krishnamurthy",
+            "The year 1954 - Dr. Radhakrishnan"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "In which field is the 'Swarna Kamal' award given?",
+          "options": [
+            "Literature",
+            "Cinema",
+            "Classical Music",
+            "Theatre"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "Who is the first person of Indian origin to win the 'Booker Prize'?",
+          "options": [
+            "Arundhati Roy",
+            "Salman Rushdie",
+            "V.S. Naipaul",
+            "Jhumpa Lahiri"
+          ],
+          "correct": 0,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "International & Sports Awards",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Who among the following is not awarded with the Nobel Prize?",
+          "options": [
+            "C.V. Raman",
+            "H.J. Bhabha",
+            "R.N. Tagore",
+            "Mother Teresa"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "Which agricultural scientist was awarded the Nobel Prize for Peace?",
+          "options": [
+            "M.S. Swaminathan",
+            "Norman Borlaug",
+            "S. Chandrasekhar",
+            "Hargovind Khurana"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Nobel Prizes are given by",
+          "options": [
+            "The Government of Norway",
+            "The Government of Switzerland",
+            "The Government of Sweden",
+            "Swedish Academy"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "The Maharana Pratap Award is given for excellence in the field of",
+          "options": [
+            "Science and Technology",
+            "Sports",
+            "Performing Arts",
+            "Social Work"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Which one among the following Indians was honoured with a Special Oscar Award?",
+          "options": [
+            "Mahesh Bhatt",
+            "Mina Nair",
+            "Satyajit Ray",
+            "O.P. Sippy"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Who among the following journalists is the recipient of the 'Magsaysay' Award?",
+          "options": [
+            "Khushwant Singh",
+            "Arun Shorie",
+            "Dharmavir Bharti",
+            "Kamleshwar"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "'Stree Shakti Puraskar' is given to women for: 1.Their excellence in athletics 2.Their outstanding performance in games 3.Their courage and enterprise for betterment of women 4.Their contribution to the nation and the people. Select from the codes given below.",
+          "options": [
+            "1 and 2",
+            "2 and 3",
+            "3 and 4",
+            "1 and 4"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Match List-I (Awards: a.Bhatnagar Award b.B.C. Roy Award c.Dada Saheb Phalke Award d.Gandharva Award) with List-II (Fields: 1.Film 2.Medicine 3.Science 4.Classical Art 5.Literature)",
+          "options": [
+            "3,2,1,4",
+            "3,4,2,1",
+            "3,2,4,1",
+            "4,3,1,2"
+          ],
+          "correct": 0,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Terms & Trophies",
+      "questions": [
+        {
+          "num": 1,
+          "text": "With which game is the Agha Khan Cup associated?",
+          "options": [
+            "Football",
+            "Cricket",
+            "Basketball",
+            "Hockey"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "The term 'Grand Slam' is associated with",
+          "options": [
+            "Table Tennis",
+            "Chess",
+            "Badminton",
+            "Bridge"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Champions Trophy is associated with",
+          "options": [
+            "Football",
+            "Hockey",
+            "Cricket",
+            "Chess"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "The term 'Steeplechase' is associated with",
+          "options": [
+            "Horse Racing",
+            "Boxing",
+            "Polo",
+            "Rowing"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Konica Cup is associated with which of the following sports?",
+          "options": [
+            "Hockey",
+            "Football",
+            "Chess",
+            "Badminton"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "The Reliance Cup was earlier known by the name of",
+          "options": [
+            "Rothmans Cup",
+            "Prudential Cup",
+            "Benson and Hedges Cup",
+            "Mc Dowells Challenge Cup"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "Which of the following is correctly matched?",
+          "options": [
+            "Cricket - Gully",
+            "Boxing - Punch",
+            "Chess - Checkmate",
+            "Tennis - Bully"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Commonwealth Games are held once in ..... years.",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "Rangaswami Cup is associated with which of the following?",
+          "options": [
+            "Hockey",
+            "Polo",
+            "Badminton",
+            "Basketball"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Which of the following is called a 'Grand Slam'?",
+          "options": [
+            "Winning the Wimbledon singles title successively for 2 years",
+            "Winning the highest number of medals in the Olympic Games",
+            "Taking 100 wickets and scoring 1000 runs in cricket",
+            "Winning all thirteen tricks of a deal at one time in the card game of Bridge"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Rovers Cup is associated with",
+          "options": [
+            "Tennis",
+            "Volleyball",
+            "Football",
+            "Basketball"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Beighton Cup and Agha Khan Cup are associated with which of the following games?",
+          "options": [
+            "Cricket",
+            "Football",
+            "Hockey",
+            "Volleyball"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "The term 'Duck' is associated with",
+          "options": [
+            "Soccer",
+            "Volleyball",
+            "Golf",
+            "Cricket"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "The term L.B.W. is associated with which of the following games?",
+          "options": [
+            "Football",
+            "Hockey",
+            "Cricket",
+            "Golf"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "The first Commonwealth Games were held in 1930. Which country hosted the games?",
+          "options": [
+            "Australia",
+            "England",
+            "New Zealand",
+            "Canada"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "What is the length of each stump in cricket?",
+          "options": [
+            "28 inches",
+            "32 inches",
+            "2 ft",
+            "2½ ft"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "'Chinaman' refers to",
+          "options": [
+            "Chess",
+            "Cricket",
+            "Bridge",
+            "Swimming"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "'Queensberry Rules' is the name given to the rules in",
+          "options": [
+            "Cricket",
+            "Tennis",
+            "Hockey",
+            "Boxing"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "The term 'Tee' is connected with",
+          "options": [
+            "Polo",
+            "Golf",
+            "Bridge",
+            "Billiards"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "Which of the following trophies is not associated with cricket?",
+          "options": [
+            "Duleep Trophy",
+            "RohintonBaria Trophy",
+            "Charminar Challenge Cup",
+            "Champions Trophy"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "The Wimbledon Championship is played in",
+          "options": [
+            "France",
+            "U.K",
+            "Sweden",
+            "Australia"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "The term 'bully' is associated with",
+          "options": [
+            "Cricket",
+            "Football",
+            "Hockey",
+            "Volleyball"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 23,
+          "text": "Googly is associated with",
+          "options": [
+            "Cricket",
+            "Billiards",
+            "Hockey",
+            "Table Tennis"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 24,
+          "text": "Ranji Trophy is associated with",
+          "options": [
+            "Hockey",
+            "Football",
+            "Cricket",
+            "None of these"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 25,
+          "text": "'Gambit' is the term associated with which of the following games?",
+          "options": [
+            "Chess",
+            "Billiards",
+            "Carrom",
+            "Snooker"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 26,
+          "text": "Merdeka Cup is associated with",
+          "options": [
+            "Football",
+            "Tennis",
+            "Hockey",
+            "Badminton"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 27,
+          "text": "Which of the following cups is not associated with Hockey?",
+          "options": [
+            "Rangaswami Cup",
+            "European Cup",
+            "Esanda Champions",
+            "Emirates Cup"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 28,
+          "text": "The term 'Silly Point' is associated with",
+          "options": [
+            "Chess",
+            "Badminton",
+            "Cricket",
+            "Football"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 29,
+          "text": "Irani Trophy is associated with which of the following sports?",
+          "options": [
+            "Football",
+            "Table Tennis",
+            "Cricket",
+            "Hockey"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 30,
+          "text": "With which of the following games/sports is 'Popping crease' associated?",
+          "options": [
+            "Swimming",
+            "Water Polo",
+            "Cricket",
+            "Lawn Tennis"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 31,
+          "text": "RohintonBaria Trophy is associated with",
+          "options": [
+            "Badminton",
+            "Cricket",
+            "Table Tennis",
+            "Hockey"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 32,
+          "text": "With which sport is the term 'caddie' associated?",
+          "options": [
+            "Polo",
+            "Golf",
+            "Bridge",
+            "Billiards"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 33,
+          "text": "The term 'Chukker' is used in",
+          "options": [
+            "Rifle shooting",
+            "Horse racing",
+            "Wrestling",
+            "Polo"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 34,
+          "text": "Which of the following tournaments is not included in the Grand Slam of Tennis?",
+          "options": [
+            "French Open Tennis",
+            "Wimbledon Tennis Championship",
+            "US Open Tennis",
+            "New Zealand Championship"
+          ],
+          "correct": 3,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Olympics, Games & Players",
+      "questions": [
+        {
+          "num": 1,
+          "text": "With which sport is Sushma Saroelker associated?",
+          "options": [
+            "Basketball",
+            "Kho-kho",
+            "Hockey",
+            "Handball"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "With which game is Ashok Shandilya associated?",
+          "options": [
+            "Billiards",
+            "Golf",
+            "Hockey",
+            "Badminton"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Shiny Wilson is associated with which of the following games/sports?",
+          "options": [
+            "Badminton",
+            "Swimming",
+            "Cricket",
+            "Athletics"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "Chris Evert's name is associated with which of the following sports?",
+          "options": [
+            "Tennis",
+            "Skating",
+            "Shooting",
+            "Swimming"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "Wimbledon Trophy is associated with",
+          "options": [
+            "Football",
+            "Table Tennis",
+            "Lawn Tennis",
+            "Hockey"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Bahadur Singh is a distinguished athlete of which of the following?",
+          "options": [
+            "Weightlifting",
+            "Swimming",
+            "Boxing",
+            "Athletics"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "AswiniNachappa distinguished herself in",
+          "options": [
+            "Athletics",
+            "Hockey",
+            "Badminton",
+            "Swimming"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Leander Paes is associated with",
+          "options": [
+            "Football",
+            "Cricket",
+            "Badminton",
+            "Tennis"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "Monica Seles is associated with which of the following games?",
+          "options": [
+            "Athletics",
+            "Badminton",
+            "Basketball",
+            "Tennis"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "Jaspal Rana is a distinguished athlete in which of the following games?",
+          "options": [
+            "Archery",
+            "Shooting",
+            "Swimming",
+            "Weightlifting"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "The Summer Olympic Games were normally held at intervals of",
+          "options": [
+            "2 years",
+            "3 years",
+            "4 years",
+            "5 years"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "The Winter Olympics came into being in",
+          "options": [
+            "1912",
+            "1916",
+            "1920",
+            "1924"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "The headquarters of the International Olympic Committee is at",
+          "options": [
+            "Lausanne (Switzerland)",
+            "Moscow",
+            "Los Angeles",
+            "New York"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "The Asian Games are organised after every",
+          "options": [
+            "3 years",
+            "4 years",
+            "5 years",
+            "6 years"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "The term 'Butterfly Stroke' is associated with",
+          "options": [
+            "Kabaddi",
+            "Wrestling",
+            "Swimming",
+            "Boxing"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "Sergei Bubka is related to which sport?",
+          "options": [
+            "Golf",
+            "Swimming",
+            "Polo",
+            "Pole Vault"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "The name of Prakash Padukone is associated with which of the following games?",
+          "options": [
+            "Cricket",
+            "Table Tennis",
+            "Lawn Tennis",
+            "Badminton"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "India made its debut in Olympic football at",
+          "options": [
+            "Helsinki in 1952",
+            "Melbourne in 1956",
+            "London in 1948",
+            "Tokyo in 1964"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "India first took part in the Olympic Games in the year",
+          "options": [
+            "1920",
+            "1928",
+            "1972",
+            "1974"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "India first won the Olympic Hockey gold at",
+          "options": [
+            "London",
+            "Berlin",
+            "Amsterdam",
+            "Los Angeles"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "The first SAARC Gold Cup Football tournament was organised by which of the following countries?",
+          "options": [
+            "India",
+            "Pakistan",
+            "Bangladesh",
+            "Nepal"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "Major Dhyan Chand was a ..... wizard.",
+          "options": [
+            "Football",
+            "Tennis",
+            "Hockey",
+            "Basketball"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 23,
+          "text": "Ben Johnson, the well-known athlete, belongs to which of the following countries?",
+          "options": [
+            "South Africa",
+            "Germany",
+            "Canada",
+            "U.S.A"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 24,
+          "text": "Which Indian Cricketer was given the title 'Tiger'?",
+          "options": [
+            "Mansur Ali Khan Pataudi",
+            "B.S. Bedi",
+            "Sunil Gavaskar",
+            "None of the above"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 25,
+          "text": "Michael Ferreira is associated with which of the following games/sports?",
+          "options": [
+            "Tennis",
+            "Golf",
+            "Billiards",
+            "Chess"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 26,
+          "text": "Who among the following is known as the 'Best Asian Woman Athlete'?",
+          "options": [
+            "P.T. Usha",
+            "Vandana Rao",
+            "K. Saramma",
+            "Mercy Kuttan"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 27,
+          "text": "The Olympic Museum was opened at which of the following places?",
+          "options": [
+            "Istanbul",
+            "Rome",
+            "Lausanne",
+            "Athens"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 28,
+          "text": "Who among the following was the first bowler to take a hat-trick in World Cup Cricket?",
+          "options": [
+            "Joel Garner",
+            "Lance Gibbs",
+            "Chetan Sharma",
+            "Jalaluddin"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 29,
+          "text": "The modern Olympic Games (after being defunct since the 4th century A.D.) restarted from",
+          "options": [
+            "1896",
+            "1904",
+            "1912",
+            "1916"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 30,
+          "text": "In which city did the Asian Games first take place?",
+          "options": [
+            "Beijing",
+            "Kuala Lumpur",
+            "Tokyo",
+            "New Delhi"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 31,
+          "text": "Which of the following games originated in England?",
+          "options": [
+            "Hockey",
+            "Baseball",
+            "Cricket",
+            "Archery"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 32,
+          "text": "How many players are there in a Kabaddi team?",
+          "options": [
+            "7",
+            "11",
+            "9",
+            "5"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 33,
+          "text": "With which of the following sports is Harsh Mankad associated?",
+          "options": [
+            "Athletics",
+            "Badminton",
+            "Hockey",
+            "Tennis"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 34,
+          "text": "The famous player Pele is associated with which of the following games?",
+          "options": [
+            "Table Tennis",
+            "Football",
+            "Hockey",
+            "Volleyball"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 35,
+          "text": "Which of the following places is known as the 'Mecca of Indian Football'?",
+          "options": [
+            "Delhi",
+            "Bombay",
+            "Calcutta",
+            "Ambala"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 36,
+          "text": "How many players are there in a water polo team?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correct": 3,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "Indian History & Freedom Movement",
+      "questions": [
+        {
+          "num": 1,
+          "text": "On which of the following dates did Dr. Bhimrao Ambedkar, the maker of the Constitution of India, die?",
+          "options": [
+            "15 December, 1956",
+            "6 December, 1956",
+            "6 November, 1956",
+            "6 October, 1959"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "Who among the following Indians is known as Gurudev?",
+          "options": [
+            "Rabindra Nath Tagore",
+            "C. Rajagopalachari",
+            "Lala Lajpat Rai",
+            "B.R. Ambedkar"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "Who gave the slogan 'Jai Jawan, Jai Kisan'?",
+          "options": [
+            "Lal Bahadur Shastri",
+            "Subhash Chandra Bose",
+            "Devi Lal",
+            "Morarji Desai"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 4,
+          "text": "In which year was the first cloth mill established in Bombay?",
+          "options": [
+            "1842",
+            "1845",
+            "1850",
+            "1854"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "'Kings are made for Public; Public is not made for the King.' Who among the following made this statement during the National Movement?",
+          "options": [
+            "Surendra Nath Banerjee",
+            "R.C. Dutt",
+            "DadabhaiNaoroji",
+            "Gokhale"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "Who raised the demand of 'Complete Independence' for the first time in 1921?",
+          "options": [
+            "Maulana Muhammad Ali",
+            "Pandit Jawaharlal Nehru",
+            "Mahatma Gandhi",
+            "Maulana Hasrat Mohani"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "The Banaras Session of August, 1923 of the Hindu Mahasabha was presided over by",
+          "options": [
+            "Swami Shraddhananda",
+            "Rajendra Prasad",
+            "Lala Lajpat Rai",
+            "Pandit Madan Mohan Malviya"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "Identify the years closest to the founding of the Communist Party of India and the RSS, respectively.",
+          "options": [
+            "1915, 1914",
+            "1925, 1925",
+            "1928, 1929",
+            "1925, 1939"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "Who among the following is popularly known as the 'Frontier Gandhi'?",
+          "options": [
+            "Maulana Abul Kalam Azad",
+            "Khan Abdul Ghaffar Khan",
+            "Jatin Das",
+            "Maulana Muhammad Ali"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "What was the name of the movement started by Khan Abdul Ghaffar Khan against the British?",
+          "options": [
+            "Red Shirt",
+            "Quit India",
+            "Khilafat",
+            "None of these"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "Rajendra Prasad belonged to",
+          "options": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Madhya Pradesh",
+            "None of the above"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Which part of India remained under Portuguese control after 15th August, 1947?",
+          "options": [
+            "Goa",
+            "Sikkim",
+            "Pondicherry",
+            "Andaman & Nicobar"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "Who was the first Indian selected as a member of the British Parliament?",
+          "options": [
+            "R.C. Dutt",
+            "DadabhaiNaoroji",
+            "Rammohan Roy",
+            "Meghnad Desai"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "The first communist Government of India was established in the province of",
+          "options": [
+            "Tamil Nadu",
+            "Andhra Pradesh",
+            "Kerala",
+            "West Bengal"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "In which session of the Indian National Congress did Gandhi say, 'Gandhi may die, but Gandhism will remain forever'?",
+          "options": [
+            "Ramgarh Session, 1940",
+            "Lahore Session, 1929",
+            "Calcutta Session, 1928",
+            "Karachi Session, 1931"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 16,
+          "text": "Who organized the 'Khudai Khidmatgar' in 1929?",
+          "options": [
+            "Abdul Ghaffar Khan",
+            "Ali Brothers",
+            "Ansari Brothers",
+            "Maulana Abul Kalam Azad"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 17,
+          "text": "Which one of the following is not correctly matched?",
+          "options": [
+            "Motilal Nehru - Nehru Report",
+            "M.K. Gandhi - Champaran Movement",
+            "S.C. Bose - Forward Bloc",
+            "M.A. Jinnah - Khilafat Movement"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 18,
+          "text": "Which of the following pairs is not correctly matched?",
+          "options": [
+            "Ghadar Party - Lala Lajpat Rai",
+            "Frontier Gandhi - Khan Abdul Ghaffar",
+            "Indian National Army - Subhash Chandra Bose",
+            "First President of India - Dr. Rajendra Prasad"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 19,
+          "text": "'Operation Vijay' was conducted against which nation?",
+          "options": [
+            "China",
+            "Bangladesh",
+            "Nepal",
+            "Pakistan"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 20,
+          "text": "Kisan Diwas is celebrated on",
+          "options": [
+            "23rd March",
+            "23rd June",
+            "23rd September",
+            "23rd December"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 21,
+          "text": "Operation Polo is connected with",
+          "options": [
+            "Quit India Movement",
+            "Civil Disobedience Movement",
+            "Military Action in Junagarh State",
+            "Military Action in Hyderabad State"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 22,
+          "text": "Bangladesh was established as an independent nation after the Indo-Pakistan War of",
+          "options": [
+            "December, 1970",
+            "March, 1970",
+            "March, 1971",
+            "December, 1971"
+          ],
+          "correct": 3,
+          "expl": ""
+        }
+      ]
+    },
+    {
+      "name": "General Knowledge & Technology",
+      "questions": [
+        {
+          "num": 1,
+          "text": "Arrange the following in correct chronological order: Non-Co-operation Movement, Simon Commission, Nehru Report, Quit India Movement.",
+          "options": [
+            "Non-Co-operation, Nehru Report, Simon Commission, Quit India",
+            "Non-Co-operation, Simon Commission, Nehru Report, Quit India",
+            "Simon Commission, Non-Co-operation, Nehru Report, Quit India",
+            "Nehru Report, Quit India, Simon Commission, Non-Co-operation"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 2,
+          "text": "Which statement is correct?",
+          "options": [
+            "Socrates was a disciple of Plato",
+            "Plato was a disciple of Socrates",
+            "Plato was a disciple of Aristotle",
+            "Socrates and Plato were disciples of Aristotle"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 3,
+          "text": "In which city was the first atomic bomb exploded (tested)?",
+          "options": [
+            "Hiroshima (Japan)",
+            "Kabul",
+            "Lisbon",
+            "Rome"
+          ],
+          "correct": 0,
+          "expl": "Question refers to the first atomic bomb dropped in war, on Hiroshima."
+        },
+        {
+          "num": 4,
+          "text": "The French Revolution started in",
+          "options": [
+            "1773",
+            "1779",
+            "1757",
+            "1789"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 5,
+          "text": "In India, 'Teacher's Day' is celebrated on",
+          "options": [
+            "8th March",
+            "1st March",
+            "14th July",
+            "5th September"
+          ],
+          "correct": 3,
+          "expl": ""
+        },
+        {
+          "num": 6,
+          "text": "When is 'National Press Day' celebrated?",
+          "options": [
+            "16 November",
+            "17 November",
+            "26 November",
+            "16 December"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 7,
+          "text": "The present day calendar is based on the",
+          "options": [
+            "Julian Calendar",
+            "Gregorian Calendar",
+            "Jewish Calendar",
+            "Muhammadan Calendar"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 8,
+          "text": "China occupied Tibet in",
+          "options": [
+            "1960",
+            "1959",
+            "1961",
+            "1962"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 9,
+          "text": "In which year did the USSR become Russia?",
+          "options": [
+            "1989",
+            "1990",
+            "1991",
+            "1992"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 10,
+          "text": "The first President of the United States of America was",
+          "options": [
+            "George Washington",
+            "John Adams",
+            "Abraham Lincoln",
+            "J.F. Kennedy"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 11,
+          "text": "National Physical Laboratory is situated in",
+          "options": [
+            "New Delhi",
+            "Chennai",
+            "Bengaluru",
+            "Kolkata"
+          ],
+          "correct": 0,
+          "expl": ""
+        },
+        {
+          "num": 12,
+          "text": "Full form of LASER is",
+          "options": [
+            "Log Amplification by Stimulated Emission of Radiation",
+            "Light Amplification by Stimulated Emission of Radiation",
+            "Locally Amplified by Stimulated Emission of Radiation",
+            "Light Amplified by Stimulated Emission of Radio"
+          ],
+          "correct": 1,
+          "expl": ""
+        },
+        {
+          "num": 13,
+          "text": "'GIF' stands for",
+          "options": [
+            "Geographical Image Format",
+            "Global Image Format",
+            "Graphical Interchange Format",
+            "None of the above"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 14,
+          "text": "GPS stands for which one of the following?",
+          "options": [
+            "Greenwich Polar Satellite",
+            "Global Police Surveillance",
+            "Global Positioning System",
+            "General Pacific Survey"
+          ],
+          "correct": 2,
+          "expl": ""
+        },
+        {
+          "num": 15,
+          "text": "A.T.M. means",
+          "options": [
+            "Automatic Transaction Machine",
+            "Automatic Transfer Machine",
+            "Automated Teller Machine",
+            "Advance Transaction Machine"
+          ],
+          "correct": 2,
+          "expl": ""
+        }
+      ]
+    }
+  ],
+  "group": "nontechnical"
+}
