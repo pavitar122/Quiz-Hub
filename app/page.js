@@ -109,7 +109,7 @@ export default function HomePage(){
         <div className="stat-chip"><div className="num serif"><Counter value={progress?.stats?.sessionsCompleted||0} /></div><div className="lab mono">Sessions Done</div></div>
       </div>
 
-      {weak && <div className="empty-note" style={{textAlign:"left",marginBottom:18}}><span className="dwg-tag mono" style={{display:"inline",marginBottom:0}}>FOCUS</span> — "{weak.name}" ({weak.catTitle}) — best {weak.pct}%.</div>}
+      {weak && <div className="empty-note" style={{textAlign:"left",marginBottom:18}}><span className="dwg-tag mono" style={{display:"inline",marginBottom:0}}>FOCUS</span> — &quot;{weak.name}&quot; ({weak.catTitle}) — best {weak.pct}%.</div>}
 
       <div className="searchbar">
         <span className="icon mono">SEARCH</span>

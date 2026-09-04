@@ -51,7 +51,7 @@ export default function AdminPage(){
   useEffect(() => {
     if (!loading && (!user || user.role !== "admin")) { router.push("/"); return; }
     refreshCats();
-  }, [user, loading]);
+  }, [user, loading, router]);
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === "Escape" && qModal) closeModal(); };
@@ -385,7 +385,7 @@ export default function AdminPage(){
       <div className="app-header">
         <span className="dwg-tag mono">ADMIN PANEL</span>
         <h1 className="serif">Manage Questions</h1>
-        <p>Create subjects, organize chapters, and add, edit or remove questions. Every change writes straight to the subject's data file on disk.</p>
+        <p>Create subjects, organize chapters, and add, edit or remove questions. Every change writes straight to the subject&apos;s data file on disk.</p>
       </div>
 
       <div className="admin-overview">
@@ -566,7 +566,7 @@ export default function AdminPage(){
                         </div>
                       ) : (
                         <>
-                          <span className="mono" style={{ fontSize: 11.5, color: "var(--muted)" }}>Managing chapter "{activeChapter.name}"</span>
+                          <span className="mono" style={{ fontSize: 11.5, color: "var(--muted)" }}>Managing chapter &quot;{activeChapter.name}&quot;</span>
                           <div className="btn-row" style={{ marginTop: 0 }}>
                             <button className="icon-action" onClick={() => startRename(activeChapterIdx, activeChapter.name)}>Rename</button>
                             <button className="icon-action danger" onClick={() => requestDeleteSubtopic(activeChapterIdx)}>Delete Chapter</button>
@@ -702,7 +702,7 @@ export default function AdminPage(){
 
                   <div className="danger-zone">
                     <div className="danger-zone-title">Danger Zone</div>
-                    <p>Permanently deletes "{editCat.title}" and all {totalQuestionsOf(editCat)} of its questions across {editCat.subcats.length} chapters. This can't be undone.</p>
+                    <p>Permanently deletes &quot;{editCat.title}&quot; and all {totalQuestionsOf(editCat)} of its questions across {editCat.subcats.length} chapters. This can&apos;t be undone.</p>
                     <button className="btn small danger" onClick={requestDeleteSubject}>Delete Subject</button>
                   </div>
                 </div>
@@ -778,7 +778,7 @@ function QuestionModal({ open, mode, chapterName, form, setForm, busy, onCancel,
             <label className="mf-label">Explanation</label>
             <textarea className="mf-textarea" rows={2} placeholder="Why this answer is correct" value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} />
           </div>
-          <div className="mf-hint">Saved permanently to the subject's data file · press Esc to cancel.</div>
+          <div className="mf-hint">Saved permanently to the subject&apos;s data file · press Esc to cancel.</div>
         </div>
 
         <div className="modal-foot">

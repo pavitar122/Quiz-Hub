@@ -35,6 +35,7 @@ export default function QuizPage(){
       if(q.length>0) initQuiz(q, d.category);
     });
     fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress)).catch(()=>{});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[id,type,idx,mode]);
 
   function buildQueue(cat, type, idx){
@@ -77,6 +78,7 @@ export default function QuizPage(){
       cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(q=>{ if(keys.includes(sIdx+"-"+q.num)) out.push({subIdx:sIdx, subName:sc.name, q}); }));
       if(out.length>0) initQuiz(shuffle(out), cat); else setEmpty(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[progress,cat]);
 
   function initQuiz(queue, category){
@@ -229,7 +231,7 @@ export default function QuizPage(){
   if(empty) return (
     <div className="dwg-card">
       <span className="dwg-tag mono">NOTHING TO PRACTICE</span>
-      <p style={{marginTop:10}}>There's nothing queued up here yet.</p>
+      <p style={{marginTop:10}}>There&apos;s nothing queued up here yet.</p>
       <div className="btn-row">
         <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back to Subject</Link>
       </div>
@@ -251,7 +253,7 @@ export default function QuizPage(){
           ) : (
             <span className="dwg-tag mono">RESULT · TEST MODE</span>
           )}
-          <p className={`result-score serif ${isCelebrated ? "has-sparkles" : ""}`}>{quiz.score}/{quiz.total}</p>
+          <p className={`result-score serif`}>{quiz.score}/{quiz.total}</p>
           <p className="result-pct mono">{quiz.pct}% {isCelebrated ? "· Celebration unlocked" : "· Keep practicing"}</p>
           <div className="progress-bar"><div className="progress-fill" style={{width:quiz.pct+"%"}}></div></div>
           {isCelebrated && <p className="verdict serif">You cleared the threshold — blueprint complete. The fireworks are for you.</p>}
@@ -281,16 +283,11 @@ export default function QuizPage(){
       const wrongList = Object.values(quiz.wrongAnswers||{});
       const practicePct = quiz.totalUnique>0 ? Math.round((quiz.firstTryCorrect/quiz.totalUnique)*100) : 0;
       const isCelebrated = practicePct >= 70;
-      const badgeLabel = practicePct >= 90 ? "Mastery" : practicePct >= 80 ? "Strong Grasp" : practicePct >= 70 ? "Well Practiced" : null;
       return (
         <div className={`dwg-card ${isCelebrated ? "result-celebrated" : ""}`}>
           {isCelebrated && <Confetti />}
-          {isCelebrated ? (
-            <span className="result-badge">{badgeLabel} · {practicePct}% first-try</span>
-          ) : (
-            <span className="dwg-tag mono">RESULT · PRACTICE MODE</span>
-          )}
-          <p className={`result-score serif ${isCelebrated ? "has-sparkles" : ""}`}>Mastered {quiz.totalUnique}</p>
+          <span className="dwg-tag mono">RESULT · PRACTICE MODE</span>
+          <p className={`result-score serif`}>Mastered {quiz.totalUnique}</p>
           {isCelebrated && <p className="result-pct mono">All questions mastered — {practicePct}% on first try</p>}
           {!isCelebrated && <p className="result-pct mono">{practicePct}% first-try · Resilience counts too</p>}
           <div className="stat-grid">
