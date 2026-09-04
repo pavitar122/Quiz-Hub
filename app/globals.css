@@ -130,6 +130,7 @@ h1,h2,h3,.display{font-family:"Outfit", sans-serif; font-weight:700; letter-spac
 
 #app{max-width:1280px;margin:0 auto;padding:28px 24px 64px;}
 @media(max-width:640px){#app{padding:20px 16px 48px;}}
+@media(max-width:640px){.mf-hint-btns .btn kbd{display:none;}}
 
 /* ---------- Navbar — Sparkle sticky blurred + tablet redesign ---------- */
 .navbar{position:sticky;top:0;z-index:30;display:flex;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--border);background:rgba(252,252,249,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);width:100%;}
@@ -426,6 +427,35 @@ body.dark .subcat-card::before{background:linear-gradient(120deg, transparent 30
 .admin-search-wrap input{flex:1;border:none;background:transparent;outline:none;font-family:"Figtree",sans-serif;font-size:13px;color:var(--foreground);min-width:0;}
 .admin-search-clear{width:20px;height:20px;border-radius:999px;border:none;background:var(--secondary);color:var(--muted-foreground);cursor:pointer;display:grid;place-items:center;font-size:14px;line-height:1;}
 .admin-search-clear:hover{background:var(--border);}
+
+/* Subjects list — previously unstyled: sidebar-scroll had no overflow/flex
+   rule, so once the list grew past the sidebar's max-height it was simply
+   clipped by the sidebar's overflow:hidden with no way to scroll to it. */
+.sidebar-scroll{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;padding-bottom:4px;scrollbar-width:thin;scrollbar-color:var(--card-border-strong) transparent;}
+.sidebar-scroll::-webkit-scrollbar{width:6px;}
+.sidebar-scroll::-webkit-scrollbar-track{background:transparent;}
+.sidebar-scroll::-webkit-scrollbar-thumb{background:var(--card-border-strong);border-radius:999px;}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover{background:var(--muted-foreground);}
+
+.subject-list{display:flex;flex-direction:column;gap:2px;padding:8px 8px 4px;}
+.group-section{display:flex;flex-direction:column;}
+.group-section-head{display:flex;align-items:center;justify-content:space-between;width:100%;padding:8px 8px;border:none;background:transparent;cursor:pointer;font-family:"Figtree",sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-foreground);border-radius:8px;transition:background .15s var(--ease-soft),color .15s var(--ease-soft);}
+.group-section-head:hover{background:var(--muted);color:var(--foreground);}
+.group-chevron{flex-shrink:0;transition:transform .15s var(--ease-soft);}
+.group-chevron.collapsed{transform:rotate(-90deg);}
+.group-section-head span:last-child{font-family:"Figtree",sans-serif;font-size:10px;font-weight:600;background:var(--secondary);border:1px solid var(--border);padding:1px 7px;border-radius:999px;letter-spacing:0;text-transform:none;}
+.group-section-body{display:flex;flex-direction:column;gap:3px;margin-bottom:6px;animation:fadeIn .15s var(--ease) both;}
+
+.subject-list-item{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border:1px solid transparent;border-radius:11px;background:transparent;cursor:pointer;text-align:left;transition:background .15s var(--ease-soft),border-color .15s var(--ease-soft),transform .1s var(--ease-soft);}
+.subject-list-item:hover{background:var(--muted);}
+.subject-list-item.active{background:var(--muted);border-color:var(--card-border-strong);}
+.subject-list-item.active .sli-title{color:var(--primary);}
+.subject-list-item:active{transform:scale(.99);}
+.sli-text{display:flex;flex-direction:column;min-width:0;flex:1;gap:2px;}
+.sli-title{font-family:"Outfit",sans-serif;font-size:13px;font-weight:600;color:var(--foreground);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sli-meta{font-family:"Figtree",sans-serif;font-size:11px;color:var(--muted-foreground);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.admin-active-dot{width:8px;height:8px;border-radius:999px;background:var(--primary);flex-shrink:0;box-shadow:0 0 0 3px var(--correct-soft, rgba(24,24,27,0.08));}
+
 .admin-empty-mini{font-family:"Figtree",sans-serif;font-size:12px;color:var(--muted-foreground);padding:16px;text-align:center;}
 .admin-import-card{margin:12px;padding:14px;border:1px dashed var(--border);border-radius:12px;background:var(--secondary);background:rgba(244,244,245,0.6);}
 .admin-import-head{font-family:"Figtree",sans-serif;font-size:12px;font-weight:600;display:flex;align-items:center;gap:8px;}
@@ -473,13 +503,18 @@ body.dark .subcat-card::before{background:linear-gradient(120deg, transparent 30
 .admin-sheet-eyebrow{font-family:"Figtree",sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-foreground);}
 .admin-sheet-sub{font-family:"Figtree",sans-serif;font-size:11.5px;color:var(--muted-foreground);margin-top:4px;}
 .admin-sheet-body{padding:18px 22px;overflow-y:auto;flex:1;}
-.admin-sheet-foot{display:flex;align-items:center;gap:10px;padding:14px 22px;border-top:1px solid var(--border);background:var(--card);}
+.admin-sheet-foot{display:flex;align-items:center;gap:10px;padding:14px 22px;border-top:1px solid var(--border);background:var(--card);box-shadow:0 -6px 16px rgba(0,0,0,0.04);}
+.admin-sheet-dirty{font-family:"Figtree",sans-serif;font-size:11px;font-weight:600;color:var(--wrong);white-space:nowrap;}
 .admin-opts{display:flex;flex-direction:column;gap:8px;}
 .admin-opt{display:flex;align-items:center;gap:10px;padding:8px;border:1px solid var(--border);border-radius:12px;transition:border-color .15s var(--ease-soft), background .15s var(--ease-soft);}
 .admin-opt.correct{border-color:var(--correct);background:var(--correct-soft);}
 .admin-opt-letter{width:32px;height:32px;min-width:32px;border-radius:9px;border:1px solid var(--border);background:var(--secondary);font-family:"Outfit",sans-serif;font-weight:700;font-size:13px;cursor:pointer;transition:all .15s var(--ease-soft);}
 .admin-opt-letter.correct,.admin-opt-letter:hover{background:var(--correct);border-color:var(--correct);color:var(--correct-foreground, #fff);}
 .admin-opt-badge{font-family:"Figtree",sans-serif;font-size:10px;font-weight:700;color:var(--correct);white-space:nowrap;}
+.mf-hint{font-family:"Figtree",sans-serif;font-size:11.5px;color:var(--muted-foreground);margin-top:14px;padding-top:14px;border-top:1px dashed var(--border);}
+.mf-hint--actions{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+.mf-hint-btns{display:flex;gap:8px;flex-wrap:wrap;}
+.mf-hint-btns .btn kbd{margin-left:6px;font-size:10px;font-family:"Figtree",sans-serif;border:1px solid currentColor;opacity:.55;padding:1px 5px;border-radius:5px;}
 @media(max-width:1024px){
   .admin-shell--studio{grid-template-columns:280px 1fr;}
   .admin-settings-grid{grid-template-columns:1fr;}
@@ -487,12 +522,37 @@ body.dark .subcat-card::before{background:linear-gradient(120deg, transparent 30
 }
 @media(max-width:840px){
   .admin-shell--studio{grid-template-columns:1fr;}
-  .admin-sidebar{position:relative;top:0;max-height:none;}
   .admin-filter-bar{flex-direction:column;align-items:stretch;}
   .admin-chapter-select{max-width:none;}
   .admin-sheet{width:100%;}
   .admin-hero-actions{width:100%;}
   .admin-stat-mini{flex:1;}
+
+  /* Subjects list becomes an off-canvas drawer instead of a long block you
+     have to scroll past before reaching the actual editor. */
+  .admin-sidebar-toggle{display:inline-flex;}
+  .admin-sidebar{
+    position:fixed;top:0;left:0;height:100dvh;max-height:none;width:min(340px,86vw);
+    z-index:4100;border-radius:0;box-shadow:24px 0 60px rgba(0,0,0,0.22);
+    transform:translateX(-100%);transition:transform .22s var(--ease-soft);
+  }
+  .admin-sidebar--open{transform:translateX(0);}
+  .admin-sidebar-backdrop{
+    display:block;position:fixed;inset:0;background:rgba(9,9,11,0.45);
+    backdrop-filter:blur(2px);z-index:4050;animation:fadeIn .18s var(--ease) both;
+  }
+  .admin-sidebar-close{
+    display:grid;place-items:center;width:28px;height:28px;border-radius:999px;
+    border:1px solid var(--border);background:var(--secondary);color:var(--foreground);
+    font-size:16px;line-height:1;cursor:pointer;
+  }
+
+  .admin-subject-header{flex-wrap:wrap;}
+  .admin-subject-header > div:last-child{width:100%;}
+  .admin-topbar{flex-wrap:wrap;gap:8px;}
+}
+@media(max-width:420px){
+  .admin-overview--sparkle{grid-template-columns:repeat(2,1fr);}
 }
 .admin-hero{margin-bottom:20px;}
 .admin-hero h1{font-family:"Outfit",sans-serif;font-size:32px;font-weight:700;letter-spacing:-.02em;margin:6px 0 8px;}
@@ -551,6 +611,17 @@ body.dark .subcat-card::before{background:linear-gradient(120deg, transparent 30
 .admin-chapter-count{font-family:"Figtree",sans-serif;font-size:11px;padding:3px 8px;border-radius:999px;background:var(--secondary);border:1px solid var(--border);color:var(--muted-foreground);margin-left:auto;}
 .admin-empty{padding:32px 20px;text-align:center;border:1px dashed var(--border);border-radius:12px;background:var(--card);}
 @media(max-width:840px){.admin-shell{grid-template-columns:1fr;}.admin-sidebar{position:relative;top:0;}}
+.admin-sidebar-toggle{display:none;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid var(--border);background:var(--card);font-family:"Figtree",sans-serif;font-size:12px;font-weight:600;color:var(--foreground);cursor:pointer;max-width:52vw;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.admin-sidebar-toggle svg{flex-shrink:0;}
+.admin-sidebar-backdrop{display:none;}
+.admin-sidebar-close{display:none;}
+.admin-main{position:relative;}
+.admin-main--loading > *:not(.admin-main-loading-overlay){opacity:.35;pointer-events:none;filter:saturate(.4);transition:opacity .15s var(--ease-soft);}
+.admin-main-loading-overlay{
+  display:none;position:absolute;inset:0;z-index:20;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  font-family:"Figtree",sans-serif;font-size:13px;color:var(--muted-foreground);
+}
+.admin-main--loading .admin-main-loading-overlay{display:flex;}
 @media(max-width:600px){.result-score{font-size:40px;}.app-header h1{font-size:28px;}.question-text{font-size:18px;}}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}

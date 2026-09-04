@@ -18,9 +18,11 @@ export default function AdminPage(){
   const [cats, setCats] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
   const [editCat, setEditCat] = useState(null);
+  const [catLoading, setCatLoading] = useState(false);
   const [sidebarSearch, setSidebarSearch] = useState("");
   const [collapsedGroups, setCollapsedGroups] = useState({});
   const [activeTab, setActiveTab] = useState("questions"); // questions | chapters | settings
+  const [sidebarOpen, setSidebarOpen] = useState(false); // mobile drawer only
 
   const [activeChapterIdx, setActiveChapterIdx] = useState(null);
   const [qSearch, setQSearch] = useState("");
@@ -60,16 +62,20 @@ export default function AdminPage(){
   // Global shortcuts: "/" focuses question search, "n" adds question, Esc closes modal
   useEffect(() => {
     const onKey = (e) => {
+      // A confirm dialog (destructive action) is on top — never let shortcuts
+      // below it fire (e.g. "n" opening a new-question sheet behind the dialog).
+      if (confirmState) return;
+      if (e.key === "Escape" && qModal) { requestCloseModal(); return; }
+      if (e.key === "Escape" && sidebarOpen) { setSidebarOpen(false); return; }
       const tag = document.activeElement?.tagName;
       const typing = tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT";
-      if (e.key === "Escape" && qModal) { closeModal(); return; }
-      if (typing) return;
+      if (typing || qModal) return;
       if (e.key === "/") { e.preventDefault(); qSearchRef.current?.focus(); }
       if ((e.key === "n" || e.key === "N") && editCat && activeTab === "questions") { e.preventDefault(); openAddModal(); }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [qModal, editCat, activeTab, activeChapterIdx]);
+  }, [qModal, editCat, activeTab, activeChapterIdx, confirmState, sidebarOpen]);
 
   const flash = (type, text) => {
     setMsg({ type, text });
@@ -106,9 +112,17 @@ export default function AdminPage(){
     setRenaming(null);
     setQModal(null);
     setNewChapterOpen(false);
-    const d = await fetch(`/api/questions?id=${id}`, { cache: "no-store" }).then(r => r.json());
-    setEditCat(d.category);
-    setMetaForm({ title: d.category?.title || "", description: d.category?.description || "", group: d.category?.group || "civil1" });
+    setCatLoading(true);
+    setSidebarOpen(false); // jump straight to the subject on mobile instead of leaving the drawer open
+    try {
+      const d = await fetch(`/api/questions?id=${id}`, { cache: "no-store" }).then(r => r.json());
+      setEditCat(d.category);
+      setMetaForm({ title: d.category?.title || "", description: d.category?.description || "", group: d.category?.group || "civil1" });
+    } catch {
+      flash("err", "Couldn't load that subject. Check your connection and try again.");
+    } finally {
+      setCatLoading(false);
+    }
   };
 
   const loadCatQuiet = async (id) => {
@@ -150,25 +164,43 @@ export default function AdminPage(){
   };
 
   // ---------- Question editor (slide-over) ----------
+  const initialFormRef = useRef(EMPTY_FORM);
+  const isFormDirty = () => JSON.stringify(form) !== JSON.stringify(initialFormRef.current);
+
   const openAddModal = () => {
     if (!editCat?.subcats.length) { flash("err", "Add a chapter first — questions live inside chapters."); setActiveTab("chapters"); setNewChapterOpen(true); return; }
     const subIdx = activeChapterIdx !== null ? activeChapterIdx : 0;
     setForm(EMPTY_FORM);
+    initialFormRef.current = EMPTY_FORM;
     setFormError("");
     setQModal({ mode: "add", subIdx });
   };
   const openEditModal = (subIdx, q) => {
-    setForm({ text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl });
+    const snapshot = { text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl };
+    setForm(snapshot);
+    initialFormRef.current = snapshot;
     setFormError("");
     setQModal({ mode: "edit", subIdx, num: q.num });
   };
   const openDuplicateModal = (subIdx, q) => {
-    setForm({ text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl });
+    const snapshot = { text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl };
+    setForm(snapshot);
+    // Duplicating pre-fills the form on purpose, so treat that pre-fill as
+    // the dirty baseline rather than EMPTY_FORM — otherwise "Cancel" on an
+    // untouched duplicate would trigger a "discard changes?" prompt.
+    initialFormRef.current = snapshot;
     setFormError("");
     setQModal({ mode: "add", subIdx });
     flash("ok", "Duplicated — edit and save as a new question.");
   };
   const closeModal = () => { setQModal(null); setForm(EMPTY_FORM); setFormError(""); };
+  // Used by Cancel, the sheet's backdrop click, and Esc: only interrupt with
+  // a confirmation if the person actually changed something.
+  const requestCloseModal = () => {
+    if (isFormDirty()) { setConfirmState({ kind: "discard" }); return; }
+    closeModal();
+  };
+
 
   const submitForm = async () => {
     if (!qModal) return;
@@ -210,6 +242,7 @@ export default function AdminPage(){
 
   const runConfirm = async () => {
     if (!confirmState) return;
+    if (confirmState.kind === "discard") { closeModal(); setConfirmState(null); return; }
     setConfirmState(s => ({ ...s, busy: true }));
     if (confirmState.kind === "question") {
       const { ok, json: j } = await apiRequest("/api/admin/subjects", {
@@ -431,7 +464,13 @@ export default function AdminPage(){
       {/* Breadcrumb + hero */}
       <div className="admin-topbar">
         <Link href="/" className="back-link">← Back to app</Link>
-        <span className="admin-save-hint">● Auto-saves to disk</span>
+        <div style={{display:"flex",alignItems:"center",gap:8}}>
+          <button className="admin-sidebar-toggle" onClick={() => setSidebarOpen(true)} aria-label="Open subjects list">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+            {editCat ? editCat.title : "Subjects"}
+          </button>
+          <span className="admin-save-hint">● Auto-saves to disk</span>
+        </div>
       </div>
       <div className="admin-hero admin-hero--compact">
         <div>
@@ -454,14 +493,20 @@ export default function AdminPage(){
       )}
 
       <div className="admin-shell admin-shell--studio">
+        {/* Backdrop for the mobile subjects drawer */}
+        {sidebarOpen && <div className="admin-sidebar-backdrop" onClick={() => setSidebarOpen(false)} />}
+
         {/* ============ SIDEBAR ============ */}
-        <aside className="admin-sidebar">
+        <aside className={`admin-sidebar ${sidebarOpen ? "admin-sidebar--open" : ""}`}>
           <div className="admin-sidebar-top">
             <div style={{display:"flex",alignItems:"center"}}>
               <h3>Subjects</h3>
               <span className="admin-sidebar-count">{cats.length}</span>
             </div>
-            <button className="btn small" onClick={() => setNewSubjectOpen(o => !o)} style={{borderRadius:999}}>{newSubjectOpen ? "Close" : "+ New"}</button>
+            <div style={{display:"flex",gap:6}}>
+              <button className="btn small" onClick={() => setNewSubjectOpen(o => !o)} style={{borderRadius:999}}>{newSubjectOpen ? "Close" : "+ New"}</button>
+              <button className="admin-sidebar-close" onClick={() => setSidebarOpen(false)} aria-label="Close subjects list">×</button>
+            </div>
           </div>
 
           {newSubjectOpen && (
@@ -484,7 +529,7 @@ export default function AdminPage(){
           <div className="admin-search-wrap">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <input ref={sidebarSearchRef} placeholder="Search subjects…" value={sidebarSearch} onChange={e => setSidebarSearch(e.target.value)} />
-            {sidebarSearch && <button className="admin-search-clear" onClick={()=>setSidebarSearch("")}>×</button>}
+            {sidebarSearch && <button className="admin-search-clear" onClick={()=>setSidebarSearch("")} aria-label="Clear subject search">×</button>}
           </div>
 
           <div className="sidebar-scroll">
@@ -506,13 +551,16 @@ export default function AdminPage(){
                 return (
                   <div key={g} className="group-section">
                     <button className="group-section-head" onClick={() => toggleGroup(g)}>
-                      <span>{GROUP_LABELS[g] || g}</span>
+                      <span style={{display:"flex",alignItems:"center",gap:6}}>
+                        <svg className={`group-chevron ${isCollapsed ? "collapsed" : ""}`} width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        {GROUP_LABELS[g] || g}
+                      </span>
                       <span>{list.length}</span>
                     </button>
                     {!isCollapsed && (
                       <div className="group-section-body">
                         {list.map(c => (
-                          <button key={c.id} className="subject-list-item" onClick={() => loadCat(c.id)} title={c.title}>
+                          <button key={c.id} className={`subject-list-item ${selectedId === c.id ? "active" : ""}`} onClick={() => loadCat(c.id)} title={c.title}>
                             <span className="mono-badge sm">{monogram(c.title)}</span>
                             <span className="sli-text">
                               <span className="sli-title">{c.title}</span>
@@ -546,7 +594,13 @@ export default function AdminPage(){
         </aside>
 
         {/* ============ MAIN ============ */}
-        <div className="admin-main">
+        <div className={`admin-main ${catLoading ? "admin-main--loading" : ""}`}>
+          {catLoading && (
+            <div className="admin-main-loading-overlay">
+              <span className="spinner"></span>
+              <span>Loading subject…</span>
+            </div>
+          )}
           {!editCat ? (
             <div className="admin-welcome">
               <div className="admin-welcome-icon">✦</div>
@@ -596,7 +650,7 @@ export default function AdminPage(){
                     <div className="admin-search-input">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                       <input ref={qSearchRef} placeholder='Search text, option, or #…  ( press / )' value={qSearch} onChange={e => setQSearch(e.target.value)} />
-                      {qSearch && <button onClick={()=>setQSearch("")} className="admin-clear">×</button>}
+                      {qSearch && <button onClick={()=>setQSearch("")} className="admin-clear" aria-label="Clear question search">×</button>}
                     </div>
                     <select className="mf-select admin-chapter-select" value={activeChapterIdx === null ? "all" : String(activeChapterIdx)} onChange={e => { setActiveChapterIdx(e.target.value === "all" ? null : Number(e.target.value)); }}>
                       <option value="all">All chapters ({totalQuestionsOf(editCat)})</option>
@@ -810,7 +864,8 @@ export default function AdminPage(){
         setForm={setForm}
         error={formError}
         busy={busy}
-        onCancel={closeModal}
+        dirty={qModal ? isFormDirty() : false}
+        onCancel={requestCloseModal}
         onSubmit={submitForm}
         onDelete={qModal?.mode === "edit" ? deleteFromModal : null}
       />
@@ -820,15 +875,18 @@ export default function AdminPage(){
         title={
           confirmState?.kind === "subject" ? "Delete subject?" :
           confirmState?.kind === "subtopic" ? "Delete chapter?" :
-          confirmState?.kind === "bulk" ? `Delete ${confirmState?.keys?.length} questions?` : "Delete question?"
+          confirmState?.kind === "bulk" ? `Delete ${confirmState?.keys?.length} questions?` :
+          confirmState?.kind === "discard" ? "Discard changes?" : "Delete question?"
         }
         message={
           confirmState?.kind === "subject" ? `This permanently removes "${editCat?.title}" and every question in it. Export a backup first — this can't be undone.` :
           confirmState?.kind === "subtopic" ? "This permanently removes the chapter and all questions inside it. This can't be undone." :
           confirmState?.kind === "bulk" ? "Selected questions will be permanently removed. This can't be undone." :
+          confirmState?.kind === "discard" ? "You have unsaved edits on this question. Discard them?" :
           "This permanently removes the question. This can't be undone."
         }
-        confirmLabel={confirmState?.kind === "bulk" ? `Delete ${confirmState?.keys?.length}` : "Delete"}
+        confirmLabel={confirmState?.kind === "bulk" ? `Delete ${confirmState?.keys?.length}` : confirmState?.kind === "discard" ? "Discard" : "Delete"}
+        danger={confirmState?.kind !== "discard"}
         busy={!!confirmState?.busy || bulkBusy}
         onConfirm={runConfirm}
         onCancel={() => setConfirmState(null)}
@@ -837,7 +895,7 @@ export default function AdminPage(){
   );
 }
 
-function QuestionSlideOver({ open, mode, chapterName, chapterIdx, chapterCount, form, setForm, error, busy, onCancel, onSubmit, onDelete }){
+function QuestionSlideOver({ open, mode, chapterName, chapterIdx, chapterCount, form, setForm, error, busy, dirty, onCancel, onSubmit, onDelete }){
   const filledOpts = form.options.filter(o => o.trim()).length;
   if (!open) return null;
   return (
@@ -877,12 +935,19 @@ function QuestionSlideOver({ open, mode, chapterName, chapterIdx, chapterCount, 
             <label className="mf-label">Explanation * <span>(shown after answering)</span></label>
             <textarea className="mf-textarea" rows={3} placeholder="Why is this correct? 1–2 lines." value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") onSubmit(); }} />
           </div>
-          <div className="mf-hint">Saves instantly to disk · Esc cancels · Ctrl+Enter saves.</div>
+          <div className="mf-hint mf-hint--actions">
+            <span>Saves instantly to disk</span>
+            <span className="mf-hint-btns">
+              <button type="button" className="btn small ghost" onClick={onCancel} style={{borderRadius:999}}>Cancel <kbd>Esc</kbd></button>
+              <button type="button" className="btn small" disabled={busy} onClick={onSubmit} style={{borderRadius:999}}>{busy ? <span className="spinner"></span> : <>{mode === "edit" ? "Save changes" : "Add question"} <kbd>Ctrl+↵</kbd></>}</button>
+            </span>
+          </div>
         </div>
 
         <div className="admin-sheet-foot">
           {onDelete ? <button className="btn small danger" onClick={onDelete} style={{borderRadius:999}}>Delete</button> : <span />}
           <div style={{ flex: 1 }} />
+          {dirty && <span className="admin-sheet-dirty">● Unsaved changes</span>}
           <button className="btn small ghost" onClick={onCancel} style={{borderRadius:999}}>Cancel</button>
           <button className="btn small" disabled={busy} onClick={onSubmit} style={{borderRadius:999}}>{busy ? <span className="spinner"></span> : (mode === "edit" ? "Save changes" : "Add question")}</button>
         </div>
