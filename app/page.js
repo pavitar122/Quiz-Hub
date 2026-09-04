@@ -5,6 +5,14 @@ import { useAuth } from "@/context/AuthContext";
 import Counter from "@/components/Counter";
 import { monogram } from "@/lib/badge";
 
+// Direct DOM style writes (no setState) so the spotlight tracks the cursor
+// at 60fps without triggering React re-renders on every mousemove.
+function spotlight(e){
+  const r=e.currentTarget.getBoundingClientRect();
+  e.currentTarget.style.setProperty("--mx", ((e.clientX-r.left)/r.width*100)+"%");
+  e.currentTarget.style.setProperty("--my", ((e.clientY-r.top)/r.height*100)+"%");
+}
+
 export default function HomePage(){
   const [cats,setCats]=useState([]);
   const [groups,setGroups]=useState([]);
@@ -84,7 +92,7 @@ export default function HomePage(){
           const gCats=cats.filter(c=>c.group===g.id);
           const gTotal=gCats.reduce((a,c)=>a+c.subcats.reduce((s,sc)=>s+sc.questions.length,0),0);
           return (
-            <button key={g.id} className={`app-tab ${activeApp===g.id?"active":""}`} onClick={()=>{setActiveApp(g.id);}}>
+            <button key={g.id} className={`app-tab ${activeApp===g.id?"active":""}`} onClick={()=>{setActiveApp(g.id);}} onMouseMove={spotlight}>
               <span className="mono-badge md app-tab-icon">{g.code}</span>
               <span className="app-tab-text">
                 <span className="app-tab-label">{g.label}</span>
@@ -131,7 +139,7 @@ export default function HomePage(){
             const pct=Math.round((attempted/cat.subcats.length)*100);
             return (
               <Link key={cat.id} href={`/subject/${cat.id}`} style={{textDecoration:"none"}}>
-                <div className="category-card">
+                <div className="category-card" onMouseMove={spotlight}>
                   <span className="mono-badge sm cat-icon">{monogram(cat.title)}</span>
                   <h2 className="serif">{cat.title}</h2>
                   <p>{cat.description}</p>

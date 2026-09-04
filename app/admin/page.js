@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import ConfirmDialog from "@/components/ConfirmDialog";
 import { monogram } from "@/lib/badge";
 
@@ -19,16 +20,17 @@ export default function AdminPage(){
   const [editCat, setEditCat] = useState(null);
   const [sidebarSearch, setSidebarSearch] = useState("");
   const [collapsedGroups, setCollapsedGroups] = useState({});
-  const [activeTab, setActiveTab] = useState("content"); // 'content' | 'settings'
+  const [activeTab, setActiveTab] = useState("questions"); // questions | chapters | settings
 
-  // Chapter (subtopic) + question browsing state
-  const [activeChapterIdx, setActiveChapterIdx] = useState(null); // null = "All chapters"
+  const [activeChapterIdx, setActiveChapterIdx] = useState(null);
   const [qSearch, setQSearch] = useState("");
   const [page, setPage] = useState(1);
+  const [selectedQs, setSelectedQs] = useState(new Set()); // "subIdx-num"
+  const [bulkBusy, setBulkBusy] = useState(false);
 
-  // Question modal: { mode:'add'|'edit', subIdx, num? }
   const [qModal, setQModal] = useState(null);
   const [form, setForm] = useState(EMPTY_FORM);
+  const [formError, setFormError] = useState("");
 
   const [metaForm, setMetaForm] = useState({ title: "", description: "", group: "civil1" });
 
@@ -37,27 +39,37 @@ export default function AdminPage(){
 
   const [newChapterOpen, setNewChapterOpen] = useState(false);
   const [newChapterName, setNewChapterName] = useState("");
-  const [renaming, setRenaming] = useState(null); // { subIdx, value }
+  const [renaming, setRenaming] = useState(null);
 
   const [importFile, setImportFile] = useState(null);
   const [importGroup, setImportGroup] = useState("civil1");
 
-  const [msg, setMsg] = useState(null); // { type:'ok'|'err', text }
+  const [msg, setMsg] = useState(null);
   const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [confirmState, setConfirmState] = useState(null); // { kind, subIdx, num, busy }
+  const [confirmState, setConfirmState] = useState(null);
   const msgTimer = useRef(null);
+  const qSearchRef = useRef(null);
+  const sidebarSearchRef = useRef(null);
 
   useEffect(() => {
     if (!loading && (!user || user.role !== "admin")) { router.push("/"); return; }
     refreshCats();
   }, [user, loading, router]);
 
+  // Global shortcuts: "/" focuses question search, "n" adds question, Esc closes modal
   useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape" && qModal) closeModal(); };
+    const onKey = (e) => {
+      const tag = document.activeElement?.tagName;
+      const typing = tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT";
+      if (e.key === "Escape" && qModal) { closeModal(); return; }
+      if (typing) return;
+      if (e.key === "/") { e.preventDefault(); qSearchRef.current?.focus(); }
+      if ((e.key === "n" || e.key === "N") && editCat && activeTab === "questions") { e.preventDefault(); openAddModal(); }
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [qModal]);
+  }, [qModal, editCat, activeTab, activeChapterIdx]);
 
   const flash = (type, text) => {
     setMsg({ type, text });
@@ -65,10 +77,6 @@ export default function AdminPage(){
     msgTimer.current = setTimeout(() => setMsg(null), 4500);
   };
 
-  // Every mutation goes through this so a failure is always visible instead
-  // of silently doing nothing: network errors and non-JSON error pages (e.g.
-  // a 500 from a filesystem write that failed) both get turned into a
-  // flashed message rather than an uncaught rejection.
   const apiRequest = async (url, options) => {
     let res;
     try {
@@ -90,10 +98,11 @@ export default function AdminPage(){
 
   const loadCat = async (id) => {
     setSelectedId(id);
-    setActiveTab("content");
+    setActiveTab("questions");
     setActiveChapterIdx(null);
     setQSearch("");
     setPage(1);
+    setSelectedQs(new Set());
     setRenaming(null);
     setQModal(null);
     setNewChapterOpen(false);
@@ -102,7 +111,6 @@ export default function AdminPage(){
     setMetaForm({ title: d.category?.title || "", description: d.category?.description || "", group: d.category?.group || "civil1" });
   };
 
-  // like loadCat but keeps chapter/page/search state, for smooth in-place edits
   const loadCatQuiet = async (id) => {
     const d = await fetch(`/api/questions?id=${id}`, { cache: "no-store" }).then(r => r.json());
     setEditCat(d.category);
@@ -141,31 +149,34 @@ export default function AdminPage(){
     setTimeout(() => setCopied(false), 1500);
   };
 
-  // ---------- Question modal ----------
+  // ---------- Question editor (slide-over) ----------
   const openAddModal = () => {
-    if (!editCat.subcats.length) { flash("err", "Add a chapter first."); return; }
+    if (!editCat?.subcats.length) { flash("err", "Add a chapter first — questions live inside chapters."); setActiveTab("chapters"); setNewChapterOpen(true); return; }
     const subIdx = activeChapterIdx !== null ? activeChapterIdx : 0;
     setForm(EMPTY_FORM);
+    setFormError("");
     setQModal({ mode: "add", subIdx });
   };
   const openEditModal = (subIdx, q) => {
     setForm({ text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl });
+    setFormError("");
     setQModal({ mode: "edit", subIdx, num: q.num });
   };
   const openDuplicateModal = (subIdx, q) => {
     setForm({ text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl });
+    setFormError("");
     setQModal({ mode: "add", subIdx });
-    flash("ok", "Duplicated into a new question — edit it, then save.");
+    flash("ok", "Duplicated — edit and save as a new question.");
   };
-  const closeModal = () => { setQModal(null); setForm(EMPTY_FORM); };
+  const closeModal = () => { setQModal(null); setForm(EMPTY_FORM); setFormError(""); };
 
   const submitForm = async () => {
     if (!qModal) return;
     const payload = { ...form, correct: parseInt(form.correct) };
-    if (!payload.text.trim() || payload.options.some(o => !o.trim()) || !payload.expl.trim()) {
-      flash("err", "Fill in the question, all four options, and an explanation.");
-      return;
-    }
+    if (!payload.text.trim()) { setFormError("Write the question text first."); return; }
+    const emptyOpt = payload.options.findIndex(o => !o.trim());
+    if (emptyOpt !== -1) { setFormError(`Option ${String.fromCharCode(65 + emptyOpt)} is empty.`); return; }
+    if (!payload.expl.trim()) { setFormError("Add a short explanation — learners rely on it."); return; }
     setBusy(true);
     const isEdit = qModal.mode === "edit";
     const body = {
@@ -181,8 +192,8 @@ export default function AdminPage(){
       body: JSON.stringify(body),
     });
     setBusy(false);
-    if (!ok) { if (j) flash("err", j.error || "Something went wrong."); return; }
-    flash("ok", isEdit ? "Question updated — saved to the data file." : "Question added — saved to the data file.");
+    if (!ok) { if (j) setFormError(j.error || "Something went wrong."); return; }
+    flash("ok", isEdit ? "Question updated." : "Question added.");
     closeModal();
     await loadCatQuiet(editCat.id);
     refreshCats();
@@ -209,6 +220,7 @@ export default function AdminPage(){
       if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
       flash("ok", "Question deleted.");
       if (confirmState.fromModal) closeModal();
+      setSelectedQs(prev => { const n = new Set(prev); n.delete(`${confirmState.subIdx}-${confirmState.num}`); return n; });
       await loadCatQuiet(editCat.id);
       refreshCats();
     } else if (confirmState.kind === "subtopic") {
@@ -221,6 +233,7 @@ export default function AdminPage(){
       flash("ok", "Chapter deleted.");
       setActiveChapterIdx(null);
       setPage(1);
+      setSelectedQs(new Set());
       await loadCatQuiet(editCat.id);
       refreshCats();
     } else if (confirmState.kind === "subject") {
@@ -229,6 +242,25 @@ export default function AdminPage(){
       flash("ok", "Subject deleted.");
       setSelectedId(null);
       setEditCat(null);
+      setSelectedQs(new Set());
+      refreshCats();
+    } else if (confirmState.kind === "bulk") {
+      setBulkBusy(true);
+      let failed = 0;
+      for (const key of confirmState.keys) {
+        const [subIdx, num] = key.split("-").map(Number);
+        const { ok } = await apiRequest("/api/admin/subjects", {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ catId: editCat.id, subIdx, num }),
+        });
+        if (!ok) failed++;
+      }
+      setBulkBusy(false);
+      if (failed) flash("err", `${failed} deletes failed — the rest were removed.`);
+      else flash("ok", `${confirmState.keys.length} questions deleted.`);
+      setSelectedQs(new Set());
+      await loadCatQuiet(editCat.id);
       refreshCats();
     }
     setConfirmState(null);
@@ -259,11 +291,12 @@ export default function AdminPage(){
     });
     setBusy(false);
     if (!ok) { if (j) flash("err", j.error || "Could not create subject."); return; }
-    flash("ok", `Created "${j.category.title}".`);
+    flash("ok", `Created "${j.category.title}" — now add a chapter.`);
     setNewSubject({ title: "", description: "", group: "civil1" });
     setNewSubjectOpen(false);
     await refreshCats();
     loadCat(j.category.id);
+    setActiveTab("chapters");
   };
 
   const handleAddChapter = async () => {
@@ -276,11 +309,12 @@ export default function AdminPage(){
     });
     setBusy(false);
     if (!ok) { if (j) flash("err", j.error || "Could not add chapter."); return; }
-    flash("ok", "Chapter added.");
+    flash("ok", `Chapter "${newChapterName.trim()}" added — now add questions to it.`);
     setNewChapterName("");
     setNewChapterOpen(false);
     await loadCatQuiet(editCat.id);
     setActiveChapterIdx(j.subIdx);
+    setActiveTab("questions");
     setPage(1);
     refreshCats();
   };
@@ -329,6 +363,7 @@ export default function AdminPage(){
     refreshCats();
   };
 
+  // ---------- derived ----------
   const filteredCats = useMemo(() => {
     const q = sidebarSearch.trim().toLowerCase();
     if (!q) return cats;
@@ -342,7 +377,7 @@ export default function AdminPage(){
     return groups;
   }, [filteredCats]);
 
-  const totalQuestionsOf = (cat) => cat.subcats.reduce((a, s) => a + s.questions.length, 0);
+  const totalQuestionsOf = (cat) => cat?.subcats.reduce((a, s) => a + s.questions.length, 0) || 0;
 
   const overview = useMemo(() => {
     const totalSubjects = cats.length;
@@ -352,8 +387,6 @@ export default function AdminPage(){
     return { totalSubjects, totalSubtopics, totalQuestions, totalGroups };
   }, [cats]);
 
-  // Flattened, filterable, paginated question list for the Content tab.
-  // Works across every chapter ("All") or scoped to one — same search box either way.
   const flatQuestions = useMemo(() => {
     if (!editCat) return [];
     let items = [];
@@ -362,11 +395,11 @@ export default function AdminPage(){
       sc.questions.forEach(q => items.push({ ...q, subIdx }));
     });
     const s = qSearch.trim().toLowerCase();
-    if (s) items = items.filter(it => it.text.toLowerCase().includes(s) || String(it.num).includes(s));
+    if (s) items = items.filter(it => it.text.toLowerCase().includes(s) || String(it.num).includes(s) || it.options.some(o => o.toLowerCase().includes(s)));
     return items;
   }, [editCat, activeChapterIdx, qSearch]);
 
-  useEffect(() => { setPage(1); }, [activeChapterIdx, qSearch, selectedId]);
+  useEffect(() => { setPage(1); setSelectedQs(new Set()); }, [activeChapterIdx, qSearch, selectedId]);
 
   const totalPages = Math.max(1, Math.ceil(flatQuestions.length / PAGE_SIZE));
   const pageItems = useMemo(() => {
@@ -374,25 +407,43 @@ export default function AdminPage(){
     return flatQuestions.slice((p - 1) * PAGE_SIZE, p * PAGE_SIZE);
   }, [flatQuestions, page, totalPages]);
 
+  const toggleSelect = (key) => setSelectedQs(prev => {
+    const n = new Set(prev);
+    if (n.has(key)) n.delete(key); else n.add(key);
+    return n;
+  });
+  const selectAllOnPage = () => setSelectedQs(prev => {
+    const n = new Set(prev);
+    pageItems.forEach(q => n.add(`${q.subIdx}-${q.num}`));
+    return n;
+  });
+  const clearSelection = () => setSelectedQs(new Set());
+
   if (loading) return <div className="loading-row"><span className="spinner"></span> Loading…</div>;
   if (!user || user.role !== "admin") return <div className="empty-note">Not authorized.</div>;
 
   const activeChapter = activeChapterIdx !== null && editCat ? editCat.subcats[activeChapterIdx] : null;
   const modalChapterName = qModal && editCat ? editCat.subcats[qModal.subIdx]?.name : "";
+  const gotoChapterQuestions = (i) => { setActiveChapterIdx(i); setActiveTab("questions"); setPage(1); };
 
   return (
     <>
-      <div className="app-header">
-        <span className="dwg-tag mono">ADMIN PANEL</span>
-        <h1 className="serif">Manage Questions</h1>
-        <p>Create subjects, organize chapters, and add, edit or remove questions. Every change writes straight to the subject&apos;s data file on disk.</p>
+      {/* Breadcrumb + hero */}
+      <div className="admin-topbar">
+        <Link href="/" className="back-link">← Back to app</Link>
+        <span className="admin-save-hint">● Auto-saves to disk</span>
       </div>
-
-      <div className="admin-overview">
-        <div className="stat-chip"><div className="num serif">{overview.totalSubjects}</div><div className="lab mono">Subjects</div></div>
-        <div className="stat-chip"><div className="num serif">{overview.totalSubtopics}</div><div className="lab mono">Chapters</div></div>
-        <div className="stat-chip"><div className="num serif">{overview.totalQuestions}</div><div className="lab mono">Questions</div></div>
-        <div className="stat-chip"><div className="num serif">{overview.totalGroups}</div><div className="lab mono">Apps Covered</div></div>
+      <div className="admin-hero admin-hero--compact">
+        <div>
+          <span className="admin-eyebrow">ADMIN · CIVIL HUB</span>
+          <h1>Question Studio</h1>
+          <p>Pick a subject → manage chapters → add questions. Shortcuts: <kbd>/</kbd> search · <kbd>N</kbd> new question · <kbd>Esc</kbd> close.</p>
+        </div>
+        <div className="admin-hero-actions">
+          <div className="admin-stat-mini"><strong>{overview.totalSubjects}</strong><span>subjects</span></div>
+          <div className="admin-stat-mini"><strong>{overview.totalSubtopics}</strong><span>chapters</span></div>
+          <div className="admin-stat-mini"><strong>{overview.totalQuestions}</strong><span>questions</span></div>
+        </div>
       </div>
 
       {msg && (
@@ -402,68 +453,67 @@ export default function AdminPage(){
         </div>
       )}
 
-      <div className="admin-shell">
-        {/* Sidebar */}
+      <div className="admin-shell admin-shell--studio">
+        {/* ============ SIDEBAR ============ */}
         <aside className="admin-sidebar">
-          <div className="admin-sidebar-head">
-            <h3>Subjects ({cats.length})</h3>
-            <button className="btn small" onClick={() => setNewSubjectOpen(o => !o)}>{newSubjectOpen ? "Cancel" : "+ New"}</button>
+          <div className="admin-sidebar-top">
+            <div style={{display:"flex",alignItems:"center"}}>
+              <h3>Subjects</h3>
+              <span className="admin-sidebar-count">{cats.length}</span>
+            </div>
+            <button className="btn small" onClick={() => setNewSubjectOpen(o => !o)} style={{borderRadius:999}}>{newSubjectOpen ? "Close" : "+ New"}</button>
           </div>
 
           {newSubjectOpen && (
-            <div className="form-panel" style={{ marginBottom: 14 }}>
-              <div className="form-panel-head"><span className="fp-title">New subject</span></div>
-              <div className="mf-field">
-                <label className="mf-label">Title</label>
-                <input className="mf-input" placeholder="e.g. Soil Mechanics" value={newSubject.title} onChange={e => setNewSubject({ ...newSubject, title: e.target.value })} />
-              </div>
-              <div className="mf-field">
-                <label className="mf-label">Description</label>
-                <input className="mf-input" placeholder="Short description (optional)" value={newSubject.description} onChange={e => setNewSubject({ ...newSubject, description: e.target.value })} />
-              </div>
-              <div className="mf-field" style={{ marginBottom: 10 }}>
-                <label className="mf-label">App / group</label>
-                <select className="mf-select" value={newSubject.group} onChange={e => setNewSubject({ ...newSubject, group: e.target.value })}>
-                  <option value="civil1">Civil 1</option>
-                  <option value="civil2">Civil 2</option>
-                  <option value="nontechnical">Non-Technical</option>
-                </select>
-              </div>
-              <div className="btn-row">
-                <button className="btn small" disabled={busy} onClick={handleCreateSubject}>{busy ? <span className="spinner"></span> : "Create Subject"}</button>
-              </div>
+            <div className="admin-create-card">
+              <div className="admin-create-head">New subject <span className="admin-step-mini">Step 1 of 3</span></div>
+              <label className="mf-label">Title *</label>
+              <input className="mf-input" autoFocus placeholder="e.g. Soil Mechanics" value={newSubject.title} onChange={e => setNewSubject({ ...newSubject, title: e.target.value })} onKeyDown={e => { if (e.key === "Enter") handleCreateSubject(); }} />
+              <label className="mf-label" style={{marginTop:10}}>Description</label>
+              <input className="mf-input" placeholder="One-line summary for learners" value={newSubject.description} onChange={e => setNewSubject({ ...newSubject, description: e.target.value })} />
+              <label className="mf-label" style={{marginTop:10}}>App / group</label>
+              <select className="mf-select" value={newSubject.group} onChange={e => setNewSubject({ ...newSubject, group: e.target.value })}>
+                <option value="civil1">Civil 1</option>
+                <option value="civil2">Civil 2</option>
+                <option value="nontechnical">Non-Technical</option>
+              </select>
+              <button className="btn small" disabled={busy} onClick={handleCreateSubject} style={{marginTop:12,width:"100%",borderRadius:999}}>{busy ? <span className="spinner"></span> : "Create subject →"}</button>
             </div>
           )}
 
-          <div className="admin-search">
-            <span className="mono" style={{ fontSize: 10.5, color: "var(--muted)", letterSpacing: ".06em" }}>SEARCH</span>
-            <input placeholder="Search subjects…" value={sidebarSearch} onChange={e => setSidebarSearch(e.target.value)} />
+          <div className="admin-search-wrap">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input ref={sidebarSearchRef} placeholder="Search subjects…" value={sidebarSearch} onChange={e => setSidebarSearch(e.target.value)} />
+            {sidebarSearch && <button className="admin-search-clear" onClick={()=>setSidebarSearch("")}>×</button>}
           </div>
 
           <div className="sidebar-scroll">
             <div className="subject-list">
-              {filteredCats.length === 0 && <div className="empty-note" style={{ padding: "16px 0" }}>No subjects found.</div>}
-              {GROUP_ORDER.filter(g => groupedCats[g] && groupedCats[g].length > 0).map(g => {
+              {filteredCats.length === 0 && (
+                <div className="admin-empty-mini">
+                  No subjects found.
+                  <button className="btn small secondary" style={{marginTop:8,borderRadius:999}} onClick={()=>{setSidebarSearch(""); setNewSubjectOpen(true);}}>+ Create one</button>
+                </div>
+              )}
+              {GROUP_ORDER.filter(g => groupedCats[g]?.length > 0).map(g => {
                 const isCollapsed = !!collapsedGroups[g] && !sidebarSearch.trim();
                 const list = groupedCats[g];
                 return (
                   <div key={g} className="group-section">
-                    <div className={`group-section-head ${!isCollapsed ? "open" : ""}`} onClick={() => toggleGroup(g)}>
-                      <div className="gs-left">
-                        <span className="gs-chevron">▶</span>
-                        <span className="gs-label">{GROUP_LABELS[g] || g}</span>
-                      </div>
+                    <button className={`group-section-head ${!isCollapsed ? "open" : ""}`} onClick={() => toggleGroup(g)}>
+                      <span style={{display:"flex",alignItems:"center",gap:8}}><span className="gs-chevron">›</span><span className="gs-label">{GROUP_LABELS[g] || g}</span></span>
                       <span className="gs-count">{list.length}</span>
-                    </div>
+                    </button>
                     {!isCollapsed && (
                       <div className="group-section-body">
                         {list.map(c => (
-                          <button key={c.id} className={`subject-list-item ${selectedId === c.id ? "active" : ""}`} onClick={() => loadCat(c.id)}>
+                          <button key={c.id} className={`subject-list-item ${selectedId === c.id ? "active" : ""}`} onClick={() => loadCat(c.id)} title={c.title}>
                             <span className="mono-badge sm">{monogram(c.title)}</span>
                             <span className="sli-text">
                               <span className="sli-title">{c.title}</span>
-                              <span className="sli-meta">{c.subcats.length} chapters · {totalQuestionsOf(c)} Qs</span>
+                              <span className="sli-meta">{c.subcats.length} ch · {totalQuestionsOf(c)} Qs</span>
                             </span>
+                            {selectedId === c.id && <span className="admin-active-dot" />}
                           </button>
                         ))}
                       </div>
@@ -473,159 +523,168 @@ export default function AdminPage(){
               })}
             </div>
 
-            <div className="admin-divider" />
-            <div className="admin-sidebar-head" style={{ marginBottom: 8 }}>
-              <h3>Import JSON</h3>
-            </div>
-            <div className="mf-field" style={{ marginBottom: 10 }}>
-              <select className="mf-select" value={importGroup} onChange={e => setImportGroup(e.target.value)}>
+            <div className="admin-import-card">
+              <div className="admin-import-head">Import JSON <span className="admin-pill-mini">Bulk</span></div>
+              <select className="mf-select" value={importGroup} onChange={e => setImportGroup(e.target.value)} style={{margin:"8px 0"}}>
                 <option value="civil1">Civil 1</option>
                 <option value="civil2">Civil 2</option>
                 <option value="nontechnical">Non-Technical</option>
               </select>
+              <label className="admin-dropzone">
+                <input type="file" accept=".json,.js,.txt" onChange={e => setImportFile(e.target.files[0])} hidden />
+                <span className="admin-dropzone-icon">⭳</span>
+                <span className="admin-dropzone-text">{importFile ? importFile.name : "Choose file…"}</span>
+              </label>
+              <button className="btn small secondary" style={{ width: "100%", marginTop:8, borderRadius:999 }} disabled={busy} onClick={handleImport}>{busy ? <span className="spinner"></span> : "Import subject"}</button>
             </div>
-            <div className="import-drop" style={{ marginBottom: 10 }}>
-              <input type="file" accept=".json,.js,.txt" onChange={e => setImportFile(e.target.files[0])} />
-            </div>
-            <button className="btn small secondary" style={{ width: "100%" }} disabled={busy} onClick={handleImport}>{busy ? <span className="spinner"></span> : "Import as New Subject"}</button>
           </div>
         </aside>
 
-        {/* Main */}
+        {/* ============ MAIN ============ */}
         <div className="admin-main">
-          {!editCat && (
-            <div className="dwg-card">
-              <div className="empty-note">Select a subject from the list, or create a new one, to start managing its questions.</div>
+          {!editCat ? (
+            <div className="admin-welcome">
+              <div className="admin-welcome-icon">✦</div>
+              <h2>Select a subject to start</h2>
+              <p>Choose on the left, or create a new one. Workflow: <strong>Subject → Chapter → Questions</strong>.</p>
+              <div className="admin-welcome-steps">
+                <span className="admin-step"><em>1</em> Subject</span>
+                <span className="admin-step-arrow">→</span>
+                <span className="admin-step"><em>2</em> Chapter</span>
+                <span className="admin-step-arrow">→</span>
+                <span className="admin-step"><em>3</em> Questions</span>
+              </div>
+              <button className="btn" style={{marginTop:16,borderRadius:999}} onClick={()=>setNewSubjectOpen(true)}>+ Create subject</button>
             </div>
-          )}
-
-          {editCat && (
+          ) : (
             <>
-              <div className="admin-panel">
-                <div className="admin-panel-head">
-                  <div>
-                    <h2 className="admin-panel-title serif">{editCat.title}</h2>
-                    <div className="admin-panel-sub" style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                      <button className={`copy-chip ${copied ? "copied" : ""}`} onClick={copyId}>{copied ? "Copied ✓" : `ID: ${editCat.id}`}</button>
-                      <span>{GROUP_LABELS[editCat.group] || editCat.group} · {totalQuestionsOf(editCat)} questions · {editCat.subcats.length} chapters</span>
+              {/* Subject header */}
+              <div className="admin-subject-header">
+                <div className="admin-subject-left">
+                  <div className="admin-subject-avatar">{monogram(editCat.title)}</div>
+                  <div style={{minWidth:0,flex:1}}>
+                    <h2>{editCat.title} <span className="admin-group-badge">{GROUP_LABELS[editCat.group] || editCat.group}</span></h2>
+                    <div className="admin-subject-meta">
+                      <button className={`copy-chip ${copied ? "copied" : ""}`} onClick={copyId} title="Copy subject ID">{copied ? "Copied ✓" : editCat.id}</button>
+                      <span>{totalQuestionsOf(editCat)} Qs · {editCat.subcats.length} chapters</span>
                     </div>
-                    {editCat.description && <p style={{ marginTop: 10, fontFamily: "Spectral, Georgia, serif", fontSize: 14, color: "var(--muted)" }}>{editCat.description}</p>}
+                    {editCat.description && <p className="admin-subject-desc">{editCat.description}</p>}
                   </div>
-                  <button className="btn small secondary" onClick={() => exportSubject(editCat)}>⭳ Export JSON</button>
                 </div>
-
-                <div className="admin-tabs">
-                  <button className={activeTab === "content" ? "active" : ""} onClick={() => setActiveTab("content")}>Questions</button>
-                  <button className={activeTab === "settings" ? "active" : ""} onClick={() => setActiveTab("settings")}>Settings</button>
+                <div style={{display:"flex",gap:8,flexShrink:0}}>
+                  <button className="btn small secondary" onClick={() => exportSubject(editCat)} style={{borderRadius:999}}>⭳ Export</button>
+                  <button className="btn small" onClick={openAddModal} style={{borderRadius:999}}>+ Question</button>
                 </div>
               </div>
 
-              {activeTab === "content" && (
-                <div className="admin-panel">
-                  <div className="admin-panel-sub" style={{ marginBottom: 10 }}>CHAPTERS</div>
+              {/* Tabs with counts */}
+              <div className="admin-tabs admin-tabs--pill">
+                <button className={activeTab === "questions" ? "active" : ""} onClick={() => setActiveTab("questions")}>Questions · {totalQuestionsOf(editCat)}</button>
+                <button className={activeTab === "chapters" ? "active" : ""} onClick={() => setActiveTab("chapters")}>Chapters · {editCat.subcats.length}</button>
+                <button className={activeTab === "settings" ? "active" : ""} onClick={() => setActiveTab("settings")}>Settings</button>
+              </div>
 
-                  <div className="chapter-strip">
-                    <button className={`chapter-chip ${activeChapterIdx === null ? "active" : ""}`} onClick={() => setActiveChapterIdx(null)}>
-                      All chapters <span className="chip-count">{totalQuestionsOf(editCat)}</span>
-                    </button>
-                    {editCat.subcats.map((sc, i) => (
-                      <button key={i} className={`chapter-chip ${activeChapterIdx === i ? "active" : ""}`} onClick={() => setActiveChapterIdx(i)}>
-                        {sc.name} <span className="chip-count">{sc.questions.length}</span>
-                      </button>
-                    ))}
-                    <button className="chapter-chip add" onClick={() => setNewChapterOpen(o => !o)}>{newChapterOpen ? "Cancel" : "+ Add chapter"}</button>
-                  </div>
-
-                  {newChapterOpen && (
-                    <div className="add-subtopic-row" style={{ marginBottom: 14 }}>
-                      <input
-                        className="mf-input"
-                        autoFocus
-                        placeholder="New chapter name…"
-                        value={newChapterName}
-                        onChange={e => setNewChapterName(e.target.value)}
-                        onKeyDown={e => { if (e.key === "Enter") handleAddChapter(); }}
-                      />
-                      <button className="btn small" disabled={busy} onClick={handleAddChapter}>{busy ? <span className="spinner"></span> : "Add"}</button>
+              {/* ===== QUESTIONS TAB ===== */}
+              {activeTab === "questions" && (
+                <div className="admin-panel admin-panel--content">
+                  <div className="admin-filter-bar admin-filter-bar--sticky">
+                    <div className="admin-search-input">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                      <input ref={qSearchRef} placeholder='Search text, option, or #…  ( press / )' value={qSearch} onChange={e => setQSearch(e.target.value)} />
+                      {qSearch && <button onClick={()=>setQSearch("")} className="admin-clear">×</button>}
                     </div>
-                  )}
+                    <select className="mf-select admin-chapter-select" value={activeChapterIdx === null ? "all" : String(activeChapterIdx)} onChange={e => { setActiveChapterIdx(e.target.value === "all" ? null : Number(e.target.value)); }}>
+                      <option value="all">All chapters ({totalQuestionsOf(editCat)})</option>
+                      {editCat.subcats.map((sc, i) => <option key={i} value={String(i)}>{sc.name} ({sc.questions.length})</option>)}
+                    </select>
+                  </div>
 
                   {activeChapter && (
-                    <div className="chapter-toolbar">
-                      {renaming && renaming.subIdx === activeChapterIdx ? (
-                        <div className="subtopic-rename-row" style={{ flex: 1 }}>
-                          <input
-                            className="mf-input"
-                            autoFocus
-                            value={renaming.value}
-                            onChange={e => setRenaming({ ...renaming, value: e.target.value })}
-                            onKeyDown={e => { if (e.key === "Enter") submitRename(); if (e.key === "Escape") cancelRename(); }}
-                          />
-                          <button className="btn small" disabled={busy} onClick={submitRename}>{busy ? <span className="spinner"></span> : "Save"}</button>
-                          <button className="btn small ghost" onClick={cancelRename}>Cancel</button>
-                        </div>
-                      ) : (
-                        <>
-                          <span className="mono" style={{ fontSize: 11.5, color: "var(--muted)" }}>Managing chapter &quot;{activeChapter.name}&quot;</span>
-                          <div className="btn-row" style={{ marginTop: 0 }}>
-                            <button className="icon-action" onClick={() => startRename(activeChapterIdx, activeChapter.name)}>Rename</button>
-                            <button className="icon-action danger" onClick={() => requestDeleteSubtopic(activeChapterIdx)}>Delete Chapter</button>
+                    <div className="chapter-toolbar chapter-toolbar--card">
+                      <div style={{display:"flex",alignItems:"center",gap:8}}>
+                        <span className="mono-badge sm">{activeChapterIdx+1}</span>
+                        <strong style={{fontFamily:"Outfit,sans-serif",fontSize:14}}>{activeChapter.name}</strong>
+                        <span style={{fontSize:12,color:"var(--muted-foreground)"}}>· {activeChapter.questions.length} Qs</span>
+                      </div>
+                      <div style={{display:"flex",gap:6}}>
+                        {renaming?.subIdx === activeChapterIdx ? (
+                          <div className="admin-rename-row">
+                            <input className="mf-input" autoFocus value={renaming.value} onChange={e => setRenaming({ ...renaming, value: e.target.value })} onKeyDown={e => { if (e.key === "Enter") submitRename(); if (e.key === "Escape") cancelRename(); }} />
+                            <button className="btn small" disabled={busy} onClick={submitRename} style={{borderRadius:999}}>Save</button>
+                            <button className="btn small ghost" onClick={cancelRename}>Cancel</button>
                           </div>
-                        </>
-                      )}
+                        ) : (
+                          <>
+                            <button className="btn small secondary" onClick={() => startRename(activeChapterIdx, activeChapter.name)} style={{borderRadius:999}}>Rename</button>
+                            <button className="btn small ghost" onClick={() => requestDeleteSubtopic(activeChapterIdx)} style={{color:"var(--wrong)",borderRadius:999}}>Delete</button>
+                          </>
+                        )}
+                      </div>
                     </div>
                   )}
 
-                  <div className="filter-bar">
-                    <input
-                      className="mf-input filter-search"
-                      placeholder={activeChapter ? `Search within "${activeChapter.name}"…` : "Search all questions in this subject…"}
-                      value={qSearch}
-                      onChange={e => setQSearch(e.target.value)}
-                    />
-                    <button className="btn small" onClick={openAddModal}>+ Add Question</button>
+                  <div className="admin-results-meta">
+                    <span>{flatQuestions.length} {flatQuestions.length===1?"question":"questions"}{activeChapter ? ` in "${activeChapter.name}"` : ""}</span>
+                    <span style={{display:"flex",gap:8,alignItems:"center"}}>
+                      {qSearch && <button className="admin-clear-filter" onClick={()=>setQSearch("")}>Clear</button>}
+                      {pageItems.length > 0 && <button className="admin-clear-filter" onClick={selectAllOnPage}>Select page</button>}
+                      {selectedQs.size > 0 && <button className="admin-clear-filter" onClick={clearSelection}>Deselect ({selectedQs.size})</button>}
+                    </span>
                   </div>
 
+                  {/* Bulk action bar */}
+                  {selectedQs.size > 0 && (
+                    <div className="admin-bulkbar">
+                      <strong>{selectedQs.size} selected</strong>
+                      <span style={{flex:1}} />
+                      <button className="btn small ghost" onClick={clearSelection} style={{borderRadius:999}}>Cancel</button>
+                      <button className="btn small danger" disabled={bulkBusy} onClick={()=>setConfirmState({kind:"bulk", keys:[...selectedQs]})} style={{borderRadius:999}}>{bulkBusy ? <span className="spinner" /> : `Delete ${selectedQs.size}`}</button>
+                    </div>
+                  )}
+
                   {editCat.subcats.length === 0 ? (
-                    <div className="empty-note">No chapters yet — add one above to start adding questions.</div>
+                    <div className="admin-empty">
+                      <div style={{fontSize:28,marginBottom:8}}>📂</div>
+                      <h3>No chapters yet</h3>
+                      <p>Questions live inside chapters. Create one to unlock question creation.</p>
+                      <button className="btn small" onClick={()=>{setActiveTab("chapters"); setNewChapterOpen(true);}} style={{marginTop:10,borderRadius:999}}>+ Create first chapter</button>
+                    </div>
                   ) : flatQuestions.length === 0 ? (
-                    <div className="empty-note">{qSearch ? `No questions match "${qSearch}".` : "No questions here yet."}</div>
+                    <div className="admin-empty">
+                      <h3>{qSearch ? `No match for "${qSearch}"` : "No questions here yet."}</h3>
+                      <p>{qSearch ? "Try another term, another chapter, or clear search." : "Add your first question to this chapter."}</p>
+                      {!qSearch && <button className="btn small" onClick={openAddModal} style={{marginTop:10,borderRadius:999}}>+ Add question (N)</button>}
+                    </div>
                   ) : (
                     <>
-                      <div className="table-wrap">
-                        <table className="admin-table qtable">
-                          <thead>
-                            <tr>
-                              <th style={{ width: 54 }}>#</th>
-                              {activeChapterIdx === null && <th style={{ width: 160 }}>Chapter</th>}
-                              <th>Question</th>
-                              <th style={{ width: 44 }}>Ans</th>
-                              <th style={{ width: 150 }}></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {pageItems.map(q => (
-                              <tr key={`${q.subIdx}-${q.num}`} className="qtable-row" onClick={() => openEditModal(q.subIdx, q)}>
-                                <td className="mono qtable-num">{q.num}</td>
-                                {activeChapterIdx === null && <td className="qtable-chapter">{editCat.subcats[q.subIdx].name}</td>}
-                                <td className="qtable-text">{q.text.slice(0, 130)}{q.text.length > 130 ? "…" : ""}</td>
-                                <td className="mono qtable-ans">{String.fromCharCode(65 + q.correct)}</td>
-                                <td className="qtable-actions" onClick={e => e.stopPropagation()}>
-                                  <button className="icon-action" onClick={() => openEditModal(q.subIdx, q)}>Edit</button>
-                                  <button className="icon-action" onClick={() => openDuplicateModal(q.subIdx, q)}>Copy</button>
-                                  <button className="icon-action danger" onClick={() => requestDeleteQuestion(q.subIdx, q.num)}>Del</button>
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
+                      <div className="admin-q-list">
+                        {pageItems.map(q => {
+                          const key = `${q.subIdx}-${q.num}`;
+                          const checked = selectedQs.has(key);
+                          return (
+                            <div key={key} className={`admin-q-card ${checked ? "selected" : ""}`} onClick={() => openEditModal(q.subIdx, q)}>
+                              <div className="admin-q-top">
+                                <input type="checkbox" checked={checked} onChange={()=>toggleSelect(key)} onClick={e=>e.stopPropagation()} className="admin-q-check" title="Select for bulk delete" />
+                                <span className="admin-q-num">#{q.num}</span>
+                                {activeChapterIdx === null && <button className="admin-q-chapter" onClick={(e)=>{e.stopPropagation(); gotoChapterQuestions(q.subIdx);}} title="Filter to this chapter">{editCat.subcats[q.subIdx].name}</button>}
+                                <span className="admin-q-ans">Ans {String.fromCharCode(65 + q.correct)}</span>
+                              </div>
+                              <p className="admin-q-text">{q.text}</p>
+                              <div className="admin-q-opts">{q.options.map((o,i)=><span key={i} className={i===q.correct?"ok":""}>{String.fromCharCode(65+i)}. {o.slice(0,60)}{o.length>60?"…":""}</span>)}</div>
+                              <div className="admin-q-actions" onClick={e => e.stopPropagation()}>
+                                <button className="btn small secondary" onClick={() => openEditModal(q.subIdx, q)} style={{borderRadius:999}}>Edit</button>
+                                <button className="btn small ghost" onClick={() => openDuplicateModal(q.subIdx, q)} style={{borderRadius:999}}>Duplicate</button>
+                                <button className="btn small ghost" onClick={() => requestDeleteQuestion(q.subIdx, q.num)} style={{color:"var(--wrong)",borderRadius:999}}>Delete</button>
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
-
                       {totalPages > 1 && (
-                        <div className="pagination">
-                          <button className="btn small ghost" disabled={page <= 1} onClick={() => setPage(p => Math.max(1, p - 1))}>‹ Prev</button>
-                          <span className="mono pagination-label">Page {Math.min(page, totalPages)} of {totalPages} · {flatQuestions.length} questions</span>
-                          <button className="btn small ghost" disabled={page >= totalPages} onClick={() => setPage(p => Math.min(totalPages, p + 1))}>Next ›</button>
+                        <div className="pagination pagination--pill">
+                          <button className="btn small ghost" disabled={page <= 1} onClick={() => setPage(p => Math.max(1, p - 1))} style={{borderRadius:999}}>‹ Prev</button>
+                          <span className="mono pagination-label">Page {Math.min(page, totalPages)} / {totalPages} · {flatQuestions.length}</span>
+                          <button className="btn small ghost" disabled={page >= totalPages} onClick={() => setPage(p => Math.min(totalPages, p + 1))} style={{borderRadius:999}}>Next ›</button>
                         </div>
                       )}
                     </>
@@ -633,13 +692,69 @@ export default function AdminPage(){
                 </div>
               )}
 
-              {activeTab === "settings" && (
+              {/* ===== CHAPTERS TAB ===== */}
+              {activeTab === "chapters" && (
                 <div className="admin-panel">
-                  <div className="admin-panel-sub" style={{ marginBottom: 14 }}>SUBJECT DETAILS</div>
-                  <div className="subject-meta-grid" style={{ marginBottom: 6 }}>
+                  <div className="admin-section-head">
+                    <span>Chapters · {editCat.subcats.length} · {totalQuestionsOf(editCat)} questions</span>
+                    <button className="btn small" onClick={() => setNewChapterOpen(o => !o)} style={{borderRadius:999}}>{newChapterOpen ? "Cancel" : "+ New chapter"}</button>
+                  </div>
+                  {newChapterOpen && (
+                    <div className="admin-inline-add">
+                      <input className="mf-input" autoFocus placeholder="Chapter name, e.g. Foundations…" value={newChapterName} onChange={e => setNewChapterName(e.target.value)} onKeyDown={e => { if (e.key === "Enter") handleAddChapter(); }} />
+                      <button className="btn small" disabled={busy} onClick={handleAddChapter} style={{borderRadius:999}}>{busy ? <span className="spinner"></span> : "Add chapter"}</button>
+                    </div>
+                  )}
+                  {editCat.subcats.length === 0 ? (
+                    <div className="admin-empty">
+                      <div style={{fontSize:28}}>📂</div>
+                      <h3>Create your first chapter</h3>
+                      <p>Chapters group questions (e.g. “Soil Mechanics → Compaction”).</p>
+                    </div>
+                  ) : (
+                    <div className="admin-chapter-grid">
+                      {editCat.subcats.map((sc, sIdx) => (
+                        <div key={sIdx} className={`admin-chapter-card ${activeChapterIdx===sIdx?"active":""}`}>
+                          {renaming?.subIdx === sIdx ? (
+                            <div className="admin-rename-row">
+                              <input className="mf-input" autoFocus value={renaming.value} onChange={e => setRenaming({ ...renaming, value: e.target.value })} onKeyDown={e => { if (e.key === "Enter") submitRename(); if (e.key === "Escape") cancelRename(); }} />
+                              <button className="btn small" disabled={busy} onClick={submitRename} style={{borderRadius:999}}>Save</button>
+                              <button className="btn small ghost" onClick={cancelRename}>✕</button>
+                            </div>
+                          ) : (
+                            <>
+                              <div className="admin-chapter-card-top">
+                                <span className="mono-badge sm">{sIdx+1}</span>
+                                <strong style={{flex:1,fontFamily:"Outfit,sans-serif",fontSize:14}}>{sc.name}</strong>
+                                <span className="admin-chapter-count">{sc.questions.length} Qs</span>
+                              </div>
+                              <div className="admin-chapter-bar"><div style={{width: editCat.subcats.length ? Math.min(100, Math.round(sc.questions.length/Math.max(1,Math.max(...editCat.subcats.map(x=>x.questions.length)))*100))+"%" : "0%"}} /></div>
+                              <div style={{display:"flex",gap:6,marginTop:10}}>
+                                <button className="btn small secondary" onClick={()=>gotoChapterQuestions(sIdx)} style={{flex:1,borderRadius:999}}>Open →</button>
+                                <button className="btn small ghost" onClick={() => startRename(sIdx, sc.name)} style={{borderRadius:999}}>Rename</button>
+                                <button className="btn small ghost" onClick={() => requestDeleteSubtopic(sIdx)} style={{color:"var(--wrong)",borderRadius:999}}>Del</button>
+                              </div>
+                            </>
+                          )}
+                        </div>
+                      ))}
+                      <button className="admin-chapter-add" onClick={()=>setNewChapterOpen(true)}>
+                        <span style={{fontSize:20}}>+</span>
+                        <span>New chapter</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* ===== SETTINGS TAB ===== */}
+              {activeTab === "settings" && (
+                <div className="admin-settings-grid">
+                  <div className="admin-panel">
+                    <h3 className="admin-section-title">Subject details</h3>
                     <div className="mf-field">
-                      <label className="mf-label">Title</label>
-                      <input className="mf-input" value={metaForm.title} onChange={e => setMetaForm({ ...metaForm, title: e.target.value })} />
+                      <label className="mf-label">Title *</label>
+                      <input className="mf-input" value={metaForm.title} onChange={e => setMetaForm({ ...metaForm, title: e.target.value })} placeholder="e.g. Soil Mechanics" />
                     </div>
                     <div className="mf-field">
                       <label className="mf-label">App / group</label>
@@ -649,61 +764,29 @@ export default function AdminPage(){
                         <option value="nontechnical">Non-Technical</option>
                       </select>
                     </div>
-                    <div className="mf-field" style={{ gridColumn: "1 / -1" }}>
+                    <div className="mf-field">
                       <label className="mf-label">Description</label>
-                      <input className="mf-input" value={metaForm.description} onChange={e => setMetaForm({ ...metaForm, description: e.target.value })} />
+                      <input className="mf-input" value={metaForm.description} onChange={e => setMetaForm({ ...metaForm, description: e.target.value })} placeholder="One-line summary" />
+                    </div>
+                    <div className="btn-row">
+                      <button className="btn small" disabled={busy} onClick={saveSubjectMeta} style={{borderRadius:999}}>{busy ? <span className="spinner"></span> : "Save changes"}</button>
+                      <button className="btn small ghost" onClick={() => setMetaForm({ title: editCat.title, description: editCat.description, group: editCat.group })} style={{borderRadius:999}}>Reset</button>
                     </div>
                   </div>
-                  <div className="btn-row">
-                    <button className="btn small" disabled={busy} onClick={saveSubjectMeta}>{busy ? <span className="spinner"></span> : "Save Changes"}</button>
-                    <button className="btn small ghost" onClick={() => setMetaForm({ title: editCat.title, description: editCat.description, group: editCat.group })}>Reset</button>
-                  </div>
-
-                  <div className="admin-divider" />
-
-                  <div className="admin-panel-sub" style={{ marginBottom: 12 }}>CHAPTERS ({editCat.subcats.length})</div>
-                  <div className="table-wrap" style={{ marginBottom: 4 }}>
-                    <table className="admin-table">
-                      <thead><tr><th>Chapter</th><th style={{ width: 90 }}>Questions</th><th style={{ width: 150 }}></th></tr></thead>
-                      <tbody>
-                        {editCat.subcats.map((sc, sIdx) => (
-                          <tr key={sIdx}>
-                            <td>
-                              {renaming && renaming.subIdx === sIdx ? (
-                                <div className="subtopic-rename-row">
-                                  <input
-                                    className="mf-input"
-                                    autoFocus
-                                    value={renaming.value}
-                                    onChange={e => setRenaming({ ...renaming, value: e.target.value })}
-                                    onKeyDown={e => { if (e.key === "Enter") submitRename(); if (e.key === "Escape") cancelRename(); }}
-                                  />
-                                  <button className="btn small" disabled={busy} onClick={submitRename}>{busy ? <span className="spinner"></span> : "Save"}</button>
-                                  <button className="btn small ghost" onClick={cancelRename}>Cancel</button>
-                                </div>
-                              ) : sc.name}
-                            </td>
-                            <td className="mono">{sc.questions.length}</td>
-                            <td className="qtable-actions">
-                              {!(renaming && renaming.subIdx === sIdx) && (
-                                <>
-                                  <button className="icon-action" onClick={() => startRename(sIdx, sc.name)}>Rename</button>
-                                  <button className="icon-action danger" onClick={() => requestDeleteSubtopic(sIdx)}>Delete</button>
-                                </>
-                              )}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <div className="admin-divider" />
-
-                  <div className="danger-zone">
-                    <div className="danger-zone-title">Danger Zone</div>
-                    <p>Permanently deletes &quot;{editCat.title}&quot; and all {totalQuestionsOf(editCat)} of its questions across {editCat.subcats.length} chapters. This can&apos;t be undone.</p>
-                    <button className="btn small danger" onClick={requestDeleteSubject}>Delete Subject</button>
+                  <div>
+                    <div className="admin-panel">
+                      <h3 className="admin-section-title">Quick actions</h3>
+                      <div style={{display:"flex",flexDirection:"column",gap:8}}>
+                        <button className="btn small secondary" onClick={() => exportSubject(editCat)} style={{borderRadius:999,justifyContent:"center"}}>⭳ Export JSON backup</button>
+                        <button className={`copy-chip ${copied ? "copied" : ""}`} onClick={copyId} style={{justifyContent:"center"}}>{copied ? "Copied ✓" : `Copy ID: ${editCat.id}`}</button>
+                        <div style={{fontSize:12,color:"var(--muted-foreground)",fontFamily:"Figtree,sans-serif"}}>{totalQuestionsOf(editCat)} questions · {editCat.subcats.length} chapters · saves instantly to disk</div>
+                      </div>
+                    </div>
+                    <div className="danger-zone">
+                      <div className="danger-zone-title">Danger Zone</div>
+                      <p>Permanently deletes “{editCat.title}” and all {totalQuestionsOf(editCat)} questions. This can’t be undone — export a backup first.</p>
+                      <button className="btn small danger" onClick={requestDeleteSubject} style={{borderRadius:999}}>Delete subject</button>
+                    </div>
                   </div>
                 </div>
               )}
@@ -712,12 +795,15 @@ export default function AdminPage(){
         </div>
       </div>
 
-      <QuestionModal
+      <QuestionSlideOver
         open={!!qModal}
         mode={qModal?.mode}
         chapterName={modalChapterName}
+        chapterIdx={qModal?.subIdx}
+        chapterCount={editCat?.subcats.length || 0}
         form={form}
         setForm={setForm}
+        error={formError}
         busy={busy}
         onCancel={closeModal}
         onSubmit={submitForm}
@@ -728,15 +814,17 @@ export default function AdminPage(){
         open={!!confirmState}
         title={
           confirmState?.kind === "subject" ? "Delete subject?" :
-          confirmState?.kind === "subtopic" ? "Delete chapter?" : "Delete question?"
+          confirmState?.kind === "subtopic" ? "Delete chapter?" :
+          confirmState?.kind === "bulk" ? `Delete ${confirmState?.keys?.length} questions?` : "Delete question?"
         }
         message={
-          confirmState?.kind === "subject" ? `This permanently removes "${editCat?.title}" and every question in it. This can't be undone.` :
+          confirmState?.kind === "subject" ? `This permanently removes "${editCat?.title}" and every question in it. Export a backup first — this can't be undone.` :
           confirmState?.kind === "subtopic" ? "This permanently removes the chapter and all questions inside it. This can't be undone." :
+          confirmState?.kind === "bulk" ? "Selected questions will be permanently removed. This can't be undone." :
           "This permanently removes the question. This can't be undone."
         }
-        confirmLabel="Delete"
-        busy={!!confirmState?.busy}
+        confirmLabel={confirmState?.kind === "bulk" ? `Delete ${confirmState?.keys?.length}` : "Delete"}
+        busy={!!confirmState?.busy || bulkBusy}
         onConfirm={runConfirm}
         onCancel={() => setConfirmState(null)}
       />
@@ -744,48 +832,54 @@ export default function AdminPage(){
   );
 }
 
-function QuestionModal({ open, mode, chapterName, form, setForm, busy, onCancel, onSubmit, onDelete }){
+function QuestionSlideOver({ open, mode, chapterName, chapterIdx, chapterCount, form, setForm, error, busy, onCancel, onSubmit, onDelete }){
+  const filledOpts = form.options.filter(o => o.trim()).length;
   if (!open) return null;
   return (
-    <div className="modal-overlay" onMouseDown={(e) => { if (e.target === e.currentTarget) onCancel(); }}>
-      <div className="modal-panel" role="dialog" aria-modal="true" aria-labelledby="qmodal-title">
-        <div className="modal-head">
+    <div className="admin-sheet-overlay" onMouseDown={(e) => { if (e.target === e.currentTarget) onCancel(); }}>
+      <div className="admin-sheet" role="dialog" aria-modal="true" aria-labelledby="qsheet-title">
+        <div className="admin-sheet-head">
           <div>
-            <div className="mono modal-eyebrow">{chapterName}</div>
-            <h3 id="qmodal-title" className="serif">{mode === "edit" ? "Edit Question" : "New Question"}</h3>
+            <div className="admin-sheet-eyebrow">{chapterName} {typeof chapterIdx === "number" ? `· Ch ${chapterIdx+1}/${chapterCount}` : ""}</div>
+            <h3 id="qsheet-title">{mode === "edit" ? "Edit question" : "New question"}</h3>
+            <div className="admin-sheet-sub">{filledOpts}/4 options · {form.text.trim().length} chars · Ctrl+Enter to save</div>
           </div>
           <button className="modal-close" onClick={onCancel} aria-label="Close">×</button>
         </div>
 
-        <div className="modal-body">
+        <div className="admin-sheet-body">
+          {error && <div className="admin-form-error">{error}</div>}
           <div className="mf-field">
-            <label className="mf-label">Question text</label>
-            <textarea className="mf-textarea" rows={3} placeholder="Question text" value={form.text} onChange={e => setForm({ ...form, text: e.target.value })} />
+            <label className="mf-label">Question *</label>
+            <textarea className="mf-textarea" autoFocus rows={3} placeholder="e.g. Which soil has the highest permeability?" value={form.text} onChange={e => setForm({ ...form, text: e.target.value })} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") onSubmit(); }} />
           </div>
           <div className="mf-field">
-            <label className="mf-label">Options — select the correct one</label>
-            {[0, 1, 2, 3].map(i => (
-              <div key={i} className="mf-option-row">
-                <label className="mf-radio">
-                  <input type="radio" name="correct" checked={parseInt(form.correct) === i} onChange={() => setForm({ ...form, correct: i })} />
-                  <span className="option-letter">{String.fromCharCode(65 + i)}</span>
-                </label>
-                <input className="mf-input" placeholder={`Option ${String.fromCharCode(65 + i)}`} value={form.options[i]} onChange={e => { const o = [...form.options]; o[i] = e.target.value; setForm({ ...form, options: o }); }} />
-              </div>
-            ))}
+            <label className="mf-label">Options — click a letter to mark correct *</label>
+            <div className="admin-opts">
+              {[0, 1, 2, 3].map(i => {
+                const isCorrect = parseInt(form.correct) === i;
+                return (
+                  <div key={i} className={`admin-opt ${isCorrect ? "correct" : ""}`}>
+                    <button type="button" className={`admin-opt-letter ${isCorrect ? "correct" : ""}`} onClick={() => setForm({ ...form, correct: i })} title={isCorrect ? "Correct answer" : "Mark as correct"}>{String.fromCharCode(65 + i)}</button>
+                    <input className="mf-input" placeholder={`Option ${String.fromCharCode(65 + i)}…`} value={form.options[i]} onChange={e => { const o = [...form.options]; o[i] = e.target.value; setForm({ ...form, options: o }); }} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") onSubmit(); }} />
+                    {isCorrect && <span className="admin-opt-badge">✓ Correct</span>}
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <div className="mf-field" style={{ marginBottom: 4 }}>
-            <label className="mf-label">Explanation</label>
-            <textarea className="mf-textarea" rows={2} placeholder="Why this answer is correct" value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} />
+            <label className="mf-label">Explanation * <span style={{fontWeight:400,textTransform:"none",letterSpacing:0}}>(shown after answering)</span></label>
+            <textarea className="mf-textarea" rows={3} placeholder="Why is this correct? 1–2 lines." value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") onSubmit(); }} />
           </div>
-          <div className="mf-hint">Saved permanently to the subject&apos;s data file · press Esc to cancel.</div>
+          <div className="mf-hint">Saves instantly to disk · Esc cancels · Ctrl+Enter saves.</div>
         </div>
 
-        <div className="modal-foot">
-          {onDelete && <button className="btn small danger" onClick={onDelete}>Delete</button>}
+        <div className="admin-sheet-foot">
+          {onDelete ? <button className="btn small danger" onClick={onDelete} style={{borderRadius:999}}>Delete</button> : <span />}
           <div style={{ flex: 1 }} />
-          <button className="btn small ghost" onClick={onCancel}>Cancel</button>
-          <button className="btn small" disabled={busy} onClick={onSubmit}>{busy ? <span className="spinner"></span> : (mode === "edit" ? "Save Changes" : "Add Question")}</button>
+          <button className="btn small ghost" onClick={onCancel} style={{borderRadius:999}}>Cancel</button>
+          <button className="btn small" disabled={busy} onClick={onSubmit} style={{borderRadius:999}}>{busy ? <span className="spinner"></span> : (mode === "edit" ? "Save changes" : "Add question")}</button>
         </div>
       </div>
     </div>

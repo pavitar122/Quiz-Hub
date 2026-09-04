@@ -2,6 +2,7 @@ import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 import Navbar from "@/components/Navbar";
 import RegisterSW from "@/components/RegisterSW";
+import RippleEffect from "@/components/RippleEffect";
 
 export const metadata = {
   title: "Civil Engineering Quiz Hub",
@@ -31,17 +32,14 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0C2E4E" },
-    { media: "(prefers-color-scheme: light)", color: "#F1EDE1" },
-  ],
+  themeColor: "#FCFCF9",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -53,6 +51,7 @@ export default function RootLayout({ children }) {
           <div id="app">{children}</div>
         </AuthProvider>
         <RegisterSW />
+        <RippleEffect />
       </body>
     </html>
   );
