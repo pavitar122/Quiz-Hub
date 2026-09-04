@@ -253,7 +253,7 @@ export default function QuizPage(){
           ) : (
             <span className="dwg-tag mono">RESULT · TEST MODE</span>
           )}
-          <p className={`result-score serif`}>{quiz.score}/{quiz.total}</p>
+          <p className={`result-score serif ${quiz.finished ? "counter-animate" : ""}`}>{quiz.score}/{quiz.total}</p>
           <p className="result-pct mono">{quiz.pct}% {isCelebrated ? "· Celebration unlocked" : "· Keep practicing"}</p>
           <div className="progress-bar"><div className="progress-fill" style={{width:quiz.pct+"%"}}></div></div>
           {isCelebrated && <p className="verdict serif">You cleared the threshold — blueprint complete. The fireworks are for you.</p>}
@@ -332,7 +332,7 @@ export default function QuizPage(){
           <p className="question-text">{q.text}</p>
           <button className={`bookmark-btn ${isBookmarked?"active":""}`} onClick={toggleBookmark} title="Bookmark">★</button>
         </div>
-        <div className={`options ${quiz.answered?"answered":""}`}>
+<div className={`options ${quiz.answered?"answered":""}`}>
           {q.options.map((opt,i)=>{
             let cls="option-row";
             let showOk=false, showNo=false;
@@ -341,17 +341,17 @@ export default function QuizPage(){
               else if(i===quiz.selected){ cls+=" wrong"; showNo=true; }
               else cls+=" dim";
             }
-            return (
+return (
               <div key={i} className={cls} onClick={()=>selectOption(i)}>
-                {showOk && <span className="stamp stamp-ok">✓ Correct</span>}
-                {showNo && <span className="stamp stamp-no">✗ Your answer</span>}
-                <span className="option-letter">{String.fromCharCode(65+i)}</span>
-                <span>{opt}</span>
-              </div>
-            );
-          })}
-        </div>
-        {quiz.answered && (
+                 {showOk && <span className="stamp stamp-ok">✓ Correct</span>}
+                 {showNo && <span className="stamp stamp-no">✗ Your answer</span>}
+                 <span className="option-letter">{String.fromCharCode(65+i)}</span>
+                 <span>{opt}</span>
+               </div>
+             );
+           })}
+         </div>
+         {quiz.answered && (
           <div className="explain-box">
             <span className="label mono">{quiz.selected===q.correct ? "Correct" : "Explanation"} · Answer: {String.fromCharCode(65+q.correct)}</span>
             {q.expl}
