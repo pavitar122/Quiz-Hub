@@ -495,19 +495,24 @@ export default function AdminPage(){
                   <button className="btn small secondary" style={{marginTop:8,borderRadius:999}} onClick={()=>{setSidebarSearch(""); setNewSubjectOpen(true);}}>+ Create one</button>
                 </div>
               )}
+              {filteredCats.length === 0 && sidebarSearch.trim().length > 0 && (
+                <div className="admin-empty-mini">
+                  No subjects match “{sidebarSearch}”. <button className="btn small secondary" style={{marginTop:8,borderRadius:999}} onClick={()=>{setSidebarSearch(""); setNewSubjectOpen(true);}}>+ Create one</button>
+                </div>
+              )}
               {GROUP_ORDER.filter(g => groupedCats[g]?.length > 0).map(g => {
-                const isCollapsed = !!collapsedGroups[g] && !sidebarSearch.trim();
+                const isCollapsed = !!collapsedGroups[g];
                 const list = groupedCats[g];
                 return (
                   <div key={g} className="group-section">
-                    <button className={`group-section-head ${!isCollapsed ? "open" : ""}`} onClick={() => toggleGroup(g)}>
-                      <span style={{display:"flex",alignItems:"center",gap:8}}><span className="gs-chevron">›</span><span className="gs-label">{GROUP_LABELS[g] || g}</span></span>
-                      <span className="gs-count">{list.length}</span>
+                    <button className="group-section-head" onClick={() => toggleGroup(g)}>
+                      <span>{GROUP_LABELS[g] || g}</span>
+                      <span>{list.length}</span>
                     </button>
                     {!isCollapsed && (
                       <div className="group-section-body">
                         {list.map(c => (
-                          <button key={c.id} className={`subject-list-item ${selectedId === c.id ? "active" : ""}`} onClick={() => loadCat(c.id)} title={c.title}>
+                          <button key={c.id} className="subject-list-item" onClick={() => loadCat(c.id)} title={c.title}>
                             <span className="mono-badge sm">{monogram(c.title)}</span>
                             <span className="sli-text">
                               <span className="sli-title">{c.title}</span>
@@ -662,7 +667,7 @@ export default function AdminPage(){
                           const key = `${q.subIdx}-${q.num}`;
                           const checked = selectedQs.has(key);
                           return (
-                            <div key={key} className={`admin-q-card ${checked ? "selected" : ""}`} onClick={() => openEditModal(q.subIdx, q)}>
+                            <div key={key} className={`admin-q-card ${checked ? "selected" : ""}`} onClick={() => openEditModal(q.subIdx, q)} style={{borderColor: checked ? "var(--primary)" : "var(--border)"}}>
                               <div className="admin-q-top">
                                 <input type="checkbox" checked={checked} onChange={()=>toggleSelect(key)} onClick={e=>e.stopPropagation()} className="admin-q-check" title="Select for bulk delete" />
                                 <span className="admin-q-num">#{q.num}</span>
@@ -868,8 +873,8 @@ function QuestionSlideOver({ open, mode, chapterName, chapterIdx, chapterCount, 
               })}
             </div>
           </div>
-          <div className="mf-field" style={{ marginBottom: 4 }}>
-            <label className="mf-label">Explanation * <span style={{fontWeight:400,textTransform:"none",letterSpacing:0}}>(shown after answering)</span></label>
+          <div className="mf-field">
+            <label className="mf-label">Explanation * <span>(shown after answering)</span></label>
             <textarea className="mf-textarea" rows={3} placeholder="Why is this correct? 1–2 lines." value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") onSubmit(); }} />
           </div>
           <div className="mf-hint">Saves instantly to disk · Esc cancels · Ctrl+Enter saves.</div>
