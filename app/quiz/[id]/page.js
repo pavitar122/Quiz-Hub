@@ -324,7 +324,7 @@ export default function QuizPage(){
 
   return (
     <>
-      <div className="top-bar"><Link href={`/subject/${id}`} className="back-link">← Back</Link><span className="score-badge">{quiz.mode==="test" ? `Score: ${quiz.score}/${quiz.pos+(quiz.answered?1:0)}` : `Attempts: ${quiz.attempts}`}</span></div>
+      <div className="top-bar"><Link href={`/subject/${id}`} className="back-link">← Back</Link><span className="score-badge bump" key={quiz.mode==="test" ? `${quiz.score}-${quiz.pos}` : quiz.attempts}>{quiz.mode==="test" ? `Score: ${quiz.score}/${quiz.pos+(quiz.answered?1:0)}` : `Attempts: ${quiz.attempts}`}</span></div>
       <div className="eyebrow"><span>{current.subName} · {quiz.mode==="test"? `Question ${quiz.pos+1} of ${quiz.total}` : `Mastered ${quiz.mastered} of ${quiz.totalUnique}`}</span><span>#{q.num} · {quiz.mode.toUpperCase()}</span></div>
       <div className="quiz-progress-bar"><div className="quiz-progress-fill" style={{width:progressPct+"%"}}></div></div>
       <div className="dwg-card" key={(quiz.mode==="test"?quiz.pos:quiz.attempts)+"-"+q.num}>

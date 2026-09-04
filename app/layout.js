@@ -3,6 +3,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import Navbar from "@/components/Navbar";
 import RegisterSW from "@/components/RegisterSW";
 import RippleEffect from "@/components/RippleEffect";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata = {
   title: "Civil Engineering Quiz Hub",
@@ -48,7 +49,9 @@ export default function RootLayout({ children }) {
       <body>
         <AuthProvider>
           <Navbar />
-          <div id="app">{children}</div>
+          <div id="app">
+            <PageTransition>{children}</PageTransition>
+          </div>
         </AuthProvider>
         <RegisterSW />
         <RippleEffect />

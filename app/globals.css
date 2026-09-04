@@ -144,7 +144,7 @@ body.dark .navbar{background:rgba(24,24,27,0.88);}
 .nav-link{font-family:"Figtree",sans-serif;font-size:13px;font-weight:500;padding:6px 12px;border-radius:8px;color:var(--muted-foreground);text-decoration:none;transition:all .15s var(--ease-soft);}
 .nav-link:hover{color:var(--foreground);background:var(--muted);}
 .nav-link.current{color:var(--foreground);background:var(--secondary);font-weight:600;}
-.nav-user{font-family:"Figtree",sans-serif;font-size:12px;color:var(--muted-foreground);max-width:160px;overflow:hidden;textOverflow:ellipsis;whiteSpace:nowrap;}
+.nav-user{font-family:"Figtree",sans-serif;font-size:12px;color:var(--muted-foreground);max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .nav-avatar{width:32px;height:32px;border-radius:999px;display:grid;place-items:center;background:var(--secondary);border:1px solid var(--border);font-family:"Outfit",sans-serif;font-weight:600;font-size:11px;color:var(--foreground);flex-shrink:0;}
 .nav-civil-badge{display:flex;align-items:center;gap:7px;padding:6px 12px;border:1px solid var(--border);border-radius:999px;background:rgba(234,179,8,0.12);color:var(--foreground);font-family:"Figtree",sans-serif;font-size:12px;font-weight:600;flex-shrink:0;}
 .nav-theme-btn{border-radius:999px !important;padding:6px 12px !important;}
@@ -183,7 +183,7 @@ body.dark .navbar{background:rgba(24,24,27,0.88);}
 .app-header{margin-bottom:32px;animation:fadeInUp .4s var(--ease) both;}
 .app-header h1{font-family:"Outfit",sans-serif;font-size:42px;font-weight:700;letter-spacing:-.03em;line-height:1.05;margin:10px 0 12px;color:var(--foreground);}
 .app-header p{font-family:"Figtree",sans-serif;color:var(--muted-foreground);font-size:15px;line-height:1.6;margin:0;max-width:720px;}
-.dw g-tag,.dwg-tag{font-family:"Figtree",sans-serif;font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--muted-foreground);text-transform:uppercase;background:var(--muted);padding:5px 10px;border-radius:999px;display:inline-block;margin-bottom:12px;border:1px solid var(--border);}
+.dwg-tag{font-family:"Figtree",sans-serif;font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--muted-foreground);text-transform:uppercase;background:var(--muted);padding:5px 10px;border-radius:999px;display:inline-block;margin-bottom:12px;border:1px solid var(--border);}
 @media(max-width:640px){.app-header h1{font-size:32px;}}
 
 /* ---------- Stat strip — clean white cards ---------- */
@@ -607,14 +607,12 @@ body.dark .btn::after{background:linear-gradient(100deg, transparent 30%, rgba(2
 @keyframes optionSelect{0%{background:var(--secondary);}50%{background:var(--accent2);}100%{background:var(--secondary);}}
 @keyframes badgePulse{0%{transform:scale(1);}50%{transform:scale(1.08);}100%{transform:scale(1);}}
 .mini-bar-fill{position:relative;overflow:hidden;}
-.option-row{position:relative;overflow:hidden;}
-.option-row::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--primary);transform:scaleY(0);transition:transform .2s var(--ease-soft);transform-origin:top;}
+.option-row{position:relative;}
+.option-row::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:inherit;background:var(--primary);transform:scaleY(0);transition:transform .2s var(--ease-soft);transform-origin:top;}
 .option-row:hover::before{transform:scaleY(1);}
 .option-row.correct{background:rgba(22,163,74,0.1);}
 .option-row.wrong{background:rgba(239,68,68,0.1);}
-.option-row.correct .option-letter,.option-row.wrong .option-letter{color:var(--wrong);}
 .option-row.selected-anim{animation:optionSelect .3s var(--ease) forwards;}
-@keyframes optionSelect{0%{background:var(--secondary);}50%{background:var(--accent2);}100%{background:var(--secondary);}}
 .app-header h1{position:relative;}
 .app-header h1::after{content:'';position:absolute;left:0;bottom:-6px;height:3px;width:0;background:linear-gradient(90deg, var(--primary), var(--highlight));border-radius:999px;animation:headerLine .7s var(--ease) .6s forwards;}
 @keyframes headerLine{to{width:48px;}}
@@ -632,3 +630,84 @@ body.dark .btn::after{background:linear-gradient(100deg, transparent 30%, rgba(2
 
 @keyframes counterUp{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0);}}
 .counter-animate{animation:counterUp .4s var(--ease) forwards;}
+
+/* ---------- Cursor spotlight glow ----------
+   .category-card / .app-tab / .run-card / .subcat-card already track the
+   pointer into --mx/--my via onMouseMove — light that up with a soft
+   radial glow that follows the cursor, layered under the existing shine. */
+.category-card,.app-tab,.run-card,.subcat-card{--mx:50%;--my:50%;}
+.category-card,.app-tab,.subcat-card{isolation:isolate;}
+.category-card::after,.app-tab::after,.subcat-card::after{
+  content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
+  background:radial-gradient(220px circle at var(--mx) var(--my), var(--accent-soft), transparent 70%);
+  opacity:0;transition:opacity .3s var(--ease-soft);
+}
+.category-card:hover::after,.app-tab:hover::after,.subcat-card:hover::after{opacity:1;}
+.category-card > *,.subcat-card > *,.app-tab-icon,.app-tab-text{position:relative;z-index:1;}
+.run-card::before{
+  content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
+  background:radial-gradient(240px circle at var(--mx) var(--my), var(--run-accent-soft, rgba(24,24,27,0.08)), transparent 70%);
+  opacity:0;transition:opacity .3s var(--ease-soft);
+}
+.run-card:hover::before{opacity:1;}
+.run-card-top,.run-card h3,.run-card p,.run-meta,.run-cta{position:relative;z-index:1;}
+
+/* ---------- Shared shake (used by auth-form error banners) ---------- */
+@keyframes shake{
+  10%,90%{transform:translateX(-1px);}
+  20%,80%{transform:translateX(2px);}
+  30%,50%,70%{transform:translateX(-4px);}
+  40%,60%{transform:translateX(4px);}
+}
+
+/* ---------- Answer feedback micro-animations ---------- */
+.option-row.wrong{animation:fadeInUp .3s var(--ease) both, shake .45s .05s var(--ease-soft);}
+@keyframes popCorrect{
+  0%{transform:scale(1);}
+  40%{transform:scale(1.015);box-shadow:0 0 0 4px var(--correct-soft);}
+  100%{transform:scale(1);box-shadow:0 0 0 0 transparent;}
+}
+.option-row.correct{animation:fadeInUp .3s var(--ease) both, popCorrect .5s var(--ease-spring);}
+.option-row.correct .option-letter{animation:badgePulse .5s var(--ease-spring);}
+.stamp{animation:stampIn .3s var(--ease-spring) both;}
+@keyframes stampIn{from{opacity:0;transform:translateY(-4px) scale(.85);}to{opacity:1;transform:translateY(0) scale(1);}}
+.explain-box{animation:fadeInUp .35s var(--ease) both;}
+
+/* Stagger option entrance so choices cascade in rather than pop at once */
+.options .option-row:nth-child(1){animation-delay:.03s;}
+.options .option-row:nth-child(2){animation-delay:.08s;}
+.options .option-row:nth-child(3){animation-delay:.13s;}
+.options .option-row:nth-child(4){animation-delay:.18s;}
+.options .option-row:nth-child(5){animation-delay:.23s;}
+
+/* Score badge pops each time the score changes */
+@keyframes badgeBump{0%{transform:scale(1);}45%{transform:scale(1.12);}100%{transform:scale(1);}}
+.score-badge{display:inline-block;transition:background .2s var(--ease-soft);}
+.score-badge.bump{animation:badgeBump .35s var(--ease-spring);}
+
+/* Bookmark star — playful pop instead of an instant swap */
+.bookmark-btn{transform-origin:center;}
+.bookmark-btn.active{animation:starPop .4s var(--ease-spring);}
+@keyframes starPop{0%{transform:scale(1);}35%{transform:scale(1.35) rotate(-12deg);}65%{transform:scale(.92) rotate(4deg);}100%{transform:scale(1) rotate(0);}}
+
+/* ---------- Route-level page transition ---------- */
+.page-transition{animation:pageSlideIn .4s var(--ease) both;}
+@keyframes pageSlideIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+/* ---------- Mobile nav drawer — cascading links ---------- */
+.nav-drawer-inner > *{animation:fadeInUp .28s var(--ease) both;}
+.nav-drawer-inner > *:nth-child(1){animation-delay:.02s;}
+.nav-drawer-inner > *:nth-child(2){animation-delay:.06s;}
+.nav-drawer-inner > *:nth-child(3){animation-delay:.10s;}
+.nav-drawer-inner > *:nth-child(4){animation-delay:.14s;}
+.nav-drawer-inner > *:nth-child(5){animation-delay:.18s;}
+
+/* ---------- Logo mark — gentle idle sparkle on load ---------- */
+@keyframes logoIn{0%{opacity:0;transform:scale(.7) rotate(-8deg);}60%{opacity:1;transform:scale(1.06) rotate(2deg);}100%{transform:scale(1) rotate(0);}}
+.nav-logo-mark{animation:logoIn .5s var(--ease-spring) both;}
+
+/* ---------- Empty state fade ---------- */
+.empty-note{animation:fadeIn .3s var(--ease) both;}
+/* Note: a global prefers-reduced-motion rule earlier in this file already
+   disables all animations/transitions site-wide, so it covers everything
+   added above too. */
