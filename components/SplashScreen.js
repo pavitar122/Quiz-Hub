@@ -2,6 +2,10 @@
 import { useEffect, useState } from "react";
 
 const SESSION_KEY = "qh-splash-shown";
+const WORD = "QuizHub";
+const HUB_START = 4; // "Quiz" white, "Hub" amber
+const LETTER_BASE_DELAY = 0.55;
+const LETTER_STAGGER = 0.05;
 
 function isStandaloneLaunch() {
   if (typeof window === "undefined") return false;
@@ -34,8 +38,8 @@ export default function SplashScreen() {
     const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     setPhase("in");
 
-    const holdMs = reduced ? 250 : 1150;
-    const outMs = reduced ? 0 : 420;
+    const holdMs = reduced ? 250 : 1500;
+    const outMs = reduced ? 0 : 400;
     const t1 = setTimeout(() => setPhase("out"), holdMs);
     const t2 = setTimeout(() => setPhase("done"), holdMs + outMs);
     return () => { clearTimeout(t1); clearTimeout(t2); };
@@ -45,19 +49,28 @@ export default function SplashScreen() {
 
   return (
     <div className={`splash-screen ${phase === "out" ? "splash-screen--out" : ""}`} aria-hidden="true">
-      <div className="splash-glow" />
-      <div className="splash-mark">
-        <svg viewBox="0 0 100 100" width="88" height="88" className="splash-mark-svg">
-          <polygon className="splash-page splash-page-l" points="47,20 12,32 16,78 47,68" />
-          <polygon className="splash-page splash-page-r" points="53,20 88,32 84,78 53,68" />
-          <rect className="splash-spine" x="47" y="20" width="6" height="48" />
-          <polyline className="splash-check" points="24,52 44,66 78,26" />
-        </svg>
+      <span className="splash-orb splash-orb--blue" />
+      <span className="splash-orb splash-orb--purple" />
+      <span className="splash-orb splash-orb--teal" />
+      <div className="splash-stage">
+        <div className="splash-halo" />
+        <div className="splash-mark">
+          <img src="/icons/icon-512.png" alt="" width={124} height={124} />
+        </div>
       </div>
       <div className="splash-word">
-        <span>Quiz</span><span className="splash-word-accent">Hub</span>
+        {WORD.split("").map((ch, i) => (
+          <span
+            key={i}
+            className={i >= HUB_START ? "splash-letter-hub" : ""}
+            style={{ animationDelay: `${LETTER_BASE_DELAY + i * LETTER_STAGGER}s` }}
+          >
+            {ch}
+          </span>
+        ))}
       </div>
-      <div className="splash-dots"><span /><span /><span /></div>
+      <div className="splash-tag">Practice · Review · Master</div>
+      <div className="splash-bar"><div /></div>
     </div>
   );
 }

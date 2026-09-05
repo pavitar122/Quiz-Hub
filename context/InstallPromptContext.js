@@ -10,6 +10,19 @@ function isStandalone() {
   const byIOS = window.navigator.standalone === true;
   return !!(byMedia || byIOS);
 }
+function isMobileDevice() {
+  if (typeof navigator === "undefined") return false;
+  const ua = navigator.userAgent || "";
+  // Phones/tablets (Android, iOS) — desktop Windows/macOS/Linux never matches.
+  if (/Android|iPhone|iPad|iPod|Mobile|Tablet/i.test(ua)) return true;
+  // Fallback for mobile browsers with desktop-like UA strings:
+  // coarse pointer + small screen.
+  try {
+    const coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+    const small = window.matchMedia && window.matchMedia("(max-width: 900px)").matches;
+    return !!(coarse && small);
+  } catch { return false; }
+}
 function isIOSSafari() {
   if (typeof navigator === "undefined") return false;
   const ua = navigator.userAgent || "";
@@ -30,10 +43,12 @@ export function InstallPromptProvider({ children }) {
   const [deferredEvent, setDeferredEvent] = useState(null);
   const [installed, setInstalled] = useState(false);
   const [iosHintDismissed, setIosHintDismissed] = useState(true);
+  const [mobile, setMobile] = useState(false);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
     setInstalled(isStandalone());
+    setMobile(isMobileDevice());
     try { setIosHintDismissed(localStorage.getItem(IOS_HINT_KEY) === "1"); } catch {}
     setReady(true);
 
@@ -69,7 +84,9 @@ export function InstallPromptProvider({ children }) {
   const value = {
     ready,
     installed,
-    canInstall: ready && !installed && !!deferredEvent,
+    // Install button is mobile-only: hidden on Windows/macOS desktop
+    // (where beforeinstallprompt also fires), kept for Android/iOS.
+    canInstall: ready && !installed && !!deferredEvent && mobile,
     showIOSHint: ready && !installed && !deferredEvent && !iosHintDismissed && isIOSSafari(),
     promptInstall,
     dismissIOSHint,

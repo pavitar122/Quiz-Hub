@@ -131,11 +131,13 @@ export default function SubjectPage(){
             return (
               <Link key={i} href={`/quiz/${cat.id}?mode=${mode}&type=sub&idx=${i}`} style={{textDecoration:"none"}}>
                 <div className="subcat-card" onMouseMove={spotlight}>
-                  <span className="dwg-tag mono">DWG-0{i+1}</span>
+                  <div className="subcat-top">
+                    <span className="dwg-tag mono">DWG-0{i+1}</span>
+                    {attempts>0 && <span className="tested-badge mono" title={`Tested ${attempts} time${attempts===1?"":"s"}`}>✓ {attempts}×</span>}
+                  </div>
                   <h3 className="serif">{sc.name}</h3>
                   <div className="row"><span>{sc.questions.length} questions</span>{best ? <span className="best">{best.correct}/{best.total} ({best.pct}%)</span> : <span>Not attempted</span>}</div>
                   <div className="mini-bar"><div className="mini-bar-fill fill-animate" style={{"--pct":pct+"%", width:pct+"%"}}></div></div>
-                  {attempts>0 && <div className="attempt-count mono">Tested {attempts}×</div>}
                 </div>
               </Link>
             );

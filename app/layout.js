@@ -36,14 +36,17 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#F8FAFC",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f7f7f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#14120b" },
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

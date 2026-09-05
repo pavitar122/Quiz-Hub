@@ -96,7 +96,7 @@ export default function HomePage(){
               <span className="mono-badge md app-tab-icon">{g.code}</span>
               <span className="app-tab-text">
                 <span className="app-tab-label">{g.label}</span>
-                <span className="app-tab-meta">{gCats.length} subjects · {gTotal} Qs</span>
+                <span className="app-tab-meta">{gCats.length} subjects · <strong>{gTotal}</strong> Qs</span>
               </span>
             </button>
           );
