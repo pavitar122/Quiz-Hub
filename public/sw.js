@@ -2,12 +2,14 @@
 // Required for Chrome to treat "Add to Home screen" as a real install
 // (rather than a plain bookmark shortcut that always opens a new tab).
 
-const CACHE_VERSION = "quiz-hub-v4";
+const CACHE_VERSION = "quiz-hub-v5";
 const CORE_ASSETS = [
   "/",
   "/manifest.json",
+  "/favicon.ico",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
+  "/icons/apple-touch-icon.png",
 ];
 
 self.addEventListener("install", (event) => {

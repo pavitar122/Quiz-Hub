@@ -197,8 +197,8 @@ body.dark .navbar{background:rgba(17,24,39,0.88);}
 .navbar.scrolled{box-shadow:0 1px 12px rgba(15,23,42,0.06);}
 .nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 24px;max-width:1280px;margin:0 auto;width:100%;gap:20px;}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0;}
-.nav-logo-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg, var(--primary), var(--secondary));box-shadow:var(--shadow-sm), inset 0 0 0 1px rgba(255,255,255,0.14);overflow:hidden;flex-shrink:0;}
-.nav-logo-mark svg{display:block;width:19px;height:19px;}
+.nav-logo-mark{display:block;width:32px;height:32px;min-width:32px;border-radius:9px;background:transparent;border:1px solid var(--border);box-shadow:var(--shadow-sm);overflow:hidden;flex-shrink:0;padding:0;}
+.nav-logo-mark img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit;}
 .nav-logo-text{font-family:"Outfit",sans-serif;font-weight:600;font-size:18px;letter-spacing:-0.02em;color:var(--foreground);}
 .nav-actions{display:flex;gap:12px;align-items:center;flex-wrap:nowrap;}
 .nav-actions--desktop{display:flex;}
