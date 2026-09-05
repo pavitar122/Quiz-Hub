@@ -2,7 +2,7 @@
 // Required for Chrome to treat "Add to Home screen" as a real install
 // (rather than a plain bookmark shortcut that always opens a new tab).
 
-const CACHE_VERSION = "quiz-hub-v3";
+const CACHE_VERSION = "quiz-hub-v4";
 const CORE_ASSETS = [
   "/",
   "/manifest.json",
