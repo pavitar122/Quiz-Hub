@@ -3,8 +3,20 @@ import { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Confetti from "@/components/Confetti";
+import TrophyBadge from "@/components/TrophyBadge";
 import Toast from "@/components/Toast";
 import Counter from "@/components/Counter";
+
+function tierFor(pct){
+  if(pct>=90) return "gold";
+  if(pct>=80) return "silver";
+  return "bronze";
+}
+const TIER_LINES = {
+  gold: "Flawless run — that's top-tier work. Blueprint complete, no notes.",
+  silver: "Strong, confident, and clean — you cleared it with room to spare.",
+  bronze: "You crossed the line. That's the whole game — on to the next one.",
+};
 
 export default function QuizPage(){
   const { id } = useParams();
@@ -244,19 +256,20 @@ export default function QuizPage(){
   if(quiz.finished){
     if(quiz.mode==="test"){
       const isCelebrated = quiz.pct >= 70;
-      const badgeLabel = quiz.pct >= 90 ? "Outstanding" : quiz.pct >= 80 ? "Great Work" : quiz.pct >= 70 ? "Well Done" : null;
+      const tier = tierFor(quiz.pct);
       return (
-        <div className={`dwg-card ${isCelebrated ? "result-celebrated" : ""}`}>
+        <div className={`dwg-card ${isCelebrated ? `result-celebrated tier-${tier}` : ""}`}>
           {isCelebrated && <Confetti />}
+          {isCelebrated && <TrophyBadge tier={tier} />}
           {isCelebrated ? (
-            <span className="result-badge">{badgeLabel} · {quiz.pct >= 90 ? "✦ Excellent" : quiz.pct >= 70 ? "✦ Passed" : ""}</span>
+            <span className="result-badge">{tier==="gold"?"Outstanding":tier==="silver"?"Great Work":"Well Done"} · {tier==="gold"?"✦ Excellent":"✦ Passed"}</span>
           ) : (
             <span className="dwg-tag mono">RESULT · TEST MODE</span>
           )}
-          <p className={`result-score serif ${quiz.finished ? "counter-animate" : ""}`}>{quiz.score}/{quiz.total}</p>
+          <p className={`result-score serif ${isCelebrated ? "result-score--pop" : ""} ${quiz.finished ? "counter-animate" : ""}`}>{quiz.score}/{quiz.total}</p>
           <p className="result-pct mono">{quiz.pct}% {isCelebrated ? "· Celebration unlocked" : "· Keep practicing"}</p>
-          <div className="progress-bar"><div className="progress-fill" style={{width:quiz.pct+"%"}}></div></div>
-          {isCelebrated && <p className="verdict serif">You cleared the threshold — blueprint complete. The fireworks are for you.</p>}
+          <div className="progress-bar"><div className={`progress-fill fill-animate ${isCelebrated?"progress-fill--glow":""}`} style={{"--pct":quiz.pct+"%", width:quiz.pct+"%"}}></div></div>
+          {isCelebrated && <p className="verdict serif">{TIER_LINES[tier]}</p>}
           {!isCelebrated && quiz.pct < 70 && <p className="verdict serif">Almost there — review your misses and try again. The next celebration is closer than you think.</p>}
           <div className="btn-row">
             <button className="btn" onClick={restart}>Retry Full Batch</button>
@@ -283,11 +296,13 @@ export default function QuizPage(){
       const wrongList = Object.values(quiz.wrongAnswers||{});
       const practicePct = quiz.totalUnique>0 ? Math.round((quiz.firstTryCorrect/quiz.totalUnique)*100) : 0;
       const isCelebrated = practicePct >= 70;
+      const tier = tierFor(practicePct);
       return (
-        <div className={`dwg-card ${isCelebrated ? "result-celebrated" : ""}`}>
+        <div className={`dwg-card ${isCelebrated ? `result-celebrated tier-${tier}` : ""}`}>
           {isCelebrated && <Confetti />}
+          {isCelebrated && <TrophyBadge tier={tier} />}
           <span className="dwg-tag mono">RESULT · PRACTICE MODE</span>
-          <p className={`result-score serif`}>Mastered {quiz.totalUnique}</p>
+          <p className={`result-score serif ${isCelebrated ? "result-score--pop" : ""}`}>Mastered {quiz.totalUnique}</p>
           {isCelebrated && <p className="result-pct mono">All questions mastered — {practicePct}% on first try</p>}
           {!isCelebrated && <p className="result-pct mono">{practicePct}% first-try · Resilience counts too</p>}
           <div className="stat-grid">
@@ -295,7 +310,7 @@ export default function QuizPage(){
             <div className="stat-box"><div className="num serif"><Counter value={quiz.attempts} /></div><div className="lab mono">Attempts</div></div>
             <div className="stat-box"><div className="num serif"><Counter value={quiz.firstTryCorrect} /></div><div className="lab mono">First Try Correct</div></div>
           </div>
-          {isCelebrated && <p className="verdict serif">Every re-queue you survived made this glow possible. Beautiful persistence.</p>}
+          {isCelebrated && <p className="verdict serif">{TIER_LINES[tier]} Every re-queue you survived made this glow possible.</p>}
           <div className="btn-row">
             <button className="btn" onClick={restart}>Retry Full Batch</button>
             {wrongList.length>0 && <button className="btn secondary" onClick={retryWrong}>Retry Wrong Answers ({wrongList.length})</button>}
@@ -330,9 +345,9 @@ export default function QuizPage(){
       <div className="dwg-card" key={(quiz.mode==="test"?quiz.pos:quiz.attempts)+"-"+q.num}>
         <div className="q-head-row q-transition">
           <p className="question-text">{q.text}</p>
-          <button className={`bookmark-btn ${isBookmarked?"active":""}`} onClick={toggleBookmark} title="Bookmark">★</button>
+          <button className={`bookmark-btn ${isBookmarked?"active":""}`} onClick={toggleBookmark} title="Bookmark" aria-label={isBookmarked?"Remove bookmark":"Bookmark this question"} aria-pressed={!!isBookmarked}>★</button>
         </div>
-<div className={`options ${quiz.answered?"answered":""}`}>
+<div className={`options ${quiz.answered?"answered":""}`} role="radiogroup" aria-label="Answer options">
           {q.options.map((opt,i)=>{
             let cls="option-row";
             let showOk=false, showNo=false;
@@ -342,7 +357,15 @@ export default function QuizPage(){
               else cls+=" dim";
             }
 return (
-              <div key={i} className={cls} onClick={()=>selectOption(i)}>
+              <div
+                key={i}
+                className={cls}
+                role="radio"
+                aria-checked={quiz.selected===i}
+                tabIndex={quiz.answered?-1:0}
+                onClick={()=>selectOption(i)}
+                onKeyDown={(e)=>{ if(!quiz.answered && (e.key==="Enter"||e.key===" ")){ e.preventDefault(); selectOption(i); } }}
+              >
                  {showOk && <span className="stamp stamp-ok">✓ Correct</span>}
                  {showNo && <span className="stamp stamp-no">✗ Your answer</span>}
                  <span className="option-letter">{String.fromCharCode(65+i)}</span>

@@ -134,7 +134,7 @@ export default function SubjectPage(){
                   <span className="dwg-tag mono">DWG-0{i+1}</span>
                   <h3 className="serif">{sc.name}</h3>
                   <div className="row"><span>{sc.questions.length} questions</span>{best ? <span className="best">{best.correct}/{best.total} ({best.pct}%)</span> : <span>Not attempted</span>}</div>
-                  <div className="mini-bar"><div className="mini-bar-fill" style={{width:pct+"%"}}></div></div>
+                  <div className="mini-bar"><div className="mini-bar-fill fill-animate" style={{"--pct":pct+"%", width:pct+"%"}}></div></div>
                   {attempts>0 && <div className="attempt-count mono">Tested {attempts}×</div>}
                 </div>
               </Link>

@@ -1,9 +1,11 @@
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
+import { InstallPromptProvider } from "@/context/InstallPromptContext";
 import Navbar from "@/components/Navbar";
 import RegisterSW from "@/components/RegisterSW";
 import RippleEffect from "@/components/RippleEffect";
 import PageTransition from "@/components/PageTransition";
+import SplashScreen from "@/components/SplashScreen";
 
 export const metadata = {
   title: "Civil Engineering Quiz Hub",
@@ -33,7 +35,7 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#FCFCF9",
+  themeColor: "#F8FAFC",
 };
 
 export default function RootLayout({ children }) {
@@ -47,11 +49,14 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content="Quiz Hub" />
       </head>
       <body>
+        <SplashScreen />
         <AuthProvider>
-          <Navbar />
-          <div id="app">
-            <PageTransition>{children}</PageTransition>
-          </div>
+          <InstallPromptProvider>
+            <Navbar />
+            <div id="app">
+              <PageTransition>{children}</PageTransition>
+            </div>
+          </InstallPromptProvider>
         </AuthProvider>
         <RegisterSW />
         <RippleEffect />

@@ -3,6 +3,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { useState, useEffect } from "react";
+import BrandMark from "@/components/BrandMark";
+import InstallButton from "@/components/InstallButton";
+import IOSInstallHint from "@/components/IOSInstallHint";
 
 export default function Navbar(){
   const { user, logout } = useAuth();
@@ -33,13 +36,14 @@ export default function Navbar(){
     <nav className={`navbar ${scrolled?"scrolled":""}`} aria-label="Main navigation">
       <div className="nav-inner">
         <Link href="/" aria-label="Quiz Hub home" className="nav-logo">
-          <span className="nav-logo-mark">QH</span>
+          <span className="nav-logo-mark"><BrandMark size={19} /></span>
           <span className="nav-logo-text">Quiz Hub</span>
         </Link>
 
         {/* Desktop actions — hidden on tablet */}
         <div className="nav-actions nav-actions--desktop">
           {user?.role==="admin" && <Link href="/admin" className={`nav-link ${pathname==="/admin"?"current":""}`}>Admin</Link>}
+          <InstallButton />
           <button className="icon-btn nav-theme-btn" onClick={toggle} title="Toggle theme"><span className="swatch" style={{background:isDark ? "var(--background)" : "var(--foreground)"}}></span>{isDark?"Dark":"Light"}</button>
           <div className="nav-civil-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
@@ -67,8 +71,12 @@ export default function Navbar(){
         </button>
       </div>
 
+      <IOSInstallHint />
+
       {menuOpen && (
-        <div className="nav-drawer" role="dialog" aria-label="Navigation menu">
+        <>
+          <div className="nav-drawer-backdrop" onClick={()=>setMenuOpen(false)} aria-hidden="true" />
+          <div className="nav-drawer" role="dialog" aria-label="Navigation menu">
           <div className="nav-drawer-inner">
             <div className="nav-drawer-profile">
               <div className="nav-avatar" style={{width:36,height:36}}>{initials}</div>
@@ -79,6 +87,7 @@ export default function Navbar(){
               <button className="icon-btn" onClick={toggle} style={{borderRadius:999,padding:"6px 10px"}}><span className="swatch" style={{background:isDark ? "var(--background)" : "var(--foreground)"}}></span>{isDark?"Dark":"Light"}</button>
             </div>
             {user?.role==="admin" && <Link href="/admin" onClick={()=>setMenuOpen(false)} className="nav-drawer-link">Admin Panel →</Link>}
+            <InstallButton variant="drawer" onInstalled={()=>setMenuOpen(false)} />
             <div className="nav-drawer-divider" />
             {user ? (
               <button className="btn small secondary" onClick={()=>{setMenuOpen(false); logout();}} style={{width:"100%",justifyContent:"center",borderRadius:999}}>Logout</button>
@@ -90,7 +99,8 @@ export default function Navbar(){
             )}
             <button className="nav-drawer-close" onClick={()=>setMenuOpen(false)}>Close</button>
           </div>
-        </div>
+          </div>
+        </>
       )}
     </nav>
   );
