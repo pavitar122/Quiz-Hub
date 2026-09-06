@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const SESSION_KEY = "qh-splash-shown";
 const WORD = "QuizHub";
@@ -55,7 +56,7 @@ export default function SplashScreen() {
       <div className="splash-stage">
         <div className="splash-halo" />
         <div className="splash-mark">
-          <img src="/icons/icon-512.png" alt="" width={124} height={124} />
+          <Image src="/icons/icon-512.png" alt="" width={124} height={124} priority />
         </div>
       </div>
       <div className="splash-word">

@@ -75,6 +75,7 @@ export default function AdminPage(){
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [qModal, editCat, activeTab, activeChapterIdx, confirmState, sidebarOpen]);
 
   const flash = (type, text) => {
@@ -410,7 +411,7 @@ export default function AdminPage(){
     return groups;
   }, [filteredCats]);
 
-  const totalQuestionsOf = (cat) => cat?.subcats.reduce((a, s) => a + s.questions.length, 0) || 0;
+  const totalQuestionsOf = (cat) => cat?.subcats?.reduce((a, s) => a + (s.questionCount ?? s.questions?.length ?? 0), 0) || 0;
 
   const overview = useMemo(() => {
     const totalSubjects = cats.length;

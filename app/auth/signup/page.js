@@ -15,12 +15,17 @@ export default function SignupPage(){
   const submit=async(e)=>{
     e.preventDefault();
     setErr(""); setLoading(true);
-    const res=await fetch("/api/auth/signup",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name,email,password})});
-    const data=await res.json();
-    setLoading(false);
-    if(!res.ok){ setErr(data.error||"Signup failed"); return; }
-    setUser(data.user);
-    router.push("/");
+    try {
+      const res=await fetch("/api/auth/signup",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name,email,password})});
+      const data=await res.json().catch(()=>({}));
+      setLoading(false);
+      if(!res.ok){ setErr(data.error||"Signup failed. Please check your details."); return; }
+      setUser(data.user);
+      router.push("/");
+    } catch {
+      setLoading(false);
+      setErr("Network error. Please check your connection and try again.");
+    }
   };
   return (
     <div className="dwg-card auth-card">

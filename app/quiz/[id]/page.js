@@ -6,6 +6,13 @@ import Confetti from "@/components/Confetti";
 import TrophyBadge from "@/components/TrophyBadge";
 import Toast from "@/components/Toast";
 import Counter from "@/components/Counter";
+import {
+  getLocalProgress,
+  recordLocalAnswer,
+  toggleLocalBookmark,
+  recordLocalComplete,
+  recordLocalPracticeComplete,
+} from "@/lib/storage";
 
 function tierFor(pct){
   if(pct>=90) return "gold";
@@ -30,6 +37,7 @@ export default function QuizPage(){
   const [toastMsg,setToastMsg]=useState("");
   const [toastShow,setToastShow]=useState(false);
   const [empty,setEmpty]=useState(false);
+  const [notFound,setNotFound]=useState(false);
 
   const flashToast=(msg)=>{
     setToastMsg(msg);
@@ -39,14 +47,25 @@ export default function QuizPage(){
 
   useEffect(()=>{
     setEmpty(false);
-    fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>{
-      if(!d.category) return;
-      setCat(d.category);
-      const q = buildQueue(d.category, type, idx);
-      if(q.length===0 && type!=="bookmarked" && type!=="missed"){ setEmpty(true); return; }
-      if(q.length>0) initQuiz(q, d.category);
-    });
-    fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress)).catch(()=>{});
+    setNotFound(false);
+    fetch(`/api/questions?id=${id}`)
+      .then(r=>r.json())
+      .then(d=>{
+        if(!d.category){ setNotFound(true); return; }
+        setCat(d.category);
+        const q = buildQueue(d.category, type, idx);
+        if(q.length===0 && type!=="bookmarked" && type!=="missed"){ setEmpty(true); return; }
+        if(q.length>0) initQuiz(q, d.category);
+      })
+      .catch(()=>{ setNotFound(true); });
+
+    fetch("/api/progress")
+      .then(r=>r.json())
+      .then(d=>{
+        if(d.progress) setProgress(d.progress);
+        else setProgress(getLocalProgress());
+      })
+      .catch(()=>{ setProgress(getLocalProgress()); });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[id,type,idx,mode]);
 
@@ -60,38 +79,36 @@ export default function QuizPage(){
       const sc=cat.subcats[sIdx];
       return sc? sc.questions.map(q=>({subIdx:sIdx, subName:sc.name, q})): [];
     }
-    if(type==="bookmarked"){
-      // need progress — fallback empty if no progress yet; will load from server later
-      // we build from progress after fetch? For now return empty and re-build when progress arrives
-      return [];
-    }
-    if(type==="missed") return [];
+    if(type==="bookmarked" || type==="missed") return [];
     return all;
   }
+
   function shuffle(arr){
     const a=arr.slice();
     for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
     return a;
   }
 
-  // handle bookmark/missed queues after progress loads
+  // handle bookmark/missed queues after progress or category loads
   useEffect(()=>{
-    if(!cat || !progress || quiz) return;
+    if(!cat || quiz) return;
+    if(type!=="bookmarked" && type!=="missed") return;
+    const currentProg = progress || getLocalProgress();
     if(type==="bookmarked"){
-      const keys=new Set(progress.bookmarks?.[cat.id]||[]);
+      const keys=new Set(currentProg.bookmarks?.[cat.id]||[]);
       const out=[];
       cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(q=>{ if(keys.has(sIdx+"-"+q.num)) out.push({subIdx:sIdx, subName:sc.name, q}); }));
       if(out.length>0) initQuiz(out, cat); else setEmpty(true);
     }
     if(type==="missed"){
-      const miss=progress.missCounts?.[cat.id]||{};
+      const miss=currentProg.missCounts?.[cat.id]||{};
       const keys=Object.keys(miss).filter(k=>miss[k]>0);
       const out=[];
       cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(q=>{ if(keys.includes(sIdx+"-"+q.num)) out.push({subIdx:sIdx, subName:sc.name, q}); }));
       if(out.length>0) initQuiz(shuffle(out), cat); else setEmpty(true);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[progress,cat]);
+  },[progress,cat,type]);
 
   function initQuiz(queue, category){
     setQuiz({
@@ -122,7 +139,7 @@ export default function QuizPage(){
 
   const current = quiz ? (quiz.mode==="test" ? quiz.order[quiz.pos] : quiz.practiceCurrent) : null;
 
-  const selectOption = async (choiceIdx)=>{
+  const selectOption = (choiceIdx)=>{
     if(!quiz || quiz.answered) return;
     const item=current;
     const correct = choiceIdx===item.q.correct;
@@ -145,34 +162,41 @@ export default function QuizPage(){
       }
     }
     setQuiz(updated);
-    // persist to server
-    try{
-      await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
-        type:"answer",
-        catId: quiz.catId,
-        subIdx: item.subIdx,
-        num: item.q.num,
-        correct,
-      })});
-    }catch{}
+
+    // Persist locally immediately
+    const updatedProg = recordLocalAnswer(quiz.catId, item.subIdx, item.q.num, correct);
+    setProgress(p => ({ ...(p || {}), ...updatedProg }));
+
+    // Sync to server in background if session exists (non-blocking)
+    fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+      type:"answer",
+      catId: quiz.catId,
+      subIdx: item.subIdx,
+      num: item.q.num,
+      correct,
+    })}).catch(()=>{});
   };
 
-  const nextQuestion = async ()=>{
+  const nextQuestion = ()=>{
     if(!quiz) return;
     if(quiz.mode==="test"){
       const nextPos=quiz.pos+1;
       if(nextPos>=quiz.order.length){
-        // finish, record best & session — use functional update so pct
-        // is computed from the freshest score even if the closure is stale
         const snap = quiz;
-        await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+        const kind = type==="full"?"FULL": type==="random"?"RANDOM": type==="bookmarked"?"BOOKMARKED": type==="missed"?"MISSED": String(idx);
+        const updatedProg = recordLocalComplete(snap.catId, kind, snap.score, snap.total);
+        setProgress(p => ({ ...(p || {}), ...updatedProg }));
+
+        // Background cloud sync
+        fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
           type:"complete",
           catId: snap.catId,
-          kind: type==="full"?"FULL": type==="random"?"RANDOM": type==="bookmarked"?"BOOKMARKED": type==="missed"?"MISSED": String(idx),
+          kind,
           score: snap.score,
           total: snap.total,
           mode:"test"
-        })});
+        })}).catch(()=>{});
+
         // show result inline instead of navigating
         setQuiz(q => ({...q, finished:true, pct: Math.round(q.score/q.total*100)}));
         return;
@@ -181,13 +205,17 @@ export default function QuizPage(){
     } else {
       if(quiz.remaining.length===0){
         const snap = quiz;
-        await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+        const updatedProg = recordLocalPracticeComplete();
+        setProgress(p => ({ ...(p || {}), ...updatedProg }));
+
+        fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
           type:"practiceComplete",
           catId: snap.catId,
           totalUnique: snap.totalUnique,
           attempts: snap.attempts,
           mode:"practice"
-        })});
+        })}).catch(()=>{});
+
         setQuiz(q => ({...q, finished:true}));
         return;
       }
@@ -200,28 +228,21 @@ export default function QuizPage(){
     }
   };
 
-  const toggleBookmark=async()=>{
+  const toggleBookmark=()=>{
     if(!current) return;
-    const key=current.subIdx+"-"+current.q.num;
-    // optimistic local update so the UI reacts instantly
-    const wasBookmarked = !!progress?.bookmarks?.[id]?.includes(key);
-    setProgress(p=>{
-      const base=p||{};
-      const existing=base.bookmarks?.[id]||[];
-      const nextList = wasBookmarked ? existing.filter(k=>k!==key) : [...existing, key];
-      return { ...base, bookmarks: { ...(base.bookmarks||{}), [id]: nextList } };
-    });
-    flashToast(wasBookmarked ? "Bookmark removed" : "★ Bookmarked");
-    try{
-      await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
-        type:"bookmark",
-        catId: id,
-        subIdx: current.subIdx,
-        num: current.q.num,
-      })});
-    }catch{}
+    const { prog: updatedProg, isBookmarked } = toggleLocalBookmark(id, current.subIdx, current.q.num);
+    setProgress(p => ({ ...(p || {}), ...updatedProg }));
+    flashToast(isBookmarked ? "★ Bookmarked" : "Bookmark removed");
+
+    fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+      type:"bookmark",
+      catId: id,
+      subIdx: current.subIdx,
+      num: current.q.num,
+    })}).catch(()=>{});
   };
-  const isBookmarked = progress && progress.bookmarks?.[id]?.includes(current?.subIdx+"-"+current?.q?.num);
+
+  const isBookmarked = (progress || getLocalProgress())?.bookmarks?.[id]?.includes(current?.subIdx+"-"+current?.q?.num);
 
   const restart=()=>{
     if(!cat) return;
@@ -239,6 +260,17 @@ export default function QuizPage(){
     if(wrongItems.length===0) return;
     initQuiz(wrongItems, cat);
   };
+
+  if(notFound) return (
+    <div className="dwg-card">
+      <span className="dwg-tag mono">NOT FOUND</span>
+      <h2 className="serif" style={{marginTop:10}}>Subject Not Found</h2>
+      <p style={{marginTop:8}}>The requested category or quiz could not be loaded.</p>
+      <div className="btn-row" style={{marginTop:18}}>
+        <Link href="/" className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>← Return to Categories</Link>
+      </div>
+    </div>
+  );
 
   if(empty) return (
     <div className="dwg-card">

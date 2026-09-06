@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { useState, useEffect } from "react";
@@ -35,7 +36,7 @@ export default function Navbar(){
     <nav className={`navbar ${scrolled?"scrolled":""}`} aria-label="Main navigation">
       <div className="nav-inner">
         <Link href="/" aria-label="Quiz Hub home" className="nav-logo">
-          <span className="nav-logo-mark"><img src="/icons/icon-96.png" alt="Quiz Hub logo" width={32} height={32} /></span>
+          <span className="nav-logo-mark"><Image src="/icons/icon-96.png" alt="Quiz Hub logo" width={32} height={32} priority /></span>
           <span className="nav-logo-text">Quiz Hub</span>
         </Link>
 

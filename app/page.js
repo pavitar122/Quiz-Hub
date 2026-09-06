@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import Counter from "@/components/Counter";
 import { monogram } from "@/lib/badge";
+import { getLocalProgress } from "@/lib/storage";
 
 // Direct DOM style writes (no setState) so the spotlight tracks the cursor
 // at 60fps without triggering React re-renders on every mousemove.
@@ -36,15 +37,28 @@ export default function HomePage(){
   },[]);
 
   useEffect(()=>{
-    fetch("/api/questions").then(r=>r.json()).then(d=>{
-      setCats(d.categories||[]);
-      setGroups(d.groups||[]);
-      setLoading(false);
-    });
+    fetch("/api/questions")
+      .then(r=>r.json())
+      .then(d=>{
+        setCats(d.categories||[]);
+        setGroups(d.groups||[]);
+        setLoading(false);
+      })
+      .catch(()=>setLoading(false));
   },[]);
+
   useEffect(()=>{
-    if(user) fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress)).catch(()=>{});
-    else setProgress(null);
+    if(user) {
+      fetch("/api/progress")
+        .then(r=>r.json())
+        .then(d=>{
+          if(d.progress) setProgress(d.progress);
+          else setProgress(getLocalProgress());
+        })
+        .catch(()=>setProgress(getLocalProgress()));
+    } else {
+      setProgress(getLocalProgress());
+    }
   },[user]);
 
   const groupCats = cats.filter(c=>c.group===activeApp);
@@ -62,7 +76,7 @@ export default function HomePage(){
   groupCats.forEach(cat=>counts[categoryStatus(cat,progress)]++);
 
   const activeMeta=groups.find(g=>g.id===activeApp) || groups[0];
-  const totalQGroup=groupCats.reduce((a,c)=>a+(c.subcats?.reduce((s,sc)=>s+sc.questions.length,0)||0),0);
+  const totalQGroup=groupCats.reduce((a,c)=>a+(c.subcats?.reduce((s,sc)=>s+(sc.questionCount ?? sc.questions?.length ?? 0),0)||0),0);
   const acc = overallAccuracy(progress);
   const weak = weakest(progress,cats.filter(c=>c.group===activeApp));
 
@@ -90,7 +104,7 @@ export default function HomePage(){
       <div className="app-switcher">
         {groups.map(g=>{
           const gCats=cats.filter(c=>c.group===g.id);
-          const gTotal=gCats.reduce((a,c)=>a+c.subcats.reduce((s,sc)=>s+sc.questions.length,0),0);
+          const gTotal=gCats.reduce((a,c)=>a+c.subcats.reduce((s,sc)=>s+(sc.questionCount ?? sc.questions?.length ?? 0),0),0);
           return (
             <button key={g.id} className={`app-tab ${activeApp===g.id?"active":""}`} onClick={()=>{setActiveApp(g.id);}} onMouseMove={spotlight}>
               <span className="mono-badge md app-tab-icon">{g.code}</span>
@@ -133,7 +147,7 @@ export default function HomePage(){
       <div className="category-grid">
         {filtered.length===0 ? <div className="empty-note">No subjects match your filters.</div> :
           filtered.map(cat=>{
-            const total=cat.subcats.reduce((a,s)=>a+s.questions.length,0);
+            const total=cat.subcats.reduce((a,s)=>a+(s.questionCount ?? s.questions?.length ?? 0),0);
             const best=(progress?.bestScores?.[cat.id]||{})["FULL"];
             const attempted=cat.subcats.filter((_,i)=>progress?.bestScores?.[cat.id]?.[String(i)]).length;
             const pct=Math.round((attempted/cat.subcats.length)*100);

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { monogram } from "@/lib/badge";
+import { getLocalProgress } from "@/lib/storage";
 
 // Direct DOM style writes (no setState) so the spotlight tracks the cursor
 // at 60fps without triggering React re-renders on every mousemove.
@@ -16,17 +17,38 @@ function spotlight(e){
 export default function SubjectPage(){
   const { id } = useParams();
   const [cat,setCat]=useState(null);
+  const [notFound,setNotFound]=useState(false);
   const [mode,setMode]=useState("test");
   const [search,setSearch]=useState("");
   const [progress,setProgress]=useState(null);
   const { user } = useAuth();
   const searchRef = useRef(null);
+
   useEffect(()=>{
-    fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>setCat(d.category));
+    setNotFound(false);
+    fetch(`/api/questions?id=${id}`)
+      .then(r=>r.json())
+      .then(d=>{
+        if(!d.category){ setNotFound(true); return; }
+        setCat(d.category);
+      })
+      .catch(()=>{ setNotFound(true); });
   },[id]);
+
   useEffect(()=>{
-    if(user) fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress));
+    if(user) {
+      fetch("/api/progress")
+        .then(r=>r.json())
+        .then(d=>{
+          if(d.progress) setProgress(d.progress);
+          else setProgress(getLocalProgress());
+        })
+        .catch(()=>setProgress(getLocalProgress()));
+    } else {
+      setProgress(getLocalProgress());
+    }
   },[user]);
+
   useEffect(()=>{
     const onKey=(e)=>{
       if(e.key==="/" && document.activeElement?.tagName!=="INPUT" && document.activeElement?.tagName!=="TEXTAREA"){
@@ -37,6 +59,17 @@ export default function SubjectPage(){
     window.addEventListener("keydown",onKey);
     return ()=>window.removeEventListener("keydown",onKey);
   },[]);
+
+  if(notFound) return (
+    <div className="dwg-card">
+      <span className="dwg-tag mono">NOT FOUND</span>
+      <h2 className="serif" style={{marginTop:10}}>Subject Not Found</h2>
+      <p style={{marginTop:8}}>The requested category or subject does not exist or has been removed.</p>
+      <div className="btn-row" style={{marginTop:18}}>
+        <Link href="/" className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>← All Categories</Link>
+      </div>
+    </div>
+  );
 
   if(!cat) return (
     <>
