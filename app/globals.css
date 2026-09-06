@@ -533,6 +533,16 @@ h1,h2,h3,.display{font-family:"Big Shoulders Display",'Arial Narrow',sans-serif;
   .admin-panel{padding:18px 16px;}
 }
 
+/* ---------- Admin UX: unsaved-state, validation, import preview ---------- */
+.unsaved-badge{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--wrong);background:var(--wrong-soft);border:1px solid var(--wrong);border-radius:999px;padding:2px 9px;}
+.unsaved-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-left:6px;vertical-align:middle;opacity:.85;}
+.mf-error{border-color:var(--wrong) !important;box-shadow:0 0 0 3px var(--wrong-soft) !important;}
+.link-btn{background:none;border:none;padding:0;color:var(--accent);font-family:inherit;font-size:inherit;text-decoration:underline;cursor:pointer;}
+.link-btn:hover{color:var(--ink);}
+.import-preview{border-radius:var(--radius-sm);padding:9px 12px;font-size:12px;font-family:"IBM Plex Mono",monospace;}
+.import-preview.ok{background:var(--accent-soft);border:1px solid var(--accent);color:var(--ink);}
+.import-preview.err{background:var(--wrong-soft);border:1px solid var(--wrong);color:var(--wrong);}
+
 /* ---------- Skeleton loaders (used while data fetches) ---------- */
 .skeleton{position:relative;overflow:hidden;background:var(--option-dim);border-radius:var(--radius-sm);}
 .skeleton::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,var(--card-border-strong),transparent);transform:translateX(-100%);animation:shimmerSlide 1.4s ease-in-out infinite;}

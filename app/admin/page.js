@@ -15,11 +15,16 @@ export default function AdminPage(){
   const router = useRouter();
 
   const [cats, setCats] = useState([]);
+  const [catsLoaded, setCatsLoaded] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
   const [editCat, setEditCat] = useState(null);
   const [sidebarSearch, setSidebarSearch] = useState("");
   const [collapsedGroups, setCollapsedGroups] = useState({});
   const [activeTab, setActiveTab] = useState("content"); // 'content' | 'settings'
+
+  // Guards a pending navigation (tab switch / subject switch / initial
+  // restore) that would discard unsaved Settings-tab edits.
+  const [pendingNav, setPendingNav] = useState(null); // () => void
 
   // Chapter (subtopic) + question browsing state
   const [activeChapterIdx, setActiveChapterIdx] = useState(null); // null = "All chapters"
@@ -31,6 +36,7 @@ export default function AdminPage(){
   const [form, setForm] = useState(EMPTY_FORM);
 
   const [metaForm, setMetaForm] = useState({ title: "", description: "", group: "civil1" });
+  const [savedMetaForm, setSavedMetaForm] = useState({ title: "", description: "", group: "civil1" });
 
   const [newSubjectOpen, setNewSubjectOpen] = useState(false);
   const [newSubject, setNewSubject] = useState({ title: "", description: "", group: "civil1" });
@@ -41,8 +47,10 @@ export default function AdminPage(){
 
   const [importFile, setImportFile] = useState(null);
   const [importGroup, setImportGroup] = useState("civil1");
+  const [importPreview, setImportPreview] = useState(null); // { title, subcats, questions } | { error }
 
   const [msg, setMsg] = useState(null); // { type:'ok'|'err', text }
+  const [formErrors, setFormErrors] = useState({}); // field-level highlights for the question modal
   const [busy, setBusy] = useState(false);
   const [copied, setCopied] = useState(false);
   const [confirmState, setConfirmState] = useState(null); // { kind, subIdx, num, busy }
@@ -50,14 +58,58 @@ export default function AdminPage(){
 
   useEffect(() => {
     if (!loading && (!user || user.role !== "admin")) { router.push("/"); return; }
-    refreshCats();
+    if (user && user.role === "admin") {
+      try {
+        const savedGroups = JSON.parse(localStorage.getItem("qh-admin-collapsed") || "{}");
+        setCollapsedGroups(savedGroups);
+      } catch {}
+      refreshCats();
+    }
   }, [user, loading, router]);
 
+  // Restore the last-viewed subject once the category list has loaded, so
+  // reloading the admin panel drops the admin back where they left off.
   useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape" && qModal) closeModal(); };
+    if (!catsLoaded || selectedId || !cats.length) return;
+    const lastId = localStorage.getItem("qh-admin-last-subject");
+    if (lastId && cats.some(c => c.id === lastId)) loadCat(lastId);
+  }, [catsLoaded, cats]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key !== "Escape") return;
+      if (qModal) { requestCloseModal(); return; }
+      if (newSubjectOpen) { setNewSubjectOpen(false); return; }
+      if (newChapterOpen) { setNewChapterOpen(false); return; }
+      if (msg) setMsg(null);
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [qModal]);
+  }, [qModal, form, newSubjectOpen, newChapterOpen, msg]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Warn before an accidental tab close/refresh drops unsaved Settings edits.
+  useEffect(() => {
+    const onBeforeUnload = (e) => {
+      if (!isMetaDirty) return;
+      e.preventDefault();
+      e.returnValue = "";
+    };
+    window.addEventListener("beforeunload", onBeforeUnload);
+    return () => window.removeEventListener("beforeunload", onBeforeUnload);
+  }); // intentionally no deps array — always reads the latest dirty flag
+
+  // Cmd/Ctrl+S saves Settings edits in place instead of triggering the
+  // browser's "Save Page" dialog.
+  useEffect(() => {
+    const onKey = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "s" && activeTab === "settings" && isMetaDirty && !busy) {
+        e.preventDefault();
+        saveSubjectMeta();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }); // intentionally no deps array — always reads the latest form state
 
   const flash = (type, text) => {
     setMsg({ type, text });
@@ -88,7 +140,9 @@ export default function AdminPage(){
 
   // Admin needs full question bodies (counts, edit totals, export), so it
   // explicitly opts out of the lightweight ?meta=1 default used elsewhere.
-  const refreshCats = () => fetch("/api/questions?meta=0", { cache: "no-store" }).then(r => r.json()).then(d => setCats(d.categories || []));
+  const refreshCats = () => fetch("/api/questions?meta=0", { cache: "no-store" })
+    .then(r => r.json())
+    .then(d => { setCats(d.categories || []); setCatsLoaded(true); });
 
   const loadCat = async (id) => {
     setSelectedId(id);
@@ -99,9 +153,12 @@ export default function AdminPage(){
     setRenaming(null);
     setQModal(null);
     setNewChapterOpen(false);
+    localStorage.setItem("qh-admin-last-subject", id);
     const d = await fetch(`/api/questions?id=${id}`, { cache: "no-store" }).then(r => r.json());
     setEditCat(d.category);
-    setMetaForm({ title: d.category?.title || "", description: d.category?.description || "", group: d.category?.group || "civil1" });
+    const meta = { title: d.category?.title || "", description: d.category?.description || "", group: d.category?.group || "civil1" };
+    setMetaForm(meta);
+    setSavedMetaForm(meta);
   };
 
   // like loadCat but keeps chapter/page/search state, for smooth in-place edits
@@ -110,7 +167,27 @@ export default function AdminPage(){
     setEditCat(d.category);
   };
 
-  const toggleGroup = (g) => setCollapsedGroups(s => ({ ...s, [g]: !s[g] }));
+  const toggleGroup = (g) => setCollapsedGroups(s => {
+    const next = { ...s, [g]: !s[g] };
+    try { localStorage.setItem("qh-admin-collapsed", JSON.stringify(next)); } catch {}
+    return next;
+  });
+
+  // Settings-tab edits are only "unsaved" while that subject's form differs
+  // from what's actually on disk — used to warn before it'd be lost.
+  const isMetaDirty = !!editCat && (
+    metaForm.title !== savedMetaForm.title ||
+    metaForm.description !== savedMetaForm.description ||
+    metaForm.group !== savedMetaForm.group
+  );
+
+  // Runs `fn` immediately, unless Settings has unsaved edits — in which case
+  // it's deferred behind a confirmation so a stray click can't silently
+  // discard them.
+  const guardedNav = (fn) => {
+    if (isMetaDirty) { setPendingNav(() => fn); return; }
+    fn();
+  };
 
   const exportSubject = async (cat) => {
     if (!cat) return;
@@ -144,30 +221,61 @@ export default function AdminPage(){
   };
 
   // ---------- Question modal ----------
+  const initialFormRef = useRef(EMPTY_FORM);
+  const isModalDirty = !!qModal && JSON.stringify(form) !== JSON.stringify(initialFormRef.current);
+
   const openAddModal = () => {
     if (!editCat.subcats.length) { flash("err", "Add a chapter first."); return; }
     const subIdx = activeChapterIdx !== null ? activeChapterIdx : 0;
     setForm(EMPTY_FORM);
+    setFormErrors({});
+    initialFormRef.current = EMPTY_FORM;
     setQModal({ mode: "add", subIdx });
   };
   const openEditModal = (subIdx, q) => {
-    setForm({ text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl });
+    const snapshot = { text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl };
+    setForm(snapshot);
+    setFormErrors({});
+    initialFormRef.current = snapshot;
     setQModal({ mode: "edit", subIdx, num: q.num });
   };
   const openDuplicateModal = (subIdx, q) => {
-    setForm({ text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl });
+    const snapshot = { text: q.text, options: q.options.slice(), correct: q.correct, expl: q.expl };
+    setForm(snapshot);
+    setFormErrors({});
+    // Deliberately does not match `form`'s initial snapshot: a duplicate is
+    // pre-filled but still counts as new, unsaved content the admin should
+    // be warned about if they try to close without saving.
+    initialFormRef.current = EMPTY_FORM;
     setQModal({ mode: "add", subIdx });
     flash("ok", "Duplicated into a new question — edit it, then save.");
   };
-  const closeModal = () => { setQModal(null); setForm(EMPTY_FORM); };
+  const closeModal = () => { setQModal(null); setForm(EMPTY_FORM); setFormErrors({}); };
+  // Routes every close attempt (X button, Cancel, overlay click, Escape)
+  // through here so unsaved edits can't be lost with one stray click.
+  const requestCloseModal = () => {
+    if (isModalDirty) { setConfirmState({ kind: "discardQuestion" }); return; }
+    closeModal();
+  };
 
   const submitForm = async () => {
     if (!qModal) return;
     const payload = { ...form, correct: parseInt(form.correct) };
-    if (!payload.text.trim() || payload.options.some(o => !o.trim()) || !payload.expl.trim()) {
+    const errors = {};
+    if (!payload.text.trim()) errors.text = true;
+    payload.options.forEach((o, i) => { if (!o.trim()) errors[`opt${i}`] = true; });
+    if (!payload.expl.trim()) errors.expl = true;
+    if (Object.keys(errors).length) {
+      setFormErrors(errors);
       flash("err", "Fill in the question, all four options, and an explanation.");
       return;
     }
+    const nonEmptyOptions = payload.options.map(o => o.trim().toLowerCase());
+    if (new Set(nonEmptyOptions).size !== nonEmptyOptions.length) {
+      flash("err", "Two options are identical — check the options before saving.");
+      return;
+    }
+    setFormErrors({});
     setBusy(true);
     const isEdit = qModal.mode === "edit";
     const body = {
@@ -201,6 +309,11 @@ export default function AdminPage(){
 
   const runConfirm = async () => {
     if (!confirmState) return;
+    if (confirmState.kind === "discardQuestion") {
+      closeModal();
+      setConfirmState(null);
+      return;
+    }
     setConfirmState(s => ({ ...s, busy: true }));
     if (confirmState.kind === "question") {
       const { ok, json: j } = await apiRequest("/api/admin/subjects", {
@@ -250,6 +363,16 @@ export default function AdminPage(){
     loadCat(editCat.id);
     refreshCats();
   };
+
+  // Discards the in-progress Settings edit and completes whatever tab/subject
+  // switch was waiting on it.
+  const discardMetaAndNav = () => {
+    setMetaForm(savedMetaForm);
+    const fn = pendingNav;
+    setPendingNav(null);
+    fn && fn();
+  };
+  const cancelPendingNav = () => setPendingNav(null);
 
   const handleCreateSubject = async () => {
     if (!newSubject.title.trim()) { flash("err", "Give the new subject a title."); return; }
@@ -305,19 +428,39 @@ export default function AdminPage(){
     refreshCats();
   };
 
-  const handleImport = async () => {
-    if (!importFile) { flash("err", "Choose a JSON file to import first."); return; }
-    const text = await importFile.text();
+  // Shared by the live preview (on file select) and the actual import, so
+  // what the admin sees previewed is exactly what gets sent to the server.
+  const parseImportText = (text) => {
     let obj;
     try { obj = JSON.parse(text); }
     catch {
       try { obj = Function("return (" + text + ")")(); }
-      catch { flash("err", "That file isn't valid JSON."); return; }
+      catch { return null; }
     }
     if (text.includes("window.QUIZ_CATEGORY")) {
       const m = text.match(/window\.\w+\s*=\s*(\{[\s\S]*\});?/);
-      if (m) { try { obj = JSON.parse(m[1]); } catch { obj = eval("(" + m[1] + ")"); } }
+      if (m) { try { obj = JSON.parse(m[1]); } catch { try { obj = eval("(" + m[1] + ")"); } catch { return null; } } }
     }
+    return obj;
+  };
+
+  const handleFileChosen = async (file) => {
+    setImportFile(file || null);
+    if (!file) { setImportPreview(null); return; }
+    const text = await file.text();
+    const obj = parseImportText(text);
+    if (!obj || typeof obj !== "object") { setImportPreview({ error: "That file isn't valid JSON." }); return; }
+    const subcats = Array.isArray(obj.subcats) ? obj.subcats : [];
+    if (!subcats.length) { setImportPreview({ error: "No chapters/questions found in this file." }); return; }
+    const questionCount = subcats.reduce((a, s) => a + (Array.isArray(s.questions) ? s.questions.length : 0), 0);
+    setImportPreview({ title: obj.title || "(untitled)", subcats: subcats.length, questions: questionCount });
+  };
+
+  const handleImport = async () => {
+    if (!importFile) { flash("err", "Choose a JSON file to import first."); return; }
+    const text = await importFile.text();
+    const obj = parseImportText(text);
+    if (!obj) { flash("err", "That file isn't valid JSON."); return; }
     setBusy(true);
     const { ok, json: j } = await apiRequest("/api/admin/import", {
       method: "POST",
@@ -328,6 +471,7 @@ export default function AdminPage(){
     if (!ok) { if (j) flash("err", j.error || "Import failed."); return; }
     flash("ok", `Imported "${j.category.title}".`);
     setImportFile(null);
+    setImportPreview(null);
     refreshCats();
   };
 
@@ -398,7 +542,7 @@ export default function AdminPage(){
       </div>
 
       {msg && (
-        <div className={`message-banner ${msg.type === "ok" ? "ok" : "err"}`}>
+        <div className={`message-banner ${msg.type === "ok" ? "ok" : "err"}`} role="status" aria-live="polite">
           <span>{msg.text}</span>
           <button onClick={() => setMsg(null)} aria-label="Dismiss">×</button>
         </div>
@@ -444,7 +588,20 @@ export default function AdminPage(){
 
           <div className="sidebar-scroll">
             <div className="subject-list">
-              {filteredCats.length === 0 && <div className="empty-note" style={{ padding: "16px 0" }}>No subjects found.</div>}
+              {!catsLoaded && (
+                <div style={{ padding: "4px 0 12px" }}>
+                  {[0, 1, 2, 3].map(i => (
+                    <div key={i} className="skeleton skeleton-line w-100" style={{ height: 40, marginBottom: 8, borderRadius: 10 }} />
+                  ))}
+                </div>
+              )}
+              {catsLoaded && filteredCats.length === 0 && (
+                <div className="empty-note" style={{ padding: "16px 0" }}>
+                  {sidebarSearch.trim() ? (
+                    <>No subjects match &quot;{sidebarSearch}&quot;. <button className="link-btn" onClick={() => setSidebarSearch("")}>Clear search</button></>
+                  ) : "No subjects yet — create one to get started."}
+                </div>
+              )}
               {GROUP_ORDER.filter(g => groupedCats[g] && groupedCats[g].length > 0).map(g => {
                 const isCollapsed = !!collapsedGroups[g] && !sidebarSearch.trim();
                 const list = groupedCats[g];
@@ -460,7 +617,7 @@ export default function AdminPage(){
                     {!isCollapsed && (
                       <div className="group-section-body">
                         {list.map(c => (
-                          <button key={c.id} className={`subject-list-item ${selectedId === c.id ? "active" : ""}`} onClick={() => loadCat(c.id)}>
+                          <button key={c.id} className={`subject-list-item ${selectedId === c.id ? "active" : ""}`} onClick={() => guardedNav(() => loadCat(c.id))}>
                             <span className="mono-badge sm">{monogram(c.title)}</span>
                             <span className="sli-text">
                               <span className="sli-title">{c.title}</span>
@@ -487,9 +644,18 @@ export default function AdminPage(){
               </select>
             </div>
             <div className="import-drop" style={{ marginBottom: 10 }}>
-              <input type="file" accept=".json,.js,.txt" onChange={e => setImportFile(e.target.files[0])} />
+              <input type="file" accept=".json,.js,.txt" onChange={e => handleFileChosen(e.target.files[0])} />
             </div>
-            <button className="btn small secondary" style={{ width: "100%" }} disabled={busy} onClick={handleImport}>{busy ? <span className="spinner"></span> : "Import as New Subject"}</button>
+            {importPreview && (
+              importPreview.error ? (
+                <div className="import-preview err" style={{ marginBottom: 10 }}>{importPreview.error}</div>
+              ) : (
+                <div className="import-preview ok" style={{ marginBottom: 10 }}>
+                  <strong>{importPreview.title}</strong> · {importPreview.subcats} chapter{importPreview.subcats === 1 ? "" : "s"} · {importPreview.questions} question{importPreview.questions === 1 ? "" : "s"}
+                </div>
+              )
+            )}
+            <button className="btn small secondary" style={{ width: "100%" }} disabled={busy || !importFile || importPreview?.error} onClick={handleImport}>{busy ? <span className="spinner"></span> : "Import as New Subject"}</button>
           </div>
         </aside>
 
@@ -517,8 +683,10 @@ export default function AdminPage(){
                 </div>
 
                 <div className="admin-tabs">
-                  <button className={activeTab === "content" ? "active" : ""} onClick={() => setActiveTab("content")}>Questions</button>
-                  <button className={activeTab === "settings" ? "active" : ""} onClick={() => setActiveTab("settings")}>Settings</button>
+                  <button className={activeTab === "content" ? "active" : ""} onClick={() => guardedNav(() => setActiveTab("content"))}>Questions</button>
+                  <button className={activeTab === "settings" ? "active" : ""} onClick={() => setActiveTab("settings")}>
+                    Settings{isMetaDirty && <span className="unsaved-dot" title="Unsaved changes" />}
+                  </button>
                 </div>
               </div>
 
@@ -637,7 +805,10 @@ export default function AdminPage(){
 
               {activeTab === "settings" && (
                 <div className="admin-panel">
-                  <div className="admin-panel-sub" style={{ marginBottom: 14 }}>SUBJECT DETAILS</div>
+                  <div className="admin-panel-sub" style={{ marginBottom: 14, display: "flex", alignItems: "center", gap: 8 }}>
+                    SUBJECT DETAILS
+                    {isMetaDirty && <span className="unsaved-badge">Unsaved changes</span>}
+                  </div>
                   <div className="subject-meta-grid" style={{ marginBottom: 6 }}>
                     <div className="mf-field">
                       <label className="mf-label">Title</label>
@@ -657,8 +828,8 @@ export default function AdminPage(){
                     </div>
                   </div>
                   <div className="btn-row">
-                    <button className="btn small" disabled={busy} onClick={saveSubjectMeta}>{busy ? <span className="spinner"></span> : "Save Changes"}</button>
-                    <button className="btn small ghost" onClick={() => setMetaForm({ title: editCat.title, description: editCat.description, group: editCat.group })}>Reset</button>
+                    <button className="btn small" disabled={busy || !isMetaDirty} onClick={saveSubjectMeta}>{busy ? <span className="spinner"></span> : "Save Changes"}</button>
+                    <button className="btn small ghost" disabled={!isMetaDirty} onClick={() => setMetaForm(savedMetaForm)}>Reset</button>
                   </div>
 
                   <div className="admin-divider" />
@@ -720,8 +891,9 @@ export default function AdminPage(){
         chapterName={modalChapterName}
         form={form}
         setForm={setForm}
+        formErrors={formErrors}
         busy={busy}
-        onCancel={closeModal}
+        onCancel={requestCloseModal}
         onSubmit={submitForm}
         onDelete={qModal?.mode === "edit" ? deleteFromModal : null}
       />
@@ -730,27 +902,44 @@ export default function AdminPage(){
         open={!!confirmState}
         title={
           confirmState?.kind === "subject" ? "Delete subject?" :
-          confirmState?.kind === "subtopic" ? "Delete chapter?" : "Delete question?"
+          confirmState?.kind === "subtopic" ? "Delete chapter?" :
+          confirmState?.kind === "discardQuestion" ? "Discard unsaved question?" :
+          "Delete question?"
         }
         message={
           confirmState?.kind === "subject" ? `This permanently removes "${editCat?.title}" and every question in it. This can't be undone.` :
-          confirmState?.kind === "subtopic" ? "This permanently removes the chapter and all questions inside it. This can't be undone." :
+          confirmState?.kind === "subtopic" ? `This permanently removes the chapter${editCat && confirmState.subIdx != null ? ` and its ${editCat.subcats[confirmState.subIdx]?.questions.length ?? 0} question(s)` : ""}. This can't be undone.` :
+          confirmState?.kind === "discardQuestion" ? "You've made changes to this question that haven't been saved. Close anyway?" :
           "This permanently removes the question. This can't be undone."
         }
-        confirmLabel="Delete"
+        confirmLabel={confirmState?.kind === "discardQuestion" ? "Discard" : "Delete"}
+        danger={confirmState?.kind !== "discardQuestion"}
         busy={!!confirmState?.busy}
         onConfirm={runConfirm}
         onCancel={() => setConfirmState(null)}
+      />
+
+      <ConfirmDialog
+        open={!!pendingNav}
+        title="Discard unsaved changes?"
+        message="This subject's details have edits that haven't been saved yet. Leaving now will discard them."
+        confirmLabel="Discard & Continue"
+        danger={false}
+        onConfirm={discardMetaAndNav}
+        onCancel={cancelPendingNav}
       />
     </>
   );
 }
 
-function QuestionModal({ open, mode, chapterName, form, setForm, busy, onCancel, onSubmit, onDelete }){
+function QuestionModal({ open, mode, chapterName, form, setForm, formErrors = {}, busy, onCancel, onSubmit, onDelete }){
   if (!open) return null;
+  const onKeyDown = (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === "Enter") { e.preventDefault(); onSubmit(); }
+  };
   return (
     <div className="modal-overlay" onMouseDown={(e) => { if (e.target === e.currentTarget) onCancel(); }}>
-      <div className="modal-panel" role="dialog" aria-modal="true" aria-labelledby="qmodal-title">
+      <div className="modal-panel" role="dialog" aria-modal="true" aria-labelledby="qmodal-title" onKeyDown={onKeyDown}>
         <div className="modal-head">
           <div>
             <div className="mono modal-eyebrow">{chapterName}</div>
@@ -762,7 +951,7 @@ function QuestionModal({ open, mode, chapterName, form, setForm, busy, onCancel,
         <div className="modal-body">
           <div className="mf-field">
             <label className="mf-label">Question text</label>
-            <textarea className="mf-textarea" rows={3} placeholder="Question text" value={form.text} onChange={e => setForm({ ...form, text: e.target.value })} />
+            <textarea className={`mf-textarea ${formErrors.text ? "mf-error" : ""}`} rows={3} placeholder="Question text" value={form.text} onChange={e => setForm({ ...form, text: e.target.value })} />
           </div>
           <div className="mf-field">
             <label className="mf-label">Options — select the correct one</label>
@@ -772,15 +961,15 @@ function QuestionModal({ open, mode, chapterName, form, setForm, busy, onCancel,
                   <input type="radio" name="correct" checked={parseInt(form.correct) === i} onChange={() => setForm({ ...form, correct: i })} />
                   <span className="option-letter">{String.fromCharCode(65 + i)}</span>
                 </label>
-                <input className="mf-input" placeholder={`Option ${String.fromCharCode(65 + i)}`} value={form.options[i]} onChange={e => { const o = [...form.options]; o[i] = e.target.value; setForm({ ...form, options: o }); }} />
+                <input className={`mf-input ${formErrors[`opt${i}`] ? "mf-error" : ""}`} placeholder={`Option ${String.fromCharCode(65 + i)}`} value={form.options[i]} onChange={e => { const o = [...form.options]; o[i] = e.target.value; setForm({ ...form, options: o }); }} />
               </div>
             ))}
           </div>
           <div className="mf-field" style={{ marginBottom: 4 }}>
             <label className="mf-label">Explanation</label>
-            <textarea className="mf-textarea" rows={2} placeholder="Why this answer is correct" value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} />
+            <textarea className={`mf-textarea ${formErrors.expl ? "mf-error" : ""}`} rows={2} placeholder="Why this answer is correct" value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} />
           </div>
-          <div className="mf-hint">Saved permanently to the subject&apos;s data file · press Esc to cancel.</div>
+          <div className="mf-hint">Saved permanently to the subject&apos;s data file · Esc to cancel · Ctrl/Cmd+Enter to save.</div>
         </div>
 
         <div className="modal-foot">
