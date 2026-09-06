@@ -73,14 +73,14 @@ export default function SubjectPage(){
         <div className="dwg-card full-run-card">
           <span className="dwg-tag mono">DWG-00 · FULL CATEGORY RUN</span>
           <h2 className="serif">Full Category Run — All {totalQ} Questions</h2>
-          <div className="meta mono">{cat.subcats.length} subtopics{fullBest ? ` · Best: ${fullBest.correct}/${fullBest.total} (${fullBest.pct}%)`:""}{fullAttempts>0 ? ` · Attempted ${fullAttempts}×`:""}</div>
+          <div className="meta mono">{cat.subcats.length} subtopics{fullBest ? ` · Last: ${fullBest.correct}/${fullBest.total} (${fullBest.pct}%)`:""}{fullAttempts>0 ? ` · Attempted ${fullAttempts}×`:""}</div>
         </div>
       </Link>
       <Link href={`/quiz/${cat.id}?mode=${mode}&type=random`} style={{textDecoration:"none"}}>
         <div className="dwg-card full-run-card alt">
           <span className="dwg-tag mono">DWG-R0 · RANDOM DRAW</span>
           <h2 className="serif">Random 30 Questions</h2>
-          <div className="meta mono">Shuffled mix{randomBest ? ` · Best: ${randomBest.correct}/${randomBest.total} (${randomBest.pct}%)`:""}{randomAttempts>0 ? ` · Attempted ${randomAttempts}×`:""}</div>
+          <div className="meta mono">Shuffled mix{randomBest ? ` · Last: ${randomBest.correct}/${randomBest.total} (${randomBest.pct}%)`:""}{randomAttempts>0 ? ` · Attempted ${randomAttempts}×`:""}</div>
         </div>
       </Link>
       <div className="btn-row" style={{marginBottom:26}}>

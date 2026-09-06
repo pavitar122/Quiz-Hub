@@ -65,9 +65,9 @@ export async function POST(req){
   if(body.type==="complete"){
     if(!prog.bestScores[body.catId]) prog.bestScores[body.catId]={};
     const pct=Math.round((body.score/body.total)*100);
-    const prev=prog.bestScores[body.catId][body.kind];
     const obj={...prog.bestScores};
-    if(!prev || pct>prev.pct) obj[body.catId][body.kind]={correct:body.score,total:body.total,pct,date:Date.now()};
+    // always record the most recent test result for this chapter, not just the best-ever score
+    obj[body.catId][body.kind]={correct:body.score,total:body.total,pct,date:Date.now()};
     prog.bestScores=obj;
 
     const ac={...prog.attemptCounts};

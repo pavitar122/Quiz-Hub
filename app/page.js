@@ -135,7 +135,7 @@ export default function HomePage(){
                   <span className="mono-badge sm cat-icon">{monogram(cat.title)}</span>
                   <h2 className="serif">{cat.title}</h2>
                   <p>{cat.description}</p>
-                  <div className="cat-progress-row"><span>{cat.subcats.length} topics · {total} Qs</span><span>{best ? `Best: ${best.pct}%` : "Not started"}</span></div>
+                  <div className="cat-progress-row"><span>{cat.subcats.length} topics · {total} Qs</span><span>{best ? `Last: ${best.pct}%` : "Not started"}</span></div>
                   <div className="cat-progress-bar"><div className="cat-progress-fill" style={{width:pct+"%"}}></div></div>
                 </div>
               </Link>
