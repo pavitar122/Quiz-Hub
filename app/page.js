@@ -28,7 +28,9 @@ export default function HomePage(){
   },[]);
 
   useEffect(()=>{
-    fetch("/api/questions").then(r=>r.json()).then(d=>{
+    // Lightweight metadata only (titles/descriptions/counts) — the homepage
+    // never needs full question text, and this keeps the initial load fast.
+    fetch("/api/questions?meta=1").then(r=>r.json()).then(d=>{
       setCats(d.categories||[]);
       setGroups(d.groups||[]);
       setLoading(false);
@@ -54,7 +56,7 @@ export default function HomePage(){
   groupCats.forEach(cat=>counts[categoryStatus(cat,progress)]++);
 
   const activeMeta=groups.find(g=>g.id===activeApp) || groups[0];
-  const totalQGroup=groupCats.reduce((a,c)=>a+(c.subcats?.reduce((s,sc)=>s+sc.questions.length,0)||0),0);
+  const totalQGroup=groupCats.reduce((a,c)=>a+(c.subcats?.reduce((s,sc)=>s+sc.count,0)||0),0);
   const acc = overallAccuracy(progress);
   const weak = weakest(progress,cats.filter(c=>c.group===activeApp));
 
@@ -82,7 +84,7 @@ export default function HomePage(){
       <div className="app-switcher">
         {groups.map(g=>{
           const gCats=cats.filter(c=>c.group===g.id);
-          const gTotal=gCats.reduce((a,c)=>a+c.subcats.reduce((s,sc)=>s+sc.questions.length,0),0);
+          const gTotal=gCats.reduce((a,c)=>a+c.subcats.reduce((s,sc)=>s+sc.count,0),0);
           return (
             <button key={g.id} className={`app-tab ${activeApp===g.id?"active":""}`} onClick={()=>{setActiveApp(g.id);}}>
               <span className="mono-badge md app-tab-icon">{g.code}</span>
@@ -125,7 +127,7 @@ export default function HomePage(){
       <div className="category-grid">
         {filtered.length===0 ? <div className="empty-note">No subjects match your filters.</div> :
           filtered.map(cat=>{
-            const total=cat.subcats.reduce((a,s)=>a+s.questions.length,0);
+            const total=cat.subcats.reduce((a,s)=>a+s.count,0);
             const best=(progress?.bestScores?.[cat.id]||{})["FULL"];
             const attempted=cat.subcats.filter((_,i)=>progress?.bestScores?.[cat.id]?.[String(i)]).length;
             const pct=Math.round((attempted/cat.subcats.length)*100);

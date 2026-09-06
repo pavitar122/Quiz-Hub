@@ -10,10 +10,10 @@ export default function Navbar(){
   const [isDark,setIsDark]=useState(false);
   const [scrolled,setScrolled]=useState(false);
   useEffect(()=>{
-    const saved=localStorage.getItem("theme");
-    const dark = saved ? saved==="dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setIsDark(dark);
-    document.body.classList.toggle("dark",dark);
+    // The theme class is already applied to <html> synchronously by the
+    // inline script in layout.js (before first paint) to avoid a flash —
+    // this just syncs React state to match what's already on screen.
+    setIsDark(document.documentElement.classList.contains("dark"));
   },[]);
   useEffect(()=>{
     const onScroll=()=>setScrolled(window.scrollY>8);
@@ -24,13 +24,13 @@ export default function Navbar(){
   const toggle=()=>{
     const nd=!isDark;
     setIsDark(nd);
-    document.body.classList.toggle("dark",nd);
+    document.documentElement.classList.toggle("dark",nd);
     localStorage.setItem("theme", nd?"dark":"light");
   };
   return (
     <div className={`navbar ${scrolled?"scrolled":""}`}>
       <div className="nav-links">
-        <Link href="/" className="serif" style={{fontWeight:800, textDecoration:"none", color:"var(--ink-deep)", fontSize:18, letterSpacing:".01em", transition:"transform .2s var(--ease-soft)"}} onMouseEnter={e=>e.currentTarget.style.transform="translateY(-1px)"} onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}>QUIZ HUB</Link>
+        <Link href="/" className="serif" style={{fontWeight:800, textDecoration:"none", color:"var(--ink-deep)", fontSize:18, letterSpacing:".01em", transition:"transform .2s var(--ease-soft)", display:"inline-flex", alignItems:"center", gap:8}} onMouseEnter={e=>e.currentTarget.style.transform="translateY(-1px)"} onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}><img src="/icons/icon-96.png" alt="Quiz Hub logo" width={28} height={28} style={{borderRadius:7, display:"block"}} />QUIZ HUB</Link>
         <Link href="/" className={`nav-link mono ${pathname==="/"?"current":""}`}>Home</Link>
         {user?.role==="admin" && <Link href="/admin" className={`nav-link mono ${pathname==="/admin"?"current":""}`}>Admin</Link>}
       </div>

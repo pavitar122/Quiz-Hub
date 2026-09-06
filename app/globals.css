@@ -33,7 +33,7 @@
   --ease-soft:cubic-bezier(.4,0,.2,1);
   --ease-spring:cubic-bezier(.34,1.56,.64,1);
 }
-body.dark{
+:root.dark{
   --bg:#F1EDE1;
   --bg-deep:#E7E1D0;
   --grid-line:rgba(27,58,99,0.06);
@@ -554,6 +554,32 @@ h1,h2,h3,.display{font-family:"Big Shoulders Display",'Arial Narrow',sans-serif;
 
 /* ---------- Count-up number ---------- */
 .count-up{font-variant-numeric:tabular-nums;}
+
+/* ---------- Install / launch splash (shown only when opened as the installed PWA) ---------- */
+.splash-overlay{
+  position:fixed;inset:0;z-index:5000;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;
+  background:var(--bg-deep);
+  background-image:linear-gradient(var(--grid-line) 1px, transparent 1px),linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size:28px 28px;
+  animation:splashIn .28s var(--ease-soft) both;
+}
+.splash-overlay.leaving{animation:splashOut .34s var(--ease-soft) both;}
+@keyframes splashIn{from{opacity:0;}to{opacity:1;}}
+@keyframes splashOut{from{opacity:1;}to{opacity:0;}}
+.splash-mark{display:flex;flex-direction:column;align-items:center;gap:10px;animation:splashMarkIn .6s var(--ease-spring) both;}
+@keyframes splashMarkIn{0%{opacity:0;transform:scale(.72) translateY(10px);}60%{opacity:1;}100%{opacity:1;transform:scale(1) translateY(0);}}
+.splash-icon{border-radius:20px;box-shadow:0 18px 40px -14px rgba(3,12,24,0.55);animation:splashIconPulse 1.6s var(--ease-soft) .3s infinite;}
+@keyframes splashIconPulse{0%,100%{box-shadow:0 18px 40px -14px rgba(3,12,24,0.55);}50%{box-shadow:0 18px 52px -10px var(--accent-soft);}}
+.splash-word{font-size:26px;letter-spacing:.03em;color:var(--ink-deep);text-transform:uppercase;animation:fadeIn .4s var(--ease) .15s both;}
+.splash-sub{font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;animation:fadeIn .4s var(--ease) .25s both;}
+.splash-bar{position:absolute;bottom:56px;width:120px;height:3px;border-radius:99px;background:var(--card-border);overflow:hidden;}
+.splash-bar-fill{height:100%;width:40%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent2));animation:splashBar 1s var(--ease-soft) infinite;}
+@keyframes splashBar{0%{transform:translateX(-100%);}100%{transform:translateX(340%);}}
+@media (prefers-reduced-motion: reduce){
+  .splash-overlay,.splash-mark,.splash-word,.splash-sub{animation-duration:.001ms !important;}
+  .splash-icon,.splash-bar-fill{animation:none !important;}
+}
 
 /* ---------- Respect reduced-motion preferences — keep celebration alive but respect user ---------- */
 @media (prefers-reduced-motion: reduce){

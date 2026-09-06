@@ -86,7 +86,9 @@ export default function AdminPage(){
     return { ok: res.ok, json };
   };
 
-  const refreshCats = () => fetch("/api/questions", { cache: "no-store" }).then(r => r.json()).then(d => setCats(d.categories || []));
+  // Admin needs full question bodies (counts, edit totals, export), so it
+  // explicitly opts out of the lightweight ?meta=1 default used elsewhere.
+  const refreshCats = () => fetch("/api/questions?meta=0", { cache: "no-store" }).then(r => r.json()).then(d => setCats(d.categories || []));
 
   const loadCat = async (id) => {
     setSelectedId(id);
