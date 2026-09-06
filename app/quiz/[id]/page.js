@@ -220,10 +220,8 @@ export default function QuizPage(){
   };
 
   const retryWrong=()=>{
-    if(!cat || !quiz) return;
-    const wrongItems = quiz.mode==="test"
-      ? quiz.missed.map(m=>m.item)
-      : Object.values(quiz.wrongAnswers||{}).map(w=>w.item);
+    if(!cat || !quiz || quiz.mode!=="practice") return;
+    const wrongItems = Object.values(quiz.wrongAnswers||{}).map(w=>w.item);
     if(wrongItems.length===0) return;
     initQuiz(wrongItems, cat);
   };
@@ -260,7 +258,6 @@ export default function QuizPage(){
           {!isCelebrated && quiz.pct < 70 && <p className="verdict serif">Almost there — review your misses and try again. The next celebration is closer than you think.</p>}
           <div className="btn-row">
             <button className="btn" onClick={restart}>Retry Full Batch</button>
-            {quiz.missed.length>0 && <button className="btn secondary" onClick={retryWrong}>Retry Wrong Answers ({quiz.missed.length})</button>}
             <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back to Subject</Link>
             <Link href="/" className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Home</Link>
           </div>
