@@ -42,7 +42,7 @@ export async function POST(req){
     const errors=validate(data);
     if(errors.length) return NextResponse.json({error: errors.join("; ")},{status:400});
     let baseId=slugify(data.id || data.title);
-    const existing=loadAllCategories().map(c=>c.id);
+    const existing=(await loadAllCategories()).map(c=>c.id);
     let id=baseId, n=2;
     while(existing.includes(id)){ id=baseId+"-"+n; n++; }
     const subcats=data.subcats.map(sc=>({
@@ -56,7 +56,7 @@ export async function POST(req){
       }))
     }));
     const category={ id, title: data.title, description: data.description||"", group: group||"civil1", subcats };
-    saveCategory(category);
+    await saveCategory(category);
     return NextResponse.json({ok:true, category});
   } catch (e) {
     console.error("POST /api/admin/import failed:", e);

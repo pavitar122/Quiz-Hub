@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { verifyToken, COOKIE_NAME } from "@/lib/auth";
-import { getCategoryById, saveCategory, deleteCategoryFile } from "@/lib/questions";
-import fs from "fs";
-import path from "path";
+import { getCategoryById, saveCategory, deleteCategory } from "@/lib/questions";
 
 // Never let this route (or its responses) be cached — every save here needs
 // to be visible on the very next read.
@@ -28,7 +26,7 @@ export async function GET(req){
     const id=searchParams.get("id");
     const action=searchParams.get("action");
     if(action==="export" && id){
-      const cat=getCategoryById(id);
+      const cat=await getCategoryById(id);
       if(!cat) return NextResponse.json({error:"Subject not found"},{status:404});
       const toExport={
         id: cat.id,
@@ -61,25 +59,24 @@ export async function POST(req){
     const body=await req.json();
     if(body.action==="createSubject"){
       const id=slugify(body.title);
-      const { loadAllCategories } = await import("@/lib/questions");
-      const existing=loadAllCategories().find(c=>c.id===id);
+      const existing=await getCategoryById(id);
       if(existing) return NextResponse.json({error:"Subject id already exists"},{status:400});
       const cat={id, title:body.title, description: body.description||"", group: body.group||"civil1", subcats:[{name:"General", questions:[]}]};
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({category: cat});
     }
     if(body.action==="addSubtopic"){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
       const name=(body.name||"").trim();
       if(!name) return NextResponse.json({error:"Subtopic name is required"},{status:400});
       if(cat.subcats.some(s=>s.name.toLowerCase()===name.toLowerCase())) return NextResponse.json({error:"A subtopic with that name already exists"},{status:400});
       cat.subcats.push({name, questions:[]});
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true, subIdx: cat.subcats.length-1});
     }
     if(body.action==="addQuestion"){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
       const sIdx=parseInt(body.subIdx);
       if(!cat.subcats[sIdx]) return NextResponse.json({error:"Subtopic not found"},{status:400});
@@ -88,17 +85,17 @@ export async function POST(req){
       let num=nextNum;
       while(cat.subcats.some(s=>s.questions.some(q=>q.num===num))) num++;
       cat.subcats[sIdx].questions.push({num, text: body.data.text, options: body.data.options, correct: body.data.correct, expl: body.data.expl});
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true, num});
     }
     if(body.action==="editQuestion"){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
       const sIdx=parseInt(body.subIdx);
       const q=cat.subcats[sIdx]?.questions.find(q=>q.num===body.num);
       if(!q) return NextResponse.json({error:"Question not found"},{status:404});
       q.text=body.data.text; q.options=body.data.options; q.correct=body.data.correct; q.expl=body.data.expl;
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true});
     }
     return NextResponse.json({error:"Unknown action"},{status:400});
@@ -114,17 +111,17 @@ export async function PUT(req){
     // same as addQuestion edit path handled above, but keep for REST
     const body=await req.json();
     if(body.action==="editQuestion"){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
       const sIdx=parseInt(body.subIdx);
       const q=cat.subcats[sIdx]?.questions.find(q=>q.num===body.num);
       if(!q) return NextResponse.json({error:"Question not found"},{status:404});
       Object.assign(q, body.data);
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true});
     }
     if(body.action==="renameSubtopic"){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Category not found"},{status:404});
       const sIdx=parseInt(body.subIdx);
       if(!cat.subcats[sIdx]) return NextResponse.json({error:"Subtopic not found"},{status:400});
@@ -132,17 +129,17 @@ export async function PUT(req){
       if(!name) return NextResponse.json({error:"Subtopic name is required"},{status:400});
       if(cat.subcats.some((s,i)=>i!==sIdx && s.name.toLowerCase()===name.toLowerCase())) return NextResponse.json({error:"A subtopic with that name already exists"},{status:400});
       cat.subcats[sIdx].name=name;
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true});
     }
     // update subject meta
     if(body.action==="updateSubject"){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Not found"},{status:404});
       if(body.title) cat.title=body.title;
       if(body.description!==undefined) cat.description=body.description;
       if(body.group) cat.group=body.group;
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true});
     }
     return NextResponse.json({error:"Unknown action"},{status:400});
@@ -158,23 +155,22 @@ export async function DELETE(req){
     const { searchParams } = new URL(req.url);
     const id=searchParams.get("id");
     if(id){
-      const ok=deleteCategoryFile(id);
-      if(!ok) return NextResponse.json({error:"Not found"},{status:404});
+      await deleteCategory(id);
       return NextResponse.json({ok:true});
     }
     const body=await req.json().catch(()=>null);
     if(body && body.catId && body.subIdx!==undefined && body.action==="deleteSubtopic"){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Not found"},{status:404});
       const sIdx=parseInt(body.subIdx);
       if(!cat.subcats[sIdx]) return NextResponse.json({error:"Subtopic not found"},{status:400});
       if(cat.subcats.length<=1) return NextResponse.json({error:"A subject needs at least one subtopic."},{status:400});
       cat.subcats.splice(sIdx,1);
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true});
     }
     if(body && body.catId && body.subIdx!==undefined && body.num!==undefined){
-      const cat=getCategoryById(body.catId);
+      const cat=await getCategoryById(body.catId);
       if(!cat) return NextResponse.json({error:"Not found"},{status:404});
       const sIdx=parseInt(body.subIdx);
       const arr=cat.subcats[sIdx]?.questions;
@@ -182,7 +178,7 @@ export async function DELETE(req){
       const idx=arr.findIndex(q=>q.num===body.num);
       if(idx===-1) return NextResponse.json({error:"Question not found"},{status:404});
       arr.splice(idx,1);
-      saveCategory(cat);
+      await saveCategory(cat);
       return NextResponse.json({ok:true});
     }
     return NextResponse.json({error:"Missing id"},{status:400});

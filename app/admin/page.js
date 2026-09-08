@@ -138,9 +138,9 @@ export default function AdminPage(){
     return { ok: res.ok, json };
   };
 
-  // Admin needs full question bodies (counts, edit totals, export), so it
-  // explicitly opts out of the lightweight ?meta=1 default used elsewhere.
-  const refreshCats = () => fetch("/api/questions?meta=0", { cache: "no-store" })
+  // The sidebar only needs metadata; full question bodies load when a subject
+  // is selected.
+  const refreshCats = () => fetch("/api/questions?meta=1", { cache: "no-store" })
     .then(r => r.json())
     .then(d => { setCats(d.categories || []); setCatsLoaded(true); });
 
@@ -277,22 +277,33 @@ export default function AdminPage(){
     }
     setFormErrors({});
     setBusy(true);
-    const isEdit = qModal.mode === "edit";
-    const body = {
-      catId: editCat.id,
-      subIdx: qModal.subIdx,
-      num: qModal.num,
-      data: payload,
-      action: isEdit ? "editQuestion" : "addQuestion",
-    };
-    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
-      method: isEdit ? "PUT" : "POST",
+    
+    // MongoDB Migration: Instead of sending an "action" to a generic endpoint,
+    // we now handle the category document as a whole.
+    const updatedCat = { ...editCat };
+    const subcat = updatedCat.subcats[qModal.subIdx];
+
+    if (qModal.mode === "edit") {
+      const questionIndex = subcat.questions.findIndex(q => q.num === qModal.num);
+      if (questionIndex === -1) {
+        setBusy(false);
+        flash("err", "Question no longer exists. Refresh the subject and try again.");
+        return;
+      }
+      subcat.questions[questionIndex] = { ...payload, num: qModal.num };
+    } else {
+      subcat.questions.push({ ...payload, num: subcat.questions.length + 1 });
+    }
+
+    const { ok, json: j } = await apiRequest("/api/questions", {
+      method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
+      body: JSON.stringify(updatedCat),
     });
+    
     setBusy(false);
     if (!ok) { if (j) flash("err", j.error || "Something went wrong."); return; }
-    flash("ok", isEdit ? "Question updated — saved to the data file." : "Question added — saved to the data file.");
+    flash("ok", qModal.mode === "edit" ? "Question updated — saved to MongoDB." : "Question added — saved to MongoDB.");
     closeModal();
     await loadCatQuiet(editCat.id);
     refreshCats();
@@ -316,10 +327,23 @@ export default function AdminPage(){
     }
     setConfirmState(s => ({ ...s, busy: true }));
     if (confirmState.kind === "question") {
-      const { ok, json: j } = await apiRequest("/api/admin/subjects", {
-        method: "DELETE",
+      // MongoDB Migration: Update the category document by removing the question
+      const updatedCat = { ...editCat };
+      const subcat = updatedCat.subcats[confirmState.subIdx];
+      const questionIndex = subcat.questions.findIndex(q => q.num === confirmState.num);
+      if (questionIndex === -1) {
+        setConfirmState(null);
+        flash("err", "Question no longer exists. Refresh the subject and try again.");
+        return;
+      }
+      subcat.questions.splice(questionIndex, 1);
+      // Re-index remaining questions
+      subcat.questions.forEach((q, i) => { q.num = i + 1; });
+
+      const { ok, json: j } = await apiRequest("/api/questions", {
+        method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ catId: editCat.id, subIdx: confirmState.subIdx, num: confirmState.num }),
+        body: JSON.stringify(updatedCat),
       });
       if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
       flash("ok", "Question deleted.");
@@ -327,10 +351,14 @@ export default function AdminPage(){
       await loadCatQuiet(editCat.id);
       refreshCats();
     } else if (confirmState.kind === "subtopic") {
-      const { ok, json: j } = await apiRequest("/api/admin/subjects", {
-        method: "DELETE",
+      // MongoDB Migration: Remove the subcategory from the document
+      const updatedCat = { ...editCat };
+      updatedCat.subcats.splice(confirmState.subIdx, 1);
+
+      const { ok, json: j } = await apiRequest("/api/questions", {
+        method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ catId: editCat.id, subIdx: confirmState.subIdx, action: "deleteSubtopic" }),
+        body: JSON.stringify(updatedCat),
       });
       if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
       flash("ok", "Chapter deleted.");
@@ -339,7 +367,7 @@ export default function AdminPage(){
       await loadCatQuiet(editCat.id);
       refreshCats();
     } else if (confirmState.kind === "subject") {
-      const { ok, json: j } = await apiRequest(`/api/admin/subjects?id=${editCat.id}`, { method: "DELETE" });
+      const { ok, json: j } = await apiRequest(`/api/questions?id=${editCat.id}`, { method: "DELETE" });
       if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
       flash("ok", "Subject deleted.");
       setSelectedId(null);
@@ -352,10 +380,11 @@ export default function AdminPage(){
   const saveSubjectMeta = async () => {
     if (!metaForm.title.trim()) { flash("err", "Subject title can't be empty."); return; }
     setBusy(true);
-    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
+    const updatedCat = { ...editCat, title: metaForm.title, description: metaForm.description, group: metaForm.group };
+    const { ok, json: j } = await apiRequest("/api/questions", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "updateSubject", catId: editCat.id, title: metaForm.title, description: metaForm.description, group: metaForm.group }),
+      body: JSON.stringify(updatedCat),
     });
     setBusy(false);
     if (!ok) { if (j) flash("err", j.error || "Update failed."); return; }
@@ -377,10 +406,17 @@ export default function AdminPage(){
   const handleCreateSubject = async () => {
     if (!newSubject.title.trim()) { flash("err", "Give the new subject a title."); return; }
     setBusy(true);
-    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
+    const payload = {
+      id: newSubject.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, ''),
+      title: newSubject.title,
+      description: newSubject.description,
+      group: newSubject.group,
+      subcats: []
+    };
+    const { ok, json: j } = await apiRequest("/api/questions", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "createSubject", title: newSubject.title, description: newSubject.description, group: newSubject.group }),
+      body: JSON.stringify(payload),
     });
     setBusy(false);
     if (!ok) { if (j) flash("err", j.error || "Could not create subject."); return; }
@@ -394,10 +430,12 @@ export default function AdminPage(){
   const handleAddChapter = async () => {
     if (!newChapterName.trim()) { flash("err", "Give the chapter a name."); return; }
     setBusy(true);
-    const { ok, json: j } = await apiRequest("/api/admin/subjects", {
-      method: "POST",
+    const updatedCat = { ...editCat };
+    updatedCat.subcats.push({ name: newChapterName, questions: [] });
+    const { ok, json: j } = await apiRequest("/api/questions", {
+      method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "addSubtopic", catId: editCat.id, name: newChapterName }),
+      body: JSON.stringify(updatedCat),
     });
     setBusy(false);
     if (!ok) { if (j) flash("err", j.error || "Could not add chapter."); return; }
@@ -405,7 +443,7 @@ export default function AdminPage(){
     setNewChapterName("");
     setNewChapterOpen(false);
     await loadCatQuiet(editCat.id);
-    setActiveChapterIdx(j.subIdx);
+    setActiveChapterIdx(updatedCat.subcats.length - 1);
     setPage(1);
     refreshCats();
   };
@@ -488,7 +526,7 @@ export default function AdminPage(){
     return groups;
   }, [filteredCats]);
 
-  const totalQuestionsOf = (cat) => cat.subcats.reduce((a, s) => a + s.questions.length, 0);
+  const totalQuestionsOf = (cat) => cat.subcats.reduce((a, s) => a + (s.questions?.length ?? s.count ?? 0), 0);
 
   const overview = useMemo(() => {
     const totalSubjects = cats.length;
@@ -531,7 +569,7 @@ export default function AdminPage(){
       <div className="app-header">
         <span className="dwg-tag mono">ADMIN PANEL</span>
         <h1 className="serif">Manage Questions</h1>
-        <p>Create subjects, organize chapters, and add, edit or remove questions. Every change writes straight to the subject&apos;s data file on disk.</p>
+        <p>Create subjects, organize chapters, and add, edit or remove questions. Every change is saved to MongoDB.</p>
       </div>
 
       <div className="admin-overview">
@@ -969,7 +1007,7 @@ function QuestionModal({ open, mode, chapterName, form, setForm, formErrors = {}
             <label className="mf-label">Explanation</label>
             <textarea className={`mf-textarea ${formErrors.expl ? "mf-error" : ""}`} rows={2} placeholder="Why this answer is correct" value={form.expl} onChange={e => setForm({ ...form, expl: e.target.value })} />
           </div>
-          <div className="mf-hint">Saved permanently to the subject&apos;s data file · Esc to cancel · Ctrl/Cmd+Enter to save.</div>
+          <div className="mf-hint">Saved permanently to MongoDB · Esc to cancel · Ctrl/Cmd+Enter to save.</div>
         </div>
 
         <div className="modal-foot">

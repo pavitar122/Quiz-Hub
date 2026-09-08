@@ -1,6 +1,6 @@
 # Civil Engineering Quiz Hub — Next.js Edition
 
-Converted from the original static HTML quiz app to a full-stack **Next.js 14 (App Router)** application with **MongoDB** backend, authentication, cloud progress sync, and an Admin panel. Questions are now stored as **JSON files in the app folder** for fast loading; user data lives in MongoDB.
+Converted from the original static HTML quiz app to a full-stack **Next.js 14 (App Router)** application with **MongoDB** backend, authentication, cloud progress sync, and an Admin panel. Questions, users, and progress are all stored in MongoDB (see "How Questions Are Stored" below — this replaced the earlier JSON-file-on-disk approach).
 
 UI is kept clean, simple and faithful to the original cyanotype/diazo blueprint theme, with registration marks, title block, and card styling.
 
@@ -8,7 +8,7 @@ UI is kept clean, simple and faithful to the original cyanotype/diazo blueprint 
 - Next.js 14 + React 18 (App Router, client + server components)
 - MongoDB + Mongoose
 - JWT (httpOnly cookie) + bcryptjs for auth
-- `data/*.json` for questions (no DB for questions — fast fs read)
+- MongoDB `Category` collection for questions (see `lib/questions.js`) — an earlier fs/JSON approach was fully replaced by this
 - CSS preserved from `css/styles.css` → `app/globals.css`
 
 ## Folder Structure
@@ -26,17 +26,13 @@ quiz-app/
 │   ├── admin/page.js           Admin panel — CRUD + mass import
 │   └── api/
 │       ├── auth/signup, login, logout, me
-│       ├── questions           GET categories or single category (from JSON)
+│       ├── questions           GET categories or single category (from MongoDB)
 │       ├── progress            GET/POST cloud progress (bookmarks, missCounts, bestScores, stats)
 │       └── admin/subjects, admin/import
-├── data/
-│   ├── civil-engineering-1/*.json   ← JSON question banks (was .js → converted)
-│   ├── civil-engineering-2/*.json
-│   └── non-technical/*.json
 ├── lib/
 │   ├── db.js                   Mongoose connect (cached)
 │   ├── auth.js                 JWT sign/verify + cookie helpers
-│   └── questions.js            loadAllCategories(), getCategoryById(), saveCategory(), deleteCategoryFile()
+│   └── questions.js            loadAllCategories(), getCategoryById(), saveCategory(), deleteCategory() — all backed by the Mongo `Category` model
 ├── models/
 │   ├── User.js                 {name,email,passwordHash,role}
 │   └── Progress.js             {userId, bestScores, bookmarks, missCounts, mastery, stats, hiddenCategories}
@@ -67,8 +63,8 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 ADMIN_EMAILS=admin@example.com,another@admin.com
 ```
 
-- `ADMIN_EMAILS`: comma-separated list. First signup with an email listed here gets `role=admin`. Others get `role=user`.
-- To promote an existing user: `db.users.updateOne({email:"you@example.com"},{$set:{role:"admin"}})` in Mongo shell.
+- `ADMIN_EMAILS`: comma-separated list. Signup with a listed email gets `role=admin` immediately. An **existing** account with a listed email is also auto-promoted the next time it logs in (see `app/api/auth/login/route.js`) — so updating `ADMIN_EMAILS` and logging back in is enough; no manual DB edit required.
+- To promote an existing user manually instead: `db.users.updateOne({email:"you@example.com"},{$set:{role:"admin"}})` in Mongo shell.
 
 ### 3. Dev
 ```bash
@@ -82,16 +78,13 @@ npm run build
 npm start
 ```
 
-## How Questions Are Stored (Fast JSON)
+## How Questions Are Stored (MongoDB)
 
-Questions are **NOT in MongoDB**. They live as JSON files under `data/` inside the project folder, read via `fs` on the server (`lib/questions.js:65`). This is fast, requires no DB query for question delivery, and makes mass edits / imports trivial.
+Questions live in the MongoDB `categories` collection (`models/Category.js`), read and written via `lib/questions.js` (`loadAllCategories`, `getCategoryById`, `saveCategory`, `deleteCategory`). There is **no `data/` folder and no filesystem storage** in the current codebase — that was an earlier design described in older docs, since replaced. This matters for deployment too: because there's no filesystem write involved, admin CRUD works fine on read-only/serverless filesystems (e.g. Vercel).
 
-**Groups:**
-- `civil1` → `data/civil-engineering-1/`
-- `civil2` → `data/civil-engineering-2/`
-- `nontechnical` → `data/non-technical/`
+A brand-new database has an empty `categories` collection, so the homepage will correctly show **zero subjects** until an admin adds at least one — either via **Admin → New Subject** or **Admin → Mass Import** (see the JSON structure below).
 
-Each subject JSON is self-contained. Example file `data/civil-engineering-1/construction-planning-management.json` is read on every `GET /api/questions`.
+**Groups** (`Category.group` field): `civil1`, `civil2`, `nontechnical` — see `GROUP_META` in `lib/questions.js`.
 
 ## JSON Structure for Questions — Use This to Convert / Import
 
@@ -162,7 +155,7 @@ Every subject file **must** follow this exact shape. Use it to convert PDFs or o
 ### Import Tips
 - To convert legacy `window.QUIZ_CATEGORY_X = {...};` files: strip the `window.` wrapper and keep the object literal; or export as plain JSON above.
 - You can import a file containing `window.QUIZ_CATEGORY_... = {...}` — the importer strips the wrapper automatically.
-- After mass import, the subject appears instantly on Home (no restart). Questions are served from JSON on disk; admin CRUD writes back to the JSON file via `saveCategory()` in `lib/questions.js:100`.
+- After mass import, the subject appears instantly on Home (no restart) — it's written straight to MongoDB via `saveCategory()` in `lib/questions.js`, and `/api/questions` is marked `force-dynamic` so it's never served stale.
 
 ## Auth & Progress (MongoDB)
 

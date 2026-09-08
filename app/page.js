@@ -30,7 +30,7 @@ export default function HomePage(){
   useEffect(()=>{
     // Lightweight metadata only (titles/descriptions/counts) — the homepage
     // never needs full question text, and this keeps the initial load fast.
-    fetch("/api/questions?meta=1").then(r=>r.json()).then(d=>{
+    fetch("/api/questions?meta=1",{cache:"no-store"}).then(r=>r.json()).then(d=>{
       setCats(d.categories||[]);
       setGroups(d.groups||[]);
       setLoading(false);

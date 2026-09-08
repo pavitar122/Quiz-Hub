@@ -14,7 +14,7 @@ export default function SubjectPage(){
   const { user } = useAuth();
   const searchRef = useRef(null);
   useEffect(()=>{
-    fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>setCat(d.category));
+    fetch(`/api/questions?id=${id}`,{cache:"no-store"}).then(r=>r.json()).then(d=>setCat(d.category));
   },[id]);
   useEffect(()=>{
     if(user) fetch("/api/progress").then(r=>r.json()).then(d=>setProgress(d.progress));
