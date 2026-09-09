@@ -10,6 +10,19 @@ const GROUP_LABELS = { civil1: "Civil 1", civil2: "Civil 2", nontechnical: "Non-
 const GROUP_ORDER = ["civil1", "civil2", "nontechnical"];
 const PAGE_SIZE = 12;
 
+function timeAgo(dateStr) {
+  if (!dateStr) return "recently";
+  const diffMs = Date.now() - new Date(dateStr).getTime();
+  const mins = Math.floor(diffMs / 60000);
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs}h ago`;
+  const days = Math.floor(hrs / 24);
+  if (days < 30) return `${days}d ago`;
+  return new Date(dateStr).toLocaleDateString();
+}
+
 export default function AdminPage(){
   const { user, loading } = useAuth();
   const router = useRouter();
@@ -21,6 +34,16 @@ export default function AdminPage(){
   const [sidebarSearch, setSidebarSearch] = useState("");
   const [collapsedGroups, setCollapsedGroups] = useState({});
   const [activeTab, setActiveTab] = useState("content"); // 'content' | 'settings'
+
+  // Top-level admin navigation: an at-a-glance Dashboard, separate from the
+  // Subjects workspace (sidebar + editor) below it.
+  const [view, setView] = useState("dashboard"); // 'dashboard' | 'subjects'
+  const [dashStats, setDashStats] = useState(null); // { totalUsers, recentSubjects } | null while loading
+  const [sidebarOpen, setSidebarOpen] = useState(false); // mobile/tablet drawer
+
+  // Question list: sort + bulk selection
+  const [sortBy, setSortBy] = useState("num"); // 'num' | 'az' | 'za'
+  const [selectedQs, setSelectedQs] = useState(() => new Set()); // keys "subIdx-num"
 
   // Guards a pending navigation (tab switch / subject switch / initial
   // restore) that would discard unsaved Settings-tab edits.
@@ -64,6 +87,7 @@ export default function AdminPage(){
         setCollapsedGroups(savedGroups);
       } catch {}
       refreshCats();
+      refreshDashStats();
     }
   }, [user, loading, router]);
 
@@ -86,6 +110,20 @@ export default function AdminPage(){
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [qModal, form, newSubjectOpen, newChapterOpen, msg]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Lock background scroll while the mobile/tablet subjects drawer is open,
+  // and let Escape close it like the other overlays.
+  useEffect(() => {
+    if (!sidebarOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e) => { if (e.key === "Escape") setSidebarOpen(false); };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [sidebarOpen]);
 
   // Warn before an accidental tab close/refresh drops unsaved Settings edits.
   useEffect(() => {
@@ -144,15 +182,23 @@ export default function AdminPage(){
     .then(r => r.json())
     .then(d => { setCats(d.categories || []); setCatsLoaded(true); });
 
+  const refreshDashStats = () => fetch("/api/admin/stats", { cache: "no-store" })
+    .then(r => r.json())
+    .then(d => { if (!d.error) setDashStats(d); })
+    .catch(() => {});
+
   const loadCat = async (id) => {
     setSelectedId(id);
     setActiveTab("content");
     setActiveChapterIdx(null);
     setQSearch("");
+    setSortBy("num");
+    setSelectedQs(new Set());
     setPage(1);
     setRenaming(null);
     setQModal(null);
     setNewChapterOpen(false);
+    setSidebarOpen(false);
     localStorage.setItem("qh-admin-last-subject", id);
     const d = await fetch(`/api/questions?id=${id}`, { cache: "no-store" }).then(r => r.json());
     setEditCat(d.category);
@@ -307,6 +353,7 @@ export default function AdminPage(){
     closeModal();
     await loadCatQuiet(editCat.id);
     refreshCats();
+    refreshDashStats();
   };
 
   const deleteFromModal = () => {
@@ -326,7 +373,34 @@ export default function AdminPage(){
       return;
     }
     setConfirmState(s => ({ ...s, busy: true }));
-    if (confirmState.kind === "question") {
+    if (confirmState.kind === "bulk") {
+      const updatedCat = { ...editCat };
+      // Group the selected keys by chapter so each chapter's questions are
+      // spliced out together, then every chapter is re-numbered.
+      const bySubIdx = new Map();
+      selectedQs.forEach(k => {
+        const [subIdx, num] = k.split("-").map(Number);
+        if (!bySubIdx.has(subIdx)) bySubIdx.set(subIdx, new Set());
+        bySubIdx.get(subIdx).add(num);
+      });
+      bySubIdx.forEach((nums, subIdx) => {
+        const subcat = updatedCat.subcats[subIdx];
+        if (!subcat) return;
+        subcat.questions = subcat.questions.filter(q => !nums.has(q.num));
+        subcat.questions.forEach((q, i) => { q.num = i + 1; });
+      });
+      const { ok, json: j } = await apiRequest("/api/questions", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedCat),
+      });
+      if (!ok) { if (j) flash("err", j.error || "Bulk delete failed."); setConfirmState(null); return; }
+      flash("ok", `Deleted ${selectedQs.size} question${selectedQs.size === 1 ? "" : "s"}.`);
+      clearSelection();
+      await loadCatQuiet(editCat.id);
+      refreshCats();
+      refreshDashStats();
+    } else if (confirmState.kind === "question") {
       // MongoDB Migration: Update the category document by removing the question
       const updatedCat = { ...editCat };
       const subcat = updatedCat.subcats[confirmState.subIdx];
@@ -350,6 +424,7 @@ export default function AdminPage(){
       if (confirmState.fromModal) closeModal();
       await loadCatQuiet(editCat.id);
       refreshCats();
+      refreshDashStats();
     } else if (confirmState.kind === "subtopic") {
       // MongoDB Migration: Remove the subcategory from the document
       const updatedCat = { ...editCat };
@@ -366,6 +441,7 @@ export default function AdminPage(){
       setPage(1);
       await loadCatQuiet(editCat.id);
       refreshCats();
+      refreshDashStats();
     } else if (confirmState.kind === "subject") {
       const { ok, json: j } = await apiRequest(`/api/questions?id=${editCat.id}`, { method: "DELETE" });
       if (!ok) { if (j) flash("err", j.error || "Delete failed."); setConfirmState(null); return; }
@@ -373,6 +449,7 @@ export default function AdminPage(){
       setSelectedId(null);
       setEditCat(null);
       refreshCats();
+      refreshDashStats();
     }
     setConfirmState(null);
   };
@@ -391,6 +468,7 @@ export default function AdminPage(){
     flash("ok", "Subject details saved.");
     loadCat(editCat.id);
     refreshCats();
+    refreshDashStats();
   };
 
   // Discards the in-progress Settings edit and completes whatever tab/subject
@@ -424,6 +502,7 @@ export default function AdminPage(){
     setNewSubject({ title: "", description: "", group: "civil1" });
     setNewSubjectOpen(false);
     await refreshCats();
+    refreshDashStats();
     loadCat(j.category.id);
   };
 
@@ -446,6 +525,7 @@ export default function AdminPage(){
     setActiveChapterIdx(updatedCat.subcats.length - 1);
     setPage(1);
     refreshCats();
+    refreshDashStats();
   };
 
   const startRename = (subIdx, currentName) => setRenaming({ subIdx, value: currentName });
@@ -464,6 +544,7 @@ export default function AdminPage(){
     setRenaming(null);
     await loadCatQuiet(editCat.id);
     refreshCats();
+    refreshDashStats();
   };
 
   // Shared by the live preview (on file select) and the actual import, so
@@ -511,6 +592,7 @@ export default function AdminPage(){
     setImportFile(null);
     setImportPreview(null);
     refreshCats();
+    refreshDashStats();
   };
 
   const filteredCats = useMemo(() => {
@@ -547,10 +629,12 @@ export default function AdminPage(){
     });
     const s = qSearch.trim().toLowerCase();
     if (s) items = items.filter(it => it.text.toLowerCase().includes(s) || String(it.num).includes(s));
+    if (sortBy === "az") items = [...items].sort((a, b) => a.text.localeCompare(b.text));
+    else if (sortBy === "za") items = [...items].sort((a, b) => b.text.localeCompare(a.text));
     return items;
-  }, [editCat, activeChapterIdx, qSearch]);
+  }, [editCat, activeChapterIdx, qSearch, sortBy]);
 
-  useEffect(() => { setPage(1); }, [activeChapterIdx, qSearch, selectedId]);
+  useEffect(() => { setPage(1); setSelectedQs(new Set()); }, [activeChapterIdx, qSearch, selectedId, sortBy]);
 
   const totalPages = Math.max(1, Math.ceil(flatQuestions.length / PAGE_SIZE));
   const pageItems = useMemo(() => {
@@ -558,25 +642,56 @@ export default function AdminPage(){
     return flatQuestions.slice((p - 1) * PAGE_SIZE, p * PAGE_SIZE);
   }, [flatQuestions, page, totalPages]);
 
+  // ---------- Bulk selection (Content tab) ----------
+  const qKey = (q) => `${q.subIdx}-${q.num}`;
+  const toggleSelectQ = (q) => setSelectedQs(s => {
+    const next = new Set(s);
+    const k = qKey(q);
+    next.has(k) ? next.delete(k) : next.add(k);
+    return next;
+  });
+  const pageAllSelected = pageItems.length > 0 && pageItems.every(q => selectedQs.has(qKey(q)));
+  const toggleSelectPage = () => setSelectedQs(s => {
+    const next = new Set(s);
+    if (pageAllSelected) pageItems.forEach(q => next.delete(qKey(q)));
+    else pageItems.forEach(q => next.add(qKey(q)));
+    return next;
+  });
+  const clearSelection = () => setSelectedQs(new Set());
+  const requestBulkDelete = () => { if (selectedQs.size) setConfirmState({ kind: "bulk" }); };
+
   if (loading) return <div className="loading-row"><span className="spinner"></span> Loading…</div>;
   if (!user || user.role !== "admin") return <div className="empty-note">Not authorized.</div>;
 
   const activeChapter = activeChapterIdx !== null && editCat ? editCat.subcats[activeChapterIdx] : null;
   const modalChapterName = qModal && editCat ? editCat.subcats[qModal.subIdx]?.name : "";
 
+  const goToSubjects = (id) => { setView("subjects"); if (id) guardedNav(() => loadCat(id)); };
+
   return (
     <>
       <div className="app-header">
         <span className="dwg-tag mono">ADMIN PANEL</span>
-        <h1 className="serif">Manage Questions</h1>
-        <p>Create subjects, organize chapters, and add, edit or remove questions. Every change is saved to MongoDB.</p>
+        <h1 className="serif">{view === "dashboard" ? "Dashboard" : "Manage Questions"}</h1>
+        <p>{view === "dashboard"
+          ? "An at-a-glance view of the question bank. Switch to Subjects to add, edit, or remove content."
+          : "Create subjects, organize chapters, and add, edit or remove questions. Every change is saved to MongoDB."}</p>
+      </div>
+
+      <div className="admin-toplevel-tabs" role="tablist" aria-label="Admin sections">
+        <button role="tab" aria-selected={view === "dashboard"} className={view === "dashboard" ? "active" : ""} onClick={() => setView("dashboard")}>Dashboard</button>
+        <button role="tab" aria-selected={view === "subjects"} className={view === "subjects" ? "active" : ""} onClick={() => setView("subjects")}>Subjects</button>
       </div>
 
       <div className="admin-overview">
         <div className="stat-chip"><div className="num serif">{overview.totalSubjects}</div><div className="lab mono">Subjects</div></div>
         <div className="stat-chip"><div className="num serif">{overview.totalSubtopics}</div><div className="lab mono">Chapters</div></div>
         <div className="stat-chip"><div className="num serif">{overview.totalQuestions}</div><div className="lab mono">Questions</div></div>
-        <div className="stat-chip"><div className="num serif">{overview.totalGroups}</div><div className="lab mono">Apps Covered</div></div>
+        {dashStats ? (
+          <div className="stat-chip"><div className="num serif">{dashStats.totalUsers}</div><div className="lab mono">Users</div></div>
+        ) : (
+          <div className="stat-chip"><div className="num serif">{overview.totalGroups}</div><div className="lab mono">Apps Covered</div></div>
+        )}
       </div>
 
       {msg && (
@@ -586,12 +701,48 @@ export default function AdminPage(){
         </div>
       )}
 
+      {view === "dashboard" && (
+        <div className="dwg-card">
+          <div className="admin-panel-sub" style={{ marginBottom: 14 }}>RECENTLY UPDATED SUBJECTS</div>
+          {!dashStats ? (
+            <div style={{ display: "grid", gap: 8 }}>
+              {[0, 1, 2].map(i => <div key={i} className="skeleton skeleton-line w-100" style={{ height: 46, borderRadius: 10 }} />)}
+            </div>
+          ) : dashStats.recentSubjects?.length ? (
+            <div className="recent-list">
+              {dashStats.recentSubjects.map(s => (
+                <button key={s.id} className="recent-item" onClick={() => goToSubjects(s.id)}>
+                  <span className="mono-badge sm">{monogram(s.title)}</span>
+                  <span className="sli-text">
+                    <span className="sli-title">{s.title}</span>
+                    <span className="sli-meta">{GROUP_LABELS[s.group] || s.group} · updated {timeAgo(s.updatedAt)}</span>
+                  </span>
+                  <span className="recent-arrow">→</span>
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div className="empty-note">No subjects yet — head to the Subjects tab to create one.</div>
+          )}
+          <div className="admin-divider" />
+          <div className="btn-row" style={{ marginTop: 0 }}>
+            <button className="btn small" onClick={() => goToSubjects()}>Manage Subjects</button>
+            <button className="btn small secondary" onClick={() => { setView("subjects"); setNewSubjectOpen(true); }}>+ New Subject</button>
+          </div>
+        </div>
+      )}
+
+      {view === "subjects" && (
       <div className="admin-shell">
+        {sidebarOpen && <div className="sidebar-backdrop" onClick={() => setSidebarOpen(false)} />}
         {/* Sidebar */}
-        <aside className="admin-sidebar">
+        <aside className={`admin-sidebar ${sidebarOpen ? "open" : ""}`}>
           <div className="admin-sidebar-head">
             <h3>Subjects ({cats.length})</h3>
-            <button className="btn small" onClick={() => setNewSubjectOpen(o => !o)}>{newSubjectOpen ? "Cancel" : "+ New"}</button>
+            <div className="btn-row" style={{ marginTop: 0 }}>
+              <button className="btn small" onClick={() => setNewSubjectOpen(o => !o)}>{newSubjectOpen ? "Cancel" : "+ New"}</button>
+              <button className="sidebar-close" onClick={() => setSidebarOpen(false)} aria-label="Close subjects panel">×</button>
+            </div>
           </div>
 
           {newSubjectOpen && (
@@ -699,6 +850,7 @@ export default function AdminPage(){
 
         {/* Main */}
         <div className="admin-main">
+          <button className="btn small secondary sidebar-toggle" onClick={() => setSidebarOpen(true)}>☰ Subjects</button>
           {!editCat && (
             <div className="dwg-card">
               <div className="empty-note">Select a subject from the list, or create a new one, to start managing its questions.</div>
@@ -791,8 +943,23 @@ export default function AdminPage(){
                       value={qSearch}
                       onChange={e => setQSearch(e.target.value)}
                     />
+                    <select className="mf-select sort-select" value={sortBy} onChange={e => setSortBy(e.target.value)} aria-label="Sort questions">
+                      <option value="num">Sort: # (default)</option>
+                      <option value="az">Sort: A–Z</option>
+                      <option value="za">Sort: Z–A</option>
+                    </select>
                     <button className="btn small" onClick={openAddModal}>+ Add Question</button>
                   </div>
+
+                  {selectedQs.size > 0 && (
+                    <div className="bulk-bar">
+                      <span className="mono bulk-bar-label">{selectedQs.size} selected</span>
+                      <div className="btn-row" style={{ marginTop: 0 }}>
+                        <button className="btn small ghost" onClick={clearSelection}>Clear</button>
+                        <button className="btn small danger" onClick={requestBulkDelete}>Delete Selected</button>
+                      </div>
+                    </div>
+                  )}
 
                   {editCat.subcats.length === 0 ? (
                     <div className="empty-note">No chapters yet — add one above to start adding questions.</div>
@@ -804,6 +971,9 @@ export default function AdminPage(){
                         <table className="admin-table qtable">
                           <thead>
                             <tr>
+                              <th style={{ width: 36 }}>
+                                <input type="checkbox" className="qtable-checkbox" checked={pageAllSelected} onChange={toggleSelectPage} aria-label="Select all on this page" />
+                              </th>
                               <th style={{ width: 54 }}>#</th>
                               {activeChapterIdx === null && <th style={{ width: 160 }}>Chapter</th>}
                               <th>Question</th>
@@ -813,7 +983,10 @@ export default function AdminPage(){
                           </thead>
                           <tbody>
                             {pageItems.map(q => (
-                              <tr key={`${q.subIdx}-${q.num}`} className="qtable-row" onClick={() => openEditModal(q.subIdx, q)}>
+                              <tr key={`${q.subIdx}-${q.num}`} className={`qtable-row ${selectedQs.has(qKey(q)) ? "selected" : ""}`} onClick={() => openEditModal(q.subIdx, q)}>
+                                <td onClick={e => e.stopPropagation()}>
+                                  <input type="checkbox" className="qtable-checkbox" checked={selectedQs.has(qKey(q))} onChange={() => toggleSelectQ(q)} aria-label={`Select question ${q.num}`} />
+                                </td>
                                 <td className="mono qtable-num">{q.num}</td>
                                 {activeChapterIdx === null && <td className="qtable-chapter">{editCat.subcats[q.subIdx].name}</td>}
                                 <td className="qtable-text">{q.text.slice(0, 130)}{q.text.length > 130 ? "…" : ""}</td>
@@ -922,6 +1095,7 @@ export default function AdminPage(){
           )}
         </div>
       </div>
+      )}
 
       <QuestionModal
         open={!!qModal}
@@ -942,12 +1116,14 @@ export default function AdminPage(){
           confirmState?.kind === "subject" ? "Delete subject?" :
           confirmState?.kind === "subtopic" ? "Delete chapter?" :
           confirmState?.kind === "discardQuestion" ? "Discard unsaved question?" :
+          confirmState?.kind === "bulk" ? `Delete ${selectedQs.size} question${selectedQs.size === 1 ? "" : "s"}?` :
           "Delete question?"
         }
         message={
           confirmState?.kind === "subject" ? `This permanently removes "${editCat?.title}" and every question in it. This can't be undone.` :
           confirmState?.kind === "subtopic" ? `This permanently removes the chapter${editCat && confirmState.subIdx != null ? ` and its ${editCat.subcats[confirmState.subIdx]?.questions.length ?? 0} question(s)` : ""}. This can't be undone.` :
           confirmState?.kind === "discardQuestion" ? "You've made changes to this question that haven't been saved. Close anyway?" :
+          confirmState?.kind === "bulk" ? `This permanently removes the ${selectedQs.size} selected question${selectedQs.size === 1 ? "" : "s"}. This can't be undone.` :
           "This permanently removes the question. This can't be undone."
         }
         confirmLabel={confirmState?.kind === "discardQuestion" ? "Discard" : "Delete"}
