@@ -35,7 +35,7 @@ export default function Navbar(){
         {user?.role==="admin" && <Link href="/admin" className={`nav-link mono ${pathname==="/admin"?"current":""}`}>Admin</Link>}
       </div>
       <div className="nav-links">
-        <button className="icon-btn" onClick={toggle} title="Toggle theme"><span className="swatch"></span>{isDark?"Diazo":"Cyanotype"}</button>
+        <button className="icon-btn" onClick={toggle} title="Toggle theme"><span className="swatch"></span>{isDark?"Light mode":"Dark mode"}</button>
         {user ? (
           <>
             <span className="nav-user mono">{user.email}</span>

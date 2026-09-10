@@ -37,8 +37,13 @@ export default function AdminPage(){
 
   // Top-level admin navigation: an at-a-glance Dashboard, separate from the
   // Subjects workspace (sidebar + editor) below it.
-  const [view, setView] = useState("dashboard"); // 'dashboard' | 'subjects'
+  const [view, setView] = useState("dashboard"); // 'dashboard' | 'subjects' | 'users'
   const [dashStats, setDashStats] = useState(null); // { totalUsers, recentSubjects } | null while loading
+  const [users, setUsers] = useState([]);
+  const [usersLoading, setUsersLoading] = useState(false);
+  const [userSearch, setUserSearch] = useState("");
+  const [userPage, setUserPage] = useState(1);
+  const [userPagination, setUserPagination] = useState({ page: 1, pages: 1, total: 0 });
   const [sidebarOpen, setSidebarOpen] = useState(false); // mobile/tablet drawer
 
   // Question list: sort + bulk selection
@@ -98,6 +103,21 @@ export default function AdminPage(){
     const lastId = localStorage.getItem("qh-admin-last-subject");
     if (lastId && cats.some(c => c.id === lastId)) loadCat(lastId);
   }, [catsLoaded, cats]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (view !== "users" || !user || user.role !== "admin") return;
+    refreshUsers(1, userSearch);
+    // Search is deliberately handled by the explicit effect below so the
+    // workspace does not request a page for every keystroke.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [view]);
+
+  useEffect(() => {
+    if (view !== "users") return;
+    const timer = setTimeout(() => refreshUsers(1, userSearch), 280);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [userSearch]);
 
   useEffect(() => {
     const onKey = (e) => {
@@ -186,6 +206,24 @@ export default function AdminPage(){
     .then(r => r.json())
     .then(d => { if (!d.error) setDashStats(d); })
     .catch(() => {});
+
+  const refreshUsers = async (nextPage = userPage, search = userSearch) => {
+    setUsersLoading(true);
+    try {
+      const params = new URLSearchParams({ page: String(nextPage), limit: "20" });
+      if (search.trim()) params.set("search", search.trim());
+      const response = await fetch(`/api/admin/users?${params}`, { cache: "no-store" });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Failed to load users.");
+      setUsers(data.users || []);
+      setUserPagination(data.pagination || { page: nextPage, pages: 1, total: 0 });
+      setUserPage(nextPage);
+    } catch (error) {
+      flash("err", error.message || "Unable to load users.");
+    } finally {
+      setUsersLoading(false);
+    }
+  };
 
   const loadCat = async (id) => {
     setSelectedId(id);
@@ -681,6 +719,7 @@ export default function AdminPage(){
       <div className="admin-toplevel-tabs" role="tablist" aria-label="Admin sections">
         <button role="tab" aria-selected={view === "dashboard"} className={view === "dashboard" ? "active" : ""} onClick={() => setView("dashboard")}>Dashboard</button>
         <button role="tab" aria-selected={view === "subjects"} className={view === "subjects" ? "active" : ""} onClick={() => setView("subjects")}>Subjects</button>
+        <button role="tab" aria-selected={view === "users"} className={view === "users" ? "active" : ""} onClick={() => setView("users")}>Users</button>
       </div>
 
       <div className="admin-overview">
@@ -692,6 +731,8 @@ export default function AdminPage(){
         ) : (
           <div className="stat-chip"><div className="num serif">{overview.totalGroups}</div><div className="lab mono">Apps Covered</div></div>
         )}
+        {dashStats && <div className="stat-chip"><div className="num serif">{dashStats.activeUsers}</div><div className="lab mono">Active · 30d</div></div>}
+        {dashStats && <div className="stat-chip"><div className="num serif">{dashStats.inactiveUsers}</div><div className="lab mono">No activity</div></div>}
       </div>
 
       {msg && (
@@ -730,6 +771,67 @@ export default function AdminPage(){
             <button className="btn small secondary" onClick={() => { setView("subjects"); setNewSubjectOpen(true); }}>+ New Subject</button>
           </div>
         </div>
+      )}
+
+      {view === "users" && (
+        <section className="admin-panel users-workspace" aria-label="User management">
+          <div className="admin-panel-head">
+            <div>
+              <h2 className="admin-panel-title">Users</h2>
+              <div className="admin-panel-sub">View account access and learning activity without exposing authentication data.</div>
+            </div>
+            <span className="badge neutral">{userPagination.total} total</span>
+          </div>
+          <div className="filter-bar users-filter-bar">
+            <div className="searchbar filter-search" style={{ marginBottom: 0 }}>
+              <span className="icon mono">SEARCH</span>
+              <input aria-label="Search users" placeholder="Search name or email…" value={userSearch} onChange={e => setUserSearch(e.target.value)} />
+            </div>
+            <button className="btn small secondary" onClick={() => refreshUsers(1, userSearch)} disabled={usersLoading}>
+              {usersLoading ? <span className="spinner"></span> : "Refresh"}
+            </button>
+          </div>
+          {usersLoading ? (
+            <div className="users-list" aria-label="Loading users">
+              {[0, 1, 2, 3].map(i => <div key={i} className="skeleton skeleton-card user-skeleton" />)}
+            </div>
+          ) : users.length === 0 ? (
+            <div className="empty-note">No users match this search.</div>
+          ) : (
+            <div className="table-wrap users-table-wrap">
+              <table className="admin-table users-table">
+                <thead><tr><th>User</th><th>Status</th><th>Joined</th><th>Answered</th><th>Accuracy</th><th>Activity</th></tr></thead>
+                <tbody>
+                  {users.map(item => {
+                    const accuracy = item.progress?.attempted ? Math.round((item.progress.correct / item.progress.attempted) * 100) : null;
+                    return (
+                      <tr key={item.id}>
+                        <td>
+                          <div className="user-cell">
+                            <span className="mono-badge sm">{monogram(item.name || item.email)}</span>
+                            <span className="sli-text"><strong className="sli-title">{item.name}</strong><span className="sli-meta">{item.email}</span></span>
+                          </div>
+                        </td>
+                        <td><span className={`badge ${item.role === "admin" ? "edited" : "new"}`}>{item.role === "admin" ? "Admin" : "Active"}</span></td>
+                        <td className="mono">{new Date(item.createdAt).toLocaleDateString()}</td>
+                        <td className="mono">{item.progress?.attempted || 0}</td>
+                        <td className="mono">{accuracy === null ? "—" : `${accuracy}%`}</td>
+                        <td className="mono">{item.progress?.updatedAt ? timeAgo(item.progress.updatedAt) : "No activity"}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
+          {userPagination.pages > 1 && (
+            <div className="pagination users-pagination">
+              <button className="btn small secondary" disabled={userPage <= 1 || usersLoading} onClick={() => refreshUsers(userPage - 1, userSearch)}>Previous</button>
+              <span className="pagination-label mono">Page {userPage} of {userPagination.pages}</span>
+              <button className="btn small secondary" disabled={userPage >= userPagination.pages || usersLoading} onClick={() => refreshUsers(userPage + 1, userSearch)}>Next</button>
+            </div>
+          )}
+        </section>
       )}
 
       {view === "subjects" && (

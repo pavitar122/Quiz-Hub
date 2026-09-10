@@ -4,6 +4,7 @@ import { verifyToken, COOKIE_NAME } from "@/lib/auth";
 import { connectDB } from "@/lib/db";
 import { Category } from "@/models/Category";
 import User from "@/models/User";
+import Progress from "@/models/Progress";
 
 // Keep this dynamic — the dashboard should always reflect current DB state.
 export const dynamic = "force-dynamic";
@@ -24,12 +25,13 @@ export async function GET() {
   if (!isAdmin()) return NextResponse.json({ error: "Admin only" }, { status: 403 });
   try {
     await connectDB();
-    const [totalUsers, recentSubjects] = await Promise.all([
+    const [totalUsers, recentSubjects, activeUsers] = await Promise.all([
       User.countDocuments({}),
       Category.find({}).sort({ updatedAt: -1 }).limit(5).select("id title group updatedAt").lean(),
+      Progress.countDocuments({ updatedAt: { $gte: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000) } }),
     ]);
     return NextResponse.json(
-      { totalUsers, recentSubjects },
+      { totalUsers, activeUsers, inactiveUsers: Math.max(0, totalUsers - activeUsers), recentSubjects },
       { headers: { "Cache-Control": "no-store" } }
     );
   } catch (e) {
