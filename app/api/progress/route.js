@@ -29,6 +29,7 @@ export async function POST(req){
   if(!prog) prog=await Progress.create({userId});
 
   if(body.type==="answer"){
+    if(body.mode === "practice") return NextResponse.json({ok:true});
     const key= body.subIdx+"-"+body.num;
     prog.stats.totalAnswered++;
     if(body.correct){
@@ -84,9 +85,6 @@ export async function POST(req){
   }
 
   if(body.type==="practiceComplete"){
-    prog.stats.sessionsCompleted++;
-    prog.markModified("stats");
-    await prog.save();
     return NextResponse.json({ok:true});
   }
 

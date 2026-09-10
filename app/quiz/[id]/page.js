@@ -81,7 +81,22 @@ export default function QuizPage(){
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[progress,cat]);
 
+  function chunkPracticeQueue(queue, size=5){
+    const chunks=[];
+    for(let i=0;i<queue.length;i+=size){ chunks.push(queue.slice(i, i+size)); }
+    return chunks;
+  }
+
+  function rewardForPerformance(pct){
+    if(pct>=90) return {label:"Legendary", emoji:"🏆", xp:"+25 XP", tone:"gold"};
+    if(pct>=80) return {label:"Excellent", emoji:"🥇", xp:"+18 XP", tone:"gold"};
+    if(pct>=70) return {label:"Strong", emoji:"⭐", xp:"+12 XP", tone:"silver"};
+    if(pct>=55) return {label:"Solid", emoji:"✨", xp:"+8 XP", tone:"bronze"};
+    return {label:"Review Run", emoji:"🔁", xp:"+4 XP", tone:"neutral"};
+  }
+
   function initQuiz(queue, category){
+    const practiceGroups = mode==="practice" ? chunkPracticeQueue(queue, 5) : [];
     setQuiz({
       catId: category.id,
       mode,
@@ -92,57 +107,91 @@ export default function QuizPage(){
       score:0,
       total:queue.length,
       missed:[],
-      remaining: mode==="practice"? queue.slice(): null,
+      remaining: mode==="practice" ? (practiceGroups[0]?.slice(1) || []) : null,
       mastered:0,
       totalUnique:queue.length,
       attempts:0,
       firstTryCorrect:0,
       retryCounts:{},
       wrongAnswers:{},
-      practiceCurrent: mode==="practice"? queue[0] : null,
+      practiceCurrent: mode==="practice" ? (practiceGroups[0]?.[0] || null) : null,
+      practiceGroups,
+      practiceGroupIndex: mode==="practice" ? 0 : null,
+      groupCorrect:0,
+      groupTotal:0,
+      waitingForNextCheckpoint:false,
+      checkpointSummary:null,
+      rewardHistory:[],
       startTime:Date.now(),
     });
-    // for practice, remaining should start after first
-    if(mode==="practice"){
-      setQuiz(q=> ({...q, remaining: queue.slice(1), practiceCurrent: queue[0]}));
-    }
   }
 
   const current = quiz ? (quiz.mode==="test" ? quiz.order[quiz.pos] : quiz.practiceCurrent) : null;
+
+  const startNextPracticeCheckpoint = () => {
+    if(!quiz || quiz.mode !== "practice") return;
+    setQuiz(q => {
+      if(!q.practiceGroups || q.practiceGroupIndex === null) return {...q, finished:true};
+      const nextIndex = q.practiceGroupIndex + 1;
+      const hasNext = nextIndex < q.practiceGroups.length;
+      if(!hasNext) {
+        return {...q, waitingForNextCheckpoint:false, checkpointSummary:null, finished:true};
+      }
+      const nextGroup = q.practiceGroups[nextIndex];
+      return {
+        ...q,
+        practiceGroupIndex: nextIndex,
+        practiceCurrent: nextGroup[0],
+        remaining: nextGroup.slice(1),
+        answered:false,
+        selected:null,
+        waitingForNextCheckpoint:false,
+        checkpointSummary:null,
+        groupCorrect:0,
+        groupTotal:0,
+      };
+    });
+  };
 
   const selectOption = async (choiceIdx)=>{
     if(!quiz || quiz.answered) return;
     const item=current;
     const correct = choiceIdx===item.q.correct;
-    // update local stats
     const updated={...quiz, answered:true, selected:choiceIdx};
     if(quiz.mode==="test"){
       if(correct) updated.score++;
       else updated.missed.push({item, selected:choiceIdx});
     } else {
       updated.attempts++;
+      const groupTotal = (quiz.groupTotal || 0) + 1;
+      updated.groupTotal = groupTotal;
       const rkey=item.subIdx+"-"+item.q.num;
       if(correct){
+        updated.groupCorrect = (quiz.groupCorrect || 0) + 1;
         if(!(rkey in quiz.retryCounts)) updated.firstTryCorrect++;
         updated.mastered++;
       } else {
         updated.retryCounts[rkey]=(updated.retryCounts[rkey]||0)+1;
         updated.wrongAnswers={...quiz.wrongAnswers, [rkey]:{item, selected:choiceIdx}};
-        const insertPos = updated.remaining.length===0 ? 0 : 1+Math.floor(Math.random()*updated.remaining.length);
-        updated.remaining.splice(insertPos,0,item);
+        const remaining = [...(updated.remaining || [])];
+        const insertPos = remaining.length===0 ? 0 : 1+Math.floor(Math.random()*remaining.length);
+        remaining.splice(insertPos,0,item);
+        updated.remaining = remaining;
       }
     }
     setQuiz(updated);
-    // persist to server
-    try{
-      await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
-        type:"answer",
-        catId: quiz.catId,
-        subIdx: item.subIdx,
-        num: item.q.num,
-        correct,
-      })});
-    }catch{}
+    if(quiz.mode==="test"){
+      try{
+        await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+          type:"answer",
+          catId: quiz.catId,
+          subIdx: item.subIdx,
+          num: item.q.num,
+          correct,
+          mode:"test"
+        })});
+      }catch{}
+    }
   };
 
   const nextQuestion = async ()=>{
@@ -150,8 +199,6 @@ export default function QuizPage(){
     if(quiz.mode==="test"){
       const nextPos=quiz.pos+1;
       if(nextPos>=quiz.order.length){
-        // finish, record best & session — use functional update so pct
-        // is computed from the freshest score even if the closure is stale
         const snap = quiz;
         await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
           type:"complete",
@@ -161,25 +208,33 @@ export default function QuizPage(){
           total: snap.total,
           mode:"test"
         })});
-        // show result inline instead of navigating
         setQuiz(q => ({...q, finished:true, pct: Math.round(q.score/q.total*100)}));
         return;
       }
       setQuiz(q => ({...q, pos: nextPos, answered:false, selected:null}));
     } else {
       if(quiz.remaining.length===0){
-        const snap = quiz;
-        await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
-          type:"practiceComplete",
-          catId: snap.catId,
-          totalUnique: snap.totalUnique,
-          attempts: snap.attempts,
-          mode:"practice"
-        })});
-        setQuiz(q => ({...q, finished:true}));
+        const totalInGroup = quiz.groupTotal || 0;
+        const correctInGroup = quiz.groupCorrect || 0;
+        const pct = totalInGroup > 0 ? Math.round((correctInGroup / totalInGroup) * 100) : 0;
+        const reward = rewardForPerformance(pct);
+        const currentGroupNumber = (quiz.practiceGroupIndex ?? 0) + 1;
+        const totalGroups = quiz.practiceGroups?.length || 1;
+        const summary = {
+          correct: correctInGroup,
+          total: totalInGroup,
+          pct,
+          reward,
+          groupNumber: currentGroupNumber,
+          totalGroups,
+        };
+        if((quiz.practiceGroupIndex ?? 0) + 1 < (quiz.practiceGroups?.length || 0)){
+          setQuiz(q => ({...q, waitingForNextCheckpoint:true, checkpointSummary: summary, answered:false, selected:null, practiceCurrent:null, remaining:[], rewardHistory:[...q.rewardHistory, reward]}));
+          return;
+        }
+        setQuiz(q => ({...q, finished:true, waitingForNextCheckpoint:false, checkpointSummary: summary, rewardHistory:[...q.rewardHistory, reward]}));
         return;
       }
-      // avoid mutating state directly — copy first
       setQuiz(q => {
         const remaining = [...q.remaining];
         const nextItem = remaining.shift();
@@ -316,14 +371,45 @@ export default function QuizPage(){
     }
   }
 
+  if(quiz.mode === "practice" && quiz.waitingForNextCheckpoint){
+    const summary = quiz.checkpointSummary || {};
+    const reward = summary.reward || {label:"Reward", emoji:"✨", xp:"+0 XP", tone:"neutral"};
+    const nextLabel = (quiz.practiceGroupIndex ?? 0) + 1 >= (quiz.practiceGroups?.length || 1) ? "Finish chapter" : "Next checkpoint →";
+    const checkpointFill = reward.tone === "gold" ? "linear-gradient(90deg,#f6d365,#fda085)" : reward.tone === "silver" ? "linear-gradient(90deg,#dfe7ff,#a7b9ff)" : reward.tone === "bronze" ? "linear-gradient(90deg,#f3c98b,#d18452)" : "linear-gradient(90deg,#6ea8fe,#8ed0ff)";
+    return (
+      <div className="dwg-card" style={{padding:24}}>
+        <span className="dwg-tag mono">CHECKPOINT COMPLETE</span>
+        <h2 className="serif" style={{margin:"12px 0 4px"}}>Checkpoint {summary.groupNumber || 1} of {summary.totalGroups || 1}</h2>
+        <p className="result-score serif" style={{margin:0}}>{summary.correct || 0}/{summary.total || 0}</p>
+        <p className="result-pct mono">{summary.pct || 0}% accuracy · Reward: {reward.emoji} {reward.label}</p>
+        <div className="progress-bar"><div className="progress-fill" style={{width:(summary.pct || 0)+"%", background: checkpointFill}}></div></div>
+        <div className="btn-row" style={{marginTop:18}}>
+          <button className="btn" onClick={startNextPracticeCheckpoint}>{nextLabel}</button>
+          <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back</Link>
+        </div>
+      </div>
+    );
+  }
+
   const q=current.q;
   const progressPct = quiz.mode==="test" ? Math.round(((quiz.pos+(quiz.answered?1:0))/quiz.total)*100) : Math.round((quiz.mastered/quiz.totalUnique)*100);
+  const practiceCheckpointText = quiz.mode==="practice" && quiz.practiceGroups ? `Checkpoint ${((quiz.practiceGroupIndex ?? 0)+1)}/${quiz.practiceGroups.length}` : null;
+  const checkpointMarkers = quiz.mode==="practice" && quiz.practiceGroups ? quiz.practiceGroups.map((_, index)=> ({
+    left: (((index + 1) / quiz.practiceGroups.length) * 100),
+    active: index <= (quiz.practiceGroupIndex ?? 0),
+    label: index + 1,
+  })) : [];
 
   return (
     <>
       <div className="top-bar"><Link href={`/subject/${id}`} className="back-link">← Back</Link><span className="score-badge">{quiz.mode==="test" ? `Score: ${quiz.score}/${quiz.pos+(quiz.answered?1:0)}` : `Attempts: ${quiz.attempts}`}</span></div>
-      <div className="eyebrow"><span>{current.subName} · {quiz.mode==="test"? `Question ${quiz.pos+1} of ${quiz.total}` : `Mastered ${quiz.mastered} of ${quiz.totalUnique}`}</span><span>#{q.num} · {quiz.mode.toUpperCase()}</span></div>
-      <div className="quiz-progress-bar"><div className="quiz-progress-fill" style={{width:progressPct+"%"}}></div></div>
+      <div className="eyebrow"><span>{current.subName} · {quiz.mode==="test"? `Question ${quiz.pos+1} of ${quiz.total}` : practiceCheckpointText ? `${practiceCheckpointText} · Mastered ${quiz.mastered} of ${quiz.totalUnique}` : `Mastered ${quiz.mastered} of ${quiz.totalUnique}`}</span><span>#{q.num} · {quiz.mode.toUpperCase()}</span></div>
+      <div className="quiz-progress-bar">
+        <div className="quiz-progress-fill" style={{width:progressPct+"%"}}></div>
+        {checkpointMarkers.length > 0 && checkpointMarkers.map((marker)=> (
+          <div key={marker.label} className={`quiz-progress-marker ${marker.active ? "active" : ""}`} style={{left:`${marker.left}%`}} title={`Checkpoint ${marker.label}`} />
+        ))}
+      </div>
       <div className="dwg-card" key={(quiz.mode==="test"?quiz.pos:quiz.attempts)+"-"+q.num}>
         <div className="q-head-row q-transition">
           <p className="question-text">{q.text}</p>
