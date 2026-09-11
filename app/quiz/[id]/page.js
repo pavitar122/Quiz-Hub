@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Confetti from "@/components/Confetti";
@@ -19,17 +19,186 @@ export default function QuizPage(){
   const [toastShow,setToastShow]=useState(false);
   const [empty,setEmpty]=useState(false);
 
+  // ---- Listen & Learn state ----
+  const [listenQueue,setListenQueue]=useState(null);
+  const [listenIdx,setListenIdx]=useState(0);
+  const [listenPhase,setListenPhase]=useState("idle"); // question | options | answer | expl
+  const [isPlaying,setIsPlaying]=useState(false);
+  const [listenFinished,setListenFinished]=useState(false);
+  const [rate,setRate]=useState(1);
+  const [voices,setVoices]=useState([]);
+  const [selectedVoiceURI,setSelectedVoiceURI]=useState("");
+  const [speechSupported,setSpeechSupported]=useState(true);
+  const utteranceRef=useRef(null);
+  const timeoutRef=useRef(null);
+  const isPlayingRef=useRef(false);
+  const rateRef=useRef(1);
+  const voiceRef=useRef(null);
+
   const flashToast=(msg)=>{
     setToastMsg(msg);
     setToastShow(true);
     setTimeout(()=>setToastShow(false), 1600);
   };
 
+  // load voices
+  useEffect(()=>{
+    if(mode!=="listen") return;
+    if(typeof window==="undefined" || !("speechSynthesis" in window)){
+      setSpeechSupported(false);
+      return;
+    }
+    const curateVoices=(vs)=>{
+      const enAll=vs.filter(v=>v.lang.toLowerCase().startsWith("en"));
+      const pool=enAll.length>=2 ? enAll : vs;
+      const isFemale=(name, uri)=>{
+        const s=(name+" "+uri).toLowerCase();
+        if(/female/.test(s)) return true;
+        if(/zira|aria|samantha|susan|helen|eva|neerja|heera|kalpana/.test(s)) return true;
+        if(s.includes("google us english") && !s.includes("male")) return true;
+        return false;
+      };
+      const isMale=(name, uri)=>{
+        const s=(name+" "+uri).toLowerCase();
+        if(/male/.test(s)) return true;
+        if(/david|mark|guy|prabhat|madhur|hemant|george|alex|daniel/.test(s)) return true;
+        return false;
+      };
+      const females=[];
+      const males=[];
+      const unknown=[];
+      pool.forEach(v=>{
+        if(isFemale(v.name, v.voiceURI)) females.push(v);
+        else if(isMale(v.name, v.voiceURI)) males.push(v);
+        else unknown.push(v);
+      });
+      const score=(v)=>{
+        let s=0;
+        if(v.localService) s-=10;
+        const l=v.lang.toLowerCase();
+        if(l==="en-in") s+=0;
+        else if(l==="en-us") s+=1;
+        else if(l==="en-gb") s+=2;
+        else s+=3;
+        return s;
+      };
+      females.sort((a,b)=> score(a)-score(b));
+      males.sort((a,b)=> score(a)-score(b));
+      unknown.sort((a,b)=> score(a)-score(b));
+
+      // helper to wrap a native voice into our display object
+      const wrap=(v, gender, opts={})=>{
+        return {
+          _id: opts._id || v.voiceURI,
+          name: opts.name || v.name,
+          lang: v.lang,
+          voiceURI: v.voiceURI,
+          localService: v.localService,
+          _gender: gender,
+          _baseVoice: v,
+          _pitch: opts._pitch ?? (gender==="male"?0.92: gender==="female"?1.06:1),
+          _synthetic: !!opts._synthetic,
+          _native: v,
+        };
+      };
+
+      const outF=[];
+      const outM=[];
+
+      // take up to 2 real females
+      females.slice(0,2).forEach(v=> outF.push(wrap(v,"female")));
+      // take up to 3 real males
+      males.slice(0,3).forEach(v=> outM.push(wrap(v,"male")));
+
+      // Guarantee 2F: if fewer than 2, synthesize from best available voice
+      const femaleBase = females[0] || unknown[0] || pool[0];
+      const femalePitches=[1.06, 1.14];
+      while(outF.length<2){
+        const idx=outF.length;
+        const base=femaleBase;
+        if(!base) break;
+        outF.push(wrap(base,"female",{
+          _id: base.voiceURI+"#f"+idx,
+          name: base.name+" · F"+(idx+1),
+          _pitch: femalePitches[idx]||1.1,
+          _synthetic: true,
+        }));
+      }
+      // Guarantee 3M: synthesize if tablet only has 1 male (e.g. Google UK English Male)
+      const maleBase = males[0] || females[0] || unknown[0] || pool[0];
+      const malePitches=[0.92, 0.85, 0.78];
+      const maleNames=["", " Deep", " Bass"];
+      while(outM.length<3){
+        const idx=outM.length;
+        const base=maleBase;
+        if(!base) break;
+        outM.push(wrap(base,"male",{
+          _id: base.voiceURI+"#m"+idx,
+          name: (males[0]?.name || base.name)+" · M"+(idx+1)+maleNames[idx],
+          _pitch: malePitches[idx]||0.84,
+          _synthetic: true,
+        }));
+      }
+
+      const out=[...outF.slice(0,2), ...outM.slice(0,3)];
+      return out;
+    };
+    const load=()=>{
+      const vs=window.speechSynthesis.getVoices()||[];
+      if(vs.length>0){
+        const curated=curateVoices(vs);
+        setVoices(curated);
+        if(!selectedVoiceURI){
+          const pref= curated[0];
+          if(pref){ setSelectedVoiceURI(pref._id); voiceRef.current=pref; }
+        } else if(!curated.find(v=>v._id===selectedVoiceURI)){
+          setSelectedVoiceURI(curated[0]._id); voiceRef.current=curated[0];
+        }
+      }
+    };
+    load();
+    window.speechSynthesis.onvoiceschanged=load;
+    const t=setTimeout(load, 600);
+    // Android tablet: voices arrive late, poll a few times
+    let tries=0;
+    const iv=setInterval(()=>{
+      tries++;
+      const vs=window.speechSynthesis.getVoices()||[];
+      if(vs.length>0) load();
+      if(tries>6) clearInterval(iv);
+    }, 800);
+    return ()=>{ clearTimeout(t); clearInterval(iv); if(window.speechSynthesis) window.speechSynthesis.onvoiceschanged=null; };
+  },[mode, selectedVoiceURI]);
+
+  useEffect(()=>{ isPlayingRef.current=isPlaying; },[isPlaying]);
+  useEffect(()=>{ rateRef.current=rate; },[rate]);
+  useEffect(()=>{
+    if(!selectedVoiceURI) return;
+    const v=voices.find(x=>x._id===selectedVoiceURI);
+    if(v) voiceRef.current=v;
+  },[selectedVoiceURI, voices]);
+
   useEffect(()=>{
     setEmpty(false);
     fetch(`/api/questions?id=${id}`).then(r=>r.json()).then(d=>{
       if(!d.category) return;
       setCat(d.category);
+      if(mode==="listen"){
+        const q = buildQueue(d.category, type, idx);
+        if(q.length===0 && type!=="bookmarked" && type!=="missed"){ setEmpty(true); return; }
+        if(q.length>0){
+          if(type==="bookmarked"||type==="missed"){
+            // wait for progress to populate listenQueue
+            return;
+          }
+          setListenQueue(q);
+          setListenIdx(0);
+          setListenPhase("idle");
+          setListenFinished(false);
+          setIsPlaying(false);
+        }
+        return;
+      }
       const q = buildQueue(d.category, type, idx);
       if(q.length===0 && type!=="bookmarked" && type!=="missed"){ setEmpty(true); return; }
       if(q.length>0) initQuiz(q, d.category);
@@ -49,8 +218,6 @@ export default function QuizPage(){
       return sc? sc.questions.map(q=>({subIdx:sIdx, subName:sc.name, q})): [];
     }
     if(type==="bookmarked"){
-      // need progress — fallback empty if no progress yet; will load from server later
-      // we build from progress after fetch? For now return empty and re-build when progress arrives
       return [];
     }
     if(type==="missed") return [];
@@ -64,7 +231,27 @@ export default function QuizPage(){
 
   // handle bookmark/missed queues after progress loads
   useEffect(()=>{
-    if(!cat || !progress || quiz) return;
+    if(!cat || !progress) return;
+    if(mode==="listen"){
+      if(listenQueue) return;
+      if(type==="bookmarked"){
+        const keys=new Set(progress.bookmarks?.[cat.id]||[]);
+        const out=[];
+        cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(q=>{ if(keys.has(sIdx+"-"+q.num)) out.push({subIdx:sIdx, subName:sc.name, q}); }));
+        if(out.length>0){ setListenQueue(out); setListenIdx(0); }
+        else setEmpty(true);
+      }
+      if(type==="missed"){
+        const miss=progress.missCounts?.[cat.id]||{};
+        const keys=Object.keys(miss).filter(k=>miss[k]>0);
+        const out=[];
+        cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(q=>{ if(keys.includes(sIdx+"-"+q.num)) out.push({subIdx:sIdx, subName:sc.name, q}); }));
+        if(out.length>0){ setListenQueue(shuffle(out)); setListenIdx(0); }
+        else setEmpty(true);
+      }
+      return;
+    }
+    if(quiz) return;
     if(type==="bookmarked"){
       const keys=new Set(progress.bookmarks?.[cat.id]||[]);
       const out=[];
@@ -244,9 +431,9 @@ export default function QuizPage(){
   };
 
   const toggleBookmark=async()=>{
-    if(!current) return;
-    const key=current.subIdx+"-"+current.q.num;
-    // optimistic local update so the UI reacts instantly
+    const activeItem = mode==="listen" ? (listenQueue?.[listenIdx]||null) : current;
+    if(!activeItem) return;
+    const key=activeItem.subIdx+"-"+activeItem.q.num;
     const wasBookmarked = !!progress?.bookmarks?.[id]?.includes(key);
     setProgress(p=>{
       const base=p||{};
@@ -259,18 +446,40 @@ export default function QuizPage(){
       await fetch("/api/progress",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
         type:"bookmark",
         catId: id,
-        subIdx: current.subIdx,
-        num: current.q.num,
+        subIdx: activeItem.subIdx,
+        num: activeItem.q.num,
       })});
     }catch{}
   };
-  const isBookmarked = progress && progress.bookmarks?.[id]?.includes(current?.subIdx+"-"+current?.q?.num);
+  const isBookmarked = (()=> {
+    const activeItem = mode==="listen" ? (listenQueue?.[listenIdx]||null) : current;
+    if(!activeItem || !progress) return false;
+    return !!progress.bookmarks?.[id]?.includes(activeItem.subIdx+"-"+activeItem.q.num);
+  })();
 
   const restart=()=>{
     if(!cat) return;
+    if(mode==="listen"){
+      const q = buildQueue(cat, type, idx);
+      const out = (()=> {
+        if(type==="bookmarked"){
+          const keys=new Set(progress?.bookmarks?.[cat.id]||[]);
+          const arr=[]; cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(qq=>{ if(keys.has(sIdx+"-"+qq.num)) arr.push({subIdx:sIdx, subName:sc.name, q:qq}); }));
+          return arr;
+        }
+        if(type==="missed"){
+          const miss=progress?.missCounts?.[cat.id]||{};
+          const keys=Object.keys(miss).filter(k=>miss[k]>0);
+          const arr=[]; cat.subcats.forEach((sc,sIdx)=> sc.questions.forEach(qq=>{ if(keys.includes(sIdx+"-"+qq.num)) arr.push({subIdx:sIdx, subName:sc.name, q:qq}); }));
+          return shuffle(arr);
+        }
+        return q;
+      })();
+      if(out.length>0){ cancelSpeech(); setListenQueue(out); setListenIdx(0); setListenPhase("idle"); setListenFinished(false); setIsPlaying(false); }
+      return;
+    }
     const q = buildQueue(cat, type, idx);
     if(q.length>0){ initQuiz(q, cat); return; }
-    // bookmarked/missed queues depend on progress
     if(type==="bookmarked" || type==="missed") setQuiz(null);
   };
 
@@ -280,6 +489,375 @@ export default function QuizPage(){
     if(wrongItems.length===0) return;
     initQuiz(wrongItems, cat);
   };
+
+  // ---- Listen helpers ----
+  const cancelSpeech=useCallback(()=>{
+    if(typeof window!=="undefined" && window.speechSynthesis){
+      window.speechSynthesis.cancel();
+    }
+    utteranceRef.current=null;
+    if(timeoutRef.current){ clearTimeout(timeoutRef.current); timeoutRef.current=null; }
+  },[]);
+
+  useEffect(()=>{
+    return ()=>{ cancelSpeech(); };
+  },[cancelSpeech]);
+
+  const getListenSegments=(item, idx, total)=>{
+    return [
+      { key:"question", label:"Question", text: `Question ${idx+1}. ${item.q.text}`, gap: 600 },
+      { key:"options", label:"Options", text: `Options. A: ${item.q.options[0]}. B: ${item.q.options[1]}. C: ${item.q.options[2]}. D: ${item.q.options[3]}.`, gap: 900 },
+      { key:"answer", label:"Answer", text: `Answer. Option ${String.fromCharCode(65+item.q.correct)}. ${item.q.options[item.q.correct]}.`, gap: 700 },
+      { key:"expl", label:"Explanation", text: `Explanation. ${item.q.expl}`, gap: 500 },
+    ];
+  };
+
+  const speakSegmentsSequentially=useCallback((item, qIdx, total, segIdx=0)=>{
+    if(!isPlayingRef.current) return;
+    const segs=getListenSegments(item, qIdx, total);
+    if(segIdx >= segs.length){
+      timeoutRef.current=setTimeout(()=>{
+        if(!isPlayingRef.current) return;
+        if(qIdx+1 >= total){
+          setListenFinished(true);
+          setIsPlaying(false);
+          setListenPhase("idle");
+          cancelSpeech();
+        } else {
+          setListenIdx(qIdx+1);
+        }
+      }, 1800);
+      return;
+    }
+    const seg=segs[segIdx];
+    setListenPhase(seg.key);
+    if(typeof window==="undefined" || !window.speechSynthesis) return;
+    const utter=new SpeechSynthesisUtterance(seg.text);
+    utteranceRef.current=utter;
+    utter.rate=rateRef.current;
+    if(voiceRef.current){
+      const base=voiceRef.current._baseVoice || voiceRef.current;
+      utter.voice=base;
+      utter.lang=base.lang || "en-US";
+      utter.pitch=voiceRef.current._pitch ?? (voiceRef.current._gender==="male"?0.92:1.06);
+    } else {
+      utter.lang="en-US";
+      utter.pitch=1;
+    }
+    utter.volume=1;
+    utter.onend=()=>{
+      if(!isPlayingRef.current) return;
+      timeoutRef.current=setTimeout(()=> speakSegmentsSequentially(item, qIdx, total, segIdx+1), seg.gap);
+    };
+    utter.onerror=(e)=>{
+      // Android tablet: Google network male voices can error when offline — retry without explicit voice
+      if(e?.error==="not-allowed" || e?.error==="interrupted" || e?.error==="audio-busy" || e?.error){
+        if(voiceRef.current){
+          try{ window.speechSynthesis.cancel(); }catch{}
+          const fallback=new SpeechSynthesisUtterance(seg.text);
+          fallback.rate=rateRef.current;
+          fallback.lang="en-US";
+          fallback.pitch=1;
+          fallback.onend=()=>{
+            if(!isPlayingRef.current) return;
+            timeoutRef.current=setTimeout(()=> speakSegmentsSequentially(item, qIdx, total, segIdx+1), seg.gap);
+          };
+          utteranceRef.current=fallback;
+          window.speechSynthesis.speak(fallback);
+          return;
+        }
+      }
+    };
+    window.speechSynthesis.speak(utter);
+  },[cancelSpeech]);
+
+  // auto-play when idx or playing changes
+  useEffect(()=>{
+    if(mode!=="listen") return;
+    if(!listenQueue || listenQueue.length===0) return;
+    if(listenFinished) return;
+    if(!isPlaying) {
+      // pause: keep phase but cancel timeouts? speechSynthesis.pause handles pause; we cancel only on explicit stop
+      return;
+    }
+    const item=listenQueue[listenIdx];
+    if(!item) return;
+    cancelSpeech();
+    speakSegmentsSequentially(item, listenIdx, listenQueue.length, 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[listenIdx, isPlaying, listenQueue, listenFinished, mode]);
+
+  // handle browser pause/resume
+  const togglePlay=()=>{
+    if(!listenQueue || listenQueue.length===0) return;
+    if(typeof window==="undefined" || !("speechSynthesis" in window)){
+      setSpeechSupported(false); return;
+    }
+    if(listenFinished){
+      setListenIdx(0); setListenFinished(false); setListenPhase("idle");
+      setIsPlaying(true);
+      return;
+    }
+    if(isPlaying){
+      // pause
+      window.speechSynthesis.pause();
+      setIsPlaying(false);
+      if(timeoutRef.current){ clearTimeout(timeoutRef.current); timeoutRef.current=null; }
+    } else {
+      if(window.speechSynthesis.paused){
+        window.speechSynthesis.resume();
+        setIsPlaying(true);
+      } else {
+        // start or resume after idle
+        if(listenPhase==="idle"){
+          setIsPlaying(true);
+        } else {
+          // resume from current idx/phase: cancel and replay that question from current phase
+          // for simplicity, replay whole question
+          cancelSpeech();
+          setIsPlaying(true);
+        }
+      }
+    }
+  };
+
+  const replayCurrent=()=>{
+    if(!listenQueue) return;
+    cancelSpeech();
+    setListenPhase("idle");
+    if(listenFinished){ setListenFinished(false); setListenIdx(0); }
+    setIsPlaying(true);
+    // effect will trigger speak; if already playing, force restart
+    if(isPlaying){
+      const item=listenQueue[listenFinished?0:listenIdx];
+      setTimeout(()=> speakSegmentsSequentially(item, listenFinished?0:listenIdx, listenQueue.length, 0), 80);
+    }
+  };
+
+  const goNext=()=>{
+    if(!listenQueue) return;
+    cancelSpeech();
+    if(listenIdx+1 >= listenQueue.length){
+      setListenFinished(true); setIsPlaying(false); setListenPhase("idle"); return;
+    }
+    setListenIdx(i=>i+1);
+    setListenPhase("idle");
+    // keep playing if it was playing
+  };
+  const goPrev=()=>{
+    if(!listenQueue) return;
+    cancelSpeech();
+    if(listenIdx===0){
+      // replay first
+      setListenPhase("idle");
+      if(isPlaying){
+        setTimeout(()=> speakSegmentsSequentially(listenQueue[0],0,listenQueue.length,0), 80);
+      }
+      return;
+    }
+    setListenIdx(i=>i-1);
+    setListenPhase("idle");
+  };
+
+  const handleRate=(r)=>{
+    setRate(r);
+    rateRef.current=r;
+    if(isPlaying && typeof window!=="undefined" && window.speechSynthesis){
+      cancelSpeech();
+      const item=listenQueue?.[listenIdx];
+      if(item) setTimeout(()=> speakSegmentsSequentially(item, listenIdx, listenQueue.length, 0), 120);
+    }
+  };
+
+  const handleSeek=(targetIdx)=>{
+    if(!listenQueue) return;
+    cancelSpeech();
+    setListenIdx(targetIdx);
+    setListenFinished(false);
+    setListenPhase("idle");
+    // keep isPlaying as is — effect will auto-play if isPlaying true
+  };
+
+  // ---- Render: Listen mode branch ----
+  if(mode==="listen"){
+    if(empty) return (
+      <div className="dwg-card">
+        <span className="dwg-tag mono">NOTHING TO LISTEN</span>
+        <p style={{marginTop:10}}>There&apos;s nothing queued up here yet.</p>
+        <div className="btn-row">
+          <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back to Subject</Link>
+        </div>
+      </div>
+    );
+    if(!cat || !listenQueue) return (
+      <div className="loading-row"><span className="spinner"></span> Loading Listen & Learn…</div>
+    );
+    if(listenFinished){
+      return (
+        <div className="dwg-card">
+          <span className="dwg-tag mono">LISTEN & LEARN — COMPLETE</span>
+          <h2 className="serif" style={{margin:"10px 0 6px"}}>You&apos;ve listened to all {listenQueue.length} questions</h2>
+          <p className="mono" style={{fontSize:13, color:"var(--muted)"}}>Great passive revision — switch to Test or Practice when you&apos;re ready to answer actively.</p>
+          <div className="btn-row" style={{marginTop:18}}>
+            <button className="btn" onClick={replayCurrent}>↺ Replay All</button>
+            <Link href={`/quiz/${id}?mode=test&type=${type}${idx?`&idx=${idx}`:""}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Switch to Test</Link>
+            <Link href={`/quiz/${id}?mode=practice&type=${type}${idx?`&idx=${idx}`:""}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Practice Mode</Link>
+            <Link href={`/subject/${id}`} className="btn secondary" style={{textDecoration:"none",display:"inline-block"}}>Back to Subject</Link>
+          </div>
+          <div className="review-list" style={{marginTop:22}}>
+            <span className="dwg-tag mono">TRANSCRIPT ({listenQueue.length})</span>
+            {listenQueue.map((it,i)=> (
+              <div key={i} className="review-item" style={{borderLeftColor:"var(--accent)"}}>
+                <div className="rq serif">{i+1}. {it.q.text}</div>
+                <div className="ra mono" style={{color:"var(--muted)"}}>A) {it.q.options[0]} · B) {it.q.options[1]} · C) {it.q.options[2]} · D) {it.q.options[3]}</div>
+                <div className="ra right-ans mono">Answer: {String.fromCharCode(65+it.q.correct)}) {it.q.options[it.q.correct]}</div>
+                <div className="mono" style={{fontSize:12,marginTop:6}}>{it.q.expl}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+    const item=listenQueue[listenIdx];
+    const q=item.q;
+    const total=listenQueue.length;
+    const pct=Math.round(((listenIdx)/total)*100);
+    const isBookmarkedListen=isBookmarked;
+    return (
+      <>
+        <div className="top-bar"><Link href={`/subject/${id}`} className="back-link">← Back</Link><span className="score-badge mono">🎧 Listen & Learn · {listenIdx+1} / {total}</span></div>
+        <div className="eyebrow"><span>{item.subName} · Question {listenIdx+1} of {total}</span><span>#{q.num} · LISTEN</span></div>
+        <div className="quiz-progress-bar" style={{cursor:"pointer"}} onClick={(e)=>{
+          const rect=e.currentTarget.getBoundingClientRect();
+          const x=e.clientX-rect.left;
+          const p=x/rect.width;
+          const target=Math.min(total-1, Math.max(0, Math.floor(p*total)));
+          handleSeek(target);
+        }}>
+          <div className="quiz-progress-fill" style={{width:((listenIdx+ (listenPhase==="expl"?0.95: listenPhase==="answer"?0.7: listenPhase==="options"?0.4: listenPhase==="question"?0.15:0))/total*100)+"%", transition:"width .6s var(--ease)"}}></div>
+        </div>
+
+        {!speechSupported && (
+          <div className="message-banner err" style={{marginBottom:14}}>Speech not supported in this browser. Try Chrome, Edge or Safari on Android/iOS.</div>
+        )}
+
+        {/* Player bar */}
+        <div className="listen-player dwg-card" style={{padding:18, display:"flex", flexDirection:"column", gap:14}}>
+          <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", gap:12, flexWrap:"wrap"}}>
+            <div style={{display:"flex", alignItems:"center", gap:10}}>
+              <button className="btn" onClick={togglePlay} style={{minWidth:120, display:"inline-flex", alignItems:"center", justifyContent:"center", gap:8}}>
+                {isPlaying ? "⏸︎ Pause" : "▶︎ Play"}
+              </button>
+              <button className="btn secondary" onClick={replayCurrent} title="Replay this question">↺ Replay</button>
+              <button className="btn secondary" onClick={goPrev} title="Previous">⏮︎</button>
+              <button className="btn secondary" onClick={goNext} title="Next">⏭︎</button>
+            </div>
+            <div style={{display:"flex", alignItems:"center", gap:8, flexWrap:"wrap"}}>
+              <span className="mono" style={{fontSize:11, color:"var(--muted)", letterSpacing:".06em", textTransform:"uppercase"}}>Speed</span>
+              {[1,1.25,1.5,2].map(r=>(
+                <button key={r} className={`btn small ${rate===r?"":"secondary"}`} onClick={()=>handleRate(r)} style={{minHeight:36, padding:"6px 10px"}}>{r}×</button>
+              ))}
+            </div>
+          </div>
+
+          {/* Voice picker */}
+          {voices.length>0 && (
+            <div style={{display:"flex", alignItems:"center", gap:10, flexWrap:"wrap"}}>
+              <span className="mono" style={{fontSize:11, color:"var(--muted)", letterSpacing:".06em", textTransform:"uppercase"}}>Voice</span>
+              <select className="mf-select" value={selectedVoiceURI} onChange={e=>setSelectedVoiceURI(e.target.value)} style={{maxWidth:320, minWidth:180, width:"auto"}}>
+                {voices.map(v=>{
+                  const tag=v._gender==="female"?" ♀ Female": v._gender==="male"?" ♂ Male":" ○ Voice";
+                  const short=v.lang==="en-IN"?"IN": v.lang==="en-US"?"US": v.lang==="en-GB"?"GB": v.lang;
+                  const local=v.localService?" · offline":"";
+                  const synth=v._synthetic?" · pitch-shifted":"";
+                  return <option key={v._id} value={v._id}>{v.name} · {short}{tag}{local}{synth}</option>;
+                })}
+              </select>
+              <span className="mono" style={{fontSize:11, color:"var(--dim)"}}>{isPlaying ? `Speaking: ${listenPhase}` : "Paused"}</span>
+            </div>
+          )}
+
+          {/* Phase dots */}
+          <div style={{display:"flex", gap:8, alignItems:"center"}}>
+            {["question","options","answer","expl"].map(ph=>{
+              const active=listenPhase===ph;
+              const done=["question","options","answer","expl"].indexOf(listenPhase) > ["question","options","answer","expl"].indexOf(ph);
+              return (
+                <span key={ph} className="listen-phase-dot" style={{
+                  padding:"4px 10px", borderRadius:999, fontSize:11, fontFamily:"IBM Plex Mono, monospace",
+                  letterSpacing:".04em", textTransform:"uppercase",
+                  background: active? "var(--accent)" : done? "var(--accent-soft)" : "var(--option-dim)",
+                  color: active? "var(--bg-deep)" : done? "var(--accent)" : "var(--muted)",
+                  border: active? "1px solid var(--accent-deep)" : "1px solid var(--card-border)",
+                  transition:"all .2s var(--ease-soft)"
+                }}>{ph==="expl"?"Explanation":ph}</span>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Question transcript - highlights as it speaks */}
+        <div className="dwg-card" style={{padding:22}}>
+          <div className="q-head-row" style={{alignItems:"flex-start"}}>
+            <p className="question-text" style={{
+              opacity: listenPhase==="question"?1:0.55,
+              transition:"opacity .3s ease",
+              borderLeft: listenPhase==="question"?"3px solid var(--accent)":"3px solid transparent",
+              paddingLeft: listenPhase==="question"?"12px":0
+            }}>
+              {isPlaying && listenPhase==="question" ? "🔊 " : ""}{q.text}
+            </p>
+            <button className={`bookmark-btn ${isBookmarkedListen?"active":""}`} onClick={toggleBookmark} title="Bookmark">★</button>
+          </div>
+
+          <div className={`options ${listenPhase==="answer"||listenPhase==="expl"?"answered":""}`} style={{opacity: listenPhase==="options"?1: listenPhase==="question"?0.85:1, transition:"opacity .3s ease"}}>
+            {q.options.map((opt,i)=>{
+              const isCorrect=i===q.correct;
+              const reveal = listenPhase==="answer" || listenPhase==="expl";
+              let cls="option-row";
+              if(reveal){
+                if(isCorrect) cls+=" correct";
+                else cls+=" dim";
+              }
+              return (
+                <div key={i} className={cls} style={{
+                  borderColor: listenPhase==="options" ? "var(--card-border-strong)" : undefined,
+                  background: reveal && isCorrect ? "var(--correct-soft)" : undefined
+                }}>
+                  {reveal && isCorrect && <span className="stamp stamp-ok">✓ Answer</span>}
+                  <span className="option-letter">{String.fromCharCode(65+i)}</span>
+                  <span>{opt}</span>
+                </div>
+              );
+            })}
+          </div>
+
+          {(listenPhase==="answer" || listenPhase==="expl") && (
+            <div className="explain-box" style={{animation:"explainIn .3s var(--ease)"}}>
+              <span className="label mono">Answer: {String.fromCharCode(65+q.correct)} — {q.options[q.correct]}</span>
+              <span style={{opacity: listenPhase==="expl"?1:0.55, transition:"opacity .3s ease"}}>{q.expl}</span>
+            </div>
+          )}
+
+          <div className="mono" style={{fontSize:11, color:"var(--muted)", marginTop:8}}>
+            Auto-advances in ~2s after explanation. Use Pause/Replay anytime — great for walking or resting.
+          </div>
+
+          <div className="btn-row" style={{marginTop:14, justifyContent:"space-between"}}>
+            <button className="btn secondary" onClick={goPrev} disabled={listenIdx===0}>← Previous</button>
+            <button className="btn" onClick={goNext}>{listenIdx+1===total?"Finish →":"Next →"}</button>
+          </div>
+        </div>
+
+        {/* Mini transcript scrubber */}
+        <div className="mono" style={{fontSize:11, color:"var(--dim)", textAlign:"center", marginTop:6}}>
+          Tap the progress bar above to jump · {pct}% through this batch
+        </div>
+
+        <Toast message={toastMsg} show={toastShow} />
+      </>
+    );
+  }
 
   if(empty) return (
     <div className="dwg-card">

@@ -1012,3 +1012,13 @@ h1,h2,h3,.display,.serif{
   .admin-toplevel-tabs button{flex:1;padding-left:10px;padding-right:10px;}
   .users-filter-bar .btn{width:100%;}
 }
+
+/* ---------- Listen & Learn ---------- */
+.listen-intro-card{animation:fadeInUp .35s var(--ease) both;}
+.listen-player{animation:fadeInUp .35s var(--ease) both;}
+.listen-player .btn{white-space:nowrap;}
+.listen-phase-dot{display:inline-flex;align-items:center;gap:4px;}
+@media(max-width:600px){
+  .listen-player{padding:16px !important;}
+  .listen-player .btn{flex:1 1 auto;}
+}

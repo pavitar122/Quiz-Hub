@@ -68,7 +68,15 @@ export default function SubjectPage(){
       <div className="mode-toggle mono">
         <button className={mode==="test"?"active":""} onClick={()=>setMode("test")}>Test Mode</button>
         <button className={mode==="practice"?"active":""} onClick={()=>setMode("practice")}>Practice Mode</button>
+        <button className={mode==="listen"?"active":""} onClick={()=>setMode("listen")}>🎧 Listen & Learn</button>
       </div>
+      {mode==="listen" && (
+        <div className="dwg-card listen-intro-card" style={{borderLeft:"4px solid var(--accent)", marginBottom:18}}>
+          <span className="dwg-tag mono">LISTEN & LEARN — HANDS-FREE</span>
+          <p className="serif" style={{margin:"6px 0 8px", fontSize:16, lineHeight:1.5}}>Study while walking, travelling or resting. Each question is spoken aloud — Question → Options → Answer → Explanation — then it auto-advances. Pause, replay, change speed or skip anytime.</p>
+          <div className="mono" style={{fontSize:11, color:"var(--muted)"}}>Tip: plug in earphones and press Play on the next screen. Works in background on Android.</div>
+        </div>
+      )}
       <Link href={`/quiz/${cat.id}?mode=${mode}&type=full`} style={{textDecoration:"none"}}>
         <div className="dwg-card full-run-card">
           <span className="dwg-tag mono">DWG-00 · FULL CATEGORY RUN</span>
