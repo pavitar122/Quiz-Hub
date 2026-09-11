@@ -34,6 +34,10 @@ export default function QuizPage(){
   const isPlayingRef=useRef(false);
   const rateRef=useRef(1);
   const voiceRef=useRef(null);
+  const selectedVoiceURIRef=useRef(""); // avoids re-subscribing voiceschanged on every selection
+  const heartbeatRef=useRef(null); // keeps Chrome's TTS engine alive past its ~15s cutoff
+  const cancelledRef=useRef(false); // distinguishes an intentional cancel() from a real onerror
+  const resumeSegRef=useRef(0); // which segment (question/options/answer/expl) to resume from
 
   const flashToast=(msg)=>{
     setToastMsg(msg);
@@ -54,14 +58,16 @@ export default function QuizPage(){
       const isFemale=(name, uri)=>{
         const s=(name+" "+uri).toLowerCase();
         if(/female/.test(s)) return true;
-        if(/zira|aria|samantha|susan|helen|eva|neerja|heera|kalpana/.test(s)) return true;
+        // Indian TTS voices commonly shipped by Android/Samsung/Nuance engines
+        if(/zira|aria|samantha|susan|helen|eva|neerja|heera|kalpana|veena|priya|divya|deepa|aditi|isha|kajal|swara|raveena|ananya|lekha/.test(s)) return true;
         if(s.includes("google us english") && !s.includes("male")) return true;
         return false;
       };
       const isMale=(name, uri)=>{
         const s=(name+" "+uri).toLowerCase();
         if(/male/.test(s)) return true;
-        if(/david|mark|guy|prabhat|madhur|hemant|george|alex|daniel/.test(s)) return true;
+        // Indian TTS voices commonly shipped by Android/Samsung/Nuance engines
+        if(/david|mark|guy|prabhat|madhur|hemant|george|alex|daniel|rishi|ravi|arjun|rahul|vikram|ajit/.test(s)) return true;
         return false;
       };
       const females=[];
@@ -110,8 +116,18 @@ export default function QuizPage(){
       // take up to 3 real males
       males.slice(0,3).forEach(v=> outM.push(wrap(v,"male")));
 
-      // Guarantee 2F: if fewer than 2, synthesize from best available voice
-      const femaleBase = females[0] || unknown[0] || pool[0];
+      // Many Android tablets expose a real en-IN voice with a generic system name
+      // (e.g. plain "English (India)") that doesn't match any name pattern above, so
+      // it lands in `unknown` rather than `females`/`males`. Since `score()` already
+      // ranks en-IN highest, pick the best-scored voice across BOTH the recognized
+      // and unknown pools — not just the first recognized one — so an on-device
+      // Indian voice is preferred over a same-gender US/UK voice when filling the
+      // synthesized slots below.
+      const femalePool=[...females, ...unknown].sort((a,b)=> score(a)-score(b));
+      const malePool=[...males, ...unknown].sort((a,b)=> score(a)-score(b));
+
+      // Guarantee 2F: if fewer than 2, synthesize from best available (Indian-first) voice
+      const femaleBase = femalePool[0] || pool[0];
       const femalePitches=[1.06, 1.14];
       while(outF.length<2){
         const idx=outF.length;
@@ -125,7 +141,7 @@ export default function QuizPage(){
         }));
       }
       // Guarantee 3M: synthesize if tablet only has 1 male (e.g. Google UK English Male)
-      const maleBase = males[0] || females[0] || unknown[0] || pool[0];
+      const maleBase = malePool[0] || pool[0];
       const malePitches=[0.92, 0.85, 0.78];
       const maleNames=["", " Deep", " Bass"];
       while(outM.length<3){
@@ -148,10 +164,11 @@ export default function QuizPage(){
       if(vs.length>0){
         const curated=curateVoices(vs);
         setVoices(curated);
-        if(!selectedVoiceURI){
+        const currentSel=selectedVoiceURIRef.current;
+        if(!currentSel){
           const pref= curated[0];
           if(pref){ setSelectedVoiceURI(pref._id); voiceRef.current=pref; }
-        } else if(!curated.find(v=>v._id===selectedVoiceURI)){
+        } else if(!curated.find(v=>v._id===currentSel)){
           setSelectedVoiceURI(curated[0]._id); voiceRef.current=curated[0];
         }
       }
@@ -168,15 +185,37 @@ export default function QuizPage(){
       if(tries>6) clearInterval(iv);
     }, 800);
     return ()=>{ clearTimeout(t); clearInterval(iv); if(window.speechSynthesis) window.speechSynthesis.onvoiceschanged=null; };
-  },[mode, selectedVoiceURI]);
+    // Only re-run when entering/leaving listen mode. selectedVoiceURI is read via
+    // selectedVoiceURIRef so picking a voice doesn't tear down and re-poll voices.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[mode]);
 
   useEffect(()=>{ isPlayingRef.current=isPlaying; },[isPlaying]);
   useEffect(()=>{ rateRef.current=rate; },[rate]);
+  useEffect(()=>{ selectedVoiceURIRef.current=selectedVoiceURI; },[selectedVoiceURI]);
   useEffect(()=>{
     if(!selectedVoiceURI) return;
     const v=voices.find(x=>x._id===selectedVoiceURI);
     if(v) voiceRef.current=v;
   },[selectedVoiceURI, voices]);
+
+  // Chrome (desktop AND Android) silently stops SpeechSynthesis after ~15s on
+  // non-local/"network" voices — a long-standing Chromium bug. Poking pause+resume
+  // periodically while an utterance is speaking keeps the engine alive so long
+  // option/explanation text doesn't get cut off mid-sentence.
+  const stopHeartbeat=useCallback(()=>{
+    if(heartbeatRef.current){ clearInterval(heartbeatRef.current); heartbeatRef.current=null; }
+  },[]);
+  const startHeartbeat=useCallback(()=>{
+    stopHeartbeat();
+    heartbeatRef.current=setInterval(()=>{
+      const synth=typeof window!=="undefined" ? window.speechSynthesis : null;
+      if(!synth) return;
+      if(synth.speaking && !synth.paused){
+        try{ synth.pause(); synth.resume(); }catch{}
+      }
+    }, 12000);
+  },[stopHeartbeat]);
 
   useEffect(()=>{
     setEmpty(false);
@@ -475,7 +514,7 @@ export default function QuizPage(){
         }
         return q;
       })();
-      if(out.length>0){ cancelSpeech(); setListenQueue(out); setListenIdx(0); setListenPhase("idle"); setListenFinished(false); setIsPlaying(false); }
+      if(out.length>0){ cancelSpeech(); resumeSegRef.current=0; setListenQueue(out); setListenIdx(0); setListenPhase("idle"); setListenFinished(false); setIsPlaying(false); }
       return;
     }
     const q = buildQueue(cat, type, idx);
@@ -492,12 +531,14 @@ export default function QuizPage(){
 
   // ---- Listen helpers ----
   const cancelSpeech=useCallback(()=>{
+    cancelledRef.current=true; // tell the pending onerror this stop was intentional, not a real failure
+    stopHeartbeat();
     if(typeof window!=="undefined" && window.speechSynthesis){
       window.speechSynthesis.cancel();
     }
     utteranceRef.current=null;
     if(timeoutRef.current){ clearTimeout(timeoutRef.current); timeoutRef.current=null; }
-  },[]);
+  },[stopHeartbeat]);
 
   useEffect(()=>{
     return ()=>{ cancelSpeech(); };
@@ -516,6 +557,7 @@ export default function QuizPage(){
     if(!isPlayingRef.current) return;
     const segs=getListenSegments(item, qIdx, total);
     if(segIdx >= segs.length){
+      resumeSegRef.current=0; // next question starts fresh at the "question" phase
       timeoutRef.current=setTimeout(()=>{
         if(!isPlayingRef.current) return;
         if(qIdx+1 >= total){
@@ -530,8 +572,10 @@ export default function QuizPage(){
       return;
     }
     const seg=segs[segIdx];
+    resumeSegRef.current=segIdx;
     setListenPhase(seg.key);
     if(typeof window==="undefined" || !window.speechSynthesis) return;
+    cancelledRef.current=false; // this is a real, intentional speak attempt from here on
     const utter=new SpeechSynthesisUtterance(seg.text);
     utteranceRef.current=utter;
     utter.rate=rateRef.current;
@@ -546,97 +590,101 @@ export default function QuizPage(){
     }
     utter.volume=1;
     utter.onend=()=>{
+      stopHeartbeat();
       if(!isPlayingRef.current) return;
       timeoutRef.current=setTimeout(()=> speakSegmentsSequentially(item, qIdx, total, segIdx+1), seg.gap);
     };
     utter.onerror=(e)=>{
-      // Android tablet: Google network male voices can error when offline — retry without explicit voice
-      if(e?.error==="not-allowed" || e?.error==="interrupted" || e?.error==="audio-busy" || e?.error){
-        if(voiceRef.current){
-          try{ window.speechSynthesis.cancel(); }catch{}
-          const fallback=new SpeechSynthesisUtterance(seg.text);
-          fallback.rate=rateRef.current;
-          fallback.lang="en-US";
-          fallback.pitch=1;
-          fallback.onend=()=>{
-            if(!isPlayingRef.current) return;
-            timeoutRef.current=setTimeout(()=> speakSegmentsSequentially(item, qIdx, total, segIdx+1), seg.gap);
-          };
-          utteranceRef.current=fallback;
-          window.speechSynthesis.speak(fallback);
-          return;
-        }
+      stopHeartbeat();
+      // A pause/skip/replay/rate-change calls cancel(), which itself fires onerror with
+      // "canceled"/"interrupted". That's expected, not a failure — ignore it so we don't
+      // speak a duplicate "ghost" utterance right after the user stopped playback.
+      if(cancelledRef.current) return;
+      // Real failures worth retrying: Android tablet Google *network* voices commonly
+      // throw these when the connection is flaky or the voice isn't actually installed.
+      const retryable=["network","synthesis-failed","synthesis-unavailable","voice-unavailable","audio-busy"];
+      if(retryable.includes(e?.error) && voiceRef.current){
+        try{ window.speechSynthesis.cancel(); }catch{}
+        const fallback=new SpeechSynthesisUtterance(seg.text);
+        fallback.rate=rateRef.current;
+        fallback.lang="en-US";
+        fallback.pitch=1;
+        fallback.onend=()=>{
+          stopHeartbeat();
+          if(!isPlayingRef.current) return;
+          timeoutRef.current=setTimeout(()=> speakSegmentsSequentially(item, qIdx, total, segIdx+1), seg.gap);
+        };
+        utteranceRef.current=fallback;
+        startHeartbeat();
+        window.speechSynthesis.speak(fallback);
       }
     };
+    startHeartbeat();
     window.speechSynthesis.speak(utter);
-  },[cancelSpeech]);
+  },[cancelSpeech, startHeartbeat, stopHeartbeat]);
+
+  // Chrome (desktop and Android) can silently drop a speak() call made immediately
+  // after cancel() — the cancel hasn't finished tearing down internally yet. A short
+  // delay before the next speak() avoids that race. Keep this consistent everywhere
+  // we cancel-then-speak instead of using ad-hoc, inconsistent delays.
+  const SPEAK_KICKOFF_DELAY=120;
 
   // auto-play when idx or playing changes
   useEffect(()=>{
     if(mode!=="listen") return;
     if(!listenQueue || listenQueue.length===0) return;
     if(listenFinished) return;
-    if(!isPlaying) {
-      // pause: keep phase but cancel timeouts? speechSynthesis.pause handles pause; we cancel only on explicit stop
-      return;
-    }
+    if(!isPlaying) return; // paused — nothing to (re)start
     const item=listenQueue[listenIdx];
     if(!item) return;
     cancelSpeech();
-    speakSegmentsSequentially(item, listenIdx, listenQueue.length, 0);
+    const t=setTimeout(()=> speakSegmentsSequentially(item, listenIdx, listenQueue.length, resumeSegRef.current), SPEAK_KICKOFF_DELAY);
+    return ()=> clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[listenIdx, isPlaying, listenQueue, listenFinished, mode]);
 
-  // handle browser pause/resume
+  // Play/Pause. We deliberately avoid speechSynthesis.pause()/resume(): on Android
+  // Chrome (and some desktop Chrome builds) a paused utterance can fail to resume —
+  // especially if paused for more than ~15s — leaving playback silently stuck.
+  // Instead we fully cancel on pause and remember which segment (question/options/
+  // answer/explanation) we were on via resumeSegRef, then replay that segment on Play.
   const togglePlay=()=>{
     if(!listenQueue || listenQueue.length===0) return;
     if(typeof window==="undefined" || !("speechSynthesis" in window)){
       setSpeechSupported(false); return;
     }
     if(listenFinished){
+      resumeSegRef.current=0;
       setListenIdx(0); setListenFinished(false); setListenPhase("idle");
       setIsPlaying(true);
       return;
     }
     if(isPlaying){
-      // pause
-      window.speechSynthesis.pause();
+      cancelSpeech();
       setIsPlaying(false);
-      if(timeoutRef.current){ clearTimeout(timeoutRef.current); timeoutRef.current=null; }
     } else {
-      if(window.speechSynthesis.paused){
-        window.speechSynthesis.resume();
-        setIsPlaying(true);
-      } else {
-        // start or resume after idle
-        if(listenPhase==="idle"){
-          setIsPlaying(true);
-        } else {
-          // resume from current idx/phase: cancel and replay that question from current phase
-          // for simplicity, replay whole question
-          cancelSpeech();
-          setIsPlaying(true);
-        }
-      }
+      setIsPlaying(true); // effect above resumes from resumeSegRef.current
     }
   };
 
   const replayCurrent=()=>{
     if(!listenQueue) return;
     cancelSpeech();
+    resumeSegRef.current=0;
     setListenPhase("idle");
     if(listenFinished){ setListenFinished(false); setListenIdx(0); }
     setIsPlaying(true);
     // effect will trigger speak; if already playing, force restart
     if(isPlaying){
       const item=listenQueue[listenFinished?0:listenIdx];
-      setTimeout(()=> speakSegmentsSequentially(item, listenFinished?0:listenIdx, listenQueue.length, 0), 80);
+      setTimeout(()=> speakSegmentsSequentially(item, listenFinished?0:listenIdx, listenQueue.length, 0), SPEAK_KICKOFF_DELAY);
     }
   };
 
   const goNext=()=>{
     if(!listenQueue) return;
     cancelSpeech();
+    resumeSegRef.current=0;
     if(listenIdx+1 >= listenQueue.length){
       setListenFinished(true); setIsPlaying(false); setListenPhase("idle"); return;
     }
@@ -647,11 +695,12 @@ export default function QuizPage(){
   const goPrev=()=>{
     if(!listenQueue) return;
     cancelSpeech();
+    resumeSegRef.current=0;
     if(listenIdx===0){
       // replay first
       setListenPhase("idle");
       if(isPlaying){
-        setTimeout(()=> speakSegmentsSequentially(listenQueue[0],0,listenQueue.length,0), 80);
+        setTimeout(()=> speakSegmentsSequentially(listenQueue[0],0,listenQueue.length,0), SPEAK_KICKOFF_DELAY);
       }
       return;
     }
@@ -665,13 +714,16 @@ export default function QuizPage(){
     if(isPlaying && typeof window!=="undefined" && window.speechSynthesis){
       cancelSpeech();
       const item=listenQueue?.[listenIdx];
-      if(item) setTimeout(()=> speakSegmentsSequentially(item, listenIdx, listenQueue.length, 0), 120);
+      // resume from the same phase instead of jumping back to "question" — changing
+      // speed mid-explanation shouldn't throw away where you were.
+      if(item) setTimeout(()=> speakSegmentsSequentially(item, listenIdx, listenQueue.length, resumeSegRef.current), SPEAK_KICKOFF_DELAY);
     }
   };
 
   const handleSeek=(targetIdx)=>{
     if(!listenQueue) return;
     cancelSpeech();
+    resumeSegRef.current=0;
     setListenIdx(targetIdx);
     setListenFinished(false);
     setListenPhase("idle");
