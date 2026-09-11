@@ -38,6 +38,48 @@ export default function QuizPage(){
   const heartbeatRef=useRef(null); // keeps Chrome's TTS engine alive past its ~15s cutoff
   const cancelledRef=useRef(false); // distinguishes an intentional cancel() from a real onerror
   const resumeSegRef=useRef(0); // which segment (question/options/answer/expl) to resume from
+  const wakeLockRef=useRef(null);
+  const silentAudioRef=useRef(null);
+  const [wakeLockActive,setWakeLockActive]=useState(false);
+  const [wakeLockSupported,setWakeLockSupported]=useState(true);
+
+  const requestWakeLock=async()=>{
+    if(typeof navigator==="undefined" || !("wakeLock" in navigator)){
+      setWakeLockSupported(false);
+      return null;
+    }
+    try{
+      const lock=await navigator.wakeLock.request("screen");
+      wakeLockRef.current=lock;
+      setWakeLockActive(true);
+      lock.addEventListener("release",()=> setWakeLockActive(false));
+      return lock;
+    }catch(e){
+      // NotAllowedError when battery saver / no user gesture / not visible
+      setWakeLockSupported(false);
+      return null;
+    }
+  };
+  const releaseWakeLock=async()=>{
+    if(wakeLockRef.current){
+      try{ await wakeLockRef.current.release(); }catch{}
+      wakeLockRef.current=null;
+      setWakeLockActive(false);
+    }
+  };
+  const startSilentKeepalive=()=>{
+    const a=silentAudioRef.current;
+    if(!a) return;
+    a.muted=false;
+    a.volume=0.01; // near-silent but keeps an audio session alive so Android doesn't suspend TTS when screen would dim
+    const p=a.play();
+    if(p && p.catch) p.catch(()=>{});
+  };
+  const stopSilentKeepalive=()=>{
+    const a=silentAudioRef.current;
+    if(!a) return;
+    try{ a.pause(); }catch{}
+  };
 
   const flashToast=(msg)=>{
     setToastMsg(msg);
@@ -54,7 +96,10 @@ export default function QuizPage(){
     }
     const curateVoices=(vs)=>{
       const enAll=vs.filter(v=>v.lang.toLowerCase().startsWith("en"));
-      const pool=enAll.length>=2 ? enAll : vs;
+      // Exclude Australian voices so tablet shows Indian instead (per user request). Only use AU as last resort.
+      const enNoAU=enAll.filter(v=> !v.lang.toLowerCase().includes("au"));
+      const poolBase=enNoAU.length>=2 ? enNoAU : enAll;
+      const pool=poolBase.length>=2 ? poolBase : vs;
       const isFemale=(name, uri)=>{
         const s=(name+" "+uri).toLowerCase();
         if(/female/.test(s)) return true;
@@ -82,9 +127,11 @@ export default function QuizPage(){
         let s=0;
         if(v.localService) s-=10;
         const l=v.lang.toLowerCase();
-        if(l==="en-in") s+=0;
-        else if(l==="en-us") s+=1;
-        else if(l==="en-gb") s+=2;
+        // Indian first, US second, GB third — Australian (en-AU) heavily deprioritized per user request
+        if(l==="en-in" || l.startsWith("en-in")) s+=0;
+        else if(l==="en-us" || l.startsWith("en-us")) s+=1;
+        else if(l==="en-gb" || l.startsWith("en-gb")) s+=2;
+        else if(l.includes("au")) s+=10; // en-AU last
         else s+=3;
         return s;
       };
@@ -216,6 +263,9 @@ export default function QuizPage(){
       }
     }, 12000);
   },[stopHeartbeat]);
+
+  // (wake-lock + media-session wiring is mounted after the speak/transport helpers are defined below
+  // so the effects can safely close over togglePlay/goNext etc without hitting the TDZ)
 
   useEffect(()=>{
     setEmpty(false);
@@ -730,6 +780,66 @@ export default function QuizPage(){
     // keep isPlaying as is — effect will auto-play if isPlaying true
   };
 
+  // Keep screen awake + keep an audio session alive so Android Chrome PWA doesn't
+  // pause TTS when display dims/off. Wake lock is the proper API; silent audio is fallback
+  // that keeps an audio session so the OS doesn't suspend speech while the lock is held.
+  // Re-acquire on visibilitychange because the lock auto-releases when the doc is hidden.
+  useEffect(()=>{
+    if(mode!=="listen") return;
+    const onVisibility=async()=>{
+      if(document.visibilityState==="visible"){
+        if(isPlayingRef.current){
+          await requestWakeLock();
+          startSilentKeepalive();
+          const synth=typeof window!=="undefined" ? window.speechSynthesis : null;
+          if(synth){
+            if(synth.paused){
+              try{ synth.resume(); }catch{}
+            } else if(!synth.speaking && !synth.pending){
+              const it=listenQueue?.[listenIdx];
+              if(it) speakSegmentsSequentially(it, listenIdx, listenQueue.length, resumeSegRef.current);
+            }
+          }
+        } else {
+          await releaseWakeLock();
+        }
+      } else {
+        setWakeLockActive(false);
+      }
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    return ()=> document.removeEventListener("visibilitychange", onVisibility);
+  },[mode, listenQueue, listenIdx, speakSegmentsSequentially]);
+
+  useEffect(()=>{
+    if(mode!=="listen") return;
+    if(isPlaying){
+      requestWakeLock();
+      startSilentKeepalive();
+      try{
+        if("mediaSession" in navigator){
+          const it=listenQueue?.[listenIdx];
+          if(it){
+            navigator.mediaSession.metadata=new MediaMetadata({
+              title: `Q ${listenIdx+1} · ${it.subName}`,
+              artist: "Quiz Hub — Listen & Learn",
+              album: cat?.title || "Civil Engineering",
+            });
+          }
+          navigator.mediaSession.setActionHandler("play", ()=>{ if(!isPlayingRef.current) togglePlay(); });
+          navigator.mediaSession.setActionHandler("pause", ()=>{ if(isPlayingRef.current) togglePlay(); });
+          navigator.mediaSession.setActionHandler("nexttrack", goNext);
+          navigator.mediaSession.setActionHandler("previoustrack", goPrev);
+          navigator.mediaSession.playbackState="playing";
+        }
+      }catch{}
+    } else {
+      releaseWakeLock();
+      stopSilentKeepalive();
+      try{ if("mediaSession" in navigator) navigator.mediaSession.playbackState="paused"; }catch{}
+    }
+  },[isPlaying, mode, listenQueue, listenIdx, cat]);
+
   // ---- Render: Listen mode branch ----
   if(mode==="listen"){
     if(empty) return (
@@ -777,8 +887,22 @@ export default function QuizPage(){
     const isBookmarkedListen=isBookmarked;
     return (
       <>
-        <div className="top-bar"><Link href={`/subject/${id}`} className="back-link">← Back</Link><span className="score-badge mono">🎧 Listen & Learn · {listenIdx+1} / {total}</span></div>
+        {/* Hidden audio session keepalive — silent loop keeps Android from suspending speechSynthesis when screen dims. Played only while Listening. */}
+        <audio
+          ref={silentAudioRef}
+          loop
+          playsInline
+          preload="auto"
+          src="data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA"
+          style={{display:"none"}}
+        />
+        <div className="top-bar"><Link href={`/subject/${id}`} className="back-link">← Back</Link><span className="score-badge mono">🎧 Listen & Learn · {listenIdx+1} / {total}{wakeLockActive ? " · ☀︎ screen awake" : ""}</span></div>
         <div className="eyebrow"><span>{item.subName} · Question {listenIdx+1} of {total}</span><span>#{q.num} · LISTEN</span></div>
+        {!wakeLockSupported && isPlaying && (
+          <div className="mono" style={{fontSize:11, color:"var(--muted)", background:"var(--accent-soft)", border:"1px solid var(--card-border)", borderRadius:8, padding:"8px 10px", marginBottom:12}}>
+            Your device doesn&apos;t support auto screen-wake. If voice pauses when the display sleeps, keep the screen on or set <b>Android Settings → Display → Screen timeout → 10 min</b> while listening.
+          </div>
+        )}
         <div className="quiz-progress-bar" style={{cursor:"pointer"}} onClick={(e)=>{
           const rect=e.currentTarget.getBoundingClientRect();
           const x=e.clientX-rect.left;
@@ -814,19 +938,26 @@ export default function QuizPage(){
 
           {/* Voice picker */}
           {voices.length>0 && (
-            <div style={{display:"flex", alignItems:"center", gap:10, flexWrap:"wrap"}}>
-              <span className="mono" style={{fontSize:11, color:"var(--muted)", letterSpacing:".06em", textTransform:"uppercase"}}>Voice</span>
-              <select className="mf-select" value={selectedVoiceURI} onChange={e=>setSelectedVoiceURI(e.target.value)} style={{maxWidth:320, minWidth:180, width:"auto"}}>
-                {voices.map(v=>{
-                  const tag=v._gender==="female"?" ♀ Female": v._gender==="male"?" ♂ Male":" ○ Voice";
-                  const short=v.lang==="en-IN"?"IN": v.lang==="en-US"?"US": v.lang==="en-GB"?"GB": v.lang;
-                  const local=v.localService?" · offline":"";
-                  const synth=v._synthetic?" · pitch-shifted":"";
-                  return <option key={v._id} value={v._id}>{v.name} · {short}{tag}{local}{synth}</option>;
-                })}
-              </select>
-              <span className="mono" style={{fontSize:11, color:"var(--dim)"}}>{isPlaying ? `Speaking: ${listenPhase}` : "Paused"}</span>
-            </div>
+            <>
+              <div style={{display:"flex", alignItems:"center", gap:10, flexWrap:"wrap"}}>
+                <span className="mono" style={{fontSize:11, color:"var(--muted)", letterSpacing:".06em", textTransform:"uppercase"}}>Voice</span>
+                <select className="mf-select" value={selectedVoiceURI} onChange={e=>setSelectedVoiceURI(e.target.value)} style={{maxWidth:320, minWidth:180, width:"auto"}}>
+                  {voices.map(v=>{
+                    const tag=v._gender==="female"?" ♀ Female": v._gender==="male"?" ♂ Male":" ○ Voice";
+                    const short=v.lang==="en-IN"?"IN": v.lang==="en-US"?"US": v.lang==="en-GB"?"GB": v.lang;
+                    const local=v.localService?" · offline":"";
+                    const synth=v._synthetic?" · pitch-shifted":"";
+                    return <option key={v._id} value={v._id}>{v.name} · {short}{tag}{local}{synth}</option>;
+                  })}
+                </select>
+                <span className="mono" style={{fontSize:11, color:"var(--dim)"}}>{isPlaying ? `Speaking: ${listenPhase}` : "Paused"}</span>
+              </div>
+              {voices.length>0 && !voices.some(v=>String(v.lang).toLowerCase().startsWith("en-in")) && (
+                <div className="mono" style={{fontSize:11, color:"var(--muted)", background:"var(--accent-soft)", border:"1px solid var(--card-border)", borderRadius:8, padding:"8px 10px"}}>
+                  No Indian voice installed on this tablet. Showing US/UK voices instead. To get Indian accent: <b>Android Settings → Language → Text-to-speech → ⚙️ Google TTS → Install voice data → English (India)</b> → download, then reopen app. Australian voices are hidden per your preference.
+                </div>
+              )}
+            </>
           )}
 
           {/* Phase dots */}
