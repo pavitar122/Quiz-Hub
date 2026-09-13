@@ -85,13 +85,21 @@ export default function HomePage(){
         {groups.map(g=>{
           const gCats=cats.filter(c=>c.group===g.id);
           const gTotal=gCats.reduce((a,c)=>a+c.subcats.reduce((s,sc)=>s+sc.count,0),0);
+          const todayStr=new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kolkata"});
+          const isToday=progress?.dailyTestCorrect?.date===todayStr;
+          const daily=isToday ? (progress?.dailyTestCorrect?.counts?.[g.id]||0) : 0;
           return (
             <button key={g.id} className={`app-tab ${activeApp===g.id?"active":""}`} onClick={()=>{setActiveApp(g.id);}}>
               <span className="mono-badge md app-tab-icon">{g.code}</span>
               <span className="app-tab-text">
                 <span className="app-tab-label">{g.label}</span>
                 <span className="app-tab-meta">{gCats.length} subjects · {gTotal} Qs</span>
+                <span className="daily-count mono" title="Correct answers today in Test mode — resets at midnight IST">
+                  <span className={`daily-dot ${daily>0?"on":""}`}></span>
+                  Today: {user ? <Counter value={daily} /> : "—"} ✓
+                </span>
               </span>
+              <span className={`daily-pill mono ${activeApp===g.id?"active":""} ${daily>0?"has-count":""}`} aria-hidden>{user ? daily : "—"}</span>
             </button>
           );
         })}

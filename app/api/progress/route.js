@@ -3,6 +3,27 @@ import { cookies } from "next/headers";
 import { verifyToken, COOKIE_NAME } from "@/lib/auth";
 import { connectDB } from "@/lib/db";
 import Progress from "@/models/Progress";
+import { Category } from "@/models/Category";
+
+function todayIST(){
+  // YYYY-MM-DD in Asia/Kolkata — resets at midnight IST per user request
+  return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+}
+function ensureDaily(prog){
+  const today=todayIST();
+  if(!prog.dailyTestCorrect || prog.dailyTestCorrect.date !== today){
+    prog.dailyTestCorrect = { date: today, counts: {} };
+    prog.markModified("dailyTestCorrect");
+    return true;
+  }
+  // ensure counts object exists for older docs
+  if(!prog.dailyTestCorrect.counts || typeof prog.dailyTestCorrect.counts!=="object"){
+    prog.dailyTestCorrect.counts={};
+    prog.markModified("dailyTestCorrect");
+    return true;
+  }
+  return false;
+}
 
 function getUserId(){
   const token=cookies().get(COOKIE_NAME)?.value;
@@ -17,6 +38,9 @@ export async function GET(){
   await connectDB();
   let prog=await Progress.findOne({userId});
   if(!prog){ prog=await Progress.create({userId}); }
+  if(ensureDaily(prog)){
+    await prog.save();
+  }
   return NextResponse.json({progress: prog});
 }
 
@@ -30,12 +54,27 @@ export async function POST(req){
 
   if(body.type==="answer"){
     if(body.mode === "practice") return NextResponse.json({ok:true});
+    ensureDaily(prog);
     const key= body.subIdx+"-"+body.num;
     prog.stats.totalAnswered++;
     if(body.correct){
       prog.stats.totalCorrect++;
       prog.stats.streak++;
       if(prog.stats.streak>prog.stats.bestStreak) prog.stats.bestStreak=prog.stats.streak;
+      // daily test-mode correct counter per group (civil1 / civil2 / nontechnical)
+      try{
+        const cat=await Category.findOne({id: body.catId}).select("group").lean();
+        const grp=cat?.group || "civil1";
+        const dc={ ...prog.dailyTestCorrect };
+        if(!dc.counts || typeof dc.counts!=="object") dc.counts={};
+        const counts={ ...dc.counts };
+        counts[grp]=(counts[grp]||0)+1;
+        dc.counts=counts;
+        // keep date fresh (in case day flipped mid-session)
+        dc.date=todayIST();
+        prog.dailyTestCorrect=dc;
+        prog.markModified("dailyTestCorrect");
+      }catch{}
     } else {
       prog.stats.streak=0;
       if(!prog.missCounts[body.catId]) prog.missCounts[body.catId]={};

@@ -14,6 +14,10 @@ const ProgressSchema = new mongoose.Schema({
     bestStreak: { type: Number, default: 0 },
     sessionsCompleted: { type: Number, default: 0 },
   },
+  dailyTestCorrect: {
+    type: Object,
+    default: () => ({ date: "", counts: {} }), // { date:"YYYY-MM-DD" (IST), counts:{civil1: n, civil2:n, nontechnical:n}}
+  },
   hiddenCategories: { type: [String], default: [] },
 }, { timestamps: true });
 
