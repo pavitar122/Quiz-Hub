@@ -21,7 +21,7 @@ export default function SubjectPage(){
 
   useEffect(()=>{
     setLoadError(null);
-    fetch(`/api/questions?id=${id}`,{cache:"no-store"})
+    fetch(`/api/questions?id=${id}`)
       .then(r=>{ if(!r.ok) throw new Error("Could not load this subject"); return r.json(); })
       .then(d=>{ if(!d.category) throw new Error("Subject not found."); setCat(d.category); })
       .catch(e=>setLoadError(e.message||"Something went wrong while loading."));
@@ -54,7 +54,7 @@ export default function SubjectPage(){
         <h2>Couldn&apos;t load this subject</h2>
         <p>{loadError} Check your connection and try again.</p>
         <div className="btn-row" style={{justifyContent:"center"}}>
-          <button className="btn" onClick={()=>{setLoadError(null); setCat(null); fetch(`/api/questions?id=${id}`,{cache:"no-store"}).then(r=>r.json()).then(d=>{ if(d.category) setCat(d.category); else setLoadError("Subject not found."); }).catch(()=>setLoadError("Could not reach the server."));}}>↻ Try again</button>
+          <button className="btn" onClick={()=>{setLoadError(null); setCat(null); fetch(`/api/questions?id=${id}`,{cache:"reload"}).then(r=>r.json()).then(d=>{ if(d.category) setCat(d.category); else setLoadError("Subject not found."); }).catch(()=>setLoadError("Could not reach the server."));}}>↻ Try again</button>
           <Link href="/" className="btn secondary">Home</Link>
         </div>
       </div>

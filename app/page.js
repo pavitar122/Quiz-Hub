@@ -34,7 +34,7 @@ export default function HomePage(){
     setLoadError(null);
     // Lightweight metadata only (titles/descriptions/counts) — the homepage
     // never needs full question text, and this keeps the initial load fast.
-    fetch("/api/questions?meta=1",{cache:"no-store"})
+    fetch("/api/questions?meta=1")
       .then(r=>{ if(!r.ok) throw new Error("Could not load subjects"); return r.json(); })
       .then(d=>{
         setCats(d.categories||[]);

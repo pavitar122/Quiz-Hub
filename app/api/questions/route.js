@@ -22,7 +22,10 @@ export async function GET(req){
     if(id){
       const cat = await getCategoryById(id);
       if(!cat) return NextResponse.json({error:"Not found"},{status:404});
-      return NextResponse.json({category: cat}, { headers: { "Cache-Control": "no-store" } });
+      return NextResponse.json(
+        {category: cat},
+        { headers: { "Cache-Control": "public, max-age=60, stale-while-revalidate=300" } }
+      );
     }
 
     const groups = getGroups();
@@ -33,7 +36,10 @@ export async function GET(req){
     // MB to a few KB.
     if(meta !== "0"){
       const categories = await loadAllCategoriesMeta();
-      return NextResponse.json({categories, groups}, { headers: { "Cache-Control": "no-store" } });
+      return NextResponse.json(
+        {categories, groups},
+        { headers: { "Cache-Control": "public, max-age=60, stale-while-revalidate=300" } }
+      );
     }
 
     // Explicit opt-out (?meta=0) for callers that genuinely need every

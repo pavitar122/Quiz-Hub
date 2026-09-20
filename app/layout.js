@@ -13,6 +13,7 @@ const THEME_INIT_SCRIPT = `(function(){try{
   var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
   if (dark) document.documentElement.classList.add("dark");
 }catch(e){}})();`;
+const FONT_LOAD_SCRIPT = `(function(){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap";document.head.appendChild(l);})();`;
 
 export const metadata = {
   title: "Civil Engineering Quiz Hub",
@@ -58,7 +59,7 @@ export default function RootLayout({ children }) {
             trip before font download can even start. */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+        <script dangerouslySetInnerHTML={{ __html: FONT_LOAD_SCRIPT }} />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />

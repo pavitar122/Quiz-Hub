@@ -715,6 +715,7 @@ function QuizInner() {
           <div className="quiz-progress-fill" style={{ width: ((lp.qIdx + phaseFraction(lp.phase)) / total) * 100 + "%" }}></div>
         </div>
 
+        <div className="listen-layout">
         {/* Player */}
         <div className="listen-player dwg-card">
           <div className="listen-row" style={{ justifyContent: "space-between" }}>
@@ -854,6 +855,7 @@ function QuizInner() {
             <button className="btn secondary" onClick={lp.goPrev} disabled={lp.qIdx === 0}>← Previous</button>
             <button className="btn" onClick={lp.goNext}>{lp.qIdx + 1 === total ? "Finish →" : "Next →"}</button>
           </div>
+        </div>
         </div>
 
         <div className="mono" style={{ fontSize: 11, color: "var(--dim)", textAlign: "center", marginTop: 6 }}>

@@ -602,6 +602,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;letter-spacing:-.02em;colo
 
 /* ---------- 16. Listen & Learn ---------- */
 .listen-intro-card{animation:fadeInUp .35s var(--ease) both;}
+.listen-layout{display:grid;grid-template-columns:minmax(320px, 430px) minmax(0, 1fr);gap:18px;align-items:start;}
 .listen-player{animation:fadeInUp .35s var(--ease) both;display:flex;flex-direction:column;gap:16px;}
 .listen-player .btn{white-space:nowrap;}
 .listen-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
@@ -1231,6 +1232,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;letter-spacing:-.02em;colo
   .resume-card{padding:18px 16px;}
   .resume-actions .btn{flex:1;}
   .voice-card{min-width:100%;}
+  .listen-layout{grid-template-columns:1fr;}
   .listen-controls{gap:7px;}
   .listen-controls .btn{padding:10px 13px;}
   .play-btn{min-width:104px;}
