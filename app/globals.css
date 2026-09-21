@@ -602,8 +602,18 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;letter-spacing:-.02em;colo
 
 /* ---------- 16. Listen & Learn ---------- */
 .listen-intro-card{animation:fadeInUp .35s var(--ease) both;}
-.listen-layout{display:grid;grid-template-columns:minmax(320px, 430px) minmax(0, 1fr);gap:18px;align-items:start;}
-.listen-player{animation:fadeInUp .35s var(--ease) both;display:flex;flex-direction:column;gap:16px;}
+.listen-layout{display:grid;grid-template-columns:minmax(300px, 380px) minmax(0, 1fr);gap:18px;align-items:start;min-width:0;}
+.listen-player{
+  animation:fadeInUp .35s var(--ease) both;display:flex;flex-direction:column;gap:12px;
+  min-width:0;
+}
+.listen-transcript{
+  min-width:0;
+}
+.listen-transcript .question-text,
+.listen-transcript .option-row,
+.listen-transcript .explain-box{overflow-wrap:anywhere;word-break:break-word;}
+.listen-transcript .explain-box>span:last-child{display:block;}
 .listen-player .btn{white-space:nowrap;}
 .listen-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
 .listen-row .label-chip{
@@ -627,7 +637,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;letter-spacing:-.02em;colo
 /* voice picker: exactly two cards */
 .voice-grid{display:flex;gap:10px;flex-wrap:wrap;}
 .voice-card{
-  flex:1;min-width:200px;display:flex;align-items:center;gap:12px;text-align:left;
+  flex:1;min-width:0;display:flex;align-items:center;gap:12px;text-align:left;
   background:var(--option-bg);border:1.5px solid var(--card-border);border-radius:12px;
   padding:12px 14px;cursor:pointer;font-family:inherit;
   transition:border-color .18s var(--ease-soft), background .18s var(--ease-soft), transform .15s var(--ease-soft);
@@ -671,6 +681,37 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;letter-spacing:-.02em;colo
   border-radius:10px;padding:11px 14px;font-size:13px;
   display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;
   animation:bannerIn .3s var(--ease-spring);
+}
+
+/* Laptop layout: use the available width instead of making either card a
+   separate scroll container. The transcript uses two compact columns so
+   explanations sit alongside the options. */
+@media (min-width:841px){
+  .listen-quiz-wrap{max-width:1100px;}
+  .listen-layout{grid-template-columns:minmax(280px,320px) minmax(0,1fr);gap:14px;}
+  .listen-player{padding:18px;gap:9px;}
+  .listen-player .listen-controls{gap:5px;}
+  .listen-player .listen-controls .btn{padding:8px 9px;font-size:12px;min-height:38px;}
+  .listen-player .play-btn{min-width:84px;}
+  .listen-player .speed-chips{gap:3px;}
+  .listen-player .speed-chip{min-height:29px;padding:4px 7px;font-size:10.5px;}
+  .listen-player .voice-grid{gap:6px;}
+  .listen-player .voice-card{padding:8px 9px;gap:7px;}
+  .listen-player .voice-icon{width:29px;height:29px;min-width:29px;font-size:14px;}
+  .listen-player .voice-sub{display:none;}
+  .listen-player .voice-preview{padding:4px 7px;min-height:28px;font-size:10px;}
+  .listen-transcript{
+    display:grid;grid-template-columns:minmax(0,1.1fr) minmax(230px,.9fr);
+    column-gap:16px;align-items:start;padding:18px !important;
+  }
+  .listen-transcript .q-head-row,
+  .listen-transcript>.btn-row{grid-column:1 / -1;}
+  .listen-transcript .question-text{font-size:clamp(17px,1.8vw,21px);margin-bottom:12px;}
+  .listen-transcript .options{grid-column:1;margin-bottom:0;gap:7px;}
+  .listen-transcript .option-row{padding:10px 11px;font-size:13px;min-height:40px;gap:9px;}
+  .listen-transcript .option-letter{width:23px;height:23px;min-width:23px;font-size:11px;}
+  .listen-transcript .explain-box{grid-column:2;margin:0;padding:11px 13px;font-size:12.5px;line-height:1.5;}
+  .listen-transcript>.btn-row{margin-top:12px !important;}
 }
 
 /* ---------- 17. Toast / banners / dialogs ---------- */

@@ -698,7 +698,7 @@ function QuizInner() {
     const cloudActive = lp.provider != null; // null means fallback; undefined = still probing
 
     return (
-      <div className="quiz-wrap">
+      <div className="quiz-wrap listen-quiz-wrap">
         <div className="top-bar">
           <Link href={`/subject/${id}`} className="back-link">← Back</Link>
           <span className="score-badge mono">🎧 Listen &amp; Learn · {lp.qIdx + 1} / {total}</span>
@@ -815,7 +815,7 @@ function QuizInner() {
         </div>
 
         {/* Live transcript — highlights the section being spoken */}
-        <div className="dwg-card" style={{ padding: 24 }}>
+        <div className="dwg-card listen-transcript" style={{ padding: 24 }}>
           <div className="q-head-row" style={{ alignItems: "flex-start" }}>
             <p className="question-text" style={{
               opacity: lp.phase === "question" || !isPlaying ? 1 : 0.55,
