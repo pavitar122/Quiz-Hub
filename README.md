@@ -214,7 +214,8 @@ so a fresh session never shows a pointless "continue?" prompt.
 
 The player speaks every question as *Question → Options → Answer → Explanation* with
 natural pauses, exactly **two selectable voices** (Indian English — Female / Male),
-speed control (0.75×–2×), preview, and auto-advance.
+speed control (0.75×–2×), preview, auto-advance, and a live batch timer showing
+elapsed time, estimated total duration, and remaining time for the selected batch.
 
 **Why cloud TTS:** browser SpeechSynthesis voices differ per device/OS, so Android
 Chrome and desktop Chrome can never sound the same. Configure a provider to get the
@@ -269,4 +270,3 @@ Checked `js/app.js`, `index.html`, `data/*.js` and `css/styles.css`:
 - Set `JWT_SECRET` to a long random value (32+ chars) — same across all instances.
 - Ensure `data/` folder is writable by the Node process in production (for admin writes). On serverless (Vercel), filesystem is read-only — move admin writes to MongoDB or S3 instead; current implementation assumes a persistent filesystem (VM, Docker, or `next start` on a writable disk).
 - For Vercel: either disable admin writes or replace `lib/questions.js` file writes with a DB collection for questions.
-

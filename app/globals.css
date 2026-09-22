@@ -668,6 +668,13 @@ h1,h2,h3{font-family:var(--font-head);font-weight:700;letter-spacing:-.02em;colo
 }
 .listen-status .live-dot{width:8px;height:8px;border-radius:50%;background:var(--correct);animation:dailyPulse 1.4s ease-in-out infinite;}
 .listen-phase-dot{display:inline-flex;align-items:center;gap:4px;transition:all .2s var(--ease-soft);}
+.listen-batch-timer{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;
+  border:1px solid var(--card-border);border-radius:var(--radius-sm);
+  background:var(--option-dim);color:var(--muted);padding:8px 10px;font-size:10.5px;
+}
+.listen-batch-timer strong{color:var(--ink-deep);font-size:12px;font-variant-numeric:tabular-nums;}
+.listen-timer-remaining{color:var(--dim);}
 
 .provider-note{
   font-family:var(--font-mono);font-size:10.5px;color:var(--dim);

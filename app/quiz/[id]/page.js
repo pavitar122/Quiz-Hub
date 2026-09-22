@@ -1,5 +1,5 @@
 "use client";
-import { Suspense, useEffect, useState, useRef, useCallback } from "react";
+import { Suspense, useEffect, useState, useRef, useCallback, useMemo } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Confetti from "@/components/Confetti";
@@ -10,6 +10,7 @@ import {
   readCheckpoint, saveCheckpoint, removeCheckpoint, savePrefs, readPrefs,
 } from "@/lib/checkpoint";
 import { useListenPlayer } from "@/hooks/useListenPlayer";
+import { getListenSegments } from "@/lib/speech-format";
 
 export default function QuizPage() {
   // useSearchParams requires a Suspense boundary during prerendering.
@@ -22,6 +23,27 @@ export default function QuizPage() {
 
 const itemKey = (item) => item.subIdx + "-" + item.q.num;
 const SPEECH_UNSUPPORTED_MSG = "Speech not supported in this browser. Try Chrome, Edge or Safari on Android/iOS.";
+
+function formatListenTime(seconds) {
+  const total = Math.max(0, Math.round(seconds));
+  const minutes = Math.floor(total / 60);
+  const secs = total % 60;
+  return `${minutes}:${String(secs).padStart(2, "0")}`;
+}
+
+function estimateListenSeconds(queue, rate) {
+  if (!queue?.length) return 0;
+  const words = queue.reduce((sum, item, qIdx) => (
+    sum + getListenSegments(item, qIdx).reduce((segmentWords, segment) => (
+      segmentWords + segment.text.split(/\s+/).filter(Boolean).length
+    ), 0)
+  ), 0);
+  const speechRate = 150 * Math.min(2, Math.max(0.5, rate || 1));
+  const gaps = queue.reduce((sum, item, qIdx) => (
+    sum + getListenSegments(item, qIdx).reduce((gapTotal, segment) => gapTotal + segment.gap, 0)
+  ), 0);
+  return (words / speechRate) * 60 + gaps / 1000;
+}
 
 function QuizInner() {
   const { id } = useParams();
@@ -64,6 +86,11 @@ function QuizInner() {
   const silentAudioRef = useRef(null);
   const [wakeLockActive, setWakeLockActive] = useState(false);
   const [wakeLockSupported, setWakeLockSupported] = useState(true);
+  const [listenElapsed, setListenElapsed] = useState(0);
+  const listenTimerStartRef = useRef(null);
+  const listenElapsedRef = useRef(0);
+  const listenObservedQuestionRef = useRef(-1);
+  const listenObservedElapsedRef = useRef(0);
 
   const requestWakeLock = async () => {
     if (typeof navigator === "undefined" || !("wakeLock" in navigator)) {
@@ -112,6 +139,58 @@ function QuizInner() {
   // Listen & Learn engine — the hook is always mounted (hooks can't be
   // conditional); it only does work while the listen UI is active.
   const lp = useListenPlayer({ queue: listenQueue, initialPrefs: readPrefs(user, progress) });
+  const listenEstimate = useMemo(
+    () => {
+      const theoretical = estimateListenSeconds(listenQueue, lp.rate);
+      const completedQuestions = Math.max(0, lp.qIdx);
+      const observedElapsed = listenObservedElapsedRef.current;
+      if (!completedQuestions || !observedElapsed) return theoretical;
+      return (observedElapsed / completedQuestions) * listenQueue.length;
+    },
+    [listenQueue, lp.rate, lp.qIdx, listenElapsed]
+  );
+
+  useEffect(() => {
+    listenTimerStartRef.current = null;
+    listenElapsedRef.current = 0;
+    listenObservedQuestionRef.current = -1;
+    listenObservedElapsedRef.current = 0;
+    setListenElapsed(0);
+  }, [listenQueue, mode]);
+
+  useEffect(() => {
+    if (mode !== "listen" || !listenQueue || lp.qIdx <= listenObservedQuestionRef.current) return;
+    listenObservedQuestionRef.current = lp.qIdx;
+    listenObservedElapsedRef.current = listenElapsedRef.current;
+  }, [listenQueue, lp.qIdx, mode]);
+
+  useEffect(() => {
+    if (mode !== "listen" || !listenQueue) return undefined;
+    if (lp.isPlaying) {
+      if (listenTimerStartRef.current === null) listenTimerStartRef.current = Date.now();
+      const timer = setInterval(() => {
+        setListenElapsed(
+          listenElapsedRef.current + (Date.now() - listenTimerStartRef.current) / 1000
+        );
+      }, 250);
+      return () => clearInterval(timer);
+    }
+    if (listenTimerStartRef.current !== null) {
+      listenElapsedRef.current += (Date.now() - listenTimerStartRef.current) / 1000;
+      listenTimerStartRef.current = null;
+      setListenElapsed(listenElapsedRef.current);
+    }
+    return undefined;
+  }, [lp.isPlaying, listenQueue, mode]);
+
+  useEffect(() => {
+    if (mode !== "listen" || !listenQueue || !lp.finished) return;
+    if (listenTimerStartRef.current !== null) {
+      listenElapsedRef.current += (Date.now() - listenTimerStartRef.current) / 1000;
+      listenTimerStartRef.current = null;
+      setListenElapsed(listenElapsedRef.current);
+    }
+  }, [lp.finished, listenQueue, mode]);
 
   const flashToast = (msg) => {
     setToastMsg(msg);
@@ -756,6 +835,13 @@ function QuizInner() {
             <span className="provider-note mono" title={cloudActive ? "Same cloud voice on every device" : "Using this device's speech engine"}>
               <span className="p-dot"></span>
               {cloudActive === undefined ? "Checking voices…" : cloudActive ? "Cloud voice — same on every device" : "Device voice (offline fallback)"}
+            </span>
+          </div>
+          <div className="listen-batch-timer mono" aria-live="polite">
+            <span>⏱ Batch timer</span>
+            <strong>{formatListenTime(listenElapsed)} / ~{formatListenTime(listenEstimate)}</strong>
+            <span className="listen-timer-remaining">
+              {listenEstimate > listenElapsed ? `${formatListenTime(listenEstimate - listenElapsed)} remaining` : "Finishing"}
             </span>
           </div>
 

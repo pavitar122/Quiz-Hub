@@ -230,7 +230,7 @@ export function useListenPlayer({ queue, initialPrefs }) {
       setPhase("idle");
       posRef.current = { q: q + 1, seg: 0 };
       clearGapTimer();
-      gapTimerRef.current = setTimeout(() => playFrom(q + 1, 0, myRun), 1400);
+      gapTimerRef.current = setTimeout(() => playFrom(q + 1, 0, myRun), 600);
       return;
     }
     const segDef = segs[seg];
