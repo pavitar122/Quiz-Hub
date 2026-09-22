@@ -251,6 +251,9 @@ export function useListenPlayer({ queue, initialPrefs }) {
           const url = await loadSegmentAudio(segDef.text, voiceRef.current);
           if (runIdRef.current !== myRun || !intentRef.current) return;
           const a = new Audio(url);
+          a.preload = "auto";
+          a.setAttribute("playsinline", "true");
+          a.setAttribute("webkit-playsinline", "true");
           a.playbackRate = rateRef.current;
           a.onended = () => {
             if (runIdRef.current !== myRun || !intentRef.current) return;
@@ -484,6 +487,40 @@ export function useListenPlayer({ queue, initialPrefs }) {
       startPlaying(0, 0);
     } else play();
   }, [status, pause, play, startPlaying]);
+
+  // Register the player as a media session. Android then treats the cloud
+  // voice as active media when the PWA is backgrounded or the screen locks,
+  // and exposes play/pause/previous/next controls on the lock screen.
+  useEffect(() => {
+    if (typeof navigator === "undefined" || !("mediaSession" in navigator)) return undefined;
+    const mediaSession = navigator.mediaSession;
+    const item = queueRef.current?.[qIdx];
+    try {
+      mediaSession.metadata = item
+        ? new MediaMetadata({
+            title: `Question ${qIdx + 1}`,
+            artist: "Quiz Hub — Listen & Learn",
+            album: item.subName || "Subject batch",
+          })
+        : null;
+      mediaSession.playbackState = status === "playing" || status === "loading"
+        ? "playing"
+        : status === "paused" ? "paused" : "none";
+      mediaSession.setActionHandler("play", play);
+      mediaSession.setActionHandler("pause", pause);
+      mediaSession.setActionHandler("nexttrack", goNext);
+      mediaSession.setActionHandler("previoustrack", goPrev);
+    } catch {
+      // Media Session is optional and can be partially implemented on Android.
+    }
+    return () => {
+      try {
+        ["play", "pause", "nexttrack", "previoustrack"].forEach((action) => {
+          mediaSession.setActionHandler(action, null);
+        });
+      } catch {}
+    };
+  }, [qIdx, status, play, pause, goNext, goPrev]);
 
   return {
     provider, voice, rate, qIdx, phase, status, error,
