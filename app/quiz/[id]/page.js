@@ -31,16 +31,19 @@ function formatListenTime(seconds) {
   return `${minutes}:${String(secs).padStart(2, "0")}`;
 }
 
-function estimateListenSeconds(queue, rate) {
+function estimateListenSeconds(queue, rate, speakOptions) {
   if (!queue?.length) return 0;
+  if (!speakOptions) {
+    return queue.length * 20;
+  }
   const words = queue.reduce((sum, item, qIdx) => (
-    sum + getListenSegments(item, qIdx).reduce((segmentWords, segment) => (
+    sum + getListenSegments(item, qIdx, { includeOptions: speakOptions }).reduce((segmentWords, segment) => (
       segmentWords + segment.text.split(/\s+/).filter(Boolean).length
     ), 0)
   ), 0);
-  const speechRate = 150 * Math.min(2, Math.max(0.5, rate || 1));
+  const speechRate = 150 * Math.min(3, Math.max(1, rate || 1));
   const gaps = queue.reduce((sum, item, qIdx) => (
-    sum + getListenSegments(item, qIdx).reduce((gapTotal, segment) => gapTotal + segment.gap, 0)
+    sum + getListenSegments(item, qIdx, { includeOptions: speakOptions }).reduce((gapTotal, segment) => gapTotal + segment.gap, 0)
   ), 0);
   return (words / speechRate) * 60 + gaps / 1000;
 }
@@ -141,13 +144,13 @@ function QuizInner() {
   const lp = useListenPlayer({ queue: listenQueue, initialPrefs: readPrefs(user, progress) });
   const listenEstimate = useMemo(
     () => {
-      const theoretical = estimateListenSeconds(listenQueue, lp.rate);
+      const theoretical = estimateListenSeconds(listenQueue, lp.rate, lp.speakOptions);
       const completedQuestions = Math.max(0, lp.qIdx);
       const observedElapsed = listenObservedElapsedRef.current;
       if (!completedQuestions || !observedElapsed) return theoretical;
       return (observedElapsed / completedQuestions) * listenQueue.length;
     },
-    [listenQueue, lp.rate, lp.qIdx, listenElapsed]
+    [listenQueue, lp.rate, lp.speakOptions, lp.qIdx, listenElapsed]
   );
 
   useEffect(() => {
@@ -651,10 +654,10 @@ function QuizInner() {
     if (mode !== "listen") return;              // only persist while the player is in use
     if (user && !progress) return;              // wait for synced prefs before writing
     const t = setTimeout(() => {
-      savePrefs(user, { listenVoice: lp.voice, listenRate: lp.rate });
+      savePrefs(user, { listenVoice: lp.voice, listenRate: lp.rate, listenSpeakOptions: lp.speakOptions });
     }, 600);
     return () => clearTimeout(t);
-  }, [lp.voice, lp.rate, lp.provider, user, progress, mode]);
+  }, [lp.voice, lp.rate, lp.speakOptions, lp.provider, user, progress, mode]);
 
   // apply account-synced prefs once, before first playback
   const prefsAppliedRef = useRef(false);
@@ -664,6 +667,7 @@ function QuizInner() {
     const p = progress.prefs || {};
     if (lp.speeds.includes(p.listenRate) && p.listenRate !== lp.rate) lp.setRate(p.listenRate);
     if ((p.listenVoice === "female" || p.listenVoice === "male") && p.listenVoice !== lp.voice) lp.chooseVoice(p.listenVoice);
+    if (typeof p.listenSpeakOptions === "boolean" && p.listenSpeakOptions !== lp.speakOptions) lp.toggleOptions();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, progress, mode]);
 
@@ -832,6 +836,16 @@ function QuizInner() {
                 "Ready — press Play"
               )}
             </span>
+            <button
+              className={`speech-options-toggle ${lp.speakOptions ? "active" : ""}`}
+              type="button"
+              role="switch"
+              aria-checked={lp.speakOptions}
+              onClick={lp.toggleOptions}
+            >
+              <span className="speech-options-switch" aria-hidden="true"><span /></span>
+              Read options aloud
+            </button>
             <span className="provider-note mono" title={cloudActive ? "Same cloud voice on every device" : "Using this device's speech engine"}>
               <span className="p-dot"></span>
               {cloudActive === undefined ? "Checking voices…" : cloudActive ? "Cloud voice — same on every device" : "Device voice (offline fallback)"}

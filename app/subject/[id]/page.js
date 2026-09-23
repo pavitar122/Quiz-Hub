@@ -128,7 +128,7 @@ export default function SubjectPage(){
       {mode==="listen" && (
         <div className="dwg-card listen-intro-card" style={{borderLeft:"4px solid var(--accent)", marginBottom:18}}>
           <span className="dwg-tag mono">LISTEN &amp; LEARN — HANDS-FREE</span>
-          <p style={{margin:"6px 0 8px", fontSize:15.5, lineHeight:1.55}}>Study while walking, travelling or resting. Each question is spoken aloud — Question → Options → Answer → Explanation — then it auto-advances. Pause, replay, change speed or skip anytime.</p>
+          <p style={{margin:"6px 0 8px", fontSize:15.5, lineHeight:1.55}}>Study while walking, travelling or resting. Each question is spoken aloud — Question → Options → Answer → Explanation — then it auto-advances. You can turn off spoken options on the player to hear only Question → Answer → Explanation. Pause, replay, change speed or skip anytime.</p>
           <div className="mono" style={{fontSize:11, color:"var(--muted)"}}>Tip: plug in earphones and press Play on the next screen. Cloud voices stay the same on every device.</div>
         </div>
       )}

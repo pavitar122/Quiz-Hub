@@ -18,7 +18,7 @@ import { getListenSegments } from "@/lib/speech-format";
 // in-flight async chain from the previous action; intentRef tracks whether
 // playback is wanted right now (so gap timers die on pause/stop).
 
-const SPEEDS = [0.75, 1, 1.25, 1.5, 1.75, 2];
+const SPEEDS = [1, 1.5, 2, 2.5, 3];
 const CLOUD_AUDIO_CACHE_MAX = 150;
 
 // ---- module-level cloud audio cache (survives navigation within a session) ----
@@ -106,6 +106,7 @@ export function useListenPlayer({ queue, initialPrefs }) {
   const [provider, setProvider] = useState(undefined); // undefined = probing, null = fallback
   const [voice, setVoice] = useState(initialPrefs?.listenVoice === "male" ? "male" : "female");
   const [rate, setRateState] = useState(SPEEDS.includes(initialPrefs?.listenRate) ? initialPrefs.listenRate : 1);
+  const [speakOptions, setSpeakOptions] = useState(initialPrefs?.listenSpeakOptions !== false);
   const [qIdx, setQIdx] = useState(0);
   const [phase, setPhase] = useState("idle"); // idle|question|options|answer|expl
   const [status, setStatus] = useState("idle"); // idle|loading|playing|paused|finished|error
@@ -117,6 +118,7 @@ export function useListenPlayer({ queue, initialPrefs }) {
   const modeRef = useRef("cloud");      // "cloud" | "fallback"
   const voiceRef = useRef(voice);
   const rateRef = useRef(rate);
+  const speakOptionsRef = useRef(speakOptions);
   const queueRef = useRef(queue);
   const posRef = useRef({ q: 0, seg: 0 });        // what plays next
   const lastSegRef = useRef({ q: 0, seg: 0 });    // section currently being spoken
@@ -131,6 +133,7 @@ export function useListenPlayer({ queue, initialPrefs }) {
   useEffect(() => { queueRef.current = queue; }, [queue]);
   useEffect(() => { voiceRef.current = voice; }, [voice]);
   useEffect(() => { rateRef.current = rate; }, [rate]);
+  useEffect(() => { speakOptionsRef.current = speakOptions; }, [speakOptions]);
 
   // ---------- probe the server provider once ----------
   useEffect(() => {
@@ -224,7 +227,7 @@ export function useListenPlayer({ queue, initialPrefs }) {
       cancelSynthOnly();
       return;
     }
-    const segs = getListenSegments(list[q], q);
+    const segs = getListenSegments(list[q], q, { includeOptions: speakOptionsRef.current });
     if (seg >= segs.length) {
       // question complete → short pause → auto-advance
       setPhase("idle");
@@ -293,7 +296,7 @@ export function useListenPlayer({ queue, initialPrefs }) {
     cancelAudioOnly();
     const synth = window.speechSynthesis;
     const utter = new SpeechSynthesisUtterance(segDef.text);
-    utter.rate = Math.min(2, Math.max(0.5, rateRef.current));
+    utter.rate = Math.min(3, Math.max(1, rateRef.current));
     const pinned = fallbackVoicesRef.current?.[voiceRef.current] || fallbackVoicesRef.current?.any;
     if (pinned) {
       utter.voice = pinned;
@@ -454,6 +457,13 @@ export function useListenPlayer({ queue, initialPrefs }) {
     if (intentRef.current) startPlaying(posRef.current.q, posRef.current.seg);
   }, [startPlaying]);
 
+  const toggleOptions = useCallback(() => {
+    const next = !speakOptionsRef.current;
+    speakOptionsRef.current = next;
+    setSpeakOptions(next);
+    if (intentRef.current) startPlaying(posRef.current.q, posRef.current.seg);
+  }, [startPlaying]);
+
   const previewVoice = useCallback(async (v) => {
     setPreviewing(v);
     try {
@@ -523,11 +533,11 @@ export function useListenPlayer({ queue, initialPrefs }) {
   }, [qIdx, status, play, pause, goNext, goPrev]);
 
   return {
-    provider, voice, rate, qIdx, phase, status, error,
+    provider, voice, rate, speakOptions, qIdx, phase, status, error,
     speeds: SPEEDS, previewing,
     finished: status === "finished",
     isPlaying: status === "playing" || status === "loading",
     toggle, play, pause, stop, goNext, goPrev, seekQuestion, replayQuestion, retry, skipSection,
-    setRate, chooseVoice, previewVoice,
+    setRate, chooseVoice, toggleOptions, previewVoice,
   };
 }
