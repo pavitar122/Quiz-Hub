@@ -1101,7 +1101,7 @@ function QuizInner() {
           <div className="resume-meta" style={{ marginTop: 10 }}>
             <span>✓ Progress saved — you can close this page and resume anytime</span>
           </div>
-          <div className="btn-row" style={{ marginTop: 16 }}>
+          <div className="btn-row end" style={{ marginTop: 16 }}>
             <button className="btn" onClick={startNextPracticeCheckpoint}>{nextLabel}</button>
             <Link href={`/subject/${id}`} className="btn secondary">Back</Link>
           </div>
